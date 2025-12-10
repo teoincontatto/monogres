@@ -17,6 +17,7 @@ archs:
   - amd64
   - arm64
 packages:
+  - libc6
   - gettext
   - libavahi-compat-libdnssd1
   - libcurl4
