@@ -40,6 +40,7 @@ def _new(name, versions, pg_targets, repo_name, dependencies = None, metadata = 
             name = "~".join([name, version, pg_target.pg_version.name]),
             version = version,
             pg_version = pg_target.pg_version,
+            pg_target = pg_target,
             pgxs_src = "@%s//%s:dir" % (repo_name, version),
             dependencies = dependencies or [],
         )
