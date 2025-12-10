@@ -18,27 +18,43 @@ archs:
   - arm64
 packages:
   - libc6
-  - gettext
-  - libavahi-compat-libdnssd1
-  - libcurl4
-  - libedit2
-  - libicu72
-  - libkrb5-3
-  - libldap-2.5-0
-  - liblz4-1
-  - libnuma1
-  - libossp-uuid16
-  - libpam0g
-  - libperl5.36
-  - libpython3.11
+  - libstdc++6
+  - libgcc-s1
+  - libcom-err2
+  - llvm-14-runtime
   - libselinux1
-  - libssl3
-  - libsystemd0
+  - libavahi-compat-libdnssd1
   - liburing2
+  - libkeyutils1
+  - libgmp10
+  - libnuma1
+  - libicu72
+  - libidn2-0
+  - libunistring2
+  - libp11-kit0
+  - libsasl2-2
+  - libgnutls30
+  - libtasn1-6
+  - libnettle8
+  - libhogweed6
+  - libssl3
   - libxml2
   - libxslt1.1
+  - libedit2
   - libzstd1
-  - llvm-14-runtime
-  - tcl
-  - libuuid1
   - zlib1g
+  - liblz4-1
+  - libuuid1
+  - libossp-uuid16
+  - libpam0g
+  - libcurl4
+  - gettext
+  - libsystemd0
+  - libldap-2.5-0
+  - libkrb5-3
+  - libkrb5support0
+  - libk5crypto3
+  - libgssapi-krb5-2
+  - libperl5.36
+  - libpython3.11
+  - tcl
