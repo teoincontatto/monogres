@@ -167,6 +167,12 @@ PG_EXTENSIONS = [
     for ext, patches in PG_EXTENSIONS
 ]
 
+apt.install(
+    name = "pg_deps_debian12",
+    manifest = "//postgres:deps_debian12.yaml",
+    nolock = True,
+)
+use_repo(apt, "pg_deps_debian12")
 apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
 apt.install(
     name = "pgext_sslutils_deps_debian12",
