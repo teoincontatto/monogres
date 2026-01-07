@@ -5,7 +5,7 @@ Postgres build configuration.
 load("@pg_src//:repo.bzl", "DEFAULT_VERSION", "METADATA", "REPO_NAME", "VERSIONS")
 load(":build_options.bzl", "DEFAULT_OPTION_SET", "OPTION_SETS", "build_options")
 
-def _target(name, version, option_set, repo_name):
+def _target(name, version, option_set, repo_name, dependencies):
     """
     Creates a struct representing a Postgres build target.
 
@@ -18,6 +18,7 @@ def _target(name, version, option_set, repo_name):
             options.
         repo_name (str): The name of the external Bazel repository with the
             Postgres source code.
+        dependencies (list[str]): List of Postgres dependencies.
 
     Returns:
         A `pg_target` `struct`:
@@ -57,9 +58,10 @@ def _target(name, version, option_set, repo_name):
         auto_features = auto_features,
         pg_src = "@%s//%s" % (repo_name, version),
         pg_version = pg_version,
+        dependencies = dependencies,
     )
 
-def _new(name, versions, option_sets, repo_name):
+def _new(name, versions, option_sets, repo_name, dependencies):
     """
     Creates a config `struct` containing build targets for multiple Postgres versions.
 
@@ -71,6 +73,7 @@ def _new(name, versions, option_sets, repo_name):
             compile-time options.
         repo_name (str): The name of the external Bazel repository with the
             Postgres source code.
+        dependencies (list[str]): List of Postgres dependencies.
 
     Returns:
         A config `struct` with:
@@ -83,7 +86,7 @@ def _new(name, versions, option_sets, repo_name):
 
     for version in versions:
         for option_set in option_sets:
-            target = _target(name, version, option_set, repo_name)
+            target = _target(name, version, option_set, repo_name, dependencies)
 
             if (
                 version == DEFAULT_VERSION and
