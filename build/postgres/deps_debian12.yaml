@@ -8,11 +8,11 @@
 version: 1
 sources:
   - channel: bookworm main
-    url: https://snapshot-cloudflare.debian.org/archive/debian/20240210T223313Z
+    url: https://snapshot-cloudflare.debian.org/archive/debian/20250113T000000Z
   - channel: bookworm-security main
-    url: https://snapshot-cloudflare.debian.org/archive/debian-security/20240210T223313Z
+    url: https://snapshot-cloudflare.debian.org/archive/debian-security/20250113T000000Z
   - channel: bookworm-updates main
-    url: https://snapshot-cloudflare.debian.org/archive/debian/20240210T223313Z/
+    url: https://snapshot-cloudflare.debian.org/archive/debian/20250113T000000Z
 archs:
   - amd64
   - arm64
@@ -22,12 +22,20 @@ packages:
   - libgcc-s1
   - libcom-err2
   - llvm-14-runtime
+  - libllvm14
+  - libffi8
+  - libgomp1
+  - libcap2
+  - libcap-ng0
   - libselinux1
   - libavahi-compat-libdnssd1
+  - libavahi-client3
+  - libavahi-common3
   - liburing2
   - libkeyutils1
   - libgmp10
   - libnuma1
+  - tzdata
   - libicu72
   - libidn2-0
   - libunistring2
@@ -38,23 +46,46 @@ packages:
   - libnettle8
   - libhogweed6
   - libssl3
+  - libcrypt1
+  - libgcrypt20
+  - libgpg-error0
+  - libmd0
+  - libaudit1
+  - libpsl5
+  - libacl1
+  - libattr1
   - libxml2
   - libxslt1.1
+  - libexpat1
   - libedit2
   - libzstd1
   - zlib1g
+  - libz3-4
   - liblz4-1
+  - libbz2-1.0
+  - libbrotli1
+  - liblzma5
   - libuuid1
   - libossp-uuid16
   - libpam0g
   - libcurl4
+  - libnghttp2-14
+  - librtmp1
   - gettext
-  - libsystemd0
+  - libelogind0
   - libldap-2.5-0
   - libkrb5-3
   - libkrb5support0
   - libk5crypto3
   - libgssapi-krb5-2
+  - libtinfo6
+  - libbsd0
+  - libdb5.3
+  - libgdbm6
+  - libgdbm-compat4
+  - libdbus-1-3
   - libperl5.36
   - libpython3.11
   - tcl
+  - libtcl8.6
+  - libssh2-1
