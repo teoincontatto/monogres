@@ -180,6 +180,7 @@ CFG = cfg.new(
         "@pg_deps_debian12//libgdbm-compat4",
         "@pg_deps_debian12//libdbus-1-3",
         "@pg_deps_debian12//libperl5.36",
+        "@pg_deps_debian12//libpcre2-8-0",
         "@pg_deps_debian12//libpython3.11",
         "@pg_deps_debian12//tcl",
         "@pg_deps_debian12//libtcl8.6",
