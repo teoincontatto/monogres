@@ -226,16 +226,11 @@ def pg_build_all(name, cfg):
         cfg (struct): A Postgres config struct (see `cfg.new(...)`).
     """
     for target in cfg.targets:
-        for dep in target.dependencies:
+        for dep in set(target.buildtime_dependencies + target.runtime_dependencies):
             dep_name = dep.split("//")[-1]
             native.alias(
                 name = "%s--%s" % (target.name, dep_name),
                 actual = dep,
-                visibility = ["//visibility:public"],
-            )
-            native.alias(
-                name = "%s--%s--data" % (target.name, dep_name),
-                actual = "%s:data" % dep,
                 visibility = ["//visibility:public"],
             )
         pg_build(

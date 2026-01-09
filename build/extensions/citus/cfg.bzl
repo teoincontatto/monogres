@@ -11,8 +11,11 @@ CFG = cfg.new(
     versions = VERSIONS,
     pg_targets = PG_CFG.targets,
     repo_name = REPO_NAME,
-    dependencies = [
+    buildtime_dependencies = [
         "@pgext_citus_deps_debian12//libcurl4-openssl-dev",
+    ],
+    runtime_dependencies = [
+        "@pgext_citus_deps_debian12//libcurl4",
     ],
     metadata = METADATA,
 )

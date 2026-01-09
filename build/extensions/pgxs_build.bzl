@@ -298,20 +298,15 @@ def pgxs_build_all(name, cfg):
         pgxs_build(
             name = target.name,
             pgxs_src = target.pgxs_src,
-            dependencies = target.dependencies,
+            dependencies = target.buildtime_dependencies,
             pg_version = target.pg_version,
         )
 
-        for dep in target.dependencies:
+        for dep in set(target.buildtime_dependencies + target.runtime_dependencies):
             dep_name = dep.split("//")[-1]
             native.alias(
                 name = "%s--%s" % (target.name, dep_name),
                 actual = dep,
-                visibility = ["//visibility:public"],
-            )
-            native.alias(
-                name = "%s--%s--data" % (target.name, dep_name),
-                actual = "%s:data" % dep,
                 visibility = ["//visibility:public"],
             )
 
