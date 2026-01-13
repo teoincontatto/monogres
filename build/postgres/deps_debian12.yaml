@@ -21,7 +21,6 @@ packages:
 
   # buildtime
   - libavahi-compat-libdnssd-dev
-  - libcurl4-openssl-dev
   - libedit-dev
   - libeditreadline-dev
   - libicu-dev
@@ -44,8 +43,8 @@ packages:
   - tcl-dev
   - uuid-dev
   - zlib1g-dev
+  - libcurl4-openssl-dev
   # runtime
-  - libcurl4
   - libavahi-compat-libdnssd1
   - libedit2
   - libicu72
@@ -68,53 +67,4 @@ packages:
   - tcl
   - libuuid1
   - zlib1g
-  # runtime transitive
-  - libstdc++6
-  - libgcc-s1
-  - libcom-err2
-  - libllvm14
-  - libffi8
-  - libgomp1
-  - libcap2
-  - libcap-ng0
-  - libavahi-client3
-  - libavahi-common3
-  - libkeyutils1
-  - libgmp10
-  - tzdata
-  - libidn2-0
-  - libunistring2
-  - libp11-kit0
-  - libsasl2-2
-  - libgnutls30
-  - libtasn1-6
-  - libnettle8
-  - libhogweed6
-  - libcrypt1
-  - libgcrypt20
-  - libgpg-error0
-  - libmd0
-  - libaudit1
-  - libpsl5
-  - libacl1
-  - libattr1
-  - libexpat1
-  - libz3-4
-  - libbz2-1.0
-  - libbrotli1
-  - liblzma5
-  - libnghttp2-14
-  - librtmp1
-  - libelogind0
-  - libkrb5support0
-  - libk5crypto3
-  - libgssapi-krb5-2
-  - libtinfo6
-  - libbsd0
-  - libdb5.3
-  - libgdbm6
-  - libgdbm-compat4
-  - libdbus-1-3
-  - libpcre2-8-0
-  - libtcl8.6
-  - libssh2-1
+  - libcurl4
