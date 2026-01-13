@@ -45,31 +45,13 @@ DEPS_NON_HERMETIC_BAZEL_RULES = \
 	xz-utils
 
 DEPS_POSTGRES = \
-	gettext \
-	libavahi-compat-libdnssd-dev \
-	libcurl4-openssl-dev \
-	libedit-dev \
-	libeditreadline-dev \
-	libicu-dev \
-	libkrb5-dev \
-	libldap-dev \
-	liblz4-dev \
-	libnuma-dev \
-	libossp-uuid-dev \
-	libpam0g-dev \
-	libperl-dev \
-	libpython3-dev \
-	libselinux1-dev \
-	libssl-dev \
-	libsystemd-dev \
-	liburing-dev \
-	libxml2-dev \
-	libxslt1-dev \
-	libzstd-dev \
-	llvm-14-dev \
-	tcl-dev \
-	uuid-dev \
-	zlib1g-dev
+  $(shell find .. -name deps_debian12.yaml \
+			| xargs -n 1 grep '^packages:' -A 1000000 \
+			| grep '  - ' \
+			| cut -d '-' -f 2- \
+			| tr -d ' "'"'" \
+			| sort \
+			| uniq)
 
 all:
 	@echo $(REPO)
