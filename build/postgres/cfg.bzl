@@ -146,7 +146,6 @@ CFG = cfg.new(
         "@pg_deps_debian12//gettext",
         "@pg_deps_debian12//libavahi-compat-libdnssd1",
         "@pg_deps_debian12//libedit2",
-        "@pg_deps_debian12//libattr1",
         "@pg_deps_debian12//libicu72",
         "@pg_deps_debian12//libkrb5-3",
         "@pg_deps_debian12//libldap-2.5-0",
