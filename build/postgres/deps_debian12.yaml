@@ -17,10 +17,12 @@ archs:
   - amd64
   - arm64
 packages:
+  # common
   - gettext
 
   # buildtime
   - libavahi-compat-libdnssd-dev
+  - libcurl4-openssl-dev
   - libedit-dev
   - libeditreadline-dev
   - libicu-dev
@@ -43,9 +45,10 @@ packages:
   - tcl-dev
   - uuid-dev
   - zlib1g-dev
-  - libcurl4-openssl-dev
+
   # runtime
   - libavahi-compat-libdnssd1
+  - libcurl4
   - libedit2
   - libicu72
   - libkrb5-3
@@ -60,11 +63,11 @@ packages:
   - libssl3
   - libsystemd0
   - liburing2
+  - libuuid1
   - libxml2
   - libxslt1.1
   - libzstd1
   - llvm-14-runtime
+  - ncurses-term
   - tcl
-  - libuuid1
   - zlib1g
-  - libcurl4
