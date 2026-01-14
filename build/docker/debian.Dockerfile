@@ -2,23 +2,23 @@ ARG BASE_IMAGE=debian
 ARG BASE_IMAGE_TAG=stable-slim
 FROM $BASE_IMAGE:$BASE_IMAGE_TAG AS debian
 
-ARG TARGETOS
-ARG TARGETARCH
+    ARG TARGETOS
+    ARG TARGETARCH
 
-ARG REPRODUCIBLE_CONTAINERS_VERSION
+    ARG REPRODUCIBLE_CONTAINERS_VERSION
 
-ADD --chmod=0755 \
-    https://raw.githubusercontent.com/reproducible-containers/repro-sources-list.sh/refs/tags/v${REPRODUCIBLE_CONTAINERS_VERSION}/repro-sources-list.sh \
-    /usr/local/bin
+    ADD --chmod=0755 \
+        https://raw.githubusercontent.com/reproducible-containers/repro-sources-list.sh/refs/tags/v${REPRODUCIBLE_CONTAINERS_VERSION}/repro-sources-list.sh \
+        /usr/local/bin
 
-ENV DEBIAN_FRONTEND=noninteractive
+    ENV DEBIAN_FRONTEND=noninteractive
 
-RUN \
-    --mount=type=cache,target=/var/cache/apt,sharing=locked \
-    --mount=type=cache,target=/var/lib/apt,sharing=locked \
-    KEEP_CACHE=1 /usr/local/bin/repro-sources-list.sh
+    RUN \
+        --mount=type=cache,target=/var/cache/apt,sharing=locked \
+        --mount=type=cache,target=/var/lib/apt,sharing=locked \
+        KEEP_CACHE=1 /usr/local/bin/repro-sources-list.sh
 
-ENV APT_INSTALL='\
+    ENV APT_INSTALL='\
 set -euxo pipefail; \
 \
 apt_install() { \
@@ -34,34 +34,34 @@ apt_install() { \
 }; \
 '
 
-# install ca-certificates for SSL cert verification
-RUN /bin/bash <<EOF
+    # install ca-certificates for SSL cert verification
+    RUN /bin/bash <<EOF
 $APT_INSTALL
 apt_install ca-certificates
 EOF
 
-# install bazelisk
-ARG BAZELISK_VERSION
-ADD --chmod=755 \
-    https://github.com/bazelbuild/bazelisk/releases/download/v${BAZELISK_VERSION}/bazelisk-${TARGETOS}-${TARGETARCH} \
-    /usr/bin
-RUN ln -s /usr/bin/bazelisk-${TARGETOS}-${TARGETARCH} /usr/bin/bazel
+    # install bazelisk
+    ARG BAZELISK_VERSION
+    ADD --chmod=755 \
+        https://github.com/bazelbuild/bazelisk/releases/download/v${BAZELISK_VERSION}/bazelisk-${TARGETOS}-${TARGETARCH} \
+        /usr/bin
+    RUN ln -s /usr/bin/bazelisk-${TARGETOS}-${TARGETARCH} /usr/bin/bazel
 
-# bazel dependencies: git_override
-RUN /bin/bash <<EOF
+    # bazel dependencies: git_override
+    RUN /bin/bash <<EOF
 $APT_INSTALL
 apt_install git
 EOF
 
-# allow to create a non-root user
-# (rules_python notoriously fails when running as root)
-ARG USERNAME=nonroot
-ARG HOMEDIR=/home/$USERNAME
+    # allow to create a non-root user
+    # (rules_python notoriously fails when running as root)
+    ARG USERNAME=nonroot
+    ARG HOMEDIR=/home/$USERNAME
 
-ENV USERNAME=$USERNAME
-ENV HOMEDIR=$HOMEDIR
+    ENV USERNAME=$USERNAME
+    ENV HOMEDIR=$HOMEDIR
 
-RUN /bin/bash <<EOF
+    RUN /bin/bash <<EOF
 set -euxo pipefail
 
 [[ "$USERNAME" != "root" ]] && useradd \
@@ -71,17 +71,17 @@ set -euxo pipefail
     $USERNAME
 EOF
 
-USER $USERNAME
+    USER $USERNAME
 
-# install bazel: running bazel --version triggers Bazelisk to download Bazel
-ARG BAZEL_VERSION
-ARG USE_BAZEL_VERSION=$BAZEL_VERSION
+    # install bazel: running bazel --version triggers Bazelisk to download Bazel
+    ARG BAZEL_VERSION
+    ARG USE_BAZEL_VERSION=$BAZEL_VERSION
 
-USER root
-RUN /usr/bin/bazel --version
+    USER root
+    RUN /usr/bin/bazel --version
 
-USER $USERNAME
-RUN /bin/bash <<EOF
+    USER $USERNAME
+    RUN /bin/bash <<EOF
 set -euxo pipefail
 
 [[ "$USERNAME" != "root" ]] && /usr/bin/bazel --version
@@ -90,66 +90,84 @@ EOF
 
 FROM debian AS debian-rbe
 
-USER root
+    USER root
 
-ARG DEPS_CC_TOOLCHAIN
-ENV DEPS_CC_TOOLCHAIN="$DEPS_CC_TOOLCHAIN"
+    ARG DEPS_CC_TOOLCHAIN
+    ENV DEPS_CC_TOOLCHAIN="$DEPS_CC_TOOLCHAIN"
 
-# install dependencies for CC toolchain
-RUN /bin/bash <<EOF
+    # install dependencies for CC toolchain
+    RUN /bin/bash <<EOF
 $APT_INSTALL
 apt_install $DEPS_CC_TOOLCHAIN
 EOF
 
-ARG DEPS_NON_HERMETIC_BAZEL_RULES
-ENV DEPS_NON_HERMETIC_BAZEL_RULES="$DEPS_NON_HERMETIC_BAZEL_RULES"
+    ARG DEPS_NON_HERMETIC_BAZEL_RULES
+    ENV DEPS_NON_HERMETIC_BAZEL_RULES="$DEPS_NON_HERMETIC_BAZEL_RULES"
 
-# install dependencies for non-hermetic bazel rules
-RUN /bin/bash <<EOF
+    # install dependencies for non-hermetic bazel rules
+    RUN /bin/bash <<EOF
 if [[ ! -z "$DEPS_NON_HERMETIC_BAZEL_RULES" ]]; then
     $APT_INSTALL
     apt_install $DEPS_NON_HERMETIC_BAZEL_RULES
 fi
 EOF
 
-USER $USERNAME
+    USER $USERNAME
 
+FROM debian-rbe AS debian-rbe-monogres
+
+    USER root
+
+    COPY . /monogres
+    WORKDIR /monogres
+
+    # Postgres dependencies
+    RUN /bin/bash <<EOF
+bazel query ... 2>/dev/null \
+    | grep -F '~~buildtime-dependencies' \
+    | xargs -I @TARGET bazel build @TARGET 2>&1 \
+    | grep -F '_buildtime_dependencies.txt' \
+    | xargs cat | sort | uniq > /tmp/dependencies
+EOF
+
+    USER $USERNAME
 
 FROM debian-rbe AS debian-rbe-pgdeps
 
-USER root
+    COPY --from=debian-rbe-monogres /tmp/dependencies /etc/dependencies
 
-ARG DEPS_POSTGRES
-ENV DEPS_POSTGRES="$DEPS_POSTGRES"
+    USER root
 
-# Postgres dependencies
-RUN /bin/bash <<EOF
+    # Postgres dependencies
+    RUN /bin/bash <<EOF
 $APT_INSTALL
+DEPS_POSTGRES="$(cat /etc/dependencies)"
+echo "apt install $DEPS_POSTGRES"
+sleep 10
 apt_install $DEPS_POSTGRES
 EOF
 
-USER $USERNAME
-
+    USER $USERNAME
 
 FROM debian-rbe-pgdeps AS debian-debug
 
-USER root
+    USER root
 
-# install other tools
-RUN /bin/bash <<EOF
+    # install other tools
+    RUN /bin/bash <<EOF
 $APT_INSTALL
 apt_install vim curl grep less file tree bsdextrautils
 EOF
 
-# setup bash autocompletion
-RUN /bin/bash <<EOF
+    # setup bash autocompletion
+    RUN /bin/bash <<EOF
 $APT_INSTALL
 apt_install bash-completion
 EOF
 
-USER $USERNAME
+    USER $USERNAME
 
-RUN /bin/bash <<EOF
+    RUN /bin/bash <<EOF
 set -euxo pipefail
 
 if [[ "$(whoami)" == "root" ]]; then
@@ -163,15 +181,15 @@ EOT
 fi
 EOF
 
-WORKDIR $HOMEDIR/.local/share/bazel-completion
+    WORKDIR $HOMEDIR/.local/share/bazel-completion
 
-# setup bazel autocompletion
-ADD --chown=$USERNAME:$USERNAME \
-    https://raw.githubusercontent.com/bazelbuild/bazel/$BAZEL_VERSION/scripts/bazel-complete-header.bash .
-ADD --chown=$USERNAME:$USERNAME \
-    https://raw.githubusercontent.com/bazelbuild/bazel/$BAZEL_VERSION/scripts/bazel-complete-template.bash .
+    # setup bazel autocompletion
+    ADD --chown=$USERNAME:$USERNAME \
+        https://raw.githubusercontent.com/bazelbuild/bazel/$BAZEL_VERSION/scripts/bazel-complete-header.bash .
+    ADD --chown=$USERNAME:$USERNAME \
+        https://raw.githubusercontent.com/bazelbuild/bazel/$BAZEL_VERSION/scripts/bazel-complete-template.bash .
 
-RUN /bin/bash <<EOF
+    RUN /bin/bash <<EOF
 set -euxo pipefail
 
 echo -e '\n# Bazelisk bazel autocompletion hack:' >> ~/.bashrc
@@ -183,8 +201,8 @@ echo "source ~/.local/share/bazel-completion/bazel-complete-template.bash" >> ~/
 echo "source ~/.local/share/bazel-completion/bazel-help-completion.bash" >> ~/.bashrc
 EOF
 
-# misc
-RUN /bin/bash <<EOF
+    # misc
+    RUN /bin/bash <<EOF
 set -euxo pipefail
 
 if [[ "$(whoami)" == "root" ]]; then

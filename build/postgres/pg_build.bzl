@@ -171,7 +171,15 @@ def _pg_build_introspect(name, pg_src, build_options, auto_features):
         tags = ["manual"],
     )
 
-def pg_build(name, pg_src, build_options, auto_features, pg_version = None):
+def pg_build(
+        name,
+        pg_src,
+        build_options,
+        auto_features,
+        buildtime_dependencies,
+        runtime_dependencies,
+        pg_version = None,
+        debug = False):
     """
     Generates a Bazel target to build Postgres with the Meson build system.
 
@@ -195,13 +203,71 @@ def pg_build(name, pg_src, build_options, auto_features, pg_version = None):
             `--auto-features`](https://www.postgresql.org/docs/current/install-meson.html#CONFIGURE-AUTO-FEATURES-MESON)
             and [Meson Build Options
             "Features"](https://mesonbuild.com/Build-options.html#features).
+        buildtime_dependencies (list[str]): The list of dependencies to build postgres.
+        runtime_dependencies (list[str]): The list of dependencies to run postgres.
         pg_version (struct): Optional `struct` that contains the Postgres name
             and version that will be the default target.
+        debug (bool): Optional flag to enable debug.
     """
     _pg_build_meson(name, pg_src, build_options, auto_features)
     _pg_build_introspect(name, pg_src, build_options, auto_features)
 
     if pg_version:
+        buildtime_dependencies_file = "%s_buildtime_dependencies.txt" % pg_version.name
+        runtime_dependencies_file = "%s_runtime_dependencies.txt" % pg_version.name
+        dependencies_script_template = """
+        output_dependencies() {{
+            local dependencies=("$$@");
+            for dep in "$${{dependencies[@]}}"; do
+                echo "$$dep"
+            done
+        }}
+
+        trap errors ERR
+
+        DEBUG="{debug}"
+        [ "$$DEBUG" != True ] || set -x
+
+        # =================================================================== #
+
+        export EXT_BUILD_ROOT="$$PWD"
+
+        DEPENDENCIES_FILE="$$EXT_BUILD_ROOT/{dependencies_file}"
+        DEPENDENCIES=({dependencies})
+
+        {{
+            output_dependencies "$${{DEPENDENCIES[@]}}" > "$$DEPENDENCIES_FILE"
+        }}
+        """
+        native.genrule(
+            name = "%s~~buildtime-dependencies" % pg_version.name,
+            srcs = buildtime_dependencies,
+            outs = [ buildtime_dependencies_file ],
+            cmd = dependencies_script_template.format(
+                dependencies_file = "$(locations %s)" % buildtime_dependencies_file,
+                dependencies = " ".join([
+                    dependency.split("//")[1]
+                    for dependency in buildtime_dependencies
+                ]),
+                debug = "%s" % debug,
+            ),
+            visibility = ["//visibility:public"],
+        )
+        native.genrule(
+            name = "%s~~runtime-dependencies" % pg_version.name,
+            srcs = runtime_dependencies,
+            outs = [ runtime_dependencies_file ],
+            cmd = dependencies_script_template.format(
+                dependencies_file = "$(locations %s)" % runtime_dependencies_file,
+                dependencies = " ".join([
+                    dependency.split("//")[1]
+                    for dependency in runtime_dependencies
+                ]),
+                debug = "%s" % debug,
+            ),
+            visibility = ["//visibility:public"],
+        )
+
         native.alias(
             name = pg_version.name,
             actual = name,
@@ -239,6 +305,8 @@ def pg_build_all(name, cfg):
             build_options = target.build_options,
             auto_features = target.auto_features,
             pg_version = target.pg_version,
+            buildtime_dependencies = target.buildtime_dependencies,
+            runtime_dependencies = target.runtime_dependencies,
         )
 
     native.alias(

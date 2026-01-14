@@ -2,7 +2,7 @@
 Rules to build Postgres PGXS extensions from source.
 """
 
-def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False):
+def pgxs_build(name, pgxs_src, buildtime_dependencies, runtime_dependencies, pg_version, debug = False):
     """
     Generates a Bazel target to build a PGXS extension with the [PGXS build system].
 
@@ -19,12 +19,67 @@ def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False):
     """
     tar_file, log_file = ["%s%s" % (name, file) for file in (".tar", ".log")]
 
+    buildtime_dependencies_file = "%s_buildtime_dependencies.txt" % pg_version.name
+    runtime_dependencies_file = "%s_runtime_dependencies.txt" % pg_version.name
+    dependencies_script_template = """
+    output_dependencies() {{
+        local dependencies=("$$@");
+        for dep in "$${{dependencies[@]}}"; do
+            echo "$$dep"
+        done
+    }}
+
+    trap errors ERR
+
+    DEBUG="{debug}"
+    [ "$$DEBUG" != True ] || set -x
+
+    # =================================================================== #
+
+    export EXT_BUILD_ROOT="$$PWD"
+
+    DEPENDENCIES_FILE="$$EXT_BUILD_ROOT/{dependencies_file}"
+    DEPENDENCIES=({dependencies})
+
+    {{
+        output_dependencies "$${{DEPENDENCIES[@]}}" > "$$DEPENDENCIES_FILE"
+    }}
+    """
+    native.genrule(
+        name = "%s~~buildtime-dependencies" % name,
+        srcs = buildtime_dependencies,
+        outs = [ buildtime_dependencies_file ],
+        cmd = dependencies_script_template.format(
+            dependencies_file = "$(locations %s)" % buildtime_dependencies_file,
+            dependencies = " ".join([
+                dependency.split("//")[1]
+                for dependency in buildtime_dependencies
+            ]),
+            debug = "%s" % debug,
+        ),
+        visibility = ["//visibility:public"],
+    )
+    native.genrule(
+        name = "%s~~runtime-dependencies" % name,
+        srcs = runtime_dependencies,
+        outs = [ runtime_dependencies_file ],
+        cmd = dependencies_script_template.format(
+            dependencies_file = "$(locations %s)" % runtime_dependencies_file,
+            dependencies = " ".join([
+                dependency.split("//")[1]
+                for dependency in runtime_dependencies
+            ]),
+            debug = "%s" % debug,
+        ),
+        visibility = ["//visibility:public"],
+    )
+
     native.genrule(
         name = name,
         srcs = [
             "//postgres:%s" % pg_version.name,
             pgxs_src,
-        ] + dependencies,
+        ] + buildtime_dependencies,
         outs = [tar_file, log_file],
         cmd = """
         tar_() {{
@@ -265,7 +320,7 @@ def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False):
             pgxs_src = "$(locations %s)" % pgxs_src,
             dependencies = " ".join([
                 "$(locations %s)" % dependency
-                for dependency in dependencies
+                for dependency in buildtime_dependencies
             ]),
             debug = "%s" % debug,
         ),
@@ -298,7 +353,8 @@ def pgxs_build_all(name, cfg):
         pgxs_build(
             name = target.name,
             pgxs_src = target.pgxs_src,
-            dependencies = target.buildtime_dependencies,
+            buildtime_dependencies = target.buildtime_dependencies,
+            runtime_dependencies = target.runtime_dependencies,
             pg_version = target.pg_version,
         )
 

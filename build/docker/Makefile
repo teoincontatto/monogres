@@ -44,15 +44,6 @@ DEPS_CC_TOOLCHAIN = \
 DEPS_NON_HERMETIC_BAZEL_RULES = \
 	xz-utils
 
-DEPS_POSTGRES = \
-  $(shell find .. -name deps_debian12.yaml \
-			| xargs -n 1 grep '^packages:' -A 1000000 \
-			| grep '  - ' \
-			| cut -d '-' -f 2- \
-			| tr -d ' "'"'" \
-			| sort \
-			| uniq)
-
 all:
 	@echo $(REPO)
 	@echo "Run make gen-image to generate $(TARGET) image and "
@@ -124,13 +115,12 @@ $(DOCKER_TARGET_LOCK): $(DOCKERFILE).Dockerfile $(MAKEFILE_LIST) $(REPO)/.bazelv
 		--build-arg BAZEL_VERSION="$(BAZEL_VERSION)" \
 		--build-arg DEPS_CC_TOOLCHAIN="$(DEPS_CC_TOOLCHAIN)" \
 		--build-arg DEPS_NON_HERMETIC_BAZEL_RULES="$(DEPS_NON_HERMETIC_BAZEL_RULES)" \
-		--build-arg DEPS_POSTGRES="$(DEPS_POSTGRES)" \
 		--build-arg USERNAME="$(USERNAME)" \
 		--build-arg HOMEDIR="/$(USERNAME)" \
 		--label org.opencontainers.image.source="$(GH_REPO_URL)" \
 		--target "$(DOCKER_TARGET)" \
 		--tag "$(IMAGE_NAME)" \
-		. && \
+		.. && \
 	$(DOCKER) image tag $(IMAGE_NAME) $(TAG) && \
 	touch "$@"
 
