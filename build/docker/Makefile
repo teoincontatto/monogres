@@ -35,41 +35,19 @@ REPRODUCIBLE_CONTAINERS_VERSION ?= 0.1.4
 # https://github.com/bazelbuild/bazelisk
 BAZELISK_VERSION ?= 1.27.0
 
-DEPS_CC_TOOLCHAIN = \
-	llvm-14 clang-14 lld-14 \
-	libclang-rt-14-dev libc++-14-dev libc++abi-14-dev \
-	libc6-dev
-
 # rules_distroless: xz-utils
+# toolchains_llvm: clang-14, llvm-14, lld-14, libc6-dev, and runtime libraries
 DEPS_NON_HERMETIC_BAZEL_RULES = \
-	xz-utils
-
-DEPS_POSTGRES = \
-	gettext \
-	libavahi-compat-libdnssd-dev \
-	libcurl4-openssl-dev \
-	libedit-dev \
-	libeditreadline-dev \
-	libicu-dev \
-	libkrb5-dev \
-	libldap-dev \
-	liblz4-dev \
-	libnuma-dev \
-	libossp-uuid-dev \
-	libpam0g-dev \
-	libperl-dev \
-	libpython3-dev \
-	libselinux1-dev \
-	libssl-dev \
-	libsystemd-dev \
-	liburing-dev \
-	libxml2-dev \
-	libxslt1-dev \
-	libzstd-dev \
+	clang-14 \
+	libc++-14-dev \
+	libc++abi-14-dev \
+	libc6-dev \
+	libclang-rt-14-dev \
+	libunwind-14-dev \
+	lld-14 \
+	llvm-14 \
 	llvm-14-dev \
-	tcl-dev \
-	uuid-dev \
-	zlib1g-dev
+	xz-utils
 
 all:
 	@echo $(REPO)
@@ -140,9 +118,7 @@ $(DOCKER_TARGET_LOCK): $(DOCKERFILE).Dockerfile $(MAKEFILE_LIST) $(REPO)/.bazelv
 		--build-arg REPRODUCIBLE_CONTAINERS_VERSION="$(REPRODUCIBLE_CONTAINERS_VERSION)" \
 		--build-arg BAZELISK_VERSION="$(BAZELISK_VERSION)" \
 		--build-arg BAZEL_VERSION="$(BAZEL_VERSION)" \
-		--build-arg DEPS_CC_TOOLCHAIN="$(DEPS_CC_TOOLCHAIN)" \
 		--build-arg DEPS_NON_HERMETIC_BAZEL_RULES="$(DEPS_NON_HERMETIC_BAZEL_RULES)" \
-		--build-arg DEPS_POSTGRES="$(DEPS_POSTGRES)" \
 		--build-arg USERNAME="$(USERNAME)" \
 		--build-arg HOMEDIR="/$(USERNAME)" \
 		--label org.opencontainers.image.source="$(GH_REPO_URL)" \

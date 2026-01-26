@@ -119,6 +119,7 @@ CFG = cfg.new(
     buildtime_dependencies = [
         "@pg_deps_debian12//gettext",
         "@pg_deps_debian12//libavahi-compat-libdnssd-dev",
+        "@pg_deps_debian12//libcurl4-openssl-dev",
         "@pg_deps_debian12//libedit-dev",
         "@pg_deps_debian12//libeditreadline-dev",
         "@pg_deps_debian12//libicu-dev",

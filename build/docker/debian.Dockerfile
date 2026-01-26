@@ -92,15 +92,6 @@ FROM debian AS debian-rbe
 
 USER root
 
-ARG DEPS_CC_TOOLCHAIN
-ENV DEPS_CC_TOOLCHAIN="$DEPS_CC_TOOLCHAIN"
-
-# install dependencies for CC toolchain
-RUN /bin/bash <<EOF
-$APT_INSTALL
-apt_install $DEPS_CC_TOOLCHAIN
-EOF
-
 ARG DEPS_NON_HERMETIC_BAZEL_RULES
 ENV DEPS_NON_HERMETIC_BAZEL_RULES="$DEPS_NON_HERMETIC_BAZEL_RULES"
 
@@ -114,24 +105,7 @@ EOF
 
 USER $USERNAME
 
-
-FROM debian-rbe AS debian-rbe-pgdeps
-
-USER root
-
-ARG DEPS_POSTGRES
-ENV DEPS_POSTGRES="$DEPS_POSTGRES"
-
-# Postgres dependencies
-RUN /bin/bash <<EOF
-$APT_INSTALL
-apt_install $DEPS_POSTGRES
-EOF
-
-USER $USERNAME
-
-
-FROM debian-rbe-pgdeps AS debian-debug
+FROM debian-rbe AS debian-debug
 
 USER root
 

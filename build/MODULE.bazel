@@ -45,36 +45,24 @@ archive_override(
 )
 
 # toolchains/
+# Use system LLVM toolchain installed in the Docker image.
+# This requires llvm-14, clang-14, lld-14, and libc6-dev to be installed.
+# absolute_paths=True is needed because the system toolchain uses absolute paths
+# for builtin headers (/usr/lib/llvm-14/lib/clang/14.0.6/include/).
 llvm = use_extension("@toolchains_llvm//toolchain/extensions:llvm.bzl", "llvm", dev_dependency = True)
 llvm.toolchain(
-    name = "llvm_toolchain_system_linux_amd64",
-    exec_arch = "amd64",
-    exec_os = "linux",
+    name = "llvm_toolchain",
     llvm_version = "14.0.6",
+    absolute_paths = True,
 )
 llvm.toolchain_root(
-    name = "llvm_toolchain_system_linux_amd64",
+    name = "llvm_toolchain",
     path = "/usr/lib/llvm-14",
 )
-llvm.toolchain(
-    name = "llvm_toolchain_system_linux_arm64",
-    exec_arch = "arm64",
-    exec_os = "linux",
-    llvm_version = "14.0.6",
-)
-llvm.toolchain_root(
-    name = "llvm_toolchain_system_linux_arm64",
-    path = "/usr/lib/llvm-14",
-)
-use_repo(llvm, "llvm_toolchain_system_linux_amd64", "llvm_toolchain_system_linux_arm64")
+use_repo(llvm, "llvm_toolchain")
 
 register_toolchains(
-    "@llvm_toolchain_system_linux_arm64//:all",
-    dev_dependency = True,
-)
-
-register_toolchains(
-    "@llvm_toolchain_system_linux_amd64//:all",
+    "@llvm_toolchain//:all",
     dev_dependency = True,
 )
 

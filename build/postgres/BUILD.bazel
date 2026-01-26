@@ -9,6 +9,7 @@ exports_files([
     "build_options.bzl",
     "cfg.bzl",
     "pg_build.bzl",
+    "sysroot.bzl",
     "toolchain.bzl",
 ])
 
@@ -39,9 +40,15 @@ bzl_library(
 )
 
 bzl_library(
+    name = "sysroot",
+    srcs = ["sysroot.bzl"],
+)
+
+bzl_library(
     name = "pg_build",
     srcs = ["pg_build.bzl"],
     deps = [
+        ":sysroot",
         ":toolchain",
         "@protobuf//bazel:cc_proto_library_bzl",
         "@rules_foreign_cc//foreign_cc:meson",
