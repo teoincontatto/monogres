@@ -119,7 +119,6 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot_tarball = N
     if sysroot_tarball:
         # Add system LLVM bin directory first (for clang from Docker image)
         path_components.append("/usr/lib/llvm-14/bin")
-
         # Add sysroot bin directories for tools
         path_components.append("$$SYSROOT_DIR/usr/bin")  # msgfmt, etc.
         path_components.append("$$SYSROOT_DIR/usr/lib/llvm-14/bin")  # llvm-config

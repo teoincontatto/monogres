@@ -54,6 +54,7 @@ llvm.toolchain(
     name = "llvm_toolchain",
     absolute_paths = True,
     llvm_version = "14.0.6",
+    absolute_paths = True,
 )
 llvm.toolchain_root(
     name = "llvm_toolchain",
