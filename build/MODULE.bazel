@@ -52,8 +52,8 @@ archive_override(
 llvm = use_extension("@toolchains_llvm//toolchain/extensions:llvm.bzl", "llvm", dev_dependency = True)
 llvm.toolchain(
     name = "llvm_toolchain",
-    llvm_version = "14.0.6",
     absolute_paths = True,
+    llvm_version = "14.0.6",
 )
 llvm.toolchain_root(
     name = "llvm_toolchain",
@@ -142,6 +142,7 @@ PG_EXTENSIONS = [
         "citus",
         {
             "//extensions/citus/patches:0001-13.2.0-fix-hardcoded-cpp.patch": ">=13.2.0/*",
+            "//extensions/citus/patches:0002-13.2.0-fix-safestringlib-include-path.patch": ">=13.2.0/*",
         },
     ],
 ]
