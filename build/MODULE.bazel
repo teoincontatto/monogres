@@ -53,8 +53,8 @@ llvm = use_extension("@toolchains_llvm//toolchain/extensions:llvm.bzl", "llvm", 
 llvm.toolchain(
     name = "llvm_toolchain",
     absolute_paths = True,
-    llvm_version = "14.0.6",
     absolute_paths = True,
+    llvm_version = "14.0.6",
 )
 llvm.toolchain_root(
     name = "llvm_toolchain",
@@ -115,6 +115,9 @@ download_archives(
         "//postgres/patches:0004-16.0-feat-prefix_distro-option.patch": "*",
         "//postgres/patches:0005-16.0-hack-remove-execroot-from-CC.patch": "16.*/*",
         "//postgres/patches:0005-17.0-hack-remove-execroot-from-CC.patch": ">=17.*/*",
+        "//postgres/patches:0006-17.0-feat-contrib-option.patch": ">=17.0,<17.3/*",
+        "//postgres/patches:0006-17.3-feat-contrib-option.patch": ">=17.3,<18.0/*",
+        "//postgres/patches:0006-18.0-feat-contrib-option.patch": ">=18.0/*",
     },
     version_scheme = "pgver",
 )

@@ -5,7 +5,7 @@ Postgres build configuration.
 load("@pg_src//:repo.bzl", "DEFAULT_VERSION", "METADATA", "REPO_NAME", "VERSIONS")
 load(":build_options.bzl", "DEFAULT_OPTION_SET", "OPTION_SETS", "build_options")
 
-def _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies):
+def _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies, with_contrib = False):
     """
     Creates a struct representing a Postgres build target.
 
@@ -20,6 +20,8 @@ def _target(name, version, option_set, repo_name, buildtime_dependencies, runtim
             Postgres source code.
         buildtime_dependencies (list[str]): List of Postgres buildtime dependencies.
         runtime_dependencies (list[str]): List of Postgres runtime dependencies.
+        with_contrib (bool): If True, enable contrib extensions and use
+            "postgres-contrib" as the base name.
 
     Returns:
         A `pg_target` `struct`:
@@ -44,17 +46,31 @@ def _target(name, version, option_set, repo_name, buildtime_dependencies, runtim
         METADATA.get("build_options", {}),
     )
 
+    # Override contrib setting based on with_contrib flag
+    if with_contrib:
+        options = dict(options)
+        options.pop("contrib", None)  # Remove contrib=false, default is true
+        target_name = name + "-contrib"
+        extra_version_suffix = "-contrib"
+    else:
+        target_name = name
+        extra_version_suffix = ""
+
+    # Update extra_version to reflect contrib status
+    if "extra_version" in options:
+        options["extra_version"] = options["extra_version"] + extra_version_suffix
+
     pg_version = None
 
-    if option_set == "full":
-        # We want the "full" option_set to be the default Postgres target
+    if option_set == "full" and with_contrib:
+        # We want the "full" option_set with contrib to be the default Postgres target
         pg_version = struct(
-            name = "~".join((name, version)),
+            name = "~".join((target_name, version)),
             version = version,
         )
 
     return struct(
-        name = "~".join((name, version, option_set)),
+        name = "~".join((target_name, version, option_set)),
         version = version,
         option_set = option_set,
         build_options = options,
@@ -68,6 +84,10 @@ def _target(name, version, option_set, repo_name, buildtime_dependencies, runtim
 def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime_dependencies):
     """
     Creates a config `struct` containing build targets for multiple Postgres versions.
+
+    Generates two sets of targets:
+      - `postgres~<version>~<option_set>`: without contrib extensions
+      - `postgres-contrib~<version>~<option_set>`: with contrib extensions
 
     Args:
         name (str): A base name for the group of targets (e.g. "postgres").
@@ -91,15 +111,20 @@ def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime
 
     for version in versions:
         for option_set in option_sets:
-            target = _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies)
+            # Generate targets without contrib (postgres~<version>~<option_set>)
+            target = _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies, with_contrib = False)
+            targets.append(target)
+
+            # Generate targets with contrib (postgres-contrib~<version>~<option_set>)
+            target_contrib = _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies, with_contrib = True)
 
             if (
                 version == DEFAULT_VERSION and
                 option_set == DEFAULT_OPTION_SET
             ):
-                default_target = target
+                default_target = target_contrib
 
-            targets.append(target)
+            targets.append(target_contrib)
 
     return struct(
         name = name,

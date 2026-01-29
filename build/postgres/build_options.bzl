@@ -73,19 +73,25 @@ _OPTION_SETS_REGULAR = _OPTION_SETS_MINIMAL + [
 ]
 
 # buildifier: leave-alone, do not sort
+# Base option sets: without contrib extensions (faster builds, smaller output)
+# These require the contrib patches in postgres/patches/0006-*.patch
 _OPTION_SETS = dict(
     barebones = [
         ("extra_version", "barebones"),
+        ("contrib", "false"),
         None,
     ],
     minimal = [
         ("extra_version", "minimal"),
+        ("contrib", "false"),
     ] + _OPTION_SETS_MINIMAL,
     regular = [
         ("extra_version", "regular"),
+        ("contrib", "false"),
     ] + _OPTION_SETS_REGULAR,
     full = [
         ("extra_version", "full"),
+        ("contrib", "false"),
         "all",
         "bonjour",
         "selinux",  # in 16.0 it's not 'auto' so it has to be enabled explicitly
