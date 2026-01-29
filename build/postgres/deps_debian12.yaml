@@ -19,7 +19,6 @@ archs:
 packages:
   # common
   - gettext
-
   # buildtime
   - libavahi-compat-libdnssd-dev
   - libcurl4-openssl-dev
@@ -45,7 +44,6 @@ packages:
   - tcl-dev
   - uuid-dev
   - zlib1g-dev
-
   # runtime
   - libavahi-compat-libdnssd1
   - libcurl4
