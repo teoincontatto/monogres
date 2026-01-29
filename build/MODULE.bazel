@@ -48,17 +48,16 @@ archive_override(
 # Use system LLVM toolchain installed in the Docker image.
 # This requires llvm-14, clang-14, lld-14, and libc6-dev to be installed.
 # absolute_paths=True is needed because the system toolchain uses absolute paths
-# for builtin headers (/usr/lib/llvm-14/lib/clang/14.0.6/include/).
+# for builtin headers (/usr/lib/llvm-19/lib/clang/19.1.7/include/).
 llvm = use_extension("@toolchains_llvm//toolchain/extensions:llvm.bzl", "llvm", dev_dependency = True)
 llvm.toolchain(
     name = "llvm_toolchain",
     absolute_paths = True,
-    absolute_paths = True,
-    llvm_version = "14.0.6",
+    llvm_version = "19.1.7",
 )
 llvm.toolchain_root(
     name = "llvm_toolchain",
-    path = "/usr/lib/llvm-14",
+    path = "/usr/lib/llvm-19",
 )
 use_repo(llvm, "llvm_toolchain")
 
@@ -98,9 +97,9 @@ register_toolchains("@bsd_tar_toolchains//:all")
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
 python.toolchain(
-    python_version = "3.11",
+    python_version = "3.13",
 )
-use_repo(python, "python_3_11")
+use_repo(python, "python_3_13")
 
 # postgres/
 download_archives = use_repo_rule("@download_archives//download/archives:defs.bzl", "download_archives")
@@ -162,20 +161,20 @@ PG_EXTENSIONS = [
 
 apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
 apt.install(
-    name = "pg_deps_debian12",
-    manifest = "//postgres:deps_debian12.yaml",
+    name = "pg_deps_debian13",
+    manifest = "//postgres:deps_debian13.yaml",
     nolock = True,
 )
-use_repo(apt, "pg_deps_debian12")
+use_repo(apt, "pg_deps_debian13")
 apt.install(
-    name = "pgext_sslutils_deps_debian12",
-    manifest = "//extensions/sslutils:deps_debian12.yaml",
+    name = "pgext_sslutils_deps_debian13",
+    manifest = "//extensions/sslutils:deps_debian13.yaml",
     nolock = True,
 )
-use_repo(apt, "pgext_sslutils_deps_debian12")
+use_repo(apt, "pgext_sslutils_deps_debian13")
 apt.install(
-    name = "pgext_citus_deps_debian12",
-    manifest = "//extensions/citus:deps_debian12.yaml",
+    name = "pgext_citus_deps_debian13",
+    manifest = "//extensions/citus:deps_debian13.yaml",
     nolock = True,
 )
-use_repo(apt, "pgext_citus_deps_debian12")
+use_repo(apt, "pgext_citus_deps_debian13")

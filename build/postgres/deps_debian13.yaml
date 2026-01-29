@@ -1,4 +1,4 @@
-# Packages for debian v12 (bookworm)
+# Packages for debian v13 (trixie)
 #
 #  Anytime this file is changed, the lockfile needs to be regenerated.
 #
@@ -7,12 +7,12 @@
 #      2. run: bazel run @<DISTRO>//:lock
 version: 1
 sources:
-  - channel: bookworm main
-    url: https://snapshot-cloudflare.debian.org/archive/debian/20250113T000000Z
-  - channel: bookworm-security main
-    url: https://snapshot-cloudflare.debian.org/archive/debian-security/20250113T000000Z
-  - channel: bookworm-updates main
-    url: https://snapshot-cloudflare.debian.org/archive/debian/20250113T000000Z
+  - channel: trixie main
+    url: https://snapshot-cloudflare.debian.org/archive/debian/20260112T000000Z
+  - channel: trixie-security main
+    url: https://snapshot-cloudflare.debian.org/archive/debian-security/20260112T000000Z
+  - channel: trixie-updates main
+    url: https://snapshot-cloudflare.debian.org/archive/debian/20260112T000000Z
 archs:
   - amd64
   - arm64
@@ -20,6 +20,7 @@ packages:
   # common
   - gettext
   # buildtime
+  - clang-19
   - libavahi-compat-libdnssd-dev
   - libcurl4-openssl-dev
   - libedit-dev
@@ -40,32 +41,32 @@ packages:
   - libxml2-dev
   - libxslt1-dev
   - libzstd-dev
-  - llvm-14-dev
+  - llvm-19-dev
   - tcl-dev
   - uuid-dev
   - zlib1g-dev
   # runtime
   - libavahi-compat-libdnssd1
-  - libcurl4
+  - libcurl4t64
   - libedit2
-  - libicu72
+  - libicu76
   - libkrb5-3
-  - libldap-2.5-0
+  - libldap2
   - liblz4-1
   - libnuma1
   - libossp-uuid16
   - libpam0g
-  - libperl5.36
-  - libpython3.11
+  - libperl5.40
+  - libpython3.13
   - libselinux1
-  - libssl3
+  - libssl3t64
   - libsystemd0
   - liburing2
   - libuuid1
   - libxml2
   - libxslt1.1
   - libzstd1
-  - llvm-14-runtime
+  - llvm-19-runtime
   - ncurses-term
   - tcl
   - zlib1g

@@ -832,7 +832,7 @@
         {
             "name": "PYTHON",
             "value": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3"
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3"
             ],
             "section": "user",
             "machine": "any",
@@ -1416,7 +1416,7 @@
         "<BAZEL_CACHE>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/meson_options.txt",
         "<BAZEL_CACHE>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_flex++flex_repository_ext+flex_v2.6.4__cfg00000000/bin/flex",
         "<BAZEL_CACHE>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_bison++bison_repository_ext+bison_v3.3.2__cfg00000000/bin/bison",
-        "<BAZEL_CACHE>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3.11",
+        "<BAZEL_CACHE>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3.11",
         "<BAZEL_CACHE>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/find_meson",
         "/usr/bin/perl",
         "<BAZEL_CACHE>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/config/check_modules.pl",
@@ -12351,7 +12351,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -12501,7 +12501,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -12781,7 +12781,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -12966,7 +12966,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -13043,7 +13043,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -13222,7 +13222,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -13404,7 +13404,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -32322,7 +32322,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -32532,7 +32532,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -40458,7 +40458,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -43366,7 +43366,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -48586,7 +48586,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -51343,7 +51343,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/pgflex",
                         "--builddir",
                         "@BUILD_ROOT@",
@@ -67421,7 +67421,7 @@
                 {
                     "language": "unknown",
                     "compiler": [
-                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                        "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                         "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_foreign_cc++tools+meson_src/meson.py",
                         "install",
                         "--quiet",
@@ -67904,7 +67904,7 @@
     "tests": [
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-opt-exec-ST-d57f47055a04/bin/external/rules_foreign_cc+/toolchains/private/meson_tool.runfiles/rules_foreign_cc++tools+meson_src/meson.py",
                 "install",
                 "--quiet",
@@ -67928,7 +67928,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/install_files",
                 "--prefix",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect",
@@ -68084,7 +68084,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68137,7 +68137,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68186,7 +68186,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68239,7 +68239,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68288,7 +68288,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68344,7 +68344,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68408,7 +68408,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68468,7 +68468,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68531,7 +68531,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68590,7 +68590,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68664,7 +68664,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68734,7 +68734,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68794,7 +68794,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68850,7 +68850,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68902,7 +68902,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -68950,7 +68950,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69004,7 +69004,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69054,7 +69054,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69108,7 +69108,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69160,7 +69160,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69208,7 +69208,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69261,7 +69261,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69310,7 +69310,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69391,7 +69391,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69468,7 +69468,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69548,7 +69548,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69624,7 +69624,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69678,7 +69678,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69728,7 +69728,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69781,7 +69781,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69830,7 +69830,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69884,7 +69884,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69934,7 +69934,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -69986,7 +69986,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70034,7 +70034,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70086,7 +70086,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70134,7 +70134,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70186,7 +70186,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70234,7 +70234,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70286,7 +70286,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70334,7 +70334,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70387,7 +70387,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70436,7 +70436,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70489,7 +70489,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70538,7 +70538,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70592,7 +70592,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70642,7 +70642,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70695,7 +70695,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70744,7 +70744,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70796,7 +70796,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70844,7 +70844,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70896,7 +70896,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70944,7 +70944,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -70997,7 +70997,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71046,7 +71046,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71098,7 +71098,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71146,7 +71146,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71198,7 +71198,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71246,7 +71246,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71298,7 +71298,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71346,7 +71346,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71399,7 +71399,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71448,7 +71448,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71507,7 +71507,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71562,7 +71562,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71614,7 +71614,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71662,7 +71662,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71714,7 +71714,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71762,7 +71762,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71835,7 +71835,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71904,7 +71904,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -71958,7 +71958,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72011,7 +72011,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72060,7 +72060,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72123,7 +72123,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72175,7 +72175,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72223,7 +72223,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72275,7 +72275,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72323,7 +72323,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72377,7 +72377,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72427,7 +72427,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72479,7 +72479,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72527,7 +72527,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72582,7 +72582,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72636,7 +72636,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72686,7 +72686,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72739,7 +72739,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72788,7 +72788,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72840,7 +72840,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72888,7 +72888,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72941,7 +72941,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -72990,7 +72990,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73062,7 +73062,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73127,7 +73127,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73179,7 +73179,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73227,7 +73227,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73279,7 +73279,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73327,7 +73327,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73381,7 +73381,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73431,7 +73431,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73483,7 +73483,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73531,7 +73531,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73583,7 +73583,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73631,7 +73631,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73683,7 +73683,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73736,7 +73736,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73785,7 +73785,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73837,7 +73837,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73885,7 +73885,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73937,7 +73937,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -73985,7 +73985,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74037,7 +74037,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74085,7 +74085,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74137,7 +74137,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74185,7 +74185,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74237,7 +74237,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74285,7 +74285,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74337,7 +74337,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74385,7 +74385,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74457,7 +74457,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74525,7 +74525,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74580,7 +74580,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74631,7 +74631,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74683,7 +74683,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74731,7 +74731,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74783,7 +74783,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74831,7 +74831,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74883,7 +74883,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74931,7 +74931,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -74985,7 +74985,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75037,7 +75037,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75085,7 +75085,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75137,7 +75137,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75189,7 +75189,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75237,7 +75237,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75289,7 +75289,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75337,7 +75337,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75390,7 +75390,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75439,7 +75439,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75491,7 +75491,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75539,7 +75539,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75591,7 +75591,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75639,7 +75639,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75693,7 +75693,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75747,7 +75747,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75801,7 +75801,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
@@ -75923,7 +75923,7 @@
         },
         {
             "cmd": [
-                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_11_{arch}-unknown-linux-gnu/bin/python3",
+                "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/external/rules_python++python+python_3_13_{arch}-unknown-linux-gnu/bin/python3",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir/../../../../../external/+_repo_rules+pg_src/<PG_VERSION>/gh/src/tools/testwrap",
                 "--basedir",
                 "<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>/bazel-out/{arch}-fastbuild/bin/postgres/<PG_TARGET>--introspect.build_tmpdir",
