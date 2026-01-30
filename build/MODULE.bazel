@@ -162,19 +162,19 @@ PG_EXTENSIONS = [
 apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
 apt.install(
     name = "pg_deps_debian13",
+    lock = "//postgres:deps_debian13.lock.json",
     manifest = "//postgres:deps_debian13.yaml",
-    nolock = True,
 )
 use_repo(apt, "pg_deps_debian13")
 apt.install(
     name = "pgext_sslutils_deps_debian13",
+    lock = "//extensions/sslutils:deps_debian13.lock.json",
     manifest = "//extensions/sslutils:deps_debian13.yaml",
-    nolock = True,
 )
 use_repo(apt, "pgext_sslutils_deps_debian13")
 apt.install(
     name = "pgext_citus_deps_debian13",
+    lock = "//extensions/citus:deps_debian13.lock.json",
     manifest = "//extensions/citus:deps_debian13.yaml",
-    nolock = True,
 )
 use_repo(apt, "pgext_citus_deps_debian13")
