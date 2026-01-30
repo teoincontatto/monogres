@@ -19,5 +19,8 @@ packages:
   - libzstd-dev
   #runtime
   - libcurl4t64
+  - libgssapi-krb5-2
+  - libkrb5-3
   - liblz4-1
+  - libssl3t64
   - libzstd1

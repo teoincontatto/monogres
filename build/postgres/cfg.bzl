@@ -171,7 +171,9 @@ CFG = cfg.new(
     runtime_dependencies = [
         "@pg_deps_debian13//gettext",
         "@pg_deps_debian13//libavahi-compat-libdnssd1",
+        "@pg_deps_debian13//libcurl4t64",
         "@pg_deps_debian13//libedit2",
+        "@pg_deps_debian13//libgssapi-krb5-2",
         "@pg_deps_debian13//libicu76",
         "@pg_deps_debian13//libkrb5-3",
         "@pg_deps_debian13//libldap2",

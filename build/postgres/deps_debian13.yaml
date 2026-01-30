@@ -49,6 +49,7 @@ packages:
   - libavahi-compat-libdnssd1
   - libcurl4t64
   - libedit2
+  - libgssapi-krb5-2
   - libicu76
   - libkrb5-3
   - libldap2

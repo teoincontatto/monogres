@@ -21,7 +21,10 @@ CFG = cfg.new(
     ],
     runtime_dependencies = [
         "@pgext_citus_deps_debian13//libcurl4t64",
+        "@pgext_citus_deps_debian13//libgssapi-krb5-2",
+        "@pgext_citus_deps_debian13//libkrb5-3",
         "@pgext_citus_deps_debian13//liblz4-1",
+        "@pgext_citus_deps_debian13//libssl3t64",
         "@pgext_citus_deps_debian13//libzstd1",
     ],
     metadata = METADATA,

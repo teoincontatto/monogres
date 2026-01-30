@@ -2781,7 +2781,68 @@
 		},
 		{
 			"arch": "amd64",
-			"dependencies": [],
+			"dependencies": [
+				{
+					"key": "libkrb5support0_1.21.3-5_amd64",
+					"name": "libkrb5support0",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libc6_2.41-12-p-deb13u1_amd64",
+					"name": "libc6",
+					"version": "2.41-12+deb13u1"
+				},
+				{
+					"key": "libgcc-s1_14.2.0-19_amd64",
+					"name": "libgcc-s1",
+					"version": "14.2.0-19"
+				},
+				{
+					"key": "gcc-14-base_14.2.0-19_amd64",
+					"name": "gcc-14-base",
+					"version": "14.2.0-19"
+				},
+				{
+					"key": "libk5crypto3_1.21.3-5_amd64",
+					"name": "libk5crypto3",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libcom-err2_1.47.2-3-p-b7_amd64",
+					"name": "libcom-err2",
+					"version": "1.47.2-3+b7"
+				},
+				{
+					"key": "libkrb5-3_1.21.3-5_amd64",
+					"name": "libkrb5-3",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libssl3t64_3.5.4-1_deb13u1_amd64",
+					"name": "libssl3t64",
+					"version": "3.5.4-1~deb13u1"
+				},
+				{
+					"key": "openssl-provider-legacy_3.5.4-1_deb13u1_amd64",
+					"name": "openssl-provider-legacy",
+					"version": "3.5.4-1~deb13u1"
+				},
+				{
+					"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+					"name": "zlib1g",
+					"version": "1:1.3.dfsg+really1.3.1-1+b1"
+				},
+				{
+					"key": "libzstd1_1.5.7-p-dfsg-1_amd64",
+					"name": "libzstd1",
+					"version": "1.5.7+dfsg-1"
+				},
+				{
+					"key": "libkeyutils1_1.6.3-6_amd64",
+					"name": "libkeyutils1",
+					"version": "1.6.3-6"
+				}
+			],
 			"key": "libgssapi-krb5-2_1.21.3-5_amd64",
 			"name": "libgssapi-krb5-2",
 			"sha256": "53678c63919fc717816941947a9d275be8d6cb101a3753ae8fda0cf6e752d9d7",
@@ -8952,7 +9013,68 @@
 		},
 		{
 			"arch": "arm64",
-			"dependencies": [],
+			"dependencies": [
+				{
+					"key": "libkrb5support0_1.21.3-5_arm64",
+					"name": "libkrb5support0",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libc6_2.41-12-p-deb13u1_arm64",
+					"name": "libc6",
+					"version": "2.41-12+deb13u1"
+				},
+				{
+					"key": "libgcc-s1_14.2.0-19_arm64",
+					"name": "libgcc-s1",
+					"version": "14.2.0-19"
+				},
+				{
+					"key": "gcc-14-base_14.2.0-19_arm64",
+					"name": "gcc-14-base",
+					"version": "14.2.0-19"
+				},
+				{
+					"key": "libk5crypto3_1.21.3-5_arm64",
+					"name": "libk5crypto3",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libcom-err2_1.47.2-3-p-b7_arm64",
+					"name": "libcom-err2",
+					"version": "1.47.2-3+b7"
+				},
+				{
+					"key": "libkrb5-3_1.21.3-5_arm64",
+					"name": "libkrb5-3",
+					"version": "1.21.3-5"
+				},
+				{
+					"key": "libssl3t64_3.5.4-1_deb13u1_arm64",
+					"name": "libssl3t64",
+					"version": "3.5.4-1~deb13u1"
+				},
+				{
+					"key": "openssl-provider-legacy_3.5.4-1_deb13u1_arm64",
+					"name": "openssl-provider-legacy",
+					"version": "3.5.4-1~deb13u1"
+				},
+				{
+					"key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+					"name": "zlib1g",
+					"version": "1:1.3.dfsg+really1.3.1-1+b1"
+				},
+				{
+					"key": "libzstd1_1.5.7-p-dfsg-1_arm64",
+					"name": "libzstd1",
+					"version": "1.5.7+dfsg-1"
+				},
+				{
+					"key": "libkeyutils1_1.6.3-6_arm64",
+					"name": "libkeyutils1",
+					"version": "1.6.3-6"
+				}
+			],
 			"key": "libgssapi-krb5-2_1.21.3-5_arm64",
 			"name": "libgssapi-krb5-2",
 			"sha256": "99fd6203890ac144ba9907fefb76c84e733f17f31853af8c312c16d5c077c351",
