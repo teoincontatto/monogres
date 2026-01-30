@@ -26,6 +26,9 @@ _DEFAULT_OPTIONS = dict(
     libdir = "lib",
     rpath = "false",
     system_tzdata = "/usr/share/zoneinfo",
+    # Use release build type for faster builds (no debug symbols)
+    # This reduces compile time and binary size
+    buildtype = "release",
 )
 
 # These options are always enabled because usually it never makes sense to

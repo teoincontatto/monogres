@@ -125,10 +125,15 @@ def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False):
                     "$$pgxs_src_copy/configure" || return $$?
             fi
 
+            # Use all available CPUs for parallel compilation
+            local nproc
+            nproc="$$(nproc 2>/dev/null || echo 4)"
+
             echo
-            echo "make"
+            echo "make -j$$nproc"
             echo
             "$$EXT_BUILD_ROOT/$(MAKE)" \
+                -j"$$nproc" \
                 -C "$$pgxs_src_copy" \
                 CC="$$cc" \
                 CXX="$$cc" \
@@ -141,9 +146,10 @@ def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False):
                 USE_PGXS=1 || return $$?
 
             echo
-            echo "make install"
+            echo "make -j$$nproc install"
             echo
             "$$EXT_BUILD_ROOT/$(MAKE)" \
+                -j"$$nproc" \
                 -C "$$pgxs_src_copy" \
                 CC="$$cc" \
                 CXX="$$cc" \

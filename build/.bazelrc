@@ -19,6 +19,8 @@ common --experimental_downloader_config=.bazel_downloader.cfg
 build --nostamp
 build --incompatible_strict_action_env
 build --reuse_sandbox_directories
+# Use all available CPUs for local builds (auto-detect)
+build --local_cpu_resources=HOST_CPUS
 build --incompatible_default_to_explicit_init_py
 build --nolegacy_external_runfiles
 build --nobuild_runfile_links
