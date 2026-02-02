@@ -19,7 +19,10 @@ load(":version.bzl", "is_compatible_with")
 # in sandboxes and will be installing the binaries at a different path, we've
 # added a patch that adds a new prefix_distro build option to set the prefix of
 # the "final install path in the distro".
-_PREFIX_DISTRO = "/postgres"
+#
+# This prefix is exported so it can be reused by extensions to install in the
+# same location.
+DEFAULT_PREFIX_DISTRO = "/postgres"
 
 _DEFAULT_OPTIONS = dict(
     # Use 'lib' instead of default 'lib64' on x86_64 to match Bazel output dirs
@@ -128,7 +131,7 @@ def is_compatible(option, version, build_options_metadata, debug = False):
 
     return is_compatible_with(version, version_constraints, debug_prefix)
 
-def build_options(version, option_set, build_options_metadata, debug = False):
+def build_options(version, option_set, build_options_metadata, debug = False, prefix_distro = None):
     """
     Computes Postgres build options and auto-feature settings.
 
@@ -140,6 +143,8 @@ def build_options(version, option_set, build_options_metadata, debug = False):
             options to their compatible PG version constraints spec.
         debug (bool): If `True`, prints debug messages when build options are
             incompatible with the given Postgre version.
+        prefix_distro (string): The base prefix path for the distro install.
+            Defaults to `DEFAULT_PREFIX_DISTRO` if not specified.
 
     Returns:
         (options, auto_features)
@@ -148,6 +153,8 @@ def build_options(version, option_set, build_options_metadata, debug = False):
             - options: Meson build options.
             - auto_features: PG `--auto-features flag.
     """
+    if prefix_distro == None:
+        prefix_distro = DEFAULT_PREFIX_DISTRO
     if option_set not in OPTION_SETS:
         fail("Invalid option set: %r" % option_set)
 
@@ -189,7 +196,7 @@ def build_options(version, option_set, build_options_metadata, debug = False):
                 options[option] = value
 
     options = options | dict(
-        prefix_distro = "%s/%s" % (_PREFIX_DISTRO, version),
+        prefix_distro = "%s/%s" % (prefix_distro, version),
     )
 
     return options, auto_features
