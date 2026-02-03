@@ -1,0 +1,45 @@
+diff --git a/meson.build b/meson.build
+--- a/meson.build
++++ b/meson.build
+@@ -3053,7 +3053,16 @@
+
+ subdir('src')
+
+-subdir('contrib')
++# contrib_data_dir is defined in contrib/meson.build, provide a fallback
++# when contrib is disabled so that install-test-files target still works
++if get_option('contrib')
++  subdir('contrib')
++else
++  contrib_data_dir = dir_data_extension
++  # refint_cflags is used by src/test/regress/meson.build for building
++  # test modules from contrib/spi even when contrib is disabled
++  refint_cflags = ['-DREFINT_VERBOSE']
++endif
+
+ subdir('src/test')
+ subdir('src/interfaces/ecpg/test')
+@@ -3471,7 +3480,9 @@
+ alias_target('backend', backend_targets)
+ alias_target('bin', bin_targets + [libpq_st])
+ alias_target('pl', pl_targets)
+-alias_target('contrib', contrib_targets)
++if get_option('contrib')
++  alias_target('contrib', contrib_targets)
++endif
+ alias_target('testprep', testprep_targets)
+ alias_target('install-world', install_quiet, installdocs)
+
+diff --git a/meson_options.txt b/meson_options.txt
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -73,6 +73,9 @@
+ option('prefix_distro', type: 'string', value: '',
+   description: 'Select a "distro prefix" (a path different from prefix where Postgres will be installed). Useful if the distro install path will be different from the install path at build time.')
+
++option('contrib', type: 'boolean', value: true,
++  description: 'Build contrib modules')
++
+ # External dependencies
+
+ option('bonjour', type: 'feature', value: 'auto',
