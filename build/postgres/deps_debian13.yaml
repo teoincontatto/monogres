@@ -67,7 +67,9 @@ packages:
   - libxml2
   - libxslt1.1
   - libzstd1
+  - libllvm19
   - llvm-19-runtime
   - ncurses-term
   - tcl
+  - tzdata
   - zlib1g

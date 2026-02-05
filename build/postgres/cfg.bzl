@@ -191,9 +191,11 @@ CFG = cfg.new(
         "@pg_deps_debian13//libxml2",
         "@pg_deps_debian13//libxslt1.1",
         "@pg_deps_debian13//libzstd1",
+        "@pg_deps_debian13//libllvm19",  # Full LLVM shared library needed by llvmjit.so
         "@pg_deps_debian13//llvm-19-runtime",
         "@pg_deps_debian13//ncurses-term",
         "@pg_deps_debian13//tcl",
+        "@pg_deps_debian13//tzdata",
         "@pg_deps_debian13//zlib1g",
     ],
 )
