@@ -1,6 +1,7 @@
 load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 load(":cfg.bzl", "CFG")
 load(":pg_build.bzl", "pg_build_all")
+load(":regress_build.bzl", "regress_build_all")
 
 package(default_visibility = ["//visibility:public"])
 
@@ -9,6 +10,7 @@ exports_files([
     "build_options.bzl",
     "cfg.bzl",
     "pg_build.bzl",
+    "regress_build.bzl",
     "sysroot.bzl",
     "toolchain.bzl",
 ])
@@ -63,7 +65,20 @@ bzl_library(
     ],
 )
 
+bzl_library(
+    name = "regress_build",
+    srcs = ["regress_build.bzl"],
+    deps = [
+        ":build_options",
+    ],
+)
+
 pg_build_all(
     name = CFG.name,
+    cfg = CFG,
+)
+
+regress_build_all(
+    name = "regress",
     cfg = CFG,
 )
