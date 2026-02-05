@@ -321,6 +321,11 @@ def pg_build_all(name, cfg):
                 actual = dep,
                 visibility = ["//visibility:public"],
             )
+        native.alias(
+            name = "%s--srcs" % target.name,
+            actual = "@pg_src//%s:dir" % target.version,
+            visibility = ["//visibility:public"],
+        )
         pg_build(
             name = target.name,
             pg_src = target.pg_src,

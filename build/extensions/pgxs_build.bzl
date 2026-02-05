@@ -338,6 +338,12 @@ def pgxs_build_all(name, cfg, prefix_distro = None):
             prefix_distro = prefix_distro,
         )
 
+        native.alias(
+            name = "%s--srcs" % target.name,
+            actual = target.pgxs_src,
+            visibility = ["//visibility:public"],
+        )
+
         for dep in set(target.buildtime_dependencies + target.runtime_dependencies):
             dep_name = dep.split("//")[-1]
             native.alias(
