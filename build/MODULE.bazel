@@ -7,7 +7,7 @@ module(
     compatibility_level = 0,
 )
 
-bazel_dep(name = "bazel_lib", version = "3.0.0")
+bazel_dep(name = "aspect_bazel_lib", version = "2.21.1")
 bazel_dep(name = "bazel_skylib", version = "1.8.2")
 bazel_dep(name = "download_archives", version = "0.1.0")
 bazel_dep(name = "platforms", version = "1.0.0")
@@ -24,6 +24,7 @@ bazel_dep(name = "starlark_utils", version = "0.0.1")
 bazel_dep(name = "tar.bzl", version = "0.6.0")
 bazel_dep(name = "version_utils", version = "0.1.0")
 
+bazel_dep(name = "rules_cc", version = "0.2.16", dev_dependency = True)
 bazel_dep(name = "toolchains_llvm", version = "1.5.0", dev_dependency = True)
 
 local_path_override(
@@ -54,6 +55,8 @@ llvm.toolchain(
     name = "llvm_toolchain",
     absolute_paths = True,
     llvm_version = "19.1.7",
+    # Use libstdc++ instead of libc++ to match Debian's LLVM libraries ABI
+    stdlib = {"": "stdc++"},
 )
 llvm.toolchain_root(
     name = "llvm_toolchain",
