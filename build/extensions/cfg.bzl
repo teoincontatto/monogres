@@ -40,6 +40,7 @@ def _new(name, versions, pg_targets, repo_name, buildtime_dependencies = None, r
     targets = [
         struct(
             name = "~".join([name, version, pg_target.pg_version.name]),
+            simple_name = name,
             version = version,
             pg_version = pg_target.pg_version,
             pg_target = pg_target,

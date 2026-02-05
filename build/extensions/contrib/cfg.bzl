@@ -15,6 +15,7 @@ def _target(name, pg_target, pgext_metadata):
     """
     return struct(
         name = "~".join([name, pg_target.pg_version.name]),
+        simple_name = name,
         pg_target = pg_target,
         files = pgext_metadata["paths"],
     )
