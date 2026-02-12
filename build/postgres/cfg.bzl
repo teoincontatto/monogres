@@ -81,7 +81,7 @@ def _target(name, version, option_set, repo_name, buildtime_dependencies, runtim
         runtime_dependencies = runtime_dependencies,
     )
 
-def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime_dependencies):
+def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime_dependencies, metadata = None):
     """
     Creates a config `struct` containing build targets for multiple Postgres versions.
 
@@ -99,12 +99,15 @@ def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime
             Postgres source code.
         buildtime_dependencies (list[str]): List of Postgres buildtime dependencies.
         runtime_dependencies (list[str]): List of Postgres runtime dependencies.
+        metadata (dict): Optional metadata from repo.json, passed through
+            verbatim for downstream consumers.
 
     Returns:
         A config `struct` with:
           - `name`: the base name,
           - `targets`: a list of `pg_target` `struct`s (see `_target`),
-          - `default`: the `pg_target` corresponding to the `DEFAULT_VERSION`.
+          - `default`: the `pg_target` corresponding to the `DEFAULT_VERSION`,
+          - `metadata`: the metadata dict.
     """
     targets = []
     default_target = None
@@ -130,6 +133,7 @@ def _new(name, versions, option_sets, repo_name, buildtime_dependencies, runtime
         name = name,
         targets = targets,
         default = default_target,
+        metadata = metadata or {},
     )
 
 cfg = struct(
@@ -198,4 +202,5 @@ CFG = cfg.new(
         "@pg_deps_debian13//tzdata",
         "@pg_deps_debian13//zlib1g",
     ],
+    metadata = METADATA,
 )

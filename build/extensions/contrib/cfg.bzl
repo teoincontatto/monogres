@@ -9,7 +9,7 @@ rules.
 load("@pg_introspect//:defs.bzl", "INTROSPECTIONS")
 load("//postgres:cfg.bzl", PG_CFG = "CFG")
 
-def _target(name, pg_target, pgext_metadata):
+def _target(name, pg_target, pgext_metadata, dependencies = []):
     """
     Creates a struct representing a build target for a Postgres contrib extension.
     """
@@ -18,13 +18,14 @@ def _target(name, pg_target, pgext_metadata):
         simple_name = name,
         pg_target = pg_target,
         files = pgext_metadata["paths"],
+        dependencies = dependencies,
     )
 
 def _pgext_metadata(pg_target):
     ikey = (pg_target.pg_version.version, pg_target.option_set)
     return INTROSPECTIONS[ikey]
 
-def _new(name, pgext_pg_targets):
+def _new(name, pgext_pg_targets, dependencies = []):
     """
     Creates a config `struct` containing build targets for multiple Postgres contrib extensions.
 
@@ -32,6 +33,8 @@ def _new(name, pgext_pg_targets):
         name (str): The base name of the extension (e.g. "sslutils").
         pgext_pg_targets (list[struct]): The list of pg_target `struct`s for
             which to build the extension.
+        dependencies (list[str]): List of extension names this extension
+            depends on.
 
     Returns:
         A contrib extension config `struct` with:
@@ -44,6 +47,7 @@ def _new(name, pgext_pg_targets):
             name = name,
             pg_target = pg_target,
             pgext_metadata = _pgext_metadata(pg_target)["contrib"][name],
+            dependencies = dependencies,
         )
         for pg_target in pgext_pg_targets
     ]
@@ -76,10 +80,13 @@ def _pgext_contrib(pg_targets):
 
     return pgext_contrib
 
+_CONTRIB_DEPENDENCIES = PG_CFG.metadata.get("contribDependencies", {})
+
 CFGS = {
     pgext_name: cfg.new(
         name = pgext_name,
         pgext_pg_targets = pgext_pg_targets,
+        dependencies = _CONTRIB_DEPENDENCIES.get(pgext_name, []),
     )
     for pgext_name, pgext_pg_targets in _pgext_contrib(PG_CFG.targets).items()
 }

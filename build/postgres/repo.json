@@ -100,6 +100,15 @@
     }
   },
   "metadata": {
+    "contribDependencies": {
+      "hstore_plperl": [ "hstore", "plperl" ],
+      "hstore_plpython": [ "hstore", "plpython" ],
+      "jsonb_plperl": [ "plperl" ],
+      "jsonb_plpython": [ "plpython" ],
+      "ltree_plpython": [ "ltree", "plpython" ],
+      "bool_plperl": [ "plperl" ],
+      "earthdistance": [ "cube" ]
+    },
     "build_options": {
       "injection_points": {
         "compatible": ">=17.0"
