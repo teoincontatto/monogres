@@ -17,10 +17,23 @@ def _pg_is_mapped(path, target):
 def _pg_get_name(path, _):
     return path.split("/bin/")[-1].upper()
 
-def _pg_other_template_vars(context, _):
-    return {
-        "PG_INSTALL_DIR": context["PG_CONFIG"].split("/bin/pg_config")[0],
-    }
+def _pg_other_template_vars(context, target):
+    if "PG_CONFIG" in context:
+        return {
+            "PG_INSTALL_DIR": context["PG_CONFIG"].split("/bin/pg_config")[0],
+        }
+
+    # When bin/ is a tree artifact (from out_data_dirs), individual binary
+    # paths aren't available. Construct them from the tree artifact path.
+    name = target.label.name
+    for f in target[DefaultInfo].files.to_list():
+        if f.path.endswith(name + "/bin"):
+            return {
+                "PG_CONFIG": f.path + "/pg_config",
+                "PG_INSTALL_DIR": f.path.rsplit("/bin", 1)[0],
+            }
+
+    fail("Could not find pg_config or bin/ directory in target outputs")
 
 pg_template_variable_info = template_variable_info_rule(
     is_mapped = _pg_is_mapped,

@@ -32,7 +32,9 @@ packages:
   - libnuma-dev
   - libossp-uuid-dev
   - libpam0g-dev
+  - libipc-run-perl
   - libperl-dev
+  - perl
   - libpython3-dev
   - libselinux1-dev
   - libssl-dev

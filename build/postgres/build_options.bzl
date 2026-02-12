@@ -101,6 +101,7 @@ _OPTION_SETS = dict(
         "all",
         "bonjour",
         "selinux",  # in 16.0 it's not 'auto' so it has to be enabled explicitly
+        ("tap_tests", "enabled"),
     ] + _OPTION_SETS_REGULAR,
 )
 

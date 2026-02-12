@@ -104,6 +104,12 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot_tarball = N
                 "$$SYSROOT_DIR/usr/lib/$$(uname -m)-linux-gnu",
                 "$$SYSROOT_DIR/usr/lib",
             ]),
+            # Add sysroot Perl module paths (needed for TAP test detection via IPC::Run)
+            PERL5LIB = ":".join([
+                "$$SYSROOT_DIR/usr/share/perl5",
+                "$$SYSROOT_DIR/usr/lib/$$(uname -m)-linux-gnu/perl5/5.40",
+                "$$SYSROOT_DIR/usr/share/perl/5.40",
+            ]),
         )
     else:
         env_sysroot = dict()
@@ -174,23 +180,15 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot_tarball = N
     )
 
 def _pg_build_meson(name, pg_src, build_options, auto_features, sysroot_tarball = None):
-    pg_binaries = [
-        "initdb",
-        "postgres",
-        "pg_config",
-        "pg_isready",
-    ]
-
-    # NOTE: these binaries are only built when contrib is enabled
-    if build_options.get("contrib", "true") != "false":
-        pg_binaries.extend([
-            "vacuumlo",
-            "oid2name",
-        ])
-
-    # NOTE: including lib in out_data_dirs because even when it's
-    # out_lib_dir's default, it's not included in declared_outputs
+    # NOTE:
+    # - out_headers_only prevents rules_foreign_cc from declaring a default
+    #   static library (lib_name.a) that would conflict with the lib/ tree
+    #   artifact from out_data_dirs (one path would be a prefix of the other).
+    # - out_data_dirs captures entire directories as tree artifacts, making
+    #   all binaries, libraries, and data files available without listing
+    #   them individually.
     out_data_dirs = [
+        "bin",
         "lib",
         "share",
     ]
@@ -204,7 +202,7 @@ def _pg_build_meson(name, pg_src, build_options, auto_features, sysroot_tarball 
 
     meson(**(meson_common_args | dict(
         name = name,
-        out_binaries = pg_binaries,
+        out_headers_only = True,
         out_data_dirs = out_data_dirs,
     )))
 
