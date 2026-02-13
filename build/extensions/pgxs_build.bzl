@@ -2,6 +2,7 @@
 Rules to build Postgres PGXS extensions from source.
 """
 
+load("@bazel_lib//lib:copy_directory.bzl", "copy_directory")
 load("//postgres:build_options.bzl", "DEFAULT_PREFIX_DISTRO")
 
 def pgxs_build(name, pgxs_src, deps_buildtime, pg_version, prefix_distro = DEFAULT_PREFIX_DISTRO, debug = False):
@@ -87,7 +88,9 @@ def pgxs_build(name, pgxs_src, deps_buildtime, pg_version, prefix_distro = DEFAU
             local pgxs_src_copy="$$EXT_BUILD_ROOT/pgxs_src_copy"
 
             # NOTE: -L because we need to copy the actual dir and not the symlink
+            # NOTE: chmod because pgxs_src is a tree artifact (read-only in Bazel)
             cp -raL "$$pgxs_src" "$$pgxs_src_copy"
+            chmod -R u+w "$$pgxs_src_copy"
 
             local arch
             arch="$$(uname -m)"
@@ -330,9 +333,17 @@ def pgxs_build_all(name, cfg, prefix_distro = DEFAULT_PREFIX_DISTRO):
             (defaults to `DEFAULT_PREFIX_DISTRO`).
     """
     for target in cfg.targets:
+        tree_name = "%s--src_dir" % target.name
+        copy_directory(
+            name = tree_name,
+            src = target.pgxs_src,
+            out = tree_name,
+            hardlink = "on",
+        )
+
         pgxs_build(
             name = target.name,
-            pgxs_src = target.pgxs_src,
+            pgxs_src = ":%s" % tree_name,
             deps_buildtime = target.deps_buildtime,
             pg_version = target.pg_version,
             prefix_distro = prefix_distro,
