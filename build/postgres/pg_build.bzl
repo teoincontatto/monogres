@@ -13,6 +13,24 @@ load("@rules_foreign_cc//foreign_cc:meson.bzl", "meson")
 load(":sysroot.bzl", "pg_sysroot")
 load(":toolchain.bzl", "pg_template_variable_info")
 
+def _source_dir_impl(ctx):
+    tree = ctx.actions.declare_directory(ctx.attr.name)
+    srcs = ctx.attr.src.files.to_list()
+    label = ctx.attr.src.label
+    src_dir = "/".join([p for p in [label.workspace_root, label.package] if p])
+    ctx.actions.run_shell(
+        inputs = srcs,
+        outputs = [tree],
+        command = 'cp -aL "$1/." "$2/"',
+        arguments = [src_dir, tree.path],
+    )
+    return [DefaultInfo(files = depset([tree]))]
+
+_source_dir = rule(
+    implementation = _source_dir_impl,
+    attrs = {"src": attr.label()},
+)
+
 def _meson_common_args(pg_src, build_options, auto_features, sysroot_tarball = None):
     build_data = [
         "@m4//bin:m4",
@@ -319,9 +337,12 @@ def pg_build_all(name, cfg):
                 actual = dep,
                 visibility = ["//visibility:public"],
             )
+        tree_name = "%s--src_dir" % target.name
+        _source_dir(name = tree_name, src = "@pg_src//%s:files" % target.version)
+
         native.alias(
             name = "%s--srcs" % target.name,
-            actual = "@pg_src//%s:dir" % target.version,
+            actual = ":%s" % tree_name,
             visibility = ["//visibility:public"],
         )
         pg_build(

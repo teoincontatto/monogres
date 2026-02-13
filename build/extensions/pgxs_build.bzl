@@ -4,6 +4,24 @@ Rules to build Postgres PGXS extensions from source.
 
 load("//postgres:build_options.bzl", "DEFAULT_PREFIX_DISTRO")
 
+def _source_dir_impl(ctx):
+    tree = ctx.actions.declare_directory(ctx.attr.name)
+    srcs = ctx.attr.src.files.to_list()
+    label = ctx.attr.src.label
+    src_dir = "/".join([p for p in [label.workspace_root, label.package] if p])
+    ctx.actions.run_shell(
+        inputs = srcs,
+        outputs = [tree],
+        command = 'cp -aL "$1/." "$2/"',
+        arguments = [src_dir, tree.path],
+    )
+    return [DefaultInfo(files = depset([tree]))]
+
+_source_dir = rule(
+    implementation = _source_dir_impl,
+    attrs = {"src": attr.label()},
+)
+
 def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False, prefix_distro = None):
     """
     Generates a Bazel target to build a PGXS extension with the [PGXS build system].
@@ -87,7 +105,9 @@ def pgxs_build(name, pgxs_src, dependencies, pg_version, debug = False, prefix_d
             local pgxs_src_copy="$$EXT_BUILD_ROOT/pgxs_src_copy"
 
             # NOTE: -L because we need to copy the actual dir and not the symlink
+            # NOTE: chmod because pgxs_src is a tree artifact (read-only in Bazel)
             cp -raL "$$pgxs_src" "$$pgxs_src_copy"
+            chmod -R u+w "$$pgxs_src_copy"
 
             local arch
             arch="$$(uname -m)"
@@ -330,9 +350,12 @@ def pgxs_build_all(name, cfg, prefix_distro = None):
             Defaults to `DEFAULT_PREFIX_DISTRO` if not specified.
     """
     for target in cfg.targets:
+        tree_name = "%s--src_dir" % target.name
+        _source_dir(name = tree_name, src = target.pgxs_src)
+
         pgxs_build(
             name = target.name,
-            pgxs_src = target.pgxs_src,
+            pgxs_src = ":%s" % tree_name,
             dependencies = target.buildtime_dependencies,
             pg_version = target.pg_version,
             prefix_distro = prefix_distro,
@@ -340,7 +363,7 @@ def pgxs_build_all(name, cfg, prefix_distro = None):
 
         native.alias(
             name = "%s--srcs" % target.name,
-            actual = target.pgxs_src,
+            actual = ":%s" % tree_name,
             visibility = ["//visibility:public"],
         )
 
