@@ -1,0 +1,135 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/aws/pgcollection/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "fc14a51ba09e8123f1254e8395368745adc88e7ee44253428e1245586ef6bcaf",
+      "strip_prefix" : "aws-pgcollection-13f172d",
+      "commit" : "13f172d85625d69995aee6def5eefa3e7fb17c2e",
+      "short_commit" : "13f172d"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "1a293e9adf2c2a16b0b1dfbd3e765f465b9ff576eee18ee95465252bded9b892",
+      "strip_prefix" : "aws-pgcollection-3b33ef4",
+      "commit" : "3b33ef4babac1cb06cecddfad49d3a29f41f3d64",
+      "short_commit" : "3b33ef4"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "042022ac825570b968704545305f1132f54ea752de74f028b0b47426a1bfde49",
+      "strip_prefix" : "aws-pgcollection-6c80686",
+      "commit" : "6c80686908b63a0d66db904f61d611c60725a299",
+      "short_commit" : "6c80686"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "ccc4b0f9cee88f0a8d81fe728ab0b9102b8c1994d253fad8b28b21e662883fdc",
+      "strip_prefix" : "aws-pgcollection-8268b2e",
+      "commit" : "8268b2ed8341a4a3dbe3b84c2df2ff78c4001966",
+      "short_commit" : "8268b2e"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Collection is a memory optimized data type primarily used as a high performance data structure inside of plpglsql functions.",
+        "module_pathname" : "$libdir/collection",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Collection is a memory optimized data type primarily used as a high performance data structure inside of plpglsql functions.",
+        "module_pathname" : "$libdir/collection",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.1" : {
+        "name" : "pgcollection",
+        "abstract" : "A collection data type",
+        "description" : "pgcollection is a memory optimized data type for PostgreSQL used as a high performance data structure inside of plpglsql functions to create associative arrays",
+        "version" : "1.0.0",
+        "maintainer" : "Jim Mlodgenski <jimmy76@gmail.com>",
+        "license" : "apache_2_0",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgcollection" : {
+            "file" : "sql/collection--1.0.0.sql",
+            "docfile" : "pgcollection.md",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/aws/pgcollection/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/aws/pgcollection.git",
+            "web" : "https://github.com/aws/pgcollection",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "data type", "compatibility", "associative array", "key value" ]
+      },
+      "1.0.0" : {
+        "name" : "pgcollection",
+        "abstract" : "A collection data type",
+        "description" : "pgcollection is a memory optimized data type for PostgreSQL used as a high performance data structure inside of plpglsql functions to create associative arrays",
+        "version" : "1.0.0",
+        "maintainer" : "Jim Mlodgenski <jimmy76@gmail.com>",
+        "license" : "apache_2_0",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgcollection" : {
+            "file" : "sql/collection--1.0.0.sql",
+            "docfile" : "pgcollection.md",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/aws/pgcollection/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/aws/pgcollection.git",
+            "web" : "https://github.com/aws/pgcollection",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "data type", "compatibility", "associative array", "key value" ]
+      }
+    }
+  },
+  "version" : 1
+}

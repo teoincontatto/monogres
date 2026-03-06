@@ -1,0 +1,75 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/grahamedgecombe/pgzstd/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "33971726819addbc7a5109964485a068026273811811377fa7ffe923140d2632",
+      "strip_prefix" : "grahamedgecombe-pgzstd-d18100f",
+      "commit" : "d18100fa225ac7060ad4ee31670373f6ff2c64e0",
+      "short_commit" : "d18100f"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "9b7ce501f672ca0cce9f4ce691eaa79fbacb342ddea9ce04219203602da09278",
+      "strip_prefix" : "grahamedgecombe-pgzstd-90b3474",
+      "commit" : "90b3474eb80c9c153c4db759696c38a786bf7c31",
+      "short_commit" : "90b3474"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "2af385e170ac90d2f386bf85e155ed71e985d0b2250aa2d3dec7625a9d6d812e",
+      "strip_prefix" : "grahamedgecombe-pgzstd-2e893c6",
+      "commit" : "2e893c6724f0d72ae3682997496f6d8ebcde00e3",
+      "short_commit" : "2e893c6"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "0311255674e76ea10f752fbff60ffe42fde64dc84da26b23312caeb3ba54541b",
+      "strip_prefix" : "grahamedgecombe-pgzstd-7241934",
+      "commit" : "7241934033b7d18d688d94547622a757e3b3a886",
+      "short_commit" : "7241934"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.2" : {
+        "default_version" : "1.1.0",
+        "comment" : "Zstandard compression",
+        "module_pathname" : "$libdir/zstd",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.0",
+        "comment" : "Zstandard compression",
+        "module_pathname" : "$libdir/zstd",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Zstandard compression",
+        "module_pathname" : "$libdir/zstd",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Zstandard compression",
+        "module_pathname" : "$libdir/zstd",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

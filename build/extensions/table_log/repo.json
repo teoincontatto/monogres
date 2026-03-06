@@ -1,0 +1,90 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/df7cb/table_log/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.6.4" : {
+      "tag" : "v0.6.4",
+      "sha256" : "fa19c6da9d7579303798fc8b8d6ea9d99be823a4855316cdcf108e030e3aa928",
+      "strip_prefix" : "df7cb-table_log-85929cf",
+      "commit" : "85929cf2bca9a65f4d2630b26cc93508aa3c2b59",
+      "short_commit" : "85929cf"
+    },
+    "0.6.3" : {
+      "tag" : "v0.6.3",
+      "sha256" : "dc6810242535436e2b30195f46b43466670b821b0b59049fbce3be75012a0f4e",
+      "strip_prefix" : "df7cb-table_log-8a5008c",
+      "commit" : "8a5008c79a779589119ccebd7f69c1823e0e694b",
+      "short_commit" : "8a5008c"
+    },
+    "0.6.2" : {
+      "tag" : "v0.6.2",
+      "sha256" : "0234cf554dca15f4e5a00e4a9356adc7944bc99066cd19cf9324b49b08aaf219",
+      "strip_prefix" : "df7cb-table_log-42c6db0",
+      "commit" : "42c6db0ee889a7658ed212e6cb60ded9f3f4d9bb",
+      "short_commit" : "42c6db0"
+    },
+    "0.6.1" : {
+      "tag" : "v0.6.1",
+      "sha256" : "937b1d28370eb02d807df99aeaa98249397d037f5ffdcc318091205fe886f48e",
+      "strip_prefix" : "df7cb-table_log-d817246",
+      "commit" : "d81724629572e0f744ff73f9ad80cbca8ee45fb8",
+      "short_commit" : "d817246"
+    },
+    "0.5.0" : {
+      "tag" : "v0.5.0",
+      "sha256" : "b94636a5cdce0193b75fba2b60156cd753dc16c38c8329c2b23b99f6663f543f",
+      "strip_prefix" : "df7cb-table_log-84779d0",
+      "commit" : "84779d0625dc0902c9a392ee19b0c3b802238b6d",
+      "short_commit" : "84779d0"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.6.4" : {
+        "default_version" : "0.6.1",
+        "comment" : "Module to log changes on tables",
+        "module_pathname" : "$libdir/table_log",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.3" : {
+        "default_version" : "0.6.1",
+        "comment" : "Module to log changes on tables",
+        "module_pathname" : "$libdir/table_log",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.2" : {
+        "default_version" : "0.6.1",
+        "comment" : "Module to log changes on tables",
+        "module_pathname" : "$libdir/table_log",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.1" : {
+        "default_version" : "0.6.1",
+        "comment" : "Module to log changes on tables",
+        "module_pathname" : "$libdir/table_log",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.5.0" : {
+        "default_version" : "0.5",
+        "comment" : "Module to log changes on tables",
+        "module_pathname" : "$libdir/table_log",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

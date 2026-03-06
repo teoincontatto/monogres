@@ -1,0 +1,195 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgbigm/pg_bigm/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.0-20250903" : {
+      "tag" : "v1.2-20250903",
+      "sha256" : "8b0d0d4ff5a4529373d3f94ad3f1b74284c4e109568a451c336f5b46d2a92339",
+      "strip_prefix" : "pgbigm-pg_bigm-735dceb",
+      "commit" : "735dceba0ecdd8ac1aaaaa207226a7102b6bbd71",
+      "short_commit" : "735dceb"
+    },
+    "1.2.0-20240606" : {
+      "tag" : "v1.2-20240606",
+      "sha256" : "a19d83779b93bde6b1d89915d205fdf3cd8623e20f9aa30ce51e90d3f55330b4",
+      "strip_prefix" : "pgbigm-pg_bigm-4432f36",
+      "commit" : "4432f36b4dd9dc1fe009500704e0695039d78e42",
+      "short_commit" : "4432f36"
+    },
+    "1.2.0-20200228" : {
+      "tag" : "v1.2-20200228",
+      "sha256" : "961431dc2302ff503a2876adeca343033a8f18acde2b24ee67ba431810986a48",
+      "strip_prefix" : "pgbigm-pg_bigm-2383574",
+      "commit" : "2383574e80027aae29e63d37cb3cb2641b28cdce",
+      "short_commit" : "2383574"
+    },
+    "1.2.0-20191003" : {
+      "tag" : "v1.2-20191003",
+      "sha256" : "e2f75f3ac29ec8fe5c3d81d5e7e99a07d1d3625ac4ed1995f350e267d18d9941",
+      "strip_prefix" : "pgbigm-pg_bigm-861f62c",
+      "commit" : "861f62ca5e8edbbbc6e57b42bb48fb461949257a",
+      "short_commit" : "861f62c"
+    },
+    "1.2.0-20161011" : {
+      "tag" : "v1.2-20161011",
+      "sha256" : "90d4f5d943de1c65d0cd4099f768cbde40c85c21de23b7d6e0db2b08e864c2be",
+      "strip_prefix" : "pgbigm-pg_bigm-8b3184c",
+      "commit" : "8b3184c0278bf72f992135fe70e73f06fae864ac",
+      "short_commit" : "8b3184c"
+    },
+    "1.1.0-20200228" : {
+      "tag" : "v1.1-20200228",
+      "sha256" : "13f9bbc49d1ad84b8eec1c70d46d84bf1655fe3956cfd7db0a74a9347c9fc291",
+      "strip_prefix" : "pgbigm-pg_bigm-c49ee59",
+      "commit" : "c49ee59fd0e4665e459f7608b5902dac1fcfcde0",
+      "short_commit" : "c49ee59"
+    },
+    "1.1.0-20161011" : {
+      "tag" : "v1.1-20161011",
+      "sha256" : "c9b8b90a68b3328d693acad378737ae65a8a16934c905b470f20b84ec5593f9c",
+      "strip_prefix" : "pgbigm-pg_bigm-88222cd",
+      "commit" : "88222cd81ad962dce47df6d01864fd866b9fdf96",
+      "short_commit" : "88222cd"
+    },
+    "1.1.0-20150910" : {
+      "tag" : "v1.1-20150910",
+      "sha256" : "c7a0249ed92379aae6b71271629aa27abfb8fef05624ef709bdddf0bfc505e73",
+      "strip_prefix" : "pgbigm-pg_bigm-78ffed4",
+      "commit" : "78ffed49a94e4c5a6488c6b1d39f162ccf916d1d",
+      "short_commit" : "78ffed4"
+    },
+    "1.1.0-20131122" : {
+      "tag" : "v1.1-20131122",
+      "sha256" : "9c8de85a88aa9c0cfe566de2d940f8653e049f23f8db31abbbf22f11233b4762",
+      "strip_prefix" : "pgbigm-pg_bigm-dcdae8b",
+      "commit" : "dcdae8b60e66d8380e2bd674cf49d70942747942",
+      "short_commit" : "dcdae8b"
+    },
+    "1.0.0-20150910" : {
+      "tag" : "v1.0-20150910",
+      "sha256" : "419e6e92bee87101dbfbf899cfde772b1f4643ac73991de64dbc2ed9a13ca130",
+      "strip_prefix" : "pgbigm-pg_bigm-2715d02",
+      "commit" : "2715d021607d5c1dc98eff3ec22b380b218ee1a4",
+      "short_commit" : "2715d02"
+    },
+    "1.0.0-20131122" : {
+      "tag" : "v1.0-20131122",
+      "sha256" : "70fc56387f88f1759465a1330cf7d6073b1b29effd47fd357ec777232f742e73",
+      "strip_prefix" : "pgbigm-pg_bigm-16bc117",
+      "commit" : "16bc11731b95b18d6d3a969faf4dd230a4d4bebb",
+      "short_commit" : "16bc117"
+    },
+    "1.0.0-20130405" : {
+      "tag" : "v1.0-20130405",
+      "sha256" : "b7f04c2d6cc58171bf6ca0a84c7fa2f8e1dfc65326a4b7c37c3fb9dc3194c0c3",
+      "strip_prefix" : "pgbigm-pg_bigm-3ebc038",
+      "commit" : "3ebc038d7f5bc8d4c9e7c934cf5c12352b237e0d",
+      "short_commit" : "3ebc038"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.0-20250903" : {
+        "default_version" : "1.2",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0-20240606" : {
+        "default_version" : "1.2",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0-20200228" : {
+        "default_version" : "1.2",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0-20191003" : {
+        "default_version" : "1.2",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0-20161011" : {
+        "default_version" : "1.2",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0-20200228" : {
+        "default_version" : "1.1",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0-20161011" : {
+        "default_version" : "1.1",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0-20150910" : {
+        "default_version" : "1.1",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0-20131122" : {
+        "default_version" : "1.1",
+        "comment" : "text similarity measurement and index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-20150910" : {
+        "default_version" : "1.0",
+        "comment" : "text index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-20131122" : {
+        "default_version" : "1.0",
+        "comment" : "text index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-20130405" : {
+        "default_version" : "1.0",
+        "comment" : "text index searching based on bigrams",
+        "module_pathname" : "$libdir/pg_bigm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

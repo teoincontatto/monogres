@@ -1,0 +1,133 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pierreforstmann/pg_readonly/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "9e809197f1054f3b493a79437cf25fc4f84d5f54d4608d92e4e5797cf2fc9c57",
+      "strip_prefix" : "pierreforstmann-pg_readonly-4b9de28",
+      "commit" : "4b9de28b93c5cad3b7a114a569194b5329b047e7",
+      "short_commit" : "4b9de28"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "2ec9ec051d65f8db07c890ae41654ba66ab37a307077bc8c8e2b1584448c19ab",
+      "strip_prefix" : "pierreforstmann-pg_readonly-d24efb8",
+      "commit" : "d24efb80bc92bb397d1252a9bbf18803e6007a5d",
+      "short_commit" : "d24efb8"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.4" : {
+        "default_version" : "1.0.0",
+        "comment" : "cluster database read only",
+        "module_pathname" : "$libdir/pg_readonly",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0" : {
+        "default_version" : "0.0.1",
+        "comment" : "cluster database read only",
+        "module_pathname" : "$libdir/pg_readonly",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "1.0.4" : {
+        "name" : "pg_readonly",
+        "abstract" : "set all cluster databases in read only",
+        "version" : "1.0.3",
+        "maintainer" : [ "Pierre Forstmann" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.21"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.5.21"
+            }
+          }
+        },
+        "provides" : {
+          "pg_readonly" : {
+            "abstract" : "set all cluster databases in read only",
+            "file" : "pg_readonly.c",
+            "docfile" : "README.md",
+            "version" : "1.0.4"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pierreforstmann/pg_readonly/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pierreforstmann/pg_readonly.git",
+            "web" : "https://github.com/pierreforstmann/pg_readonly",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Pierre Forstmann",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "read only", "cluster" ]
+      },
+      "1.0.0" : {
+        "name" : "pg_readonly",
+        "abstract" : "set all cluster databases in read only",
+        "version" : "1.0.0",
+        "maintainer" : [ "Pierre Forstmann" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.21"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.5.21"
+            }
+          }
+        },
+        "provides" : {
+          "pg_readonly" : {
+            "abstract" : "set all cluster databases in read only",
+            "file" : "pg_readonly.c",
+            "docfile" : "README.md",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pierreforstmann/pg_readonly/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pierreforstmann/pg_readonly.git",
+            "web" : "https://github.com/pierreforstmann/pg_readonly",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Pierre Forstmann",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "read only", "cluster" ]
+      }
+    }
+  },
+  "version" : 1
+}

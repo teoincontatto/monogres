@@ -1,0 +1,234 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/klando/pgfincore/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "d98e565f881697d7cff7d046959911547ae5807e6fd3a834d405818affa20109",
+      "strip_prefix" : "klando-pgfincore-34af214",
+      "commit" : "34af21412c8025532a83383b4a9f2965ea696e6e",
+      "short_commit" : "34af214"
+    },
+    "1.3.0" : {
+      "tag" : "1.3",
+      "sha256" : "39a03bf0d7e8880d873f244bc7ef0f6d2c2bc753134e60bef960e5d639ebe014",
+      "strip_prefix" : "klando-pgfincore-cdf249e",
+      "commit" : "cdf249e3101f6dc9e38781c43c4977357b543de7",
+      "short_commit" : "cdf249e"
+    },
+    "1.2.4" : {
+      "tag" : "1.2.4",
+      "sha256" : "4e8643abbfa2d90fc97bd5fb90d7d83cfb62f8dbf63a6c632fa50acd6184aad3",
+      "strip_prefix" : "klando-pgfincore-754d678",
+      "commit" : "754d67881ae7bc0398d9b756e0532bd95a35b40b",
+      "short_commit" : "754d678"
+    },
+    "1.2.3" : {
+      "tag" : "1.2.3",
+      "sha256" : "fcee43ccdb02077088e3fb94230f823178dd1cceeef682f453bfb8c6349fe051",
+      "strip_prefix" : "klando-pgfincore-d9aea3e",
+      "commit" : "d9aea3e6b60a4dd92159f54442dfc53fd718c082",
+      "short_commit" : "d9aea3e"
+    },
+    "1.2.2" : {
+      "tag" : "1.2.2",
+      "sha256" : "87d214a258cce9a7d8613cf59488e9c12850ef350608ea650fe12dcfa4fbc829",
+      "strip_prefix" : "klando-pgfincore-7546c8e",
+      "commit" : "7546c8e5ba8e56e10b7aa24a3d050805e8f63c4c",
+      "short_commit" : "7546c8e"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "489b78ca165363b52bdfb4694f94c4232bcaeefe5eb3b7a4f6c2378d77b9d83c",
+      "strip_prefix" : "klando-pgfincore-41f2b9f",
+      "commit" : "41f2b9f27e0c69d9f3c54fa181dacebbd82f2efd",
+      "short_commit" : "41f2b9f"
+    },
+    "1.2.0" : {
+      "tag" : "1.2",
+      "sha256" : "0df9173dac2e7e9a967afa0ad249732bfc5ed94a2227c9968776f3c49e632693",
+      "strip_prefix" : "klando-pgfincore-0182c42",
+      "commit" : "0182c421cc545d0eeb7858319b59dbbc6bf417d6",
+      "short_commit" : "0182c42"
+    },
+    "1.1.2" : {
+      "tag" : "1.1.2",
+      "sha256" : "e2f63e4b3df45f281da8f8f52d9b1e5fefd58a2c5c3f23f34c09864762fc52b0",
+      "strip_prefix" : "klando-pgfincore-5fd49c1",
+      "commit" : "5fd49c1833ef97ea898e01ef7c5bcccd51c9399e",
+      "short_commit" : "5fd49c1"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "695e20c9f15890e05f1b658f0579db0fc180bdfaa19120b9e960623040833f3e",
+      "strip_prefix" : "klando-pgfincore-54dd8af",
+      "commit" : "54dd8affca53ca3bcf63631fb93888ac5cf87421",
+      "short_commit" : "54dd8af"
+    },
+    "1.1.0" : {
+      "tag" : "1.1",
+      "sha256" : "4b27c9637f7632de61792be6451ffa7a3e506742c2d58639ec8abf7b674b0c55",
+      "strip_prefix" : "klando-pgfincore-3760e49",
+      "commit" : "3760e493b7b030f27539b7c99dfe8414bee4a21a",
+      "short_commit" : "3760e49"
+    },
+    "1.0.0" : {
+      "tag" : "1.0",
+      "sha256" : "49b141b2441cfed8bfe65c6756ecc31c59955c5e386a6cece154ac7af438f496",
+      "strip_prefix" : "klando-pgfincore-a6f66c9",
+      "commit" : "a6f66c9e6f4346c221ca0e7b9fc109ac19f9233f",
+      "short_commit" : "a6f66c9"
+    },
+    "0.4.1" : {
+      "tag" : "0.4.1",
+      "sha256" : "bb51cf768d2afafab471be2e2b96430b2faefac9dd4476523212996d527a1680",
+      "strip_prefix" : "klando-pgfincore-18aea62",
+      "commit" : "18aea620d70932bbee4737e2df86ed96e64974f1",
+      "short_commit" : "18aea62"
+    },
+    "0.4.0" : {
+      "tag" : "0.4",
+      "sha256" : "555c71f793b90cf10967061e5403981f6a3034cee90622ff419a7a4101d158f8",
+      "strip_prefix" : "klando-pgfincore-1c1c95f",
+      "commit" : "1c1c95f8d89f755dd6c70c8975e6631cd7e11a29",
+      "short_commit" : "1c1c95f"
+    },
+    "0.3.2" : {
+      "tag" : "0.3.2",
+      "sha256" : "300e411b239b9e60171c089f25d332764630151be0808b771c7037eaf1992144",
+      "strip_prefix" : "klando-pgfincore-c70e877",
+      "commit" : "c70e87787fa5e1c96b23ffc031ca6a0da1add0a7",
+      "short_commit" : "c70e877"
+    },
+    "0.3.1" : {
+      "tag" : "0.3.1",
+      "sha256" : "a8acefe9e4730db0c2341c2023e8f7961b6dd9e74c2137ce1b072120619fcca3",
+      "strip_prefix" : "klando-pgfincore-c3dbf13",
+      "commit" : "c3dbf13e2b2a87a91eb9082f1bdadde65e6ad315",
+      "short_commit" : "c3dbf13"
+    },
+    "0.3.0" : {
+      "tag" : "0.3",
+      "sha256" : "a8acefe9e4730db0c2341c2023e8f7961b6dd9e74c2137ce1b072120619fcca3",
+      "strip_prefix" : "klando-pgfincore-c3dbf13",
+      "commit" : "c3dbf13e2b2a87a91eb9082f1bdadde65e6ad315",
+      "short_commit" : "c3dbf13"
+    },
+    "0.2.1" : {
+      "tag" : "0.2.1",
+      "sha256" : "89c1822580ac3eebf61b8fce9231f8fcea87eedd4f04b815c148f3a57b283ec0",
+      "strip_prefix" : "klando-pgfincore-c2b0e8a",
+      "commit" : "c2b0e8a6b813af9cdfc6eb89420b99ae0ba0b697",
+      "short_commit" : "c2b0e8a"
+    },
+    "0.2.0" : {
+      "tag" : "0.2",
+      "sha256" : "a6a56dc8b96589d015867c7c0519c873cecb4e0866e6f2fc1f79bff1f92aa7db",
+      "strip_prefix" : "klando-pgfincore-e8db514",
+      "commit" : "e8db5140128ef1bbd9734d8063ae554798874311",
+      "short_commit" : "e8db514"
+    },
+    "0.1.1" : {
+      "tag" : "0.1.1",
+      "sha256" : "42e456d2f81de1e0024255ee984727f8c96430bcfe3277887e1f754c9980c047",
+      "strip_prefix" : "klando-pgfincore-f2532bf",
+      "commit" : "f2532bfce2bac30face654d70c82a0afb3e088b7",
+      "short_commit" : "f2532bf"
+    },
+    "0.1.0" : {
+      "tag" : "0.1",
+      "sha256" : "1baec28c8f5aa6c7c04f1156d2ebf9c96684cdfa4f3e2417c8546e1e30738af9",
+      "strip_prefix" : "klando-pgfincore-621a73b",
+      "commit" : "621a73b1c72445a9d8c6ddcc161dbac2e7862a98",
+      "short_commit" : "621a73b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.3.1" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.3.1",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.4" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "directory" : "pgfincore",
+        "default_version" : "1.2",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "examine and manage the os buffer cache",
+        "module_pathname" : "$libdir/pgfincore",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

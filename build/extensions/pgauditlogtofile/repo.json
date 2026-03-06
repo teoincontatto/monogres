@@ -1,0 +1,510 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/fmbiete/pgauditlogtofile/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.8.0" : {
+      "tag" : "v1.8.0",
+      "sha256" : "deac8f7064d70c400e144af316c463dfed461254ec9960944128e7972a30d022",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-c02e3ab",
+      "commit" : "c02e3aba5fbcc6c1faf9de1f86146e6cc21facd4",
+      "short_commit" : "c02e3ab"
+    },
+    "1.7.7" : {
+      "tag" : "v1.7.7",
+      "sha256" : "a2867b5f6f9c960689af5fc839e984f7603c3aab2a968dcbfa64fbb2ec9bfa21",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-dd20a2d",
+      "commit" : "dd20a2dfa7e799338bed6ba1edcfd33d012a1d1f",
+      "short_commit" : "dd20a2d"
+    },
+    "1.7.6" : {
+      "tag" : "v1.7.6",
+      "sha256" : "63ed336f66ff3c66a1202c85356a02ca666318fd8bf99bc54aed2d075cf58d40",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-f6ed3f4",
+      "commit" : "f6ed3f425a44b25551237ee3e5cfd3c6f8f312d4",
+      "short_commit" : "f6ed3f4"
+    },
+    "1.7.5" : {
+      "tag" : "v1.7.5",
+      "sha256" : "d804ecf8d913417d24da5eec3ca9f881dedce4bb232594b4c492cd2f5e422181",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-23c052c",
+      "commit" : "23c052c76dcab0e0f5d314958459c7fd52c5c377",
+      "short_commit" : "23c052c"
+    },
+    "1.7.4" : {
+      "tag" : "v1.7.4",
+      "sha256" : "da26507b077bba22b1ce96ba5e10b42011f008ac6ee802fa94bcd06cee7da5e3",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-496b370",
+      "commit" : "496b37066c02430e9020408f404fb0cffe25b56c",
+      "short_commit" : "496b370"
+    },
+    "1.7.3" : {
+      "tag" : "v1.7.3",
+      "sha256" : "991ae828cd48c247812b34e7ad6cf5174520dcc18017e14e4dd1fdc9468c6dbf",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-1e8e2ae",
+      "commit" : "1e8e2aebecfdb846db0f677340823dc56adce647",
+      "short_commit" : "1e8e2ae"
+    },
+    "1.7.2" : {
+      "tag" : "v1.7.2",
+      "sha256" : "ccc82cb33568ed130658e22938b754675740718f8d2abee746bcf0fdea9116b8",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-28e2b35",
+      "commit" : "28e2b3514ebda263d5101437a274502934ad2120",
+      "short_commit" : "28e2b35"
+    },
+    "1.7.1" : {
+      "tag" : "v1.7.1",
+      "sha256" : "6056086e777bff90f7c2a679bd763847f0989330d834eb06d606e3773fe76071",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-696c60b",
+      "commit" : "696c60bcfb27a43af848738a33cdd03cc3ec8c7f",
+      "short_commit" : "696c60b"
+    },
+    "1.7.0" : {
+      "tag" : "v.1.7.0",
+      "sha256" : "7128c891f9947d101a5ed1789fb85799637e77b48ab40ada2eefb75f3e43920c",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-9b9e806",
+      "commit" : "9b9e806392737ac41f102ded03a57a3da20fbcf5",
+      "short_commit" : "9b9e806"
+    },
+    "1.6.4" : {
+      "tag" : "v1.6.4",
+      "sha256" : "58a5c4355fc5ea0c3c5e8ec65dd41faed53794128ec848676138783a9d5cd19d",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-81d29fd",
+      "commit" : "81d29fd350afb505ff5361390c9d70ca03540abb",
+      "short_commit" : "81d29fd"
+    },
+    "1.6.3" : {
+      "tag" : "v1.6.3",
+      "sha256" : "9e315bbea911afc2ce3d72fc4ca672f9eefbb5e4e427440c69f31e59a7e49b53",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-0ceae2e",
+      "commit" : "0ceae2e0b62737f0585940834039b9d16304300e",
+      "short_commit" : "0ceae2e"
+    },
+    "1.6.2" : {
+      "tag" : "v1.6.2",
+      "sha256" : "6526378a457736d6a26555ae23c54799f10162ffdebc34877b6074a455fe3cda",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-46fbcb7",
+      "commit" : "46fbcb715f897d4421ea64268e3322dc6c54ced7",
+      "short_commit" : "46fbcb7"
+    },
+    "1.6.1" : {
+      "tag" : "v1.6.1",
+      "sha256" : "5381523a3e60447f95eb57bc096627aa8b7049be21d62116afac2cedd57ac18c",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-b3c0644",
+      "commit" : "b3c0644510bda421b5d1a7240b9bfccee8c71471",
+      "short_commit" : "b3c0644"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "a247ff75d1dc8622a92cc22217900598cba54468e280330f75e399144059fa50",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-1253476",
+      "commit" : "125347696ee32ec773b4ddc10ef388563ed71444",
+      "short_commit" : "1253476"
+    },
+    "1.5.12" : {
+      "tag" : "v1.5.12",
+      "sha256" : "ce95acf2082c6d14cbfa5c0036b277e52df3898532621ff553b84eb3551f2859",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-47d6398",
+      "commit" : "47d63987eb2b40f6a6f78599c1caf22ace4e4cac",
+      "short_commit" : "47d6398"
+    },
+    "1.5.11" : {
+      "tag" : "v1.5.11",
+      "sha256" : "ef405cdc4e3f9dfae8d1a4820f44e7fcc4b95fc25f66c39c1eab569ced366c83",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-6a00a13",
+      "commit" : "6a00a13a62b956d11b1135498f4ef8f802cc5ae2",
+      "short_commit" : "6a00a13"
+    },
+    "1.5.10" : {
+      "tag" : "v1.5.10",
+      "sha256" : "973cfce11ad08c2623057eb2b792ca498e561eb3e37bc2a281a4c1a7b24ad084",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-a67929b",
+      "commit" : "a67929bfaf7120e1a0fc79bc1bf523d063681b5b",
+      "short_commit" : "a67929b"
+    },
+    "1.5.9" : {
+      "tag" : "v1.5.9",
+      "sha256" : "b58f44528a9b7dbf3d1d6cfa7b4f406a7efeadef7e4d819d4a6763e36bd710de",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-7b3228f",
+      "commit" : "7b3228f01596ca70217b9a3323d4ee106a0a6da0",
+      "short_commit" : "7b3228f"
+    },
+    "1.5.9-2" : {
+      "tag" : "v1.5.9_2",
+      "sha256" : "b20e3f67f12f72aac1ac3db16ce24b83239ecffa2ce697ecd29471fc5a50ba16",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-4742034",
+      "commit" : "474203470013849f6d63dec3d4ac2838d3082a3e",
+      "short_commit" : "4742034"
+    },
+    "1.5.8" : {
+      "tag" : "v1.5.8",
+      "sha256" : "dc6614a68278f807cecfad165bb1a2ff6a77953d5629c5fcfef6b66b54d8ee76",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-8093f78",
+      "commit" : "8093f789e9b2ad50332657d454d0ee769cf92ec3",
+      "short_commit" : "8093f78"
+    },
+    "1.5.7" : {
+      "tag" : "v1.5.7",
+      "sha256" : "5e4c20be370a8ca7d84efb16dbe3adb8e8ebb12207fd209720002a519d11059e",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-bce8bc1",
+      "commit" : "bce8bc120f0b403f356845a3b8796c0e17b9c36e",
+      "short_commit" : "bce8bc1"
+    },
+    "1.5.6" : {
+      "tag" : "v1.5.6",
+      "sha256" : "800290b63120edb84ca2c796f7277a7ca0bb6911404134553db949299d785272",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-4cb79bc",
+      "commit" : "4cb79bc9aaec11e576002cee6b47e181ca6a8227",
+      "short_commit" : "4cb79bc"
+    },
+    "1.5.5" : {
+      "tag" : "v1.5.5",
+      "sha256" : "3c3273feedfc02ca72f4dc186e78b7deca8738b1ae611bce973b62bfd455e141",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-decc7ca",
+      "commit" : "decc7cab71b494624a4e578eef83be1967d21eb3",
+      "short_commit" : "decc7ca"
+    },
+    "1.5.4" : {
+      "tag" : "v1.5.4",
+      "sha256" : "82d23bdcbe8b6f970eadc73bc592e4aecf1229f79649fc6682114875003d2b7e",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-8c07526",
+      "commit" : "8c07526d937aebfba7e754e6ff7d884efd233131",
+      "short_commit" : "8c07526"
+    },
+    "1.5.3" : {
+      "tag" : "v1.5.3",
+      "sha256" : "9f9a45e5b863537bf6770a304e54475a1c24eb6e919fc15f100f524b45d4b098",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-180d719",
+      "commit" : "180d719b1958d07a67b7e7a83afa982aa5de46d7",
+      "short_commit" : "180d719"
+    },
+    "1.5.2" : {
+      "tag" : "v1.5.2",
+      "sha256" : "c0880c64564f895b3ea7ac2edd042fbc9e0af6f5e51eac39a2d7a1c0dcb8ad58",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-86478ae",
+      "commit" : "86478ae8dfe9b9fa4765ce1b5a650dd318029cb2",
+      "short_commit" : "86478ae"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1",
+      "sha256" : "6561a903ef252efb1b98934bf38bd29dfe84cc363bf709f05ea86b11cf00d4de",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-48688a5",
+      "commit" : "48688a566eec06f969ada6040f7d489bb3697eda",
+      "short_commit" : "48688a5"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "f6c9b6915659f0b212e250315ec9fee03937d015867988b7205a427ce04b87cf",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-0476fb0",
+      "commit" : "0476fb07a8e12b52626a818bc561c4ee1ab33f9a",
+      "short_commit" : "0476fb0"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "e1b4b25a2521ddbe44f97fefb436e72326cbe79bf076c79c9cb652d094dedfd1",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-48aae7b",
+      "commit" : "48aae7bd6aefe9152ca406a61b68d4c7504b4423",
+      "short_commit" : "48aae7b"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3",
+      "sha256" : "6cdcef734ac93806f2ac710a14935780d0366e16fef4e3a0d52d6a12daa967d1",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-8daa72d",
+      "commit" : "8daa72d739cb5a675cfc08be1de532074a140cd2",
+      "short_commit" : "8daa72d"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "6248c07e2ae1b5a204eb3bfb395afbd7bcd42140950352beee12b0937208dc10",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-41290cb",
+      "commit" : "41290cb73bd0734e6857b361038b9aacdd6d5baf",
+      "short_commit" : "41290cb"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "a10e04fa1afc035945dae6ebc796cc141e86e6d37fda6115af8e06d0f6566a92",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-8557196",
+      "commit" : "8557196e44ab8221f82166f65c95f919e3f9ae9c",
+      "short_commit" : "8557196"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "666baa806c487e59707d96c15d6853518268f96dbc1db0299a903976e1000825",
+      "strip_prefix" : "fmbiete-pgauditlogtofile-21810f5",
+      "commit" : "21810f5f137ad956c4e2e9b1cd31671e0440e1d3",
+      "short_commit" : "21810f5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.8.0" : {
+        "default_version" : "1.8",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.7" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.6" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.5" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.4" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.3" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.2" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.1" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.4" : {
+        "default_version" : "1.6",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.3" : {
+        "default_version" : "1.6",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.2" : {
+        "default_version" : "1.6",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.1" : {
+        "default_version" : "1.6",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "pgAudit addon to redirect audit entries to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.9-2" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.9" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.8" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.7" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.6" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.5" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.4" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.3" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.2" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.12" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.11" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.10" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.1" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "pgAudit addon to redirect audit log to an independent file",
+        "module_pathname" : "$libdir/pgauditlogtofile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

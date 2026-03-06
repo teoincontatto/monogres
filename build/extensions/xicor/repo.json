@@ -1,0 +1,71 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/Florents-Tselai/pgxicor/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "0490c259da3541de09b1a0d1544571c9ce64aa89eceb5143bf76e42261852d95",
+      "strip_prefix" : "Florents-Tselai-pgxicor-7b2a3d6",
+      "commit" : "7b2a3d6f401d7aa6cd108a1aafac30ed509d6356",
+      "short_commit" : "7b2a3d6"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "xi (Î¾) correlation coefficient for Postgres",
+        "module_pathname" : "$libdir/xicor",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "0.1.0" : {
+        "name" : "pgxicor",
+        "abstract" : "XI (ξ) Correlation Coefficient in Postgres\n",
+        "version" : "0.1.0",
+        "maintainer" : [ "Florents Tselai <florents.tselai@gmail.com>" ],
+        "license" : "gpl_2",
+        "generated_by" : "Florents Tselai",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgxicor" : {
+            "file" : "sql/pgxicor--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.0",
+            "abstract" : "vXI (ξ) Correlation Coefficient"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/Florents-Tselai/pgxicor/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/Florents-Tselai/pgxicor.git",
+            "web" : "https://github.com/Florents-Tselai/pgxicor",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "statistics", "correlation", "aggregates" ]
+      }
+    }
+  },
+  "version" : 1
+}

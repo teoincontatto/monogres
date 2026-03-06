@@ -1,0 +1,91 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petropavel13/pg_rrule/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.2.0" : {
+      "tag" : "0.2.0",
+      "sha256" : "f13307305bf2e5740f9e0dff80a7bc3a84f590de4fb3a95268ce6fd9e4eecfc3",
+      "strip_prefix" : "petropavel13-pg_rrule-c7cdc11",
+      "commit" : "c7cdc112062012826b1e1bb68385b7bee467c7dc",
+      "short_commit" : "c7cdc11"
+    },
+    "0.1.0" : {
+      "tag" : "0.1",
+      "sha256" : "68bc54cae0cc2a4ac4983999a857e0d5cf635412503fee4da34c924ca1ab4f95",
+      "strip_prefix" : "petropavel13-pg_rrule-ea617c4",
+      "commit" : "ea617c4bf43e43eb9ef8e36c2b933e8e5edcb057",
+      "short_commit" : "ea617c4"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "RRULE field type for PostgreSQL",
+        "module_pathname" : "$libdir/pg_rrule",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "RRULE field type for PostgreSQL",
+        "module_pathname" : "$libdir/pg_rrule",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.2.0" : {
+        "name" : "pg_rrule",
+        "abstract" : "RRULE field type for PostgreSQL",
+        "description" : "",
+        "version" : "0.1.0",
+        "maintainer" : "petropavel",
+        "license" : "MIT",
+        "provides" : {
+          "pg_rrule" : {
+            "abstract" : "RRULE field type for PostgreSQL",
+            "file" : "sql/pg_rrule.sql",
+            "docfile" : "doc/pg_rrule.md",
+            "version" : "0.1.0"
+          }
+        },
+        "release_status" : "beta",
+        "generated_by" : "petropavel",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.1.0" : {
+        "name" : "pg_rrule",
+        "abstract" : "RRULE field type for PostgreSQL",
+        "description" : "",
+        "version" : "0.1.0",
+        "maintainer" : "petropavel",
+        "license" : "MIT",
+        "provides" : {
+          "pg_rrule" : {
+            "abstract" : "RRULE field type for PostgreSQL",
+            "file" : "sql/pg_rrule.sql",
+            "docfile" : "doc/pg_rrule.md",
+            "version" : "0.1.0"
+          }
+        },
+        "release_status" : "beta",
+        "generated_by" : "petropavel",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

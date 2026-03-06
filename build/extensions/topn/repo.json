@@ -1,0 +1,210 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/citusdata/postgresql-topn/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.7.0" : {
+      "tag" : "v2.7.0",
+      "sha256" : "d6bc0a34a6ef24017d92c87160260f5d108bf859dff10bd756b7c704287c24ca",
+      "strip_prefix" : "citusdata-postgresql-topn-f636ff1",
+      "commit" : "f636ff1b3586025c81fb84c20483412f3991ed84",
+      "short_commit" : "f636ff1"
+    },
+    "2.6.0" : {
+      "tag" : "v2.6.0",
+      "sha256" : "bc6610542a52fb4f430c65fd89dbf3d6f9239596d8bdf142888f0f82fb74fd89",
+      "strip_prefix" : "citusdata-postgresql-topn-ed4b730",
+      "commit" : "ed4b730b05abc8cfc74ed78935d97e5409302581",
+      "short_commit" : "ed4b730"
+    },
+    "2.5.0" : {
+      "tag" : "v2.5.0",
+      "sha256" : "2b5cb8af0b0d7826391f4182b7d9be3367a0bcf7daa152115133566e3cc94099",
+      "strip_prefix" : "citusdata-postgresql-topn-19e78a3",
+      "commit" : "19e78a379fca38f8626c674e61e6b241d3df1af5",
+      "short_commit" : "19e78a3"
+    },
+    "2.4.0" : {
+      "tag" : "v2.4.0",
+      "sha256" : "92fb325787503b8ca0cff804340d555f1e206b69c7d32b258716ffc3cfc6c620",
+      "strip_prefix" : "citusdata-postgresql-topn-865c827",
+      "commit" : "865c82771e667cb98aa914ae9f5a2226218d1cd4",
+      "short_commit" : "865c827"
+    },
+    "2.3.1" : {
+      "tag" : "v2.3.1",
+      "sha256" : "adf173407ea5539bd832d6be6cec94f61acf7f2d1b4071b88369a08f159c2ba6",
+      "strip_prefix" : "citusdata-postgresql-topn-9b77e07",
+      "commit" : "9b77e0756fa0f8c2d5a59d973f7787f49d4d9b1c",
+      "short_commit" : "9b77e07"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0",
+      "sha256" : "c69f17fb8eb9881870d8d757e3887c961035e4c4ff465bfa7669fdfe27299ef9",
+      "strip_prefix" : "citusdata-postgresql-topn-d0491bf",
+      "commit" : "d0491bf4bdba59396836047652eb98f34712ed4f",
+      "short_commit" : "d0491bf"
+    },
+    "2.2.2" : {
+      "tag" : "v2.2.2",
+      "sha256" : "1ed0c4fa3f20142a62dcf2a55fabe742daacc73c01eeccb9364b642a2958ef66",
+      "strip_prefix" : "citusdata-postgresql-topn-9979db2",
+      "commit" : "9979db24d42a2fadfed872f0d0663119e2f442f4",
+      "short_commit" : "9979db2"
+    },
+    "2.2.1" : {
+      "tag" : "v2.2.1",
+      "sha256" : "cfa9604c4db05b6af063f53ae95f75062b0c4943950734c8bd3c3ca2bba182c0",
+      "strip_prefix" : "citusdata-postgresql-topn-6790a0c",
+      "commit" : "6790a0cf3cc4b7af866d909900c7d8e3e97b595e",
+      "short_commit" : "6790a0c"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "4795afee07e3670edcc280f4d13e3fe0474e18f6f63bb72b203ec9416d4a9531",
+      "strip_prefix" : "citusdata-postgresql-topn-1991ebf",
+      "commit" : "1991ebf6d8382d5971a964aef8a27d61c76bd90b",
+      "short_commit" : "1991ebf"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "589eea315ee1aed848f2c2d32754e45795e2924bc4aa5a21e9c581f0abda1b1e",
+      "strip_prefix" : "citusdata-postgresql-topn-25c956c",
+      "commit" : "25c956c0080d091822bd66247cd505e61d8f79c2",
+      "short_commit" : "25c956c"
+    },
+    "2.0.2" : {
+      "tag" : "v2.0.2",
+      "sha256" : "46ab393968bee851bdebc0997a8ba0c88a0ebdd0a0d79952d46a6c0f5cd92a2b",
+      "strip_prefix" : "citusdata-postgresql-topn-13dbde1",
+      "commit" : "13dbde10d08acf7b0e9aaa74e1096d75bdfd4bd5",
+      "short_commit" : "13dbde1"
+    },
+    "2.0.1" : {
+      "tag" : "v2.0.1",
+      "sha256" : "43c8c9874c6f0966fa69d7f01622ab0373582a7bccf4798bc373932c1427e65e",
+      "strip_prefix" : "citusdata-postgresql-topn-f67cefd",
+      "commit" : "f67cefd2389cebf31d56cef2e31f5f1349559869",
+      "short_commit" : "f67cefd"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "136a1dda94a4b62814d17d75866af451a94fe0c5881f65ffaacb03784c1e5cbf",
+      "strip_prefix" : "citusdata-postgresql-topn-f79b20a",
+      "commit" : "f79b20abc522fee52cc754c4c21e4f8983760e10",
+      "short_commit" : "f79b20a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.7.0" : {
+        "default_version" : "2.7.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.0" : {
+        "default_version" : "2.6.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.5.0" : {
+        "default_version" : "2.5.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.0" : {
+        "default_version" : "2.4.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.1" : {
+        "default_version" : "2.3.1",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.0" : {
+        "default_version" : "2.3.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.2" : {
+        "default_version" : "2.2.2",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.1" : {
+        "default_version" : "2.2.1",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "type for top-n JSONB",
+        "module_pathname" : "$libdir/topn",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

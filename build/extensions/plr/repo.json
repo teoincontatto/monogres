@@ -1,0 +1,437 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/postgres-plr/plr/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "8.4.8" : {
+      "tag" : "REL8_4_8",
+      "sha256" : "f70b85639c031e332548aa10ee86a347810271cf2430e652daffc110aad03069",
+      "strip_prefix" : "postgres-plr-plr-46358f7",
+      "commit" : "46358f7897e831f8f039acf0423832ec9c3a3ebf",
+      "short_commit" : "46358f7"
+    },
+    "8.4.8-2" : {
+      "tag" : "REL8_4_8_2",
+      "sha256" : "3803bb4ee6d6afebc7a24e7ed2fd97d99f2f06c689c8d0f6e9aae7904f240669",
+      "strip_prefix" : "postgres-plr-plr-327d2f5",
+      "commit" : "327d2f5d784a321d73546259eceddbf44f7d6a36",
+      "short_commit" : "327d2f5"
+    },
+    "8.4.8-1" : {
+      "tag" : "REL8_4_8_1",
+      "sha256" : "a07e25da823289fa330a50dc1f60515acfeb6368ed5e67ecc4ebaa41786bcb3d",
+      "strip_prefix" : "postgres-plr-plr-a787cc9",
+      "commit" : "a787cc958605cb761a1655fe9035cd1d57ecd155",
+      "short_commit" : "a787cc9"
+    },
+    "8.4.7" : {
+      "tag" : "REL8_4_7",
+      "sha256" : "4e682d1822eb26a6c4dfe5e3e74af9358e7a97696ba3d61f46b899b256aceecb",
+      "strip_prefix" : "postgres-plr-plr-3640a85",
+      "commit" : "3640a858b3798311ffc90f21c0c3690b046522ac",
+      "short_commit" : "3640a85"
+    },
+    "8.4.6" : {
+      "tag" : "REL8_4_6",
+      "sha256" : "a708d32c6ff5215e8ef9cbe53719e9ff5852f126d9be9f6eb1dcda801ba08c32",
+      "strip_prefix" : "postgres-plr-plr-20a1f13",
+      "commit" : "20a1f133bcf2bc8f37ac23da191aea590d612619",
+      "short_commit" : "20a1f13"
+    },
+    "8.4.5" : {
+      "tag" : "REL8_4_5",
+      "sha256" : "de1a86479abacba0c97365f415514fefc3433b8e60b411da97933826cca55770",
+      "strip_prefix" : "postgres-plr-plr-641189c",
+      "commit" : "641189cf042c5180be29031f762e5a99123b0c67",
+      "short_commit" : "641189c"
+    },
+    "8.4.4" : {
+      "tag" : "REL8_4_4",
+      "sha256" : "0bc8b58fa83f777f663caead41aef30a930e4adce08a45ae6df51042989888c2",
+      "strip_prefix" : "postgres-plr-plr-dd599f2",
+      "commit" : "dd599f2692238b866752f8f0251aab88ef1493fd",
+      "short_commit" : "dd599f2"
+    },
+    "8.4.3" : {
+      "tag" : "REL8_4_3",
+      "sha256" : "2657dffcec7dd706978235dcb89504626ea76bc5955862f4941ea0c5e1996d7a",
+      "strip_prefix" : "postgres-plr-plr-5bf6e4f",
+      "commit" : "5bf6e4fcd0e39e0799a60a9ce565ba42ad41e9aa",
+      "short_commit" : "5bf6e4f"
+    },
+    "8.4.2" : {
+      "tag" : "REL8_4_2",
+      "sha256" : "fd76443787dc7e9312f8edeef86719374648983b8e0fffefb35f783801373b67",
+      "strip_prefix" : "postgres-plr-plr-1689332",
+      "commit" : "1689332c54d435dfa7000dcb4b351b550b1de7d7",
+      "short_commit" : "1689332"
+    },
+    "8.4.1" : {
+      "tag" : "REL8_4_1",
+      "sha256" : "3be250ff6e18957a021d6c8bbb4411020052575ca934d2675fa675a0367dcb31",
+      "strip_prefix" : "postgres-plr-plr-b479c02",
+      "commit" : "b479c024763e2fbbf2adc43af018cfe82245ddec",
+      "short_commit" : "b479c02"
+    },
+    "8.3.0-18" : {
+      "tag" : "REL8_3_0_18",
+      "sha256" : "63e615d2ae14525b26fbaa1b9576bfb34deca6cd79620f226f739716c15ba1be",
+      "strip_prefix" : "postgres-plr-plr-d445325",
+      "commit" : "d4453259e2763b15f5320d1723f08a70b48d3dcd",
+      "short_commit" : "d445325"
+    },
+    "8.3.0-17" : {
+      "tag" : "REL8_3_0_17",
+      "sha256" : "d6a3c061a05881063d4ef7c6af2ba53c747917e5cb6216df4cb4d5078604917c",
+      "strip_prefix" : "postgres-plr-plr-8c4febe",
+      "commit" : "8c4febef154dc3f0c16e69c39004085ac803b981",
+      "short_commit" : "8c4febe"
+    },
+    "8.3.0-16" : {
+      "tag" : "REL8_3_0_16",
+      "sha256" : "39bb1bc483e50c51372d3b8717ba41c033422f0406a04f7a8955d8aa98e2b3f8",
+      "strip_prefix" : "postgres-plr-plr-f9d1f18",
+      "commit" : "f9d1f18a1d1a2f0b65ef059e57704fd9f7440140",
+      "short_commit" : "f9d1f18"
+    },
+    "8.3.0-15" : {
+      "tag" : "REL8_3_0_15",
+      "sha256" : "98e1f7f6171a8465c99982c7e3e7a5202e85cee143cf159607ee81539bd26960",
+      "strip_prefix" : "postgres-plr-plr-420979b",
+      "commit" : "420979b8c76dc3dbea6494bffc6d7613d25ccd95",
+      "short_commit" : "420979b"
+    },
+    "8.3.0-14" : {
+      "tag" : "REL8_3_0_14",
+      "sha256" : "29fc2121d42ccb37527011dd08de5e0f3c878179532dd8523e300573df0dfd1b",
+      "strip_prefix" : "postgres-plr-plr-917d0b9",
+      "commit" : "917d0b9a372f85a2188f3f7399a612e78e268a1a",
+      "short_commit" : "917d0b9"
+    },
+    "8.3.0-13" : {
+      "tag" : "REL8_3_0_13",
+      "sha256" : "10781d0c74d156a2c7eca2c94a0ab6300795fcc45a13fc423b4e614cbd572dbb",
+      "strip_prefix" : "postgres-plr-plr-289021e",
+      "commit" : "289021e8d8df698507fed5e8b408d8d63d7af635",
+      "short_commit" : "289021e"
+    },
+    "8.3.0-12" : {
+      "tag" : "REL8_3_0_12",
+      "sha256" : "53f84adca1e0dec56f625f3e8e5b9baad0dd6090daaa9e3f0ff6fbafcd1a9481",
+      "strip_prefix" : "postgres-plr-plr-0f41dca",
+      "commit" : "0f41dcae8d6301a2d769fb08d518ac5368df8f6c",
+      "short_commit" : "0f41dca"
+    },
+    "8.3.0-11" : {
+      "tag" : "REL8_3_0_11",
+      "sha256" : "740bcd35f2356721f140f3f57968b92e67a806f116366b4f6955973d7b7ef57e",
+      "strip_prefix" : "postgres-plr-plr-bb710be",
+      "commit" : "bb710beccbad1fae6d8288cd29f17a36b3d47e55",
+      "short_commit" : "bb710be"
+    },
+    "8.3.0-10" : {
+      "tag" : "REL8_3_0_10",
+      "sha256" : "f73226898381a3e764829b6b1465908b8df2cd7ee072c8edba7cb7a3938a769e",
+      "strip_prefix" : "postgres-plr-plr-ddf1535",
+      "commit" : "ddf1535fa4d2fc04e406a4c45e3ed9950ce5d0e9",
+      "short_commit" : "ddf1535"
+    },
+    "8.3.0-9" : {
+      "tag" : "REL8_3_0_9",
+      "sha256" : "aba094a57ec6f184688a21f15aad1721343628d948fe0ffe006470fd9c69c2f5",
+      "strip_prefix" : "postgres-plr-plr-a0cd74f",
+      "commit" : "a0cd74f0b15c2e2f3a2d0337db8ac41349858a77",
+      "short_commit" : "a0cd74f"
+    },
+    "8.3.0-8" : {
+      "tag" : "REL8_3_0_8",
+      "sha256" : "1738f019d705ccb0528362c9a1a61170f98d309b67571b19c6346886ded3cd5c",
+      "strip_prefix" : "postgres-plr-plr-c7aa0e9",
+      "commit" : "c7aa0e9ee73ce7901f11bf5475fe557834fc31fc",
+      "short_commit" : "c7aa0e9"
+    },
+    "8.3.0-7" : {
+      "tag" : "REL8_3_0_7",
+      "sha256" : "fb3bad6edf46fdd404d387cced0d205502b5a7febd2105305bfcaddb4ffe24ce",
+      "strip_prefix" : "postgres-plr-plr-2c727f3",
+      "commit" : "2c727f30294a1b24d4a75ec2a30ed3a024cf2ea7",
+      "short_commit" : "2c727f3"
+    },
+    "8.3.0-6" : {
+      "tag" : "REL8_3_0_6",
+      "sha256" : "c604925876cee22212865315164852892b7bdc4e251e66de6dc87dd29d09c33c",
+      "strip_prefix" : "postgres-plr-plr-384893c",
+      "commit" : "384893c6cb9c7e4f67755a75b9537ab8a41cd9bf",
+      "short_commit" : "384893c"
+    },
+    "8.3.0-5" : {
+      "tag" : "REL8_3_0_5",
+      "sha256" : "898c3c69122e1e10093a7c4eebc258837de3a075385fab6ffd146822c8580ccf",
+      "strip_prefix" : "postgres-plr-plr-089d346",
+      "commit" : "089d346edb9f832a42fbfabba69fb409b437e08e",
+      "short_commit" : "089d346"
+    },
+    "8.3.0-4" : {
+      "tag" : "REL8_3_0_4",
+      "sha256" : "50f257cc079eebddca657306d1a52683808f987a5550467af8ed6bc694be3176",
+      "strip_prefix" : "postgres-plr-plr-d2d5495",
+      "commit" : "d2d549579f3d0245012d691f709b2eceff2ddf78",
+      "short_commit" : "d2d5495"
+    },
+    "8.3.0-3" : {
+      "tag" : "REL8_3_0_3",
+      "sha256" : "19aa8ad01f83eaf929e1432717942cd8f30464cf5ddab71b3c5f8bb2acecc3d8",
+      "strip_prefix" : "postgres-plr-plr-412947a",
+      "commit" : "412947abe127b8b6a54d2023ecb909d82e5ed980",
+      "short_commit" : "412947a"
+    },
+    "8.3.0-2" : {
+      "tag" : "REL8_3_0_2",
+      "sha256" : "301bc622260e8990b05fc6fea11897358468a2c03e2052ff906c84fa83873064",
+      "strip_prefix" : "postgres-plr-plr-5b09a95",
+      "commit" : "5b09a9554f8d652401100d7e08c43a9cc32edd45",
+      "short_commit" : "5b09a95"
+    },
+    "8.2.0-10" : {
+      "tag" : "REL8_2_0_10",
+      "sha256" : "3970621065394ae7087c68c90e170b111404a35d39a7818692ed48e3a3afcdf0",
+      "strip_prefix" : "postgres-plr-plr-af599e8",
+      "commit" : "af599e8db654e3ef5333e9d31e28edef84b0aeb7",
+      "short_commit" : "af599e8"
+    },
+    "8.2.0-9" : {
+      "tag" : "REL8_2_0_9",
+      "sha256" : "45d8a69b756cd3c8a40f4977e5ef3ae32330aabdc512aaf5606bf73ad9c1dfa0",
+      "strip_prefix" : "postgres-plr-plr-a8bfc52",
+      "commit" : "a8bfc52168229856a9492419da6d53a4d6c063fb",
+      "short_commit" : "a8bfc52"
+    },
+    "8.2.0-8" : {
+      "tag" : "REL8_2_0_8",
+      "sha256" : "3ca401bffab803d69a1a4acb431fc29cf38eb34539ce870bdfe69cc8e8c2a348",
+      "strip_prefix" : "postgres-plr-plr-192fbe0",
+      "commit" : "192fbe0246ef2366f07c65c5a76914266c652306",
+      "short_commit" : "192fbe0"
+    },
+    "8.2.0-7" : {
+      "tag" : "REL8_2_0_7",
+      "sha256" : "f893664135c44affe606da0aabef13d2d8cf5360e1e60059fb8ab9cf404cc6ae",
+      "strip_prefix" : "postgres-plr-plr-e4b70f2",
+      "commit" : "e4b70f28fdc45c65a9aa6fc6da56224fcd45cffe",
+      "short_commit" : "e4b70f2"
+    },
+    "8.2.0-6" : {
+      "tag" : "REL8_2_0_6",
+      "sha256" : "d6bd92bd7df788e10f8e535089a60579de7d1543e28f0fcbf4b5f99b305874cc",
+      "strip_prefix" : "postgres-plr-plr-d78ee6a",
+      "commit" : "d78ee6ab0963737f600c0e41260193eacdfcf21e",
+      "short_commit" : "d78ee6a"
+    },
+    "8.2.0-5" : {
+      "tag" : "REL8_2_0_5",
+      "sha256" : "3cfb14ecc575832d2760937bf160fcc1d0fa56aec61358eb581d4995b17f49d6",
+      "strip_prefix" : "postgres-plr-plr-5ac6902",
+      "commit" : "5ac6902c32fd5a0b452865efe09cce4fa616abd2",
+      "short_commit" : "5ac6902"
+    },
+    "8.2.0-4" : {
+      "tag" : "REL8_2_0_4",
+      "sha256" : "bdd58b7bef5e6db7f137c55f290e57b1bc9f4e771594e6d8b612de64b9aadbb1",
+      "strip_prefix" : "postgres-plr-plr-974dc94",
+      "commit" : "974dc94873cb71a9a74744f578399c78ee59a7fe",
+      "short_commit" : "974dc94"
+    },
+    "8.2.0-3" : {
+      "tag" : "REL8_2_0_3",
+      "sha256" : "09a85a611e81daf95938886095958c69afe8c331f64cf8b711c915b748d332a8",
+      "strip_prefix" : "postgres-plr-plr-07f8448",
+      "commit" : "07f8448b77ecba7cf0181ff56c3c938c53f066ef",
+      "short_commit" : "07f8448"
+    },
+    "0.6.2-10" : {
+      "tag" : "REL0_6_2_10",
+      "sha256" : "b5b8729bb17e554a312a17d3ce5b9bd191fa6afb006af5b563611abc997e5fad",
+      "strip_prefix" : "postgres-plr-plr-4412a32",
+      "commit" : "4412a32aab9ac2f8cceb9bec02b19b0d5b086022",
+      "short_commit" : "4412a32"
+    },
+    "0.6.2-9" : {
+      "tag" : "REL0_6_2_9",
+      "sha256" : "ad470a32f6738bbf466aa3e2fb4f9fc2bd0e76cc88109bdb47a02a3ce53df2b4",
+      "strip_prefix" : "postgres-plr-plr-5f29d7e",
+      "commit" : "5f29d7e744726f9f94884ef6f0c29723cd5a0e71",
+      "short_commit" : "5f29d7e"
+    },
+    "0.6.2-8" : {
+      "tag" : "REL0_6_2_8",
+      "sha256" : "1a3ae668e97d34cd0bae969e6fa29bbad8f4f550c41ea83ded6881c40988310b",
+      "strip_prefix" : "postgres-plr-plr-29895d0",
+      "commit" : "29895d05f20700b8a360eb59c0684b7f7809e7d8",
+      "short_commit" : "29895d0"
+    },
+    "0.6.2-7" : {
+      "tag" : "REL0_6_2_7",
+      "sha256" : "e2627827c43f3d367569a369f0562533a77dff771b5273932febc478c503d0e7",
+      "strip_prefix" : "postgres-plr-plr-748a174",
+      "commit" : "748a174e00de3a9da01e930a37f8472cdaa75dbb",
+      "short_commit" : "748a174"
+    },
+    "0.6.2-6" : {
+      "tag" : "REL0_6_2_6",
+      "sha256" : "b771b205c2c918c2de29f692fc5604b1e0f4f3b588e5d70f2c7ce8f8074f07cf",
+      "strip_prefix" : "postgres-plr-plr-891c309",
+      "commit" : "891c309583cb38522d84f10047e0735d2f4d9fdb",
+      "short_commit" : "891c309"
+    },
+    "0.6.2-5" : {
+      "tag" : "REL0_6_2_5",
+      "sha256" : "ccbc67311ffab7abedab6efd2ee00b2a3bcb2e432f136932d0649d908a95b05f",
+      "strip_prefix" : "postgres-plr-plr-e273684",
+      "commit" : "e2736847d3fb2be13359e2a6c49ebf64768f7f2f",
+      "short_commit" : "e273684"
+    },
+    "0.6.2-4" : {
+      "tag" : "REL0_6_2_4",
+      "sha256" : "cb86122f96b5ced2851ef1bcfeabab02c1e88a1b9bca870ac5b65ac458f20751",
+      "strip_prefix" : "postgres-plr-plr-eb1f22e",
+      "commit" : "eb1f22e512b18f69fe131c92a008c19abf786419",
+      "short_commit" : "eb1f22e"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "8.4.8-2" : {
+        "default_version" : "8.4.8.2",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.8-1" : {
+        "default_version" : "8.4.8.1",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.8" : {
+        "default_version" : "8.4.8",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.7" : {
+        "default_version" : "8.4.7",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.6" : {
+        "default_version" : "8.4.6",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.5" : {
+        "default_version" : "8.4.5",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.4" : {
+        "default_version" : "8.4.4",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.3" : {
+        "default_version" : "8.4.2",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.2" : {
+        "default_version" : "8.4.2",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.4.1" : {
+        "default_version" : "8.4.1",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-18" : {
+        "default_version" : "8.3.0.18",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-17" : {
+        "default_version" : "8.3.0.17",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-16" : {
+        "default_version" : "8.3.0.16",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-15" : {
+        "default_version" : "8.3.0.15",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-14" : {
+        "default_version" : "8.3.0.14",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "8.3.0-13" : {
+        "default_version" : "8.3.0.13",
+        "comment" : "load R interpreter and execute R script from within a database",
+        "module_pathname" : "$libdir/plr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,53 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/RekGRpth/pg_task/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "570fcf893021f9794122f10fbf9cd9b951cd27f51b2b0d6a1f225c9248bab5c1",
+      "strip_prefix" : "RekGRpth-pg_task-cf1371c",
+      "commit" : "cf1371c8db83e9985ab1b589aa961d9a58ef964f",
+      "short_commit" : "cf1371c"
+    }
+  },
+  "metadata" : {
+    "META.json" : {
+      "1.0.0" : {
+        "name" : "pg_task",
+        "abstract" : "PostgreSQL, Greenplum and Greengage job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously",
+        "description" : "PostgreSQL, Greenplum and Greengage job scheduler pg_task allows to execute any sql command at any specific time at background asynchronously",
+        "version" : "2.1.29",
+        "maintainer" : "RekGRpth <rekgrpth@gmail.com>",
+        "license" : "mit",
+        "provides" : {
+          "pg_task" : {
+            "file" : "pg_task.so",
+            "docfile" : "README.md",
+            "version" : "2.1.29"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/RekGRpth/pg_task/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/RekGRpth/pg_task.git",
+            "web" : "https://github.com/RekGRpth/pg_task",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "RekGRpth",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "task", "job", "scheduler" ]
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,94 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgpointcloud/pointcloud/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.5" : {
+      "tag" : "v1.2.5",
+      "sha256" : "ec05c12f0a30d3160417ae0d70b51b54bc4fabc562e6cae18dd410a3d5ddf19b",
+      "strip_prefix" : "pgpointcloud-pointcloud-b5db45a",
+      "commit" : "b5db45acfbb26ab212dc8f7fa2a5449f5ba17377",
+      "short_commit" : "b5db45a"
+    },
+    "1.2.4" : {
+      "tag" : "v1.2.4",
+      "sha256" : "352890dc50f151112a765ed9359417d3381b5677a8505fcb02067a921f47f480",
+      "strip_prefix" : "pgpointcloud-pointcloud-6e7ecaa",
+      "commit" : "6e7ecaa0124e6918f400580ac5835f1d608ce759",
+      "short_commit" : "6e7ecaa"
+    },
+    "1.2.3" : {
+      "tag" : "v1.2.3",
+      "sha256" : "9fc9589ea21c403b7da6c89eee78f0893f01d01573f1090a8dbeda7cbb721a22",
+      "strip_prefix" : "pgpointcloud-pointcloud-f08b80f",
+      "commit" : "f08b80fd0486d9428dc5af7b9211256cb2296d67",
+      "short_commit" : "f08b80f"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "c50202ffc2cbc39502e640d435c2a5441c1d70f5de6aa1dd6a24c19574d0e4b2",
+      "strip_prefix" : "pgpointcloud-pointcloud-87eed72",
+      "commit" : "87eed725be157faeff700ddf460ae896548e9329",
+      "short_commit" : "87eed72"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "5d3ea1201440c0409a96fd4fbe4543ebe63b0c9fcff727cd7dbfeb36c8bf3eca",
+      "strip_prefix" : "pgpointcloud-pointcloud-7104db6",
+      "commit" : "7104db636446ad4d623222950ead41ee6f1de154",
+      "short_commit" : "7104db6"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "e15ac342c111806a40ed1424165178d2f15633bd1f60c57d53ab4b1fb4dd7394",
+      "strip_prefix" : "pgpointcloud-pointcloud-29fdb7c",
+      "commit" : "29fdb7cb504e57f7ccbf18e9c16cab8ec53ad884",
+      "short_commit" : "29fdb7c"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "417bd2d5b66a252086d84a8aa8886323258a76c37b62e556ce0c0d29e7be521d",
+      "strip_prefix" : "pgpointcloud-pointcloud-1361e4c",
+      "commit" : "1361e4ca3f5b7a6a2faf7862b9e2da60adf7f78f",
+      "short_commit" : "1361e4c"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "28193707d36b3106689eb51ad31b10da5e64f1ab748cf71294c7137f2ced37b2",
+      "strip_prefix" : "pgpointcloud-pointcloud-391e384",
+      "commit" : "391e38402d5cd0330f943a4dc844062dac07716c",
+      "short_commit" : "391e384"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "9c5db84fd3ce34c1857e4b55def6b1ce9008c94cdde3357cd9892dc766d6aca0",
+      "strip_prefix" : "pgpointcloud-pointcloud-649712a",
+      "commit" : "649712a7e83d4519c7d7100a5f5665e158b8fda6",
+      "short_commit" : "649712a"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "a9efd3624b40cbbcfb7036ab0087e59498920e6d8cef12d022e73208ca942a16",
+      "strip_prefix" : "pgpointcloud-pointcloud-2312537",
+      "commit" : "23125379f5d963fa88facbb93cb8a4b1c28a672a",
+      "short_commit" : "2312537"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "data type for lidar point clouds",
+        "module_pathname" : "$libdir/pointcloud",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : { }
+  },
+  "version" : 1
+}

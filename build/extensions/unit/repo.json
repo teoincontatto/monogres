@@ -1,0 +1,293 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/df7cb/postgresql-unit/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "7.10.0" : {
+      "tag" : "7.10",
+      "sha256" : "bc15f2fd77b86b8e1685f29552c3b3c1ccf171a5335b9d0481dfd750e9bc93c6",
+      "strip_prefix" : "df7cb-postgresql-unit-a27fb20",
+      "commit" : "a27fb20b56f852f6511b876fb8bafc31ef95eec0",
+      "short_commit" : "a27fb20"
+    },
+    "7.9.0" : {
+      "tag" : "7.9",
+      "sha256" : "0f7ab9ea5b73e10bfd616cce4b63776662b1550d487741e9f0abba9bef5d9023",
+      "strip_prefix" : "df7cb-postgresql-unit-21fce05",
+      "commit" : "21fce058b54e96db5e488450beb56390194a71f9",
+      "short_commit" : "21fce05"
+    },
+    "7.8.0" : {
+      "tag" : "7.8",
+      "sha256" : "2a8ef38a9b25b02bf5636681f931e2d4b881e0aff94827a49d729249950564ec",
+      "strip_prefix" : "df7cb-postgresql-unit-2d41b0e",
+      "commit" : "2d41b0e0cdd0eac87a6569338c503dc708861ca7",
+      "short_commit" : "2d41b0e"
+    },
+    "7.7.0" : {
+      "tag" : "7.7",
+      "sha256" : "af514f477fe30bd904d324f65bf6db7e95420294a16ed1e8e8b593c6523ae472",
+      "strip_prefix" : "df7cb-postgresql-unit-cca89fa",
+      "commit" : "cca89fa0bde12f1cc78d23d9427ffe21760da009",
+      "short_commit" : "cca89fa"
+    },
+    "7.6.0" : {
+      "tag" : "7.6",
+      "sha256" : "c874c8bf9c0b349a2a485dac20d4ada76598c613c187091760ccd13a83989eda",
+      "strip_prefix" : "df7cb-postgresql-unit-420eca9",
+      "commit" : "420eca94387c02e162539d84f0c606050f2e2145",
+      "short_commit" : "420eca9"
+    },
+    "7.5.0" : {
+      "tag" : "7.5",
+      "sha256" : "99538b2c52b327db1d7189ded5157192151927d63629723f81c4807da3b54d50",
+      "strip_prefix" : "df7cb-postgresql-unit-8db54b4",
+      "commit" : "8db54b42fa96fbf87942fc03bdb3e49f093fdb54",
+      "short_commit" : "8db54b4"
+    },
+    "7.4.0" : {
+      "tag" : "7.4",
+      "sha256" : "b0cbbae56dfeeb09f154d74cd8baa57e43e3b306ed9d19dccef8b65b48a80e48",
+      "strip_prefix" : "df7cb-postgresql-unit-279e3fe",
+      "commit" : "279e3fe5f7a722ed20e153c9947ae87d8ea2c22a",
+      "short_commit" : "279e3fe"
+    },
+    "7.3.0" : {
+      "tag" : "7.3",
+      "sha256" : "f7fc10190393c171dac96251f635509fcd1f4304a9450b05365d8129f28b4821",
+      "strip_prefix" : "df7cb-postgresql-unit-09239bc",
+      "commit" : "09239bcb42d283d52ea01f324aa01bf79342d4d4",
+      "short_commit" : "09239bc"
+    },
+    "7.2.0" : {
+      "tag" : "7.2",
+      "sha256" : "1544419adf4507d48a755ee6231409da2110a8859dc31f87be197c397aa06793",
+      "strip_prefix" : "df7cb-postgresql-unit-1d62f5d",
+      "commit" : "1d62f5d998819ec46f226b1926b3f078c3145aaa",
+      "short_commit" : "1d62f5d"
+    },
+    "7.1.0" : {
+      "tag" : "7.1",
+      "sha256" : "078b1931f7d9b4a0291f3928eff157e6b1bfa8b813096f6c848ffa727757e1d7",
+      "strip_prefix" : "df7cb-postgresql-unit-1a03215",
+      "commit" : "1a032159db5cada29a2cccd82caf1c736f46d179",
+      "short_commit" : "1a03215"
+    },
+    "7.0.0" : {
+      "tag" : "7.0",
+      "sha256" : "23a0a84d0d4b85eb0ccd0d76c35d4d880d3dfc1ccb15f4a52444087f50443b4e",
+      "strip_prefix" : "df7cb-postgresql-unit-7d1a426",
+      "commit" : "7d1a4268f5ac2f526c5f8764159299f4aecaea94",
+      "short_commit" : "7d1a426"
+    },
+    "6.0.0" : {
+      "tag" : "6.0",
+      "sha256" : "25c169c2f228983cb4b4ad3577e18ee8166e3aa79f621d4a6ac74619e08fe65b",
+      "strip_prefix" : "df7cb-postgresql-unit-616d86e",
+      "commit" : "616d86ef6ae3f26399564b9e480a11ad57703aed",
+      "short_commit" : "616d86e"
+    },
+    "5.0.0" : {
+      "tag" : "5.0",
+      "sha256" : "bb3b26bb9f498f8573d98fcfb3a1b05bed263b298e49edd54ea35cd82c620a7e",
+      "strip_prefix" : "df7cb-postgresql-unit-932bed4",
+      "commit" : "932bed4f8b02d970e2b8231a6bc29cfe2a6c9df3",
+      "short_commit" : "932bed4"
+    },
+    "4.0.0" : {
+      "tag" : "4.0",
+      "sha256" : "12d1ab72e0979e5defc29501222065fa498a31d51cb15676da933b7a2e0378b9",
+      "strip_prefix" : "df7cb-postgresql-unit-2548cf5",
+      "commit" : "2548cf58a76cc333bfad085a1bfc6d91fb4ba962",
+      "short_commit" : "2548cf5"
+    },
+    "3.1.0" : {
+      "tag" : "3.1",
+      "sha256" : "a303bdf2cb4e66848456bf003b223567768e886cc189839d38fe0e83cf0cc772",
+      "strip_prefix" : "df7cb-postgresql-unit-f2cf434",
+      "commit" : "f2cf434ed0ed3a5cf9f3e9c50b6d16c637117fea",
+      "short_commit" : "f2cf434"
+    },
+    "3.0.0" : {
+      "tag" : "3.0",
+      "sha256" : "8bc0631058eb4ae18e5b04c5d46781095bdc8c0218c498c077bdb6a487e30394",
+      "strip_prefix" : "df7cb-postgresql-unit-55450db",
+      "commit" : "55450db7dd99d5a918c0ece6824f5b535c0c9d7f",
+      "short_commit" : "55450db"
+    },
+    "2.0.0" : {
+      "tag" : "2.0",
+      "sha256" : "4eed0231a57153b85c323faac5fbf71a981f6b9f3580f22fcc7ae478c1164c75",
+      "strip_prefix" : "df7cb-postgresql-unit-dcd9116",
+      "commit" : "dcd911642b6bf849c8a877afe466b97707792471",
+      "short_commit" : "dcd9116"
+    },
+    "1.1.0" : {
+      "tag" : "1.1",
+      "sha256" : "ecfad1564f8fdf46ab571517970208898d3c40cbf6f79182f3c0d57a8ccd44b5",
+      "strip_prefix" : "df7cb-postgresql-unit-ae53f81",
+      "commit" : "ae53f8152abb3a51194e5ada22a668ce0e06b173",
+      "short_commit" : "ae53f81"
+    },
+    "1.0.0" : {
+      "tag" : "1.0",
+      "sha256" : "64294b93158eaafed0c27613f35cdf6558cb6252eac61fb5d55845224ee2399d",
+      "strip_prefix" : "df7cb-postgresql-unit-870bc4c",
+      "commit" : "870bc4c603a18e1097b424f056de24b08a950205",
+      "short_commit" : "870bc4c"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "7.9.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.8.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.7.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.6.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.5.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.4.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.3.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.2.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.10.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.1.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "7.0.0" : {
+        "default_version" : "7",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "6.0.0" : {
+        "default_version" : "6",
+        "comment" : "SI units extension",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.0" : {
+        "default_version" : "5",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.0" : {
+        "default_version" : "4",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.0" : {
+        "default_version" : "3",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.0" : {
+        "default_version" : "3",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "2",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1",
+        "comment" : "unit extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

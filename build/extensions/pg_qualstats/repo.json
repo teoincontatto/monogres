@@ -1,0 +1,997 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/powa-team/pg_qualstats/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.1.3" : {
+      "tag" : "2.1.3",
+      "sha256" : "0f5c83562a14f4dfdbe3ba3bd0db57b3b9d000e7238f6edd9b8dc014fc076e14",
+      "strip_prefix" : "powa-team-pg_qualstats-9be6ae0",
+      "commit" : "9be6ae045648438358f5cb303e0133bfc0e53e9c",
+      "short_commit" : "9be6ae0"
+    },
+    "2.1.2" : {
+      "tag" : "2.1.2",
+      "sha256" : "27cdfca78e14117c5f93d04dc57f1e89615590f083488468b25992a7e5c36593",
+      "strip_prefix" : "powa-team-pg_qualstats-e053ca6",
+      "commit" : "e053ca640ffff1e9b603f7b1b5e9320b7c11143f",
+      "short_commit" : "e053ca6"
+    },
+    "2.1.1" : {
+      "tag" : "2.1.1",
+      "sha256" : "20109c11acf49eacb0f26334d438b4921a47bdb90369aa7afffc9f36c0969393",
+      "strip_prefix" : "powa-team-pg_qualstats-97cc597",
+      "commit" : "97cc5976f2afedfd1fcd7071833b0a6f5ddffee9",
+      "short_commit" : "97cc597"
+    },
+    "2.1.0" : {
+      "tag" : "2.1.0",
+      "sha256" : "0d34a767e5d2a673c979a7eac517af98aaade74d4f84e5edffcda51fba238211",
+      "strip_prefix" : "powa-team-pg_qualstats-90b06b5",
+      "commit" : "90b06b50fe753e34512b0fd16a1dcfbb452cec0b",
+      "short_commit" : "90b06b5"
+    },
+    "2.0.4" : {
+      "tag" : "2.0.4",
+      "sha256" : "76c4dc77bd1f96d89c9fb6b89cdde9762e894a85faef80ab3556f71dff452dbc",
+      "strip_prefix" : "powa-team-pg_qualstats-effe43b",
+      "commit" : "effe43b2c9f4c85822a98a09eac3681341a8fd86",
+      "short_commit" : "effe43b"
+    },
+    "2.0.3" : {
+      "tag" : "2.0.3",
+      "sha256" : "9dadb842ed18295d3ef3b5d61b5521223649cffcda75e9e56272f640e550c8c9",
+      "strip_prefix" : "powa-team-pg_qualstats-4d00e50",
+      "commit" : "4d00e501bb273f9fdd044185ade629c866b5b8f0",
+      "short_commit" : "4d00e50"
+    },
+    "2.0.2" : {
+      "tag" : "2.0.2",
+      "sha256" : "55e2f2ac8d0dde8d6fee7f15cd4601b216fa90b7640bf89550931fff9ecc10dc",
+      "strip_prefix" : "powa-team-pg_qualstats-4e4352b",
+      "commit" : "4e4352b4bc0a4ca89d4ccf51a1e571e853f89a17",
+      "short_commit" : "4e4352b"
+    },
+    "2.0.1" : {
+      "tag" : "2.0.1",
+      "sha256" : "2aca8a31a1a5b3bc0aebd9c21bb683b54804332082c535b50a4a0bf06a09b418",
+      "strip_prefix" : "powa-team-pg_qualstats-c0590e3",
+      "commit" : "c0590e39f40f10c6c5b46133952d1346a4858088",
+      "short_commit" : "c0590e3"
+    },
+    "2.0.0" : {
+      "tag" : "2.0.0",
+      "sha256" : "c3374646ccdcd88d8f331a477072bc24d038c4dcf0c4eee5532ea15d9c25cfaf",
+      "strip_prefix" : "powa-team-pg_qualstats-2ab1f2b",
+      "commit" : "2ab1f2b5857ae8dd7aa7550283f6a4928e81c1a5",
+      "short_commit" : "2ab1f2b"
+    },
+    "1.0.9" : {
+      "tag" : "1.0.9",
+      "sha256" : "663eb176f82a6ba609ce41f31bd07025522270187b2af8eeef276f85b2afd600",
+      "strip_prefix" : "powa-team-pg_qualstats-a4ad3d9",
+      "commit" : "a4ad3d99c7d8cfe3acddbcce00a3d665d3f778fc",
+      "short_commit" : "a4ad3d9"
+    },
+    "1.0.8" : {
+      "tag" : "1.0.8",
+      "sha256" : "ac08cb7fb0fe867942bb4b590b458e784665bc4d0c73739f6b19347201fba81f",
+      "strip_prefix" : "powa-team-pg_qualstats-c6f178f",
+      "commit" : "c6f178f4f921e8c023f41438fe61b9209415bcac",
+      "short_commit" : "c6f178f"
+    },
+    "1.0.7" : {
+      "tag" : "1.0.7",
+      "sha256" : "ea354064036a7eee2276b2d9b749fce7ea0e11968e0fbc603819326fb3b80bcf",
+      "strip_prefix" : "powa-team-pg_qualstats-7f2fd31",
+      "commit" : "7f2fd31fdc3bbdfcb90b3a1b273f4b93dae447e5",
+      "short_commit" : "7f2fd31"
+    },
+    "1.0.6" : {
+      "tag" : "1.0.6",
+      "sha256" : "cc090134d553b7ee450349db257a80e91269893f940d530eaeb548b85c09df25",
+      "strip_prefix" : "powa-team-pg_qualstats-bdd6f7f",
+      "commit" : "bdd6f7f792f8f0c7c355066dd5667f795078812d",
+      "short_commit" : "bdd6f7f"
+    },
+    "1.0.5" : {
+      "tag" : "1.0.5",
+      "sha256" : "64ba172cf3848d47536cfb52e72a6378b3f62c74cd6b46ea87fadbb6edb64f06",
+      "strip_prefix" : "powa-team-pg_qualstats-49caa78",
+      "commit" : "49caa780c11c9fb06e39a4a29e83b8fa97103be7",
+      "short_commit" : "49caa78"
+    },
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "4ef171aa365e4c2172aeda9ff65b4e4853c5918b2adb3c814c2229cfad0fe7ba",
+      "strip_prefix" : "powa-team-pg_qualstats-4bf968f",
+      "commit" : "4bf968fa0eb318f96a4676e52eeaeff54306ab64",
+      "short_commit" : "4bf968f"
+    },
+    "1.0.3" : {
+      "tag" : "1.0.3",
+      "sha256" : "8ce27b0e97fea670a13841d0b2dff3d33349c3eaa93ab9ec33199a0131b0cd85",
+      "strip_prefix" : "powa-team-pg_qualstats-a2d1b91",
+      "commit" : "a2d1b91dec3e098c56794aa93745d57180d195fc",
+      "short_commit" : "a2d1b91"
+    },
+    "1.0.2" : {
+      "tag" : "1.0.2",
+      "sha256" : "1a13d327068e9a8a52cdb14b8632e770032659c2ac57db2e3a61825733b0ff9d",
+      "strip_prefix" : "powa-team-pg_qualstats-7241d5a",
+      "commit" : "7241d5a8fa444f35f233a1706b64d5bff98a0ea7",
+      "short_commit" : "7241d5a"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "2e394f1653e4e128e60539bff418492d741fa1ed61daf086871b4325965f1861",
+      "strip_prefix" : "powa-team-pg_qualstats-82ef264",
+      "commit" : "82ef2647db2ca3e564373c544b3307b95414c2e9",
+      "short_commit" : "82ef264"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "f7293d73e5b8a1650e63ededf5c37f4cb98edf3d1804e0fb02ccf3fba9a10f6e",
+      "strip_prefix" : "powa-team-pg_qualstats-a401911",
+      "commit" : "a401911112809bd9230dafbbc84c0e83f0c22737",
+      "short_commit" : "a401911"
+    },
+    "0.0.9" : {
+      "tag" : "0.0.9",
+      "sha256" : "e3add8a9550272c11e6284b31ac7ca4c6fbf72efdf50e219f32a9dd93803e791",
+      "strip_prefix" : "powa-team-pg_qualstats-1db78ce",
+      "commit" : "1db78ceb39128375158b473dba123c2a1b1fc63b",
+      "short_commit" : "1db78ce"
+    },
+    "0.0.8" : {
+      "tag" : "0.0.8",
+      "sha256" : "f23b35eb5ae687012fca62d61da258ef08d43586f48afb7c8fe98a019a80bab6",
+      "strip_prefix" : "powa-team-pg_qualstats-e43c29f",
+      "commit" : "e43c29f160ce8028e46cc395284fcd474484c39b",
+      "short_commit" : "e43c29f"
+    },
+    "0.0.7" : {
+      "tag" : "0.0.7",
+      "sha256" : "8ce7eec4b103cdf79c83f73582541c94ac14930d1c3a1b45f88e30a035544209",
+      "strip_prefix" : "powa-team-pg_qualstats-9647ad7",
+      "commit" : "9647ad73d35600214ec628c03aa982d546ba8b1e",
+      "short_commit" : "9647ad7"
+    },
+    "0.0.6" : {
+      "tag" : "0.0.6",
+      "sha256" : "bea9e2c83ac83765c9efe35358b67b5da44e81d7669e19ed0b6cc8f56505fa7d",
+      "strip_prefix" : "powa-team-pg_qualstats-a408d6c",
+      "commit" : "a408d6c60d5a15d4906e0ae4833e66a886f6f6ae",
+      "short_commit" : "a408d6c"
+    },
+    "0.0.5" : {
+      "tag" : "0.0.5",
+      "sha256" : "ecac46c64cb47e834c78847a9b90142a6444253300fe980e444659571f12d7e9",
+      "strip_prefix" : "powa-team-pg_qualstats-6ac6cae",
+      "commit" : "6ac6cae11afaaee78755b06a2f8aaead755841cf",
+      "short_commit" : "6ac6cae"
+    },
+    "0.0.4" : {
+      "tag" : "0.0.4",
+      "sha256" : "48111648d7eeb1218cebd1101445cb825ed4da7ccc56abf624e7d2e73ee1c356",
+      "strip_prefix" : "powa-team-pg_qualstats-172d97f",
+      "commit" : "172d97f17434dedfe77caa3f78dda40514aebeea",
+      "short_commit" : "172d97f"
+    },
+    "0.0.3" : {
+      "tag" : "0.0.3",
+      "sha256" : "941bd01fdb42db3e05e13bb71316d704ea24b4b1b829cc4a698ee5d3fc1f311a",
+      "strip_prefix" : "powa-team-pg_qualstats-250e946",
+      "commit" : "250e9460e2514fafb42f73f9c63485a21c46cc69",
+      "short_commit" : "250e946"
+    },
+    "0.0.2" : {
+      "tag" : "0.0.2",
+      "sha256" : "789c3f250a1126142c267e039cc02179bc484df8a22535b12b9e3a0d40e019f1",
+      "strip_prefix" : "powa-team-pg_qualstats-55764d3",
+      "commit" : "55764d3a234833b6bc7f73ca15e79bddaf332edc",
+      "short_commit" : "55764d3"
+    },
+    "0.0.1" : {
+      "tag" : "0.0.1",
+      "sha256" : "25abbb16373a2dbaaa3bb27db467e51eb6a427c7ac925fabcb04a5a111a300f4",
+      "strip_prefix" : "powa-team-pg_qualstats-e1351df",
+      "commit" : "e1351df6f0cbceb46b378390637b76535fd4787e",
+      "short_commit" : "e1351df"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.1.3" : {
+        "default_version" : "2.1.3",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.2" : {
+        "default_version" : "2.1.2",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.1" : {
+        "default_version" : "2.1.1",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.4" : {
+        "default_version" : "2.0.4",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.3" : {
+        "default_version" : "2.0.3",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.1",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.9" : {
+        "default_version" : "1.0.9",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.8" : {
+        "default_version" : "1.0.8",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.7" : {
+        "default_version" : "1.0.7",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.6" : {
+        "default_version" : "1.0.6",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.5" : {
+        "default_version" : "1.0.5",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.4" : {
+        "default_version" : "1.0.4",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "default_version" : "1.0.3",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.0.2",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.9" : {
+        "default_version" : "0.0.9",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.8" : {
+        "default_version" : "0.0.8",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.7" : {
+        "default_version" : "0.0.7",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.6" : {
+        "default_version" : "0.0.6",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.5" : {
+        "default_version" : "0.0.5",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.4" : {
+        "default_version" : "0.0.4",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "An extension collecting statistics about quals",
+        "module_pathname" : "$libdir/pg_qualstats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "2.1.3" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.1.2" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.1.1" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.1.0" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.0.4" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.0.3" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.0.2" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.0.1" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "2.0.0" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.9" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.8" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.7" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.6" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.5" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.4" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.3" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.2" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.1" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.0" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.9" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.8" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.7" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.6" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.5" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.4" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.3" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.2" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "testing",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.1" : {
+        "name" : "pg_qualstats",
+        "abstract" : "An extension collecting statistics about predicates",
+        "version" : "__VERSION__",
+        "maintainer" : "Ronan Dunklau <ronan.dunklau@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "testing",
+        "provides" : {
+          "pg_qualstats" : {
+            "abstract" : "An extension collecting statistics about predicates",
+            "file" : "pg_qualstats.sql",
+            "docfile" : "doc/README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

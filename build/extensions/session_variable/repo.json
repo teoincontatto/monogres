@@ -1,0 +1,80 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/splendiddata/session_variable/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.4.0" : {
+      "tag" : "3.4",
+      "sha256" : "ef6612b8c4c40af3247f1b6179b36e6bd85b21951ddb05dfc486b3cf60346436",
+      "strip_prefix" : "splendiddata-session_variable-3a41151",
+      "commit" : "3a411519a667c081cadf746814ce527324c75e40",
+      "short_commit" : "3a41151"
+    },
+    "3.3.0" : {
+      "tag" : "version_3.3",
+      "sha256" : "14d89f82071265197a67adb46874ab4d469d59ee0b8d0329eed21563bef4e64b",
+      "strip_prefix" : "splendiddata-session_variable-8f90fa8",
+      "commit" : "8f90fa879f3059f34a627ee34f08dff9c3f77181",
+      "short_commit" : "8f90fa8"
+    },
+    "3.2.0" : {
+      "tag" : "3.2",
+      "sha256" : "8b628104bd2624a74dfc27c3558eb6d84a66869012efcea35923f5bc3d8aeca7",
+      "strip_prefix" : "splendiddata-session_variable-7656106",
+      "commit" : "7656106db6508e031c219d28f59cf9ce25159c08",
+      "short_commit" : "7656106"
+    },
+    "1.0.5" : {
+      "tag" : "1.0.5",
+      "sha256" : "6298d3d2f9c2e04e7e100545ec078cbc5882535efb7d8e55d9e02e766610d0d7",
+      "strip_prefix" : "splendiddata-session_variable-9c3ea81",
+      "commit" : "9c3ea811c9af39a9410d7eed0f76f17d2a0ea4d2",
+      "short_commit" : "9c3ea81"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.4.0" : {
+        "default_version" : "3.4",
+        "comment" : "session_variable - registration and manipulation of session variables and constants",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "session_variable"
+      },
+      "3.3.0" : {
+        "default_version" : "3.3",
+        "comment" : "session_variable - registration and manipulation of session variables and constants",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "session_variable"
+      },
+      "3.2.0" : {
+        "default_version" : "3.2",
+        "comment" : "session_variable - registration and manipulation of session variables and constants",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "session_variable"
+      },
+      "1.0.5" : {
+        "default_version" : "1.0",
+        "comment" : "session_variable - registration and manipulation of session variables and constants",
+        "encoding" : "UTF-8",
+        "module_pathname" : "$libdir/session_variable.so",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "session_variable"
+      }
+    }
+  },
+  "version" : 1
+}

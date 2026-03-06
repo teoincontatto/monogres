@@ -1,0 +1,480 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ChenHuajun/pg_roaringbitmap/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "4121138d9fcf7167fe3d083aa4b0a178ac620484d96dc8a3c060a5333bcbe429",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-612e968",
+      "commit" : "612e968f95f5a90b5cf68c7c54829d4fe820a894",
+      "short_commit" : "612e968"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "8ae9a07d797fcd5b3c0329c975a0763d54d1acba8e7a7923a4e0ca50b5af1207",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-b3575bc",
+      "commit" : "b3575bc311269ba00e6d6773316baafedada2761",
+      "short_commit" : "b3575bc"
+    },
+    "0.5.5" : {
+      "tag" : "v0.5.5",
+      "sha256" : "2fa0f00530b901d249a12717984f12465525b9b01e13d6a4ef3c4605c428ff3f",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-972b90d",
+      "commit" : "972b90d852ade15d7c712ebaf39cf9cd4d9d93ef",
+      "short_commit" : "972b90d"
+    },
+    "0.5.4" : {
+      "tag" : "v0.5.4",
+      "sha256" : "f9819d1e0bb6341091c6d6ecb84fb2fc380079e1ffc5331b15181f550976d903",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-733cc33",
+      "commit" : "733cc33d795f8d757c2b59a4ebb2fee599505d6e",
+      "short_commit" : "733cc33"
+    },
+    "0.5.3" : {
+      "tag" : "v0.5.3",
+      "sha256" : "21d55cd20eb7e8b4957eb3698deefd84eafb74fdc7425bca949c6a284fb33d62",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-5ec0537",
+      "commit" : "5ec05373695204628f2f681573bae129ad832a73",
+      "short_commit" : "5ec0537"
+    },
+    "0.5.2" : {
+      "tag" : "v0.5.2",
+      "sha256" : "01260d313e0d8ff2915b71a2a5520c99ea12573af4e4e0cd91f548ecea05c909",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-3331836",
+      "commit" : "333183606b4ce5681b07198a9a1f0ed2fabbd906",
+      "short_commit" : "3331836"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5.1",
+      "sha256" : "73658c83930bd8fce2b6a801f3c122824bf971c5fecfb4933c3b0f9477f924fd",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-c330891",
+      "commit" : "c330891e61528fc9565d7177d82de03f82d587a6",
+      "short_commit" : "c330891"
+    },
+    "0.5.0" : {
+      "tag" : "v0.5.0",
+      "sha256" : "a031710a913ab2741be98f7b02487fc8f554630c326d194ca83e740a4f566dcd",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-8f55837",
+      "commit" : "8f55837d3989826490f567105d128a45fa626129",
+      "short_commit" : "8f55837"
+    },
+    "0.4.1" : {
+      "tag" : "v0.4.1",
+      "sha256" : "7a115deae9b77c5efcff9cb69ca2ea323374c995d6e2b58bc5d32b6dc29472e0",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-ac781ba",
+      "commit" : "ac781ba4dcc208688df93582dc8afc419b9dd71e",
+      "short_commit" : "ac781ba"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4.0",
+      "sha256" : "c0d89b349ae44d17adc6ae6a098a4af3e151fb6ffe769f8befa69d53d88fdeb1",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-e4a3270",
+      "commit" : "e4a32705bd7a62dc5b56f5b0312527e39d81fb9a",
+      "short_commit" : "e4a3270"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "83540014d8109f09ae75dd788ff6191213323dbc6db880a35205f278aab1938d",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-3264927",
+      "commit" : "326492731da70f52dd16a5f8ae98763ac7b5b084",
+      "short_commit" : "3264927"
+    },
+    "0.2.1" : {
+      "tag" : "v0.2.1",
+      "sha256" : "dcd6ebf25b227434946eaade16a01d67739671eab2155fa9a2d049504ff163f9",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-460d3ff",
+      "commit" : "460d3ff24d35267e528a8ec84e7dd203f0b537ce",
+      "short_commit" : "460d3ff"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "2197a09cdded5a9d241ac059e569fb358021d574783d46c4fcac64ae15b5b76e",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-da70484",
+      "commit" : "da704843ab0105d5d3feeaf51624cddb665ab1d3",
+      "short_commit" : "da70484"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "3e073296b13af3511a6884768393b891db7f4f720b32e0d2cb23c35c654aa833",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-defae51",
+      "commit" : "defae516787954c30c9a767212e56ceb97b6b70f",
+      "short_commit" : "defae51"
+    },
+    "0.0.3" : {
+      "tag" : "v0.0.3",
+      "sha256" : "aabfcbce97293f59cae8ee181dcff19c90f3fb4ebe6179a9fbb6f79facc82e52",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-361525d",
+      "commit" : "361525df82e5a1ad8a666d984cb3719479629d49",
+      "short_commit" : "361525d"
+    },
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "082e8e3bc155a450850cc9e7756ea3ba1252e2289351c13386bfe9916fbe70e0",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-cf65769",
+      "commit" : "cf6576990b8252a0f119ec87a9bc82ec2f05a3e4",
+      "short_commit" : "cf65769"
+    },
+    "0.0.1" : {
+      "tag" : "v0.0.1",
+      "sha256" : "ec85eda8d69248d45e4ccd806c0f6c2b4c3f6992fb596b8b2021f359cbb63ecc",
+      "strip_prefix" : "ChenHuajun-pg_roaringbitmap-7830532",
+      "commit" : "783053288fdfa7d98b313b8c4a35b1fe0e684348",
+      "short_commit" : "7830532"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.5" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.4" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.3" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "0.5",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.1" : {
+        "default_version" : "0.4",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.1" : {
+        "default_version" : "0.2",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "support for Roaring Bitmaps",
+        "module_pathname" : "$libdir/roaringbitmap",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.1.0" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "1.1.0",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "1.0.0" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "1.0.0",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "0.5.5" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "0.5.5",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--0.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.5"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "0.5.4" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "0.5.4",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--0.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.4"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "0.5.3" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "0.5.3",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--0.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.3"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "0.5.2" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "0.5.2",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--0.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.2"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      },
+      "0.5.1" : {
+        "name" : "pg_roaringbitmap",
+        "abstract" : "A Roaring Bitmap data type",
+        "description" : "This library contains a single PostgreSQL extension, a Roaring Bitmap data type called 'roaringbitmap', along with some convenience opperators and functions for constructing and handling Roaring Bitmap.",
+        "version" : "0.5.1",
+        "maintainer" : [ "Chen Huajun <chjischj@163.com>" ],
+        "license" : "apache_2_0",
+        "provides" : {
+          "pg_roaringbitmap" : {
+            "abstract" : "A Roaring Bitmap data type",
+            "file" : "roaringbitmap--0.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/ChenHuajun/pg_roaringbitmap.git",
+            "web" : "http://github.com/ChenHuajun/pg_roaringbitmap/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Chen Huajun",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "Roaring Bitmap", "RoaringBitmap", "bitmap", "ordered set" ]
+      }
+    }
+  },
+  "version" : 1
+}

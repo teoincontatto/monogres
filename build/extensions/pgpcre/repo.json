@@ -1,0 +1,45 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petere/pgpcre/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.20190509.0" : {
+      "tag" : "0.20190509",
+      "sha256" : "71b24736febb18a91646ebc40a58bc59d283503b374474ed636ccef0e1dfdd3f",
+      "strip_prefix" : "petere-pgpcre-0665ece",
+      "commit" : "0665ece3e27f36d8d800741a9871250ac54e9660",
+      "short_commit" : "0665ece"
+    },
+    "0.20130828.0" : {
+      "tag" : "0.20130828",
+      "sha256" : "362043c147d6d6c2ee1acde3fe3eadeee7c7db575290edffc8cfaf0b334b3df6",
+      "strip_prefix" : "petere-pgpcre-d6d7ea7",
+      "commit" : "d6d7ea7d12dec37843fd4b0feb53fcd01feea4b0",
+      "short_commit" : "d6d7ea7"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.20190509.0" : {
+        "default_version" : "1",
+        "comment" : "Perl Compatible Regular Expression functions",
+        "module_pathname" : "$libdir/pgpcre",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.20130828.0" : {
+        "default_version" : "0",
+        "comment" : "Perl Compatible Regular Expression functions",
+        "module_pathname" : "$libdir/pgpcre",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

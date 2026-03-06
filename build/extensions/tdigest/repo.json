@@ -1,0 +1,164 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/tdigest/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.3" : {
+      "tag" : "v1.4.3",
+      "sha256" : "1d0aa9e66e5189ca88e29840d80e4c84c363355669c4254e34a687f7c677075a",
+      "strip_prefix" : "tvondra-tdigest-04cef3d",
+      "commit" : "04cef3d8d97f2afe48e4e446a63472d5e8ac1297",
+      "short_commit" : "04cef3d"
+    },
+    "1.4.2" : {
+      "tag" : "v1.4.2",
+      "sha256" : "35537f23f7063a345fec233ef8d267a1e9cbb3a034ab814af1a9164499db830e",
+      "strip_prefix" : "tvondra-tdigest-a009ec3",
+      "commit" : "a009ec37abc98f3b4c36531c25a4cad3685f4eb2",
+      "short_commit" : "a009ec3"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "5228dd325a87524e347ffe6a5267559bdc92297d8b400cdbaf5793d1b9449546",
+      "strip_prefix" : "tvondra-tdigest-d050cc9",
+      "commit" : "d050cc9004961851442b232b6ffe0a1d337167f7",
+      "short_commit" : "d050cc9"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "bb89fa5560921076261c28f572e4b3aaefa346ec56d6441f5fe5c71b774a4eb4",
+      "strip_prefix" : "tvondra-tdigest-e6688b4",
+      "commit" : "e6688b4e68dec08d284b6fea7d049c466cef0f7e",
+      "short_commit" : "e6688b4"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "0d39f86a5ce2b93c7574d4cbdf63bab97ccd079f4e3f6ad18af12c4f4faf301d",
+      "strip_prefix" : "tvondra-tdigest-79ff34e",
+      "commit" : "79ff34ebf40932130bf2cd15f48d7538634f0817",
+      "short_commit" : "79ff34e"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "d8c1d6d747dd92dc48c03a780ef9e996d371fd84162ffe91eda9e34db4c9f6b5",
+      "strip_prefix" : "tvondra-tdigest-a75271b",
+      "commit" : "a75271b943561418bb4ce9c06008601c56cb21e7",
+      "short_commit" : "a75271b"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "59d4b3e180c8fb117bc639ea77a8ae2810bcf68daf1ef2b5e8e5c8eddde3d8df",
+      "strip_prefix" : "tvondra-tdigest-3d6ed20",
+      "commit" : "3d6ed209c0741f98792766e4b01e58e13c80ccbf",
+      "short_commit" : "3d6ed20"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "c74785f142ecf0d39e7dae12ba3b9abe7096c95da98db4e1b5f0a2ce4d2e3d5a",
+      "strip_prefix" : "tvondra-tdigest-c206b2b",
+      "commit" : "c206b2becd7f8986b51b464946d0b5e939633ca8",
+      "short_commit" : "c206b2b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.3" : {
+        "default_version" : "1.4.3",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.2" : {
+        "default_version" : "1.4.2",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "1.4.1",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4.0",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Provides tdigest aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Provides quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Provides quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.4.3" : {
+        "name" : "t-digest",
+        "abstract" : "Aggregate for an on-line accumulation of rank-based statistics such as quantiles and trimmed means.",
+        "description" : "This PostgreSQL extension implements t-digest, a data structure for on-line accumulation of rank-based statistics such as quantiles and trimmed means. The algorithm is also very friendly to parallel programs.",
+        "version" : "1.4.3",
+        "maintainer" : [ "Tomas Vondra <tomas@vondra.me>", "Nils Dijk <nils@citusdata.com>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "sql/quantile--1.4.2--1.4.3.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.3"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/tdigest.git",
+            "web" : "http://github.com/tvondra/tdigest",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "quantile", "median", "mean", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "stable"
+      }
+    }
+  },
+  "version" : 1
+}

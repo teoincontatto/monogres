@@ -1,0 +1,45 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/chanukyasds/pg_math/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "9dfaaab146a86c48aa7f27b0dd1d4fcc7f1a26949503554e99a8c06fac6b2a9f",
+      "strip_prefix" : "chanukyasds-pg_math-1fb6996",
+      "commit" : "1fb699659ae50e8e67a5dda3f5eb87bb37688ac7",
+      "short_commit" : "1fb6996"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "93611ba874db957de3d906031ca45f62bbc46f541a810b8b93131237059bb81d",
+      "strip_prefix" : "chanukyasds-pg_math-e279a46",
+      "commit" : "e279a46e4453e4a91708dd16694c15cba9767e11",
+      "short_commit" : "e279a46"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "statistical functions for postgresql",
+        "module_pathname" : "$libdir/pg_math",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "statistical functions for postgresql",
+        "module_pathname" : "$libdir/pg_math",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

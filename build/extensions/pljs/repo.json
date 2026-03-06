@@ -1,0 +1,399 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/plv8/pljs/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.5" : {
+      "tag" : "v1.0.5",
+      "sha256" : "18edf00f838cae45fad5c504a4ec27bd4e98081065ba64f32ec2358d5b6ded46",
+      "strip_prefix" : "plv8-pljs-194c4d5",
+      "commit" : "194c4d5bc8f7e3130f9b310607bc3c51b232cbdc",
+      "short_commit" : "194c4d5"
+    },
+    "1.0.4" : {
+      "tag" : "v1.0.4",
+      "sha256" : "fb6413a4f6016c1b0724833dcd00d836c790aff3a94536dba4eb881b71768562",
+      "strip_prefix" : "plv8-pljs-f7f2497",
+      "commit" : "f7f2497069bde5a36b5337d3b35be12fec023c93",
+      "short_commit" : "f7f2497"
+    },
+    "1.0.3" : {
+      "tag" : "v1.0.3",
+      "sha256" : "ae6406b8cb94ec161950bd280615f03a9f79a0e82406a7ecdc9da2da6053a1ab",
+      "strip_prefix" : "plv8-pljs-dc6049d",
+      "commit" : "dc6049d5e29ab5ddfa0bef48d75de2e1cf52d7aa",
+      "short_commit" : "dc6049d"
+    },
+    "1.0.2" : {
+      "tag" : "v1.0.2",
+      "sha256" : "1d93cee0e816822ceb3511fe3121910dc6c2666181b7f34f5a0c9bc608ec2436",
+      "strip_prefix" : "plv8-pljs-6a1195c",
+      "commit" : "6a1195c0fe2cf202bbc8a7c13108d969dd7799e9",
+      "short_commit" : "6a1195c"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "4ba85cedfbeff0a46d1af169d8b1d10bf992ce8c33d37a73f181a4cd9f6fe53a",
+      "strip_prefix" : "plv8-pljs-d7055ee",
+      "commit" : "d7055ee59bbe6e32b778c85c621f01979dcf27cb",
+      "short_commit" : "d7055ee"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "658f312f9568b35720529b140681875a70d19435a039e334f09c42fbd2c0afe7",
+      "strip_prefix" : "plv8-pljs-d115c42",
+      "commit" : "d115c425cf16f0002d6158242536e136199abfc8",
+      "short_commit" : "d115c42"
+    },
+    "0.8.0" : {
+      "tag" : "v0.8.0",
+      "sha256" : "8764a0715ceaddc9d2f296f401b458f5fc4373c63e7e3773bef2e6ac0454735c",
+      "strip_prefix" : "plv8-pljs-74f32bc",
+      "commit" : "74f32bc32e01718ccc67663479fd2bca9f5b5df7",
+      "short_commit" : "74f32bc"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.5" : {
+        "default_version" : "1.0.5",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.4" : {
+        "default_version" : "1.0.4",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.3" : {
+        "default_version" : "1.0.3",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.2" : {
+        "default_version" : "1.0.1",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "0.8.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "PL/JS trusted procedural language",
+        "module_pathname" : "$libdir/pljs",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    },
+    "META.json" : {
+      "1.0.5" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.5",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.5.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.5",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      },
+      "1.0.4" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.4",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.4.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.4",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      },
+      "1.0.3" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.3",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.3.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.3",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      },
+      "1.0.2" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.2",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.2.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.2",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      },
+      "1.0.1" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.1",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      },
+      "1.0.0" : {
+        "name" : "pljs",
+        "abstract" : "PLJS trusted procedural language",
+        "description" : "PLJS is a QuickJS-based Javascript Language Extension for \"modern\" PostgreSQL. It is compact, lightweight, and decently fast.",
+        "version" : "1.0.0",
+        "maintainer" : [ "Jerry Sievert <code@legitimatesounding.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pljs" : {
+            "file" : "pljs--1.0.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.0",
+            "abstract" : "PLJS trusted procedural language"
+          }
+        },
+        "no_index" : {
+          "directory" : [ "deps" ]
+        },
+        "resources" : {
+          "homepage" : "https://github.com/plv8/pljs",
+          "bugtracker" : {
+            "web" : "https://github.com/plv8/pljs/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/plv8/pljs",
+            "web" : "https://github.com/plv8/pljs.git",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "PL", "JavaScript", "QuickJS", "pljs" ]
+      }
+    }
+  },
+  "version" : 1
+}

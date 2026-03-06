@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/afiskon/pg_protobuf/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "cfd43c3661607a1b4da26f87ac3be389343bc352cc20c41d8625e6c353f5a88f",
+      "strip_prefix" : "afiskon-pg_protobuf-78574b3",
+      "commit" : "78574b343b02905057f0f6129a7b9969ca078361",
+      "short_commit" : "78574b3"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Protobuf support for PostgreSQL",
+        "module_pathname" : "$libdir/pg_protobuf",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

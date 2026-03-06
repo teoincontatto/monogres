@@ -1,0 +1,183 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/RhodiumToad/ip4r/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.4.2" : {
+      "tag" : "2.4.2",
+      "sha256" : "131f81a905b784b4a9fc310534845e1ea7d60c8c982c89b0f28de82980009483",
+      "strip_prefix" : "RhodiumToad-ip4r-6ace857",
+      "commit" : "6ace85722f9e5c01ec622ce82c2589f6f9024153",
+      "short_commit" : "6ace857"
+    },
+    "2.4.1" : {
+      "tag" : "2.4.1",
+      "sha256" : "14e6a9c2461f9742ff154628c90cf086fba35c3798444b305a4161cce47375ba",
+      "strip_prefix" : "RhodiumToad-ip4r-cfa021f",
+      "commit" : "cfa021f160925ff4cdb73c7efb89d5f6a75f3096",
+      "short_commit" : "cfa021f"
+    },
+    "2.4.0" : {
+      "tag" : "2.4",
+      "sha256" : "9bd2f4e0076cb7a362224163abee173446e903c70328346e0f656db4c1dbf17c",
+      "strip_prefix" : "RhodiumToad-ip4r-3ffb008",
+      "commit" : "3ffb00819f083db73a266f1a5c7676c624d875f7",
+      "short_commit" : "3ffb008"
+    },
+    "2.3.0" : {
+      "tag" : "2.3",
+      "sha256" : "300c443ffe106849fd78e55d6f84bc6a91c8ab0ff0ef3420624d2e5782d07dda",
+      "strip_prefix" : "RhodiumToad-ip4r-1a274e5",
+      "commit" : "1a274e513e0307566ed30c7f9bda6393116a11e0",
+      "short_commit" : "1a274e5"
+    },
+    "2.2.0" : {
+      "tag" : "2.2",
+      "sha256" : "b7fdbcb56c4fc06ed7921489d5fbb856a3680a18a6c80243beb7f54c8382053a",
+      "strip_prefix" : "RhodiumToad-ip4r-9ef1bb6",
+      "commit" : "9ef1bb601ad0a346ad208bc2c65f898ba2043e8d",
+      "short_commit" : "9ef1bb6"
+    },
+    "2.1.1" : {
+      "tag" : "2.1.1",
+      "sha256" : "f76f8fdceaa0f58d0169494300077aadb41e531ad8b93dd2b524e3bd878842a6",
+      "strip_prefix" : "RhodiumToad-ip4r-90c8a84",
+      "commit" : "90c8a8410cfc4f258b205cc2106bb16952bff0bc",
+      "short_commit" : "90c8a84"
+    },
+    "2.1.0" : {
+      "tag" : "2.1",
+      "sha256" : "179a300609dd2c092710351e144541587a973068ffa5d7b912313ded756652f8",
+      "strip_prefix" : "RhodiumToad-ip4r-b253bc2",
+      "commit" : "b253bc24861428a3919424f6739ddbb78b26b9c9",
+      "short_commit" : "b253bc2"
+    },
+    "2.0.4" : {
+      "tag" : "2.0.4",
+      "sha256" : "6b5515880bed5fbc5b5d0e2bf1e1c353cdca1291feb818bea3ba503110cb87c2",
+      "strip_prefix" : "RhodiumToad-ip4r-b98e5ad",
+      "commit" : "b98e5ad29b8b0cea9734b233a4e250a548029865",
+      "short_commit" : "b98e5ad"
+    },
+    "2.0.3" : {
+      "tag" : "2.0.3",
+      "sha256" : "7c63216d9ae2b90d883a7759a13fcf9d5a459ec18910303c21431422ca890c37",
+      "strip_prefix" : "RhodiumToad-ip4r-2f1e080",
+      "commit" : "2f1e0801591954780681cf20940813f604922e49",
+      "short_commit" : "2f1e080"
+    },
+    "2.0.2" : {
+      "tag" : "2.0.2",
+      "sha256" : "e49a1d3de9ee45c102bdee083fbd90f9f426015e50a4ab5c6a615bbfecb062e5",
+      "strip_prefix" : "RhodiumToad-ip4r-fe0c0c9",
+      "commit" : "fe0c0c9221d744074bc8e97a70fc2f974bcc71b0",
+      "short_commit" : "fe0c0c9"
+    },
+    "2.0.1" : {
+      "tag" : "2.0.1",
+      "sha256" : "72843986a5a44667eb0755fabda373ce1fad5161febcade4716d932cc014d4f3",
+      "strip_prefix" : "RhodiumToad-ip4r-5cc8f7c",
+      "commit" : "5cc8f7c513e6e2019eeb628145d4936c568b5348",
+      "short_commit" : "5cc8f7c"
+    },
+    "2.0.0" : {
+      "tag" : "2.0",
+      "sha256" : "dedd499616695f78e2b174441aeae325a48bf5755e6c1521a3309a1922ef3659",
+      "strip_prefix" : "RhodiumToad-ip4r-604ede5",
+      "commit" : "604ede52cc399507cac49073fe940e3bfdde5db2",
+      "short_commit" : "604ede5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.4.2" : {
+        "default_version" : "2.4",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.1" : {
+        "default_version" : "2.4",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.0" : {
+        "default_version" : "2.4",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "2.2",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "2.2",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "2.1",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.4" : {
+        "default_version" : "2.0",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.3" : {
+        "default_version" : "2.0",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.2" : {
+        "default_version" : "2.0",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "module_pathname" : "$libdir/ip4r",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

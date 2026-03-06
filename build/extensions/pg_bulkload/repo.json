@@ -1,0 +1,359 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ossc-db/pg_bulkload/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.1.23" : {
+      "tag" : "VERSION3_1_23",
+      "sha256" : "8c6b898942d820a27e3d81a9718e72c2512b155b12302e7060e86684360036bb",
+      "strip_prefix" : "ossc-db-pg_bulkload-7e12cbe",
+      "commit" : "7e12cbee7afabf3a0fbdf12d62d6989e294d160e",
+      "short_commit" : "7e12cbe"
+    },
+    "3.1.22" : {
+      "tag" : "VERSION3_1_22",
+      "sha256" : "cbe90d62f52e89cd96e5c20459280812e96416b985f30828f0adfd5730139125",
+      "strip_prefix" : "ossc-db-pg_bulkload-02b2517",
+      "commit" : "02b2517ea9160b7c07001e4ea63de339e7dde09d",
+      "short_commit" : "02b2517"
+    },
+    "3.1.21" : {
+      "tag" : "VERSION3_1_21",
+      "sha256" : "7b80fc6bd6ff8adc8e7a11f83d71428691c28a7ccd9d948dce21ec80faf0d1a1",
+      "strip_prefix" : "ossc-db-pg_bulkload-25bbd09",
+      "commit" : "25bbd09d766d711f93795f8d7fd5e7a8054dfa5b",
+      "short_commit" : "25bbd09"
+    },
+    "3.1.20" : {
+      "tag" : "VERSION3_1_20",
+      "sha256" : "a2b59ee6ade033156d8a2f8d300ec7eca231dd44686d5f6d670d47b14993a0c4",
+      "strip_prefix" : "ossc-db-pg_bulkload-2d9a225",
+      "commit" : "2d9a22578ba57913d8f07960d2815cf93aa277a3",
+      "short_commit" : "2d9a225"
+    },
+    "3.1.19" : {
+      "tag" : "VERSION3_1_19",
+      "sha256" : "a26e1e17b5523ea76a28b15895c103ec2e353d1a31b888e479b6a0e7d0cfc7d9",
+      "strip_prefix" : "ossc-db-pg_bulkload-300d058",
+      "commit" : "300d058135e482106672aecec674bee2a52d5e2e",
+      "short_commit" : "300d058"
+    },
+    "3.1.18" : {
+      "tag" : "VERSION3_1_18",
+      "sha256" : "5dc19cea59646d735964a06f5c681d386af408c031916d95bb5c155bb7073794",
+      "strip_prefix" : "ossc-db-pg_bulkload-49bdead",
+      "commit" : "49bdeadcf00025afec8f6486190e64f4c8fbabae",
+      "short_commit" : "49bdead"
+    },
+    "3.1.17" : {
+      "tag" : "VERSION3_1_17",
+      "sha256" : "5c32a23c5acfb3ab861c10c54a1af5b610ef72b206c137f6f4c6ee85fea7f1bf",
+      "strip_prefix" : "ossc-db-pg_bulkload-e22557f",
+      "commit" : "e22557fb0f0c78750ce35548b23a0474cdf1cdf5",
+      "short_commit" : "e22557f"
+    },
+    "3.1.16" : {
+      "tag" : "VERSION3_1_16",
+      "sha256" : "06eed6b8831208fd5c8e0c7858700aa9e53f38e61429c6b3fb56d8cdef6b6d59",
+      "strip_prefix" : "ossc-db-pg_bulkload-4707f24",
+      "commit" : "4707f24a68ef0e1358ecd8e4f89d63cb5a635cbe",
+      "short_commit" : "4707f24"
+    },
+    "3.1.15" : {
+      "tag" : "VERSION3_1_15",
+      "sha256" : "6edd11e484269b17dc78d74defef4a409ce87c25264291517eb2aa288d80d76f",
+      "strip_prefix" : "ossc-db-pg_bulkload-8da8454",
+      "commit" : "8da8454f91e731dc6043da12cdf839c5a1694e96",
+      "short_commit" : "8da8454"
+    },
+    "3.1.14" : {
+      "tag" : "VERSION3_1_14",
+      "sha256" : "f5cfd3e3feb6416787ea8ca31682d3ecde3bdb5513289f9627030e890d6a9ddc",
+      "strip_prefix" : "ossc-db-pg_bulkload-bedd313",
+      "commit" : "bedd3138b7fb80e5411ca77842899aabe389a41b",
+      "short_commit" : "bedd313"
+    },
+    "3.1.13" : {
+      "tag" : "VERSION3_1_13",
+      "sha256" : "bd58c8346f937a16899fcfd93517d13cebb1b56b86ac7236476e2e49ad6dd430",
+      "strip_prefix" : "ossc-db-pg_bulkload-a55caf1",
+      "commit" : "a55caf140d02b1de694d85e72d10e8c13b37086c",
+      "short_commit" : "a55caf1"
+    },
+    "3.1.12" : {
+      "tag" : "VERSION3_1_12",
+      "sha256" : "7b86998db723875ef7d337a874e551ead349cbaf5cf191fc1d6530f2ae53aed4",
+      "strip_prefix" : "ossc-db-pg_bulkload-3f3cd99",
+      "commit" : "3f3cd9981beb89627beec8b7b55a155500fe81fe",
+      "short_commit" : "3f3cd99"
+    },
+    "3.1.11" : {
+      "tag" : "VERSION3_1_11",
+      "sha256" : "32a197b17f0fc6ff20f1e7e11aee60ef9f46cbd82967893592fe2703f967c3df",
+      "strip_prefix" : "ossc-db-pg_bulkload-cf98bb4",
+      "commit" : "cf98bb4ab97893afebbe31fbeb1ae97b2e9f2398",
+      "short_commit" : "cf98bb4"
+    },
+    "3.1.10" : {
+      "tag" : "VERSION3_1_10",
+      "sha256" : "06297248d2d35351557b1c571da99c0cdc98aec0baa389fb6b87081ca61f4c12",
+      "strip_prefix" : "ossc-db-pg_bulkload-9fa163c",
+      "commit" : "9fa163c62e6c2b70985a83d02f29247c0573686f",
+      "short_commit" : "9fa163c"
+    },
+    "3.1.9" : {
+      "tag" : "VERSION3_1_9",
+      "sha256" : "dbd5044c34c7e1e8722f70f88f90198c81fa20f48b41af92b81f0eb876c9004c",
+      "strip_prefix" : "ossc-db-pg_bulkload-e02077b",
+      "commit" : "e02077b88eb05ac53a8a81832e34f03c20c0ce26",
+      "short_commit" : "e02077b"
+    },
+    "3.1.8" : {
+      "tag" : "VERSION3_1_8",
+      "sha256" : "52e9349ec21a17932c8a9757e8752ad2788aa8b801fa9f6322b373df72469871",
+      "strip_prefix" : "ossc-db-pg_bulkload-37ce5bf",
+      "commit" : "37ce5bffca6b7a9d92739da148856f012dd8fcd4",
+      "short_commit" : "37ce5bf"
+    },
+    "3.1.7" : {
+      "tag" : "VERSION3_1_7",
+      "sha256" : "9d5034c3839f588757ffdf5ece7aa5f8177ae04718c88e2bc994967d32efdbdb",
+      "strip_prefix" : "ossc-db-pg_bulkload-e155aa5",
+      "commit" : "e155aa596ab78b189b73a29cc7abf76f251ca815",
+      "short_commit" : "e155aa5"
+    },
+    "3.1.6" : {
+      "tag" : "VERSION3_1_6",
+      "sha256" : "7e7689aabe6a1f109593cb5678f2763b18159d1f42196b9e16e9ee9a14d9bd7f",
+      "strip_prefix" : "ossc-db-pg_bulkload-e747275",
+      "commit" : "e74727552fc398657702c0dcd6b4695c304970f8",
+      "short_commit" : "e747275"
+    },
+    "3.1.5" : {
+      "tag" : "VERSION3_1_5",
+      "sha256" : "e510165922949051c451fa9a4da37373398bea1b041a5ae6278078111c31860a",
+      "strip_prefix" : "ossc-db-pg_bulkload-3c03a8e",
+      "commit" : "3c03a8e1411b6e92b275df3a6647f63bb2b8f3e4",
+      "short_commit" : "3c03a8e"
+    },
+    "3.1.4" : {
+      "tag" : "VERSION3_1_4",
+      "sha256" : "b4dcaf07309242bb2b016e8a7aa2e8234567325b231517fa3493b8e45a48d1ce",
+      "strip_prefix" : "ossc-db-pg_bulkload-7381a6e",
+      "commit" : "7381a6e1caf28b5b9de9a18c6754ea4fc4b990ef",
+      "short_commit" : "7381a6e"
+    },
+    "3.1.3" : {
+      "tag" : "VERSION3_1_3",
+      "sha256" : "107dff8029d179b830ab6809753dc3ec1729772de2caec635b819b5baf4dd454",
+      "strip_prefix" : "ossc-db-pg_bulkload-c6c25d3",
+      "commit" : "c6c25d3b71381e08051f64869081f9b4d80186e6",
+      "short_commit" : "c6c25d3"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.1.9" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.8" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.7" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.6" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.5" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.4" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.3" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.20" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.19" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.18" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.17" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.16" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.15" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.14" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.13" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.12" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.11" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      },
+      "3.1.10" : {
+        "default_version" : "1.0",
+        "comment" : "pg_bulkload is a high speed data loading utility for PostgreSQL",
+        "module_pathname" : "$libdir/pg_bulkload",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "public"
+      }
+    },
+    "META.json" : {
+      "3.1.11" : {
+        "name" : "pg_bulkload",
+        "abstract" : "High speed data loading utility for PostgreSQL",
+        "description" : "pg_bulkload is designed to load huge amount of data to a database. You can load data to table bypassing PostgreSQL shared buffers.",
+        "version" : "3.1.9",
+        "maintainer" : "Takashi Ohnishi <bwtakacy@gmail.com>",
+        "license" : "bsd",
+        "provides" : {
+          "pg_bulkload" : {
+            "abstract" : "High speed data loading utility for PostgreSQL",
+            "file" : "lib/pg_bulkload.so",
+            "docfile" : "doc/index.html",
+            "version" : "3.1.9"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">=8.4.0, <9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_bulkload/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_bulkload.git",
+            "web" : "http://ossc-db.github.io/pg_bulkload/index.html",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "bulk load", "load", "copy" ]
+      }
+    }
+  },
+  "version" : 1
+}

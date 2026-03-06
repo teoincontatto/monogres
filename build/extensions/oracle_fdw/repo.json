@@ -1,0 +1,390 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/laurenz/oracle_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.8.0" : {
+      "tag" : "ORACLE_FDW_2_8_0",
+      "sha256" : "6c543caf23493d0f13d5f900c3a10fe4cf6536bf19fa543d2bf5174e9d6bc364",
+      "strip_prefix" : "laurenz-oracle_fdw-7edffab",
+      "commit" : "7edffabfd9b394c1f1a80572c5ecc93756ce55cd",
+      "short_commit" : "7edffab"
+    },
+    "2.7.0" : {
+      "tag" : "ORACLE_FDW_2_7_0",
+      "sha256" : "506da442782d57de7517ae0fb8359127ba502bc383c7c472ea19823040c30df6",
+      "strip_prefix" : "laurenz-oracle_fdw-cd51add",
+      "commit" : "cd51add7627b3d6e859a4a23a03552d041cb9f4b",
+      "short_commit" : "cd51add"
+    },
+    "2.6.0" : {
+      "tag" : "ORACLE_FDW_2_6_0",
+      "sha256" : "80362974727c1c1a04633002ab50961b1dcfcecd056ef1493e373bd0738c670c",
+      "strip_prefix" : "laurenz-oracle_fdw-33ea6a2",
+      "commit" : "33ea6a2b4ad9dcee21fc7c98f3e202d666b5cf25",
+      "short_commit" : "33ea6a2"
+    },
+    "2.5.0" : {
+      "tag" : "ORACLE_FDW_2_5_0",
+      "sha256" : "0fd5ed2f2368e549b5b18a46b98709ff74b32ab3904b2fb25be60025f39bec08",
+      "strip_prefix" : "laurenz-oracle_fdw-9db035f",
+      "commit" : "9db035fa8d6e98528009583fdc563ff0e9ca6d8b",
+      "short_commit" : "9db035f"
+    },
+    "2.4.0" : {
+      "tag" : "ORACLE_FDW_2_4_0",
+      "sha256" : "e50be72675332eaed6cbedd486bbdb72292371f640ad1ed7d084cb82553137aa",
+      "strip_prefix" : "laurenz-oracle_fdw-37bd40a",
+      "commit" : "37bd40a5dd6dfc2e757635298e59de0d598a2a73",
+      "short_commit" : "37bd40a"
+    },
+    "2.3.0" : {
+      "tag" : "ORACLE_FDW_2_3_0",
+      "sha256" : "b55c757bcbff500e59b76c731df17452d211a0fb8fa2abe4713ad65fbfcacd89",
+      "strip_prefix" : "laurenz-oracle_fdw-71b4325",
+      "commit" : "71b4325a7c06e9a8fc92a1687ba81c1c1aebb17e",
+      "short_commit" : "71b4325"
+    },
+    "2.2.0" : {
+      "tag" : "ORACLE_FDW_2_2_0",
+      "sha256" : "d04b96b4cb104c56c8f31c4f1af57c8d0cfbe7dc6fe127da39134c71a34795a4",
+      "strip_prefix" : "laurenz-oracle_fdw-4742661",
+      "commit" : "4742661775f7649a67f640016732acc65f9d0fb6",
+      "short_commit" : "4742661"
+    },
+    "2.1.0" : {
+      "tag" : "ORACLE_FDW_2_1_0",
+      "sha256" : "af84dc5d975f59734b40b083ec8dc9cf6fa6482a7b718d27fe8e63146fc59761",
+      "strip_prefix" : "laurenz-oracle_fdw-aa1684d",
+      "commit" : "aa1684db2fdcac2b5119115228288cd0dceaf0f2",
+      "short_commit" : "aa1684d"
+    },
+    "2.0.0" : {
+      "tag" : "ORACLE_FDW_2_0_0",
+      "sha256" : "3b067605bb0f6361a818062047bafa8b38802341bebbcdf96924ee38892b478c",
+      "strip_prefix" : "laurenz-oracle_fdw-9c00b4a",
+      "commit" : "9c00b4a222184419a2fc9d6b5fc26c5367162930",
+      "short_commit" : "9c00b4a"
+    },
+    "1.5.0" : {
+      "tag" : "ORACLE_FDW_1_5_0",
+      "sha256" : "a4a00c30c7f5c1b588a4818d3c24234eabc67db894e5f9fe1596d02d22cf2971",
+      "strip_prefix" : "laurenz-oracle_fdw-0bae998",
+      "commit" : "0bae998a877de64750d09293f9b37c013b620bd1",
+      "short_commit" : "0bae998"
+    },
+    "1.4.0" : {
+      "tag" : "ORACLE_FDW_1_4_0",
+      "sha256" : "1d130b6214e751859afc3a15c4b70af020eefbde64f2cceea5ceab38da00aa99",
+      "strip_prefix" : "laurenz-oracle_fdw-232b83e",
+      "commit" : "232b83e233995c9363cf1b718c1d70b1192da4c1",
+      "short_commit" : "232b83e"
+    },
+    "1.3.0" : {
+      "tag" : "ORACLE_FDW_1_3_0",
+      "sha256" : "aa1434a5d182ca9b57811aac7914da83d0e4ef3bc75ba33ccca3215e4e64ba3a",
+      "strip_prefix" : "laurenz-oracle_fdw-4c818d3",
+      "commit" : "4c818d3496c38cd8fd3be6490358e655934984df",
+      "short_commit" : "4c818d3"
+    },
+    "1.2.0" : {
+      "tag" : "ORACLE_FDW_1_2_0",
+      "sha256" : "bad51749e4fd86cb33d6727a2976c070de40cc19d13e2957e9cb2ab3caa4a7e2",
+      "strip_prefix" : "laurenz-oracle_fdw-c8ab50f",
+      "commit" : "c8ab50fb0fc0050b53c0e83812e516164fef4745",
+      "short_commit" : "c8ab50f"
+    },
+    "1.1.0" : {
+      "tag" : "ORACLE_FDW_1_1_0",
+      "sha256" : "c2a4fd7961f4f53ff5235e59314ea817237193ed877f5a36fdcd810946eaa534",
+      "strip_prefix" : "laurenz-oracle_fdw-b046351",
+      "commit" : "b04635167dc66560026696c950e7a38963130af5",
+      "short_commit" : "b046351"
+    },
+    "1.0.0" : {
+      "tag" : "ORACLE_FDW_1_0_0",
+      "sha256" : "547a321809eb48245172cacf391167727ac225e0f69847dd24385bf77a08b41b",
+      "strip_prefix" : "laurenz-oracle_fdw-17fdf98",
+      "commit" : "17fdf98895b6c55f8d14511c43923cb76bc9e217",
+      "short_commit" : "17fdf98"
+    },
+    "0.9.10" : {
+      "tag" : "ORACLE_FDW_0_9_10",
+      "sha256" : "d0c27503a10c4794224d90b9f4554fd2f3c2ea751953f96f8f550da3141cd98e",
+      "strip_prefix" : "laurenz-oracle_fdw-26640fa",
+      "commit" : "26640fa09fc3fe2ff7fa380a9ebd321c26cbff57",
+      "short_commit" : "26640fa"
+    },
+    "0.9.9" : {
+      "tag" : "ORACLE_FDW_0_9_9",
+      "sha256" : "436d47649905c18b1b6dc53b646f4901227d69d5458c0f4e67b53594df6626f2",
+      "strip_prefix" : "laurenz-oracle_fdw-7c769ee",
+      "commit" : "7c769ee3265b8eb970997fd82e83885dff0f3db6",
+      "short_commit" : "7c769ee"
+    },
+    "0.9.8" : {
+      "tag" : "ORACLE_FDW_0_9_8",
+      "sha256" : "e23cd7e6500d5346e20cf30fe33ff4aaa780559ce91b8f0d9cc4ce12772e7868",
+      "strip_prefix" : "laurenz-oracle_fdw-3fd06b6",
+      "commit" : "3fd06b68bac3a6264dcca96075cb0b4b86a8cec4",
+      "short_commit" : "3fd06b6"
+    },
+    "0.9.7" : {
+      "tag" : "ORACLE_FDW_0_9_7",
+      "sha256" : "17d228427f2e06082e7b694d59462804a2536fdd3f77618d47b3c4e9fe23bf9d",
+      "strip_prefix" : "laurenz-oracle_fdw-19e0947",
+      "commit" : "19e0947cbe2b744423ed843b9da49572b674aaa4",
+      "short_commit" : "19e0947"
+    },
+    "0.9.6" : {
+      "tag" : "ORACLE_FDW_0_9_6",
+      "sha256" : "eacecdd3cf3974f3b984a4f94e3ac87fe2a4d1cd0470cf26d2e97b60ea4b7e17",
+      "strip_prefix" : "laurenz-oracle_fdw-14c4dbc",
+      "commit" : "14c4dbc99d5fdd55c58dc137f0adf44f58882a65",
+      "short_commit" : "14c4dbc"
+    },
+    "0.9.5" : {
+      "tag" : "ORACLE_FDW_0_9_5",
+      "sha256" : "7ebae535c5273225904c947755712e368a6c03391d08dd354ab587354745ca30",
+      "strip_prefix" : "laurenz-oracle_fdw-85a16c2",
+      "commit" : "85a16c284f0902eee8bdd619955256d0e2798659",
+      "short_commit" : "85a16c2"
+    },
+    "0.9.4" : {
+      "tag" : "ORACLE_FDW_0_9_4",
+      "sha256" : "0b182a44f00ba4957b2cbe5350baab377afaeb10ba19ff9db1b924279b581ad4",
+      "strip_prefix" : "laurenz-oracle_fdw-d4d076a",
+      "commit" : "d4d076a546707514cebcafbd29399029af4ce57f",
+      "short_commit" : "d4d076a"
+    },
+    "0.9.3" : {
+      "tag" : "ORACLE_FDW_0_9_3",
+      "sha256" : "ea7ecbcf44799340fd327fd05bff0e0d6133a03610cd07ddafe97334850f5686",
+      "strip_prefix" : "laurenz-oracle_fdw-b5cc432",
+      "commit" : "b5cc4323f9c894f78cf83c611992a3e12d7c85b1",
+      "short_commit" : "b5cc432"
+    },
+    "0.9.2" : {
+      "tag" : "ORACLE_FDW_0_9_2",
+      "sha256" : "d0e4d9137a35398b0c87e0787dbb40fc3807aa9865ed520cbfda9e4dcd0e439c",
+      "strip_prefix" : "laurenz-oracle_fdw-acc7218",
+      "commit" : "acc721846aabedf8dd294130255aef84e95c3ece",
+      "short_commit" : "acc7218"
+    },
+    "0.9.1" : {
+      "tag" : "ORACLE_FDW_0_9_1",
+      "sha256" : "acce4c4dd6bd15426ae94ddbd36754adc9d6d454b6c349428df01c017b65c1df",
+      "strip_prefix" : "laurenz-oracle_fdw-8a4fd77",
+      "commit" : "8a4fd77c43974656914de28a26c9bd7ae9bd360b",
+      "short_commit" : "8a4fd77"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.8.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.6.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.9" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.8" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.7" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.6" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.5" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.4" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.3" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.2" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.10" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.1" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Oracle access",
+        "module_pathname" : "$libdir/oracle_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

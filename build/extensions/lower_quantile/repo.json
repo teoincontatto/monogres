@@ -1,0 +1,101 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/lower_quantile/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.3" : {
+      "tag" : "v1.0.3",
+      "sha256" : "2a36ab5eba04d70484c5277fd0a37507f70637831b23d2a37a6b38deea3c58b0",
+      "strip_prefix" : "tvondra-lower_quantile-0590189",
+      "commit" : "0590189f9f3fa61189e625ea321243e3066e4792",
+      "short_commit" : "0590189"
+    },
+    "1.0.2" : {
+      "tag" : "v1.0.2",
+      "sha256" : "1cc16ca1a72a5032cb89ada2544fa8bf942c9351e4dc42eed9fb7919c319f40d",
+      "strip_prefix" : "tvondra-lower_quantile-0eb822a",
+      "commit" : "0eb822a651d13ae2dedfcc9c8fc180edeb5d53d3",
+      "short_commit" : "0eb822a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.3" : {
+        "default_version" : "1.0.3",
+        "comment" : "Provides lower_quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.1.0",
+        "comment" : "Provides lower_quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.3" : {
+        "name" : "lower_quantile",
+        "abstract" : "aggregate calculating lower quantile",
+        "version" : "1.0.3",
+        "maintainer" : "Tomas Vondra <tv@fuzzy.cz>",
+        "license" : "postgresql",
+        "provides" : {
+          "lower_quantile" : {
+            "abstract" : "aggregate calculating lower quantile",
+            "file" : "sql/lower_quantile--1.0.2--1.0.3.sql",
+            "version" : "1.0.3"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/tvondra/lower_quantile/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/tvondra/lower_quantile.git",
+            "web" : "https://github.com/tvondra/lower_quantile",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.2" : {
+        "name" : "lower_quantile",
+        "abstract" : "aggregate calculating lower quantile",
+        "version" : "1.0.2",
+        "maintainer" : "Tomas Vondra <tv@fuzzy.cz>",
+        "license" : "postgresql",
+        "provides" : {
+          "lower_quantile" : {
+            "abstract" : "aggregate calculating lower quantile",
+            "file" : "sql/lower_quantile--1.0.1--1.0.2.sql",
+            "version" : "1.0.2"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/tvondra/lower_quantile/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/tvondra/lower_quantile.git",
+            "web" : "https://github.com/tvondra/lower_quantile",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,75 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgspider/pgspider_ext/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "a37088d54dba0031ecbaf69f3a73764ca9799d777df1f6b90fcae586a3a09046",
+      "strip_prefix" : "pgspider-pgspider_ext-eaa5a9d",
+      "commit" : "eaa5a9d664aa26e840ab49294297286a7989fc17",
+      "short_commit" : "eaa5a9d"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "4b8fd8eb93054e4861deb66ed9baf8ace0aa93179fa89ba2f617ddef2f6140d0",
+      "strip_prefix" : "pgspider-pgspider_ext-bcda5a5",
+      "commit" : "bcda5a56ba93560a0c989a4e48f2db3df8580450",
+      "short_commit" : "bcda5a5"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "7827e4bc112b5cc086f19988a4cc65a9625617f367603b6469a0c03f147011b2",
+      "strip_prefix" : "pgspider-pgspider_ext-8d8aa47",
+      "commit" : "8d8aa4758589782717d19a0c609bba267c3d16c2",
+      "short_commit" : "8d8aa47"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "5db994e874de96d388d33506efc6509af86d9579d082f870fbd7f67603b104ee",
+      "strip_prefix" : "pgspider-pgspider_ext-b561052",
+      "commit" : "b5610521199edb2abdeb44f783fd13f03617f4f1",
+      "short_commit" : "b561052"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.3.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign-data wrapper for remote PGSpider servers",
+        "module_pathname" : "$libdir/pgspider_ext",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign-data wrapper for remote PGSpider servers",
+        "module_pathname" : "$libdir/pgspider_ext",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign-data wrapper for remote PGSpider servers",
+        "module_pathname" : "$libdir/pgspider_ext",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign-data wrapper for remote PGSpider servers",
+        "module_pathname" : "$libdir/pgspider_ext",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,127 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/splendiddata/login_hook/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.7.0" : {
+      "tag" : "Version_1.7",
+      "sha256" : "a469a01356ac403dcec378dbc5de61832f5870ca106fc2f8239ee940636abefc",
+      "strip_prefix" : "splendiddata-login_hook-760899f",
+      "commit" : "760899f11a3d994d22913f284cc37ecba767025b",
+      "short_commit" : "760899f"
+    },
+    "1.6.0" : {
+      "tag" : "Version_1.6",
+      "sha256" : "c0b55a91c6bd1936d316ddd0f5de0f4d9a4db1b93bf75dcfebb63418ae492314",
+      "strip_prefix" : "splendiddata-login_hook-457acd3",
+      "commit" : "457acd33a6b12f50fe653487b9840cfb328dedc6",
+      "short_commit" : "457acd3"
+    },
+    "1.5.0" : {
+      "tag" : "version_1.5",
+      "sha256" : "4b4f5f1faeeca8ddb788ed4921ff633258ab66c367cd57fe2fd4df56b85c0fa2",
+      "strip_prefix" : "splendiddata-login_hook-ea00615",
+      "commit" : "ea00615192832f4a54f2ea11fd1fa5c753d69526",
+      "short_commit" : "ea00615"
+    },
+    "1.4.0" : {
+      "tag" : "version_1.4",
+      "sha256" : "10f26965ef921f821c8ee0793fbcf5ee3f170de0cbcfbbfc25411a8ccf43b9f1",
+      "strip_prefix" : "splendiddata-login_hook-16dc57e",
+      "commit" : "16dc57e3e8d791b0eb01c39cd0e05bce4446f8e6",
+      "short_commit" : "16dc57e"
+    },
+    "1.3.0" : {
+      "tag" : "version_1.3",
+      "sha256" : "58292eb73cf3673ccd1e71abcfde2bd9a43f15be4308ecf944ae4beb0dfff444",
+      "strip_prefix" : "splendiddata-login_hook-66ac242",
+      "commit" : "66ac242ae376a4519e01515a9590f79e1a6610ff",
+      "short_commit" : "66ac242"
+    },
+    "1.2.0" : {
+      "tag" : "version_1.2",
+      "sha256" : "1f8754c15105864124dc522bfb1441d51d39f326d24ced0308bbf180d4730abc",
+      "strip_prefix" : "splendiddata-login_hook-bf07c3f",
+      "commit" : "bf07c3fb56af567838a94ff9a0c064a21a6430eb",
+      "short_commit" : "bf07c3f"
+    },
+    "1.1.0" : {
+      "tag" : "version_1.1",
+      "sha256" : "f38e26c687647fe5bb7c4676a0dd460aeedb129d17dd990f31faf09cf8e74741",
+      "strip_prefix" : "splendiddata-login_hook-c8d250d",
+      "commit" : "c8d250daaaa4a3ea8fb9bc3e6df6883611703e25",
+      "short_commit" : "c8d250d"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.3.0" : {
+        "default_version" : "1.2",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "login_hook - hook to execute login_hook.login() at login time",
+        "encoding" : "UTF-8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "login_hook"
+      }
+    }
+  },
+  "version" : 1
+}

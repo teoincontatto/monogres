@@ -1,0 +1,77 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ibrahimkarimeddin/postgres-extensions-pg_ttl/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "7be424713fe7e7e860ad617076c2a4471a641fa28a6d98e85cb8cc8fb9e0fbc3",
+      "strip_prefix" : "ibrahimkarimeddin-postgres-extensions-pg_ttl-5b74f50",
+      "commit" : "5b74f505b7bbcce6b088cd686d9ce7cdf9ec0c5b",
+      "short_commit" : "5b74f50"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "TTL index extension for automatic data expiration with high-load optimizations",
+        "module_pathname" : "$libdir/pg_ttl_index",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "2.0.0" : {
+        "name" : "pg_ttl_index",
+        "abstract" : "Automatic Time-To-Live (TTL) data expiration for PostgreSQL tables",
+        "description" : "A high-performance PostgreSQL extension that provides automatic Time-To-Live (TTL) functionality for data expiration. Features include background worker for automatic cleanup, batch deletion for high-load tables, auto-indexing of timestamp columns, configurable cleanup intervals, stats tracking, and production-ready implementation with ACID compliance.",
+        "version" : "2.0.0",
+        "maintainer" : [ "Ibrahim Karim Eddin <ibrahimkarimeddin@gmail.com>" ],
+        "author" : [ "Ibrahim Karim Eddin <ibrahimkarimeddin@gmail.com>" ],
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "tags" : [ "ttl", "time-to-live", "data-expiration", "cleanup", "background-worker", "automatic", "data-retention", "performance", "maintenance", "housekeeping", "high-load", "batch-delete" ],
+        "provides" : {
+          "pg_ttl_index" : {
+            "file" : "pg_ttl_index--2.0.0.sql",
+            "version" : "2.0.0",
+            "abstract" : "TTL extension with batch deletion, auto-indexing, and stats tracking"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ibrahimkarimeddin/postgres-extensions-pg_ttl",
+          "repository" : {
+            "url" : "git://github.com/ibrahimkarimeddin/postgres-extensions-pg_ttl.git",
+            "web" : "https://github.com/ibrahimkarimeddin/postgres-extensions-pg_ttl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibrahimkarimeddin/postgres-extensions-pg_ttl/issues"
+          },
+          "documentation" : "https://github.com/ibrahimkarimeddin/postgres-extensions-pg_ttl/blob/main/README.md"
+        },
+        "generated_by" : "Ibrahim Karim Eddin",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "no_index" : {
+          "directory" : [ "test", ".github", ".vscode" ]
+        }
+      }
+    }
+  },
+  "version" : 1
+}

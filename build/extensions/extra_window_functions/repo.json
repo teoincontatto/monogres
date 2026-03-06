@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/xocolatl/extra_window_functions/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "6ce6ef467a2643288f922f5a9fb4b3c752c7f202487abc19e37e3b503b3edc38",
+      "strip_prefix" : "xocolatl-extra_window_functions-5d42532",
+      "commit" : "5d425323202993e188a33dee1709c790bf723f1c",
+      "short_commit" : "5d42532"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "",
+        "module_pathname" : "$libdir/extra_window_functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

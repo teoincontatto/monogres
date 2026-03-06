@@ -1,0 +1,111 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/xocolatl/periods/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.3" : {
+      "tag" : "v1.2.3",
+      "sha256" : "6943a260684fa78e93f76c0cb7f22e46d38e3cf8417dd5481c9df3e0fc3380a0",
+      "strip_prefix" : "xocolatl-periods-f27cd72",
+      "commit" : "f27cd729e5b6fd562464da2cc4778eb630dff6ba",
+      "short_commit" : "f27cd72"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "958278b33509e1a99e20a178324f55c9d969f89d8e622c87b51b1614a62148cd",
+      "strip_prefix" : "xocolatl-periods-9719417",
+      "commit" : "971941730312d0ac855afcce4c2be2b1c94fe744",
+      "short_commit" : "9719417"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "7490d8057d6b5f3a411a76d415e1da693b91ab437f5235832525eaefb4500c96",
+      "strip_prefix" : "xocolatl-periods-2e80b6d",
+      "commit" : "2e80b6df4753a1d83348f80b32df5958b4de6ce0",
+      "short_commit" : "2e80b6d"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "b2e50222be73161c89cf065c227fdfeb7e4ffed82f0cb1c36484b8e4548402df",
+      "strip_prefix" : "xocolatl-periods-a5de4f7",
+      "commit" : "a5de4f7a3add55255c45221a504653b9e0e8a28a",
+      "short_commit" : "a5de4f7"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "a116ab0cf7070fd2f8a67357438dd121fffc25ba2efa00411269cfdc1a7bf401",
+      "strip_prefix" : "xocolatl-periods-90a80c3",
+      "commit" : "90a80c3aad97a978f255e36af9bade8da8ad3445",
+      "short_commit" : "90a80c3"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "90c8bb7309dd56e50a12c831ae5be99a82d5da98dd09181bd240d59030796969",
+      "strip_prefix" : "xocolatl-periods-2fd8f7a",
+      "commit" : "2fd8f7ac1bb3861077665a9ffeba342e2f686db4",
+      "short_commit" : "2fd8f7a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.3" : {
+        "default_version" : "1.2",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.2" : {
+        "default_version" : "1.2",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.1" : {
+        "default_version" : "1.2",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+        "module_pathname" : "$libdir/periods",
+        "requires" : [ "btree_gist" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

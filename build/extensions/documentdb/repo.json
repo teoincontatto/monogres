@@ -1,0 +1,175 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/documentdb/documentdb/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.109.0-0" : {
+      "tag" : "v0.109-0",
+      "sha256" : "f6aac410f772aad44ff59293fea46ba69107694087ccc46cc128f3ed51b77a77",
+      "strip_prefix" : "documentdb-documentdb-6d82f06",
+      "commit" : "6d82f06dd5c0852cf1ceea9af015bcacbf71551a",
+      "short_commit" : "6d82f06"
+    },
+    "0.108.0-0" : {
+      "tag" : "v0.108-0",
+      "sha256" : "9215451d83055fb5f92aa9cb4adbf8f9ffec82411d9f58a8f70cf7133e56c051",
+      "strip_prefix" : "documentdb-documentdb-84b999a",
+      "commit" : "84b999ae88813b49911ded99c1d7aa0991e3c18a",
+      "short_commit" : "84b999a"
+    },
+    "0.107.0-0" : {
+      "tag" : "v0.107-0",
+      "sha256" : "d07d2c6c92c186d979afa83c5e6a8b318d88bc96dd3971468628947cfd87888b",
+      "strip_prefix" : "documentdb-documentdb-ae628e9",
+      "commit" : "ae628e91484c17373321939339a4d961f594d2e8",
+      "short_commit" : "ae628e9"
+    },
+    "0.106.0-0" : {
+      "tag" : "v0.106-0",
+      "sha256" : "1b523f9733c6e2de43c6b870764e052c66a35f08b83b8c4ac7169236627e0e44",
+      "strip_prefix" : "documentdb-documentdb-f372d23",
+      "commit" : "f372d23ea6bb9687bda9bd386058ae7c59529f4c",
+      "short_commit" : "f372d23"
+    },
+    "0.105.0-0" : {
+      "tag" : "v0.105-0",
+      "sha256" : "9782bed56c7a2ac360e1e5de112ffb8e9319f9fcdbabbe48adce3dcc0962b687",
+      "strip_prefix" : "documentdb-documentdb-02bfca5",
+      "commit" : "02bfca5839870fdab978e0e678fe17e2753111ba",
+      "short_commit" : "02bfca5"
+    },
+    "0.104.0-0" : {
+      "tag" : "v0.104-0",
+      "sha256" : "96be900fc938e096e6f37932438bf4c33c8ee0c2ab9372225383ccc256ddb2dd",
+      "strip_prefix" : "documentdb-documentdb-0ddb094",
+      "commit" : "0ddb09436c69c747c6a8be80178d3ff229c162ed",
+      "short_commit" : "0ddb094"
+    },
+    "0.103.0-0" : {
+      "tag" : "v0.103-0",
+      "sha256" : "77511cbe903f2996375cb082015cb8bafcbedeef2299b60132409240978094f9",
+      "strip_prefix" : "documentdb-documentdb-833c467",
+      "commit" : "833c4677af596132610981d92c1915f307cc7dfb",
+      "short_commit" : "833c467"
+    },
+    "0.102.0-0" : {
+      "tag" : "v0.102-0",
+      "sha256" : "127b0746de41738c1916274b0adb86b66e268154fd9baba303ae84fbb1dddd37",
+      "strip_prefix" : "documentdb-documentdb-f31e0b6",
+      "commit" : "f31e0b6cadda66c3cc7f7087365e996c212cfffe",
+      "short_commit" : "f31e0b6"
+    },
+    "0.101.0-0" : {
+      "tag" : "v0.101-0",
+      "sha256" : "fc0ea89ec9a9488779c09f78b744abb487f696547b351abded26c5ddf5840601",
+      "strip_prefix" : "documentdb-documentdb-d95c1e3",
+      "commit" : "d95c1e3717d9b2eb121979fd84fe60b32b4f7eac",
+      "short_commit" : "d95c1e3"
+    },
+    "0.100.0-0" : {
+      "tag" : "v0.100-0",
+      "sha256" : "e63aaf86ec46a8b15e8ff66cb029414989e5ee99eeeca1c2776b4bcaddf1364f",
+      "strip_prefix" : "documentdb-documentdb-ae4b843",
+      "commit" : "ae4b8438ab8f9f29d158c6fcd3c25d4f3d772fb0",
+      "short_commit" : "ae4b843"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.109.0-0" : {
+        "default_version" : "0.109-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.108.0-0" : {
+        "default_version" : "0.108-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.107.0-0" : {
+        "default_version" : "0.107-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.106.0-0" : {
+        "default_version" : "0.106-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.105.0-0" : {
+        "default_version" : "0.105-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.104.0-0" : {
+        "default_version" : "0.104-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.103.0-0" : {
+        "default_version" : "0.103-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.102.0-0" : {
+        "default_version" : "0.102-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.101.0-0" : {
+        "default_version" : "0.101-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.100.0-0" : {
+        "default_version" : "0.100-0",
+        "comment" : "API surface for DocumentDB for PostgreSQL",
+        "module_pathname" : "$libdir/pg_documentdb",
+        "requires" : [ "documentdb_core", "pg_cron", "tsm_system_rows", "vector", "postgis", "rum" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,71 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/adept/pg_relusage/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.1" : {
+      "tag" : "0.0.1",
+      "sha256" : "d26f652ce4d55eaf7d0004ccd4fc05392c75520666d1f7b6e94e30fe81efc08f",
+      "strip_prefix" : "adept-pg_relusage-ee2912d",
+      "commit" : "ee2912db95ca0d6236e7cfe3cb26a60517282220",
+      "short_commit" : "ee2912d"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "Log all the queries that reference a particular column",
+        "module_pathname" : "$libdir/pg_relusage",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "0.0.1" : {
+        "name" : "pg_relusage",
+        "abstract" : "An extension to log all the queries that reference a particular column",
+        "version" : "__VERSION__",
+        "maintainer" : "Dmitry Astapov <dastapov@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_relusage" : {
+            "abstract" : "An extension to log all the queries that reference a particular column",
+            "file" : "pg_relusage.c",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/adept/pg_relusage/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/dastapov/pg_relusage.git",
+            "web" : "https://github.com/dastapov/pg_relusage",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Dmitry Astapov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "logging", "log", "usage" ]
+      }
+    }
+  },
+  "version" : 1
+}

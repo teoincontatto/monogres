@@ -1,0 +1,80 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/ddsketch/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "205cdb14dc5d49c161a31d4285eda91d45a7cc29cfb13c5fe848ff207853d795",
+      "strip_prefix" : "tvondra-ddsketch-4f0ed96",
+      "commit" : "4f0ed96054d53dea9cc908c554c09644a8bfc74a",
+      "short_commit" : "4f0ed96"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "274b7471c6af9fa37e08774265fa0861199d87c0adb6e74f21e8c0cf8f38050d",
+      "strip_prefix" : "tvondra-ddsketch-31591c1",
+      "commit" : "31591c1c2e948f3ee1f12a454be067382c5feec0",
+      "short_commit" : "31591c1"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Provides ddsketch aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Provides ddsketch aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.1" : {
+        "name" : "ddsketch",
+        "abstract" : "ddsketch, a data structure for on-line accumulation of quantiles.",
+        "description" : "This PostgreSQL extension implements ddsketch, a data structure for on-line accumulation of quantiles. The algorithm is very friendly to parallel programs, fully mergeable, etc.",
+        "version" : "1.0.1",
+        "maintainer" : "Tomas Vondra <tomas@vondra.me>",
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "sql/ddsketch--1.0.0--1.0.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/ddsketch.git",
+            "web" : "http://github.com/tvondra/ddsketch",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "quantile", "median", "mean", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "unstable"
+      }
+    }
+  },
+  "version" : 1
+}

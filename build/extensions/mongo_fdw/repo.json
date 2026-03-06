@@ -1,0 +1,315 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/EnterpriseDB/mongo_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "5.5.3" : {
+      "tag" : "REL-5_5_3",
+      "sha256" : "66f214bee2c4fef7861a2986128768a16c348e664453949d4899b75efd245a89",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-27aa7b0",
+      "commit" : "27aa7b04af197129bf10069c4b512a326c94f3f8",
+      "short_commit" : "27aa7b0"
+    },
+    "5.5.2" : {
+      "tag" : "REL-5_5_2",
+      "sha256" : "39a19935490b156e7658a0002be51a3a721d5aad718eee990c495b9cd5b2affb",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-1236440",
+      "commit" : "123644068d68223edfa7261af6c43a46c51a1d80",
+      "short_commit" : "1236440"
+    },
+    "5.5.1" : {
+      "tag" : "REL-5_5_1",
+      "sha256" : "6767c508b48ae1bf8bb2ab4a9ad2e8bf10e6eb624bfbfc492e7b1254538e835a",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-9bfc78d",
+      "commit" : "9bfc78d52bd6dfe6b51ff3eee6c7be4d93d513f4",
+      "short_commit" : "9bfc78d"
+    },
+    "5.5.0" : {
+      "tag" : "REL-5_5_0",
+      "sha256" : "c91b300eaf8156770cdcd26d0ca4766be9b1683bd6c88f829d0bb5fcfc9e7103",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-c250cbd",
+      "commit" : "c250cbddd3c12dd1009195e798e85a12f850f69d",
+      "short_commit" : "c250cbd"
+    },
+    "5.4.0" : {
+      "tag" : "REL-5_4_0",
+      "sha256" : "b750514d91a6c5f9aed9274c2bbb221d96380007cdb44f4b7022a979594837eb",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-3e2860b",
+      "commit" : "3e2860b7fee982cf862602fa8d89edb945b51108",
+      "short_commit" : "3e2860b"
+    },
+    "5.3.0" : {
+      "tag" : "REL-5_3_0",
+      "sha256" : "784f2d2ffd95f7c333887ee45018399d98cc0a8f322226039533086e1c037720",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-562d2d2",
+      "commit" : "562d2d2dc3d511b16d57c1cfd93b207a697efffe",
+      "short_commit" : "562d2d2"
+    },
+    "5.2.10" : {
+      "tag" : "REL-5_2_10",
+      "sha256" : "c7b6d39e7bb5cf18dc686b88fa7391a8127ad65785e3ab48ca95a2eec8084cd2",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-3205c5b",
+      "commit" : "3205c5bd9eff788f067993bd4a464775bd1c29a0",
+      "short_commit" : "3205c5b"
+    },
+    "5.2.9" : {
+      "tag" : "REL-5_2_9",
+      "sha256" : "9e14f1468d984bd22d6113230b6c4fd1dec7060442ed4b9bd330d639dec45620",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-ceb03dc",
+      "commit" : "ceb03dc0218594e128f31e6d9395110710ef504b",
+      "short_commit" : "ceb03dc"
+    },
+    "5.2.8" : {
+      "tag" : "REL-5_2_8",
+      "sha256" : "5184daeef07acd9437ef046eba1a7ec1979ffb0b4286d0f627a0de0c892e91b3",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-b4c1d76",
+      "commit" : "b4c1d76783a071a2a2733bebd0446940708e129e",
+      "short_commit" : "b4c1d76"
+    },
+    "5.2.7" : {
+      "tag" : "REL-5_2_7",
+      "sha256" : "79935fa19f7573dc77f803e372c3ce55b37f8ce8b5305f3f57ee000250ccb4e8",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-aaeb6c7",
+      "commit" : "aaeb6c72b63d78f704bc7f1fe000a4c61b986ea4",
+      "short_commit" : "aaeb6c7"
+    },
+    "5.2.6" : {
+      "tag" : "REL-5_2_6",
+      "sha256" : "290c48c8872b13c7dad835eb2e06d0a5016049dd0f96a1bc3007336206015ff2",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-5eaa0bf",
+      "commit" : "5eaa0bf98b895abeea7b06ea9c86ee6fd92ea25b",
+      "short_commit" : "5eaa0bf"
+    },
+    "5.2.5" : {
+      "tag" : "REL-5_2_5",
+      "sha256" : "85c7bd61b5a10f591a037ab1f374f3165c53968453bdeeb302707ea77b067a92",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-272b293",
+      "commit" : "272b2933df837995aada1e99d059f4cb454021d8",
+      "short_commit" : "272b293"
+    },
+    "5.2.4" : {
+      "tag" : "REL-5_2_4",
+      "sha256" : "11e1f27aa09e5eb7b67bb342871259755f2239cf15801403a818a1cef1ea1345",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-3c5b1f5",
+      "commit" : "3c5b1f524074768f1c84a2ded7bfad65c01b3228",
+      "short_commit" : "3c5b1f5"
+    },
+    "5.2.3" : {
+      "tag" : "REL-5_2_3",
+      "sha256" : "72701362c3c49de6f0daf5cae1113e58ac18da4e7a0ef7f813cdd2d4465f02a3",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-09b4248",
+      "commit" : "09b424820af99f33945cb3b49f5b641667e92058",
+      "short_commit" : "09b4248"
+    },
+    "5.2.2" : {
+      "tag" : "REL-5_2_2",
+      "sha256" : "8663db8a99b74dd89ee0519e8d96b1f968b30120c131e17804867fa0c5224eed",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-83b7134",
+      "commit" : "83b7134e038dd35309b5109bcbbbe2069e8f4623",
+      "short_commit" : "83b7134"
+    },
+    "5.2.1" : {
+      "tag" : "REL-5_2_1",
+      "sha256" : "9ce009cf8d0ba6af0bdd078bd3eaa610c1401ede61d7193073542e309930781e",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-35fe193",
+      "commit" : "35fe193107951a1f4c6faa9c78febfbd5c889d12",
+      "short_commit" : "35fe193"
+    },
+    "5.2.0" : {
+      "tag" : "REL-5_2_0",
+      "sha256" : "9c7533ea0e49c8b6d7a0c815da1a27d9c274d7674465be952d8e3a2333dc0e68",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-83ed3ee",
+      "commit" : "83ed3eecdcedc4f31c13050591fdc2ff29d858e1",
+      "short_commit" : "83ed3ee"
+    },
+    "5.1.0" : {
+      "tag" : "REL-5_1_0",
+      "sha256" : "9303b2c142f4022f3ce6a4ed6ae287b960f4004d7cc1f596d8fa55a95c2d90ab",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-84d1638",
+      "commit" : "84d16387ce55cd70e582a04f87370bb100abba89",
+      "short_commit" : "84d1638"
+    },
+    "5.0.0" : {
+      "tag" : "REL-5_0_0",
+      "sha256" : "faf974e1840eddbdf25d71c9aef1e1186b5205e325d33de6372ecd105bb878db",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-3309719",
+      "commit" : "3309719c1acaad14035f4750bed95fef4177586a",
+      "short_commit" : "3309719"
+    },
+    "4.0.0" : {
+      "tag" : "REL-4_0_0",
+      "sha256" : "30b341f72b34cc6bf319f2518e921f16f3c31dc23b715733cbd7f607267ede2a",
+      "strip_prefix" : "EnterpriseDB-mongo_fdw-94b149e",
+      "commit" : "94b149eecb1b11ffc4ca090a191f37a3eb5f84fb",
+      "short_commit" : "94b149e"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "5.5.3" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.5.2" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.5.1" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.5.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.4.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.3.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.9" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.8" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.7" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.6" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.5" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.4" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.3" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.2" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.10" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.1" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "5.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for MongoDB access",
+        "module_pathname" : "$libdir/mongo_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

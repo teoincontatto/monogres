@@ -1,0 +1,237 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/markwkm/pg_proctab/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.9" : {
+      "tag" : "v0.0.9",
+      "sha256" : "d70dfba160818f3d59fb027f7de1c1f88ad6f8016cf84ba26a77bc4a91bbe8b3",
+      "strip_prefix" : "markwkm-pg_proctab-e64333e",
+      "commit" : "e64333e8355586efb4c3fa2fced992450ab41795",
+      "short_commit" : "e64333e"
+    },
+    "0.0.8" : {
+      "tag" : "v0.0.8",
+      "sha256" : "e5e745fa785fa96bb57097cfc797fbff9e58839fee620cfefae83dbe6d70f095",
+      "strip_prefix" : "markwkm-pg_proctab-8cf8aba",
+      "commit" : "8cf8aba6dc06041f6ab93df6a9c469cda3b0ab12",
+      "short_commit" : "8cf8aba"
+    },
+    "0.0.7" : {
+      "tag" : "v0.0.7",
+      "sha256" : "7ce2304afb3341bd708797e873dfd2c3f44ab542d65b17cca08ec55f43b68e83",
+      "strip_prefix" : "markwkm-pg_proctab-65c9129",
+      "commit" : "65c9129f4ecdcae0512597a5785e5906d77e3465",
+      "short_commit" : "65c9129"
+    },
+    "0.0.6" : {
+      "tag" : "v0.0.6",
+      "sha256" : "7ee46ab2773c80b4b767a6183fa67e89d7bf776680c50c181553474bd259d0fd",
+      "strip_prefix" : "markwkm-pg_proctab-b13c26e",
+      "commit" : "b13c26e13f9df5ab2b2e44249f22583545520265",
+      "short_commit" : "b13c26e"
+    },
+    "0.0.5" : {
+      "tag" : "v0.0.5",
+      "sha256" : "db7266b24dad4f8167c61e51ffa3067f41761f0aee699353891e8044c5ec1348",
+      "strip_prefix" : "markwkm-pg_proctab-c31435a",
+      "commit" : "c31435a09a7098cd8b443c995b3fb75a0654023b",
+      "short_commit" : "c31435a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.9" : {
+        "default_version" : "0.0.9",
+        "comment" : "Access operating system process table",
+        "module_pathname" : "$libdir/pg_proctab",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.8" : {
+        "default_version" : "0.0.8",
+        "comment" : "Access operating system process table",
+        "module_pathname" : "$libdir/pg_proctab",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.7" : {
+        "default_version" : "0.0.7",
+        "comment" : "Access operating system process table",
+        "module_pathname" : "$libdir/pg_proctab",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.6" : {
+        "default_version" : "0.0.6",
+        "comment" : "Access operating system process table",
+        "module_pathname" : "$libdir/pg_proctab",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.5" : {
+        "default_version" : "0.0.5",
+        "comment" : "Access operating system process table",
+        "module_pathname" : "$libdir/pg_proctab",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.0.9" : {
+        "name" : "pg_proctab",
+        "abstract" : "Access operating system process tables from PostgreSQL",
+        "description" : "pg_proctab is a collection of stored functions that can access the operating systems process table so that system statitics can be queried through the database.",
+        "version" : "0.0.9",
+        "maintainer" : "Mark Wong",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "pg_proctab" : {
+            "abstract" : "Operating system process table",
+            "file" : "sql/pg_proctab.sql",
+            "version" : "0.0.9"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://git.postgresql.org/git/pg_proctab.git",
+            "type" : "git"
+          }
+        },
+        "release_status" : "testing",
+        "generated_by" : "Mark Wong",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.8" : {
+        "name" : "pg_proctab",
+        "abstract" : "Access operating system process tables from PostgreSQL",
+        "description" : "pg_proctab is a collection of stored functions that can access the operating systems process table so that system statitics can be queried through the database.",
+        "version" : "0.0.8",
+        "maintainer" : "Mark Wong",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "pg_proctab" : {
+            "abstract" : "Operating system process table",
+            "file" : "sql/pg_proctab.sql",
+            "version" : "0.0.8"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://git.postgresql.org/git/pg_proctab.git",
+            "type" : "git"
+          }
+        },
+        "release_status" : "testing",
+        "generated_by" : "Mark Wong",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.7" : {
+        "name" : "pg_proctab",
+        "abstract" : "Access operating system process tables from PostgreSQL",
+        "description" : "pg_proctab is a collection of stored functions that can access the operating systems process table so that system statitics can be queried through the database.",
+        "version" : "0.0.7",
+        "maintainer" : "Mark Wong",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "pg_proctab" : {
+            "abstract" : "Operating system process table",
+            "file" : "sql/pg_proctab.sql",
+            "version" : "0.0.7"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://git.postgresql.org/git/pg_proctab.git",
+            "type" : "git"
+          }
+        },
+        "release_status" : "testing",
+        "generated_by" : "Mark Wong",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.6" : {
+        "name" : "pg_proctab",
+        "abstract" : "Access operating system process tables from PostgreSQL",
+        "description" : "pg_proctab is a collection of stored functions that can access the operating systems process table so that system statitics can be queried through the database.",
+        "version" : "0.0.5",
+        "maintainer" : "Mark Wong",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "pg_proctab" : {
+            "abstract" : "Operating system process table",
+            "file" : "sql/pg_proctab.sql",
+            "version" : "0.0.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://git.postgresql.org/git/pg_proctab.git",
+            "type" : "git"
+          }
+        },
+        "release_status" : "testing",
+        "generated_by" : "Mark Wong",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.5" : {
+        "name" : "pg_proctab",
+        "abstract" : "Access operating system process tables from PostgreSQL",
+        "description" : "pg_proctab is a collection of stored functions that can access the operating systems process table so that system statitics can be queried through the database.",
+        "version" : "0.0.5",
+        "maintainer" : "Mark Wong",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "pg_proctab" : {
+            "abstract" : "Operating system process table",
+            "file" : "sql/pg_proctab.sql",
+            "version" : "0.0.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://git.postgresql.org/git/pg_proctab.git",
+            "type" : "git"
+          }
+        },
+        "release_status" : "testing",
+        "generated_by" : "Mark Wong",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

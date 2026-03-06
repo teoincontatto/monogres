@@ -1,0 +1,172 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/dverite/permuteseq/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "cedef136d559801e1780cc0501ef98f5d545bb632ed31c6534bfee9dfb70b2a5",
+      "strip_prefix" : "dverite-permuteseq-15f86f6",
+      "commit" : "15f86f650002bca5b79a9f85a678388d6999efde",
+      "short_commit" : "15f86f6"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "a6d9e9d350c4676d365375070f512aa78e7d8fc8ab23e51d0ed29e6c5971c380",
+      "strip_prefix" : "dverite-permuteseq-dcff6e9",
+      "commit" : "dcff6e91eaebe69e3ee9b77e3cf00d6f66edb425",
+      "short_commit" : "dcff6e9"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "ac927efcc6eb6bbd3e4d15e7f7b19dd506f7bddc162a0d9966decf4b08361aa6",
+      "strip_prefix" : "dverite-permuteseq-bcbc74d",
+      "commit" : "bcbc74d356d7de6b5da1771c8b16549ae5930b23",
+      "short_commit" : "bcbc74d"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.2" : {
+        "default_version" : "1.2",
+        "comment" : "Pseudo-randomly permute sequences with a format-preserving encryption on elements",
+        "module_pathname" : "$libdir/permuteseq",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2",
+        "comment" : "Pseudo-randomly permute sequences with a format-preserving encryption on elements",
+        "module_pathname" : "$libdir/permuteseq",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Pseudo-randomly permute sequences with a format-preserving encryption on elements",
+        "module_pathname" : "$libdir/permuteseq",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.2.2" : {
+        "name" : "permuteseq",
+        "abstract" : "Extension to manage scalable pseudo-random permutations of sequences",
+        "version" : "1.2.2",
+        "release_status" : "stable",
+        "maintainer" : "Daniel Vérité <daniel@manitou-mail.org>",
+        "license" : "postgresql",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "provides" : {
+          "permuteseq" : {
+            "file" : "sql/permuteseq--1.2.sql",
+            "version" : "1.2.2",
+            "abstract" : "Extension to manage scalable pseudo-random permutations of sequences"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/dverite/permuteseq/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dverite/permuteseq.git",
+            "web" : "https://github.com/dverite/permuteseq",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sequence", "feistel", "crypto" ]
+      },
+      "1.2.1" : {
+        "name" : "permuteseq",
+        "abstract" : "Extension to manage scalable pseudo-random permutations of sequences",
+        "version" : "1.2.1",
+        "release_status" : "stable",
+        "maintainer" : "Daniel Vérité <daniel@manitou-mail.org>",
+        "license" : "postgresql",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "provides" : {
+          "permuteseq" : {
+            "file" : "sql/permuteseq--1.2.sql",
+            "version" : "1.2.1",
+            "abstract" : "Extension to manage scalable pseudo-random permutations of sequences"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/dverite/permuteseq/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dverite/permuteseq.git",
+            "web" : "https://github.com/dverite/permuteseq",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sequence", "feistel", "crypto" ]
+      },
+      "1.1.0" : {
+        "name" : "permuteseq",
+        "abstract" : "Extension to manage scalable pseudo-random permutations of sequences",
+        "version" : "1.1.0",
+        "maintainer" : "Daniel Vérité <daniel@manitou-mail.org>",
+        "license" : "postgresql",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "provides" : {
+          "permuteseq" : {
+            "file" : "sql/permuteseq--1.1.0.sql",
+            "version" : "1.1.0",
+            "abstract" : "Extension to manage scalable pseudo-random permutations of sequences"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/dverite/permuteseq/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dverite/permuteseq.git",
+            "web" : "https://github.com/dverite/permuteseq",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sequence", "feistel", "crypto" ]
+      }
+    }
+  },
+  "version" : 1
+}

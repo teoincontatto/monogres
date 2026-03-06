@@ -1,0 +1,60 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pjungwir/floatvec/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "29b655ff758387a5c7d250f32333dd2cd0c1f91730fdf6db826f87eac62f7f2d",
+      "strip_prefix" : "pjungwir-floatvec-fedb308",
+      "commit" : "fedb308be9374e23e63dfef197f8ee5627d11ea1",
+      "short_commit" : "fedb308"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "Math for vectors (arrays) of numbers",
+        "module_pathname" : "$libdir/floatvec",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.1.1" : {
+        "name" : "floatvec",
+        "abstract" : "Functions for arithmetric on numeric arrays",
+        "version" : "1.1.1",
+        "maintainer" : "Paul A. Jungwirth <pj@illuminatedcomputing.com>",
+        "license" : "mit",
+        "provides" : {
+          "floatvec" : {
+            "abstract" : "Functions for arithmetric on numeric arrays",
+            "file" : "floatvec--1.1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/pjungwir/floatvec.git",
+            "web" : "https://github.com/pjungwir/floatvec",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul A. Jungwirth",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "math", "arithmetic", "arrays", "vectors" ]
+      }
+    }
+  },
+  "version" : 1
+}

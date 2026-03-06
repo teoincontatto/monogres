@@ -1,0 +1,205 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/aws/pgactive/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.1.7" : {
+      "tag" : "v2.1.7",
+      "sha256" : "f526d91a21969cc41f546404ad2a36df368d94c6b6eb218a84d509143f17cbf9",
+      "strip_prefix" : "aws-pgactive-976b166",
+      "commit" : "976b166d6e5f0ee81b710484212dacbfa6d69cff",
+      "short_commit" : "976b166"
+    },
+    "2.1.6" : {
+      "tag" : "v2.1.6",
+      "sha256" : "5161cb76e9ae07b591683f1b1dc54b54002f8eeaa72e77647992d840ca047e5e",
+      "strip_prefix" : "aws-pgactive-9a7c3db",
+      "commit" : "9a7c3dbc0a3774686de30091df54daefb7252d55",
+      "short_commit" : "9a7c3db"
+    },
+    "2.1.5" : {
+      "tag" : "v2.1.5",
+      "sha256" : "d910f1918243cc8ec471c6ae883d9a75edb961fd01ee9b96cb3b237855caf47c",
+      "strip_prefix" : "aws-pgactive-0b2df37",
+      "commit" : "0b2df37e9c36826bfd15bf000681c01fa2d6e0c0",
+      "short_commit" : "0b2df37"
+    },
+    "2.1.4" : {
+      "tag" : "v2.1.4",
+      "sha256" : "f8cbc36bb1effc34f3752f3031b2863d5c747802e1db3eebd499a9df76053270",
+      "strip_prefix" : "aws-pgactive-c4cac73",
+      "commit" : "c4cac738e00cc2e06710cb7cfef8a049ed33b939",
+      "short_commit" : "c4cac73"
+    },
+    "2.1.3" : {
+      "tag" : "v2.1.3",
+      "sha256" : "6e5bcf54eb85d36bbfe3a02c058cffc0c106224a345756204c3a5a52e3bbc3ae",
+      "strip_prefix" : "aws-pgactive-4d5d0bf",
+      "commit" : "4d5d0bf53c3df66bdba41b494f95cb401781cf9a",
+      "short_commit" : "4d5d0bf"
+    },
+    "2.1.2" : {
+      "tag" : "v2.1.2",
+      "sha256" : "286a26b7ea07d2a9343e4794946c0d687d774d9e56fe727196f71b84270a2ec6",
+      "strip_prefix" : "aws-pgactive-684d6b6",
+      "commit" : "684d6b6ae9fa6ca531693b444a1c80022c046769",
+      "short_commit" : "684d6b6"
+    },
+    "2.1.1" : {
+      "tag" : "v2.1.1",
+      "sha256" : "2b188ab4bb8076888f60ade5d7e6f23df53ee964f8aaa9d65c9654c12270f03f",
+      "strip_prefix" : "aws-pgactive-e44a646",
+      "commit" : "e44a64684e7ae2d450e04a00481f8c46cd797e25",
+      "short_commit" : "e44a646"
+    },
+    "2.1.1-RC1" : {
+      "tag" : "v2.1.1-RC1",
+      "sha256" : "c01419ad679fc4f8aaee8e1c2b4c1ab81f7451272862f9135dfd211dd2997fb8",
+      "strip_prefix" : "aws-pgactive-7dddcf4",
+      "commit" : "7dddcf42cd5b387f3325a18ce6e238714e28f925",
+      "short_commit" : "7dddcf4"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "08f3cd7df7657fb7de4b9a55a0fcd5af37a8e1b57a33405d8e6433a02fc509ec",
+      "strip_prefix" : "aws-pgactive-6693c80",
+      "commit" : "6693c80c44458b81ec3c11c9220c317c66a4f8a1",
+      "short_commit" : "6693c80"
+    },
+    "2.1.0-RC3" : {
+      "tag" : "v2.1.0-RC3",
+      "sha256" : "612a327dd3c51b08408664e537de5c204f5fea2f3a7fbb508deb3425f365defa",
+      "strip_prefix" : "aws-pgactive-8e504c4",
+      "commit" : "8e504c4872c78dafa4afcbdaf18e0a7926551060",
+      "short_commit" : "8e504c4"
+    },
+    "2.1.0-RC2" : {
+      "tag" : "v2.1.0-RC2",
+      "sha256" : "54ae95ccccb75c238623c43c0e97323cf2f84874de522d8149f0ad3ec661e27e",
+      "strip_prefix" : "aws-pgactive-8074cbe",
+      "commit" : "8074cbecddd9c21aa15d26ff8d2a5732326a9ac3",
+      "short_commit" : "8074cbe"
+    },
+    "2.1.0-RC1" : {
+      "tag" : "v2.1.0-RC1",
+      "sha256" : "d27b761acd047c35d3a45051df5dba5dd4ceb7053a8aaa7d1a4aa4a5cc9be441",
+      "strip_prefix" : "aws-pgactive-2a0c9f0",
+      "commit" : "2a0c9f0d6dac67d485004100d2a7d3e6338372c7",
+      "short_commit" : "2a0c9f0"
+    },
+    "2.0.7-RC0" : {
+      "tag" : "v2.0.7-RC0",
+      "sha256" : "cac8b05a1c40204c004a82fa1dd4011ddce8666972440188c15779b523451167",
+      "strip_prefix" : "aws-pgactive-27cf2ee",
+      "commit" : "27cf2ee9083e0c41e089e4cdd3191baba156814d",
+      "short_commit" : "27cf2ee"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.1.7" : {
+        "default_version" : "2.1.7",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.6" : {
+        "default_version" : "2.1.6",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.5" : {
+        "default_version" : "2.1.5",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.4" : {
+        "default_version" : "2.1.4",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.3" : {
+        "default_version" : "2.1.3",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.2" : {
+        "default_version" : "2.1.2",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.1-RC1" : {
+        "default_version" : "2.1.1",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.1" : {
+        "default_version" : "2.1.1",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.0-RC3" : {
+        "default_version" : "2.1.0",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.0-RC2" : {
+        "default_version" : "2.1.0",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "Active-Active Replication Extension for PostgreSQL",
+        "module_pathname" : "$libdir/pgactive",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    }
+  },
+  "version" : 1
+}

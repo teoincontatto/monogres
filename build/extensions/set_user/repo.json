@@ -1,0 +1,270 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgaudit/set_user/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "4.2.0" : {
+      "tag" : "REL4_2_0",
+      "sha256" : "2bbba2ea100272389bd0cffaf157a5e3d148b1f59d94467e7670438a364e293e",
+      "strip_prefix" : "pgaudit-set_user-db4e871",
+      "commit" : "db4e871528c4b62bba672abaf9044f4cc618ae8c",
+      "short_commit" : "db4e871"
+    },
+    "4.1.0" : {
+      "tag" : "REL4_1_0",
+      "sha256" : "146236cf4ecd274c12c2334d9f75152171edfa8689952131993326fda8f95867",
+      "strip_prefix" : "pgaudit-set_user-1dc57a8",
+      "commit" : "1dc57a8b6ad0adc01e2c9f21d468f2c140056261",
+      "short_commit" : "1dc57a8"
+    },
+    "4.0.1" : {
+      "tag" : "REL4_0_1",
+      "sha256" : "0cfcc8dcf0dd7b6c55087f751fc0092370601d0cd48a50bfa293ebd26257bee2",
+      "strip_prefix" : "pgaudit-set_user-35e9f3f",
+      "commit" : "35e9f3f584404799688c6161f65473fe92861cc9",
+      "short_commit" : "35e9f3f"
+    },
+    "4.0.0" : {
+      "tag" : "REL4_0_0",
+      "sha256" : "4e6a4dde671ef99d52d514c532de88faa16ab93b1299969ad6516a1c2e22a139",
+      "strip_prefix" : "pgaudit-set_user-7f3a39d",
+      "commit" : "7f3a39d47c291bb879b173cb0dd2b4d3ffd07fd3",
+      "short_commit" : "7f3a39d"
+    },
+    "3.0.0" : {
+      "tag" : "REL3_0_0",
+      "sha256" : "bf9039e9f7f9469e365ed9e572c9de05f47f757bf18da8cddb3fc0eb8d199b8e",
+      "strip_prefix" : "pgaudit-set_user-88e2912",
+      "commit" : "88e2912b83a1aa2e53a403e792714b09dd4d1a0d",
+      "short_commit" : "88e2912"
+    },
+    "2.0.1" : {
+      "tag" : "REL2_0_1",
+      "sha256" : "eb3b5634a18d6d311a236b5b46d735b39537fb09d733f4a4299b475cbaf06443",
+      "strip_prefix" : "pgaudit-set_user-7ae26e5",
+      "commit" : "7ae26e582ac81ba520417daeca43cd43efccb33e",
+      "short_commit" : "7ae26e5"
+    },
+    "2.0.0" : {
+      "tag" : "REL2_0_0",
+      "sha256" : "3e1aa6a1502d5d77e3647ff7d3d15fecb10f589d5d0e351ad0fbd459333f958f",
+      "strip_prefix" : "pgaudit-set_user-6934feb",
+      "commit" : "6934feb751861b93a4cb8ceaa1c2db727bb08592",
+      "short_commit" : "6934feb"
+    },
+    "1.6.2" : {
+      "tag" : "REL1_6_2",
+      "sha256" : "91e1729fa5f3898b62bb3e0c8a4d7da3b9310bc03274b52fce699ff6a42b8d97",
+      "strip_prefix" : "pgaudit-set_user-43973d8",
+      "commit" : "43973d8dd095268dc88cc2d1ee04190a3b8f9ee3",
+      "short_commit" : "43973d8"
+    },
+    "1.6.1" : {
+      "tag" : "REL1_6_1",
+      "sha256" : "a6f7e4ceec333bab025b230024eae95ff37e4c91f7e771cdc7114ee479ee5120",
+      "strip_prefix" : "pgaudit-set_user-e0ea5a9",
+      "commit" : "e0ea5a95cbfb3f64e4d7216a570ed1f752c03f41",
+      "short_commit" : "e0ea5a9"
+    },
+    "1.6.0" : {
+      "tag" : "REL1_6_0",
+      "sha256" : "6ef3dea3f404327f4c70d94669a3b88e418dbe92cc9934c7b4a46e93913bfa32",
+      "strip_prefix" : "pgaudit-set_user-046a804",
+      "commit" : "046a804e16ba80ee1b584d5f34f9cbee46c9cff5",
+      "short_commit" : "046a804"
+    },
+    "1.5.0" : {
+      "tag" : "REL1_5_0",
+      "sha256" : "33d6bd564ec46c0e0a486b783ceda967d383efa3729b5048d73351a0c7164f0e",
+      "strip_prefix" : "pgaudit-set_user-77942df",
+      "commit" : "77942dfda54f8b46e494d7908d89cfb8e1e58b0e",
+      "short_commit" : "77942df"
+    },
+    "1.4.0" : {
+      "tag" : "REL1_4_0",
+      "sha256" : "cd02d884b3ecd3e29446a3a32731646b3db9c2bf10dee096276150daf3c9f2be",
+      "strip_prefix" : "pgaudit-set_user-50ab5c2",
+      "commit" : "50ab5c28303852d39c719103bbe436b5b8ae6beb",
+      "short_commit" : "50ab5c2"
+    },
+    "1.3.0" : {
+      "tag" : "REL1_3_0",
+      "sha256" : "73a1993dde6cc64afb50a00113f005f74d1ce9cbeb5b34ac85d1e7c00832c143",
+      "strip_prefix" : "pgaudit-set_user-6c0b5c3",
+      "commit" : "6c0b5c3a05b5d8ec3eb75527cf64d52e75ea9f6e",
+      "short_commit" : "6c0b5c3"
+    },
+    "1.2.0" : {
+      "tag" : "REL1_2_0",
+      "sha256" : "8054c92e3b3bf10ddd17d0aeabaf2eed5c3ffa8b9dc18e3c7e196a734cb89c71",
+      "strip_prefix" : "pgaudit-set_user-b89fbf7",
+      "commit" : "b89fbf76a0d20f3738cebe05f4cc345c2b848a18",
+      "short_commit" : "b89fbf7"
+    },
+    "1.1.0" : {
+      "tag" : "REL1_1_0",
+      "sha256" : "75e8ac1938dae114904f83a0f4867759ea566e9cb2d06a637b09ebd476e386db",
+      "strip_prefix" : "pgaudit-set_user-f35e1e1",
+      "commit" : "f35e1e1fa7d93cf9d7760041d02824a324d0ad9f",
+      "short_commit" : "f35e1e1"
+    },
+    "1.0.1" : {
+      "tag" : "REL1_0_1",
+      "sha256" : "ed0f610d15eee229c37f436ae73d70f1ffcb520a3d6cb864fe6984ad0c384c33",
+      "strip_prefix" : "pgaudit-set_user-d8c1b1c",
+      "commit" : "d8c1b1c2ed083f43d93e8c311136d0a73704130f",
+      "short_commit" : "d8c1b1c"
+    },
+    "1.0.0" : {
+      "tag" : "REL1_0_0",
+      "sha256" : "7628cb3c08998b2e906ea2554ce18d9daa3813afb84015c43f5d66cff1332488",
+      "strip_prefix" : "pgaudit-set_user-e1c308a",
+      "commit" : "e1c308ade41437bc4fab1780a8af2123f6c3f70f",
+      "short_commit" : "e1c308a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "4.2.0" : {
+        "default_version" : "4.2.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.1.0" : {
+        "default_version" : "4.1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.1" : {
+        "default_version" : "4.0.1",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.0" : {
+        "default_version" : "4.0.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.0" : {
+        "default_version" : "3.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.1" : {
+        "default_version" : "2.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.2" : {
+        "default_version" : "1.6",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.1" : {
+        "default_version" : "1.6",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "similar to SET ROLE but with added logging",
+        "module_pathname" : "$libdir/set_user",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

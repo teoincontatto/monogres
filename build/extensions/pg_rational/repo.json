@@ -1,0 +1,43 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/begriffs/pg_rational/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "82721f5c3d9c65ac0d5f6e614bd57da22f5d243e1037d76697c4322a784f7d6f",
+      "strip_prefix" : "begriffs-pg_rational-6106cd4",
+      "commit" : "6106cd4a6719a93d2ab67c29178f8ea79a5fbecd",
+      "short_commit" : "6106cd4"
+    },
+    "0.0.1" : {
+      "tag" : "v0.0.1",
+      "sha256" : "1585156e93f20d51d4b6dbfa6e9a166366dac6a2d84a119ac850b7fbf10efcae",
+      "strip_prefix" : "begriffs-pg_rational-c7d62f2",
+      "commit" : "c7d62f258dfc9871ad703468385efe9fc2c3b4a6",
+      "short_commit" : "c7d62f2"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "bigint fractions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "bigint fractions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,5230 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgpartman/pg_partman/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "5.4.2" : {
+      "tag" : "v5.4.2",
+      "sha256" : "f9542a06e73ba148bb5469cf1ac26df0bbaa821c7abbe0e3065236d421001634",
+      "strip_prefix" : "pgpartman-pg_partman-aa30475",
+      "commit" : "aa304755620f1295d9aa863764e874e2aa88ce0e",
+      "short_commit" : "aa30475"
+    },
+    "5.4.1" : {
+      "tag" : "v5.4.1",
+      "sha256" : "26a2717d20c808891c5a9cb53121da83d86ec84cff3ac4ccbba571a8b52b685d",
+      "strip_prefix" : "pgpartman-pg_partman-5ca3fa2",
+      "commit" : "5ca3fa27dee93d59d61d691ca1856155fe16597a",
+      "short_commit" : "5ca3fa2"
+    },
+    "5.4.0" : {
+      "tag" : "v5.4.0",
+      "sha256" : "16e331e7d9214e49376c14b678f999dbd69aa749e9c2faa16640db62512e842f",
+      "strip_prefix" : "pgpartman-pg_partman-56a8150",
+      "commit" : "56a81503994ec5b22eb255f0d97af9fe6d11c4b5",
+      "short_commit" : "56a8150"
+    },
+    "5.3.1" : {
+      "tag" : "v5.3.1",
+      "sha256" : "d944d9854775ce5c0f92f58894410d7d8eb6d6a96cd30ddfdf60dea994457b5d",
+      "strip_prefix" : "pgpartman-pg_partman-b5be3dd",
+      "commit" : "b5be3ddac25e809e5e23469124f7eb6463d44406",
+      "short_commit" : "b5be3dd"
+    },
+    "5.3.0" : {
+      "tag" : "v5.3.0",
+      "sha256" : "45e215494ee2c666cf7605c4df0a5fe629009ea5f435b07a1e1b908ce290e7be",
+      "strip_prefix" : "pgpartman-pg_partman-254ea0a",
+      "commit" : "254ea0abaa454ebdefa81113857dad1a78474f79",
+      "short_commit" : "254ea0a"
+    },
+    "5.2.4" : {
+      "tag" : "v5.2.4",
+      "sha256" : "9c9ce69b8c7e8287160b47f940541a447f2c16910a2ae17bd50a001b7687b05a",
+      "strip_prefix" : "pgpartman-pg_partman-1192e93",
+      "commit" : "1192e933232a0ecc1b960470316f1fffa05a8da3",
+      "short_commit" : "1192e93"
+    },
+    "5.2.3" : {
+      "tag" : "v5.2.3",
+      "sha256" : "dfad75074fc05f2d03c593474c1d09f18b24e3c5b952cd988d2298a4e8704dd8",
+      "strip_prefix" : "pgpartman-pg_partman-41bc480",
+      "commit" : "41bc480630f68f85185352f6c534e3d8af81f6d1",
+      "short_commit" : "41bc480"
+    },
+    "5.2.2" : {
+      "tag" : "v5.2.2",
+      "sha256" : "1d625c75137a1d0969e1131183db34e40e4626bb417a24b502b1ce30fad3ecaa",
+      "strip_prefix" : "pgpartman-pg_partman-ec78f2e",
+      "commit" : "ec78f2ea677d1858c2a110242102a46c6b647510",
+      "short_commit" : "ec78f2e"
+    },
+    "5.2.1" : {
+      "tag" : "v5.2.1",
+      "sha256" : "0184a583fdb80bbe9fabbdd177ffe5f404078c139f5642e65bd94f76f2be41c8",
+      "strip_prefix" : "pgpartman-pg_partman-72a7c1d",
+      "commit" : "72a7c1d76e798d61d9e4eab2dd2aebcc19ac8c3c",
+      "short_commit" : "72a7c1d"
+    },
+    "5.2.0" : {
+      "tag" : "v5.2.0",
+      "sha256" : "3bcb4446069976a4daf27c0e4d4789164232dbb2f5f201561b542954ef7ae4cf",
+      "strip_prefix" : "pgpartman-pg_partman-6965956",
+      "commit" : "6965956dde2c02c08cc75a55dc7954bcb05489b6",
+      "short_commit" : "6965956"
+    },
+    "5.1.0" : {
+      "tag" : "v5.1.0",
+      "sha256" : "4c063185cd318ec6704590ca1addbe63f13138f35a440f6b963d24dc6683ec62",
+      "strip_prefix" : "pgpartman-pg_partman-5d955cf",
+      "commit" : "5d955cf735e15fa65fac4e478f9d8b4344b0ee7e",
+      "short_commit" : "5d955cf"
+    },
+    "5.0.1" : {
+      "tag" : "v5.0.1",
+      "sha256" : "57eee52af5d215daf0adb0de585451c2b11bced01c03c757f5fc137b59d752d1",
+      "strip_prefix" : "pgpartman-pg_partman-61b2beb",
+      "commit" : "61b2beb0bf2384b4da4dcee4952d52525d418dab",
+      "short_commit" : "61b2beb"
+    },
+    "5.0.0" : {
+      "tag" : "v5.0.0",
+      "sha256" : "7c346e4355314d8975e14eb76851453d58a22319b5a9ed9dd365e54deca2a850",
+      "strip_prefix" : "pgpartman-pg_partman-a570c0e",
+      "commit" : "a570c0e74809c23e1f70f0c54d39e5f2f2973f13",
+      "short_commit" : "a570c0e"
+    },
+    "4.7.4" : {
+      "tag" : "v4.7.4",
+      "sha256" : "df990b060442d9a0c2cea34c09409012b6e1d8ff7a5971a32b35d18e4a241b5b",
+      "strip_prefix" : "pgpartman-pg_partman-2330063",
+      "commit" : "2330063ad29a65d169b1947ac35705a237774fb6",
+      "short_commit" : "2330063"
+    },
+    "4.7.3" : {
+      "tag" : "v4.7.3",
+      "sha256" : "634e43a2563b0cfa6a13cb0f3d97ca5ad597b0e372d58598f77635d2e1390fba",
+      "strip_prefix" : "pgpartman-pg_partman-ca21207",
+      "commit" : "ca212077f66af19c0ca317c206091cd31d3108b8",
+      "short_commit" : "ca21207"
+    },
+    "4.7.2" : {
+      "tag" : "v4.7.2",
+      "sha256" : "89f01fc9c1106b4289d3ad84dae364858dd5989f95cb22998c4967fcf6852a4e",
+      "strip_prefix" : "pgpartman-pg_partman-7a159d5",
+      "commit" : "7a159d5d60bb8a0737741bd63efd19f84d952048",
+      "short_commit" : "7a159d5"
+    },
+    "4.7.1" : {
+      "tag" : "v4.7.1",
+      "sha256" : "9e358e91cec2bcd87b4d241ffa1f63c1abf0ab096a0d3a78f3c65f52740474ed",
+      "strip_prefix" : "pgpartman-pg_partman-9c71c68",
+      "commit" : "9c71c68e2d29aab5cd9da3cb127f8c72cd8a038a",
+      "short_commit" : "9c71c68"
+    },
+    "4.7.0" : {
+      "tag" : "v4.7.0",
+      "sha256" : "277da437df1bc982eeaa63d3fc8f002ffd82c000f356f73a1dfe27762ef2487a",
+      "strip_prefix" : "pgpartman-pg_partman-285e809",
+      "commit" : "285e80962274f1d4af3d30ef6683baf416253a47",
+      "short_commit" : "285e809"
+    },
+    "4.6.2" : {
+      "tag" : "v4.6.2",
+      "sha256" : "6884b1b0dfef92de9f52e033bcdba46d0694ce4ee7b13a9ae848495671482b98",
+      "strip_prefix" : "pgpartman-pg_partman-5a2760a",
+      "commit" : "5a2760aa31b755988cde71d79bd63bb3a52dea9d",
+      "short_commit" : "5a2760a"
+    },
+    "4.6.1" : {
+      "tag" : "v4.6.1",
+      "sha256" : "7a90bbb53b4e70a4f763ba99113416095abd343c1a476e8863a3fd9f0c64ffdc",
+      "strip_prefix" : "pgpartman-pg_partman-180db75",
+      "commit" : "180db75aee4fb92f508c8ff2824b3264e8f2b13c",
+      "short_commit" : "180db75"
+    },
+    "4.6.0" : {
+      "tag" : "v4.6.0",
+      "sha256" : "e0c4a1ab5484360007c32755f116fc991c76f0f2913935a0d1b8594ae66b0a1f",
+      "strip_prefix" : "pgpartman-pg_partman-7cd0ef9",
+      "commit" : "7cd0ef91f7c58560824e5452e11f76a232ed64f9",
+      "short_commit" : "7cd0ef9"
+    },
+    "4.5.1" : {
+      "tag" : "v4.5.1",
+      "sha256" : "c264203c7eda12265f2a2d45e97aa9495ecf442ce54376f4948069820a83f26a",
+      "strip_prefix" : "pgpartman-pg_partman-0b6565a",
+      "commit" : "0b6565ad378c358f8a6cd1d48ddc482eb7f854d3",
+      "short_commit" : "0b6565a"
+    },
+    "4.5.0" : {
+      "tag" : "v4.5.0",
+      "sha256" : "9b1e6a2cf5a246708cb28477c2051f79252a5bafe7693ce363d5ae1960b616fd",
+      "strip_prefix" : "pgpartman-pg_partman-f0c1b58",
+      "commit" : "f0c1b58bdc47a17306a1b1d90e35bc098e833966",
+      "short_commit" : "f0c1b58"
+    },
+    "4.4.1" : {
+      "tag" : "v4.4.1",
+      "sha256" : "7d5444d0add561ee6964d0f4e4f1aa66e20f3d54ce0cd8c8a52403d25da9afe6",
+      "strip_prefix" : "pgpartman-pg_partman-c054f4c",
+      "commit" : "c054f4cb57e4d9c119c3de925378528e14d794f2",
+      "short_commit" : "c054f4c"
+    },
+    "4.4.0" : {
+      "tag" : "v4.4.0",
+      "sha256" : "33255e4c1fa0a3c256a77f9d65c9f8a74b1d2cbcb88aed9a57bd67ce0166ce02",
+      "strip_prefix" : "pgpartman-pg_partman-793e46d",
+      "commit" : "793e46d7ccc10ec687e2dbf46cf25143bac00597",
+      "short_commit" : "793e46d"
+    },
+    "4.3.1" : {
+      "tag" : "v4.3.1",
+      "sha256" : "a994d5ac24e817b84e3f65558f4f5d95d88af11c15dd2e7cf1349a916850aa31",
+      "strip_prefix" : "pgpartman-pg_partman-c2cfb1c",
+      "commit" : "c2cfb1ced6e6e0647bff452173cf25d548637ac0",
+      "short_commit" : "c2cfb1c"
+    },
+    "4.3.0" : {
+      "tag" : "v4.3.0",
+      "sha256" : "5bf84be589446df119fdaee27c648236264d35fc3e9a8c9dd981cddfc4302af1",
+      "strip_prefix" : "pgpartman-pg_partman-2586799",
+      "commit" : "258679998659f7f3d2fb75b0d870eb19ff8296f6",
+      "short_commit" : "2586799"
+    },
+    "4.2.2" : {
+      "tag" : "v4.2.2",
+      "sha256" : "193d78c65f4ec31efdd9f9610dd31a00856d95aef495acd243cc087e31174e2a",
+      "strip_prefix" : "pgpartman-pg_partman-1795eb2",
+      "commit" : "1795eb2cd54f30d2f5c0717bb53c48c436c17c13",
+      "short_commit" : "1795eb2"
+    },
+    "4.2.1" : {
+      "tag" : "v4.2.1",
+      "sha256" : "a76aeff2ab4320146a44bbf10f7776659368cf7e5620b6a5246ea6cab9529d4c",
+      "strip_prefix" : "pgpartman-pg_partman-3e9768f",
+      "commit" : "3e9768f1ae7eecfd0e1d482a898167fa82b537f3",
+      "short_commit" : "3e9768f"
+    },
+    "4.2.0" : {
+      "tag" : "v4.2.0",
+      "sha256" : "8e79dd923fd5a6be5f5e1eca0af2af3252f2b9f4d8c805cc7c7c7935da0cc948",
+      "strip_prefix" : "pgpartman-pg_partman-de0bf4e",
+      "commit" : "de0bf4ef76c993deae7f6ee79708213a07ae11ef",
+      "short_commit" : "de0bf4e"
+    },
+    "4.1.0" : {
+      "tag" : "v4.1.0",
+      "sha256" : "bdd0bbef9354b0c39a78851375841a3ebc4b99d9bf64c30d3308046ede94ef40",
+      "strip_prefix" : "pgpartman-pg_partman-5f6fa69",
+      "commit" : "5f6fa69751d47b385a2e067ce781eb3c41282ca7",
+      "short_commit" : "5f6fa69"
+    },
+    "4.0.0" : {
+      "tag" : "v4.0.0",
+      "sha256" : "b92a8a2bdcdb5f6173c4c943b0c06be87ad644858f674768240d59999c6188b3",
+      "strip_prefix" : "pgpartman-pg_partman-d28670f",
+      "commit" : "d28670fbf56757442b8b6fb33e750f032f561a71",
+      "short_commit" : "d28670f"
+    },
+    "3.2.1" : {
+      "tag" : "v3.2.1",
+      "sha256" : "55c9f7738708a5746bc739a9a1ab29b0f749a589a27901166dd227cb1e1a9a5d",
+      "strip_prefix" : "pgpartman-pg_partman-3ee672c",
+      "commit" : "3ee672cc7af43b44794f29cd12c2fa592bb3aa08",
+      "short_commit" : "3ee672c"
+    },
+    "3.2.0" : {
+      "tag" : "v3.2.0",
+      "sha256" : "7e6e17d7525807a45a4b52bf126f5791b643381ffcd617314c402ec72a372660",
+      "strip_prefix" : "pgpartman-pg_partman-498b55a",
+      "commit" : "498b55af2a53db2231dc75c390a35ae399ed417d",
+      "short_commit" : "498b55a"
+    },
+    "3.1.3" : {
+      "tag" : "v3.1.3",
+      "sha256" : "d7a6c638b4dd03ad3388adb359a4cb36ea88ebb98bb791b78048aef54a863164",
+      "strip_prefix" : "pgpartman-pg_partman-92ff91c",
+      "commit" : "92ff91c124029448c33e8017ea7d4388944b703b",
+      "short_commit" : "92ff91c"
+    },
+    "3.1.2" : {
+      "tag" : "v3.1.2",
+      "sha256" : "f694117672d98a59ffaa1352de21508bd1f00554ba8721000dce26c27e850374",
+      "strip_prefix" : "pgpartman-pg_partman-3a37027",
+      "commit" : "3a37027ac43a187eaba6d0772955027dbfb2cd7f",
+      "short_commit" : "3a37027"
+    },
+    "3.1.1" : {
+      "tag" : "v3.1.1",
+      "sha256" : "5072388f21941cbdc843d0457e1b9171ad3e369e59ec22583ea545ac1ff08b5e",
+      "strip_prefix" : "pgpartman-pg_partman-3e2bf92",
+      "commit" : "3e2bf92dd290944656b11c3f24926d2ef5e58b4a",
+      "short_commit" : "3e2bf92"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1.0",
+      "sha256" : "0a9ffa3599800b6570564469fbc2917e9d76275c7484d6878afeb730410808e1",
+      "strip_prefix" : "pgpartman-pg_partman-6fefec3",
+      "commit" : "6fefec33bb645e193e7370d17879eef801986aff",
+      "short_commit" : "6fefec3"
+    },
+    "3.0.2" : {
+      "tag" : "v3.0.2",
+      "sha256" : "44e186180cacfb58c8914ad78bcbe847ffe5ac59cf2c8af3bfaa4b457420675b",
+      "strip_prefix" : "pgpartman-pg_partman-61026e7",
+      "commit" : "61026e7ff21331348eda8abfc05a463958da1e49",
+      "short_commit" : "61026e7"
+    },
+    "3.0.1" : {
+      "tag" : "v3.0.1",
+      "sha256" : "7c669c53dbe3a91260cbfe38673cdcf1e04adc69d7c9983e54e880601e1843b6",
+      "strip_prefix" : "pgpartman-pg_partman-71d5851",
+      "commit" : "71d5851b5820847b4681dcf88c7c4830c56b9a0c",
+      "short_commit" : "71d5851"
+    },
+    "2.6.4" : {
+      "tag" : "v2.6.4",
+      "sha256" : "ed426e30bb2cdc71621a082815d8687a8c01ff85d5db6475509cb40b1f826dff",
+      "strip_prefix" : "pgpartman-pg_partman-8022429",
+      "commit" : "802242948e70b27dc660feca525e77e194ffebc0",
+      "short_commit" : "8022429"
+    },
+    "2.6.3" : {
+      "tag" : "v2.6.3",
+      "sha256" : "3647661dcc9af83e7f65d7782946d3119742780f0d206a659980c3969c93a1ee",
+      "strip_prefix" : "pgpartman-pg_partman-12fdf30",
+      "commit" : "12fdf30c081e4102745c737a98d94d76795b8a28",
+      "short_commit" : "12fdf30"
+    },
+    "2.6.2" : {
+      "tag" : "v2.6.2",
+      "sha256" : "a5d04fbf7ecaa1b19e4d16b232fa5ce6903f0f2476dea0ec02b7a0b213146750",
+      "strip_prefix" : "pgpartman-pg_partman-1f49571",
+      "commit" : "1f49571d055a693b735c753c16c4273dd8b9d86a",
+      "short_commit" : "1f49571"
+    },
+    "2.6.1" : {
+      "tag" : "v2.6.1",
+      "sha256" : "87df9592502b84edc47e31ce16f7b6ed39a7656b9ea2dcf36eea4ada3083ae27",
+      "strip_prefix" : "pgpartman-pg_partman-a64479a",
+      "commit" : "a64479a75101c4da624ffb6c3f3cc3e929ad982f",
+      "short_commit" : "a64479a"
+    },
+    "2.6.0" : {
+      "tag" : "v2.6.0",
+      "sha256" : "4cd86140906eea74657d3cacf83fe8ad7f84543f883269f348b4675c3ecc76be",
+      "strip_prefix" : "pgpartman-pg_partman-81a5c8f",
+      "commit" : "81a5c8f97b92bda8c29f04cd9c5c082d0954f28d",
+      "short_commit" : "81a5c8f"
+    },
+    "2.5.1" : {
+      "tag" : "v2.5.1",
+      "sha256" : "474ee54cc406ef265f367652d0137fc3f8565efb85f841dfdeb8a85fb2a6ca70",
+      "strip_prefix" : "pgpartman-pg_partman-b1f58d4",
+      "commit" : "b1f58d4f67a7b08d20442734fe3c554d790c596f",
+      "short_commit" : "b1f58d4"
+    },
+    "2.5.0" : {
+      "tag" : "v2.5.0",
+      "sha256" : "3bc35b27415ca0b3a698fe88c1558cbc5690aa005359ea5d10c5b2213be2a2a0",
+      "strip_prefix" : "pgpartman-pg_partman-b57b9e4",
+      "commit" : "b57b9e428d9eb87c1dd92278fd39c722a8274465",
+      "short_commit" : "b57b9e4"
+    },
+    "2.4.1" : {
+      "tag" : "v2.4.1",
+      "sha256" : "7f17115039168a5a2363b251f68646aa52a732284b5674e0cea084cda4427ee7",
+      "strip_prefix" : "pgpartman-pg_partman-6a890d9",
+      "commit" : "6a890d94f26295ccbaa502b18c740823515a5af8",
+      "short_commit" : "6a890d9"
+    },
+    "2.4.0" : {
+      "tag" : "v2.4.0",
+      "sha256" : "152e6cba9ac010ac62608bf99187980f230da9bcc3c55b1f1edaa4fa27b2b093",
+      "strip_prefix" : "pgpartman-pg_partman-fb76395",
+      "commit" : "fb76395692bf4671428456e218de8018bcbdba5d",
+      "short_commit" : "fb76395"
+    },
+    "2.3.4" : {
+      "tag" : "v2.3.4",
+      "sha256" : "35c3dc41f103c9494577ad660d7da5fc256ea82921839bf9b578dc3765573abb",
+      "strip_prefix" : "pgpartman-pg_partman-b34c93b",
+      "commit" : "b34c93b5a0f42751e4b4afbd1b65a313ac514b17",
+      "short_commit" : "b34c93b"
+    },
+    "2.3.3" : {
+      "tag" : "v2.3.3",
+      "sha256" : "e17cb08d803eefefc2acdc7d80b7e8cea317e6e94ba9cf806853d8ca6496fc7f",
+      "strip_prefix" : "pgpartman-pg_partman-5815fd0",
+      "commit" : "5815fd0dade75f5827fb441ff13f431631aa1c1c",
+      "short_commit" : "5815fd0"
+    },
+    "2.3.2" : {
+      "tag" : "v2.3.2",
+      "sha256" : "a3b5afd32c7a3bb26acdc6ae43d147045d648b65755b715c6c4b7be7b4f1ce39",
+      "strip_prefix" : "pgpartman-pg_partman-ed61711",
+      "commit" : "ed61711c1e008c19c0b0edd2b663bfdefe69bb21",
+      "short_commit" : "ed61711"
+    },
+    "2.3.1" : {
+      "tag" : "v2.3.1",
+      "sha256" : "b93a376232eb630537467cad97be5cb660b21cfea75a8632c11b1d0559bfcbb1",
+      "strip_prefix" : "pgpartman-pg_partman-ce430ea",
+      "commit" : "ce430eaaf721c5b1e9d341d5c086d56eb5be7e81",
+      "short_commit" : "ce430ea"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0",
+      "sha256" : "05e1f75e52cc1f712907439ae4a317577c566074ea7af617e8da562c4552b557",
+      "strip_prefix" : "pgpartman-pg_partman-16e91a5",
+      "commit" : "16e91a5e3a19cd042bab01ebfc00b8619e1e69e3",
+      "short_commit" : "16e91a5"
+    },
+    "2.2.3" : {
+      "tag" : "v2.2.3",
+      "sha256" : "72e006735cebcd021eb3130c2a38edbaa536e2d5758ed07ff888afc8e136b737",
+      "strip_prefix" : "pgpartman-pg_partman-d08ecd8",
+      "commit" : "d08ecd81a097d1cf404eb1c02b97db8416f7fea3",
+      "short_commit" : "d08ecd8"
+    },
+    "2.2.2" : {
+      "tag" : "v2.2.2",
+      "sha256" : "bf865a57b8076c3b57d8fa892808960ac683fb6412b287b69d79a3ee2f30c159",
+      "strip_prefix" : "pgpartman-pg_partman-c4578a9",
+      "commit" : "c4578a9f24f8be45f1c6fd8a4cc2c8ced0ad91a1",
+      "short_commit" : "c4578a9"
+    },
+    "2.2.1" : {
+      "tag" : "v2.2.1",
+      "sha256" : "17fb3dafb130738d326a1131e28161d5b98e73afa3f9b2eded4f8d203153233d",
+      "strip_prefix" : "pgpartman-pg_partman-08daa23",
+      "commit" : "08daa23cd15c119c1e7ab6c18826031b208536bd",
+      "short_commit" : "08daa23"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "15c2d20cb8f2e7ea68f2460a9ebeec9126aca1f13a5031b7b66091c8c285542d",
+      "strip_prefix" : "pgpartman-pg_partman-13835cc",
+      "commit" : "13835ccf33d7aedfaad12e015b7a25ef8d7de9a8",
+      "short_commit" : "13835cc"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "92c74ffa8633d291c5ac5b97d29f59dea2ad160d95ceb3433016e923bf4fc715",
+      "strip_prefix" : "pgpartman-pg_partman-c59a5c7",
+      "commit" : "c59a5c7e0017cdeead46384bff9f543117b4054d",
+      "short_commit" : "c59a5c7"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "91157567fad8d747aae6e5f8d02c5f160e784d58efd53d3cd6d3e9134a5aadf7",
+      "strip_prefix" : "pgpartman-pg_partman-b5f56b0",
+      "commit" : "b5f56b0423e7847c28d67fef40ba8e0292a7bca0",
+      "short_commit" : "b5f56b0"
+    },
+    "1.8.7" : {
+      "tag" : "v1.8.7",
+      "sha256" : "2bd779b374d636f51c4e4c9cd49d3cc61b9ac268091d3ece75f3816448705a8f",
+      "strip_prefix" : "pgpartman-pg_partman-50c4d46",
+      "commit" : "50c4d463995c4d5ba21fdfc8a41de0908a58a84e",
+      "short_commit" : "50c4d46"
+    },
+    "1.8.6" : {
+      "tag" : "v1.8.6",
+      "sha256" : "d5178efff93367199b97f65da3037ac9197ac4152e20aca52873dbe5c98211bd",
+      "strip_prefix" : "pgpartman-pg_partman-cfb7e2a",
+      "commit" : "cfb7e2a17d9a810cc2183851307cbde81fcac020",
+      "short_commit" : "cfb7e2a"
+    },
+    "1.8.5" : {
+      "tag" : "v1.8.5",
+      "sha256" : "e1568a1f87390f346fcc4789a71f3c3deda99cf9a18ee7722e78dbaa1cb9ec2e",
+      "strip_prefix" : "pgpartman-pg_partman-e64b224",
+      "commit" : "e64b224b3a93c8eb3f14f2ab6a8b4bf31bc0b7cb",
+      "short_commit" : "e64b224"
+    },
+    "1.8.4" : {
+      "tag" : "v1.8.4",
+      "sha256" : "f72ca63e333d287242a8b8ac0b3b9ccff177c319a432ec0bfe9f0ea5a4e65e16",
+      "strip_prefix" : "pgpartman-pg_partman-60ca46b",
+      "commit" : "60ca46b466b873ca48ee4226c8df664fb81bee41",
+      "short_commit" : "60ca46b"
+    },
+    "1.8.3" : {
+      "tag" : "v1.8.3",
+      "sha256" : "cbd01e83ad24fd3872ad70f993b4b036497e2c69e67b8a46b6b2f1a2f4e17f5e",
+      "strip_prefix" : "pgpartman-pg_partman-f63023f",
+      "commit" : "f63023f233d554418709e7937de8b0107180ef53",
+      "short_commit" : "f63023f"
+    },
+    "1.8.2" : {
+      "tag" : "v1.8.2",
+      "sha256" : "bccc8d8751f3367d69b23a57a5be897ea8c8c9a27f2a1382b18554d38b1f7f8a",
+      "strip_prefix" : "pgpartman-pg_partman-fedc077",
+      "commit" : "fedc077b0cb675df05dafa49dcbfc6f2beddd773",
+      "short_commit" : "fedc077"
+    },
+    "1.8.1" : {
+      "tag" : "v1.8.1",
+      "sha256" : "5f70062b85a983223e503301c6e929b5c1eb56f1a41928105f6ff26b172b6b6e",
+      "strip_prefix" : "pgpartman-pg_partman-4d44892",
+      "commit" : "4d448927e2c7a7412ca35dba855f402908784db8",
+      "short_commit" : "4d44892"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8.0",
+      "sha256" : "f0e32f2036c13ede66650e571543535c8edc2c5b6a86156bef5a031d6065f3e2",
+      "strip_prefix" : "pgpartman-pg_partman-062893c",
+      "commit" : "062893cf4b8bcf7f19cd6d633415a719f05adbdc",
+      "short_commit" : "062893c"
+    },
+    "1.7.2" : {
+      "tag" : "v1.7.2",
+      "sha256" : "1f43daf211c3a455137c9855d37a89696bbf8d211a7da19001fdb28572a1cd87",
+      "strip_prefix" : "pgpartman-pg_partman-2b75107",
+      "commit" : "2b75107d885f4c29f2843cbf81aa5ee3537d11d5",
+      "short_commit" : "2b75107"
+    },
+    "1.7.1" : {
+      "tag" : "v1.7.1",
+      "sha256" : "c7eabf5c738b83647b23e46e49b1823a8c3843e1b38ee4a5bc1d78a651229053",
+      "strip_prefix" : "pgpartman-pg_partman-d941cd2",
+      "commit" : "d941cd2c779655d9bd0b0c4ea92c714e93ab8ae2",
+      "short_commit" : "d941cd2"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "64c7796fa5a245ca07d249801419866e5e393787ba09e78ab96dc085e52ed2c1",
+      "strip_prefix" : "pgpartman-pg_partman-a798584",
+      "commit" : "a798584aafad9b3687355ef73460dd3b697109a6",
+      "short_commit" : "a798584"
+    },
+    "1.6.1" : {
+      "tag" : "v1.6.1",
+      "sha256" : "39e0cf96515b6c47a925fbdffe0d409709a170768719ce5171566de35b269636",
+      "strip_prefix" : "pgpartman-pg_partman-104beac",
+      "commit" : "104beac3d37fdcba093a54fc3fbdd12a22400430",
+      "short_commit" : "104beac"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "ddae9b16ec39fd7e06b5eb10b97ee10a8400a0d4e2c987eac57dc63bf0c85d1f",
+      "strip_prefix" : "pgpartman-pg_partman-2a7f66b",
+      "commit" : "2a7f66ba5dc9020bf2f5e0f5d94bdb545cd2ba09",
+      "short_commit" : "2a7f66b"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1",
+      "sha256" : "110977d6d16e8f6e8114b1ff46545e111f269e4c16d6d568883328e8a9ccc89e",
+      "strip_prefix" : "pgpartman-pg_partman-50f2e3a",
+      "commit" : "50f2e3add54d1d094c19f567c0559e417b0be167",
+      "short_commit" : "50f2e3a"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "d05c7ef3aeccbe73be9a2e6c7997c877aa68bfe3abdfd55d079b8188877e3719",
+      "strip_prefix" : "pgpartman-pg_partman-8d91aae",
+      "commit" : "8d91aae035137027609050187e8f080cb139306e",
+      "short_commit" : "8d91aae"
+    },
+    "1.4.5" : {
+      "tag" : "v1.4.5",
+      "sha256" : "d7f855b3b1bb26d569ffa3eb892f436ca6880fdccc26003368ce508bee08cc7a",
+      "strip_prefix" : "pgpartman-pg_partman-6dfd041",
+      "commit" : "6dfd04125dfa5172010e67af9586437b1c209888",
+      "short_commit" : "6dfd041"
+    },
+    "1.4.4" : {
+      "tag" : "v1.4.4",
+      "sha256" : "1f85d9844254fb6db8cf695591845b7dd305793bfb21baf58dd39e751ea25531",
+      "strip_prefix" : "pgpartman-pg_partman-be6aa46",
+      "commit" : "be6aa4626076aa967c11d49e0769438db8683109",
+      "short_commit" : "be6aa46"
+    },
+    "1.4.3" : {
+      "tag" : "v1.4.3",
+      "sha256" : "5e42d6ddf717dbe9ae5288c1da444d831248344a8b5a76d390d73de411eb9da5",
+      "strip_prefix" : "pgpartman-pg_partman-67d3709",
+      "commit" : "67d370906d0f417d4e16a6cb687b490a8d209b4a",
+      "short_commit" : "67d3709"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "1be72f820774f93e08ed7228989052f3fada0b67d1bf2f3f45f9f36c137e2a4f",
+      "strip_prefix" : "pgpartman-pg_partman-aa128aa",
+      "commit" : "aa128aa59ad9b79c372462a34d66ab2ed76b2acd",
+      "short_commit" : "aa128aa"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "65eb00052d5803f243efbefa81bf71badc91be679967b4cb65edf77866bcd47f",
+      "strip_prefix" : "pgpartman-pg_partman-d37ce2f",
+      "commit" : "d37ce2f68a5ff56a295b9413a54663b6228839ce",
+      "short_commit" : "d37ce2f"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "d2002873e23c5852e895cf028c44f1a0746a967be33d39501af557983d12bda8",
+      "strip_prefix" : "pgpartman-pg_partman-ec93450",
+      "commit" : "ec9345036e4149ea87f1d92d1ff4f428fe75dde1",
+      "short_commit" : "ec93450"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "a491b800918000ee1c848a0309fba655eeec25c15315755c2fdc869b3e357a67",
+      "strip_prefix" : "pgpartman-pg_partman-2eb6c02",
+      "commit" : "2eb6c025bb13cbdf8e5cbbbbd754b16a5c78713d",
+      "short_commit" : "2eb6c02"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "9f4d6bee27e68e80c189564f4073e5f64871db9c578fd75f8a04293270f64941",
+      "strip_prefix" : "pgpartman-pg_partman-1b00bb4",
+      "commit" : "1b00bb42803f623ca2f008b2cea7a43400884f36",
+      "short_commit" : "1b00bb4"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "7483a25703f1e824b040dcc3f4cb9b4e5ab736993aaad935b1c987f3489929ee",
+      "strip_prefix" : "pgpartman-pg_partman-78200bc",
+      "commit" : "78200bcd1b331df0d1d88250b13a30d3c8bc23e6",
+      "short_commit" : "78200bc"
+    },
+    "0.4.2" : {
+      "tag" : "v0.4.2",
+      "sha256" : "e26b42bb967f0a1f5936ba80033e75cb28066442ed78eded2a0174b226f2e066",
+      "strip_prefix" : "pgpartman-pg_partman-b3d166d",
+      "commit" : "b3d166de9c74a50706a557723b7c2e44036ff136",
+      "short_commit" : "b3d166d"
+    },
+    "0.4.1" : {
+      "tag" : "v0.4.1",
+      "sha256" : "be5413f814b9cb6e797af98f119c92a12987345aee792c1cb52d45b483322534",
+      "strip_prefix" : "pgpartman-pg_partman-0676932",
+      "commit" : "06769323fedd14d57985002e166dc860016fcec1",
+      "short_commit" : "0676932"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4.0",
+      "sha256" : "104cc110b9ca3264766396e0c353a7ec9bf3acc970f6e2119733bb916f5df08c",
+      "strip_prefix" : "pgpartman-pg_partman-8c68300",
+      "commit" : "8c6830019cd3af397113aa389f0a0ba6d523b40b",
+      "short_commit" : "8c68300"
+    },
+    "0.3.2" : {
+      "tag" : "v0.3.2",
+      "sha256" : "34cbba1ff5850560c3175fcd499bdc97d84dff0ff02f6b257ee80a44fa3fc1b4",
+      "strip_prefix" : "pgpartman-pg_partman-3793240",
+      "commit" : "3793240a5080dd9d7ad61f90bca907ac46d8db6b",
+      "short_commit" : "3793240"
+    },
+    "0.3.1" : {
+      "tag" : "v0.3.1",
+      "sha256" : "322a9de588471811ccf8ddeadd5f2382be0f30d1492a916e197ed88aa044645f",
+      "strip_prefix" : "pgpartman-pg_partman-c93ac72",
+      "commit" : "c93ac72c36695f8b27d0274c7fb83e19d5bf4e97",
+      "short_commit" : "c93ac72"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "a9956b57538c8584cbe975ca081a0997c09125de69aee6c0a43072d4e214a633",
+      "strip_prefix" : "pgpartman-pg_partman-54b3c49",
+      "commit" : "54b3c49d326d9e99f07cc18f7593251e6f3aac30",
+      "short_commit" : "54b3c49"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "8e2a4f42541812312ffc2ee4b4a575c2c46aa4fc477ff2d38c0ae637b41a92da",
+      "strip_prefix" : "pgpartman-pg_partman-509042b",
+      "commit" : "509042ba17b2fcca97d218490e562b5db6b95cce",
+      "short_commit" : "509042b"
+    },
+    "0.1.2" : {
+      "tag" : "v0.1.2",
+      "sha256" : "7b85dcfbd81100020b65793a75e4eb511ceb0b0a457c4f9add5b860b1840c2e4",
+      "strip_prefix" : "pgpartman-pg_partman-18dbce3",
+      "commit" : "18dbce354adbba375938ef6defa2c293f31df5b7",
+      "short_commit" : "18dbce3"
+    },
+    "0.1.1" : {
+      "tag" : "v0.1.1",
+      "sha256" : "1a64f1148d6108466f5f5da346a311cc91163da015f2c3638b87418754873723",
+      "strip_prefix" : "pgpartman-pg_partman-aa577b1",
+      "commit" : "aa577b15f66c72b15e19a55abcc10020eec01d7b",
+      "short_commit" : "aa577b1"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "5.4.2" : {
+        "default_version" : "5.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.4.1" : {
+        "default_version" : "5.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.4.0" : {
+        "default_version" : "5.4.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.3.1" : {
+        "default_version" : "5.3.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.3.0" : {
+        "default_version" : "5.3.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.4" : {
+        "default_version" : "5.2.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.3" : {
+        "default_version" : "5.2.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.2" : {
+        "default_version" : "5.2.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.1" : {
+        "default_version" : "5.2.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.0" : {
+        "default_version" : "5.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.1.0" : {
+        "default_version" : "5.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.1" : {
+        "default_version" : "5.0.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.0" : {
+        "default_version" : "5.0.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.7.4" : {
+        "default_version" : "4.7.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.7.3" : {
+        "default_version" : "4.7.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.7.2" : {
+        "default_version" : "4.7.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.7.1" : {
+        "default_version" : "4.7.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.7.0" : {
+        "default_version" : "4.7.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.6.2" : {
+        "default_version" : "4.6.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.6.1" : {
+        "default_version" : "4.6.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.6.0" : {
+        "default_version" : "4.6.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.5.1" : {
+        "default_version" : "4.5.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.5.0" : {
+        "default_version" : "4.5.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.4.1" : {
+        "default_version" : "4.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.4.0" : {
+        "default_version" : "4.4.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.3.1" : {
+        "default_version" : "4.3.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.3.0" : {
+        "default_version" : "4.3.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.2.2" : {
+        "default_version" : "4.2.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.2.1" : {
+        "default_version" : "4.2.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.2.0" : {
+        "default_version" : "4.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.1.0" : {
+        "default_version" : "4.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.0" : {
+        "default_version" : "4.0.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.1" : {
+        "default_version" : "3.2.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.0" : {
+        "default_version" : "3.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.3" : {
+        "default_version" : "3.1.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.2" : {
+        "default_version" : "3.1.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.1" : {
+        "default_version" : "3.1.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.0" : {
+        "default_version" : "3.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.2" : {
+        "default_version" : "3.0.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.1" : {
+        "default_version" : "3.0.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.4" : {
+        "default_version" : "2.6.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.3" : {
+        "default_version" : "2.6.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.2" : {
+        "default_version" : "2.6.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.1" : {
+        "default_version" : "2.6.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.0" : {
+        "default_version" : "2.6.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.5.1" : {
+        "default_version" : "2.5.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.5.0" : {
+        "default_version" : "2.5.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.1" : {
+        "default_version" : "2.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.0" : {
+        "default_version" : "2.4.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.4" : {
+        "default_version" : "2.3.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.3" : {
+        "default_version" : "2.3.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.2" : {
+        "default_version" : "2.3.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.1" : {
+        "default_version" : "2.3.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.0" : {
+        "default_version" : "2.3.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.3" : {
+        "default_version" : "2.2.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.2" : {
+        "default_version" : "2.2.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.1" : {
+        "default_version" : "2.2.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.0" : {
+        "default_version" : "2.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.7" : {
+        "default_version" : "1.8.7",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.6" : {
+        "default_version" : "1.8.6",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.5" : {
+        "default_version" : "1.8.5",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.4" : {
+        "default_version" : "1.8.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.3" : {
+        "default_version" : "1.8.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.2" : {
+        "default_version" : "1.8.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.1" : {
+        "default_version" : "1.8.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.0" : {
+        "default_version" : "1.8.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.2" : {
+        "default_version" : "1.7.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.1" : {
+        "default_version" : "1.7.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.0" : {
+        "default_version" : "1.7.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.1" : {
+        "default_version" : "1.6.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.0" : {
+        "default_version" : "1.6.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.5.1" : {
+        "default_version" : "1.5.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.5.0" : {
+        "default_version" : "1.5.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.5" : {
+        "default_version" : "1.4.5",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.4" : {
+        "default_version" : "1.4.4",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.3" : {
+        "default_version" : "1.4.3",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.1" : {
+        "default_version" : "1.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.0" : {
+        "default_version" : "1.4.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.4.2" : {
+        "default_version" : "0.4.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.4.1" : {
+        "default_version" : "0.4.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.3.2" : {
+        "default_version" : "0.3.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.3.1" : {
+        "default_version" : "0.3.1",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.1.2" : {
+        "default_version" : "0.1.2",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.1.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Extension to manage partitioned tables by time or ID",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "5.4.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.4.2",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.4.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.4.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.4.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.4.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.4.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.4.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.4.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.4.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.4.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.4.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.3.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.3.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.3.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.3.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.3.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.3.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.3.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.3.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.2.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.2.4",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.2.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.2.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.2.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.2.3",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.2.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.2.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.2.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.2.2",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.2.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.2.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.2.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.2.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.2.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.2.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.2.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.1.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.1.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.1.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.1.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.0.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.0.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.0.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.0.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "5.0.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "5.0.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--5.0.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "5.0.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.7.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.7.4",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.7.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.7.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.7.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.7.3",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.7.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.7.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.7.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.7.2",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.7.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.7.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.7.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.7.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.7.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.7.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.7.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.7.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.7.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.7.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.6.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.6.2",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.6.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.6.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.6.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.6.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.6.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.6.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.6.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.6.0",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.4.1"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.6.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.6.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.5.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.5.1",
+        "maintainer" : [ "Keith Fiske <keith@keithf4.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.5.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.5.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgpartman/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgpartman/pg_partman.git",
+            "web" : "https://github.com/pgpartman/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.5.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.5.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.5.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.5.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.4.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.4.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.4.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.4.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.4.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.4.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.4.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.4.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.3.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.3.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.3.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.3.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.3.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.3.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.3.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.3.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.2.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.2.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.2.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.2.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.2.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.2.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.2.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.2.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.2.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.1.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.0.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.0.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.0.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "4.0.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "4.0.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--4.0.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "4.0.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.2.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.2.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.2.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.2.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.2.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.1.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.1.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.1.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.1.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.1.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.1.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.1.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.1.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.1.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.1.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.1.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.1.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.1.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.1.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.1.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.1.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.0.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.0.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.0.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.0.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "3.0.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "3.0.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--3.0.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "3.0.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.6.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.6.4",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.6.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.6.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.6.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.6.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.6.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.6.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.6.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.6.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.6.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.6.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.6.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.6.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.6.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.6.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.6.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.6.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.6.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.6.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.5.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.5.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.5.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.5.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.5.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.5.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.5.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.5.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.4.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.4.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.4.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.4.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.4.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.4.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.4.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.4.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.3.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.3.4",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.3.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.3.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.3.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.3.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.3.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.3.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.3.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.3.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.3.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.3.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.3.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.3.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.3.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.3.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.3.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.3.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.3.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.3.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.2.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.2.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.2.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.2.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.2.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.2.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.2.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.2.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.2.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.2.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.2.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.2.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.2.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.1.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.1.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.1.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.1.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "2.0.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "2.0.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--2.0.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "2.0.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables", "bgw", "background worker", "custom background worker" ]
+      },
+      "1.8.7" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.7",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.7.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.7",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.6" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.6",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.6.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.6",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.5" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.5",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.5.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.5",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.4",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.8.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.8.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.8.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.8.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.7.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.7.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.7.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.7.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.7.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.7.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.7.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.7.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.7.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.7.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.7.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.7.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.6.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.6.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.6.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.6.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.6.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.6.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.6.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.6.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.5.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.5.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.5.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.5.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.5.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.5.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.5.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.5.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.4.5" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.4.5",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.4.5.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.4.5",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.4.4" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.4.4",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.4.4.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.4.4",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.4.3" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.4.3",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.4.3.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.4.3",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.4.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.4.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.4.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.4.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.4.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.4.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.1.2"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.4.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.4.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.3.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.3.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.3.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.3.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.2.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.1.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.1.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partman" : {
+            "file" : "sql/pg_partman--1.1.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.1.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "1.0.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "1.0.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--1.0.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "1.0.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.4.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.4.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.4.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.4.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.4.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.4.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.4.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.4.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.4.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.4.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.4.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.4.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.3.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.3.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.3.2.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.3.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.3.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.3.1",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.3.1.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.3.1",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.3.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.3.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman--0.3.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.3.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.2.0" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.2.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "1.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman-0.2.0.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.2.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.1.2" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.1.2",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "0.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.1.2",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      },
+      "0.1.1" : {
+        "name" : "pg_partman",
+        "abstract" : "Extension to manage partitioned tables by time or ID",
+        "version" : "0.1.0",
+        "maintainer" : [ "Keith Fiske <keith@omniti.com>" ],
+        "license" : "postgresql",
+        "generated_by" : "Keith Fiske",
+        "release_status" : "testing",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "pg_jobmon" : "0.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_partmaint" : {
+            "file" : "sql/pg_partman.sql",
+            "docfile" : "doc/pg_partman.md",
+            "version" : "0.1.0",
+            "abstract" : "Extension to manage partitioned tables by time or ID"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/keithf4/pg_partman/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/keithf4/pg_partman.git",
+            "web" : "https://github.com/keithf4/pg_partman",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "partition", "partitions", "partitioning", "table", "tables" ]
+      }
+    }
+  },
+  "version" : 1
+}

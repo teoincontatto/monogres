@@ -1,0 +1,351 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/supabase/supautils/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.9.1" : {
+      "tag" : "v2.9.1",
+      "sha256" : "ae7d32c4fa34031808a9854b9c726d823ce80478f62f18753a783e39c2d77c8b",
+      "strip_prefix" : "supabase-supautils-f57301c",
+      "commit" : "f57301c4fa90adee9d25ca47661dcb94b892d95d",
+      "short_commit" : "f57301c"
+    },
+    "2.9.0" : {
+      "tag" : "v2.9.0",
+      "sha256" : "20a228126abef7660387234e9a6fe6d7f96cc1e224bfa0696bac598ada8e7b25",
+      "strip_prefix" : "supabase-supautils-f9fbfe4",
+      "commit" : "f9fbfe4e3bea551598526ffbaede58bbad3fdc7b",
+      "short_commit" : "f9fbfe4"
+    },
+    "2.8.0" : {
+      "tag" : "v2.8.0",
+      "sha256" : "7e6e485340b0bce94683ea27317f9f8bdf668dc0cccecd978062971f5e5d6235",
+      "strip_prefix" : "supabase-supautils-5d7d3e5",
+      "commit" : "5d7d3e5d9fc2cc436b6bd9060f5f41777c1101f1",
+      "short_commit" : "5d7d3e5"
+    },
+    "2.7.3" : {
+      "tag" : "v2.7.3",
+      "sha256" : "8645e6445c2992486843b3600c20be068713d3c49edcccbe56f49ea5bdc95498",
+      "strip_prefix" : "supabase-supautils-4bf4a84",
+      "commit" : "4bf4a84c9a6bc84e5ae28f3ae12aa6d2ed2f2f67",
+      "short_commit" : "4bf4a84"
+    },
+    "2.7.2" : {
+      "tag" : "v2.7.2",
+      "sha256" : "ad5830d26f41fbfd0d9c070cd901a574d7e4944759cb4fe5067261b391fec8a5",
+      "strip_prefix" : "supabase-supautils-425013c",
+      "commit" : "425013c5ea18bcc6d668ae3c397f27addd5ced39",
+      "short_commit" : "425013c"
+    },
+    "2.7.1" : {
+      "tag" : "v2.7.1",
+      "sha256" : "1ad604720f58be230256ec77388e0b511a02e0d44927b693a137fb0611a7585e",
+      "strip_prefix" : "supabase-supautils-e97feab",
+      "commit" : "e97feab887922ea38ee0d6f94c8f0cb3819a67f1",
+      "short_commit" : "e97feab"
+    },
+    "2.7.0" : {
+      "tag" : "v2.7.0",
+      "sha256" : "bacd86b2db21fe7ddb4bfb19471e58dc0d06306404238ec8d94f5b6995b8c06a",
+      "strip_prefix" : "supabase-supautils-aaf66d4",
+      "commit" : "aaf66d42771d70b2ace4391c2a76e0c3b7971ac6",
+      "short_commit" : "aaf66d4"
+    },
+    "2.6.0" : {
+      "tag" : "v2.6.0",
+      "sha256" : "3d553928bb80f5abeeef05ea566a8bb87172f10cad9183f026c01a671572a8dd",
+      "strip_prefix" : "supabase-supautils-e861d3e",
+      "commit" : "e861d3ed6c8f43b9063540b95fb837b594862640",
+      "short_commit" : "e861d3e"
+    },
+    "2.5.0" : {
+      "tag" : "v2.5.0",
+      "sha256" : "348fc78a3bb2b17733efcabca5c5eb3a616851f62045d64cc77d81c7d6f5e6ae",
+      "strip_prefix" : "supabase-supautils-fcb20b3",
+      "commit" : "fcb20b39de2c56f066ac68066ffa4ea870d92d1a",
+      "short_commit" : "fcb20b3"
+    },
+    "2.4.0" : {
+      "tag" : "v2.4.0",
+      "sha256" : "31820fb301736736fd42d0b3011646fb41c5530f901fa7e86ce26fe843795aac",
+      "strip_prefix" : "supabase-supautils-11be816",
+      "commit" : "11be816d8765b1ab2f9d417b927e6c4527a722d2",
+      "short_commit" : "11be816"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0",
+      "sha256" : "0edf20d28183683bef408541f1ff6badfd09096f6475d7d734a055031036a04f",
+      "strip_prefix" : "supabase-supautils-ad6e41e",
+      "commit" : "ad6e41e560ca868fc885a98b555382e0d21685cb",
+      "short_commit" : "ad6e41e"
+    },
+    "2.2.1" : {
+      "tag" : "v2.2.1",
+      "sha256" : "b3d5809a718a7ef459543579533cd238320e81829aa10e8a39c619fdb71166c1",
+      "strip_prefix" : "supabase-supautils-6d2c6e0",
+      "commit" : "6d2c6e00fc4b81b06c8ac500223e6eba708c4d0f",
+      "short_commit" : "6d2c6e0"
+    },
+    "2.2.1-test-pg16" : {
+      "tag" : "v2.2.1-test-pg16",
+      "sha256" : "c4bfff087af3bccd9138c35b3d77f48fae87aac6a8f0ab3dd0be576a1684cd8d",
+      "strip_prefix" : "supabase-supautils-55f4f51",
+      "commit" : "55f4f5189f3f672747cd78dbde65281b8aff4ad6",
+      "short_commit" : "55f4f51"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "7123ff73a3228ad244f4cf6059d62200255b87cb3dabaffaf417d9577c5a42f5",
+      "strip_prefix" : "supabase-supautils-7a546bd",
+      "commit" : "7a546bd7cbf141558737db9b9c453770b51a554d",
+      "short_commit" : "7a546bd"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "0173332605fff0c60ef1214057c5b02c80f3ce0cfc521ec3514051d386ac680b",
+      "strip_prefix" : "supabase-supautils-9975bb5",
+      "commit" : "9975bb5071f1720e186b61a7678b551fac832098",
+      "short_commit" : "9975bb5"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "7269033baabd96a66bf49712e26e303a60628e1baf406a7e84e5f907004cd9c3",
+      "strip_prefix" : "supabase-supautils-a426e3f",
+      "commit" : "a426e3fc40152316f4df6d0ec664e7b0dceb2aac",
+      "short_commit" : "a426e3f"
+    },
+    "1.9.0" : {
+      "tag" : "v1.9.0",
+      "sha256" : "5297b39d74984581d0b0c094e293d85d44802d42cde4c730751398d45f3aa682",
+      "strip_prefix" : "supabase-supautils-5a8cf2e",
+      "commit" : "5a8cf2e0da6ffb64d21ce938e4b95efb45c76552",
+      "short_commit" : "5a8cf2e"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8.0",
+      "sha256" : "93faeb5585ca7a6e216dfd79722bde9eb46f625904799fdab17f4417018ac1c3",
+      "strip_prefix" : "supabase-supautils-da58877",
+      "commit" : "da58877c89682f6a6bb55dfc19b8c6a17b2acfff",
+      "short_commit" : "da58877"
+    },
+    "1.7.3" : {
+      "tag" : "v1.7.3",
+      "sha256" : "17f7db842609d06b0e62bf6bcf52a4c95ada99a1bdbd49758c1b1b8f08856500",
+      "strip_prefix" : "supabase-supautils-0068d70",
+      "commit" : "0068d70bdb9a549040e208371a9ce48745ef8eb8",
+      "short_commit" : "0068d70"
+    },
+    "1.7.2" : {
+      "tag" : "v1.7.2",
+      "sha256" : "60c6aeffaa5ffd450a1e957898076acfd796e69cc4da9fd1cae6c11f76d04a58",
+      "strip_prefix" : "supabase-supautils-870932e",
+      "commit" : "870932eabf517fbbd0caef7e88c7cb9cd59346ae",
+      "short_commit" : "870932e"
+    },
+    "1.7.1" : {
+      "tag" : "v1.7.1",
+      "sha256" : "aff579d351754b98031a7bc521c49da6f862b2a0ab3991c022cdb039e44819cf",
+      "strip_prefix" : "supabase-supautils-d295143",
+      "commit" : "d2951437a9f00231ead1ed50713228d50ea98e66",
+      "short_commit" : "d295143"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "c662077726b5425ce53f8e2b6ab7f868e81825d7b964192b59bd75f5fb0b629d",
+      "strip_prefix" : "supabase-supautils-b250e7d",
+      "commit" : "b250e7dbab484bbd4aac955ecb208fb936a20fce",
+      "short_commit" : "b250e7d"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "74c5099dd10e8e940c00c9bedb8ee2758c6c5cfc160395614d6331cbbd96a192",
+      "strip_prefix" : "supabase-supautils-8c5fc70",
+      "commit" : "8c5fc7016da0de19da3b6e1b23a3e47a9e949a68",
+      "short_commit" : "8c5fc70"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "d2ef460ea672e872b14b47e6950878841162906924ca7c5f0243b26d47801125",
+      "strip_prefix" : "supabase-supautils-100d573",
+      "commit" : "100d5736ca450fc35a5773b7890b2133a546c379",
+      "short_commit" : "100d573"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "48ff8e3f416332e7c5a02f4e1ed9322e770aca168a6355db0432861732e3d9d5",
+      "strip_prefix" : "supabase-supautils-2f08407",
+      "commit" : "2f084072c89dce073214b8d5c28c1aca934a9e11",
+      "short_commit" : "2f08407"
+    },
+    "1.3.1" : {
+      "tag" : "v1.3.1",
+      "sha256" : "9400c44e5cc6f7690806b79c12840bad84a9fd51f7570891ba69881a303da50b",
+      "strip_prefix" : "supabase-supautils-b2ab28c",
+      "commit" : "b2ab28c7e45fedeea6126fd7bd79f72e1743d032",
+      "short_commit" : "b2ab28c"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "74f1bf0ca7c45bbad968b78a9757a338e6626b3872e115ef5794addce1d1ed08",
+      "strip_prefix" : "supabase-supautils-763cc4a",
+      "commit" : "763cc4ac865b8b4bf647091c4abb79bfda0af66e",
+      "short_commit" : "763cc4a"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "20686e98b7485179aa3065093f02ef4eaacae78e3b004bbba5a290e540515137",
+      "strip_prefix" : "supabase-supautils-45a672e",
+      "commit" : "45a672e29783f5d084db4451acf7ae550fabca61",
+      "short_commit" : "45a672e"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "df396938bacfb2c669da51c6e206ccc5e0749ed7528fa15bf9aff5e453a307d4",
+      "strip_prefix" : "supabase-supautils-abc47d6",
+      "commit" : "abc47d61c43a7b83a0cd7343816ff57bc06c6ffc",
+      "short_commit" : "abc47d6"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "c25bc42e2e882b4a73cc5bc3dc832cc180abd6ecf9910ff01ac1c347773b36d6",
+      "strip_prefix" : "supabase-supautils-13afded",
+      "commit" : "13afdede84220b3c05d5fc994dbb851ccc12d2f4",
+      "short_commit" : "13afded"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "cc729f358d17ae6d2fbddd07ff94927a2a5df6d0ec6b83a65098799312899e7c",
+      "strip_prefix" : "supabase-supautils-5a9212a",
+      "commit" : "5a9212ad4aafd18eef6ffe8a48ead7d36a380dfc",
+      "short_commit" : "5a9212a"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "c0400577b03ffada33d531e02f00f7888173ad1b6066be07370f5e5ae1083f34",
+      "strip_prefix" : "supabase-supautils-c840137",
+      "commit" : "c840137f22e8715401e4372590f5eec594684ac5",
+      "short_commit" : "c840137"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "f40d59b48b60df70ef3421231c836b74db47619a2d23dca33b5172c54843c989",
+      "strip_prefix" : "supabase-supautils-276667d",
+      "commit" : "276667ddfa7e9054913564316b363cb302b27da3",
+      "short_commit" : "276667d"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.9.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.5.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.3.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.3.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Supabase standard library",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

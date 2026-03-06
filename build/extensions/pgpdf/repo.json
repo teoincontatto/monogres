@@ -1,0 +1,71 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/Florents-Tselai/pgpdf/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "e18b37a291599e7ee6fdf0fe606e3eadaba4ce0e8e3132eeb1dffd612cd174f1",
+      "strip_prefix" : "Florents-Tselai-pgpdf-b46c1e4",
+      "commit" : "b46c1e46fdaa8e275fd3c07cd924d864da757aa3",
+      "short_commit" : "b46c1e4"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "pdf type",
+        "module_pathname" : "$libdir/pgpdf",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.1.0" : {
+        "name" : "pgpdf",
+        "abstract" : "PDF Type for Postgres",
+        "version" : "0.1.0",
+        "maintainer" : [ "Florents Tselai <florents.tselai@gmail.com>" ],
+        "license" : "gpl_2",
+        "generated_by" : "Florents Tselai",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgpdf" : {
+            "file" : "sql/pgpdf--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.0",
+            "abstract" : "PDF Type for Postgres"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/Florents-Tselai/pgpdf/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/Florents-Tselai/pgpdf.git",
+            "web" : "https://github.com/Florents-Tselai/pgpdf",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "pdf", "documents" ]
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,240 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/credativ/informix_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.6.3" : {
+      "tag" : "REL0_6_3",
+      "sha256" : "efbd0ba03759b580f872ee9c15d657841f5092b545fcbb113893bb989a067527",
+      "strip_prefix" : "credativ-informix_fdw-e32c131",
+      "commit" : "e32c1311514c8213d8a8117d8ac79ef9d5b254f0",
+      "short_commit" : "e32c131"
+    },
+    "0.6.2" : {
+      "tag" : "REL0_6_2",
+      "sha256" : "260911efff2f2ca03e5f454aa4e22871c0b3bf492aecf36a9490bee1098a271b",
+      "strip_prefix" : "credativ-informix_fdw-7d8ccd1",
+      "commit" : "7d8ccd1ad8e062f091b11c5a1c4b68ff520a53b1",
+      "short_commit" : "7d8ccd1"
+    },
+    "0.6.1" : {
+      "tag" : "REL0_6_1",
+      "sha256" : "48c402cce4a7d45e75e665e108077174413d8277d02985178392b6fee7794bbd",
+      "strip_prefix" : "credativ-informix_fdw-31a73d7",
+      "commit" : "31a73d78821a2ceacd4028699eb52c009a3b5ba0",
+      "short_commit" : "31a73d7"
+    },
+    "0.6.0" : {
+      "tag" : "REL0_6_0",
+      "sha256" : "64eaf2585a95825973dfbb0b6988963c7067ddfb52ee870f403ab430e0095d02",
+      "strip_prefix" : "credativ-informix_fdw-b518b08",
+      "commit" : "b518b083ccf16775e1674e7a7763fd5ebd1b270a",
+      "short_commit" : "b518b08"
+    },
+    "0.5.3" : {
+      "tag" : "REL0_5_3",
+      "sha256" : "5685dc6b205fddda2956e74eb491c6abcb502681b728ca26004d48d61c6a8d95",
+      "strip_prefix" : "credativ-informix_fdw-145dae2",
+      "commit" : "145dae2853c820fb9016a3c97e1f104a37d6c510",
+      "short_commit" : "145dae2"
+    },
+    "0.5.2" : {
+      "tag" : "REL0_5_2",
+      "sha256" : "69282d0f1a2981a15370e3f79e12a2d3488e056f893697551f7337ffde9cc2c7",
+      "strip_prefix" : "credativ-informix_fdw-8363c21",
+      "commit" : "8363c21422ed44ed275c69335ef8c58082138e63",
+      "short_commit" : "8363c21"
+    },
+    "0.5.1" : {
+      "tag" : "REL0_5_1",
+      "sha256" : "0f1ef07b69b94382ca5f82bc978834d361568d4c428f09133bb6ca779e3833da",
+      "strip_prefix" : "credativ-informix_fdw-e7b2d41",
+      "commit" : "e7b2d415d8dc798b3366cf48246bab70714b791d",
+      "short_commit" : "e7b2d41"
+    },
+    "0.5.0" : {
+      "tag" : "REL0_5_0",
+      "sha256" : "dc9f959d34c39404e4a8b79763cc9cec83f4e53da70e3214d2ffcf94790206a4",
+      "strip_prefix" : "credativ-informix_fdw-d4b4ce2",
+      "commit" : "d4b4ce203a4d244bb1435c4c8fb4522669a1522f",
+      "short_commit" : "d4b4ce2"
+    },
+    "0.4.0" : {
+      "tag" : "REL0_4_0",
+      "sha256" : "23a7571390d7ffaa8ebbd6bc91cd0f672a2d6e5ca16130f82ade22644f5a65f6",
+      "strip_prefix" : "credativ-informix_fdw-99c4417",
+      "commit" : "99c44179f017ac0ae6e765d3b59374feba7fc63a",
+      "short_commit" : "99c4417"
+    },
+    "0.3.1" : {
+      "tag" : "REL0_3_1",
+      "sha256" : "924d040aec7dbcef10b8bda8c802b89baccf4c129aa5b7d8d76d87d604eaa145",
+      "strip_prefix" : "credativ-informix_fdw-d59358f",
+      "commit" : "d59358fae91dfbf32752abf8d198ae99b2088c7a",
+      "short_commit" : "d59358f"
+    },
+    "0.3.0" : {
+      "tag" : "REL0_3_0",
+      "sha256" : "4006429725c4c0220b2373708f56a0746ad39a212edec501efe2db0392b65036",
+      "strip_prefix" : "credativ-informix_fdw-bd82787",
+      "commit" : "bd827874cdf0d1b7fd06da7feb0f5938fdc8d698",
+      "short_commit" : "bd82787"
+    },
+    "0.2.2" : {
+      "tag" : "REL0_2_2",
+      "sha256" : "ac403af730841d86971f702eb52d8e9f68251a9286aa77c1650da9b49b2387bb",
+      "strip_prefix" : "credativ-informix_fdw-3a6357d",
+      "commit" : "3a6357d960c84e4192bd64b999f2e6b8147df89e",
+      "short_commit" : "3a6357d"
+    },
+    "0.2.1" : {
+      "tag" : "REL0_2_1",
+      "sha256" : "f6c2b3ff5a51987a47d9428d9366653ee985e3c23edff44dc212673bcd12a579",
+      "strip_prefix" : "credativ-informix_fdw-12109db",
+      "commit" : "12109dba47737cf393a1f86059c115d04c6d386d",
+      "short_commit" : "12109db"
+    },
+    "0.2.0" : {
+      "tag" : "REL0_2_0",
+      "sha256" : "0cb5bb71ff867b314b679e4f9362270cd5a1f8fdfa107b744c63bf3e34d2d37d",
+      "strip_prefix" : "credativ-informix_fdw-d3b4619",
+      "commit" : "d3b46191284f94e8c61aba195d7b1395cb42a77d",
+      "short_commit" : "d3b4619"
+    },
+    "0.1.0" : {
+      "tag" : "REL0_1_0",
+      "sha256" : "99a56edc265ea26841d2f5e28f4616d97998bef02d617a444490e47d11075ca2",
+      "strip_prefix" : "credativ-informix_fdw-b35cf27",
+      "commit" : "b35cf2759261ad3f27c7467a2665c56661e7938e",
+      "short_commit" : "b35cf27"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.6.3" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.2" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.1" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.3" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.1" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.2" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.1" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign data wrapper for Informix IDS 11 access",
+        "module_pathname" : "$libdir/ifx_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

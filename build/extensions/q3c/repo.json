@@ -1,0 +1,164 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/segasai/q3c/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.0.2" : {
+      "tag" : "v2.0.2",
+      "sha256" : "fa9e9908129c1ecd1b124f37958d3c9a6174bd533ef7bf9767d44a53d56c3e00",
+      "strip_prefix" : "segasai-q3c-d2fbc0e",
+      "commit" : "d2fbc0e1802d331a5d726c87cbac7e268234eb86",
+      "short_commit" : "d2fbc0e"
+    },
+    "2.0.1" : {
+      "tag" : "v2.0.1",
+      "sha256" : "0b8f38106785e5c2e7950bf1e06fba20f1405c1b8a95bcb2ac01ec454e5dc001",
+      "strip_prefix" : "segasai-q3c-a3297b0",
+      "commit" : "a3297b06b06438efbd8d868e685f05080d1ff857",
+      "short_commit" : "a3297b0"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "786d0ca1b7d40f7c7f2040537dc8dab20736d4ee92ed8dc740b816be3c5e5317",
+      "strip_prefix" : "segasai-q3c-d6a087c",
+      "commit" : "d6a087cb98e83258104190cf2a2fa7de6faa9be5",
+      "short_commit" : "d6a087c"
+    },
+    "1.8.2" : {
+      "tag" : "v1.8.2",
+      "sha256" : "f2030f5919c8277132794e4a3e369164b08127da83ad28de599c788c377435e6",
+      "strip_prefix" : "segasai-q3c-8d1993f",
+      "commit" : "8d1993fa13cb94fd822988a52d5da2b330ebf717",
+      "short_commit" : "8d1993f"
+    },
+    "1.8.1" : {
+      "tag" : "v1.8.1",
+      "sha256" : "8a2bc3db4ca29e2ebcbc55d5853e0bc7484a9b78ad047b315d7444d6b78e54b4",
+      "strip_prefix" : "segasai-q3c-3824f79",
+      "commit" : "3824f797fdbdf97dbce1782af7c189441d1e8ad5",
+      "short_commit" : "3824f79"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8.0",
+      "sha256" : "7d1bed43e7366ec7598fac13990c9cb98c369164e2fca3bb7786433a124953b3",
+      "strip_prefix" : "segasai-q3c-8db9091",
+      "commit" : "8db9091ff857a545bfbaafdc341b39eb7be08fcc",
+      "short_commit" : "8db9091"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "25866367ce8fadb288eb8f0e22d92f7789871c8f6bfcb9c76a23c094eefe7b7a",
+      "strip_prefix" : "segasai-q3c-14fd0ec",
+      "commit" : "14fd0ec4802f58186b9501736cb28955591424fc",
+      "short_commit" : "14fd0ec"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "36e9b3c158fa004d2cc25b9d3dbe5ecb70df465269541d02f7457a481cb5c5d6",
+      "strip_prefix" : "segasai-q3c-549d7b0",
+      "commit" : "549d7b0a5c60c62c1b1f8d8ac6b171f3692135ff",
+      "short_commit" : "549d7b0"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "d918f15ebf6c60756beb0f7726b549d04975e19da03c7b3de4bbc59498085b4a",
+      "strip_prefix" : "segasai-q3c-53299d1",
+      "commit" : "53299d1dc9ceadf185810b981cd123eab89ab90c",
+      "short_commit" : "53299d1"
+    },
+    "1.4.25" : {
+      "tag" : "v1.4.25",
+      "sha256" : "7972decb93c570de39e89c106cd50d24d69d64f72646c0b0ec9ddf818dbd7f3a",
+      "strip_prefix" : "segasai-q3c-b0fde80",
+      "commit" : "b0fde800bbcb8a2853a3639d3d7620dc937d62b8",
+      "short_commit" : "b0fde80"
+    },
+    "1.4.24" : {
+      "tag" : "v1.4.24",
+      "sha256" : "02e83c3dfaba89f50f59081b4f9528435928deed0c80e805cb0a943bb85b9a7b",
+      "strip_prefix" : "segasai-q3c-bb2584f",
+      "commit" : "bb2584f267f1405e8046d9e1eecb2b6f81021283",
+      "short_commit" : "bb2584f"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.1",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.8.2" : {
+        "default_version" : "1.8.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.1" : {
+        "default_version" : "1.8.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.8.0" : {
+        "default_version" : "1.8.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.7.0" : {
+        "default_version" : "1.7.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.0" : {
+        "default_version" : "1.6.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.5.0" : {
+        "default_version" : "1.5.0",
+        "comment" : "q3c sky indexing plugin",
+        "module_pathname" : "$libdir/q3c",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

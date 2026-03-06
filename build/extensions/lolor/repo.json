@@ -1,0 +1,95 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgEdge/lolor/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "74a57489160cf7ea06f56c9658995c74e946aa6388b15030e130092e403c445a",
+      "strip_prefix" : "pgEdge-lolor-69f2643",
+      "commit" : "69f26432dd87b5fcf8d32e604efb1b405b0bfc73",
+      "short_commit" : "69f2643"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "c03d1a57482187a690437c52a16622e1cb4c045512ae567211efa39c7f6f6761",
+      "strip_prefix" : "pgEdge-lolor-69e0386",
+      "commit" : "69e0386a04af46e6b82e680d1ea9a29160302e85",
+      "short_commit" : "69e0386"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "1e8a878903fab51cf283540d64023ac635f85cdf94dc2afaac06bdbaf256418c",
+      "strip_prefix" : "pgEdge-lolor-95e6385",
+      "commit" : "95e6385e05e609f167e8498cb73fb9f790675edc",
+      "short_commit" : "95e6385"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "2048f260f46dfd2fb7daa54c6a9e121f9d847c6451805beacdef967b05b692d8",
+      "strip_prefix" : "pgEdge-lolor-0154434",
+      "commit" : "0154434b2deda7c0f28bd55af0ecb69f2bce17e1",
+      "short_commit" : "0154434"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "951ea2f920bedae72f557f68506d624bfae43a6ccd4439ed1838c8d967191853",
+      "strip_prefix" : "pgEdge-lolor-97a4918",
+      "commit" : "97a49186db4195baedc513a619955d81f68a6a6d",
+      "short_commit" : "97a4918"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.2" : {
+        "default_version" : "1.2.2",
+        "comment" : "Large Objects support for logical replication",
+        "module_pathname" : "$libdir/lolor",
+        "superuser" : true,
+        "trusted" : true,
+        "relocatable" : false,
+        "schema" : "lolor"
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.1",
+        "comment" : "Large Objects support for logical replication",
+        "module_pathname" : "$libdir/lolor",
+        "superuser" : true,
+        "trusted" : true,
+        "relocatable" : false,
+        "schema" : "lolor"
+      },
+      "1.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "Large Objects support for logical replication",
+        "module_pathname" : "$libdir/lolor",
+        "superuser" : true,
+        "trusted" : true,
+        "relocatable" : false,
+        "schema" : "lolor"
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "Large Objects support for logical replication",
+        "module_pathname" : "$libdir/lolor",
+        "superuser" : true,
+        "trusted" : true,
+        "relocatable" : false,
+        "schema" : "lolor"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Large Objects support for logical replication",
+        "module_pathname" : "$libdir/lolor",
+        "superuser" : true,
+        "trusted" : true,
+        "relocatable" : false,
+        "schema" : "lolor"
+      }
+    }
+  },
+  "version" : 1
+}

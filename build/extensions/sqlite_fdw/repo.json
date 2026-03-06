@@ -1,0 +1,734 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgspider/sqlite_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.5.0" : {
+      "tag" : "v2.5.0",
+      "sha256" : "79bfefdbe3465f72535b5a3244797fa4a7cdaad9805a93899d333b8477b7d7d2",
+      "strip_prefix" : "pgspider-sqlite_fdw-8c98f1e",
+      "commit" : "8c98f1e556cadb43eac994de5db23ce8f14eba80",
+      "short_commit" : "8c98f1e"
+    },
+    "2.4.0" : {
+      "tag" : "v2.4.0",
+      "sha256" : "d048aec2b2096db375069e687ed872d56ee68310b79b38df2022c37c850644b3",
+      "strip_prefix" : "pgspider-sqlite_fdw-3536796",
+      "commit" : "3536796a9424beff991b1b0531486e17ac7daf6c",
+      "short_commit" : "3536796"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0",
+      "sha256" : "d09caee348381227ecde92c54da0b3f6b421270a2923a7100a6fedc322e378f6",
+      "strip_prefix" : "pgspider-sqlite_fdw-3a495b7",
+      "commit" : "3a495b79bdedab4fdbcbacea452deb8599196341",
+      "short_commit" : "3a495b7"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "7d5fc4c3789f15d2f30875bab1eb907f9b162b5fcbd33bf0b3dd79d34175fd49",
+      "strip_prefix" : "pgspider-sqlite_fdw-31133bd",
+      "commit" : "31133bdb5bd3bb4afa4688820325a75990634d15",
+      "short_commit" : "31133bd"
+    },
+    "2.1.1" : {
+      "tag" : "v2.1.1",
+      "sha256" : "bab7fe9797e7d8d820692e48db86400e563c9b7d57456e5c3ad555daadefbe21",
+      "strip_prefix" : "pgspider-sqlite_fdw-9cffd29",
+      "commit" : "9cffd294355d258e88a60dd8ce381d2e70d3dbee",
+      "short_commit" : "9cffd29"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "54c83e3d3b8bb2ef23791e02a283596ffe6b8ebc5d478fdfb7f95d543499c414",
+      "strip_prefix" : "pgspider-sqlite_fdw-56fb787",
+      "commit" : "56fb787bff12a020771161316f9a5e43faa4957f",
+      "short_commit" : "56fb787"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "cd4b173782c5c464ae9080ae09e15787c726c5463b6e7895378de391e795f4d2",
+      "strip_prefix" : "pgspider-sqlite_fdw-a4e24fb",
+      "commit" : "a4e24fbd86359d3eaeb3dca55591ebacd6f36694",
+      "short_commit" : "a4e24fb"
+    },
+    "1.3.1" : {
+      "tag" : "v1.3.1",
+      "sha256" : "f9e4fcb300874e16de27555ad793ef426d1853be046a3018980b601c2b97dace",
+      "strip_prefix" : "pgspider-sqlite_fdw-1745a69",
+      "commit" : "1745a69eae35d75dbf37f498fa19c142340fbb96",
+      "short_commit" : "1745a69"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "6494e48c6af8ec3985915e3461ddce475e6b3b145fc0eae6f04bd89fa1d52405",
+      "strip_prefix" : "pgspider-sqlite_fdw-1f64853",
+      "commit" : "1f64853a4919e37bf191e62e62961b0b668943c2",
+      "short_commit" : "1f64853"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "7cdcee74e0134fc9cb6924f910c288d8a6c68e3372f311ad5c5adce25dcf715c",
+      "strip_prefix" : "pgspider-sqlite_fdw-c9594bf",
+      "commit" : "c9594bf34bb4ec40e08f5a8ecffb600561ca408a",
+      "short_commit" : "c9594bf"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "4f1429e9d6d89b081c8b34dca0b9feb23ae6f8ac50945c7d0617cb2d52ebb6fe",
+      "strip_prefix" : "pgspider-sqlite_fdw-8985e74",
+      "commit" : "8985e74565d2193e3bab4874e1c9e29132054975",
+      "short_commit" : "8985e74"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "5144f6fd502ec3897a33a99244e891bd6cf506302eddfdb51b61f3fa50c8d6b1",
+      "strip_prefix" : "pgspider-sqlite_fdw-f269c46",
+      "commit" : "f269c468f7fa1f7c83a6aca37d7a30b69a4bc36e",
+      "short_commit" : "f269c46"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "328a4b29603c6487e487215b410019bcd5763d7ac8e5e4ff09dfba0bca9583ec",
+      "strip_prefix" : "pgspider-sqlite_fdw-3eb5b27",
+      "commit" : "3eb5b27685d04a51a715e7c1cfc6f64ca9672793",
+      "short_commit" : "3eb5b27"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "8f81090354995aeb9018e8d0d039e175e65c10e1b3d30f63dd9a77ea6aa653c6",
+      "strip_prefix" : "pgspider-sqlite_fdw-ed02959",
+      "commit" : "ed02959e6caa8ec967ee054d5b4055601c2f8ee8",
+      "short_commit" : "ed02959"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.5.0" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.0" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQLite Foreign Data Wrapper",
+        "module_pathname" : "$libdir/sqlite_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "2.5.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.5.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.5.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.4.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.4.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.4.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.3.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.3.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.3.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.2.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.2.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.1.1" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.1.1",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.1.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.1.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "2.0.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "2.0.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.3.1" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.3.1",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.3.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.3.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.2.0",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.2.1" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.2.0",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.2.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.2.0",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.1.1" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.1.0",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      },
+      "1.1.0" : {
+        "name" : "sqlite_fdw",
+        "abstract" : "Foreign Data Wrapper for SQLite databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for SQLite databases.",
+        "version" : "1.1.0",
+        "maintainer" : "mochizk",
+        "license" : "postgresql",
+        "provides" : {
+          "sqlite_fdw" : {
+            "abstract" : "Foreign Data Wrapper for SQLite databases",
+            "file" : "sqlite_fdw.c",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/pgspider/sqlite_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/sqlite_fdw.git",
+            "web" : "https://github.com/pgspider/sqlite_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sqlite", "fdw", "foreign data wrapper", "sqlite_fdw" ]
+      }
+    }
+  },
+  "version" : 1
+}

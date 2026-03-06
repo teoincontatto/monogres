@@ -1,0 +1,123 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/adjust/pg-currency/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.3" : {
+      "tag" : "v0.0.3",
+      "sha256" : "bd34272e76516250215a0f9fa11fbc148daaac705f0d242974710b9a4284a5ed",
+      "strip_prefix" : "adjust-pg-currency-81972b7",
+      "commit" : "81972b7359de8c8ea7c17c5d05b40d3450607b49",
+      "short_commit" : "81972b7"
+    },
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "25491237a8b273c28ebd47aeae682214c6753410c1990d4c1e6aa69b5a25d8ef",
+      "strip_prefix" : "adjust-pg-currency-3589fd1",
+      "commit" : "3589fd1be5e9e39caf03132d538f6717a921486b",
+      "short_commit" : "3589fd1"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "Custom PostgreSQL currency type",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "Custom PostgreSQL currency type",
+        "requires" : [ "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.0.3" : {
+        "name" : "currency",
+        "abstract" : "Enumerable currency list, stored in a single-byte, fixed-length type.",
+        "version" : "0.0.3",
+        "maintainer" : [ "Chris Travers <chris.travers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "currency" : {
+            "file" : "sql/pg-currency.sql",
+            "version" : "0.0.3",
+            "abstract" : "Enumerable currency list, stored in a single-byte, fixed-length type."
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "description" : "This extnesion effectively provides a currency list as an enumerable one-byte integer, ideal for analytics workloads.  The currency list will be updated as needed.",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/pg-currency/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/pg-currency.git",
+            "web" : "http://github.com/adjust/pg-currency ",
+            "type" : "git"
+          }
+        }
+      },
+      "0.0.2" : {
+        "name" : "currency",
+        "abstract" : "Enumerable currency list, stored in a single-byte, fixed-length type.",
+        "version" : "0.0.2",
+        "maintainer" : [ "Chris Travers <christravers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "currency" : {
+            "file" : "sql/pg-currency.sql",
+            "version" : "0.0.2",
+            "abstract" : "Enumerable currency list, stored in a single-byte, fixed-length type."
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "description" : "This extnesion effectively provides a currency list as an enumerable one-byte integer, ideal for analytics workloads.  The currency list will be updated as needed.",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/pg-currency/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/pg-currency.git",
+            "web" : "http://github.com/adjust/pg-currency ",
+            "type" : "git"
+          }
+        }
+      }
+    }
+  },
+  "version" : 1
+}

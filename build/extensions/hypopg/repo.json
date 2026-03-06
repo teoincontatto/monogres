@@ -1,0 +1,896 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/HypoPG/hypopg/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.2" : {
+      "tag" : "1.4.2",
+      "sha256" : "a44bbf3bc4158ae2c2fd4dd5819177e86a6a974627edac6a710dff41a2c59946",
+      "strip_prefix" : "HypoPG-hypopg-8d7ca56",
+      "commit" : "8d7ca569185edc7549b983736c8862fbe211144f",
+      "short_commit" : "8d7ca56"
+    },
+    "1.4.1" : {
+      "tag" : "1.4.1",
+      "sha256" : "c6fd657dcf344815e1d06786f681ae869ca6a66d0759dd9d665d53f98b7e4cbd",
+      "strip_prefix" : "HypoPG-hypopg-97026c0",
+      "commit" : "97026c0bff16b905c555acdd82e15979fa6b9781",
+      "short_commit" : "97026c0"
+    },
+    "1.4.0" : {
+      "tag" : "1.4.0",
+      "sha256" : "68bdd9ac5e2bcf21e98f6883a9ad8d1e1e5518794514b5bfd47e03b67c22aff0",
+      "strip_prefix" : "HypoPG-hypopg-d90375b",
+      "commit" : "d90375b6696fe052a18faa1702711b346819fbef",
+      "short_commit" : "d90375b"
+    },
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "a230f0735ddb6f6327396a926e60d41de3c65de38a5445751380b2535f1c60a5",
+      "strip_prefix" : "HypoPG-hypopg-57d711b",
+      "commit" : "57d711bc4e37164c8edac81580a5f477e2a33d86",
+      "short_commit" : "57d711b"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "7ce0447e8a5fa8ae6fe75c13c6c8c517c25332bbae133f408cdd88c56c50cea6",
+      "strip_prefix" : "HypoPG-hypopg-29a669d",
+      "commit" : "29a669d8648b8948629f08fe49a1c1acd3431e93",
+      "short_commit" : "29a669d"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "26ef13d8e99a8e396a65678bf4ae4f1c4c36715d1a3d4c03a2f257f92a90f01c",
+      "strip_prefix" : "HypoPG-hypopg-7e072c1",
+      "commit" : "7e072c1f94e42a3659783bed21e494708ca05419",
+      "short_commit" : "7e072c1"
+    },
+    "1.1.4" : {
+      "tag" : "1.1.4",
+      "sha256" : "f77c3411204986d4dd2f4eb8dffc97ff4bf9365963b52fc16a34520e5690404a",
+      "strip_prefix" : "HypoPG-hypopg-1c7be94",
+      "commit" : "1c7be949a8393ec638dc43875046097ed1f5ff1e",
+      "short_commit" : "1c7be94"
+    },
+    "1.1.3" : {
+      "tag" : "1.1.3",
+      "sha256" : "a9917c84f3cd09647f92531c2d99306d3f1d4c0542fa6d80b88315c13d5564c4",
+      "strip_prefix" : "HypoPG-hypopg-ef54458",
+      "commit" : "ef5445885dca4c26d90f74f4aeee366a86d0859a",
+      "short_commit" : "ef54458"
+    },
+    "1.1.2" : {
+      "tag" : "1.1.2",
+      "sha256" : "30a6c637122c4896bb496cfc2d3fdc424971107bc385da75432300ecc03c2cbc",
+      "strip_prefix" : "HypoPG-hypopg-d7ef06f",
+      "commit" : "d7ef06f4d2b4f35d802b93dbbb7cf6891958f273",
+      "short_commit" : "d7ef06f"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "866241b6a78175a027bec4adca9e79638cce29c15d4adbe742416da986a03a9e",
+      "strip_prefix" : "HypoPG-hypopg-a2b7f70",
+      "commit" : "a2b7f70aeb086f52ae1de24c645fdf47c7ff7226",
+      "short_commit" : "a2b7f70"
+    },
+    "1.1.0" : {
+      "tag" : "1.1.0",
+      "sha256" : "24677f5ff9c87a9b81058d7717db8e3f4a1e560bd54161cb241ce1f87139ca2c",
+      "strip_prefix" : "HypoPG-hypopg-7a3c36f",
+      "commit" : "7a3c36ff76284387e58bbcf99b08b738e5884538",
+      "short_commit" : "7a3c36f"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "9ec6929250c0f93e46e2cadfa4670b124ead057e63b1b2832927086e635e571c",
+      "strip_prefix" : "HypoPG-hypopg-0a510e0",
+      "commit" : "0a510e0e389b07c4d0a96de9eec013983c3b4fb4",
+      "short_commit" : "0a510e0"
+    },
+    "0.0.5" : {
+      "tag" : "0.0.5",
+      "sha256" : "df566cdc80dcb933ddd07ecb10985f205d39df64d5068d88e14d5d15f2e2bfb5",
+      "strip_prefix" : "HypoPG-hypopg-3c1328b",
+      "commit" : "3c1328b89ffc5430dc3d1f6aaa04df9be1d13c1f",
+      "short_commit" : "3c1328b"
+    },
+    "0.0.4" : {
+      "tag" : "0.0.4",
+      "sha256" : "89f9cc1da48e45086de3792d0cd3e9b5fc07cbbec992d28b2f3d0f96874373dc",
+      "strip_prefix" : "HypoPG-hypopg-5e5c5f3",
+      "commit" : "5e5c5f3c9082f1f13cd9320f794bfc3aab12cb3b",
+      "short_commit" : "5e5c5f3"
+    },
+    "0.0.3" : {
+      "tag" : "0.0.3",
+      "sha256" : "def19929b9366adaeb715ed41453f5c878dff58e90ae28239e23a6ec277469c5",
+      "strip_prefix" : "HypoPG-hypopg-942a642",
+      "commit" : "942a6427048c875cf41eeff61a40b4f0c5078c94",
+      "short_commit" : "942a642"
+    },
+    "0.0.2" : {
+      "tag" : "0.0.2",
+      "sha256" : "410f7bd0cd7f9ee899d4744000d44499d4133f28c841b9f2ae06946aea4a14be",
+      "strip_prefix" : "HypoPG-hypopg-de12041",
+      "commit" : "de120415c04f373e195ea693b15788dde58911ea",
+      "short_commit" : "de12041"
+    },
+    "0.0.1" : {
+      "tag" : "0.0.1",
+      "sha256" : "f011d079f60bef415d34537b5a121897c438221e9c0c2aff631a38c5d726143c",
+      "strip_prefix" : "HypoPG-hypopg-be1babe",
+      "commit" : "be1babe24d230252f13408402d739ad6511d22ff",
+      "short_commit" : "be1babe"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.2" : {
+        "default_version" : "1.4.2",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "1.4.1",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4.0",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.3.1",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.4" : {
+        "default_version" : "1.1.4",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.3" : {
+        "default_version" : "1.1.3",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "1.1.2",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.5" : {
+        "default_version" : "0.0.5",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.4" : {
+        "default_version" : "0.0.4",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "Hypothetical indexes for PostgreSQL",
+        "module_pathname" : "$libdir/hypopg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.4.2" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.4.1" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.4.0" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.3.1" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.3.0" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.2.0" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.1.4" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.1.3" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.1.2" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.1.1" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/hypopg/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/hypopg/hypopg.git",
+            "web" : "http://github.com/hypopg/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.1.0" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "1.0.0" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "0.0.5" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "unstable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "0.0.4" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "unstable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "0.0.3" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "unstable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      },
+      "0.0.2" : {
+        "name" : "hypopg",
+        "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "unstable",
+        "provides" : {
+          "hypopg" : {
+            "abstract" : "An extension adding hypothetical indexes in PostgreSQL.",
+            "file" : "hypopg.sql",
+            "docfile" : "README.md",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/hypopg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/hypopg.git",
+            "web" : "http://github.com/dalibo/hypopg/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "index", "hypothetical" ]
+      }
+    }
+  },
+  "version" : 1
+}

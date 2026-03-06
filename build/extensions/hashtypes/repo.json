@@ -1,0 +1,103 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/adjust/hashtypes/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.1.4" : {
+      "tag" : "v0.1.4",
+      "sha256" : "ca3d311a1f7dc8235d3d81ae23ff284862b135865e65e8289d7444dc462c5ff2",
+      "strip_prefix" : "adjust-hashtypes-2eca2d1",
+      "commit" : "2eca2d1a1d6a5bd46e425b2e6aad14e0ae83e59a",
+      "short_commit" : "2eca2d1"
+    },
+    "0.1.1" : {
+      "tag" : "0.1.1",
+      "sha256" : "0ec2d57782cf0907ae6a48f5caacc29d2dde1de034762c3c6e8406d7d40b5fd5",
+      "strip_prefix" : "adjust-hashtypes-8077b5b",
+      "commit" : "8077b5bf9f61741af5031d6737ba960d1034f469",
+      "short_commit" : "8077b5b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.4" : {
+        "default_version" : "0.1.4",
+        "comment" : "A set of data types for various hashes and control sums",
+        "encoding" : "utf8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.1.1" : {
+        "default_version" : "0.1",
+        "comment" : "A set of data types for various hashes and control sums",
+        "encoding" : "utf8",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "0.1.4" : {
+        "name" : "hashtypes",
+        "abstract" : "data types for sha{1,256,512}, md5 and crc32",
+        "version" : "0.1.4",
+        "maintainer" : [ "Chris Travers <chris.travers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : "postgresql",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "provides" : {
+          "hashtypes" : {
+            "file" : "sql/hashtypes--0.1.4.sql",
+            "version" : "0.1.4"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/hashtypes/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/hashtypes.git",
+            "web" : "http://github.com/adjust/hashtypes/",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "datatype", "sha", "md5", "sha256", "sha1", "sha512", "crc32", "hash" ]
+      },
+      "0.1.1" : {
+        "name" : "hashtypes",
+        "abstract" : "data types for sha{1,256,512}, md5 and crc32",
+        "version" : "0.1.1",
+        "maintainer" : "Andrey Popp <8mayday@gmail.com>",
+        "license" : "postgresql",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "provides" : {
+          "hashtypes" : {
+            "file" : "sql/hashtypes--0.1.sql",
+            "version" : "0.1.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/infofarmer/hashtypes/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/infofarmer/hashtypes.git",
+            "web" : "http://github.com/infofarmer/hashtypes/",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "datatype", "sha", "md5", "sha256", "sha1", "sha512", "crc32", "hash" ]
+      }
+    }
+  },
+  "version" : 1
+}

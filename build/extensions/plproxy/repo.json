@@ -1,0 +1,564 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/plproxy/plproxy/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.11.0" : {
+      "tag" : "v2.11.0",
+      "sha256" : "d2c9a50e87ab6550c4ce3c73de18dd37fc006e8a657e1921e69dc67ab0c8d5e7",
+      "strip_prefix" : "plproxy-plproxy-92fc5b3",
+      "commit" : "92fc5b3a78195cdf1ca4d063841edf055042a8d6",
+      "short_commit" : "92fc5b3"
+    },
+    "2.10.0" : {
+      "tag" : "v2.10.0",
+      "sha256" : "8245fdd9ba2db8865cd5dedef117f8814e58b7e0f5aeca33c0c1e3bb0be53f98",
+      "strip_prefix" : "plproxy-plproxy-b893edf",
+      "commit" : "b893edfda837171e307fcc0cb472ae1da1a6d5c6",
+      "short_commit" : "b893edf"
+    },
+    "2.9.0" : {
+      "tag" : "plproxy_2_9",
+      "sha256" : "e2b9ca5e77ff3b7855e377e5a86e1d7e89279b011c335196561f22ceb4a1761b",
+      "strip_prefix" : "plproxy-plproxy-20be56b",
+      "commit" : "20be56bc77b24fe1e58ed4a3b33f116cd71e9ae0",
+      "short_commit" : "20be56b"
+    },
+    "2.8.0" : {
+      "tag" : "plproxy_2_8",
+      "sha256" : "ed5ac6d68c3055d8014c800f913fd36ac081dc35f6b9126acfcfcd287e2355aa",
+      "strip_prefix" : "plproxy-plproxy-0494ed6",
+      "commit" : "0494ed623d7c744dc420b0337ae4607622fb0889",
+      "short_commit" : "0494ed6"
+    },
+    "2.7.0" : {
+      "tag" : "plproxy_2_7",
+      "sha256" : "5925a2dcd2a33e4120184ba1b9bc8a66702a05ef4d19514e642d4583081cff8c",
+      "strip_prefix" : "plproxy-plproxy-8d9174b",
+      "commit" : "8d9174baf1441f9934a207a1b521643898b6af0b",
+      "short_commit" : "8d9174b"
+    },
+    "2.6.0" : {
+      "tag" : "plproxy_2_6",
+      "sha256" : "96e6d456115bccf7616b715668749c043178e2e2178ad2135a7ff14684bfd3c1",
+      "strip_prefix" : "plproxy-plproxy-0ad4c72",
+      "commit" : "0ad4c7294a9017eb4a4a99ce9554057d0f35fc56",
+      "short_commit" : "0ad4c72"
+    },
+    "2.5.0" : {
+      "tag" : "plproxy_2_5",
+      "sha256" : "ae0f8ca257db7669ac1a0486a29f2c833d94c636ff05e2d0eea72f40c94169c0",
+      "strip_prefix" : "plproxy-plproxy-01936d6",
+      "commit" : "01936d68da23b2e89bfbc3c7af9e492d3e4a973e",
+      "short_commit" : "01936d6"
+    },
+    "2.4.0" : {
+      "tag" : "plproxy_2_4",
+      "sha256" : "900942bb430b54dca28c35dafb18248047baa48896c1367b732ef978e0f45512",
+      "strip_prefix" : "plproxy-plproxy-f0a3962",
+      "commit" : "f0a3962805b02e4c9dc539ca43508ffc367e6b7f",
+      "short_commit" : "f0a3962"
+    },
+    "2.3.0" : {
+      "tag" : "plproxy_2_3",
+      "sha256" : "7b6e62c611d3e590ba6a99fb932efe465b5ae0289d81eaef1f35ef76aaba2cd9",
+      "strip_prefix" : "plproxy-plproxy-59ad410",
+      "commit" : "59ad4104af03cae4100065a3165cd193b0d0fc8e",
+      "short_commit" : "59ad410"
+    },
+    "2.2.0" : {
+      "tag" : "plproxy_2_2",
+      "sha256" : "ef31179fb35f31a150258c32c0a9c298dfe5416454ee9fef4bfa0e1e7224a1fe",
+      "strip_prefix" : "plproxy-plproxy-8da208e",
+      "commit" : "8da208e6d144600f50b12fc09e2316a8e8ca5b8b",
+      "short_commit" : "8da208e"
+    },
+    "2.1.0" : {
+      "tag" : "plproxy_2_1",
+      "sha256" : "e653ff1f640f7b7606b63b30415c87533cfd3655ea5e6da42cc38d53ef25357f",
+      "strip_prefix" : "plproxy-plproxy-db80b89",
+      "commit" : "db80b89e723891ce5e19f54b4d2d065eec3892db",
+      "short_commit" : "db80b89"
+    },
+    "2.0.9" : {
+      "tag" : "plproxy_2_0_9",
+      "sha256" : "568826d2f6d96cb954e49bdc363b7e0219412e2504675993723e608c0d49b22b",
+      "strip_prefix" : "plproxy-plproxy-35bf4d4",
+      "commit" : "35bf4d42eebe3a5a6735db8a2a901cdf1b223fb2",
+      "short_commit" : "35bf4d4"
+    },
+    "2.0.8" : {
+      "tag" : "plproxy_2_0_8",
+      "sha256" : "4a3225f1eaf952beeebb70b77603205831c9346d75f041377012e3cc191947f2",
+      "strip_prefix" : "plproxy-plproxy-ff9adcf",
+      "commit" : "ff9adcf2761c50921480cf872f71d35abf32cddc",
+      "short_commit" : "ff9adcf"
+    },
+    "2.0.7" : {
+      "tag" : "plproxy_2_0_7",
+      "sha256" : "73a6bc4528de053a9b70662dea634d632afb8a1bbe63ce942200e4e1b5500d27",
+      "strip_prefix" : "plproxy-plproxy-7107d3c",
+      "commit" : "7107d3c550042a82932af45a53a34b7d393c3ebe",
+      "short_commit" : "7107d3c"
+    },
+    "2.0.6" : {
+      "tag" : "plproxy_2_0_6",
+      "sha256" : "e459f22857e3ab43514b5d95d107144c4d28e6cae4ca456415cbaa8103b619d7",
+      "strip_prefix" : "plproxy-plproxy-357439a",
+      "commit" : "357439afe8420d32d61c51786530dc584be45dda",
+      "short_commit" : "357439a"
+    },
+    "2.0.5" : {
+      "tag" : "plproxy_2_0_5",
+      "sha256" : "513872b883642f901816152feba7bb0244137171b2e1c4dc3a9dfd25a530f379",
+      "strip_prefix" : "plproxy-plproxy-0233c98",
+      "commit" : "0233c98400339c4118916ce36bae43f67ebdfa63",
+      "short_commit" : "0233c98"
+    },
+    "2.0.4" : {
+      "tag" : "plproxy_2_0_4",
+      "sha256" : "86ec89c9226d34e2f271a19f1de133dcc8281701760dda1bf5acf6d7597a14a5",
+      "strip_prefix" : "plproxy-plproxy-ab33919",
+      "commit" : "ab339196c0b02022842746c5b3532a4b0d0b4f84",
+      "short_commit" : "ab33919"
+    },
+    "2.0.3" : {
+      "tag" : "plproxy_2_0_3",
+      "sha256" : "148037b1361e42b10b0552696c20d73eb97d78089c023e46907f0eb0f4cef6a5",
+      "strip_prefix" : "plproxy-plproxy-ff6c27f",
+      "commit" : "ff6c27ffb9f4a64e095fbdb0a8775d82262588cc",
+      "short_commit" : "ff6c27f"
+    },
+    "2.0.2" : {
+      "tag" : "plproxy_2_0_2",
+      "sha256" : "6817ca1913afc9cec644a39634ba2f76a4f7396ca1307484975f7279a7f29116",
+      "strip_prefix" : "plproxy-plproxy-98031f5",
+      "commit" : "98031f519b5553510a7c73e289df0f3f22365267",
+      "short_commit" : "98031f5"
+    },
+    "2.0.1" : {
+      "tag" : "plproxy_2_0_1",
+      "sha256" : "81ae41e6b73e6e10fc26f2f03cb575c96989043407763e1c5e655da2c61d209f",
+      "strip_prefix" : "plproxy-plproxy-b6ac192",
+      "commit" : "b6ac192cfcf89556baf25dc2489611cde62eb637",
+      "short_commit" : "b6ac192"
+    },
+    "2.0.0" : {
+      "tag" : "plproxy_2_0",
+      "sha256" : "2e28cae63483ccff6be9fe24442b69a3076f8ea4f29b4c8b21d63c3d3ca76882",
+      "strip_prefix" : "plproxy-plproxy-689c37b",
+      "commit" : "689c37bbea00924940d41563e5d19057524bba43",
+      "short_commit" : "689c37b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.9.0" : {
+        "default_version" : "2.9.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.8.0" : {
+        "default_version" : "2.8.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.7.0" : {
+        "default_version" : "2.7.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.6.0" : {
+        "default_version" : "2.6.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.5.0" : {
+        "default_version" : "2.5.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.0" : {
+        "default_version" : "2.4.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.11.0" : {
+        "default_version" : "2.11.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.10.0" : {
+        "default_version" : "2.10.0",
+        "comment" : "Database partitioning implemented as procedural language",
+        "module_pathname" : "$libdir/plproxy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "2.9.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.9.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.9.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.io/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy",
+            "web" : "https://github.com/plproxy/plproxy",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.8.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.8.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.8.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.io/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy",
+            "web" : "https://github.com/plproxy/plproxy",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.7.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.6.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.7.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.com/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy.git",
+            "web" : "https://github.com/plproxy/plproxy/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.6.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.6.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.6.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.com/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy.git",
+            "web" : "https://github.com/plproxy/plproxy/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.5.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.5.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.txt",
+            "version" : "2.5.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://wiki.postgresql.org/wiki/PL/Proxy",
+          "bugtracker" : {
+            "web" : "http://github.com/markokr/plproxy-dev/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/markokr/plproxy-dev.git",
+            "web" : "https://github.com/markokr/plproxy-dev/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.4.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.4.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/plproxy.sql",
+            "docfile" : "doc/tutorial.txt",
+            "version" : "2.4.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://wiki.postgresql.org/wiki/PL/Proxy",
+          "bugtracker" : {
+            "web" : "http://github.com/markokr/plproxy-dev/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/markokr/plproxy-dev.git",
+            "web" : "https://github.com/markokr/plproxy-dev/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.11.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.11.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/pgxn.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.11.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.io/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy",
+            "web" : "https://github.com/plproxy/plproxy",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      },
+      "2.10.0" : {
+        "name" : "plproxy",
+        "abstract" : "Database partitioning implemented as procedural language",
+        "description" : "PL/Proxy is database partitioning system implemented as PL language.",
+        "version" : "2.10.0",
+        "maintainer" : [ "Marko Kreen <markokr@gmail.com>" ],
+        "license" : {
+          "ISC" : "http://www.opensource.org/licenses/ISC"
+        },
+        "provides" : {
+          "plproxy" : {
+            "abstract" : "Database partitioning implemented as procedural language",
+            "file" : "sql/pgxn.sql",
+            "docfile" : "doc/tutorial.md",
+            "version" : "2.10.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://plproxy.github.io/",
+          "bugtracker" : {
+            "web" : "https://github.com/plproxy/plproxy/issues/"
+          },
+          "repository" : {
+            "url" : "https://github.com/plproxy/plproxy",
+            "web" : "https://github.com/plproxy/plproxy",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "proxy", "sharding", "rpc", "remote procedue call", "procedural language", "sql med", "PL" ]
+      }
+    }
+  },
+  "version" : 1
+}

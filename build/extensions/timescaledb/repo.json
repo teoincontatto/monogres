@@ -1,0 +1,1279 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/timescale/timescaledb/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.25.2" : {
+      "tag" : "2.25.2",
+      "sha256" : "7e1bc3ae3477809cc58b50c96fbdbc314cbe5046393d273b3fe09de8513f0d1f",
+      "strip_prefix" : "timescale-timescaledb-3d9e005",
+      "commit" : "3d9e005987643878a0cd51da40abbf7d3a63d453",
+      "short_commit" : "3d9e005"
+    },
+    "2.25.1" : {
+      "tag" : "2.25.1",
+      "sha256" : "7aeca9f331cbd5fca2690050cada1064130d7ba1329e27e469be2088f339c911",
+      "strip_prefix" : "timescale-timescaledb-62885bd",
+      "commit" : "62885bd90795d4da86cc4d2e2bb64c54e78fdec3",
+      "short_commit" : "62885bd"
+    },
+    "2.25.0" : {
+      "tag" : "2.25.0",
+      "sha256" : "81badc4a19fde707ae17ccfd5d4702a8c3e97be9c42be465059ff2144fc8715e",
+      "strip_prefix" : "timescale-timescaledb-a686498",
+      "commit" : "a686498674d7a6c3bc36bdf665d464e5f371bd25",
+      "short_commit" : "a686498"
+    },
+    "2.24.0" : {
+      "tag" : "2.24.0",
+      "sha256" : "aeca94522036af89e8710313c20ddfbd364ef938111567e3cf554bcba09e48cb",
+      "strip_prefix" : "timescale-timescaledb-119c8dc",
+      "commit" : "119c8dca6c442c4d86ad1ddb3c863be9e6fac205",
+      "short_commit" : "119c8dc"
+    },
+    "2.23.1" : {
+      "tag" : "2.23.1",
+      "sha256" : "093a7d8dbfbcd4699843ea5ae67cb6855e8e100a8136a3b91e2bb9f7591d1e65",
+      "strip_prefix" : "timescale-timescaledb-9cec3ac",
+      "commit" : "9cec3ac3211e340097ae3605b62cfd73130bb6b7",
+      "short_commit" : "9cec3ac"
+    },
+    "2.23.0" : {
+      "tag" : "2.23.0",
+      "sha256" : "968f11b096d706c9fc87826f736f10a4b71687a40f00d31f846453eb5bddc8f4",
+      "strip_prefix" : "timescale-timescaledb-ba5dcfd",
+      "commit" : "ba5dcfd1c69f3529d0cc9de3028e1a12a36042ba",
+      "short_commit" : "ba5dcfd"
+    },
+    "2.22.1" : {
+      "tag" : "2.22.1",
+      "sha256" : "b58b00e8725399efe4fadbc23c80603e0b5c371d2ff5d492e811046e068be39f",
+      "strip_prefix" : "timescale-timescaledb-687331d",
+      "commit" : "687331da33dce1be390d277cbaa0eef62e6ede9d",
+      "short_commit" : "687331d"
+    },
+    "2.22.0" : {
+      "tag" : "2.22.0",
+      "sha256" : "be03712dca2c6590f6e9892e367a4c155b2114bb751907660e8728b4f2c44bf5",
+      "strip_prefix" : "timescale-timescaledb-bf4cea8",
+      "commit" : "bf4cea89afa9e0a7d3c119e4341435b5dfa97701",
+      "short_commit" : "bf4cea8"
+    },
+    "2.21.4" : {
+      "tag" : "2.21.4",
+      "sha256" : "f36a9298565fa07a7338fee45e1c38dc442e9e09f876818b2815edf342226047",
+      "strip_prefix" : "timescale-timescaledb-a8e50f7",
+      "commit" : "a8e50f72a402336bf758cc0c3067e970a7a5bd7e",
+      "short_commit" : "a8e50f7"
+    },
+    "2.21.3" : {
+      "tag" : "2.21.3",
+      "sha256" : "d574dcb854ca093d3deaef399b374ddcb994f9b9c4fce9cb1396abceb9a7a4ca",
+      "strip_prefix" : "timescale-timescaledb-d4bb1e5",
+      "commit" : "d4bb1e51d0c0db3beeeee86c8bfbb392fcf272e0",
+      "short_commit" : "d4bb1e5"
+    },
+    "2.21.2" : {
+      "tag" : "2.21.2",
+      "sha256" : "d844113bbf251ac752b7cfe99ce5ffd3f4fddc5f1ad3b97d8b5b819c69cb4f84",
+      "strip_prefix" : "timescale-timescaledb-0ce1bf5",
+      "commit" : "0ce1bf56e0f3d8e46cbf2aae16067d054dcaa9fe",
+      "short_commit" : "0ce1bf5"
+    },
+    "2.21.1" : {
+      "tag" : "2.21.1",
+      "sha256" : "e23ddf9530f6496ce46026c3bed139b4848c4d3caa23f87dd21df51178faf562",
+      "strip_prefix" : "timescale-timescaledb-62070d3",
+      "commit" : "62070d3362c13447baf529ce6b294e3dec37a9c1",
+      "short_commit" : "62070d3"
+    },
+    "2.21.0" : {
+      "tag" : "2.21.0",
+      "sha256" : "367d4ee4c6b873831284cb3c8cff0f30be73239c11e75c3cbc626ba2eaf68723",
+      "strip_prefix" : "timescale-timescaledb-c28096b",
+      "commit" : "c28096b84972718552f5524ba1940dabad475c7f",
+      "short_commit" : "c28096b"
+    },
+    "2.20.3" : {
+      "tag" : "2.20.3",
+      "sha256" : "43bacf6c8691a693e4317c756b5e588ac6ca5e6fc9598eca1abf99acbc538c28",
+      "strip_prefix" : "timescale-timescaledb-7b30533",
+      "commit" : "7b30533d4d9b6ce1353b8bac0ba6215be20f2633",
+      "short_commit" : "7b30533"
+    },
+    "2.20.2" : {
+      "tag" : "2.20.2",
+      "sha256" : "869272fc610c946b31b7bcb480a8d15c0692a6b61960b1cfd7f776af2fa2ad1b",
+      "strip_prefix" : "timescale-timescaledb-b7c7cd0",
+      "commit" : "b7c7cd02585388ac6b555097ef8831c1217cc402",
+      "short_commit" : "b7c7cd0"
+    },
+    "2.20.1" : {
+      "tag" : "2.20.1",
+      "sha256" : "dae95dad30873db7d00295a9fe557d38dc8ec3cd51c0efe2c4cafc1514d05322",
+      "strip_prefix" : "timescale-timescaledb-4b72721",
+      "commit" : "4b72721692dfb0dc8726ccc5eb97b58c1a74a784",
+      "short_commit" : "4b72721"
+    },
+    "2.20.0" : {
+      "tag" : "2.20.0",
+      "sha256" : "0cc932813f32426370e141115adcb052f7139cd38944ee592eb10000d51368a2",
+      "strip_prefix" : "timescale-timescaledb-e70ab02",
+      "commit" : "e70ab02556617a421928ad02bd790b2c809851e7",
+      "short_commit" : "e70ab02"
+    },
+    "2.19.3" : {
+      "tag" : "2.19.3",
+      "sha256" : "378a983bdac0366384366a9ab21fc55ee0f272f24454d130a12b2cb59cbeac17",
+      "strip_prefix" : "timescale-timescaledb-95861e1",
+      "commit" : "95861e123bd439ed3c04dc5eeb86fef841bdf93b",
+      "short_commit" : "95861e1"
+    },
+    "2.19.2" : {
+      "tag" : "2.19.2",
+      "sha256" : "f44b370820fa4f8eaadd5e9fae944a0244a32c0bb951733021dcd66cd55ea2e6",
+      "strip_prefix" : "timescale-timescaledb-d454524",
+      "commit" : "d454524eb6ef63196e3d22bc8a2e3cdf0719cfaf",
+      "short_commit" : "d454524"
+    },
+    "2.19.1" : {
+      "tag" : "2.19.1",
+      "sha256" : "d7ea4b47c69b031c3f5bf41ddf91fc52d65ab6dfae4bf3584e07fea92eb57bcf",
+      "strip_prefix" : "timescale-timescaledb-9e75bac",
+      "commit" : "9e75bacecf6cf81366f113edadf2dec82352e62c",
+      "short_commit" : "9e75bac"
+    },
+    "2.19.0" : {
+      "tag" : "2.19.0",
+      "sha256" : "bc074dcdf692332a8ac1cf7be947f51b3bb6d1e2e6cc01d4746e99d921a882b6",
+      "strip_prefix" : "timescale-timescaledb-b15ef74",
+      "commit" : "b15ef74acaaf8df5aa0dd0652a0dccddcdc974e6",
+      "short_commit" : "b15ef74"
+    },
+    "2.18.2" : {
+      "tag" : "2.18.2",
+      "sha256" : "d45a03f71224be2de93c74e82cbe3e134db4cf1c8037c65ad81e180a79a2e477",
+      "strip_prefix" : "timescale-timescaledb-bb49cfc",
+      "commit" : "bb49cfc6d626782a214b6b6e343a0666d7c40773",
+      "short_commit" : "bb49cfc"
+    },
+    "2.18.1" : {
+      "tag" : "2.18.1",
+      "sha256" : "5e0f124cd1f0335abdba63046506e722d3f89a36d934a6e1408c31224cc43147",
+      "strip_prefix" : "timescale-timescaledb-0660ebc",
+      "commit" : "0660ebc3fcf4e6859159ba42aeced56333d02021",
+      "short_commit" : "0660ebc"
+    },
+    "2.18.0" : {
+      "tag" : "2.18.0",
+      "sha256" : "d7ed90bf3597d513332af5ff95b065b4744cc13c3d52a5b08a101b4cb2677448",
+      "strip_prefix" : "timescale-timescaledb-91700b5",
+      "commit" : "91700b509acb0a4511b5028b902d4b3ed0d04447",
+      "short_commit" : "91700b5"
+    },
+    "2.17.2" : {
+      "tag" : "2.17.2",
+      "sha256" : "20cd2ebb73d776225efbc736502fa575c34f55f21a2ef6e8838b69d4dc1513f9",
+      "strip_prefix" : "timescale-timescaledb-b359d26",
+      "commit" : "b359d26de186ea43f93c28c08cd1b8c6449c91bd",
+      "short_commit" : "b359d26"
+    },
+    "2.17.1" : {
+      "tag" : "2.17.1",
+      "sha256" : "828fa3a5f38480650295a4a2bf3ac92c3255bafedb5ad2eb5288d0106bcdf556",
+      "strip_prefix" : "timescale-timescaledb-beb03d6",
+      "commit" : "beb03d6d4c61dbd02291ef2c661c00155ddb79c9",
+      "short_commit" : "beb03d6"
+    },
+    "2.17.0" : {
+      "tag" : "2.17.0",
+      "sha256" : "8f608984c6363797bfce987049ee368a30684ac955335c8eb4cad524166721c0",
+      "strip_prefix" : "timescale-timescaledb-43ef9b7",
+      "commit" : "43ef9b7bda813c10f845fe55f7fc6113bbd47b07",
+      "short_commit" : "43ef9b7"
+    },
+    "2.16.1" : {
+      "tag" : "2.16.1",
+      "sha256" : "b3c42cc79e6f0688d92b95e379d53ca50589e415b21195c5e50dd6753319f326",
+      "strip_prefix" : "timescale-timescaledb-7c78574",
+      "commit" : "7c78574c4d42ec7ceb840bd9d55652182221f251",
+      "short_commit" : "7c78574"
+    },
+    "2.16.0" : {
+      "tag" : "2.16.0",
+      "sha256" : "76d348701aed04cc3bf56af9faf3aa189913481dcc00c243f27ec50ed505920f",
+      "strip_prefix" : "timescale-timescaledb-4fd2a87",
+      "commit" : "4fd2a878df1dbb807a9e99d01cf5614ebddc02b4",
+      "short_commit" : "4fd2a87"
+    },
+    "2.15.3" : {
+      "tag" : "2.15.3",
+      "sha256" : "6d26a41ec558ed7b76730bed0848ff19763469031b38ef3de8c2c884bdf266dc",
+      "strip_prefix" : "timescale-timescaledb-777f726",
+      "commit" : "777f7266e16ae0f3bc2ac5f4ec9d420b5d2ea110",
+      "short_commit" : "777f726"
+    },
+    "2.15.2" : {
+      "tag" : "2.15.2",
+      "sha256" : "a8f2b31108ee98cdf1eefd517cd1b8147771c46a8a201456b495a9cfec39acef",
+      "strip_prefix" : "timescale-timescaledb-903847e",
+      "commit" : "903847e4d69938b8bed8d1d13cb84053e243e262",
+      "short_commit" : "903847e"
+    },
+    "2.15.1" : {
+      "tag" : "2.15.1",
+      "sha256" : "4204663de3a2d734e83ceccda13df4a80be3fc40daeca3cccd3108658a545237",
+      "strip_prefix" : "timescale-timescaledb-6a8b31f",
+      "commit" : "6a8b31f866308362b76287da47473a13d279d4a6",
+      "short_commit" : "6a8b31f"
+    },
+    "2.15.0" : {
+      "tag" : "2.15.0",
+      "sha256" : "9ecae5b06a6928b415119a3c1b24d1fb4de5b7d2fbfc7c9210066539ce5c196d",
+      "strip_prefix" : "timescale-timescaledb-19f731d",
+      "commit" : "19f731d174820dfc0f33e073235c99368b3ad98c",
+      "short_commit" : "19f731d"
+    },
+    "2.14.2" : {
+      "tag" : "2.14.2",
+      "sha256" : "62e163efdf8e6869d5350ec0e61c4c6558a81a31667d5f16d70c637609063d8e",
+      "strip_prefix" : "timescale-timescaledb-8f27a70",
+      "commit" : "8f27a70d054fc80c4bbc722d8df4b6b305a7e93d",
+      "short_commit" : "8f27a70"
+    },
+    "2.14.1" : {
+      "tag" : "2.14.1",
+      "sha256" : "e8e0f8b92c8adfa202ac006c1e847d43a636ae227c042ae58ff848f1f010f866",
+      "strip_prefix" : "timescale-timescaledb-39616e8",
+      "commit" : "39616e838b1c540a7ed83b5243a980a9c21a4333",
+      "short_commit" : "39616e8"
+    },
+    "2.14.0" : {
+      "tag" : "2.14.0",
+      "sha256" : "f342b2be39293e00b0a59444d6be1e729f254ca6bedc8857c196aed1819abea9",
+      "strip_prefix" : "timescale-timescaledb-5ede370",
+      "commit" : "5ede370059550c9d11d3171950767ba11ebd3797",
+      "short_commit" : "5ede370"
+    },
+    "2.13.1" : {
+      "tag" : "2.13.1",
+      "sha256" : "d5266f83561c9f8070b26d9e6f2da52fa5f7ec40ead1cab341d05a8925d63189",
+      "strip_prefix" : "timescale-timescaledb-27398c4",
+      "commit" : "27398c44085ee4341e373351776e0052bd25bbc2",
+      "short_commit" : "27398c4"
+    },
+    "2.13.0" : {
+      "tag" : "2.13.0",
+      "sha256" : "ce0fec9de6577afb997d9495d40a21b2ad8f906a705fb9c2219ea5d174c9dfbf",
+      "strip_prefix" : "timescale-timescaledb-96f81a3",
+      "commit" : "96f81a3106683f186f091ad88339c8c223f4363c",
+      "short_commit" : "96f81a3"
+    },
+    "2.13.0-dev1" : {
+      "tag" : "2.13.0-dev1",
+      "sha256" : "a0b08f219b6be9ba2e2419c93908d7d7d6554a447efc3d8ba07989972a9b4147",
+      "strip_prefix" : "timescale-timescaledb-98623ea",
+      "commit" : "98623ea1d97be06106a6ce593296253c1c5f38c1",
+      "short_commit" : "98623ea"
+    },
+    "2.13.0-dev" : {
+      "tag" : "2.13.0-dev",
+      "sha256" : "0eb4310def0bad5b85e6e253c170c720383f37c57f6fa9d721f9d7fa12a74244",
+      "strip_prefix" : "timescale-timescaledb-6e79687",
+      "commit" : "6e796878d7ac5a8117c3deca1979e2ffdad06fa9",
+      "short_commit" : "6e79687"
+    },
+    "2.12.2" : {
+      "tag" : "2.12.2",
+      "sha256" : "8f2b6f6dc4e3760badbf81af5d69cdf034f898f388961562ffa5edcd77e323df",
+      "strip_prefix" : "timescale-timescaledb-2a39fbb",
+      "commit" : "2a39fbb444888bbba9139c7f7ab84f2aa28509ee",
+      "short_commit" : "2a39fbb"
+    },
+    "2.12.2-rc1" : {
+      "tag" : "2.12.2-rc1",
+      "sha256" : "8f2b6f6dc4e3760badbf81af5d69cdf034f898f388961562ffa5edcd77e323df",
+      "strip_prefix" : "timescale-timescaledb-2a39fbb",
+      "commit" : "2a39fbb444888bbba9139c7f7ab84f2aa28509ee",
+      "short_commit" : "2a39fbb"
+    },
+    "2.12.1" : {
+      "tag" : "2.12.1",
+      "sha256" : "fe4a1ce779d6757c952724fbddd113d81559581c41015db00456e386e38655ce",
+      "strip_prefix" : "timescale-timescaledb-c93fadd",
+      "commit" : "c93faddbe95e45d93a53c3f652e2033558e8b380",
+      "short_commit" : "c93fadd"
+    },
+    "2.12.1-rc1" : {
+      "tag" : "2.12.1-rc1",
+      "sha256" : "fe4a1ce779d6757c952724fbddd113d81559581c41015db00456e386e38655ce",
+      "strip_prefix" : "timescale-timescaledb-c93fadd",
+      "commit" : "c93faddbe95e45d93a53c3f652e2033558e8b380",
+      "short_commit" : "c93fadd"
+    },
+    "2.12.0" : {
+      "tag" : "2.12.0",
+      "sha256" : "917fb7b899ac694dc81b8d22d9340f4bc270a199b03acac6d6dbfbb925f96f3e",
+      "strip_prefix" : "timescale-timescaledb-ec99b00",
+      "commit" : "ec99b00f18a6cc636fc7ff6e4bcff870d4201c90",
+      "short_commit" : "ec99b00"
+    },
+    "2.12.0-rc2" : {
+      "tag" : "2.12.0-rc2",
+      "sha256" : "917fb7b899ac694dc81b8d22d9340f4bc270a199b03acac6d6dbfbb925f96f3e",
+      "strip_prefix" : "timescale-timescaledb-ec99b00",
+      "commit" : "ec99b00f18a6cc636fc7ff6e4bcff870d4201c90",
+      "short_commit" : "ec99b00"
+    },
+    "2.12.0-rc1" : {
+      "tag" : "2.12.0-rc1",
+      "sha256" : "f9cfe32de2accdfea678285671bf0948bcd35bcbdb21430d4233e96d9b352c5d",
+      "strip_prefix" : "timescale-timescaledb-4b9c5f8",
+      "commit" : "4b9c5f8a933d68f8f9e173e4585692a34a25e4d1",
+      "short_commit" : "4b9c5f8"
+    },
+    "2.11.2" : {
+      "tag" : "2.11.2",
+      "sha256" : "d01114cb933bf3015c05a289a4ef80622a34b46a15c09440601fdc2c3e2d3568",
+      "strip_prefix" : "timescale-timescaledb-645c454",
+      "commit" : "645c454c139a5eceaae9102065f4f2853f68a07d",
+      "short_commit" : "645c454"
+    },
+    "2.11.2-rc2" : {
+      "tag" : "2.11.2-rc2",
+      "sha256" : "d01114cb933bf3015c05a289a4ef80622a34b46a15c09440601fdc2c3e2d3568",
+      "strip_prefix" : "timescale-timescaledb-645c454",
+      "commit" : "645c454c139a5eceaae9102065f4f2853f68a07d",
+      "short_commit" : "645c454"
+    },
+    "2.11.2-rc1" : {
+      "tag" : "2.11.2-rc1",
+      "sha256" : "f2c124a4025e5baca1b5ef6e2d7089c2abd610db3bf7ab1710462531ae0d143b",
+      "strip_prefix" : "timescale-timescaledb-4a156bf",
+      "commit" : "4a156bf1d4d32f0f726538e9e2974b8ecbb1fb30",
+      "short_commit" : "4a156bf"
+    },
+    "2.11.1" : {
+      "tag" : "2.11.1",
+      "sha256" : "dd392bdb59d038fc6681d233c53e12eb391385aaa3b9e6effbe9fabd354f42c9",
+      "strip_prefix" : "timescale-timescaledb-c2b1bc5",
+      "commit" : "c2b1bc5abe1c3d3617a72cbaef0fc2fdaa141b53",
+      "short_commit" : "c2b1bc5"
+    },
+    "2.11.1-rc1" : {
+      "tag" : "2.11.1-rc1",
+      "sha256" : "dd392bdb59d038fc6681d233c53e12eb391385aaa3b9e6effbe9fabd354f42c9",
+      "strip_prefix" : "timescale-timescaledb-c2b1bc5",
+      "commit" : "c2b1bc5abe1c3d3617a72cbaef0fc2fdaa141b53",
+      "short_commit" : "c2b1bc5"
+    },
+    "2.11.0" : {
+      "tag" : "2.11.0",
+      "sha256" : "305eceb8c08f53c480c3dbcc7b1173ec127e9308aaa091366eb1d2ec95db781d",
+      "strip_prefix" : "timescale-timescaledb-d5fea0a",
+      "commit" : "d5fea0a842cbd38d2d72db16e9e67f1c9b1ccf36",
+      "short_commit" : "d5fea0a"
+    },
+    "2.10.3" : {
+      "tag" : "2.10.3",
+      "sha256" : "2445f68477492637e1c307748f521aa5ebd7cd2e406a849ec22e0e35e902af8a",
+      "strip_prefix" : "timescale-timescaledb-5e62e82",
+      "commit" : "5e62e82341a237468b5f31a5e7d6840dec9dfbcb",
+      "short_commit" : "5e62e82"
+    },
+    "2.10.3-rc1" : {
+      "tag" : "2.10.3-rc1",
+      "sha256" : "2445f68477492637e1c307748f521aa5ebd7cd2e406a849ec22e0e35e902af8a",
+      "strip_prefix" : "timescale-timescaledb-5e62e82",
+      "commit" : "5e62e82341a237468b5f31a5e7d6840dec9dfbcb",
+      "short_commit" : "5e62e82"
+    },
+    "2.10.2" : {
+      "tag" : "2.10.2",
+      "sha256" : "6559af6e8cb7162e53a0c6d2806c33b4b57c27002a27f2e02755568784419830",
+      "strip_prefix" : "timescale-timescaledb-a411eab",
+      "commit" : "a411eabd98bca616ec8408b511f0b3bf71f6eb70",
+      "short_commit" : "a411eab"
+    },
+    "2.10.2-rc1" : {
+      "tag" : "2.10.2-rc1",
+      "sha256" : "6fbc015631e992e7859415342ff104cd6bf7e8b39e537ddd32c2d057f9b78ce2",
+      "strip_prefix" : "timescale-timescaledb-d21bd22",
+      "commit" : "d21bd221a5b1543cca941e623663d3291fac35e5",
+      "short_commit" : "d21bd22"
+    },
+    "2.10.1" : {
+      "tag" : "2.10.1",
+      "sha256" : "063c2c5c04a125f6117a4373b3b2487216dcc320b8b84bb9c76dc3611dfc7f15",
+      "strip_prefix" : "timescale-timescaledb-540a63e",
+      "commit" : "540a63e6788e8b66cd86099d5c17f50507dcd080",
+      "short_commit" : "540a63e"
+    },
+    "2.10.0" : {
+      "tag" : "2.10.0",
+      "sha256" : "2ef065ba0a178029d03bc557c7e56dfa9d44187edeab6a0fa1e5d5f6633d6ccf",
+      "strip_prefix" : "timescale-timescaledb-8b549b0",
+      "commit" : "8b549b08e28d121946eccbc7452bc476c7754dc8",
+      "short_commit" : "8b549b0"
+    },
+    "2.9.3" : {
+      "tag" : "2.9.3",
+      "sha256" : "de2b7b6dd0c683c2c116bf59a95cc3353dbae70d4f7a171234dbb758714262cf",
+      "strip_prefix" : "timescale-timescaledb-b88c5a9",
+      "commit" : "b88c5a9cdaf9f7b7efb29fb30d56460851d996c4",
+      "short_commit" : "b88c5a9"
+    },
+    "2.9.2" : {
+      "tag" : "2.9.2",
+      "sha256" : "4c03a6d05d3eee5d3467e894b68612f4bf29e423a4cb3389157ffa81a6b5c7c5",
+      "strip_prefix" : "timescale-timescaledb-3314810",
+      "commit" : "3314810fd5f336f6b93847432eef293989975be2",
+      "short_commit" : "3314810"
+    },
+    "2.9.1" : {
+      "tag" : "2.9.1",
+      "sha256" : "db5b84842134b04b5fd3de4fce2958eca57ada6a00a1271cf2272fa7e628d501",
+      "strip_prefix" : "timescale-timescaledb-b064b2c",
+      "commit" : "b064b2cd531cda8b8c4c077cc993328d6d10a211",
+      "short_commit" : "b064b2c"
+    },
+    "2.9.0" : {
+      "tag" : "2.9.0",
+      "sha256" : "98bbd9dbdbaf4b5e20fe7a0319d3814ecab9504cfe04bb193a8e22c10a95e086",
+      "strip_prefix" : "timescale-timescaledb-71f0780",
+      "commit" : "71f07801a6e88d019f1835abc247c612375a3f3a",
+      "short_commit" : "71f0780"
+    },
+    "2.8.1" : {
+      "tag" : "2.8.1",
+      "sha256" : "4a01ed0868a7b8e468202a795403fa8861b89904a6d8fe528b066db1f382e6c0",
+      "strip_prefix" : "timescale-timescaledb-6507848",
+      "commit" : "65078486025a5cfdd00663f524831619066c5946",
+      "short_commit" : "6507848"
+    },
+    "2.8.0" : {
+      "tag" : "2.8.0",
+      "sha256" : "b4e335b35079ff3d416b6a1efb36cee5c734c4dc106856b8d72d0035f8fa620e",
+      "strip_prefix" : "timescale-timescaledb-2410bdf",
+      "commit" : "2410bdf27400c0bfc34b879210a8f4a9b708bce0",
+      "short_commit" : "2410bdf"
+    },
+    "2.7.2" : {
+      "tag" : "2.7.2",
+      "sha256" : "96bab460e57d2c3a68f3d895c3cf32d03402e6b56c80225909d23483a546d00e",
+      "strip_prefix" : "timescale-timescaledb-54ab29a",
+      "commit" : "54ab29aabcaa28c03d7ba3e9fbdbbbd7682104bf",
+      "short_commit" : "54ab29a"
+    },
+    "2.7.1" : {
+      "tag" : "2.7.1",
+      "sha256" : "64df04d397ab2b012d9464aec06b5e9d8603f4d741c468225ffee587e1265ea4",
+      "strip_prefix" : "timescale-timescaledb-4c31440",
+      "commit" : "4c3144006c1731c0187fba723711286a7d6d8355",
+      "short_commit" : "4c31440"
+    },
+    "2.7.0" : {
+      "tag" : "2.7.0",
+      "sha256" : "be4d96b3dbd043e5953ec2fb511b4358a607822a1cb93e667328f72a99c9c854",
+      "strip_prefix" : "timescale-timescaledb-7d3c092",
+      "commit" : "7d3c092d21b7ce476e3c0cd8f5c8944695746d3d",
+      "short_commit" : "7d3c092"
+    },
+    "2.6.1" : {
+      "tag" : "2.6.1",
+      "sha256" : "e58cffb145872709c0a9e51b3b2a3aa5318f3661842d50f3b14a06c10ba2206b",
+      "strip_prefix" : "timescale-timescaledb-9ae47c6",
+      "commit" : "9ae47c6802b6ad4a6e13d243e4d5cc2e4119affb",
+      "short_commit" : "9ae47c6"
+    },
+    "2.6.0" : {
+      "tag" : "2.6.0",
+      "sha256" : "eb382b5b3547c1ac9205ff578749f8c438d8562340820a90c52b0ecf022337ce",
+      "strip_prefix" : "timescale-timescaledb-23962c8",
+      "commit" : "23962c8ebd73f14183066c79a74692eda65bc6e8",
+      "short_commit" : "23962c8"
+    },
+    "2.5.2" : {
+      "tag" : "2.5.2",
+      "sha256" : "ca1d29f8cabc134fdadad79c1b08b29d409bd1dc25bec7583a2e37d7cce9771f",
+      "strip_prefix" : "timescale-timescaledb-6794b14",
+      "commit" : "6794b140bde142702d65d5a482ddf542a8ff99be",
+      "short_commit" : "6794b14"
+    },
+    "2.5.1" : {
+      "tag" : "2.5.1",
+      "sha256" : "0dcfffd7e8d66fb8eefb7bd43f10617c4310b05eab015c351988d0692aec200c",
+      "strip_prefix" : "timescale-timescaledb-a2530ab",
+      "commit" : "a2530ab5f251ba9680d2c270496d1e2e6fcf6367",
+      "short_commit" : "a2530ab"
+    },
+    "2.5.0" : {
+      "tag" : "2.5.0",
+      "sha256" : "fb5d6769f228402cc4a78f26312bbade848b3324ad5e5d42dad7540b7575e776",
+      "strip_prefix" : "timescale-timescaledb-e6f137f",
+      "commit" : "e6f137fa8ae6fe73e51f6552f9812ff833ed1f08",
+      "short_commit" : "e6f137f"
+    },
+    "2.4.2" : {
+      "tag" : "2.4.2",
+      "sha256" : "1f4725a4c7349d244221c415c23522e5e95d98cd2379cbc37cd8ee168f78237e",
+      "strip_prefix" : "timescale-timescaledb-708e119",
+      "commit" : "708e119eb52678c60e60427734da602e4b70a24b",
+      "short_commit" : "708e119"
+    },
+    "2.4.1" : {
+      "tag" : "2.4.1",
+      "sha256" : "c521a87eae82cae3f232a6155b826a8581ef355d130846bc1c3a66a1fc0836c9",
+      "strip_prefix" : "timescale-timescaledb-63a6585",
+      "commit" : "63a65854b0e9631c4bf2f6e13e225e0a4cea252b",
+      "short_commit" : "63a6585"
+    },
+    "2.4.0" : {
+      "tag" : "2.4.0",
+      "sha256" : "accf58a8bbbfc40d82a0edb8ea3006b7140ac9fb0c10118338b2ba9b33c5ad42",
+      "strip_prefix" : "timescale-timescaledb-59fdb1d",
+      "commit" : "59fdb1db7ce11b886ba353b3652880ae6fc5778d",
+      "short_commit" : "59fdb1d"
+    },
+    "2.3.1" : {
+      "tag" : "2.3.1",
+      "sha256" : "072e6fa0bf7353e9a7e1f98849a80b2aebd685f6139958df4f14db8a9820ef29",
+      "strip_prefix" : "timescale-timescaledb-a42284f",
+      "commit" : "a42284fb6c6c40a12d51a23c46a993e7cb9b482a",
+      "short_commit" : "a42284f"
+    },
+    "2.3.0" : {
+      "tag" : "2.3.0",
+      "sha256" : "70baa4a0c9f8e4f0a371cb5ce6211184bac0e680b9255fc3212fd4cfa801a3ee",
+      "strip_prefix" : "timescale-timescaledb-13081f1",
+      "commit" : "13081f161f5abb0424fe8c43e731b3cb6b2f0365",
+      "short_commit" : "13081f1"
+    },
+    "2.2.1" : {
+      "tag" : "2.2.1",
+      "sha256" : "009d423d625c3618934f5677a2f8f5adcc55324d016ac78c589ed0ddec34140b",
+      "strip_prefix" : "timescale-timescaledb-95a9503",
+      "commit" : "95a9503a6fb36028dd282153da4390ec9cd89f62",
+      "short_commit" : "95a9503"
+    },
+    "2.2.0" : {
+      "tag" : "2.2.0",
+      "sha256" : "212cf1eec7c0c7275f2ee41c87dbbf445e978ea8314fc7b63a6c8b408ee51105",
+      "strip_prefix" : "timescale-timescaledb-512ae89",
+      "commit" : "512ae89ca9d1af657e7c4e6d8d37b9939907930a",
+      "short_commit" : "512ae89"
+    },
+    "2.1.1" : {
+      "tag" : "2.1.1",
+      "sha256" : "923da042dbea21d241aef8ed17fa235043b853c84d7a355d86dda619cb84dcd2",
+      "strip_prefix" : "timescale-timescaledb-d65a04c",
+      "commit" : "d65a04c6be5f738c6e3beee3d1628afddaf28b9a",
+      "short_commit" : "d65a04c"
+    },
+    "2.1.0" : {
+      "tag" : "2.1.0",
+      "sha256" : "67ce5a3a6f4bf14c5b9c72badcc8de9a24881760d3430d62229b9c6415e14a86",
+      "strip_prefix" : "timescale-timescaledb-b980af1",
+      "commit" : "b980af1cd2b6777b7d9ee826053875ea06135bf2",
+      "short_commit" : "b980af1"
+    },
+    "2.0.2" : {
+      "tag" : "2.0.2",
+      "sha256" : "ed01a0beeab56c36f68e5155a3b27e74c3da6d9eb3a6da00bc211121aed6ec9b",
+      "strip_prefix" : "timescale-timescaledb-d305e41",
+      "commit" : "d305e41cbbc93479540a755703a9babc7e043987",
+      "short_commit" : "d305e41"
+    },
+    "2.0.1" : {
+      "tag" : "2.0.1",
+      "sha256" : "0b9017970e1ddff4ba40172811d7c3cd29d85a38032aa4ae7fcbf4f1fe3c9140",
+      "strip_prefix" : "timescale-timescaledb-0fd0ffb",
+      "commit" : "0fd0ffb50d8bc878767d7e7e66885f2ba5328d98",
+      "short_commit" : "0fd0ffb"
+    },
+    "2.0.0" : {
+      "tag" : "2.0.0",
+      "sha256" : "4beb09af81f9229b8369c20da6e333fe62fee4049b21cf33eeadad875ae6558a",
+      "strip_prefix" : "timescale-timescaledb-8781edb",
+      "commit" : "8781edb6a0e9185dee7b9f2155d849754f28250d",
+      "short_commit" : "8781edb"
+    },
+    "2.0.0-rc4" : {
+      "tag" : "2.0.0-rc4",
+      "sha256" : "cb5518ac2e9c33ff6df0d5fb68478aefb4cf6def14b5ccabb24f31f1e13f7e50",
+      "strip_prefix" : "timescale-timescaledb-55e1701",
+      "commit" : "55e17016cc4e80f1a6fef1e8de33dac52683b221",
+      "short_commit" : "55e1701"
+    },
+    "2.0.0-rc3-w" : {
+      "tag" : "2.0.0-rc3-w",
+      "sha256" : "b3ce5692014319a210780e28ea85b657a78a1c7f072bea0c478a98ae99d1220c",
+      "strip_prefix" : "timescale-timescaledb-e2c7ba1",
+      "commit" : "e2c7ba1caf80d9f300ba54a2960374c4a68c9b72",
+      "short_commit" : "e2c7ba1"
+    },
+    "2.0.0-rc3" : {
+      "tag" : "2.0.0-rc3",
+      "sha256" : "b1d4cf5a91bd744fa9381c27826e1e0ae63563239d281247a62a0235be22af56",
+      "strip_prefix" : "timescale-timescaledb-876b256",
+      "commit" : "876b25684af18f449926e08ae2d44d72b1edc0b8",
+      "short_commit" : "876b256"
+    },
+    "2.0.0-rc2" : {
+      "tag" : "2.0.0-rc2",
+      "sha256" : "e2faf977a6c1c293f93d5ef8e2b5f7daf2d2fb8d259af7f943776c378ea2974c",
+      "strip_prefix" : "timescale-timescaledb-468f34b",
+      "commit" : "468f34b39d230c12f73ab52daa7331e2b0c57977",
+      "short_commit" : "468f34b"
+    },
+    "2.0.0-rc1" : {
+      "tag" : "2.0.0-rc1",
+      "sha256" : "0dbe5180f697edfc985723d2e48939d67044efddd19913f2aa75d0f477521545",
+      "strip_prefix" : "timescale-timescaledb-7a4975c",
+      "commit" : "7a4975cd17d58d474f6d5558096a3c1237046978",
+      "short_commit" : "7a4975c"
+    },
+    "2.0.0-private-beta-1" : {
+      "tag" : "2.0.0-private-beta-1",
+      "sha256" : "4909bd37e4140a32a85065a56bfce4efb118be79713cd0d79ebb6280864467cf",
+      "strip_prefix" : "timescale-timescaledb-375aaa0",
+      "commit" : "375aaa0d918bbe5bcd4052c8a044a4b4e6ef5bcf",
+      "short_commit" : "375aaa0"
+    },
+    "2.0.0-beta6" : {
+      "tag" : "2.0.0-beta6",
+      "sha256" : "54bfd64fb3e4329b5de8c56e0e41393c4253bc968257e3aebeddfb3fca311b29",
+      "strip_prefix" : "timescale-timescaledb-555e645",
+      "commit" : "555e6458f8666ec6b7b08717200f4c62ce66bd78",
+      "short_commit" : "555e645"
+    },
+    "2.0.0-beta5" : {
+      "tag" : "2.0.0-beta5",
+      "sha256" : "66fdaeb1da04c4b6f64bfae79ad73a0dd914ef4a423b914f90f875863bc1b3ab",
+      "strip_prefix" : "timescale-timescaledb-182f6f1",
+      "commit" : "182f6f14fdaaa699bd87c3b27de863969ecebb58",
+      "short_commit" : "182f6f1"
+    },
+    "2.0.0-beta4" : {
+      "tag" : "2.0.0-beta4",
+      "sha256" : "024ecb0a68b6913a3a17ee4e4c59cfae7c5a826ea7e9593c7d4d2e089921cc14",
+      "strip_prefix" : "timescale-timescaledb-f20ad82",
+      "commit" : "f20ad8231d9e04439e55b29775ef65c350b2a3b9",
+      "short_commit" : "f20ad82"
+    },
+    "2.0.0-beta3" : {
+      "tag" : "2.0.0-beta3",
+      "sha256" : "84f7c46b228c9baa000437c8233de2988609c89bb66a7e96a1b17c1d23a58342",
+      "strip_prefix" : "timescale-timescaledb-1afbac9",
+      "commit" : "1afbac9ac8f44b417171c918ac7ab62775431277",
+      "short_commit" : "1afbac9"
+    },
+    "2.0.0-beta2" : {
+      "tag" : "2.0.0-beta2",
+      "sha256" : "ae3e659bc49a7869e70efe246cc53629728d832b9e97ab4a7d5e64455a31e703",
+      "strip_prefix" : "timescale-timescaledb-57bc2e6",
+      "commit" : "57bc2e6fe830afd25206be14cd35956061da143b",
+      "short_commit" : "57bc2e6"
+    },
+    "2.0.0-beta1" : {
+      "tag" : "2.0.0-beta1",
+      "sha256" : "4909bd37e4140a32a85065a56bfce4efb118be79713cd0d79ebb6280864467cf",
+      "strip_prefix" : "timescale-timescaledb-375aaa0",
+      "commit" : "375aaa0d918bbe5bcd4052c8a044a4b4e6ef5bcf",
+      "short_commit" : "375aaa0"
+    },
+    "1.7.5" : {
+      "tag" : "1.7.5",
+      "sha256" : "c71f14200c53787ddcc6bcf61d52c4c2b8ae4f17aa0056d598ab8b89a063e8a8",
+      "strip_prefix" : "timescale-timescaledb-430cbe4",
+      "commit" : "430cbe49c1532bc3d99a4e0a32f3366c858cbc34",
+      "short_commit" : "430cbe4"
+    },
+    "1.7.4" : {
+      "tag" : "1.7.4",
+      "sha256" : "fdffdb1e209bd98d6a80bffa28332f1bff9e0df840ba70a68c314b950f11ad0e",
+      "strip_prefix" : "timescale-timescaledb-5ca53d2",
+      "commit" : "5ca53d2bd84eef257bbdc145075f68fcfee2cf6b",
+      "short_commit" : "5ca53d2"
+    },
+    "1.7.3" : {
+      "tag" : "1.7.3",
+      "sha256" : "f966ca35fb89c82a580c4b4816a72f336abeb0b82c0fb9b0d7b2f7785f809bee",
+      "strip_prefix" : "timescale-timescaledb-d99d6ea",
+      "commit" : "d99d6ea386808e9240641a9ed412ce70f1866ccc",
+      "short_commit" : "d99d6ea"
+    },
+    "1.7.2" : {
+      "tag" : "1.7.2",
+      "sha256" : "2b38a30631b3d99dd855be8d9131db05f3fd47ac48ea371bb9d5507bcceb6725",
+      "strip_prefix" : "timescale-timescaledb-783ad74",
+      "commit" : "783ad7411606fc3906ee7039d5415e2a8668a827",
+      "short_commit" : "783ad74"
+    },
+    "1.7.1" : {
+      "tag" : "1.7.1",
+      "sha256" : "b231b225364eae11094dd674b59e832be2a1e1d43bf8b3d47599d99b9d80b8e7",
+      "strip_prefix" : "timescale-timescaledb-2c1e998",
+      "commit" : "2c1e9989449f377e97c46923226450fa01b6a18c",
+      "short_commit" : "2c1e998"
+    },
+    "1.7.0" : {
+      "tag" : "1.7.0",
+      "sha256" : "490d772e1d5e5ce9e5d81965428381c4f8101e0532d4c5437d5ba4bfffb17097",
+      "strip_prefix" : "timescale-timescaledb-f227f07",
+      "commit" : "f227f073f42664ab27c1cf85a0ebae7d78daa61d",
+      "short_commit" : "f227f07"
+    },
+    "1.6.1" : {
+      "tag" : "1.6.1",
+      "sha256" : "8e8e7213a2e3865360c8349192a69d6ef53720e7178173c037f0f291185d1e83",
+      "strip_prefix" : "timescale-timescaledb-14e26a0",
+      "commit" : "14e26a0a9acf10318624d9b07b59307a66d436d8",
+      "short_commit" : "14e26a0"
+    },
+    "1.6.0" : {
+      "tag" : "1.6.0",
+      "sha256" : "564e2e78426e38e41fd5f1a96f2df87be3a95080c89090c305c25dbbd7fdd0d1",
+      "strip_prefix" : "timescale-timescaledb-f0bcd32",
+      "commit" : "f0bcd32e2b5789f036d772a88d90a50181eb0f16",
+      "short_commit" : "f0bcd32"
+    },
+    "1.5.1" : {
+      "tag" : "1.5.1",
+      "sha256" : "fb47468f8a0dcd1e681a5186493a9f53a7f59770c12ba0533be66039fd18a916",
+      "strip_prefix" : "timescale-timescaledb-9fce79b",
+      "commit" : "9fce79b62966b2e76bb88c863a9c4cced33bb38b",
+      "short_commit" : "9fce79b"
+    },
+    "1.5.0" : {
+      "tag" : "1.5.0",
+      "sha256" : "027a660084e1047b607c7ff788be3844c9e22a11634e1b844d59c66ac0ba2356",
+      "strip_prefix" : "timescale-timescaledb-68ebba8",
+      "commit" : "68ebba8a5511ebb29c967d78f15685153fd087ff",
+      "short_commit" : "68ebba8"
+    },
+    "1.4.2" : {
+      "tag" : "1.4.2",
+      "sha256" : "4a4237378655ca204de4a341e8e7822d6bff60253e9ff312c6df785867008409",
+      "strip_prefix" : "timescale-timescaledb-2c00297",
+      "commit" : "2c00297bc2c6fc98113d16f86e670826789e3c98",
+      "short_commit" : "2c00297"
+    },
+    "1.4.1" : {
+      "tag" : "1.4.1",
+      "sha256" : "a9d77353ffedbcf38e8745c56e68359180c7df0080bd3dd8dcd2432fcd1f925c",
+      "strip_prefix" : "timescale-timescaledb-7e7c2f3",
+      "commit" : "7e7c2f39506f8efa02ec494538dad5de5ce2cfbc",
+      "short_commit" : "7e7c2f3"
+    },
+    "1.4.0" : {
+      "tag" : "1.4.0",
+      "sha256" : "b58113078b04feb020c47efa8865023e0c8c8f952e270f3f1bd9c1e867aa5eb2",
+      "strip_prefix" : "timescale-timescaledb-4f30a27",
+      "commit" : "4f30a27242890cf7b2981bfbfe2ed98240e5a37a",
+      "short_commit" : "4f30a27"
+    },
+    "1.3.2" : {
+      "tag" : "1.3.2",
+      "sha256" : "2fa449c644cecbe86dfea603cd6dfb7d698d706d380a386dfc88df83dc364556",
+      "strip_prefix" : "timescale-timescaledb-8d65b23",
+      "commit" : "8d65b23432b041613016d0596dccf3188c0988e5",
+      "short_commit" : "8d65b23"
+    },
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "a0f8ecdd52881139e7b262edfa61494e7c5e79582da60e5f76e7a6e3b04fdca3",
+      "strip_prefix" : "timescale-timescaledb-c3faff3",
+      "commit" : "c3faff3b778bcab7b6db6b6bc92c455f20947a1e",
+      "short_commit" : "c3faff3"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "e4fbbd373d1b8c48339b336b3eeed2bfb53bdf7ba2af51df058b9406b1ee269c",
+      "strip_prefix" : "timescale-timescaledb-4755668",
+      "commit" : "475566866906657bcd93663a71693de2455cda62",
+      "short_commit" : "4755668"
+    },
+    "1.2.2" : {
+      "tag" : "1.2.2",
+      "sha256" : "b17065bdfa5002645adba8f372786432f87ef1732cf39eda9aa3b197ce2fdc12",
+      "strip_prefix" : "timescale-timescaledb-d287d17",
+      "commit" : "d287d17725ee0cef813c02e2c43d961dfc7d742a",
+      "short_commit" : "d287d17"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "dc929a688f2da887542c5dca944f93495cbf066de7b1c88716fbffe5a3f9156e",
+      "strip_prefix" : "timescale-timescaledb-b334e10",
+      "commit" : "b334e10837c23e9df3ffea12f561ac197124a2ea",
+      "short_commit" : "b334e10"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "74d36df6984f92a298032d9536cee31eb973ded44ea0a09e3056e3ccae7b7aae",
+      "strip_prefix" : "timescale-timescaledb-0084698",
+      "commit" : "008469896bada840a4ce33ec2b0dbcc8fc1d3ac3",
+      "short_commit" : "0084698"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "b1e49d2c4ebe6ab78eee7a4b5f1eb5134a7bc6075d89c965a28d895d8da61e35",
+      "strip_prefix" : "timescale-timescaledb-26d422a",
+      "commit" : "26d422ae508e36c89201e403e0baf6c72edfbad4",
+      "short_commit" : "26d422a"
+    },
+    "1.1.0" : {
+      "tag" : "1.1.0",
+      "sha256" : "6ebf2bdde7f1d842b99a8dad286e5ddfe829d475cbd91c8a51c3c7e4efdbf666",
+      "strip_prefix" : "timescale-timescaledb-1295ac3",
+      "commit" : "1295ac320015b761aa4481c0703405b5694cbf94",
+      "short_commit" : "1295ac3"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "cd97be96c4808c8e1a8d78251ce6ffbf21bd7c8ee7c31360897fba0d477d4ab9",
+      "strip_prefix" : "timescale-timescaledb-ddd4cc0",
+      "commit" : "ddd4cc00d67c96a799d419f09138431d33476e8f",
+      "short_commit" : "ddd4cc0"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "6ca4e9109f8941b2f66e1f426fb4455f79e5470cb68422de481b255dc1f3f2c8",
+      "strip_prefix" : "timescale-timescaledb-1dc3aa9",
+      "commit" : "1dc3aa9161f15f254934583674ac917c55292d7a",
+      "short_commit" : "1dc3aa9"
+    },
+    "1.0.0-rc3" : {
+      "tag" : "1.0.0-rc3",
+      "sha256" : "7cb67048caa9d7587f7c94c69a7e4112e9b9e9339b13b353660d331dc8afd22b",
+      "strip_prefix" : "timescale-timescaledb-e9f69ed",
+      "commit" : "e9f69edce07a38a77971ed4d573522744c9a3c85",
+      "short_commit" : "e9f69ed"
+    },
+    "1.0.0-rc2" : {
+      "tag" : "1.0.0-rc2",
+      "sha256" : "397d2174504185afc1b80d6651249737b43295ceea234d2d82443643a0f4c81e",
+      "strip_prefix" : "timescale-timescaledb-d19f869",
+      "commit" : "d19f86901612c22559b46e67b024b39899bd6fe0",
+      "short_commit" : "d19f869"
+    },
+    "1.0.0-rc1" : {
+      "tag" : "1.0.0-rc1",
+      "sha256" : "7a969189a9b0ceb4d8e3c0e0b8bcba11df9edc162059c9075dac40646e544a20",
+      "strip_prefix" : "timescale-timescaledb-b1710f1",
+      "commit" : "b1710f16bb84c5b50babd307b2506cac651665e3",
+      "short_commit" : "b1710f1"
+    },
+    "0.12.1" : {
+      "tag" : "0.12.1",
+      "sha256" : "ba4258212b26a4cf1944aab0021c6b2d2015b08e8ba9c1970b425835245d5f03",
+      "strip_prefix" : "timescale-timescaledb-d0f3745",
+      "commit" : "d0f37456b7384305804622e1c20efa6845b7612a",
+      "short_commit" : "d0f3745"
+    },
+    "0.12.0" : {
+      "tag" : "0.12.0",
+      "sha256" : "f4dc9c96f9f1696c5c13dd623002196ae96e31be868ddc0c7b17be11ce50b52d",
+      "strip_prefix" : "timescale-timescaledb-86633c2",
+      "commit" : "86633c29f5cdcdf841701794115006de39293c09",
+      "short_commit" : "86633c2"
+    },
+    "0.11.0" : {
+      "tag" : "0.11.0",
+      "sha256" : "e1fa37f96d3b75e2152910c11e42dafd43822f202739df6ebb729b0f5e52d626",
+      "strip_prefix" : "timescale-timescaledb-f67c107",
+      "commit" : "f67c10772fdb05d90d68daf36407b42040fc8856",
+      "short_commit" : "f67c107"
+    },
+    "0.10.1" : {
+      "tag" : "0.10.1",
+      "sha256" : "a5c2a7114ba3d93643feeb0178da334fb9f362dc0d6995ee2f8cd0fd13f01609",
+      "strip_prefix" : "timescale-timescaledb-f06f853",
+      "commit" : "f06f853f891cc3bf4f58f273f8a0d2a6a54a9f0d",
+      "short_commit" : "f06f853"
+    },
+    "0.10.0" : {
+      "tag" : "0.10.0",
+      "sha256" : "50e227612f00aaf9dd7849a3c9d42dc5d82af2724e7dcf4d904c05258cdd1630",
+      "strip_prefix" : "timescale-timescaledb-5be8fb5",
+      "commit" : "5be8fb5301e8d7f81958c2a32c39e9fe842e6868",
+      "short_commit" : "5be8fb5"
+    },
+    "0.9.2" : {
+      "tag" : "0.9.2",
+      "sha256" : "d30358338991be7a432ac11c8c55fa4b72e7b1f5434a780537e6724d0f49332e",
+      "strip_prefix" : "timescale-timescaledb-ff3ab04",
+      "commit" : "ff3ab04bd972979e89b99bb4878ceb7c1ff075d1",
+      "short_commit" : "ff3ab04"
+    },
+    "0.9.1" : {
+      "tag" : "0.9.1",
+      "sha256" : "5119655fd9747dcb6645f6acb61d5b155aa110db446e89a1a1b4022d10b30575",
+      "strip_prefix" : "timescale-timescaledb-1fbb7e7",
+      "commit" : "1fbb7e7466684fd64a50ed93a2bb5334817abbf3",
+      "short_commit" : "1fbb7e7"
+    },
+    "0.9.0" : {
+      "tag" : "0.9.0",
+      "sha256" : "d551f9d4f95fc5efe64c951f90473d4175da82c2e45d97a11aadaef427aca7ec",
+      "strip_prefix" : "timescale-timescaledb-a4caacb",
+      "commit" : "a4caacbc82635aa94bbaa2647fac31ff0565e545",
+      "short_commit" : "a4caacb"
+    },
+    "0.8.0" : {
+      "tag" : "0.8.0",
+      "sha256" : "e2f8336bf7207ffc77ce2acd8700193c57ae7b313c864106f62ed68a2d2005d6",
+      "strip_prefix" : "timescale-timescaledb-446b82e",
+      "commit" : "446b82e5e98d3610af64cd57b73fab2e297afcdc",
+      "short_commit" : "446b82e"
+    },
+    "0.7.1" : {
+      "tag" : "0.7.1",
+      "sha256" : "7890c9ff9bc0afd0d3d93d958af6462d7982bbba78f2f17fcd4200aa9567a44f",
+      "strip_prefix" : "timescale-timescaledb-3f69df9",
+      "commit" : "3f69df9d40dab24458b8cf2feef7cf912ae5df40",
+      "short_commit" : "3f69df9"
+    },
+    "0.7.0" : {
+      "tag" : "0.7.0",
+      "sha256" : "37c13a5d86e84e08fe446b542a2a4196ab87e0d9f456dd11d2ef1130a203c130",
+      "strip_prefix" : "timescale-timescaledb-f0d69f6",
+      "commit" : "f0d69f60848200ae843a95581c835780b271826f",
+      "short_commit" : "f0d69f6"
+    },
+    "0.6.1" : {
+      "tag" : "0.6.1",
+      "sha256" : "239dfdecf665fadd0a4e892e3249c1cf3df78304a1b33b0f90417a5c54f6e36c",
+      "strip_prefix" : "timescale-timescaledb-a8b666d",
+      "commit" : "a8b666d9342e806bf51ef368d8b6976e28204d34",
+      "short_commit" : "a8b666d"
+    },
+    "0.6.0" : {
+      "tag" : "0.6.0",
+      "sha256" : "5e51214de8eeca5553f6e5a9d5f5930cf627af6c13bca3689ff73ea5707f86ac",
+      "strip_prefix" : "timescale-timescaledb-9a432c8",
+      "commit" : "9a432c834137e81d984c0da3a3c7316ad041b50b",
+      "short_commit" : "9a432c8"
+    },
+    "0.5.0" : {
+      "tag" : "0.5.0",
+      "sha256" : "ef01c35da4cf3360af0fc438ce871ba2240f179ea1cd5e2aefbe8db9c4152602",
+      "strip_prefix" : "timescale-timescaledb-e7d51df",
+      "commit" : "e7d51df5f9a58d2a3bfc83781b06207e2a68bda5",
+      "short_commit" : "e7d51df"
+    },
+    "0.4.2" : {
+      "tag" : "0.4.2",
+      "sha256" : "340515c85bde62267891a6f9764cfd2753f2ae4cd3303a73f3972b869fb27424",
+      "strip_prefix" : "timescale-timescaledb-0f8e20b",
+      "commit" : "0f8e20b7a2e3334ba8adcd4a54b036a685de5024",
+      "short_commit" : "0f8e20b"
+    },
+    "0.4.1" : {
+      "tag" : "0.4.1",
+      "sha256" : "e139d9341bc53115dfd932a416d92460795ae96781bc08f6347b0460c56f126e",
+      "strip_prefix" : "timescale-timescaledb-55c5801",
+      "commit" : "55c58017a89dd9b6c6ba3fc44cdb9915e71f3067",
+      "short_commit" : "55c5801"
+    },
+    "0.4.0" : {
+      "tag" : "0.4.0",
+      "sha256" : "96addd65166a99d373ac19e672544ecf333608f8cbf2cfb6f1aadbc448319075",
+      "strip_prefix" : "timescale-timescaledb-c54dd6f",
+      "commit" : "c54dd6fd0866285ec9d0a1d28c080f19ac4bebe4",
+      "short_commit" : "c54dd6f"
+    },
+    "0.3.0" : {
+      "tag" : "0.3.0",
+      "sha256" : "fca9fbbd806a45f5478a763918ccdc6cd7f7aa635dd9c95715aa0b5dd4ded010",
+      "strip_prefix" : "timescale-timescaledb-d1f66c5",
+      "commit" : "d1f66c5af44a43de2fd694ad73ae143cfc5195bb",
+      "short_commit" : "d1f66c5"
+    },
+    "0.2.0" : {
+      "tag" : "0.2.0",
+      "sha256" : "b34cabf1f4c78c4df37644cf41d54b62ca40ccb44902294cce80fa35d9e921a1",
+      "strip_prefix" : "timescale-timescaledb-6d075af",
+      "commit" : "6d075af80211047771325348147e1d47f8d2a14d",
+      "short_commit" : "6d075af"
+    },
+    "0.1.0" : {
+      "tag" : "0.1.0",
+      "sha256" : "9aea7aa198db110fe2a8071a75e909385e94f6bdad2aeaf650580bad5db94b0b",
+      "strip_prefix" : "timescale-timescaledb-59204fa",
+      "commit" : "59204fa9ec0db6b833c7bb9e592d7e540c272aed",
+      "short_commit" : "59204fa"
+    },
+    "0.0.12-beta" : {
+      "tag" : "0.0.12-beta",
+      "sha256" : "0428840b3399cf286baf3540e41b5a320f19ca9675e767d3dfb9cc609121631f",
+      "strip_prefix" : "timescale-timescaledb-216afe6",
+      "commit" : "216afe6ad72e6715a1f52f2a4dbf8b36044a3082",
+      "short_commit" : "216afe6"
+    },
+    "0.0.11-beta" : {
+      "tag" : "0.0.11-beta",
+      "sha256" : "a4710897ac898bbd6e589a49bdd50e4edbd81011d235e4cf3d29dde5dd9570b2",
+      "strip_prefix" : "timescale-timescaledb-275f88c",
+      "commit" : "275f88c7057d4c0002dd7c1c32a5424c45f2f139",
+      "short_commit" : "275f88c"
+    },
+    "0.0.10-beta" : {
+      "tag" : "0.0.10-beta",
+      "sha256" : "3ea797ac6e3e4a4c83e726bd440e127e41f51a8749d0bfb14ce0b544cfb2c8ea",
+      "strip_prefix" : "timescale-timescaledb-236d5fe",
+      "commit" : "236d5fed5366a87103e3a74282018b50724de126",
+      "short_commit" : "236d5fe"
+    },
+    "0.0.9-beta" : {
+      "tag" : "0.0.9-beta",
+      "sha256" : "03c5445c89686c278b32ecb81a585e0c7ad7fd3fb45e18b5e353c7de78e309a1",
+      "strip_prefix" : "timescale-timescaledb-1c5b2f9",
+      "commit" : "1c5b2f96a52c7aa182883dfa383271d6651e618a",
+      "short_commit" : "1c5b2f9"
+    },
+    "0.0.8-beta" : {
+      "tag" : "0.0.8-beta",
+      "sha256" : "b039d661034201af289a2a0faf01f478200b825717ccd6c551ebe92beb3c89fa",
+      "strip_prefix" : "timescale-timescaledb-ecb5d61",
+      "commit" : "ecb5d617dace74cf6c2724294e6f9e6409e20e35",
+      "short_commit" : "ecb5d61"
+    },
+    "0.0.7-beta" : {
+      "tag" : "0.0.7-beta",
+      "sha256" : "6f1361fe9625e73286915e54b42751e604132cd6b77b93e0f80c77d179ca3150",
+      "strip_prefix" : "timescale-timescaledb-6142d94",
+      "commit" : "6142d94d418b9756897692675b5f3c93f850210c",
+      "short_commit" : "6142d94"
+    },
+    "0.0.6-beta" : {
+      "tag" : "0.0.6-beta",
+      "sha256" : "a78602320471d0e012a298f8c9d928f903a2f88b5533329927831aa343fa2f76",
+      "strip_prefix" : "timescale-timescaledb-7d6c91b",
+      "commit" : "7d6c91b2e671caf32b2e9dbf09d0b7499b8a1b9f",
+      "short_commit" : "7d6c91b"
+    },
+    "0.0.5-beta" : {
+      "tag" : "0.0.5-beta",
+      "sha256" : "ec1ebd301abde12e4769a35f8a5d5e8cac44152b988facdbddcf5f6aefc4c5cc",
+      "strip_prefix" : "timescale-timescaledb-e031dfc",
+      "commit" : "e031dfc7955281d24f9c73c1a30aa12ec10cbb86",
+      "short_commit" : "e031dfc"
+    },
+    "0.0.4-beta" : {
+      "tag" : "0.0.4-beta",
+      "sha256" : "10ed427abf9399caae27dbd53a4b18159e783bae5d7629a2087c14ab76b71bd5",
+      "strip_prefix" : "timescale-timescaledb-5f5a49d",
+      "commit" : "5f5a49dffb571736180883bea369248f62659416",
+      "short_commit" : "5f5a49d"
+    },
+    "0.0.3-beta" : {
+      "tag" : "0.0.3-beta",
+      "sha256" : "cbc2565ae0462a30b6c472b89c1959b01f1da2e03e45cb2a6d633ae5ba0d690f",
+      "strip_prefix" : "timescale-timescaledb-bffc594",
+      "commit" : "bffc594d85747246256c98044cef8b735abda4c8",
+      "short_commit" : "bffc594"
+    },
+    "0.0.2-beta" : {
+      "tag" : "0.0.2-beta",
+      "sha256" : "72b3a9ed210c25fa50300945fa5168723860e9d01bb5a4bbbd6774448d19f0cd",
+      "strip_prefix" : "timescale-timescaledb-3e37745",
+      "commit" : "3e37745dc0e9c0de9944721eabde2dbd8c14ab4c",
+      "short_commit" : "3e37745"
+    },
+    "0.0.1-beta" : {
+      "tag" : "0.0.1-beta",
+      "sha256" : "45166de2cab432ddebadb31a3dab75bb70654753f1e82787d8092ced997d631a",
+      "strip_prefix" : "timescale-timescaledb-fbd079f",
+      "commit" : "fbd079f242295f5fad481393bf268938d5c350e5",
+      "short_commit" : "fbd079f"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.6.1" : {
+        "default_version" : "0.6.1",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.0" : {
+        "default_version" : "0.6.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.4.2" : {
+        "default_version" : "0.4.2",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.1" : {
+        "default_version" : "0.4.1",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.9-beta" : {
+        "default_version" : "0.0.9-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.8-beta" : {
+        "default_version" : "0.0.8-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.7-beta" : {
+        "default_version" : "0.0.7-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.6-beta" : {
+        "default_version" : "0.0.6-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.5-beta" : {
+        "default_version" : "0.0.5-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw", "hstore" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.4-beta" : {
+        "default_version" : "0.0.4-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw", "hstore" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.3-beta" : {
+        "default_version" : "0.0.3-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw", "hstore" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2-beta" : {
+        "default_version" : "0.0.2-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw", "hstore" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.12-beta" : {
+        "default_version" : "0.0.12-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.11-beta" : {
+        "default_version" : "0.0.11-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.10-beta" : {
+        "default_version" : "0.0.10-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "postgres_fdw" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-beta" : {
+        "default_version" : "0.0.1-beta",
+        "comment" : "Enables scalable inserts and complex queries for time-series data",
+        "module_pathname" : "$libdir/timescaledb",
+        "requires" : [ "dblink", "postgres_fdw", "hstore" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

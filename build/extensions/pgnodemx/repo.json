@@ -1,0 +1,195 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/CrunchyData/pgnodemx/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.6.0" : {
+      "tag" : "1.6",
+      "sha256" : "4204a0e372739324f61f071f3f0f9e8d337934d415660564794cb12806981123",
+      "strip_prefix" : "CrunchyData-pgnodemx-752d769",
+      "commit" : "752d769aa4d7a438c708c40485e0733501d71389",
+      "short_commit" : "752d769"
+    },
+    "1.5.0" : {
+      "tag" : "1.5",
+      "sha256" : "1acf038fe1ab89bbeb4295b34ecd7020f1205682d088346281c07d0eb6496d17",
+      "strip_prefix" : "CrunchyData-pgnodemx-5657697",
+      "commit" : "56576976ea2b4a8ba0363fc51c7cc40123d1bb4b",
+      "short_commit" : "5657697"
+    },
+    "1.4.0" : {
+      "tag" : "1.4",
+      "sha256" : "8401487802a52e4019ddf0ee667f23ba69fca22652af9eb4936bb790c52419cf",
+      "strip_prefix" : "CrunchyData-pgnodemx-fb67d6a",
+      "commit" : "fb67d6ac1ae054ee2b96e0031e343a72d467f6fb",
+      "short_commit" : "fb67d6a"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "283b0d3c315e1986a4e8b5d3b7f5031923535357a9831b7ed602506d87500f64",
+      "strip_prefix" : "CrunchyData-pgnodemx-4925f11",
+      "commit" : "4925f11b37c30de7e6beed429214ea6038a9dc93",
+      "short_commit" : "4925f11"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "f7d7bd91c2b901778495c6c957b05d394ccb8e4f68066810580d50a3b55b4c97",
+      "strip_prefix" : "CrunchyData-pgnodemx-6e4136f",
+      "commit" : "6e4136fc8c3fb618223e900cb43befb698a625c8",
+      "short_commit" : "6e4136f"
+    },
+    "1.0.5" : {
+      "tag" : "1.0.5",
+      "sha256" : "c0f6f769df5eb5b30c9b380bad2202e0c6e58218d137639d80eee91087cece43",
+      "strip_prefix" : "CrunchyData-pgnodemx-719fdc4",
+      "commit" : "719fdc4588614563895b7eea37b3d16b934775fa",
+      "short_commit" : "719fdc4"
+    },
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "faf3a11a8701cbcab673d5385819ace0448aa171bf25eee0e33065c1e8b4827e",
+      "strip_prefix" : "CrunchyData-pgnodemx-48cd8ab",
+      "commit" : "48cd8ab834e9f92d61a9d56a3f1465b8d8b87d42",
+      "short_commit" : "48cd8ab"
+    },
+    "1.0.3" : {
+      "tag" : "1.0.3",
+      "sha256" : "ca0f3816521bd819197d4c69ca33943400963832700310d502fc9b3f6caace6a",
+      "strip_prefix" : "CrunchyData-pgnodemx-988a881",
+      "commit" : "988a8815b785a1626113a41b36f8ab3f5daa060a",
+      "short_commit" : "988a881"
+    },
+    "1.0.2" : {
+      "tag" : "1.0.2",
+      "sha256" : "fd6f2929ca6834a87ccc7ae0713828fae658f3620193b30cba3ed5ece057a84b",
+      "strip_prefix" : "CrunchyData-pgnodemx-71ceab0",
+      "commit" : "71ceab0eeff3e37a7e41c07f4a27ad6d0b17d830",
+      "short_commit" : "71ceab0"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "c90dd698eac99077baf3e9856aa0f79ce00f5d37bbeea96d82a5177d437258dc",
+      "strip_prefix" : "CrunchyData-pgnodemx-df2bd23",
+      "commit" : "df2bd23f6cb3b17e92acff7c5ab0cafbbcc693dd",
+      "short_commit" : "df2bd23"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "5c6f4c0a589b57634d57f1af90792378b098edb7014ac92640633f398c11e05d",
+      "strip_prefix" : "CrunchyData-pgnodemx-5cdbd76",
+      "commit" : "5cdbd76b6ff24f054b4e5137f11701afb9e203e8",
+      "short_commit" : "5cdbd76"
+    },
+    "1.0.0-beta.1" : {
+      "tag" : "v1.0.0-beta.1",
+      "sha256" : "e44b0d815e84c19ad2c6d41bd816e96689a3740de480af6d262e290010daa4eb",
+      "strip_prefix" : "CrunchyData-pgnodemx-325ba87",
+      "commit" : "325ba87b0e97fcdf216294a166c7f0898a40331c",
+      "short_commit" : "325ba87"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.5" : {
+        "default_version" : "1.1",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.4" : {
+        "default_version" : "1.1",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "default_version" : "1.0",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.0",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-beta.1" : {
+        "default_version" : "1.0",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "SQL functions that allow capture of node OS metrics from PostgreSQL",
+        "module_pathname" : "$libdir/pgnodemx",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

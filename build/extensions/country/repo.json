@@ -1,0 +1,120 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/adjust/pg-country/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.3" : {
+      "tag" : "v0.0.3",
+      "sha256" : "80dd22b7959a5685cc892bc5397b18ca208f7445bb7367d4ff954a8fe3434e73",
+      "strip_prefix" : "adjust-pg-country-78a0262",
+      "commit" : "78a0262f77d740853e0a5e218f5ccd6e492a0e89",
+      "short_commit" : "78a0262"
+    },
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "0e8c07aa069b452db8545615832c669bd28944897b2e73a08d3f9ed880e7cedc",
+      "strip_prefix" : "adjust-pg-country-0b89d15",
+      "commit" : "0b89d15e1fa8ae5dcab5f5698cc87ec2a76e1fe0",
+      "short_commit" : "0b89d15"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "my awesome extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "my awesome extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.0.3" : {
+        "name" : "country",
+        "abstract" : "Enumerable country list, stored in a single-byte, fixed-length type.",
+        "version" : "0.0.3",
+        "maintainer" : [ "Chris Travers <chris.travers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "country" : {
+            "file" : "sql/country.sql",
+            "version" : "0.0.3",
+            "abstract" : "Enumerable country list, stored in a single-byte, fixed-length type."
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "description" : "This extnesion effectively provides a country list as an enumerable one-byte integer, ideal for analytics workloads.  The country list will be updated as needed.",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/pg-country/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/pg-country.git",
+            "web" : "http://github.com/adjust/pg-country",
+            "type" : "git"
+          }
+        }
+      },
+      "0.0.2" : {
+        "name" : "country",
+        "abstract" : "Enumerable country list, stored in a single-byte, fixed-length type.",
+        "version" : "0.0.2",
+        "maintainer" : [ "Chris Travers <christravers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "country" : {
+            "version" : "0.0.2",
+            "abstract" : "Enumerable country list, stored in a single-byte, fixed-length type."
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "description" : "This extnesion effectively provides a country list as an enumerable one-byte integer, ideal for analytics workloads.  The country list will be updated as needed.",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/pg-country/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/pg-country.git",
+            "web" : "http://github.com/adjust/pg-country",
+            "type" : "git"
+          }
+        }
+      }
+    }
+  },
+  "version" : 1
+}

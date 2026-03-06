@@ -1,0 +1,43 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/df7cb/pgsql-asn1oid/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.6.0" : {
+      "tag" : "v1.6",
+      "sha256" : "0345c42b1886520876028ff63512e600e0175bcdeb55bf8b767736d2646bbbe5",
+      "strip_prefix" : "df7cb-pgsql-asn1oid-71b37c2",
+      "commit" : "71b37c2ab9575e4c28d070d3ac1b204214c0774b",
+      "short_commit" : "71b37c2"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "1a0cbc3c855a349d1f2f680e53732c72f123eda5ee7576ccb14cdcff89e919b5",
+      "strip_prefix" : "df7cb-pgsql-asn1oid-ab4dad5",
+      "commit" : "ab4dad5126c73497a2189d6953d00da3f4c54b00",
+      "short_commit" : "ab4dad5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.6.0" : {
+        "default_version" : "1",
+        "comment" : "asn1oid extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1",
+        "comment" : "asn1oid extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

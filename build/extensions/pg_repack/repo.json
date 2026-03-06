@@ -1,0 +1,1097 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/reorg/pg_repack/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.5.3" : {
+      "tag" : "ver_1.5.3",
+      "sha256" : "8bc57d9d067e181a05a74f60791763cda783799a36639d442d63112b3965cc75",
+      "strip_prefix" : "reorg-pg_repack-6902ab3",
+      "commit" : "6902ab313aeb49227867087dca99cf107f7be23b",
+      "short_commit" : "6902ab3"
+    },
+    "1.5.2" : {
+      "tag" : "ver_1.5.2",
+      "sha256" : "8d19eeee3f582ffe71268da85700b22832c6a88f15c167f90b1b473e1b9f53f7",
+      "strip_prefix" : "reorg-pg_repack-9f36c65",
+      "commit" : "9f36c65bd57ca1b228025687843758556b56df8e",
+      "short_commit" : "9f36c65"
+    },
+    "1.5.1" : {
+      "tag" : "ver_1.5.1",
+      "sha256" : "cadcdadfa874c8f1a7215c46b90d18275281c93e61883f60fa61f1feba59d104",
+      "strip_prefix" : "reorg-pg_repack-a4b9b33",
+      "commit" : "a4b9b33e488a2e1585b26c9425824ada88c84a2f",
+      "short_commit" : "a4b9b33"
+    },
+    "1.5.0" : {
+      "tag" : "ver_1.5.0",
+      "sha256" : "4c1e6a7783dca065149afbad30ac1df7461e207a6ad2d8a6d857f28cce690a43",
+      "strip_prefix" : "reorg-pg_repack-78421dc",
+      "commit" : "78421dcc30a59fb9fd9d7bfeda97009f7050f112",
+      "short_commit" : "78421dc"
+    },
+    "1.4.8" : {
+      "tag" : "ver_1.4.8",
+      "sha256" : "ad20740e801a7c14cf34e96ca2fee257c166c99686d2d0d6d3f23bb642f90449",
+      "strip_prefix" : "reorg-pg_repack-333e621",
+      "commit" : "333e621c0d01c3a473f475789955b2316c559784",
+      "short_commit" : "333e621"
+    },
+    "1.4.7" : {
+      "tag" : "ver_1.4.7",
+      "sha256" : "4d2932f9f0c0b514ed6d7dcd503b04554ac8459fd8517c107cb4493e2b5140dc",
+      "strip_prefix" : "reorg-pg_repack-2493809",
+      "commit" : "24938098b3edf091a69e267076c1061dd6fedeb4",
+      "short_commit" : "2493809"
+    },
+    "1.4.6" : {
+      "tag" : "ver_1.4.6",
+      "sha256" : "43829f84ae252e2242c5917029b33175415578c1715819d15c3d46b0ee0ccca8",
+      "strip_prefix" : "reorg-pg_repack-8ff65b3",
+      "commit" : "8ff65b37512a411c1e7754fb820412077f0a2299",
+      "short_commit" : "8ff65b3"
+    },
+    "1.4.5" : {
+      "tag" : "ver_1.4.5",
+      "sha256" : "42268c2190a0e8db8df4c5f9393451ca63c4a02190f3df919af3103ea9f32bfe",
+      "strip_prefix" : "reorg-pg_repack-a16b60a",
+      "commit" : "a16b60a6f70c60ec6805c0ea0b078de04d6bcfc7",
+      "short_commit" : "a16b60a"
+    },
+    "1.4.4" : {
+      "tag" : "ver_1.4.4",
+      "sha256" : "6006e530d5d0bcd43b1b61e261a85818e710b7a1222f6749350c692d5ff047b1",
+      "strip_prefix" : "reorg-pg_repack-9bfd945",
+      "commit" : "9bfd94562e77ead67dfcc1713916f862a4a8ee4d",
+      "short_commit" : "9bfd945"
+    },
+    "1.4.3" : {
+      "tag" : "ver_1.4.3",
+      "sha256" : "c0a84720e87e127a2d551ed11dad0fefa7f375419d3728b31d3087a19ed1d2a4",
+      "strip_prefix" : "reorg-pg_repack-f4e0103",
+      "commit" : "f4e010386a833c1cef9382a72cb6db307357593f",
+      "short_commit" : "f4e0103"
+    },
+    "1.4.2" : {
+      "tag" : "ver_1.4.2",
+      "sha256" : "976230ffbaaf81e90dfbccdd867ad0a633578fef3d4e9b012a186b5388b0dfc7",
+      "strip_prefix" : "reorg-pg_repack-7166a0e",
+      "commit" : "7166a0ee8cecf11bab626adcbab55fdd03da8990",
+      "short_commit" : "7166a0e"
+    },
+    "1.4.1" : {
+      "tag" : "ver_1.4.1",
+      "sha256" : "6532d08714b433f431fa1f3f7a6c02af33dcab4dfa49bdbe130319e40a8a6169",
+      "strip_prefix" : "reorg-pg_repack-b2be474",
+      "commit" : "b2be4741c933abfae1ccde453d9cc432e2549eb5",
+      "short_commit" : "b2be474"
+    },
+    "1.4.0" : {
+      "tag" : "ver_1.4.0",
+      "sha256" : "bbca1c5c58ba158207e6d99a5eccb885fe02e7c50dcd1a80db0ee1ae4983d103",
+      "strip_prefix" : "reorg-pg_repack-285675f",
+      "commit" : "285675f8362bcbcc29ed514f9f967cf0bfc72938",
+      "short_commit" : "285675f"
+    },
+    "1.3.4" : {
+      "tag" : "ver_1.3.4",
+      "sha256" : "9905e2f318c6a76ac24e2cf26ac326a254beb09a4bb3a511ab3483ca2e1ca6aa",
+      "strip_prefix" : "reorg-pg_repack-fe659b0",
+      "commit" : "fe659b0e4ad6945d3828861404a415e43bd984d4",
+      "short_commit" : "fe659b0"
+    },
+    "1.3.3" : {
+      "tag" : "ver_1.3.3",
+      "sha256" : "ebefd855d9c78a66022436aa10d1c902daeae5e68d901d016d827317a2cb0c04",
+      "strip_prefix" : "reorg-pg_repack-1b5fd1a",
+      "commit" : "1b5fd1ae702331ef735c3d04bf7c65f69959b57f",
+      "short_commit" : "1b5fd1a"
+    },
+    "1.3.2" : {
+      "tag" : "ver_1.3.2",
+      "sha256" : "9ead2a1692f0381b72722dc48b31ff947389677f91bf9887d2e7e343d3918fd5",
+      "strip_prefix" : "reorg-pg_repack-f255a41",
+      "commit" : "f255a4175df970a4562fd82843a6d1a6fd71d7ad",
+      "short_commit" : "f255a41"
+    },
+    "1.3.1" : {
+      "tag" : "ver_1.3.1",
+      "sha256" : "6b03660045ddad03a5bb8bb8d858452eb35cc6f348c30662d2c8fef56b7f4157",
+      "strip_prefix" : "reorg-pg_repack-f4703be",
+      "commit" : "f4703be524b74e8c513687e6ed7991d58feaf559",
+      "short_commit" : "f4703be"
+    },
+    "1.3.0" : {
+      "tag" : "ver_1.3.0",
+      "sha256" : "fee4b59f359d6e42a3c1684a9b66d87ca0da38d3f8220301c43e05af8f959df3",
+      "strip_prefix" : "reorg-pg_repack-779fd82",
+      "commit" : "779fd82ddbba2ff28478d3137a4db448fe4d88b6",
+      "short_commit" : "779fd82"
+    },
+    "1.3.0-beta1" : {
+      "tag" : "ver_1.3.0-beta1",
+      "sha256" : "ceb66ee133e6d41d9eb17381e0e85f96d90d957dbdc3e0e85ed16ac657a74b73",
+      "strip_prefix" : "reorg-pg_repack-859af29",
+      "commit" : "859af29061d380083691404e5147c934fc2d712d",
+      "short_commit" : "859af29"
+    },
+    "1.2.1" : {
+      "tag" : "ver_1.2.1",
+      "sha256" : "b7bc2e0005b1d9975a57202fd585c03bc3af1bddfe6241a289f236ce5c3303f1",
+      "strip_prefix" : "reorg-pg_repack-a9f3682",
+      "commit" : "a9f3682645e5181b342fe5f113b77d85b7515e59",
+      "short_commit" : "a9f3682"
+    },
+    "1.2.0" : {
+      "tag" : "ver_1.2.0",
+      "sha256" : "bfd7fb3fb859055f81b5eb9f526d2dde90c79003af872340299ab7ef7e3ae49e",
+      "strip_prefix" : "reorg-pg_repack-ae6638b",
+      "commit" : "ae6638b581f27aac5067ad884554e1775dfdf068",
+      "short_commit" : "ae6638b"
+    },
+    "1.2.0-beta1" : {
+      "tag" : "ver_1.2.0-beta1",
+      "sha256" : "2338a4ce8769f381ddedb339565b01d5aabc6b298ceb8230032c60526b2bd1b6",
+      "strip_prefix" : "reorg-pg_repack-53906c4",
+      "commit" : "53906c4f18e27376c1e3d3442d877ef17b816617",
+      "short_commit" : "53906c4"
+    },
+    "1.1.8" : {
+      "tag" : "ver_1.1.8",
+      "sha256" : "008acdb12348ed48d2b32faa858192cc0d4c43cce76d628780ceef7109c910cc",
+      "strip_prefix" : "reorg-pg_repack-4ea1673",
+      "commit" : "4ea1673472701f592ac0b03ebe0e8d2047c9013d",
+      "short_commit" : "4ea1673"
+    },
+    "1.1.7" : {
+      "tag" : "ver_1.1.7",
+      "sha256" : "85fcd4e79934494e9e39ff39863b28ad3d3d97ceb5b467e09599a23c757f3e3a",
+      "strip_prefix" : "reorg-pg_repack-aad43aa",
+      "commit" : "aad43aa1ae17c8e2e87baea6f8a444f30979e204",
+      "short_commit" : "aad43aa"
+    },
+    "1.0.8" : {
+      "tag" : "ver_1.0.8",
+      "sha256" : "46e1b79505cf9be2abe6272b2ba09de91ad8f24fa76866cba0355c0ce67d8a31",
+      "strip_prefix" : "reorg-pg_repack-8392b94",
+      "commit" : "8392b9462adcdafc96c8716cd47a50cc23cbf3e9",
+      "short_commit" : "8392b94"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.8" : {
+        "default_version" : "1.1.8",
+        "comment" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "module_pathname" : "$libdir/pg_repack",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "1.5.3" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.5.3",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Artur Zakirov <zaartur@gmail.com>", "Andreas Scherbaum <andreas@scherbaum.la>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.5.3",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.5.2" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.5.2",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Artur Zakirov <zaartur@gmail.com>", "Andreas Scherbaum <andreas@scherbaum.la>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.5.2",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.5.1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.5.1",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Artur Zakirov <zaartur@gmail.com>", "Andreas Scherbaum <andreas@scherbaum.la>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.5.1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.5.0" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.5.0",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Artur Zakirov <zaartur@gmail.com>", "Andreas Scherbaum <andreas@scherbaum.la>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.5.0",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.8" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.8",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.8",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.7" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.7",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.7",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://reorg.github.io/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.6" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.6",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.6",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.5" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.5",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.5",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.4" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.4",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.4",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.3" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.3",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.3",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.2" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.2",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.2",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4.1",
+        "maintainer" : [ "Beena Emerson <memissemerson@gmail.com>", "Josh Kupershmidt <schmiddy@gmail.com>", "Masahiko Sawada <sawada.mshk@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4.1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.4.0" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.4",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.4",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.4" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.4",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.4",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.3" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.3",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.3",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.2" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.2",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.2",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.1",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.0-beta1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.0-beta1",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "testing",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.0-beta1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.3.0" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.3.0",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>", "Beena Emerson <memissemerson@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.3.0",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.2.1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.2.1",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.2.1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.2.0-beta1" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.2.0-beta1",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "testing",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.2.0-beta1",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.2.0" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.2.0",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "testing",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.2.0",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.1.8" : {
+        "name" : "pg_repack",
+        "abstract" : "PostgreSQL module for data reorganization",
+        "description" : "Reorganize tables in PostgreSQL databases with minimal locks",
+        "version" : "1.1.8",
+        "maintainer" : [ "Josh Kupershmidt <schmiddy@gmail.com>", "Daniele Varrazzo <daniele.varrazzo@gmail.com>" ],
+        "tags" : [ "bloat", "maintenance", "vacuum", "cluster" ],
+        "release_status" : "stable",
+        "license" : "bsd",
+        "provides" : {
+          "pg_repack" : {
+            "file" : "lib/pg_repack.sql",
+            "version" : "1.1.8",
+            "abstract" : "Reorganize tables in PostgreSQL databases with minimal locks"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.2.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://reorg.github.com/pg_repack",
+          "bugtracker" : {
+            "web" : "https://github.com/reorg/pg_repack/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/reorg/pg_repack.git",
+            "web" : "https://github.com/reorg/pg_repack/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

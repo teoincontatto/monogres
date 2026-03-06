@@ -1,0 +1,297 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/arkhipov/acl/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "91d7ee29d2a33f305f6a89393221e4fca3cf0721fc2728cbe6d8ce37b1ecadc1",
+      "strip_prefix" : "arkhipov-acl-144959a",
+      "commit" : "144959ae4068eeb36e54cb53d89cb608742f7590",
+      "short_commit" : "144959a"
+    },
+    "1.0.3" : {
+      "tag" : "1.0.3",
+      "sha256" : "6d1fe02043a649371a5cf9c320f6ec5b01031e13eb9ed8bbe605af2a235587c2",
+      "strip_prefix" : "arkhipov-acl-e4bf2d5",
+      "commit" : "e4bf2d57ed68c462a5fe6db19ba5da8697245f90",
+      "short_commit" : "e4bf2d5"
+    },
+    "1.0.2" : {
+      "tag" : "1.0.2",
+      "sha256" : "ccb040b7866d01a3c16bd3f1c75f11fbe42ba911a1afbc70a981df573cf66190",
+      "strip_prefix" : "arkhipov-acl-d787e38",
+      "commit" : "d787e383a114d3dbcba67e80ad453f3e823bc960",
+      "short_commit" : "d787e38"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "22d0694b0b8ada01ebf88e693240776da31b8ec98a2d422f78f9d66b9644632c",
+      "strip_prefix" : "arkhipov-acl-551f6dc",
+      "commit" : "551f6dc3a18a16ab689694720fe607d477f74f5a",
+      "short_commit" : "551f6dc"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "02c2ba12b46eec56fbd56fbd96309083e118b4763048e1883a58c4a0fc35cb10",
+      "strip_prefix" : "arkhipov-acl-997dca3",
+      "commit" : "997dca36d41c89c62bd57cc5da4d9bd715107352",
+      "short_commit" : "997dca3"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.4" : {
+        "default_version" : "1.0.4",
+        "comment" : "data type ACL",
+        "module_pathname" : "$libdir/acl",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "default_version" : "1.0.3",
+        "comment" : "data type ACL",
+        "module_pathname" : "$libdir/acl",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.0.2",
+        "comment" : "data type ACL",
+        "module_pathname" : "$libdir/acl",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "data type ACL",
+        "module_pathname" : "$libdir/acl",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "data type ACL",
+        "module_pathname" : "$libdir/acl",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.4" : {
+        "name" : "acl",
+        "abstract" : "Acess Control List (ACL) Extension",
+        "description" : "This extension provides support for ACL type.",
+        "version" : "1.0.4",
+        "release_status" : "stable",
+        "maintainer" : [ "Vladislav Arkhipov <vlad@arkhipov.ru>" ],
+        "license" : "bsd",
+        "provides" : {
+          "acl" : {
+            "abstract" : "Access Control List (ACL) Extension",
+            "file" : "acl--1.0.4.sql",
+            "docfile" : "acl.md",
+            "version" : "1.0.4"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://arkhipov.ru",
+          "repository" : {
+            "url" : "https://github.com/arkhipov/acl.git",
+            "web" : "https://github.com/arkhipov/acl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/arkhipov/acl/issues"
+          }
+        },
+        "generated_by" : "Vladislav Arkhipov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "acl", "access control list", "fine-grained security", "ace", "security", "row-level security", "access control" ]
+      },
+      "1.0.3" : {
+        "name" : "acl",
+        "abstract" : "Acess Control List (ACL) Extension",
+        "description" : "This extension provides support for ACL type.",
+        "version" : "1.0.3",
+        "release_status" : "stable",
+        "maintainer" : [ "Vladislav Arkhipov <vlad@arkhipov.ru>" ],
+        "license" : "bsd",
+        "provides" : {
+          "acl" : {
+            "abstract" : "Access Control List (ACL) Extension",
+            "file" : "acl--1.0.3.sql",
+            "docfile" : "acl.md",
+            "version" : "1.0.3"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://www.softus.org",
+          "repository" : {
+            "url" : "https://github.com/arkhipov/acl.git",
+            "web" : "https://github.com/arkhipov/acl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/arkhipov/acl/issues"
+          }
+        },
+        "generated_by" : "Vladislav Arkhipov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "acl", "access control list", "fine-grained security", "ace", "security", "row-level security", "access control" ]
+      },
+      "1.0.2" : {
+        "name" : "acl",
+        "abstract" : "Acess Control List (ACL) Extension",
+        "description" : "This extension provides support for ACL type.",
+        "version" : "1.0.2",
+        "release_status" : "stable",
+        "maintainer" : [ "Vladislav Arkhipov <vlad@arkhipov.ru>" ],
+        "license" : "bsd",
+        "provides" : {
+          "acl" : {
+            "abstract" : "Access Control List (ACL) Extension",
+            "file" : "acl--1.0.2.sql",
+            "docfile" : "acl.md",
+            "version" : "1.0.2"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://www.softus.org",
+          "repository" : {
+            "url" : "https://github.com/arkhipov/acl.git",
+            "web" : "https://github.com/arkhipov/acl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/arkhipov/acl/issues"
+          }
+        },
+        "generated_by" : "Vladislav Arkhipov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "acl", "access control list", "fine-grained security", "ace", "security", "row-level security", "access control" ]
+      },
+      "1.0.1" : {
+        "name" : "acl",
+        "abstract" : "Acess Control List (ACL) Extension",
+        "description" : "This extension provides support for ACL type.",
+        "version" : "1.0.1",
+        "release_status" : "stable",
+        "maintainer" : [ "Vladislav Arkhipov <vlad@arkhipov.ru>" ],
+        "license" : "bsd",
+        "provides" : {
+          "acl" : {
+            "abstract" : "Access Control List (ACL) Extension",
+            "file" : "acl--1.0.1.sql",
+            "docfile" : "acl.md",
+            "version" : "1.0.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://www.softus.org",
+          "repository" : {
+            "url" : "https://github.com/arkhipov/acl.git",
+            "web" : "https://github.com/arkhipov/acl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/arkhipov/acl/issues"
+          }
+        },
+        "generated_by" : "Vladislav Arkhipov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "acl", "access control list", "fine-grained security", "ace", "security", "row-level security", "access control" ]
+      },
+      "1.0.0" : {
+        "name" : "acl",
+        "abstract" : "Acess Control List (ACL) Extension",
+        "description" : "This extension provides support for ACL type.",
+        "version" : "1.0.0",
+        "release_status" : "testing",
+        "maintainer" : [ "Vladislav Arkhipov <vlad@arkhipov.ru>" ],
+        "license" : "bsd",
+        "provides" : {
+          "acl" : {
+            "abstract" : "Access Control List (ACL) Extension",
+            "file" : "acl--1.0.0.sql",
+            "docfile" : "acl.md",
+            "version" : "1.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 9.1.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://www.softus.org",
+          "repository" : {
+            "url" : "https://github.com/arkhipov/acl.git",
+            "web" : "https://github.com/arkhipov/acl",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/arkhipov/acl/issues"
+          }
+        },
+        "generated_by" : "Vladislav Arkhipov",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "acl", "access control list", "fine-grained security", "ace", "security", "row-level security", "access control" ]
+      }
+    }
+  },
+  "version" : 1
+}

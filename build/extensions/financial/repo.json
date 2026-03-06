@@ -1,0 +1,167 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/intgr/pg_financial/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "d69367d271f54c85b569f2d43b55c4c7c6b59e1d08c62387752efc91fc3851f2",
+      "strip_prefix" : "intgr-pg_financial-18ab38c",
+      "commit" : "18ab38c07cc0f510ae87ae65b74ed306c3d98247",
+      "short_commit" : "18ab38c"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "689d2bfe7912378526d3914dff53ae5fbc2b924c76b17970503ee694aa9e85e3",
+      "strip_prefix" : "intgr-pg_financial-3b2502f",
+      "commit" : "3b2502fc3e2e4a59b8e7d37be3a08d4a16fc82d6",
+      "short_commit" : "3b2502f"
+    },
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "2ed295e98dbd25b9b42fa50a57b111837e80896711bf4943600fc69c79feeec1",
+      "strip_prefix" : "intgr-pg_financial-ca3686a",
+      "commit" : "ca3686a67e46ccbc51738057389632dc6f6dbb72",
+      "short_commit" : "ca3686a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Financial aggregate functions",
+        "module_pathname" : "$libdir/financial",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Financial aggregate functions",
+        "module_pathname" : "$libdir/financial",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "Financial aggregate functions",
+        "module_pathname" : "$libdir/financial",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.1" : {
+        "name" : "financial",
+        "abstract" : "Financial aggregate functions",
+        "description" : "Functions and aggregates for financial calculations",
+        "version" : "1.0.1",
+        "release_status" : "stable",
+        "maintainer" : "Marti Raudsepp <marti@juffo.org>",
+        "generated_by" : "Marti Raudsepp <marti@juffo.org>",
+        "provides" : {
+          "financial" : {
+            "abstract" : "Financial aggregate functions",
+            "file" : "sql/financial.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1"
+          }
+        },
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence/"
+        },
+        "tags" : [ "financial", "finance", "rate of return", "xirr", "aggregate", "functions", "excel", "investment" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://bitbucket.org/intgr/pg_financial/issues"
+          },
+          "repository" : {
+            "url" : "https://bitbucket.org/intgr/pg_financial.git",
+            "web" : "https://bitbucket.org/intgr/pg_financial",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.0" : {
+        "name" : "financial",
+        "abstract" : "Financial aggregate functions",
+        "description" : "Functions and aggregates for financial calculations",
+        "version" : "1.0.0",
+        "release_status" : "stable",
+        "maintainer" : "Marti Raudsepp <marti@juffo.org>",
+        "generated_by" : "Marti Raudsepp <marti@juffo.org>",
+        "provides" : {
+          "financial" : {
+            "abstract" : "Financial aggregate functions",
+            "file" : "sql/financial.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.0"
+          }
+        },
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence/"
+        },
+        "tags" : [ "financial", "finance", "rate of return", "xirr", "aggregate", "functions", "excel", "investment" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://bitbucket.org/intgr/pg_financial/issues"
+          },
+          "repository" : {
+            "url" : "https://bitbucket.org/intgr/pg_financial.git",
+            "web" : "https://bitbucket.org/intgr/pg_financial",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "0.0.2" : {
+        "name" : "financial",
+        "abstract" : "Financial aggregate functions",
+        "description" : "Functions and aggregates for financial calculations",
+        "version" : "0.0.2",
+        "release_status" : "testing",
+        "maintainer" : "Marti Raudsepp <marti@juffo.org>",
+        "generated_by" : "Marti Raudsepp <marti@juffo.org>",
+        "provides" : {
+          "financial" : {
+            "abstract" : "Financial aggregate functions",
+            "file" : "sql/financial.sql",
+            "docfile" : "README.md",
+            "version" : "0.0.2"
+          }
+        },
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence/"
+        },
+        "tags" : [ "financial", "finance", "rate of return", "xirr", "aggregate", "functions", "excel", "investment" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://bitbucket.org/intgr/pg_financial/issues"
+          },
+          "repository" : {
+            "url" : "https://bitbucket.org/intgr/pg_financial.git",
+            "web" : "https://bitbucket.org/intgr/pg_financial",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

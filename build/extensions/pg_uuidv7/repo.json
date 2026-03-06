@@ -1,0 +1,538 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/fboulnois/pg_uuidv7/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "5b63043463e1cb17728d620b9d0a8e0d31117b27531cf74065aa8dc96a535d88",
+      "strip_prefix" : "fboulnois-pg_uuidv7-c707aae",
+      "commit" : "c707aae2411181be4802f5fa565b44d9c0bcbc29",
+      "short_commit" : "c707aae"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "3022e5c4e61faf03fbe93be962df128db3b5cc3b91a11ac090b106a8c08d560b",
+      "strip_prefix" : "fboulnois-pg_uuidv7-d186b25",
+      "commit" : "d186b2516a49392f9d32db246e2339a2ed6d356a",
+      "short_commit" : "d186b25"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "c512b178fdedc378321da3cc09e3f0591b0f6dfb986b5ff8fca15921d3fdbb46",
+      "strip_prefix" : "fboulnois-pg_uuidv7-0396caa",
+      "commit" : "0396caaa8269a899826a9195f72c42a845d656a7",
+      "short_commit" : "0396caa"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "aefe28988577f796e699496cc6665b49c04f7dc4ab8e277d0228e44e5b704291",
+      "strip_prefix" : "fboulnois-pg_uuidv7-268caea",
+      "commit" : "268caea192a4b01533c1c76d4b38b145878da1fb",
+      "short_commit" : "268caea"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "b980fae5e90bbc1b61e68ae657c6a48c0308bf60e2ce30c1eb38941b77b15cd1",
+      "strip_prefix" : "fboulnois-pg_uuidv7-06e19e8",
+      "commit" : "06e19e8072d1e310f6326b90604473394abb1393",
+      "short_commit" : "06e19e8"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "2e4209b8b85930ff44256e3ccc94656e7e0a36aaee6bd4e0f4a75b0d2b9ff68c",
+      "strip_prefix" : "fboulnois-pg_uuidv7-999e74e",
+      "commit" : "999e74e6d3af3391eae062fdb22c2eac78be992a",
+      "short_commit" : "999e74e"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "083909945c21c61f99b2311a52fd3a5318948f924bbc4ce6933c0bf8bba63836",
+      "strip_prefix" : "fboulnois-pg_uuidv7-ce889a8",
+      "commit" : "ce889a8381187019e641f5484db79bb45ba5bb2b",
+      "short_commit" : "ce889a8"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "c339f783286c0a438a76b0128b4c7ccc7ae6cb5a2403eb70e2b31b220995e5fe",
+      "strip_prefix" : "fboulnois-pg_uuidv7-6984ee7",
+      "commit" : "6984ee72df5d9b9b5d770a9a1d07a1bde1fb1b94",
+      "short_commit" : "6984ee7"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "30f13d2ecfb33e75f34da5dc64857e843ac17a323b667b83f541d5596792b01c",
+      "strip_prefix" : "fboulnois-pg_uuidv7-fc4f660",
+      "commit" : "fc4f6608a9c9d977d389adb5b3f63c2ca94d08e7",
+      "short_commit" : "fc4f660"
+    },
+    "1.0.2" : {
+      "tag" : "v1.0.2",
+      "sha256" : "96bce984ba270f8831430f82eb85ec356b78e315bdea186bd56d6b8d656e6cd3",
+      "strip_prefix" : "fboulnois-pg_uuidv7-c15f8c6",
+      "commit" : "c15f8c6557c480adf082cf5050af7c40d38edc14",
+      "short_commit" : "c15f8c6"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "4ab1782c05b36913a03d1f1fd289b9cef5fdad6b85bb04e583952b1fdf26614c",
+      "strip_prefix" : "fboulnois-pg_uuidv7-486b101",
+      "commit" : "486b1011ece3c7ad846aa9595042b5e12f4629d8",
+      "short_commit" : "486b101"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "0dddb18ace63206d8521aab37e358ef513235ec6baa1d6e197157245b9c9f409",
+      "strip_prefix" : "fboulnois-pg_uuidv7-a37bb9b",
+      "commit" : "a37bb9b3e1b123fe6b96c4aed55edde9b8f11d91",
+      "short_commit" : "a37bb9b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "1.4",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.0",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "pg_uuidv7: create UUIDv7 values in postgres",
+        "module_pathname" : "$libdir/pg_uuidv7",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.7.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.7.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.7.sql",
+            "docfile" : "README.md",
+            "version" : "1.7.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.6.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.6.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.6.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.5.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.5.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.5.sql",
+            "docfile" : "README.md",
+            "version" : "1.5.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.4.1" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.4.1",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.4.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.4.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.4.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.4.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.3.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.3.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "sql/pg_uuidv7--1.3.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.2.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.2.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "pg_uuidv7--1.2.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.1.1" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.1.1",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "pg_uuidv7--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.1.0" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.1.0",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "pg_uuidv7--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.0.2" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.0.2",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "pg_uuidv7--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.2"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      },
+      "1.0.1" : {
+        "name" : "pg_uuidv7",
+        "abstract" : "Create UUIDv7 values in Postgres",
+        "version" : "1.0.1",
+        "maintainer" : "fboulnois <fboulnois@users.noreply.github.com>",
+        "license" : "open_source",
+        "provides" : {
+          "pg_uuidv7" : {
+            "abstract" : "Create UUIDv7 values in Postgres",
+            "file" : "pg_uuidv7--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/fboulnois/pg_uuidv7",
+          "bugtracker" : {
+            "web" : "https://github.com/fboulnois/pg_uuidv7/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/fboulnois/pg_uuidv7.git",
+            "web" : "https://github.com/fboulnois/pg_uuidv7",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "uuid", "uuid-generator", "uuidv7" ]
+      }
+    }
+  },
+  "version" : 1
+}

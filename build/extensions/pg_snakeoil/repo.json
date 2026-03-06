@@ -1,0 +1,135 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/credativ/pg_snakeoil/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "38deaa64432af91b5275bf0899ec3a7d4b2318cb9d1d8bb5acb02e7307b7fca3",
+      "strip_prefix" : "credativ-pg_snakeoil-4733b63",
+      "commit" : "4733b638bbec1becd264a28f42cab85130381c6d",
+      "short_commit" : "4733b63"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3",
+      "sha256" : "36a84684c50a89557015ddaf83d78e5f8f4d4e8e36c29f68a477d821b9b4a53b",
+      "strip_prefix" : "credativ-pg_snakeoil-e41a849",
+      "commit" : "e41a84908dcb5d422bcaf2b191e8d9905b30a8d7",
+      "short_commit" : "e41a849"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "715c6d2ba1ca09121b721740a636efe45281cf4091aba6faf0cf1575bc2c5ae7",
+      "strip_prefix" : "credativ-pg_snakeoil-cb8e69a",
+      "commit" : "cb8e69a52a1805bffda2cf0974f82210ad3b7f0e",
+      "short_commit" : "cb8e69a"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "9539adaae1f35790c9f10a24c686db8db437320896c7e6a1b321d248b66e1b17",
+      "strip_prefix" : "credativ-pg_snakeoil-f5720f7",
+      "commit" : "f5720f774a169e6a74466c75148da5ac2e6013a2",
+      "short_commit" : "f5720f7"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "fc233865a04a6a7d59e03e5490743606e6281d6c1bf49f33e2bb982c7ecb6b34",
+      "strip_prefix" : "credativ-pg_snakeoil-e461385",
+      "commit" : "e461385d0b7aaa2ffce77a9dfbf7a5fe2f897c74",
+      "short_commit" : "e461385"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4",
+      "sha256" : "4b75c541c9353776f5eb8ce9791ac5862fe47be0adcd1153c211612e0950a93d",
+      "strip_prefix" : "credativ-pg_snakeoil-228a083",
+      "commit" : "228a0834ebc9dfc770816969e9ff33ec7f179a75",
+      "short_commit" : "228a083"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2",
+      "sha256" : "ef956b13f6ac7f8f36d33eee5a4cc1081bd894ae121a835695eb3a17d5c9b004",
+      "strip_prefix" : "credativ-pg_snakeoil-324db85",
+      "commit" : "324db85e0377ee55aecf87062da0460e0e6fbd68",
+      "short_commit" : "324db85"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1",
+      "sha256" : "a88a6c313a89d3ebb05613922e85d83f49b81d0ff094d79c0588e22a9ddd28a4",
+      "strip_prefix" : "credativ-pg_snakeoil-d1ed3da",
+      "commit" : "d1ed3da6c0b63cfb494522756bb94d6bae5c380d",
+      "short_commit" : "d1ed3da"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.0" : {
+        "default_version" : "1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1",
+        "comment" : "The PostgreSQL Antivirus",
+        "module_pathname" : "$libdir/pg_snakeoil",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

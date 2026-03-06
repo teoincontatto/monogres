@@ -1,0 +1,255 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/EnterpriseDB/hdfs_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.3.3" : {
+      "tag" : "v2.3.3",
+      "sha256" : "1d821e427475fd18553104cd350de6017ad301019642e7b068db764729a37c9a",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-dd132ff",
+      "commit" : "dd132ff1df347607f006063b54bca6ceb746395a",
+      "short_commit" : "dd132ff"
+    },
+    "2.3.2" : {
+      "tag" : "v2.3.2",
+      "sha256" : "13e01a87794991833d2524847bf67dbea3c3c4ddb2692db2d860c58d88958a00",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-7201ac1",
+      "commit" : "7201ac10a382dab844a247d7da343e2ced8c0833",
+      "short_commit" : "7201ac1"
+    },
+    "2.3.1" : {
+      "tag" : "v2.3.1",
+      "sha256" : "bc39110f49cec43b9f2c96fc1f4a5162bc5a7ef2f31e6b111f0ed58f6714ef01",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-63d1488",
+      "commit" : "63d1488d2c46492b270bf1cae9beca82d16ef56a",
+      "short_commit" : "63d1488"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0",
+      "sha256" : "17892d4fd265831fd206bae03c76c2f005fcf4d8006278f36d348ee5e627ad9e",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-11f6aa6",
+      "commit" : "11f6aa6b4de34c36159038f5f0582ca4b765c24b",
+      "short_commit" : "11f6aa6"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "3118ad50f6884c46e1d139a3f24bfb9b0b504c1de3d55dfe18efc2c3be8d9885",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-b7d9f7f",
+      "commit" : "b7d9f7f2c6b666e11e77af78b73aef18b5eee4e3",
+      "short_commit" : "b7d9f7f"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "f280fb6c073aa3a7a22e2c688c4422caa823747efab051e8c9620d982d25bb12",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-300b412",
+      "commit" : "300b4123df136c3001d8be06e02c9a31a4423b1c",
+      "short_commit" : "300b412"
+    },
+    "2.0.9" : {
+      "tag" : "v2.0.9",
+      "sha256" : "ea90b33b6687a87d5d648485e330521d581ad687b998b904656fbbe48beacdf9",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-60700a9",
+      "commit" : "60700a9a20f8a8ad775311ae5c67b490f81ab850",
+      "short_commit" : "60700a9"
+    },
+    "2.0.8" : {
+      "tag" : "v2.0.8",
+      "sha256" : "a137ae2cfec9b2f9cd2674c5e70b16da1368ff2bdb485798e37151cded65078f",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-dad25b5",
+      "commit" : "dad25b5148f7cb842c102d7fc455af8d1cb95bd3",
+      "short_commit" : "dad25b5"
+    },
+    "2.0.7" : {
+      "tag" : "v2.0.7",
+      "sha256" : "e9d47ff24a76e4bbdfc5c0e457bd51ef6bbcd0ad4c385e1af3abc274ca10857b",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-577d0a7",
+      "commit" : "577d0a746364e6f3b3d6892453edec940c2519c5",
+      "short_commit" : "577d0a7"
+    },
+    "2.0.6" : {
+      "tag" : "v2.0.6",
+      "sha256" : "3be22c575f3b35c4caf549eeed52596ba1227cfe72404a795bf1dbe4de111d34",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-d5797b1",
+      "commit" : "d5797b15d982fac1e2bc7f928b9e552e72cf41a3",
+      "short_commit" : "d5797b1"
+    },
+    "2.0.5" : {
+      "tag" : "v2.0.5",
+      "sha256" : "9e11a5f1bcf7a3477413cd687a0edf92af7b377d848911697e9244453308b58f",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-5a5a86c",
+      "commit" : "5a5a86cbbb7c9274399ba4aefdd45dd1eefe45d3",
+      "short_commit" : "5a5a86c"
+    },
+    "2.0.4" : {
+      "tag" : "v2.0.4",
+      "sha256" : "02cf823f19d23444bfe0f7306a64925379c26ac3aa939b1ca5018ef8d07bbdf7",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-0eed188",
+      "commit" : "0eed188781134b08e2f47dc21d0fccad4c5bc039",
+      "short_commit" : "0eed188"
+    },
+    "2.0.3" : {
+      "tag" : "v2.0.3",
+      "sha256" : "cbba37659e98ed55c1f9265ab8b2ef9c4fa4c945dc258b5a73fe5106dacace34",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-65b28ae",
+      "commit" : "65b28ae0651e40e8c6feb09a308d178d9341be7e",
+      "short_commit" : "65b28ae"
+    },
+    "2.0.2" : {
+      "tag" : "v2.0.2",
+      "sha256" : "07447153499cbc865f4805a2d233d867929295d420546ffce001cec1a560a088",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-7f8bb7a",
+      "commit" : "7f8bb7adf7d3c690f12faec48b36e3e231f1d11d",
+      "short_commit" : "7f8bb7a"
+    },
+    "2.0.1" : {
+      "tag" : "v2.0.1",
+      "sha256" : "de0a60d24b465c6dc4c52819226db8f097ce285d0ad50e5f9940ab2de09d5774",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-d1bc6c1",
+      "commit" : "d1bc6c184d04d76d8f0320537749dc55926bf5f1",
+      "short_commit" : "d1bc6c1"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "b58dc6ccc11ca94ac17772aab579f3dd0574ae8949f8f8ebdbd4c508d201b42a",
+      "strip_prefix" : "EnterpriseDB-hdfs_fdw-2488d2a",
+      "commit" : "2488d2a2fc4a307fecebd8613cc3f06293380f04",
+      "short_commit" : "2488d2a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.3.3" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.2" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.1" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.9" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.8" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.7" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.6" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.5" : {
+        "default_version" : "2.0.5",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.4" : {
+        "default_version" : "2.0.3",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.3" : {
+        "default_version" : "2.0.3",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.1",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "foreign-data wrapper for remote hdfs servers",
+        "module_pathname" : "$libdir/hdfs_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

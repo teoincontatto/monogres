@@ -1,0 +1,372 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/postgrespro/pg_wait_sampling/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.9" : {
+      "tag" : "v1.1.9",
+      "sha256" : "ce42f08b52fbeca4c84e13ffc680a0d1c45994d846be72aaf9e9a8d41a27ce5f",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-8427f4a",
+      "commit" : "8427f4ac091be33ffadd529adf451ddca3c40e51",
+      "short_commit" : "8427f4a"
+    },
+    "1.1.8" : {
+      "tag" : "v1.1.8",
+      "sha256" : "c64b2c42b48e473ce96b7118ff826827e3f3d1226cad1082ef9bc06ec2512a15",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-3c1046c",
+      "commit" : "3c1046c83c0a45e9fd43d7e805e21a916c25ee30",
+      "short_commit" : "3c1046c"
+    },
+    "1.1.7" : {
+      "tag" : "v1.1.7",
+      "sha256" : "18757eb9f05fa7a28b2e5cd82192b33f7812eea65fc7ad8f488926026be7356c",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-e3b1e15",
+      "commit" : "e3b1e15ed4a3abbe304a9ebf367789445fe66d28",
+      "short_commit" : "e3b1e15"
+    },
+    "1.1.6" : {
+      "tag" : "v1.1.6",
+      "sha256" : "8cd7c02540d25ab2b108e1d59e02d8bed707d8ddacd948e69315121b15adf8ec",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-b79a816",
+      "commit" : "b79a8163d8b6d3812451f8b0126b186e63cfae81",
+      "short_commit" : "b79a816"
+    },
+    "1.1.5" : {
+      "tag" : "v1.1.5",
+      "sha256" : "5ddbdcebb79ebf1ff1085ca72233de9c9ebc7b5c6fe32fddcc7ec14beef2caa3",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-b8037cf",
+      "commit" : "b8037cf0885a54d08132d0e93d943b642b9cb1df",
+      "short_commit" : "b8037cf"
+    },
+    "1.1.4" : {
+      "tag" : "v1.1.4",
+      "sha256" : "dd2bf118130173179d306c36b61fe6b575b6ed6a628e183b56e186bb4c8aa781",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-034456d",
+      "commit" : "034456d920b7c66725c7d37caeb3d1a7fea786d1",
+      "short_commit" : "034456d"
+    },
+    "1.1.3" : {
+      "tag" : "v1.1.3",
+      "sha256" : "c05d99590f31cbd639659850cafb135c28262a4179b4f6bd3fd5781d6cd4faa8",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-b984f33",
+      "commit" : "b984f33528a479243884b8e23bac1240d4566bcc",
+      "short_commit" : "b984f33"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "3ff58ed37cc104699ce0b2394c5906836094283079688435a89e244fb11cb477",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-32c389d",
+      "commit" : "32c389d248024209379de54b9a2f88172a1fa137",
+      "short_commit" : "32c389d"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "1c54c05845160da31ca9b6bb5a2a8eba1465a2a7c13b285c631ace49296d0726",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-df7612b",
+      "commit" : "df7612bbced2b1bdb765ce5f1fde03d1f78418b1",
+      "short_commit" : "df7612b"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "9ed1ef5f6bc3d3e2655ace6dbffeb510a8d52df64f85f5ce9e9c2937f8a74227",
+      "strip_prefix" : "postgrespro-pg_wait_sampling-a86ac9b",
+      "commit" : "a86ac9bf18bf36d891d598c03c97a383484810cc",
+      "short_commit" : "a86ac9b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.9" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.8" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.7" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.6" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.5" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.4" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.3" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "sampling based statistics of wait events",
+        "module_pathname" : "$libdir/pg_wait_sampling",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.1.4" : {
+        "name" : "pg_wait_sampling",
+        "abstract" : "Sampling based statistics of wait events",
+        "description" : "pg_wait_sampling provides functions for detailed per backend and per query statistics about PostgreSQL wait events",
+        "version" : "1.1.4",
+        "maintainer" : [ "Alexander Korotkov <a.korotkov@postgrespro.ru>", "Ildus Kurbangaliev <i.kurbangaliev@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_wait_sampling" : {
+            "file" : "pg_wait_sampling--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.4",
+            "abstract" : "Sampling based statistics of wait events"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/postgrespro/pg_wait_sampling/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/postgrespro/pg_wait_sampling.git",
+            "web" : "https://github.com/postgrespro/pg_wait_sampling",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Ildus Kurbangaliev",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "waits", "sampling", "background worker", "wait events", "waits history", "waits profile" ]
+      },
+      "1.1.3" : {
+        "name" : "pg_wait_sampling",
+        "abstract" : "Sampling based statistics of wait events",
+        "description" : "pg_wait_sampling provides functions for detailed per backend and per query statistics about PostgreSQL wait events",
+        "version" : "1.1.3",
+        "maintainer" : [ "Alexander Korotkov <a.korotkov@postgrespro.ru>", "Ildus Kurbangaliev <i.kurbangaliev@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_wait_sampling" : {
+            "file" : "pg_wait_sampling--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.3",
+            "abstract" : "Sampling based statistics of wait events"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/postgrespro/pg_wait_sampling/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/postgrespro/pg_wait_sampling.git",
+            "web" : "https://github.com/postgrespro/pg_wait_sampling",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Ildus Kurbangaliev",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "waits", "sampling", "background worker", "wait events", "waits history", "waits profile" ]
+      },
+      "1.1.2" : {
+        "name" : "pg_wait_sampling",
+        "abstract" : "Sampling based statistics of wait events",
+        "description" : "pg_wait_sampling provides functions for detailed per backend and per query statistics about PostgreSQL wait events",
+        "version" : "1.1.1",
+        "maintainer" : [ "Alexander Korotkov <a.korotkov@postgrespro.ru>", "Ildus Kurbangaliev <i.kurbangaliev@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_wait_sampling" : {
+            "file" : "pg_wait_sampling--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.1",
+            "abstract" : "Sampling based statistics of wait events"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/postgrespro/pg_wait_sampling/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/postgrespro/pg_wait_sampling.git",
+            "web" : "https://github.com/postgrespro/pg_wait_sampling",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Ildus Kurbangaliev",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "waits", "sampling", "background worker", "wait events", "waits history", "waits profile" ]
+      },
+      "1.1.1" : {
+        "name" : "pg_wait_sampling",
+        "abstract" : "Sampling based statistics of wait events",
+        "description" : "pg_wait_sampling provides functions for detailed per backend and per query statistics about PostgreSQL wait events",
+        "version" : "1.1.1",
+        "maintainer" : [ "Alexander Korotkov <a.korotkov@postgrespro.ru>", "Ildus Kurbangaliev <i.kurbangaliev@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_wait_sampling" : {
+            "file" : "pg_wait_sampling--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.1",
+            "abstract" : "Sampling based statistics of wait events"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/postgrespro/pg_wait_sampling/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/postgrespro/pg_wait_sampling.git",
+            "web" : "https://github.com/postgrespro/pg_wait_sampling",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Ildus Kurbangaliev",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "waits", "sampling", "background worker", "wait events", "waits history", "waits profile" ]
+      },
+      "1.1.0" : {
+        "name" : "pg_wait_sampling",
+        "abstract" : "Sampling based statistics of wait events",
+        "description" : "pg_wait_sampling provides functions for detailed per backend and per query statistics about PostgreSQL wait events",
+        "version" : "1.1.0",
+        "maintainer" : [ "Alexander Korotkov <a.korotkov@postgrespro.ru>", "Ildus Kurbangaliev <i.kurbangaliev@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_wait_sampling" : {
+            "file" : "pg_wait_sampling--1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.0",
+            "abstract" : "Sampling based statistics of wait events"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/postgrespro/pg_wait_sampling/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/postgrespro/pg_wait_sampling.git",
+            "web" : "https://github.com/postgrespro/pg_wait_sampling",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Ildus Kurbangaliev",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "waits", "sampling", "background worker", "wait events", "waits history", "waits profile" ]
+      }
+    }
+  },
+  "version" : 1
+}

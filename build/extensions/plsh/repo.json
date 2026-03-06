@@ -1,0 +1,162 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petere/plsh/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.20220917.0" : {
+      "tag" : "1.20220917",
+      "sha256" : "0389e8cd0d5872a5a749d383453495dfe15e1034cc6e5de1c3a8f365a85edb2c",
+      "strip_prefix" : "petere-plsh-743eb2a",
+      "commit" : "743eb2ac412e69736bfcea91c99de17049a79b6e",
+      "short_commit" : "743eb2a"
+    },
+    "1.20200522.0" : {
+      "tag" : "1.20200522",
+      "sha256" : "9cdb9b6a03f675e7d4cd5ca49cbe673532bec7e35630710445cc1cd36e814cde",
+      "strip_prefix" : "petere-plsh-b470ae2",
+      "commit" : "b470ae290e66e4f30fb6d9adbe2229a07e1161f4",
+      "short_commit" : "b470ae2"
+    },
+    "1.20171014.0" : {
+      "tag" : "1.20171014",
+      "sha256" : "0d0dc96748b4b5974b30649603e667a80aaab2f993c32a2750d8dfaabc3d1041",
+      "strip_prefix" : "petere-plsh-f3f5ae0",
+      "commit" : "f3f5ae0cd44750ca541aa73ae5116ad0c07e609f",
+      "short_commit" : "f3f5ae0"
+    },
+    "1.20140221.0" : {
+      "tag" : "1.20140221",
+      "sha256" : "c9a64890c42853308238b438788d72e50de0af1f5ac34bfafce891429fb57f57",
+      "strip_prefix" : "petere-plsh-08f2b37",
+      "commit" : "08f2b370a4a8944505e4acc7e29ce8823ac4fa6c",
+      "short_commit" : "08f2b37"
+    },
+    "1.20130823.0" : {
+      "tag" : "1.20130823",
+      "sha256" : "95952ac45580b33506fb9ebdd94be5cc24512c2d77ce5f792bb9bb0044ac4ede",
+      "strip_prefix" : "petere-plsh-bf0365b",
+      "commit" : "bf0365b81f509e6f75ca677d45ba03e0bbffdf7d",
+      "short_commit" : "bf0365b"
+    },
+    "1.20130205.0" : {
+      "tag" : "1.20130205",
+      "sha256" : "862f37e4f08cc3fee112d8c735b517bedc7e7a771caf3c91f42c621038360917",
+      "strip_prefix" : "petere-plsh-9a429a4",
+      "commit" : "9a429a4bb9ed98e80d12a931f90458a712d0adbd",
+      "short_commit" : "9a429a4"
+    },
+    "1.20121226.0" : {
+      "tag" : "1.20121226",
+      "sha256" : "fedd8a9cd533c6ee023c332699efe3a6de1afd2932765291d2aad867b01e7799",
+      "strip_prefix" : "petere-plsh-f52ca45",
+      "commit" : "f52ca45dcb7ea6c543a05e1d15f21b7bb97633e6",
+      "short_commit" : "f52ca45"
+    },
+    "1.20121018.0" : {
+      "tag" : "1.20121018",
+      "sha256" : "d90ca811eacb0240c00a8207c6756cef4054e260212ffd51d143977aab76af86",
+      "strip_prefix" : "petere-plsh-367cd82",
+      "commit" : "367cd824f14deb742328b3f4e4fbb679aa8e7d31",
+      "short_commit" : "367cd82"
+    },
+    "1.20120414.0" : {
+      "tag" : "1.20120414",
+      "sha256" : "be4e0301674acc1be7ee5048d03d33beb3f1fad0182097d4777ddb6f207adfa3",
+      "strip_prefix" : "petere-plsh-ab151fc",
+      "commit" : "ab151fc8942a4f3fea920bfdc27488def7486707",
+      "short_commit" : "ab151fc"
+    },
+    "1.3.0" : {
+      "tag" : "1.3",
+      "sha256" : "9fe2698df680ac81b7106de420bd01505df4bc7cce8fa2cb78d4eccdc868e42a",
+      "strip_prefix" : "petere-plsh-52e2d8b",
+      "commit" : "52e2d8be672f166f5f128fb51ab6e716d39020ec",
+      "short_commit" : "52e2d8b"
+    },
+    "1.2.0" : {
+      "tag" : "1.2",
+      "sha256" : "d7fca1c0ba35a8a56617863cd16468a9ba8c2894193fd32d6d48edba54f7a5ce",
+      "strip_prefix" : "petere-plsh-8b791eb",
+      "commit" : "8b791eb5b65ba73d5740ae0088242e03972def94",
+      "short_commit" : "8b791eb"
+    },
+    "1.1.0" : {
+      "tag" : "1.1",
+      "sha256" : "b9c6546741cfa57c8f8815c76359e7282e7fa923b8f6a12effedd336804b0562",
+      "strip_prefix" : "petere-plsh-bef1980",
+      "commit" : "bef19808c05169922204f76bdc3680ff89f0e2f2",
+      "short_commit" : "bef1980"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.20220917.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20200522.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20171014.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20140221.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20130823.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20130205.0" : {
+        "default_version" : "2",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20121226.0" : {
+        "default_version" : "1",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20121018.0" : {
+        "default_version" : "1",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20120414.0" : {
+        "default_version" : "1",
+        "comment" : "PL/sh procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

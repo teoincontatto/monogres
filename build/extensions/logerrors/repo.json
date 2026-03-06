@@ -1,0 +1,142 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/munakoiso/logerrors/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.1.5" : {
+      "tag" : "v2.1.5",
+      "sha256" : "9b47913965522542c5ae8d7319f7c37c93e529dfa238cd74d25cf4a489df7a98",
+      "strip_prefix" : "munakoiso-logerrors-3f8615e",
+      "commit" : "3f8615ebbe74b17224676b226f85b9925691833a",
+      "short_commit" : "3f8615e"
+    },
+    "2.1.4" : {
+      "tag" : "v2.1.4",
+      "sha256" : "79ab0109e94a6ab578ecdd1f75ad6da4caa92af43d92567fb7acd16ed288863d",
+      "strip_prefix" : "munakoiso-logerrors-ea5f9f3",
+      "commit" : "ea5f9f31ac6a89f755d524c74fd0de73dc321110",
+      "short_commit" : "ea5f9f3"
+    },
+    "2.1.3" : {
+      "tag" : "v2.1.3",
+      "sha256" : "407c2971cd4ade79b259e786245b8536ecafae766d95c038a3e0a97a5c61fcfa",
+      "strip_prefix" : "munakoiso-logerrors-79e629b",
+      "commit" : "79e629bb8af93dea4c9ef8a8ec7cbf98fb7bfa29",
+      "short_commit" : "79e629b"
+    },
+    "2.1.2" : {
+      "tag" : "v2.1.2",
+      "sha256" : "ff559c9528daa56e5acc658d03cb8ed097baeb4df198710fa21141849b23a07e",
+      "strip_prefix" : "munakoiso-logerrors-cd5080b",
+      "commit" : "cd5080b076134794a746ac8075e8a7e69481b5b5",
+      "short_commit" : "cd5080b"
+    },
+    "2.1.1" : {
+      "tag" : "v2.1.1",
+      "sha256" : "013c8213eb3bf3446e1cbd10782cd7fa2d7248d91a33d9e241beb3ffdb041a46",
+      "strip_prefix" : "munakoiso-logerrors-ea27e55",
+      "commit" : "ea27e5536c9b6e8e822eead6f20fd6f616961672",
+      "short_commit" : "ea27e55"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1",
+      "sha256" : "99890fba866bb70e443bd2d60c6a08308039b005f0ce7c66048abf59e4dc5b68",
+      "strip_prefix" : "munakoiso-logerrors-9ea8b01",
+      "commit" : "9ea8b0134ecf4217cc7e7e7abff736db779a9713",
+      "short_commit" : "9ea8b01"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "f61f62ef614347e337f4b2cad89f5c21bfe1c222e311a243a8983fdef29081dc",
+      "strip_prefix" : "munakoiso-logerrors-097e78f",
+      "commit" : "097e78f91ccfbaf26a8e9c4d7835343eb0e57aaa",
+      "short_commit" : "097e78f"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "41a27fcd1c16f2088e57b324b780a2b1ad7e944001df500c054d6d2e84c24f45",
+      "strip_prefix" : "munakoiso-logerrors-971b9e7",
+      "commit" : "971b9e73131b3b489cc6574596913454cb8a9895",
+      "short_commit" : "971b9e7"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1",
+      "sha256" : "614b83c9aaae95bd4de939d1257715a9ca64ca87316ddbc65651e47008790827",
+      "strip_prefix" : "munakoiso-logerrors-36a1631",
+      "commit" : "36a1631ddc615ba4bf4f765252eed0eef443de13",
+      "short_commit" : "36a1631"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.1.5" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.4" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.3" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.2" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "Function for collecting statistics about messages in logfile",
+        "module_pathname" : "$libdir/logerrors",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,287 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/sraoss/pg_ivm/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.13.0" : {
+      "tag" : "v1.13",
+      "sha256" : "cf0c7f4636225ea5575056da5743d4d837bcdcc916997854549a50609f818d35",
+      "strip_prefix" : "sraoss-pg_ivm-98a262c",
+      "commit" : "98a262ce0906b8afbb8e6bce8dd05779f8c50cac",
+      "short_commit" : "98a262c"
+    },
+    "1.12.0" : {
+      "tag" : "v1.12",
+      "sha256" : "fa671f48e4216b05e9df605f6705bc13331edc5693adcc3fa678fa1d67469a14",
+      "strip_prefix" : "sraoss-pg_ivm-132816c",
+      "commit" : "132816cffe2168488200f3c28beb0e633587c9d0",
+      "short_commit" : "132816c"
+    },
+    "1.11.0" : {
+      "tag" : "v1.11",
+      "sha256" : "7adb694d4e374828f047032b8182304dc4e85080af573eeed6cb343d34ecb2e7",
+      "strip_prefix" : "sraoss-pg_ivm-f4b40e9",
+      "commit" : "f4b40e93a60478a1ea9d69f0fd305452e5c00690",
+      "short_commit" : "f4b40e9"
+    },
+    "1.10.0" : {
+      "tag" : "v1.10",
+      "sha256" : "3ae50ce14812f2bf0bc40169511f80f8a080ac8e9de339baa4a25a18abe3d0ef",
+      "strip_prefix" : "sraoss-pg_ivm-437b2d2",
+      "commit" : "437b2d22d7a04fccacac379a0624466fa9d285b1",
+      "short_commit" : "437b2d2"
+    },
+    "1.9.1" : {
+      "tag" : "v1.9.1",
+      "sha256" : "de2ece1bf42cd60d478e557b80861b75d1660b4d161b8daf413754a94a49188a",
+      "strip_prefix" : "sraoss-pg_ivm-bb3c999",
+      "commit" : "bb3c999c05cf75848f2e21ce1fba7496ec77d4c4",
+      "short_commit" : "bb3c999"
+    },
+    "1.9.0" : {
+      "tag" : "v1.9",
+      "sha256" : "de2ece1bf42cd60d478e557b80861b75d1660b4d161b8daf413754a94a49188a",
+      "strip_prefix" : "sraoss-pg_ivm-bb3c999",
+      "commit" : "bb3c999c05cf75848f2e21ce1fba7496ec77d4c4",
+      "short_commit" : "bb3c999"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8",
+      "sha256" : "864e1a2ecf7c75cf5e2e2e929bcc129c3c1cf20325533eb21d94cde2cab41f55",
+      "strip_prefix" : "sraoss-pg_ivm-9736c8c",
+      "commit" : "9736c8c832588553c2d13008223b52272a07a44b",
+      "short_commit" : "9736c8c"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7",
+      "sha256" : "bc694348d14a347a9a8a548ef9b483da97a3352f7135db708b691a7f8696e361",
+      "strip_prefix" : "sraoss-pg_ivm-8f87d09",
+      "commit" : "8f87d0914ab30ea530d9a0e685eedfc9ea0b8877",
+      "short_commit" : "8f87d09"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6",
+      "sha256" : "9a7709b386d4d34c54de40d9e08f6debe97b3c8cca5cc04635237610463fad4a",
+      "strip_prefix" : "sraoss-pg_ivm-6f99049",
+      "commit" : "6f99049848642303f70f7ba3b825aaefb0a40c41",
+      "short_commit" : "6f99049"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1",
+      "sha256" : "ce54c1048f9749e23cadc27b0ee8452103707556debd07904a7fa15f439bfe00",
+      "strip_prefix" : "sraoss-pg_ivm-a81c657",
+      "commit" : "a81c657223261ecb565036020eeb8ffacfe938ea",
+      "short_commit" : "a81c657"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "e9d82161a92e7ce31396ed91c0c602e3830ffa1fb246ee5b1e38c6887c475351",
+      "strip_prefix" : "sraoss-pg_ivm-0587e78",
+      "commit" : "0587e786519fff90af468fb9d8129acc46e4fd4b",
+      "short_commit" : "0587e78"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "7a999a112ef0a70c732df9eab001cd7319b0a64c86d77b21b54f007c823eede2",
+      "strip_prefix" : "sraoss-pg_ivm-138eb19",
+      "commit" : "138eb192546a02eec7000e4f3f59e3a58fab725a",
+      "short_commit" : "138eb19"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "1d98e9b9ee33542038c65f2dd43560027976da62b8698ad171d58622c540956f",
+      "strip_prefix" : "sraoss-pg_ivm-992fc53",
+      "commit" : "992fc538c8c2ba4502819164738c1d2ad6c3866c",
+      "short_commit" : "992fc53"
+    },
+    "1.3.0" : {
+      "tag" : "1.3",
+      "sha256" : "044004e532a46dc1d72bd838cf38ce27456b92badb819295d9f39b9bd5e4a76c",
+      "strip_prefix" : "sraoss-pg_ivm-6eddcd2",
+      "commit" : "6eddcd2a6370ab2d05d11e34cdefed60fe4c81bf",
+      "short_commit" : "6eddcd2"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "d3ecf81023351dfd5dd7e4ae7f024f30334297024a8853e0a7a8435e24eef4c8",
+      "strip_prefix" : "sraoss-pg_ivm-6439e8c",
+      "commit" : "6439e8c7be6a96dc361d01450d435432a213a3bc",
+      "short_commit" : "6439e8c"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "1adfb625a4dd2071dd05c9b0be11c88efe84270cd62cb60c3da986ceab0e0ce7",
+      "strip_prefix" : "sraoss-pg_ivm-d7d1fb0",
+      "commit" : "d7d1fb0f490219ef86987a351728db5bbd295e85",
+      "short_commit" : "d7d1fb0"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "0c45956a0d78f74162714cc024d51fd0c62925a4041fd5aea27ef4d019c77b4d",
+      "strip_prefix" : "sraoss-pg_ivm-42a5bcd",
+      "commit" : "42a5bcd24e1f40fdd5f6cedfdcf785e9e3f53745",
+      "short_commit" : "42a5bcd"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.9.1" : {
+        "default_version" : "1.9",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.9.0" : {
+        "default_version" : "1.9",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.8.0" : {
+        "default_version" : "1.8",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.5.1" : {
+        "default_version" : "1.5",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.4.1" : {
+        "default_version" : "1.4",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.13.0" : {
+        "default_version" : "1.13",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.12.0" : {
+        "default_version" : "1.12",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.11.0" : {
+        "default_version" : "1.11",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.10.0" : {
+        "default_version" : "1.10",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "incremental view maintenance on PostgreSQL",
+        "module_pathname" : "$libdir/pg_ivm",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    }
+  },
+  "version" : 1
+}

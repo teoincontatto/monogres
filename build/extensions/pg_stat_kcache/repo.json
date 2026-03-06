@@ -1,0 +1,718 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/powa-team/pg_stat_kcache/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.3.1" : {
+      "tag" : "REL2_3_1",
+      "sha256" : "42e96639e8daed54a15751efca3d6cbf4518de4e1a0f2c90846db549bcb8fdb3",
+      "strip_prefix" : "powa-team-pg_stat_kcache-2f1a1f5",
+      "commit" : "2f1a1f53f1bf50452afae8450f99839e01eb6617",
+      "short_commit" : "2f1a1f5"
+    },
+    "2.3.0" : {
+      "tag" : "REL2_3_0",
+      "sha256" : "89acad9c4beee9308a9066aec933b9b25f96010c13d405b20dee0a732e7e0977",
+      "strip_prefix" : "powa-team-pg_stat_kcache-9c0d039",
+      "commit" : "9c0d0392fb08f3464fad3a334379a2b844ef0fe0",
+      "short_commit" : "9c0d039"
+    },
+    "2.2.3" : {
+      "tag" : "REL2_2_3",
+      "sha256" : "31b1a50d52b64ff00bbf47999282d5bd887c0715cfee9f0b4ddbbffa9782167e",
+      "strip_prefix" : "powa-team-pg_stat_kcache-44f0c7e",
+      "commit" : "44f0c7e079b7056a3174ef9515fdfc594fd196e4",
+      "short_commit" : "44f0c7e"
+    },
+    "2.2.2" : {
+      "tag" : "REL2_2_2",
+      "sha256" : "b9f726d975dca0b1eac7281a03c3a0cec3329840f2adee2c0f3e250b5514495e",
+      "strip_prefix" : "powa-team-pg_stat_kcache-da8cfa9",
+      "commit" : "da8cfa90b3f7c76b8fe0e95811bbe7d6cc5e3b7e",
+      "short_commit" : "da8cfa9"
+    },
+    "2.2.1" : {
+      "tag" : "REL2_2_1",
+      "sha256" : "28bbbf02b71b81e01ff091d7790fd7d4c6880dc48a030ae8cfc31642dc284949",
+      "strip_prefix" : "powa-team-pg_stat_kcache-08a2f0f",
+      "commit" : "08a2f0f05ec42d08bda21805e88cc098c729b700",
+      "short_commit" : "08a2f0f"
+    },
+    "2.2.0" : {
+      "tag" : "REL2_2_0",
+      "sha256" : "29bfe0ced4945bc8ef11b6ceae59d4e4240d8d3ddff81893f476b5ff790ba527",
+      "strip_prefix" : "powa-team-pg_stat_kcache-2614537",
+      "commit" : "26145374a11ba651cb1858423c42ec1b0080253f",
+      "short_commit" : "2614537"
+    },
+    "2.1.3" : {
+      "tag" : "REL2_1_3",
+      "sha256" : "408a5c48dd3b109795669b2038156d33f8c4968f6ce93f28e20fe946190d0838",
+      "strip_prefix" : "powa-team-pg_stat_kcache-f27600f",
+      "commit" : "f27600f422037f1913aaf541d03dcba64b26d2ec",
+      "short_commit" : "f27600f"
+    },
+    "2.1.2" : {
+      "tag" : "REL2_1_2",
+      "sha256" : "14ac5ba9dfb8ba3c3246163dcad90493e6fa2f9032f245f9c946660da7e0fffb",
+      "strip_prefix" : "powa-team-pg_stat_kcache-9fbb2c6",
+      "commit" : "9fbb2c6b5f30502e4f4798fdd37f0c1c3500a860",
+      "short_commit" : "9fbb2c6"
+    },
+    "2.1.1" : {
+      "tag" : "REL2_1_1",
+      "sha256" : "bf1908f030218bf321e031a883a759c4e8771906f7495ff226f196aa7d2c6e76",
+      "strip_prefix" : "powa-team-pg_stat_kcache-e47d5e7",
+      "commit" : "e47d5e71d8ae0640695995550595e7ec107bfbb0",
+      "short_commit" : "e47d5e7"
+    },
+    "2.1.0" : {
+      "tag" : "REL2_1_0",
+      "sha256" : "4fe66e971e2a25d914c810694a6f06ca0957d6cdd03849db6a6e5d13df122f7d",
+      "strip_prefix" : "powa-team-pg_stat_kcache-bcb2480",
+      "commit" : "bcb2480dc0bd07da0aec3fae10ad3a723c55a85b",
+      "short_commit" : "bcb2480"
+    },
+    "2.0.3" : {
+      "tag" : "REL2_0_3",
+      "sha256" : "100c449fed8bd09bb2d7e2fe5ec0a58447bf5ae7233bb1427e0233d313d57ac8",
+      "strip_prefix" : "powa-team-pg_stat_kcache-0a690e1",
+      "commit" : "0a690e13bc3a586a3c84e02a856a181b59d60688",
+      "short_commit" : "0a690e1"
+    },
+    "2.0.2" : {
+      "tag" : "REL2_0_2",
+      "sha256" : "34e4631fac044774f48ceb560e847d19d215bdc68e4548a42e899063d8358f49",
+      "strip_prefix" : "powa-team-pg_stat_kcache-4080aca",
+      "commit" : "4080acaf89983925fe1e718a44889bbefc0d006a",
+      "short_commit" : "4080aca"
+    },
+    "2.0.1" : {
+      "tag" : "REL2_0_1",
+      "sha256" : "89c484472aeb85db8b5419b480b8ea28af0f4f0f05f674d744bad7c492dd80f1",
+      "strip_prefix" : "powa-team-pg_stat_kcache-8eecb91",
+      "commit" : "8eecb91e889d45f7cff7fbc601e19a0c93050e7e",
+      "short_commit" : "8eecb91"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.3.1" : {
+        "default_version" : "2.3.1",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "2.3.0",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.3" : {
+        "default_version" : "2.2.3",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.2" : {
+        "default_version" : "2.2.2",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.1" : {
+        "default_version" : "2.2.1",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "2.2.0",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.3" : {
+        "default_version" : "2.1.3",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.2" : {
+        "default_version" : "2.1.2",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "2.1.1",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.3" : {
+        "default_version" : "2.0.3",
+        "comment" : "Kernel statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "Kernel cache statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.1",
+        "comment" : "Kernel cache statistics gathering",
+        "module_pathname" : "$libdir/pg_stat_kcache",
+        "requires" : [ "pg_stat_statements" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "2.3.1" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.3.0" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.2.3" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.2.2" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.2.1" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.2.0" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.1.3" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.1.2" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.1.1" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.1.0" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <rjuju123@gmail.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/powa-team/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/powa-team/pg_stat_kcache.git",
+            "web" : "http://github.com/powa-team/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.0.3" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/pg_stat_kcache.git",
+            "web" : "http://github.com/dalibo/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.0.2" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/pg_stat_kcache.git",
+            "web" : "http://github.com/dalibo/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      },
+      "2.0.1" : {
+        "name" : "pg_stat_kcache",
+        "abstract" : "An extension gathering CPU and disk acess statistics",
+        "version" : "__VERSION__",
+        "maintainer" : "Julien Rouhaud <julien.rouhaud@dalibo.com>",
+        "license" : "postgresql",
+        "release_status" : "stable",
+        "provides" : {
+          "pg_stat_kcache" : {
+            "abstract" : "An extension gathering CPU and disk acess statistics",
+            "file" : "pg_stat_kcache.sql",
+            "docfile" : "README.rst",
+            "version" : "__VERSION__"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/dalibo/pg_stat_kcache/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/dalibo/pg_stat_kcache.git",
+            "web" : "http://github.com/dalibo/pg_stat_kcache/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Julien Rouhaud",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "monitoring", "CPU", "disk" ]
+      }
+    }
+  },
+  "version" : 1
+}

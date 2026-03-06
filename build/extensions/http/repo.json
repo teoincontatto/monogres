@@ -1,0 +1,647 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pramsey/pgsql-http/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "aca4d0ae3cb92eb3e270315fa947ebe7239226b7a47c1c6d1c3f0fa1ecebd7ff",
+      "strip_prefix" : "pramsey-pgsql-http-fbea6fe",
+      "commit" : "fbea6fe46c9e1db5a18103606ec00a9809e91d11",
+      "short_commit" : "fbea6fe"
+    },
+    "1.6.3" : {
+      "tag" : "v1.6.3",
+      "sha256" : "46d7af2eac33ddd05502888e95eeff0dd685323dd6f3f6b3671ba7c4d8685041",
+      "strip_prefix" : "pramsey-pgsql-http-865e72b",
+      "commit" : "865e72b328050bc8d1bf8bd2f982edb7a4eb4e26",
+      "short_commit" : "865e72b"
+    },
+    "1.6.2" : {
+      "tag" : "v1.6.2",
+      "sha256" : "51a5e8cf7a5e0d1cf96bb560e1c6d0da37750b2294d62afff8a00cbbcb689cdd",
+      "strip_prefix" : "pramsey-pgsql-http-9ae0520",
+      "commit" : "9ae0520269721d1b2c902ed6191b08b517e6cbae",
+      "short_commit" : "9ae0520"
+    },
+    "1.6.1" : {
+      "tag" : "v1.6.1",
+      "sha256" : "c6ba5a0a748389e51bae364a18621a8b49b1e1b1068b4d6b9d1895f3a19e03c8",
+      "strip_prefix" : "pramsey-pgsql-http-5e2bd27",
+      "commit" : "5e2bd270a9ce2b0e8e1fdf8e46b85396bd4125cd",
+      "short_commit" : "5e2bd27"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "31715b510d6cd2030585edce00bb9a1877da9e53f5c23ba0e5f882297759dee2",
+      "strip_prefix" : "pramsey-pgsql-http-d0ca28d",
+      "commit" : "d0ca28df6121f10cd3868744d219904c7923c5be",
+      "short_commit" : "d0ca28d"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "833b4d089087e551603274ca4ee2e67ba9206a0dd80760ea5f6ae4c3a29e44c4",
+      "strip_prefix" : "pramsey-pgsql-http-5ea01c9",
+      "commit" : "5ea01c9299048047faa8614f9573a54ba4ba5ed7",
+      "short_commit" : "5ea01c9"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "56aae489e0381912c39dbe52579bfdd71c26dd8e23a8a3e07e082f162471e460",
+      "strip_prefix" : "pramsey-pgsql-http-08fdaf0",
+      "commit" : "08fdaf0057081009371fad2a9ad2e1a1056d028e",
+      "short_commit" : "08fdaf0"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "b420746c05d2b9867d56cc6dfe6ed8003b29ab601f750282b30b1c3bbada6898",
+      "strip_prefix" : "pramsey-pgsql-http-68396fe",
+      "commit" : "68396fe0f6ca050e146d977c70487b661c517b0f",
+      "short_commit" : "68396fe"
+    },
+    "1.3.1" : {
+      "tag" : "v1.3.1",
+      "sha256" : "3149d22de98348a1dbeeb6950681033c0a464ace06b5e0cb20444d6dec4d171a",
+      "strip_prefix" : "pramsey-pgsql-http-7aaa152",
+      "commit" : "7aaa1527df4d975195b9ee452846d57d5a7f9c81",
+      "short_commit" : "7aaa152"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "802f868a1e148556c092fc2881eea82ce55ae37ca537ccbd682bf8bba348d552",
+      "strip_prefix" : "pramsey-pgsql-http-9b9fe36",
+      "commit" : "9b9fe36183cd63db0752fcb23d292754b6f37919",
+      "short_commit" : "9b9fe36"
+    },
+    "1.2.4" : {
+      "tag" : "v1.2.4",
+      "sha256" : "46686b30b60dc2575b516608a4624abb6eda6405ca8b4697ae9fdc671c4931da",
+      "strip_prefix" : "pramsey-pgsql-http-446a2a8",
+      "commit" : "446a2a8ab159ade01b9f963ebc5c84a2f21f4eb1",
+      "short_commit" : "446a2a8"
+    },
+    "1.2.3" : {
+      "tag" : "v1.2.3",
+      "sha256" : "b1f00868a76a3db3daf85949f60272a7719c8f36cf348b09a4f4ce140f67d775",
+      "strip_prefix" : "pramsey-pgsql-http-2a558f9",
+      "commit" : "2a558f91d6c727b945d77688a3a01909dd042d4b",
+      "short_commit" : "2a558f9"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "427f2af0e56ec0bb3105f72896809bac91a59e0cc5cc1d5356ed5c29582a33b5",
+      "strip_prefix" : "pramsey-pgsql-http-c211356",
+      "commit" : "c2113560acbae0ab70549c70375101d69f8851fc",
+      "short_commit" : "c211356"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "0573c72355f5dab2e6991d8c05973a108c6532d90dba43dd57de934f74f38b2e",
+      "strip_prefix" : "pramsey-pgsql-http-2c6b9a9",
+      "commit" : "2c6b9a955236e10d6ab5d0e777783eca51238be2",
+      "short_commit" : "2c6b9a9"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "0ad3ef72d18e9fd3d4dc19fca288689bb044cfb14370cb18defc7b5c61211517",
+      "strip_prefix" : "pramsey-pgsql-http-cadf62d",
+      "commit" : "cadf62daf4c81b6b4831158973d0e6c9c03f52f9",
+      "short_commit" : "cadf62d"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "049d131fbb5d936661e7b456f3667ac63ed8e5c248c54d8bfc000fa18f2098ff",
+      "strip_prefix" : "pramsey-pgsql-http-ff4003d",
+      "commit" : "ff4003d47bb23f2f7918624b0fdb3e837d45a1ad",
+      "short_commit" : "ff4003d"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "2965a62864f17a0c5903e93f0b881a3c455ddb82195e5a9ef4b7fe3c029a6114",
+      "strip_prefix" : "pramsey-pgsql-http-95e31ba",
+      "commit" : "95e31ba129c1070a23e803ffc07f662683511c4b",
+      "short_commit" : "95e31ba"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "98713b9ce94fdbdef9eede2351010154ebb8f39475c6fffbe7be063c53d762a7",
+      "strip_prefix" : "pramsey-pgsql-http-6a450cd",
+      "commit" : "6a450cd5fcf939d3b458882825b2c0006c4ecbf5",
+      "short_commit" : "6a450cd"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.3" : {
+        "default_version" : "1.6",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.2" : {
+        "default_version" : "1.6",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.1" : {
+        "default_version" : "1.6",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.1" : {
+        "default_version" : "1.4",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.3.1" : {
+        "default_version" : "1.3",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.4" : {
+        "default_version" : "1.2",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "1.1",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+        "module_pathname" : "$libdir/http",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.7.0" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.7.0",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.7.sql",
+            "docfile" : "README.md",
+            "version" : "1.7.0",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.6.3" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.6.1",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.6.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.1",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.6.2" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.6.1",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.6.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.1",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.6.1" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.6.1",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.6.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.1",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.6.0" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.6.0",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.6.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.0",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.5.0" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.5.0",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.5.sql",
+            "docfile" : "README.md",
+            "version" : "1.5.0",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.4.1" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.4.0",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.4.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.0",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      },
+      "1.4.0" : {
+        "name" : "http",
+        "abstract" : "HTTP client for PostgreSQL",
+        "description" : "HTTP allows you to get the content of a web page in a SQL function call.",
+        "version" : "1.4.0",
+        "maintainer" : [ "Paul Ramsey <pramsey@cleverelephant.ca>" ],
+        "license" : {
+          "mit" : "http://en.wikipedia.org/wiki/MIT_License"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.1.3"
+            }
+          }
+        },
+        "provides" : {
+          "http" : {
+            "file" : "http--1.4.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.0",
+            "abstract" : "HTTP client for PostgreSQL"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pramsey/pgsql-http/",
+          "bugtracker" : {
+            "web" : "https://github.com/pramsey/pgsql-http/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pramsey/pgsql-http.git",
+            "web" : "https://github.com/pramsey/pgsql-http/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul Ramsey",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "http", "curl", "web" ]
+      }
+    }
+  },
+  "version" : 1
+}

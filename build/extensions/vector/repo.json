@@ -1,0 +1,2057 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgvector/pgvector/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.8.2" : {
+      "tag" : "v0.8.2",
+      "sha256" : "afcd3604890ae4d11cc7ddb2a0b5a28e9f38dd8b44919a4641e5cceb64e1b95e",
+      "strip_prefix" : "pgvector-pgvector-cab9da7",
+      "commit" : "cab9da72c04353f143bb06b42ab70a403daac64a",
+      "short_commit" : "cab9da7"
+    },
+    "0.8.1" : {
+      "tag" : "v0.8.1",
+      "sha256" : "2e427087c5dec784580f52154c00628f6008f34962c713f2f958406bed55b723",
+      "strip_prefix" : "pgvector-pgvector-778dacf",
+      "commit" : "778dacf20c07caf904557a88705142631818d8cb",
+      "short_commit" : "778dacf"
+    },
+    "0.8.0" : {
+      "tag" : "v0.8.0",
+      "sha256" : "139056d3747ef09da7208c163336dc8755a9669bd8640de45c59e97ca9be0493",
+      "strip_prefix" : "pgvector-pgvector-2627c5f",
+      "commit" : "2627c5ff775ae6d7aef0c430121ccf857842d2f2",
+      "short_commit" : "2627c5f"
+    },
+    "0.7.4" : {
+      "tag" : "v0.7.4",
+      "sha256" : "96b17db0ae639f94f0e67adacfb6469014ae356f0cfe151f1434a6de34e8938f",
+      "strip_prefix" : "pgvector-pgvector-103ac50",
+      "commit" : "103ac50f1a90b47a72003e8e8628a55ec372f202",
+      "short_commit" : "103ac50"
+    },
+    "0.7.3" : {
+      "tag" : "v0.7.3",
+      "sha256" : "76f25efb7286bfc2a9bae206a99685c48e37db561df14a52951b12e361ee2dc2",
+      "strip_prefix" : "pgvector-pgvector-4733cf2",
+      "commit" : "4733cf253b4eff5cc492998b29f099bb304e85a7",
+      "short_commit" : "4733cf2"
+    },
+    "0.7.2" : {
+      "tag" : "v0.7.2",
+      "sha256" : "306905eaf98dbea459cf13a7eeedc8bac2e25a039cf5115d727b1629a48ff075",
+      "strip_prefix" : "pgvector-pgvector-9b89bed",
+      "commit" : "9b89bed70191283585a8ca2753ad08dac38608ef",
+      "short_commit" : "9b89bed"
+    },
+    "0.7.1" : {
+      "tag" : "v0.7.1",
+      "sha256" : "9c14b15a926497092b6afa2a22c0686a7489b61664222dd7b9f8737ffb537085",
+      "strip_prefix" : "pgvector-pgvector-0eceaa3",
+      "commit" : "0eceaa39662bdcf00925995816f4c176e6be3fec",
+      "short_commit" : "0eceaa3"
+    },
+    "0.7.0" : {
+      "tag" : "v0.7.0",
+      "sha256" : "722875fa346a7fb8e7ae838e69c9bbd9b81da2c0898db2d4f26d1e446f53dd3f",
+      "strip_prefix" : "pgvector-pgvector-3849f0f",
+      "commit" : "3849f0fd3d6f7916de26d43e3a3c9f8e6615bc8f",
+      "short_commit" : "3849f0f"
+    },
+    "0.6.2" : {
+      "tag" : "v0.6.2",
+      "sha256" : "032cdaf1b0b64d881065f1a95d1859b277190164836297d6abc87c6c3a6dd183",
+      "strip_prefix" : "pgvector-pgvector-96ff19b",
+      "commit" : "96ff19be4487a843fa96f8801afcfdd49ac3eeac",
+      "short_commit" : "96ff19b"
+    },
+    "0.6.1" : {
+      "tag" : "v0.6.1",
+      "sha256" : "212bd999dadd6d85f09fde02f487afd1660bb135078763c7f8b8558c385c9957",
+      "strip_prefix" : "pgvector-pgvector-c6ddf62",
+      "commit" : "c6ddf62a29f4790d386a60f9826583d2a228ef68",
+      "short_commit" : "c6ddf62"
+    },
+    "0.6.0" : {
+      "tag" : "v0.6.0",
+      "sha256" : "b702799214e7b30bc5f9ba437655193dbbca9db402968db386f027aa20d09466",
+      "strip_prefix" : "pgvector-pgvector-281d4fc",
+      "commit" : "281d4fcf60e2f037fa09d62be2543bb4d7511f2b",
+      "short_commit" : "281d4fc"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5.1",
+      "sha256" : "c0475a04730f2294ff5270420ad05437c04cc6ba751d50cb994ab6397ff61c41",
+      "strip_prefix" : "pgvector-pgvector-e630efd",
+      "commit" : "e630efd195c563496c3550abb1817303586ee46d",
+      "short_commit" : "e630efd"
+    },
+    "0.5.0" : {
+      "tag" : "v0.5.0",
+      "sha256" : "f5a5a792347e92882b0bcc01b202f4efcdbf9f3dd9b29bbf33e376f79a2ed336",
+      "strip_prefix" : "pgvector-pgvector-3913432",
+      "commit" : "391343230312d3493c4c23f86f10014f7858c9e6",
+      "short_commit" : "3913432"
+    },
+    "0.4.4" : {
+      "tag" : "v0.4.4",
+      "sha256" : "796c88cc787737ddf8d3d7e6427a92b22574e1ffe46c4bb8182100b158c360bc",
+      "strip_prefix" : "pgvector-pgvector-1982121",
+      "commit" : "1982121694f7b4eeb206ee6d8dcd03b8b1316f13",
+      "short_commit" : "1982121"
+    },
+    "0.4.3" : {
+      "tag" : "v0.4.3",
+      "sha256" : "925246a974be69dd8964fc3a3e68f4b11413e8f7bf0b3e20b4135808a758f5e9",
+      "strip_prefix" : "pgvector-pgvector-a7bbb07",
+      "commit" : "a7bbb0772de9cfdef70d1ff5e96d1f258d761ef2",
+      "short_commit" : "a7bbb07"
+    },
+    "0.4.2" : {
+      "tag" : "v0.4.2",
+      "sha256" : "4c8a99773831b6b609ae5e6dbc9c99b94f54cff40e695e24ed1fd395115be093",
+      "strip_prefix" : "pgvector-pgvector-69672cd",
+      "commit" : "69672cd84d64409d7f790f284b8a3202c5542949",
+      "short_commit" : "69672cd"
+    },
+    "0.4.1" : {
+      "tag" : "v0.4.1",
+      "sha256" : "526c7470933a936061105b00e4667010963525b9a8a3e18b7fc7794efbd396a6",
+      "strip_prefix" : "pgvector-pgvector-fac8b9c",
+      "commit" : "fac8b9c8d9bf78fb2111d597a67d701c8c565c7c",
+      "short_commit" : "fac8b9c"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4.0",
+      "sha256" : "105529b71797d6cb6d184b97081c6c17d1042e2290b04e32612f72e0ac893da0",
+      "strip_prefix" : "pgvector-pgvector-25d6747",
+      "commit" : "25d674772189992b51e9c9ee2a4f9550f2805910",
+      "short_commit" : "25d6747"
+    },
+    "0.3.2" : {
+      "tag" : "v0.3.2",
+      "sha256" : "36b3b8dc7b73824285d2f5d4cdddc6677b7bfabf4ad00e32024f63088ed22a3b",
+      "strip_prefix" : "pgvector-pgvector-a7f712b",
+      "commit" : "a7f712b5a4724cfe55e2793dd1a4b7d48257fa1e",
+      "short_commit" : "a7f712b"
+    },
+    "0.3.1" : {
+      "tag" : "v0.3.1",
+      "sha256" : "9361d0a929f8d09f84193b4bc19b236b96b22d5ca6387ae8aa3b8ec6c87d28ae",
+      "strip_prefix" : "pgvector-pgvector-2d8b7e5",
+      "commit" : "2d8b7e5f817334407c4cb3d6b0cac1efd40bbb24",
+      "short_commit" : "2d8b7e5"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "4259bbd12085392751e7c6e366ba481f99e98c4949196036664ed07629d90ab2",
+      "strip_prefix" : "pgvector-pgvector-5af7687",
+      "commit" : "5af768752f02cb32ca3f1b924640132dde9f2c69",
+      "short_commit" : "5af7687"
+    },
+    "0.2.7" : {
+      "tag" : "v0.2.7",
+      "sha256" : "7fd8255c4958790f5ad716feda4adbd0226b2909bdd295c976806277d2dd2922",
+      "strip_prefix" : "pgvector-pgvector-434dc90",
+      "commit" : "434dc904c113d44606eb237010b3efc29d6ccd46",
+      "short_commit" : "434dc90"
+    },
+    "0.2.6" : {
+      "tag" : "v0.2.6",
+      "sha256" : "5c398d02cc9b186a8fd16cfde1f926bcb938b4c1fa8a2a639597f966df95fc32",
+      "strip_prefix" : "pgvector-pgvector-56cb5f3",
+      "commit" : "56cb5f35036e0585f849454b0093cbc2d65d6015",
+      "short_commit" : "56cb5f3"
+    },
+    "0.2.5" : {
+      "tag" : "v0.2.5",
+      "sha256" : "5bb5a164dba90101f39ee3b9566c60df5051af197121a18e083f191bc7fa0bc5",
+      "strip_prefix" : "pgvector-pgvector-2f52127",
+      "commit" : "2f52127bee3c802426e865f00ea5b9f66bbcad58",
+      "short_commit" : "2f52127"
+    },
+    "0.2.4" : {
+      "tag" : "v0.2.4",
+      "sha256" : "fd2a01fa3ab89b07d1e299a2d11b560f423472f5e707195a2f6994060d182013",
+      "strip_prefix" : "pgvector-pgvector-12bc4eb",
+      "commit" : "12bc4eb0366f6005d2941149976726907941edaa",
+      "short_commit" : "12bc4eb"
+    },
+    "0.2.3" : {
+      "tag" : "v0.2.3",
+      "sha256" : "7218fb0a9424f7926f8431015200e92a8ea34e8704aa37b5e3f549f2046fc593",
+      "strip_prefix" : "pgvector-pgvector-e14fa82",
+      "commit" : "e14fa82626bc10539a1fc8b5b6771a8845030127",
+      "short_commit" : "e14fa82"
+    },
+    "0.2.2" : {
+      "tag" : "v0.2.2",
+      "sha256" : "c7b6f34bfa02c248710eff800b164b117ef67172184d256006d0149a3e4c89e9",
+      "strip_prefix" : "pgvector-pgvector-ddd873f",
+      "commit" : "ddd873f36901c6ef8953b424316c04ebb6400bb2",
+      "short_commit" : "ddd873f"
+    },
+    "0.2.1" : {
+      "tag" : "v0.2.1",
+      "sha256" : "f99b320f71581ff5e48aa83488c315444334aea771db1d6f7b15988c13d69c1e",
+      "strip_prefix" : "pgvector-pgvector-647c900",
+      "commit" : "647c9002be2c96830ef0763c865abef4f91f85db",
+      "short_commit" : "647c900"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "9d226022058a23db78f2c218b0ebaec3400d36db2a41992ca92dbca50636c89f",
+      "strip_prefix" : "pgvector-pgvector-fd93c9d",
+      "commit" : "fd93c9db863d6c0cf037beb79ae7d28f68499763",
+      "short_commit" : "fd93c9d"
+    },
+    "0.1.8" : {
+      "tag" : "v0.1.8",
+      "sha256" : "d087245f4181f06816de250fe5dfc659805f6a3d06aa2bc70eebb8247d7b6811",
+      "strip_prefix" : "pgvector-pgvector-9c20f04",
+      "commit" : "9c20f04a11a339dd8a12c9f8dd80b372461ae14a",
+      "short_commit" : "9c20f04"
+    },
+    "0.1.7" : {
+      "tag" : "v0.1.7",
+      "sha256" : "dac5f3da54a0e5912c55279d1ba6f09a4934b52045facb5a95a63f42ca0f08e4",
+      "strip_prefix" : "pgvector-pgvector-ea1b094",
+      "commit" : "ea1b094d8ea2cb0e6c4acdc372e6056c8df27780",
+      "short_commit" : "ea1b094"
+    },
+    "0.1.6" : {
+      "tag" : "v0.1.6",
+      "sha256" : "6c4e7b18491792321765460dedcc2c97d28c6d05cd3d354062cfb574e6d644a4",
+      "strip_prefix" : "pgvector-pgvector-c957323",
+      "commit" : "c95732340adba1c62473b6ff6dbdd08bd5d1b66f",
+      "short_commit" : "c957323"
+    },
+    "0.1.5" : {
+      "tag" : "v0.1.5",
+      "sha256" : "c375fbca0c2f148130e3eb60b8c01df728edd5019765dbadb6094d7d75128d92",
+      "strip_prefix" : "pgvector-pgvector-60bc93f",
+      "commit" : "60bc93f9380cac8e2e206240ac165502fe798a76",
+      "short_commit" : "60bc93f"
+    },
+    "0.1.4" : {
+      "tag" : "v0.1.4",
+      "sha256" : "276e0025eec16d2abaf1a2d298cc09ca71fdb765c094f23c574d302855bfbfae",
+      "strip_prefix" : "pgvector-pgvector-4e0c1a1",
+      "commit" : "4e0c1a137cac6c6f40a62254badc910145ef865b",
+      "short_commit" : "4e0c1a1"
+    },
+    "0.1.3" : {
+      "tag" : "v0.1.3",
+      "sha256" : "de580f652ec1cf6a5396df6e431c5ee1be779a416472e7f493c5c5c7cad3a817",
+      "strip_prefix" : "pgvector-pgvector-38be81c",
+      "commit" : "38be81cf20c9e15595d8de3708aa824bfa63194a",
+      "short_commit" : "38be81c"
+    },
+    "0.1.2" : {
+      "tag" : "v0.1.2",
+      "sha256" : "a4edf1685a84bee06d81f384a35176f5337ca0ac1b8087e0ca3d20ac2563d84f",
+      "strip_prefix" : "pgvector-pgvector-88ba5da",
+      "commit" : "88ba5da6a7c7ac0e3cdc877f11eb980f21a7c8ef",
+      "short_commit" : "88ba5da"
+    },
+    "0.1.1" : {
+      "tag" : "v0.1.1",
+      "sha256" : "ae87b7f32fe5275b8d884aecb671b84cb29c95a57f7f5e24eb9606fad5ab28e1",
+      "strip_prefix" : "pgvector-pgvector-e0854e6",
+      "commit" : "e0854e6381e991299d61a33ce184843d606466a7",
+      "short_commit" : "e0854e6"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "26ccfef962d53330430c5612dd73db7b1fc9ec30e3d40cd7e1723871a782f111",
+      "strip_prefix" : "pgvector-pgvector-f2d881c",
+      "commit" : "f2d881cc478fd90f6e4ab6e27cbc53033ed94e42",
+      "short_commit" : "f2d881c"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.8.2" : {
+        "default_version" : "0.8.2",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.1" : {
+        "default_version" : "0.8.1",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.0" : {
+        "default_version" : "0.8.0",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.4" : {
+        "default_version" : "0.7.4",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.3" : {
+        "default_version" : "0.7.3",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.2" : {
+        "default_version" : "0.7.2",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.1" : {
+        "default_version" : "0.7.1",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.0" : {
+        "default_version" : "0.7.0",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.2" : {
+        "default_version" : "0.6.2",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.1" : {
+        "default_version" : "0.6.1",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.0" : {
+        "default_version" : "0.6.0",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.5.1",
+        "comment" : "vector data type and ivfflat and hnsw access methods",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.4" : {
+        "default_version" : "0.4.4",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.3" : {
+        "default_version" : "0.4.3",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.2" : {
+        "default_version" : "0.4.2",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.1" : {
+        "default_version" : "0.4.1",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.2" : {
+        "default_version" : "0.3.2",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.1" : {
+        "default_version" : "0.3.1",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.7" : {
+        "default_version" : "0.2.7",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.6" : {
+        "default_version" : "0.2.6",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.5" : {
+        "default_version" : "0.2.5",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.4" : {
+        "default_version" : "0.2.4",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.3" : {
+        "default_version" : "0.2.3",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.2" : {
+        "default_version" : "0.2.2",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.1" : {
+        "default_version" : "0.2.1",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.8" : {
+        "default_version" : "0.1.8",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.7" : {
+        "default_version" : "0.1.7",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.6" : {
+        "default_version" : "0.1.6",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.5" : {
+        "default_version" : "0.1.5",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.4" : {
+        "default_version" : "0.1.4",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.3" : {
+        "default_version" : "0.1.3",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.2" : {
+        "default_version" : "0.1.1",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.1" : {
+        "default_version" : "0.1.1",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "vector data type and ivfflat access method",
+        "module_pathname" : "$libdir/vector",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.8.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.8.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.8.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.8.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.8.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.8.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.8.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.8.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.8.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.7.4" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.7.4",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.4",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.7.3" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.7.3",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.3",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.7.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.7.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.7.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.7.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.7.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.7.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.6.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.6.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.6.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.6.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.6.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.6.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.5.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.5.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.5.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.5.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.4.4" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.4.4",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.4",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.4.3" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.4.3",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.3",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.4.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.4.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.4.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.4.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.4.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.4.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.3.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.3.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.3.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.3.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.3.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.3.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.3.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.3.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.3.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.7" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.7",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.7",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.6" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.6",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.6",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.5" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.5",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.5",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.4" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.4",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.4",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.3" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.3",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.3",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/pgvector/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/pgvector/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/pgvector/pgvector.git",
+            "web" : "https://github.com/pgvector/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.2" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.2",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.2",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.1" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.1",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.1",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.2.0" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.2.0",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.0",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.8" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.8",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.8",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.7" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.7",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.7",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.6" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.6",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.6",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.5" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.5",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.5",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.4" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.4",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.4",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      },
+      "0.1.3" : {
+        "name" : "vector",
+        "abstract" : "Open-source vector similarity search for Postgres",
+        "description" : "Supports L2 distance, inner product, and cosine distance",
+        "version" : "0.1.3",
+        "maintainer" : [ "Andrew Kane <andrew@ankane.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "vector" : {
+            "file" : "sql/vector.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.3",
+            "abstract" : "Open-source vector similarity search for Postgres"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://github.com/ankane/pgvector",
+          "bugtracker" : {
+            "web" : "https://github.com/ankane/pgvector/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ankane/pgvector.git",
+            "web" : "https://github.com/ankane/pgvector",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Andrew Kane",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "vectors", "datatype", "nearest neighbor search", "approximate nearest neighbors" ]
+      }
+    }
+  },
+  "version" : 1
+}

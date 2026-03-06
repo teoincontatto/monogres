@@ -1,0 +1,560 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/EnterpriseDB/repmgr/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "5.5.0+debpgdg" : {
+      "tag" : "v5.5.0+debpgdg",
+      "sha256" : "d847c650b6b62cadf3eaedda8e23ae00e55c5221c44b5c43fda9a0d679c799ae",
+      "strip_prefix" : "EnterpriseDB-repmgr-c0d9dc6",
+      "commit" : "c0d9dc6dac34c4cb60c3d8805842eed18cca4e85",
+      "short_commit" : "c0d9dc6"
+    },
+    "5.5.0" : {
+      "tag" : "v5.5.0",
+      "sha256" : "d847c650b6b62cadf3eaedda8e23ae00e55c5221c44b5c43fda9a0d679c799ae",
+      "strip_prefix" : "EnterpriseDB-repmgr-c0d9dc6",
+      "commit" : "c0d9dc6dac34c4cb60c3d8805842eed18cca4e85",
+      "short_commit" : "c0d9dc6"
+    },
+    "5.4.1" : {
+      "tag" : "v5.4.1",
+      "sha256" : "6d3c1f0a158db89b733ba839019a4652a63f18a3f130c55a1a8dccb5fdb7a153",
+      "strip_prefix" : "EnterpriseDB-repmgr-7a84e34",
+      "commit" : "7a84e34630956ee4c716079239c3502733e98757",
+      "short_commit" : "7a84e34"
+    },
+    "5.4.0" : {
+      "tag" : "v5.4.0",
+      "sha256" : "44061178dc01826f339582f5e1fd4960b7fc2690cbd8a8d76859a7f99d8e4730",
+      "strip_prefix" : "EnterpriseDB-repmgr-02d8e0c",
+      "commit" : "02d8e0c80845eb74e25c32af4fa2e801e7a80cce",
+      "short_commit" : "02d8e0c"
+    },
+    "5.3.3" : {
+      "tag" : "v5.3.3",
+      "sha256" : "2466ca9b1b0fb4480777cd6534231fcc3f1e97096667ceab1cf066515ba34b2d",
+      "strip_prefix" : "EnterpriseDB-repmgr-739bbe9",
+      "commit" : "739bbe9a5479ae8657e119116bf9ce74a327741e",
+      "short_commit" : "739bbe9"
+    },
+    "5.3.2" : {
+      "tag" : "v5.3.2",
+      "sha256" : "b4b77267006f6c9950b8f3d9079e11d380a89340a4ebdc8d6703a73f4018ebf7",
+      "strip_prefix" : "EnterpriseDB-repmgr-b6ba0c3",
+      "commit" : "b6ba0c3d454224403fb4f91182ccd49e3f6d8879",
+      "short_commit" : "b6ba0c3"
+    },
+    "5.3.1" : {
+      "tag" : "v5.3.1",
+      "sha256" : "7e28c28e6263738603dee833c5f289678850708808dea6f4b3cdb0c2c34b4ff2",
+      "strip_prefix" : "EnterpriseDB-repmgr-78cc278",
+      "commit" : "78cc278639241aa51ba7897ed26e995d0f27abec",
+      "short_commit" : "78cc278"
+    },
+    "5.3.0" : {
+      "tag" : "v5.3.0",
+      "sha256" : "724246734d60a2fd7ff1839269f24e0b4ebbb61763e5569a9df52af392463a9d",
+      "strip_prefix" : "EnterpriseDB-repmgr-70c79ae",
+      "commit" : "70c79aeaecad231dc90cee5e749b8f0c9522fd41",
+      "short_commit" : "70c79ae"
+    },
+    "5.2.1" : {
+      "tag" : "v5.2.1",
+      "sha256" : "a72c14e6cf27cd4ae3b34c7e09ca929a2fbf516e97b90e8874611425d3940b0d",
+      "strip_prefix" : "EnterpriseDB-repmgr-54851e8",
+      "commit" : "54851e8df18df0b561cd27c16183b29b02d12fec",
+      "short_commit" : "54851e8"
+    },
+    "5.2.0" : {
+      "tag" : "v5.2.0",
+      "sha256" : "da2da376fcd5cd945a488b068dd4e4bb12b414aa2cb934ffd6832c932bd511d6",
+      "strip_prefix" : "EnterpriseDB-repmgr-0fb3432",
+      "commit" : "0fb343239829f098793238ce120cfb7ba99becb1",
+      "short_commit" : "0fb3432"
+    },
+    "5.1.0" : {
+      "tag" : "v5.1.0",
+      "sha256" : "82c3c5f6452baa33c076700b95f07b00189ff5350df4bcc0120872a6393b8a96",
+      "strip_prefix" : "EnterpriseDB-repmgr-374f196",
+      "commit" : "374f19675da40e1b9063acb03384973ca0b06c38",
+      "short_commit" : "374f196"
+    },
+    "5.0.0" : {
+      "tag" : "v5.0.0",
+      "sha256" : "2f723861dcc72c946d42c0c450e375451cf2b2e66f822d84121f7d8c40277061",
+      "strip_prefix" : "EnterpriseDB-repmgr-39003be",
+      "commit" : "39003be5a32abb483b29b597db4e33b0fdc15d03",
+      "short_commit" : "39003be"
+    },
+    "4.4.0" : {
+      "tag" : "v4.4.0",
+      "sha256" : "a56e3073e5174edce62441c77147c8bc42114baa679f062c8950517579774753",
+      "strip_prefix" : "EnterpriseDB-repmgr-40b6c92",
+      "commit" : "40b6c92129d56a4649ba5319e49b56018a35b9bb",
+      "short_commit" : "40b6c92"
+    },
+    "4.3.1" : {
+      "tag" : "v4.3.1",
+      "sha256" : "011d6b93f6464d43bdfeb31e2b3b00cb4449f8be7c876670648e6b713da89ee2",
+      "strip_prefix" : "EnterpriseDB-repmgr-ef382df",
+      "commit" : "ef382dfede89076832ac33a01d0983947ef69222",
+      "short_commit" : "ef382df"
+    },
+    "4.3.0" : {
+      "tag" : "v4.3.0",
+      "sha256" : "5956ebc1b648795b96831067a009496d80db5fce5463c7989407367c7945d806",
+      "strip_prefix" : "EnterpriseDB-repmgr-b4ca685",
+      "commit" : "b4ca6851abde08431d9f7455289a5c403f6c161b",
+      "short_commit" : "b4ca685"
+    },
+    "4.2.0" : {
+      "tag" : "v4.2.0",
+      "sha256" : "306253f5adb0538645f0920fe8cd5f7fcf9229ee8f4f3c7b2df0efe37e1c4eba",
+      "strip_prefix" : "EnterpriseDB-repmgr-0cafeb3",
+      "commit" : "0cafeb3828c3a9fb3b4f141a336b0711a1304134",
+      "short_commit" : "0cafeb3"
+    },
+    "4.1.1" : {
+      "tag" : "v4.1.1",
+      "sha256" : "1ce49be72e5a16db8bd3d4631b514e186de7a7aa94604dbe7754b8085529ccce",
+      "strip_prefix" : "EnterpriseDB-repmgr-31a49ff",
+      "commit" : "31a49ff781f6810152eca9420c39c077e19085e9",
+      "short_commit" : "31a49ff"
+    },
+    "4.1.0" : {
+      "tag" : "v4.1.0",
+      "sha256" : "06160ce5434453375c3828157d94f7b1434ea9e12ea809cf6b27f35b0b106309",
+      "strip_prefix" : "EnterpriseDB-repmgr-db4199e",
+      "commit" : "db4199e08fb7e3a2a0ca948701c29cb92d25bd78",
+      "short_commit" : "db4199e"
+    },
+    "4.0.6" : {
+      "tag" : "v4.0.6",
+      "sha256" : "8cc7e7d7a1c2d48bc9b0c553915f924151b1808cc24640249cc88c300b1be350",
+      "strip_prefix" : "EnterpriseDB-repmgr-afdaf9b",
+      "commit" : "afdaf9be66165898236cf68129d38c070a38e0b4",
+      "short_commit" : "afdaf9b"
+    },
+    "4.0.5" : {
+      "tag" : "v4.0.5",
+      "sha256" : "84d7c6cc95f532ded26b1b2d380bdedc347b76ad27999fc1709f27a48dc3ce4e",
+      "strip_prefix" : "EnterpriseDB-repmgr-cb1bf89",
+      "commit" : "cb1bf892e6f9cfc13a1acebc2595eba37d9c1a10",
+      "short_commit" : "cb1bf89"
+    },
+    "4.0.4" : {
+      "tag" : "v4.0.4",
+      "sha256" : "11cf522874d93d579d980bdb7a87e271760105ff43d7878d7442e685fcbf9943",
+      "strip_prefix" : "EnterpriseDB-repmgr-b17993a",
+      "commit" : "b17993abdb473908096f9e345ca0b94225f0bb88",
+      "short_commit" : "b17993a"
+    },
+    "4.0.3" : {
+      "tag" : "v4.0.3",
+      "sha256" : "0d7d47e721f4fceb756c8277a5bccc5746c17835df9a3ff8a7108d47b921742d",
+      "strip_prefix" : "EnterpriseDB-repmgr-a823233",
+      "commit" : "a8232337d83f519ea693f29840c59a35d3e47920",
+      "short_commit" : "a823233"
+    },
+    "4.0.2" : {
+      "tag" : "v4.0.2",
+      "sha256" : "4c08e7fbba231d511939492b1c6144348c58aca8a3698c3af65a064758988c66",
+      "strip_prefix" : "EnterpriseDB-repmgr-d10f1f2",
+      "commit" : "d10f1f289e21665259a7bffd0e22f825eb35353a",
+      "short_commit" : "d10f1f2"
+    },
+    "4.0.1" : {
+      "tag" : "v4.0.1",
+      "sha256" : "d3b2bf4f6d778158d462c91ef84f8efc22d329157b5c0e846c26bf8864617014",
+      "strip_prefix" : "EnterpriseDB-repmgr-38d2936",
+      "commit" : "38d293694d2b7392b44880d870733f443a113526",
+      "short_commit" : "38d2936"
+    },
+    "3.3.2" : {
+      "tag" : "v3.3.2",
+      "sha256" : "0712ec3e69db881bea393c1205d871a6cb3d4ce1e5d612e20dd863c4bf353ecb",
+      "strip_prefix" : "EnterpriseDB-repmgr-318f1da",
+      "commit" : "318f1dac40b6dcce77096425dd282bfc3f4cc354",
+      "short_commit" : "318f1da"
+    },
+    "3.3.1" : {
+      "tag" : "v3.3.1",
+      "sha256" : "120a913edad7e8f276c4024a39815e0603c69fad5d6c355f862a228341e36ef3",
+      "strip_prefix" : "EnterpriseDB-repmgr-9c28d36",
+      "commit" : "9c28d3626badfdcb9c8fb7002e7f5c39901c4d4d",
+      "short_commit" : "9c28d36"
+    },
+    "3.3.0" : {
+      "tag" : "v3.3",
+      "sha256" : "63c972906d551c5f1cccfb8c088992f35c61063b5a17a667b03870486d882966",
+      "strip_prefix" : "EnterpriseDB-repmgr-b6cf22a",
+      "commit" : "b6cf22ac90eb11d4cdcd962a9f5e9ba16d9c885f",
+      "short_commit" : "b6cf22a"
+    },
+    "3.2.1" : {
+      "tag" : "v3.2.1",
+      "sha256" : "4517234fd8871abbb1b2d47187a8eae4dcd9f8db6416d337943cd1af7187e44f",
+      "strip_prefix" : "EnterpriseDB-repmgr-d4b8c03",
+      "commit" : "d4b8c034e9ba1604c1096bfbea7da426c2d75255",
+      "short_commit" : "d4b8c03"
+    },
+    "3.2.0" : {
+      "tag" : "v3.2",
+      "sha256" : "a74cfd128878bfc9214623d08c4acf9551e18c547daf1ac50c7e5a38a2abd10a",
+      "strip_prefix" : "EnterpriseDB-repmgr-fefa43e",
+      "commit" : "fefa43e3a62b7052cef851354c8e661546abb454",
+      "short_commit" : "fefa43e"
+    },
+    "3.1.5" : {
+      "tag" : "v3.1.5",
+      "sha256" : "d8b4410d2d3713cfbf58ad2099fa61ded359b84e42032e3a883185ba05264ac2",
+      "strip_prefix" : "EnterpriseDB-repmgr-1fe01e9",
+      "commit" : "1fe01e91685d621c889dafa1b3ed6679196be219",
+      "short_commit" : "1fe01e9"
+    },
+    "3.1.4" : {
+      "tag" : "v3.1.4",
+      "sha256" : "ee09de800d1f8fcefa5e7a836f06bc54b23de3e8c5edd538283294a9e4eae8ef",
+      "strip_prefix" : "EnterpriseDB-repmgr-e59b573",
+      "commit" : "e59b57376d1c2fea574b9b123b832cc328b17daf",
+      "short_commit" : "e59b573"
+    },
+    "3.1.3" : {
+      "tag" : "v3.1.3",
+      "sha256" : "5301c7c38e0594313c57c6887e75e93d31befd42a6c18a985667efae144fc019",
+      "strip_prefix" : "EnterpriseDB-repmgr-1689651",
+      "commit" : "16896510dc58fb03f2a90be8dd96259620afaa76",
+      "short_commit" : "1689651"
+    },
+    "3.1.2" : {
+      "tag" : "v3.1.2",
+      "sha256" : "bdb4b362d0a1e6687bd78f22978ae43104af1e9405eef6ba462d8b6309f9820e",
+      "strip_prefix" : "EnterpriseDB-repmgr-274a30e",
+      "commit" : "274a30efa53485dc2dd1240923fcf71fc5659d6e",
+      "short_commit" : "274a30e"
+    },
+    "3.1.1" : {
+      "tag" : "v3.1.1",
+      "sha256" : "805305a45b92c1495a958339d7a5c1fd790526339229a78318e74bbcdcbf1b83",
+      "strip_prefix" : "EnterpriseDB-repmgr-5ad674e",
+      "commit" : "5ad674edffee80a124217501c026a459e181cb58",
+      "short_commit" : "5ad674e"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1",
+      "sha256" : "4ad6d1cb2a13e3b86a730474fa18877b3792ae561ee0201d04b04c7ae70635fc",
+      "strip_prefix" : "EnterpriseDB-repmgr-c9c18d6",
+      "commit" : "c9c18d62164b1c431b963b28625541988e017737",
+      "short_commit" : "c9c18d6"
+    },
+    "3.0.3" : {
+      "tag" : "v3.0.3",
+      "sha256" : "f8058ea6ee195f5ddab7f39043c31e48733c26fd7ea502f139a9fc89497431bd",
+      "strip_prefix" : "EnterpriseDB-repmgr-310f3f3",
+      "commit" : "310f3f31f9477c4345aac4b946bec44beced6024",
+      "short_commit" : "310f3f3"
+    },
+    "3.0.2" : {
+      "tag" : "v3.0.2",
+      "sha256" : "0bc39e444736c5dc98d573949aee573e3889630d02513276b044d5c4a811a612",
+      "strip_prefix" : "EnterpriseDB-repmgr-2615cff",
+      "commit" : "2615cffeccb2c79097fd4b6729ec62e4d4d35563",
+      "short_commit" : "2615cff"
+    },
+    "3.0.1" : {
+      "tag" : "v3.0.1",
+      "sha256" : "7d4e157dd589d409f2019f679a837e50b0f9cd37b187bb2c99c1472c5525ce41",
+      "strip_prefix" : "EnterpriseDB-repmgr-bf4de71",
+      "commit" : "bf4de715238a57e0a11a268555be4c4f28f560d4",
+      "short_commit" : "bf4de71"
+    },
+    "3.0.0" : {
+      "tag" : "v3.0",
+      "sha256" : "0c737164c51ce50e33309fc0ab4e19055c65e6d1c0d89799b62df53a2e9132f1",
+      "strip_prefix" : "EnterpriseDB-repmgr-372f4f7",
+      "commit" : "372f4f7d3d67bf9eb1cec131c284b906689e10be",
+      "short_commit" : "372f4f7"
+    },
+    "2.0.3" : {
+      "tag" : "v2.0.3",
+      "sha256" : "6b777d28f8a9d170605c1d12e6f50173a288d58e06924373eedfc8da98154f12",
+      "strip_prefix" : "EnterpriseDB-repmgr-a492745",
+      "commit" : "a492745db15cf36a21d70a4c4313836ccda1e50e",
+      "short_commit" : "a492745"
+    },
+    "2.0.2" : {
+      "tag" : "v2.0.2",
+      "sha256" : "cd558b1432d1ebfc8879d6253d7d5371c68dc8fc082e2917263e934183b2f0ab",
+      "strip_prefix" : "EnterpriseDB-repmgr-51aa63c",
+      "commit" : "51aa63c8f9649e353809cb0285d3b4c50bdeb67a",
+      "short_commit" : "51aa63c"
+    },
+    "2.0.1" : {
+      "tag" : "v2.0.1",
+      "sha256" : "ceb9e59c8d5737256c6dfe2436401e65cbf87f3140456cedb22fefc73d151e8e",
+      "strip_prefix" : "EnterpriseDB-repmgr-47b7c4c",
+      "commit" : "47b7c4ce063be0da8e85d5f8cc6a3ac532725142",
+      "short_commit" : "47b7c4c"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "26d854248d529861d8527b65cd9d5479a7592f3407752a7a865e11479028e6cb",
+      "strip_prefix" : "EnterpriseDB-repmgr-069f9ff",
+      "commit" : "069f9ff2ed5a91638921d97223f9aa5cd26c5ab2",
+      "short_commit" : "069f9ff"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "9c27c6a99c8bbfefbabf99bcd37e86c34cf574ee315d2a028266ab62d688ec28",
+      "strip_prefix" : "EnterpriseDB-repmgr-efd50f1",
+      "commit" : "efd50f11ac2b9f8b80da46e2cf9d83c414763a24",
+      "short_commit" : "efd50f1"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "5a0a6d7ceeefd41dcfaedf4664296ea0d70357afbce8fe32b6aa653f1a22bbfd",
+      "strip_prefix" : "EnterpriseDB-repmgr-d36ee89",
+      "commit" : "d36ee899dc6f9c1b8d0bb4ca8cfc95e0f743217f",
+      "short_commit" : "d36ee89"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "a8f5196fab902918f7f7a14f0c55f4ef6ddb563120d8c00e7614d1de054d72e7",
+      "strip_prefix" : "EnterpriseDB-repmgr-4c792c8",
+      "commit" : "4c792c8013f5713589f53dbdb47721febf139a85",
+      "short_commit" : "4c792c8"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "f06f4e01d43d3fb4f6d03dc20e86a88c3ba4d8cc65c4dbd419c0547162d26fe7",
+      "strip_prefix" : "EnterpriseDB-repmgr-9c238f6",
+      "commit" : "9c238f64c3cb47f8152aa4a39b89990ad26e8eda",
+      "short_commit" : "9c238f6"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "5.5.0+debpgdg" : {
+        "default_version" : "5.5",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.5.0" : {
+        "default_version" : "5.5",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.4.1" : {
+        "default_version" : "5.4",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.4.0" : {
+        "default_version" : "5.4",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.3.3" : {
+        "default_version" : "5.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.3.2" : {
+        "default_version" : "5.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.3.1" : {
+        "default_version" : "5.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.3.0" : {
+        "default_version" : "5.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.2.1" : {
+        "default_version" : "5.2",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.2.0" : {
+        "default_version" : "5.2",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.1.0" : {
+        "default_version" : "5.1",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "5.0.0" : {
+        "default_version" : "5.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.4.0" : {
+        "default_version" : "4.4",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.3.1" : {
+        "default_version" : "4.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.3.0" : {
+        "default_version" : "4.3",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.2.0" : {
+        "default_version" : "4.2",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.1.1" : {
+        "default_version" : "4.1",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.1.0" : {
+        "default_version" : "4.1",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.6" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.5" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.4" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.3" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.2" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      },
+      "4.0.1" : {
+        "default_version" : "4.0",
+        "comment" : "Replication manager for PostgreSQL",
+        "module_pathname" : "$libdir/repmgr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "repmgr"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,225 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/timescale/pg_textsearch/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.6.0" : {
+      "tag" : "v0.6.0",
+      "sha256" : "5100d954269804518b391df2ab577e86f39a33f509a08b008c158175876a0448",
+      "strip_prefix" : "timescale-pg_textsearch-863392a",
+      "commit" : "863392ab049063e210ca122fa50744bc39c97ef7",
+      "short_commit" : "863392a"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5.1",
+      "sha256" : "ca06b0dc472a1de31b195a034d3a510481512df0e08eb81dd8c7e5932dc748d8",
+      "strip_prefix" : "timescale-pg_textsearch-5c5147b",
+      "commit" : "5c5147bf2610d786f1bd139951b9fb7fe4ac68fb",
+      "short_commit" : "5c5147b"
+    },
+    "0.5.0" : {
+      "tag" : "v0.5.0",
+      "sha256" : "5b19c5d4c92e1e27d47de91edf1c364b6aa814b8a5ba2e5ed742a0a9b7f7cc1c",
+      "strip_prefix" : "timescale-pg_textsearch-1a23bc6",
+      "commit" : "1a23bc6bbb06dcec0c7e6efa50b2a51c08882926",
+      "short_commit" : "1a23bc6"
+    },
+    "0.4.2" : {
+      "tag" : "v0.4.2",
+      "sha256" : "251704826fb03961b6b84151483d50e9ad6a877ff2fb78bcab92ffe99ac23170",
+      "strip_prefix" : "timescale-pg_textsearch-79cbb30",
+      "commit" : "79cbb308ca497271875a0ce73032e73c1b95401b",
+      "short_commit" : "79cbb30"
+    },
+    "0.4.1" : {
+      "tag" : "v0.4.1",
+      "sha256" : "473c825198d39b1b89ddcee149924d447661122e64cefe44cf3a4430e664f054",
+      "strip_prefix" : "timescale-pg_textsearch-3733948",
+      "commit" : "3733948d8a7a9f5ab71c697ae8443099f0f8764b",
+      "short_commit" : "3733948"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4.0",
+      "sha256" : "73b9694c3f6c62b1f10131ed81b7b2b1070f95856d61ae57403e064219e5be9e",
+      "strip_prefix" : "timescale-pg_textsearch-411527a",
+      "commit" : "411527a28812edbf9a2ccb175811f449ce4278b0",
+      "short_commit" : "411527a"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "1dbf14a429dc06c6e85080de69d8eefa000ee2339035c29864a19716ded02879",
+      "strip_prefix" : "timescale-pg_textsearch-f76000c",
+      "commit" : "f76000c4eb641bd4f0adeb8023d3f892be64c90c",
+      "short_commit" : "f76000c"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "5e9f2620972e090c65604f775853f061f267c32430e0ed5fb858cf5829361df9",
+      "strip_prefix" : "timescale-pg_textsearch-9392a46",
+      "commit" : "9392a467f82d3313679869fb686edb6b6d74639c",
+      "short_commit" : "9392a46"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "5b0f8b4426ce9a21d594f88e6739674269fb7f3f459f194aec6d661092667438",
+      "strip_prefix" : "timescale-pg_textsearch-6c343db",
+      "commit" : "6c343db9791ad59a8562a9c781c5786a6ebf1ebc",
+      "short_commit" : "6c343db"
+    },
+    "0.0.5" : {
+      "tag" : "v0.0.5",
+      "sha256" : "f36c2c05fd6051b635e0012ddea001c76113a93965e1cf57242c6f2b827c1bcd",
+      "strip_prefix" : "timescale-pg_textsearch-a80e16e",
+      "commit" : "a80e16e35f624f3753bf6da55a06259b056659ec",
+      "short_commit" : "a80e16e"
+    },
+    "0.0.4" : {
+      "tag" : "v0.0.4",
+      "sha256" : "a2e93b03676d17af76383005e46ba24decbd82d138c7de620524793841dbf6eb",
+      "strip_prefix" : "timescale-pg_textsearch-f6ce5c0",
+      "commit" : "f6ce5c0d5a9b3a9535fb3c93d7b8ce484d0e54fb",
+      "short_commit" : "f6ce5c0"
+    },
+    "0.0.3" : {
+      "tag" : "v0.0.3",
+      "sha256" : "18be216a002d0d19bfd2d94c8579db652d341545f6a422c5613a7ecc348ddc38",
+      "strip_prefix" : "timescale-pg_textsearch-5e3ecd3",
+      "commit" : "5e3ecd349b6d49c081f3c46fe3c54b68bb5dbfae",
+      "short_commit" : "5e3ecd3"
+    },
+    "0.0.2" : {
+      "tag" : "v0.0.2",
+      "sha256" : "031912ddd39e72360512201630fb9633aaa623c978fb328f22d6431102570d95",
+      "strip_prefix" : "timescale-pg_textsearch-7e86268",
+      "commit" : "7e862680d6eccbbd6c12ba09b2cf7c3e989b180b",
+      "short_commit" : "7e86268"
+    },
+    "0.0.1" : {
+      "tag" : "v0.0.1",
+      "sha256" : "433641b46e8965dc152623b13f9e53a8eea464fc420c00bb1d655656c1fafd4d",
+      "strip_prefix" : "timescale-pg_textsearch-e0986fb",
+      "commit" : "e0986fba01d13aaa93c97b227c58bb50da5ab9d9",
+      "short_commit" : "e0986fb"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.6.0" : {
+        "default_version" : "0.6.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.5.1",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.2" : {
+        "default_version" : "0.4.2",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.1" : {
+        "default_version" : "0.4.1",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.5" : {
+        "default_version" : "0.0.5",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.4" : {
+        "default_version" : "0.0.4",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.3" : {
+        "default_version" : "0.0.3",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.2" : {
+        "default_version" : "0.0.2",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "Full-text search with BM25 ranking",
+        "module_pathname" : "$libdir/pg_textsearch",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

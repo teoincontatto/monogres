@@ -1,0 +1,320 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/supabase/vault/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.3.1" : {
+      "tag" : "v0.3.1",
+      "sha256" : "d444823a42a7da4ccf893a8d36dc5a8f9d85543a9f8bab7d1a3624a38b10acd6",
+      "strip_prefix" : "supabase-vault-6e0cd91",
+      "commit" : "6e0cd916242d922a646e4d611cc215e09dd429f4",
+      "short_commit" : "6e0cd91"
+    },
+    "0.2.9" : {
+      "tag" : "v0.2.9",
+      "sha256" : "01363d34dda1e39c2cb6c8fb26e870398828462a69c52a77d417b157c1637300",
+      "strip_prefix" : "supabase-vault-212474a",
+      "commit" : "212474a76c740139991fdcb6363f4e1c07e1da60",
+      "short_commit" : "212474a"
+    },
+    "0.2.8" : {
+      "tag" : "v0.2.8",
+      "sha256" : "59397e9f40e4795e4b3099a0995c5c3f18ecc943b5629142962db7a6798f691b",
+      "strip_prefix" : "supabase-vault-fba4a59",
+      "commit" : "fba4a591c8c6b059a8bd0f39e41ca66310f9ec8f",
+      "short_commit" : "fba4a59"
+    },
+    "0.2.7" : {
+      "tag" : "v0.2.7",
+      "sha256" : "33598b1839d9c728fd517cc12a921032b1f56e6a88d846618c15717b497704e1",
+      "strip_prefix" : "supabase-vault-54243ca",
+      "commit" : "54243ca62b6a35dbf30302d5fd173bf015df162d",
+      "short_commit" : "54243ca"
+    },
+    "0.2.6" : {
+      "tag" : "v0.2.6",
+      "sha256" : "19a6999dca0a73ae5d735729a6e67ada0b6f32c298367a12fe22935045575cc5",
+      "strip_prefix" : "supabase-vault-84b38b4",
+      "commit" : "84b38b4e30207732e89ca76bfef31236883fd7b9",
+      "short_commit" : "84b38b4"
+    },
+    "0.2.5" : {
+      "tag" : "v0.2.5",
+      "sha256" : "dd2031525bbf75ee9db48f44e12464d0fdf2e427a952791a40e6e706fdba3956",
+      "strip_prefix" : "supabase-vault-f924dd7",
+      "commit" : "f924dd79b66fa1057b57fb1ff828ccdd675d13b7",
+      "short_commit" : "f924dd7"
+    },
+    "0.2.4" : {
+      "tag" : "v0.2.4",
+      "sha256" : "7d3e1aaf653ba7e43ce786683273062986f2f0e08f0118aba61a7c7586473d78",
+      "strip_prefix" : "supabase-vault-f3df238",
+      "commit" : "f3df23817d80c79ce2427436fa39a6cff1fbbcb5",
+      "short_commit" : "f3df238"
+    },
+    "0.2.3" : {
+      "tag" : "v0.2.3",
+      "sha256" : "1c5f7caaa0177b176c2c8fa687c6dadffd2422d67c459b61bbb57d347c5109d8",
+      "strip_prefix" : "supabase-vault-777c674",
+      "commit" : "777c67426d277471945bb4890a8d734a99ba04ce",
+      "short_commit" : "777c674"
+    },
+    "0.2.2" : {
+      "tag" : "v0.2.2",
+      "sha256" : "934004eec2b2dc5d8d4852cbf7c5d6ddd2cf63240c2f6c40da6bc47669611d60",
+      "strip_prefix" : "supabase-vault-7986edf",
+      "commit" : "7986edf344e33a429993aa4c53593a0e26c86bd7",
+      "short_commit" : "7986edf"
+    },
+    "0.2.1" : {
+      "tag" : "v0.2.1",
+      "sha256" : "a77e9d44493f46ceb26f5ff4393454f761be62c97afb34a4f8f506746bd6ca6f",
+      "strip_prefix" : "supabase-vault-816a05f",
+      "commit" : "816a05fea4650916624c9376523fb31ede4bd7ff",
+      "short_commit" : "816a05f"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "8f6093ff4f8781f097154350add3060fa9ede8470e38245cf44beff7167349ed",
+      "strip_prefix" : "supabase-vault-7c7f5a6",
+      "commit" : "7c7f5a645b7b75e662bed5505c2f7f6c6b089b23",
+      "short_commit" : "7c7f5a6"
+    },
+    "0.1.9" : {
+      "tag" : "v0.1.9",
+      "sha256" : "5c159d90153d1f47d79a8d02d804c1c0920b893080087dcd9bf57782db5e0b16",
+      "strip_prefix" : "supabase-vault-cfe3761",
+      "commit" : "cfe3761c0f6fb84300a10a269f4b9e6a8f7f557f",
+      "short_commit" : "cfe3761"
+    },
+    "0.1.8" : {
+      "tag" : "v0.1.8",
+      "sha256" : "bd389d9328aeecb4e3a20b1bd588f81ac716bc133a2a1193cb358ba7327f1e11",
+      "strip_prefix" : "supabase-vault-6666b4d",
+      "commit" : "6666b4d1942dea53cd9acf3b631873d5fd5d4889",
+      "short_commit" : "6666b4d"
+    },
+    "0.1.7" : {
+      "tag" : "v0.1.7",
+      "sha256" : "bd2cb08541c329cfbded30c419424c6a07994d320e5b7a82aff4e01fc90bb529",
+      "strip_prefix" : "supabase-vault-d403666",
+      "commit" : "d403666f115a291dd15f56c9e47788ca25772e74",
+      "short_commit" : "d403666"
+    },
+    "0.1.6" : {
+      "tag" : "v0.1.6",
+      "sha256" : "a2b458eeaa8b72de812762b7acce209ceee429f2d8145b8c1ec9b7bb50cb8dee",
+      "strip_prefix" : "supabase-vault-faa8d2c",
+      "commit" : "faa8d2cc1615f4745935c23798f1bad8b511a120",
+      "short_commit" : "faa8d2c"
+    },
+    "0.1.5" : {
+      "tag" : "v0.1.5",
+      "sha256" : "a70c4689dfe530a60025bc414c79a8c46fbfbfc51b26f0d0f2e2903b6d53ca7f",
+      "strip_prefix" : "supabase-vault-9984bc7",
+      "commit" : "9984bc74d6a2f1950e1e45737aba81218500c66c",
+      "short_commit" : "9984bc7"
+    },
+    "0.1.4" : {
+      "tag" : "v0.1.4",
+      "sha256" : "77697cf6eaaf92660e325b3f808f81b6b7352dc6d92fe9f7660f8d82169773f3",
+      "strip_prefix" : "supabase-vault-107e7bf",
+      "commit" : "107e7bf54b1a018355eedef684414d1c1d6ded09",
+      "short_commit" : "107e7bf"
+    },
+    "0.1.3" : {
+      "tag" : "v0.1.3",
+      "sha256" : "749b316d445635218f0ee7225dec530aed24b6e979f4d6fc19118c896c04ab01",
+      "strip_prefix" : "supabase-vault-22a8353",
+      "commit" : "22a83535b4440a19bca08ae5943fe099820d1fdc",
+      "short_commit" : "22a8353"
+    },
+    "0.1.2" : {
+      "tag" : "v0.1.2",
+      "sha256" : "c7e4099e338c002d4495ceaab6d85ec1dc80d2211ce22f387d9a3d1231ee953e",
+      "strip_prefix" : "supabase-vault-ac1daa3",
+      "commit" : "ac1daa37294779048fe3540e365291c55b1a992a",
+      "short_commit" : "ac1daa3"
+    },
+    "0.0.1" : {
+      "tag" : "v0.0.1",
+      "sha256" : "829706b2639d43a462a0678fbe2af8c1d2710162addc8043d7c7fb6d24be5180",
+      "strip_prefix" : "supabase-vault-3d44889",
+      "commit" : "3d4488977a12e3e06dca78ebad7927dc552b0a36",
+      "short_commit" : "3d44889"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.2.9" : {
+        "default_version" : "0.2.8",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.8" : {
+        "default_version" : "0.2.8",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.7" : {
+        "default_version" : "0.2.7",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.6" : {
+        "default_version" : "0.2.6",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.5" : {
+        "default_version" : "0.2.5",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.4" : {
+        "default_version" : "0.2.4",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.3" : {
+        "default_version" : "0.2.3",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.2" : {
+        "default_version" : "0.2.2",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.1" : {
+        "default_version" : "0.2.1",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.9" : {
+        "default_version" : "0.1.8",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.8" : {
+        "default_version" : "0.1.7",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.7" : {
+        "default_version" : "0.1.7",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.6" : {
+        "default_version" : "0.1.6",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.5" : {
+        "default_version" : "0.1.5",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.4" : {
+        "default_version" : "0.1.4",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.3" : {
+        "default_version" : "0.1.3",
+        "comment" : "Supabase Vault Extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.1.2" : {
+        "default_version" : "0.0.1",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "Supabase Vault Extension",
+        "requires" : [ "pgsodium" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "vault"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,341 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/dvarrazzo/pgmp/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.5" : {
+      "tag" : "rel-1.0.5",
+      "sha256" : "d39e9be4c5f145660ee55044d72010c32567d23185fe5790c19777f83a9c8e38",
+      "strip_prefix" : "dvarrazzo-pgmp-d90b6c9",
+      "commit" : "d90b6c9cf5169609361090516a31bfc8cba23dac",
+      "short_commit" : "d90b6c9"
+    },
+    "1.0.4" : {
+      "tag" : "rel-1.0.4",
+      "sha256" : "9dc22f05d8dcedaa3cf376ddea55149ca15e0ed7a4ded27be0e93b317adad3f6",
+      "strip_prefix" : "dvarrazzo-pgmp-1542950",
+      "commit" : "1542950d1e924ec14b136a3a8d08c82d7439c551",
+      "short_commit" : "1542950"
+    },
+    "1.0.3" : {
+      "tag" : "rel-1.0.3",
+      "sha256" : "c1bcda142b9aab7872fe392e02f19d538369397b6fd7d07591d04dae4c6b8977",
+      "strip_prefix" : "dvarrazzo-pgmp-d7bc398",
+      "commit" : "d7bc398d959fa81615301a976d2fb5273c4cb20e",
+      "short_commit" : "d7bc398"
+    },
+    "1.0.2" : {
+      "tag" : "rel-1.0.2",
+      "sha256" : "48a2887b1fc438beb35bbc2e4749b9ddf5ad961a32682a7ce763ecfa9a111469",
+      "strip_prefix" : "dvarrazzo-pgmp-5d7ac5c",
+      "commit" : "5d7ac5c5010faaee4604b64015c31c716db388a0",
+      "short_commit" : "5d7ac5c"
+    },
+    "1.0.1" : {
+      "tag" : "rel-1.0.1",
+      "sha256" : "a529948fc90dd794decddec1a2847865388f295fe2bac291e74bf618e7d4638e",
+      "strip_prefix" : "dvarrazzo-pgmp-250ebd6",
+      "commit" : "250ebd6aef120d231a56d6b3163b8b3508f0b35a",
+      "short_commit" : "250ebd6"
+    },
+    "1.0.0" : {
+      "tag" : "rel-1.0.0",
+      "sha256" : "dd731814bb12d124d21e82efb69e909acd6a3706996d81eba9f8e9ea1b1cbd80",
+      "strip_prefix" : "dvarrazzo-pgmp-b06093f",
+      "commit" : "b06093fac66db79532f21c3bb978453c49d76e46",
+      "short_commit" : "b06093f"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.5" : {
+        "directory" : "pgmp",
+        "default_version" : "1.1",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.4" : {
+        "directory" : "pgmp",
+        "default_version" : "1.1",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "directory" : "pgmp",
+        "default_version" : "1.1",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "directory" : "pgmp",
+        "default_version" : "1.0",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "directory" : "pgmp",
+        "default_version" : "1.0",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "directory" : "pgmp",
+        "default_version" : "1.0",
+        "comment" : "Multiple Precision Arithmetic extension",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.5" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.5",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "stable",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.5",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://dvarrazzo.github.io/pgmp/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.4" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.4",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "stable",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.4",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://dvarrazzo.github.io/pgmp/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.3" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.3",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "stable",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.3",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "https://dvarrazzo.github.io/pgmp/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.2" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.2",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "stable",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.2",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgmp.projects.postgresql.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.1" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.1",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "stable",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.1",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgmp.projects.postgresql.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.0.0" : {
+        "name" : "pgmp",
+        "abstract" : "PostgreSQL Multiple Precision Arithmetic extension",
+        "description" : "The pgmp extension adds PostgreSQL data types wrapping the high performance integer and rational data types offered by the GMP library.",
+        "version" : "1.0.0",
+        "maintainer" : "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+        "tags" : [ "arithmetic", "gmp", "rational", "integer", "data types" ],
+        "release_status" : "testing",
+        "license" : "lgpl_3_0",
+        "provides" : {
+          "pgmp" : {
+            "file" : "sql/pgmp.sql",
+            "version" : "1.0.0",
+            "abstract" : "PostgreSQL Multiple Precision Arithmetic extension"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgmp.projects.postgresql.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/dvarrazzo/pgmp/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/dvarrazzo/pgmp.git",
+            "web" : "https://github.com/dvarrazzo/pgmp/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

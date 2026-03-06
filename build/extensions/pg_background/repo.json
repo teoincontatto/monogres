@@ -1,0 +1,135 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/vibhorkum/pg_background/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.8.0" : {
+      "tag" : "v1.8",
+      "sha256" : "ab66206ebe93f19c7e092558d8cf7d80a9d7a776507949cedbd0bdc5a029415d",
+      "strip_prefix" : "vibhorkum-pg_background-a6e2da4",
+      "commit" : "a6e2da45e79a9b9a33d5708c97f5917610b88d8f",
+      "short_commit" : "a6e2da4"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6",
+      "sha256" : "f1b46eedd4076548d8e9001e04d1ab9e4a1bb1cdef314ae92d9233da0cd20688",
+      "strip_prefix" : "vibhorkum-pg_background-84c54b9",
+      "commit" : "84c54b9b138fb8c276372afa64297e5633888507",
+      "short_commit" : "84c54b9"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "fb79c444bc4147da439f47c2da7b4f126a8f265ae294236075f9a39c72486ad4",
+      "strip_prefix" : "vibhorkum-pg_background-5fc36a3",
+      "commit" : "5fc36a36c39416b03eafb6742fae3bc9954032c5",
+      "short_commit" : "5fc36a3"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "9eba2aabc613a69820266300f23290610b1bf2184ff272c419c69ba5886a4b2b",
+      "strip_prefix" : "vibhorkum-pg_background-006a42d",
+      "commit" : "006a42dd811e132e6d339c91619184ed3290169c",
+      "short_commit" : "006a42d"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3",
+      "sha256" : "2f4cc69c24df243099a18d49dd2ae86f1ba075b687964955275bc69e1a415989",
+      "strip_prefix" : "vibhorkum-pg_background-339dfe0",
+      "commit" : "339dfe07f680ec4dd63291b8d29969f549b96f05",
+      "short_commit" : "339dfe0"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "626acdf7583ee79683977d00eadf857b547c0a2ea540e4f0129cff013fb325b2",
+      "strip_prefix" : "vibhorkum-pg_background-6974716",
+      "commit" : "6974716e45c69711e981d20844a5b0f0abe7700e",
+      "short_commit" : "6974716"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "b165ae0cf4556bbfa9427846efa2a4470629013865dfb2f73bc42f01213d7a54",
+      "strip_prefix" : "vibhorkum-pg_background-8f126b6",
+      "commit" : "8f126b6a9aed4371830106adae2e123872a29a48",
+      "short_commit" : "8f126b6"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "c6303de242f8068d4f35d406b523313089e1c69fe6a798cb30d8f5ad017ae3b9",
+      "strip_prefix" : "vibhorkum-pg_background-fb14cf7",
+      "commit" : "fb14cf7aa3922b290a404a133e365b4206b8f7f0",
+      "short_commit" : "fb14cf7"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.8.0" : {
+        "default_version" : "1.8",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.4",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Run SQL queries in the background",
+        "module_pathname" : "$libdir/pg_background",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

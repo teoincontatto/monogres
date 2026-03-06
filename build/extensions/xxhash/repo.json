@@ -1,0 +1,61 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/hatarist/pg_xxhash/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.0.1" : {
+      "tag" : "v0.0.1",
+      "sha256" : "7c1ae4c5b213026d0ed4f25e4c41059ee4bc3ff8d8f207cf346f461f1ab75a4e",
+      "strip_prefix" : "hatarist-pg_xxhash-a12dac0",
+      "commit" : "a12dac0d75f5e166d56780c158cf054e0732e2fd",
+      "short_commit" : "a12dac0"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "module_pathname" : "$libdir/xxhash",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.0.1" : {
+        "name" : "pg_xxhash",
+        "abstract" : "PostgreSQL xxHash",
+        "description" : "pg_xxhash implements fast xxhash hash calculation",
+        "version" : "0.0.1",
+        "maintainer" : "hatarist <hatarist@gmail.com>",
+        "license" : "mit",
+        "provides" : {
+          "pg_xxhash" : {
+            "file" : "xxhash--0.0.1.sql",
+            "version" : "0.0.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/hatarist/pg_xxhash/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/hatarist/pg_xxhash.git",
+            "web" : "https://github.com/hatarist/pg_xxhash",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "hatarist",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "functions", "hash", "xxhash" ]
+      }
+    }
+  },
+  "version" : 1
+}

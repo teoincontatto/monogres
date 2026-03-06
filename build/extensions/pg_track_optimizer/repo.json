@@ -1,0 +1,45 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/danolivo/pg_track_optimizer/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.9.1" : {
+      "tag" : "v0.9.1",
+      "sha256" : "bf9adaa22f7a47c9ad24da4feb5a6e6661b39e277ce94e781075f9dcd8c3dbf1",
+      "strip_prefix" : "danolivo-pg_track_optimizer-969d085",
+      "commit" : "969d085b1a4193a8999dc04ed4e5605f607f0ffa",
+      "short_commit" : "969d085"
+    },
+    "0.9.0" : {
+      "tag" : "v0.9",
+      "sha256" : "56ddf5fe1270b1cde4e9b84de47ed78e933b00a2c257723acb226a7b96f42699",
+      "strip_prefix" : "danolivo-pg_track_optimizer-24a9e57",
+      "commit" : "24a9e57428bae66ebe39272117a43994d36af279",
+      "short_commit" : "24a9e57"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.9.1" : {
+        "default_version" : "0.9",
+        "comment" : "Track planning decisions in comparison with execution reality",
+        "module_pathname" : "$libdir/pg_track_optimizer",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.0" : {
+        "default_version" : "0.1",
+        "comment" : "Track planning decisions in comparison with execution reality",
+        "module_pathname" : "$libdir/pg_track_optimizer",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

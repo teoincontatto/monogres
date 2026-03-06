@@ -1,0 +1,1532 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/michelp/pgsodium/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.1.9" : {
+      "tag" : "v3.1.9",
+      "sha256" : "edf7cdc64ef6a5939e12d90c994de43b8057a2bbf93644d27efdf2eae1942e31",
+      "strip_prefix" : "michelp-pgsodium-7222ebc",
+      "commit" : "7222ebc5ed87084a68d526aef977be0f4eb319a2",
+      "short_commit" : "7222ebc"
+    },
+    "3.1.8" : {
+      "tag" : "v3.1.8",
+      "sha256" : "7e7443fbed62a085ac95100d6127a05989cf3f97cfe537198c414b68ec7c784b",
+      "strip_prefix" : "michelp-pgsodium-54c06ac",
+      "commit" : "54c06acf3ad06cc5c9c77d350cf58c7c25052454",
+      "short_commit" : "54c06ac"
+    },
+    "3.1.7" : {
+      "tag" : "v3.1.7",
+      "sha256" : "7789438585e03c9ad28c7a191bd6c2d40b66f09b91182ece7d401fbed31e6a50",
+      "strip_prefix" : "michelp-pgsodium-b84ee30",
+      "commit" : "b84ee308b9b091e2dfdc2af86a17dc7438b4af7e",
+      "short_commit" : "b84ee30"
+    },
+    "3.1.6" : {
+      "tag" : "v3.1.6",
+      "sha256" : "7113b02b0e6b964e08cfa8a00a5cf1a736733fccae7d53a1f3ee5981f78001ec",
+      "strip_prefix" : "michelp-pgsodium-c443019",
+      "commit" : "c443019fd410a50290de8e4973dd8c3773e1a85d",
+      "short_commit" : "c443019"
+    },
+    "3.1.5" : {
+      "tag" : "v3.1.5",
+      "sha256" : "9751d6e581b93baeab9db44e8e99fba0eb094bfef676a309ae532ac2cdbeac5c",
+      "strip_prefix" : "michelp-pgsodium-a114f51",
+      "commit" : "a114f517eed7f165eea85bd88597600d00449b7b",
+      "short_commit" : "a114f51"
+    },
+    "3.1.4" : {
+      "tag" : "v3.1.4",
+      "sha256" : "657108918b7ed4ee4cf4e4570c0eb4e0123559039279b3d1afe74efad4fabbf7",
+      "strip_prefix" : "michelp-pgsodium-060e27f",
+      "commit" : "060e27fc93a53999d94c58170627a443f0eb8d0c",
+      "short_commit" : "060e27f"
+    },
+    "3.1.3" : {
+      "tag" : "v3.1.3",
+      "sha256" : "c83176f49359cee19453b098dd1bf1e43499969790e22d5797c0fdc64205acd6",
+      "strip_prefix" : "michelp-pgsodium-ee1dde8",
+      "commit" : "ee1dde8155f90ec6b1dcb37ca7ae42bc24db6c5f",
+      "short_commit" : "ee1dde8"
+    },
+    "3.1.2" : {
+      "tag" : "v3.1.2",
+      "sha256" : "e67a05c6bbbaef1561555044f182108bd1185578cd9ef8b6fd28e0d16badbef4",
+      "strip_prefix" : "michelp-pgsodium-6fabfe6",
+      "commit" : "6fabfe6685b851a93de09a8e9053271b7bbdb68e",
+      "short_commit" : "6fabfe6"
+    },
+    "3.1.1" : {
+      "tag" : "v3.1.1",
+      "sha256" : "54a87342a050a28994f1b4bfe02002240cf7e86071323b9e13d4073ff81ac7a6",
+      "strip_prefix" : "michelp-pgsodium-9854dab",
+      "commit" : "9854dab4fbb4ace6fb046e95619c2c72ec66a972",
+      "short_commit" : "9854dab"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1.0",
+      "sha256" : "a67ca8352f5e66b43221fcd786416fbc62ecda59bbbf73ac769ab879716e8b9c",
+      "strip_prefix" : "michelp-pgsodium-a854f63",
+      "commit" : "a854f630238edca0574fc54c31e0d224766aafea",
+      "short_commit" : "a854f63"
+    },
+    "3.0.7" : {
+      "tag" : "v3.0.7",
+      "sha256" : "c1454b635ca0f3b3926bd47b8da2f53bf80123b2ad0bb115470c589e043dc3c3",
+      "strip_prefix" : "michelp-pgsodium-a8aea8e",
+      "commit" : "a8aea8ea102d0535f7a3d1675587bc9062d46bc5",
+      "short_commit" : "a8aea8e"
+    },
+    "3.0.6" : {
+      "tag" : "v3.0.6",
+      "sha256" : "a2b97ba5c84c916852d5aee5001b84574004925fbe002f6f0f28fd5b05408db0",
+      "strip_prefix" : "michelp-pgsodium-7f578e1",
+      "commit" : "7f578e1e9a64556c1e9673f945ce4c88af39e522",
+      "short_commit" : "7f578e1"
+    },
+    "3.0.5" : {
+      "tag" : "v3.0.5",
+      "sha256" : "da68e490bb0ce160858cd8e2757b4e8ce21b0d6de1a979529ba923e857421b79",
+      "strip_prefix" : "michelp-pgsodium-580c45a",
+      "commit" : "580c45ae5b4227be8fa34561e1fb28ff022d8859",
+      "short_commit" : "580c45a"
+    },
+    "3.0.4" : {
+      "tag" : "v3.0.4",
+      "sha256" : "e0225ed686dca8e1aa64783545d62d14e72f0c74b117bce736d5c62520cacf79",
+      "strip_prefix" : "michelp-pgsodium-ac191f6",
+      "commit" : "ac191f61d4c97bdf274c45d16b63c3501d396b26",
+      "short_commit" : "ac191f6"
+    },
+    "3.0.3" : {
+      "tag" : "v3.0.3",
+      "sha256" : "dfbb9165303b32ef26430e83c23343f2a7457095c5e4f981c00900a691d73f7c",
+      "strip_prefix" : "michelp-pgsodium-7de1d55",
+      "commit" : "7de1d55739e186fa8012ee0af6b6b67ac0ea1823",
+      "short_commit" : "7de1d55"
+    },
+    "3.0.2" : {
+      "tag" : "v3.0.2",
+      "sha256" : "b23b900045de7bba2c5e66f518dda49e1ee5e2f28a595125e999970eb07013c7",
+      "strip_prefix" : "michelp-pgsodium-31b518b",
+      "commit" : "31b518bf3040d7742257a33d28006c5600a66d90",
+      "short_commit" : "31b518b"
+    },
+    "3.0.1" : {
+      "tag" : "3.0.1",
+      "sha256" : "ace750f882b126ce68d892866ae2f96d0110ddb7cdc026ca2573df362341db5f",
+      "strip_prefix" : "michelp-pgsodium-06e7ca4",
+      "commit" : "06e7ca4a49e24e2e9ed1a916c5877ee17afbd8ee",
+      "short_commit" : "06e7ca4"
+    },
+    "3.0.0" : {
+      "tag" : "v3.0.0",
+      "sha256" : "ace750f882b126ce68d892866ae2f96d0110ddb7cdc026ca2573df362341db5f",
+      "strip_prefix" : "michelp-pgsodium-06e7ca4",
+      "commit" : "06e7ca4a49e24e2e9ed1a916c5877ee17afbd8ee",
+      "short_commit" : "06e7ca4"
+    },
+    "2.0.2" : {
+      "tag" : "v2.0.2",
+      "sha256" : "3452c3da71ff0a7b83395b50d9400b848ad380a857afec8a01af313c0707aa75",
+      "strip_prefix" : "michelp-pgsodium-31e6441",
+      "commit" : "31e644177301f29c23e86859023571fffcda99ef",
+      "short_commit" : "31e6441"
+    },
+    "2.0.1" : {
+      "tag" : "2.0.1",
+      "sha256" : "1396ca2b33f4f97fdfc51ab60d1bf22b41e463bbc7bfa9624aa880e3c6060fbc",
+      "strip_prefix" : "michelp-pgsodium-ccd08a4",
+      "commit" : "ccd08a48e146d6ae2f65ca70f36fa020039f3ea2",
+      "short_commit" : "ccd08a4"
+    },
+    "2.0.0" : {
+      "tag" : "2.0.0",
+      "sha256" : "915fe2cebdcfcdede8d5b31408a7fea62dfd1f050e5e663b8cb97d9d3526dab9",
+      "strip_prefix" : "michelp-pgsodium-7720c82",
+      "commit" : "7720c8258f1d0cf58005ccc2ce8281a0d0fd96a1",
+      "short_commit" : "7720c82"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "457bd2eb5ddd6425ca1a393085ddf48693fc4a1edb6580e9c529066a85e17260",
+      "strip_prefix" : "michelp-pgsodium-f57bd69",
+      "commit" : "f57bd69db9ec691be91b2e6e5350b7c297dbdba7",
+      "short_commit" : "f57bd69"
+    },
+    "1.3.0-alpha" : {
+      "tag" : "1.3.0-alpha",
+      "sha256" : "9cf900a0bccfac6f524016f85cc0511887d0b2b0890906d45568fa5213f644fd",
+      "strip_prefix" : "michelp-pgsodium-5c965ea",
+      "commit" : "5c965eab2c3f573420b45e943b5f948d7cf51eaf",
+      "short_commit" : "5c965ea"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "0605545dee908891eb9eaeac3d187fd4f803184899278926699d14c3729066b1",
+      "strip_prefix" : "michelp-pgsodium-71ee2b4",
+      "commit" : "71ee2b4a6d444edc940283a0f083488819ccdef2",
+      "short_commit" : "71ee2b4"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "c4719d2af8aaef92d5f887f5fcad7fadbd3c5bfea749bb770d3975d9ec215e6f",
+      "strip_prefix" : "michelp-pgsodium-c9ef529",
+      "commit" : "c9ef5295e044e5f594b0c148ad5ec9a5e490cb18",
+      "short_commit" : "c9ef529"
+    },
+    "1.1.1-alpha" : {
+      "tag" : "v1.1.1-alpha",
+      "sha256" : "c4719d2af8aaef92d5f887f5fcad7fadbd3c5bfea749bb770d3975d9ec215e6f",
+      "strip_prefix" : "michelp-pgsodium-c9ef529",
+      "commit" : "c9ef5295e044e5f594b0c148ad5ec9a5e490cb18",
+      "short_commit" : "c9ef529"
+    },
+    "1.1.0-alpha" : {
+      "tag" : "v1.1.0-alpha",
+      "sha256" : "03dcf79fb665acdb08c9f8ee25796130ed25ad50025928dcbd5ed2c4fe82ec8b",
+      "strip_prefix" : "michelp-pgsodium-b7d5d1a",
+      "commit" : "b7d5d1a51dcab9fbc8609e5bac054a58b7172535",
+      "short_commit" : "b7d5d1a"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "0ccc3051423db872e6b194bc7fb7ff53b0ac1e050654cb800fecb03083fa3791",
+      "strip_prefix" : "michelp-pgsodium-6035466",
+      "commit" : "6035466ba5aca232df15d1ade9262ff27df81a5b",
+      "short_commit" : "6035466"
+    },
+    "1.0.0-alpha" : {
+      "tag" : "v1.0.0-alpha",
+      "sha256" : "65f015c5eaf8d3e3351ee2558a5916a121ca0ea291cb5e294e94754dc92b03c8",
+      "strip_prefix" : "michelp-pgsodium-cafc930",
+      "commit" : "cafc930ac76903574f17dd00cb30d1902ed1bd1f",
+      "short_commit" : "cafc930"
+    },
+    "0.0.1-alpha" : {
+      "tag" : "v0.0.1-alpha",
+      "sha256" : "65f015c5eaf8d3e3351ee2558a5916a121ca0ea291cb5e294e94754dc92b03c8",
+      "strip_prefix" : "michelp-pgsodium-cafc930",
+      "commit" : "cafc930ac76903574f17dd00cb30d1902ed1bd1f",
+      "short_commit" : "cafc930"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.1.9" : {
+        "default_version" : "3.1.9",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.8" : {
+        "default_version" : "3.1.8",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.7" : {
+        "default_version" : "3.1.7",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.6" : {
+        "default_version" : "3.1.6",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.5" : {
+        "default_version" : "3.1.5",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.4" : {
+        "default_version" : "3.1.4",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.3" : {
+        "default_version" : "3.1.3",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.2" : {
+        "default_version" : "3.1.2",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.1" : {
+        "default_version" : "3.1.1",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.1.0" : {
+        "default_version" : "3.1.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.0.7" : {
+        "default_version" : "3.0.7",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.0.6" : {
+        "default_version" : "3.0.6",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.0.5" : {
+        "default_version" : "3.0.5",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgsodium"
+      },
+      "3.0.4" : {
+        "default_version" : "3.0.4",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.3" : {
+        "default_version" : "3.0.3",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.2" : {
+        "default_version" : "3.0.2",
+        "comment" : "Postgres extension for libsodium functions",
+        "requires" : [ "\"uuid-ossp\"" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.1" : {
+        "default_version" : "3.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "requires" : [ "\"uuid-ossp\"" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.0" : {
+        "default_version" : "3.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "requires" : [ "\"uuid-ossp\"" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0-alpha" : {
+        "default_version" : "1.2.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1-alpha" : {
+        "default_version" : "1.1.1",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0-alpha" : {
+        "default_version" : "1.1.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-alpha" : {
+        "default_version" : "1.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-alpha" : {
+        "default_version" : "1.0.0",
+        "comment" : "Postgres extension for libsodium functions",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "3.1.9" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.9",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.9"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.8" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.8",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.8"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.7" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.7",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.7"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.6" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.6",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.6"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.5" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.5",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.5"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.4" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.4",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.4"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.3" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.3",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.3"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.2" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.2",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.2"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.1" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.1",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.1.0" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.1.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.7" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.6",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.6"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.6" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.6",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.6"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.5" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.5",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.5"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.4" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.4",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.4"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.3" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.3",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.3"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.2" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.2",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.2"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.1" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "3.0.0" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "3.0.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "3.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "2.0.2" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "2.0.2",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "2.0.2"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "2.0.1" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "2.0.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "2.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "2.0.0" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "2.0.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "2.0.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.3.0-alpha" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.2.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.3.0" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.2.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.2.0" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.2.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.1.1-alpha" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.1.1",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "alpha",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.1.1" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.1.1",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "release_status" : "alpha",
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      },
+      "1.1.0-alpha" : {
+        "name" : "pgsodium",
+        "abstract" : "Postgres extension for libsodium functions",
+        "description" : "pgsodium is a PostgreSQL extension that exposes modern libsodium based cryptographic functions to SQL.",
+        "version" : "1.1.0",
+        "maintainer" : [ "Michel Pelletier <pelletier.michel@gmail.com>" ],
+        "license" : "postgresql",
+        "provides" : {
+          "pgsodium" : {
+            "abstract" : "Postgres extension for libsodium functions",
+            "file" : "src/pgsodium.h",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/michelp/pgsodium/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/michelp/pgsodium.git",
+            "web" : "https://github.com/michelp/pgsodium/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sodium", "crypto", "cryptography", "encryption", "random", "asymmetric encryption", "public key" ]
+      }
+    }
+  },
+  "version" : 1
+}

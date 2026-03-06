@@ -1,0 +1,146 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgspider/jdbc_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.5.0" : {
+      "tag" : "v0.5.0",
+      "sha256" : "8ca12bc664caf5ab4adbb67c2554df746c3bb4b21bc85c71f8521b54d7c1f482",
+      "strip_prefix" : "pgspider-jdbc_fdw-02f245b",
+      "commit" : "02f245b99fe9d574ac4e74c3ebd5039f551bf9fd",
+      "short_commit" : "02f245b"
+    },
+    "0.4.0" : {
+      "tag" : "v0.4.0",
+      "sha256" : "a9b5301d4cbf5862fa0365eb1b246bf2c1cbb4b90c0bb7c98f3058546fede7e8",
+      "strip_prefix" : "pgspider-jdbc_fdw-8695fd1",
+      "commit" : "8695fd1cb618424e93b425cb5b389678de82357b",
+      "short_commit" : "8695fd1"
+    },
+    "0.3.1" : {
+      "tag" : "v0.3.1",
+      "sha256" : "6570598d9f7b9ee89eb7602a1358ec33c743c9251b9a1ab1051d009ee703161e",
+      "strip_prefix" : "pgspider-jdbc_fdw-ec26734",
+      "commit" : "ec26734605c282f3a2d0a821a0baddf87a4b40d0",
+      "short_commit" : "ec26734"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "0dae98f690ca240a8b62afeeb19e3a237e3ff46231fea1ec7c0ef849a920e4e9",
+      "strip_prefix" : "pgspider-jdbc_fdw-8dfb093",
+      "commit" : "8dfb0938842321a77ca8dea40cc9d49e1779ffa5",
+      "short_commit" : "8dfb093"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "ca5390bd7ebd8b00b2de74598d6a96ff1fce3cb6ae287a74273254b0141abb7e",
+      "strip_prefix" : "pgspider-jdbc_fdw-e1f3f6a",
+      "commit" : "e1f3f6a761ec105129b6ec5290eaf8d57dcaeb03",
+      "short_commit" : "e1f3f6a"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "3e9a346c150de30f7d4a66fb640355ece602ca6697d1689b2c6e3b0eab2b1660",
+      "strip_prefix" : "pgspider-jdbc_fdw-d20b583",
+      "commit" : "d20b5838c61786dbbe85408a314ac0dd69d52328",
+      "short_commit" : "d20b583"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.5.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "1.2",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.1" : {
+        "default_version" : "1.2",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "foreign-data wrapper for remote servers available over JDBC",
+        "module_pathname" : "$libdir/jdbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.3.1" : {
+        "name" : "jdbc_fdw",
+        "abstract" : "JDBC Foreign Data Wrapper",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for JDBC database connections.",
+        "version" : "0.1.0",
+        "maintainer" : "pgspider",
+        "license" : "postgresql",
+        "provides" : {
+          "jdbc_fdw" : {
+            "abstract" : "JDBC Foreign Data Wrapper",
+            "file" : "jdbc_fdw.c",
+            "docfile" : "README.md",
+            "version" : "0.1.0"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pgspider/jdbc_fdw/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pgspider/jdbc_fdw.git",
+            "web" : "https://github.com/pgspider/jdbc_fdw",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "jdbc", "java", "fdw", "foreign data wrapper", "jdbc_fdw" ]
+      }
+    }
+  },
+  "version" : 1
+}

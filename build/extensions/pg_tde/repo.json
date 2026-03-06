@@ -1,0 +1,90 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/percona/pg_tde/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.1.2" : {
+      "tag" : "2.1.2",
+      "sha256" : "139c4521558a464aa007a43eda7a9ba85d595781cba581ee21b4980bcbf4faae",
+      "strip_prefix" : "percona-pg_tde-9ca0b37",
+      "commit" : "9ca0b377d6498a2a4dd12cb980bd89853249d7c1",
+      "short_commit" : "9ca0b37"
+    },
+    "2.1.0" : {
+      "tag" : "2.1",
+      "sha256" : "05afb76cd4b965988b8ff68f330336656bb9bed93687f93d9034fbc6c196fda2",
+      "strip_prefix" : "percona-pg_tde-2dd1b91",
+      "commit" : "2dd1b91a0f48181d2b721b828eb924d4905d3a84",
+      "short_commit" : "2dd1b91"
+    },
+    "1.0.0-beta2" : {
+      "tag" : "1.0.0-beta2",
+      "sha256" : "f06b7f49c9befe053f510cfe44506b472c5887eca2a146e241f026423ee1a4f2",
+      "strip_prefix" : "percona-pg_tde-cdb2ad6",
+      "commit" : "cdb2ad6e472f219592d11687120df429cbb12180",
+      "short_commit" : "cdb2ad6"
+    },
+    "1.0.0-beta" : {
+      "tag" : "1.0.0-beta",
+      "sha256" : "6a1ec0e76028658a37d26b6a644ea47e775885cfed8e35e6fca4d51d61e7447a",
+      "strip_prefix" : "percona-pg_tde-b5ef829",
+      "commit" : "b5ef82966b5901a2f7187cd45148f039254d5d64",
+      "short_commit" : "b5ef829"
+    },
+    "1.0.0-alpha" : {
+      "tag" : "1.0.0-alpha",
+      "sha256" : "6cf78b929ebfae8063bfd4b854d37343def68621e17b0c05af6bdc196eba1b79",
+      "strip_prefix" : "percona-pg_tde-50b55b7",
+      "commit" : "50b55b722a17d92fc8260f6289841e3413ed804f",
+      "short_commit" : "50b55b7"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.1.2" : {
+        "default_version" : "2.1",
+        "comment" : "pg_tde access method",
+        "module_pathname" : "$libdir/pg_tde",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "comment" : "pg_tde access method",
+        "module_pathname" : "$libdir/pg_tde",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0-beta2" : {
+        "default_version" : "1.0",
+        "comment" : "pg_tde access method",
+        "module_pathname" : "$libdir/pg_tde",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-beta" : {
+        "default_version" : "1.0",
+        "comment" : "pg_tde access method",
+        "module_pathname" : "$libdir/pg_tde",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0-alpha" : {
+        "default_version" : "1.0",
+        "comment" : "pg_tde access method",
+        "module_pathname" : "$libdir/pg_tde",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

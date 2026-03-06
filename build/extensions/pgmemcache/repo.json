@@ -1,0 +1,104 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ohmu/pgmemcache/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.3.0" : {
+      "tag" : "2.3.0",
+      "sha256" : "3cd1e14e3775d98b3d325b446f90623838039be15aa87e5c9cfdefb0e3f6e092",
+      "strip_prefix" : "ohmu-pgmemcache-a762a5b",
+      "commit" : "a762a5b0a94413289ccc386a7ea823aa8a8ca022",
+      "short_commit" : "a762a5b"
+    },
+    "2.2.0" : {
+      "tag" : "2.2.0",
+      "sha256" : "7056e6efa590c860c8f9f17631fe896ceb8c9d00affef3d9d4c6350068758e9f",
+      "strip_prefix" : "ohmu-pgmemcache-59f4578",
+      "commit" : "59f45781aa9749c9d56bfe72e3ab29043636d4b3",
+      "short_commit" : "59f4578"
+    },
+    "2.1.2" : {
+      "tag" : "2.1.2",
+      "sha256" : "a8c0c6fe7dd9ec656b5ad69a15749ee6c65e61438af0333010f687b9750a116a",
+      "strip_prefix" : "ohmu-pgmemcache-073ddfe",
+      "commit" : "073ddfeb6f7554190f1d585e31bcecf6703813b3",
+      "short_commit" : "073ddfe"
+    },
+    "2.1.1" : {
+      "tag" : "2.1.1",
+      "sha256" : "95df91682fa5bcb420a36e8737d454499dcea15397b040a2a1e46adab2767b09",
+      "strip_prefix" : "ohmu-pgmemcache-ef94a5c",
+      "commit" : "ef94a5c07716465d6b4dde8bb15a1eb47775cd27",
+      "short_commit" : "ef94a5c"
+    },
+    "2.1.0" : {
+      "tag" : "2.1.0",
+      "sha256" : "bd1ab4f84d8bb31c2e9288e155d3fa8ccf273875db9fd47dd45d5c5352871ab5",
+      "strip_prefix" : "ohmu-pgmemcache-36737e6",
+      "commit" : "36737e6cdcb9399b1e367d015462404b1e4289cc",
+      "short_commit" : "36737e6"
+    },
+    "2.0.6" : {
+      "tag" : "2.0.6",
+      "sha256" : "a533f51b89bcf7bde10b5b48558595705ea259afff7f46fc6f1e77750ee7fc74",
+      "strip_prefix" : "ohmu-pgmemcache-6d26b84",
+      "commit" : "6d26b8412b0efa2a5f7dc7b9d1710e6a3e824b13",
+      "short_commit" : "6d26b84"
+    },
+    "2.0.5" : {
+      "tag" : "2.0.5",
+      "sha256" : "28ba38d769a74168a16ca17b86b29577a2b89faadbb7d676bc32894bd7bab5a0",
+      "strip_prefix" : "ohmu-pgmemcache-6ff8792",
+      "commit" : "6ff8792170f1046179aaf9fa4f017e49b7b6d323",
+      "short_commit" : "6ff8792"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.3.0" : {
+        "default_version" : "__short_ver__",
+        "comment" : "memcached interface",
+        "module_pathname" : "$libdir/pgmemcache",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "__short_ver__",
+        "comment" : "memcached interface",
+        "module_pathname" : "$libdir/pgmemcache",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.2" : {
+        "default_version" : "__short_ver__",
+        "comment" : "memcached interface",
+        "module_pathname" : "$libdir/pgmemcache",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "__short_ver__",
+        "comment" : "memcached interface",
+        "module_pathname" : "$libdir/pgmemcache",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "comment" : "memcached interface",
+        "module_pathname" : "$libdir/pgmemcache",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

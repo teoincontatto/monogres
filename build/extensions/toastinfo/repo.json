@@ -1,0 +1,85 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/credativ/toastinfo/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "e63bf4d14e227a93f822123358ea19921ddf3782b056d80fff3cca41c8d9996e",
+      "strip_prefix" : "credativ-toastinfo-dc89da0",
+      "commit" : "dc89da0c867e3173fa67afc878047d0b689ba369",
+      "short_commit" : "dc89da0"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "c87846effb6afb9d982087c4e6f020eb378fc4e94e290938acbd4eb7308a017e",
+      "strip_prefix" : "credativ-toastinfo-8f40512",
+      "commit" : "8f405123b545e4f4ef6a93d811d346d9c631dbec",
+      "short_commit" : "8f40512"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "c26acc60729460ec825d638a81986eaf8886c0bd7b4024541c251a001d41db04",
+      "strip_prefix" : "credativ-toastinfo-32282a8",
+      "commit" : "32282a8ce0135f2a4a961b33e01f4ebfa71ddb68",
+      "short_commit" : "32282a8"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "ce213d8128424459bcb5fa30aaffacaa217584e6dab2f74f30a81cb5bb187c85",
+      "strip_prefix" : "credativ-toastinfo-256a62f",
+      "commit" : "256a62fee25a974e80f1cb9a92e231ebfc8e63a6",
+      "short_commit" : "256a62f"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "0e3244e2d0b37b39358648b98458edb408d900b9c7c4c07f798505332706fd34",
+      "strip_prefix" : "credativ-toastinfo-1b004a2",
+      "commit" : "1b004a22e4386e9ecc6e362e00f663902b218394",
+      "short_commit" : "1b004a2"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.5.0" : {
+        "default_version" : "1",
+        "comment" : "show details on toasted datums",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1",
+        "comment" : "show details on toasted datums",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1",
+        "comment" : "show details on toasted datums",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1",
+        "comment" : "show details on toasted datums",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1",
+        "comment" : "show details on toasted datums",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

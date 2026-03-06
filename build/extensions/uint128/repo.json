@@ -1,0 +1,260 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pg-uint/pg-uint128/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "586c95553cbb1c662caf4cc88badbdb9976aaf5716f39e6a770a464adad87f21",
+      "strip_prefix" : "pg-uint-pg-uint128-db7a79a",
+      "commit" : "db7a79a0f5ccd3d59404d6b9510e01f0876699ea",
+      "short_commit" : "db7a79a"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "eb142e5f9764cf1b48201b71ce9ff7205f6cc93176eb7e441041848702ac8800",
+      "strip_prefix" : "pg-uint-pg-uint128-563b214",
+      "commit" : "563b2148a6a8e49e208d5eb15ffc1a414af26b85",
+      "short_commit" : "563b214"
+    },
+    "1.1.0" : {
+      "tag" : "1.1.0",
+      "sha256" : "ebc038be7f3c4451a3d79c1eac7c45ae369a09cba24e7318e0cd42158b06d5db",
+      "strip_prefix" : "pg-uint-pg-uint128-9328020",
+      "commit" : "93280201899911157709ed0c04573585d6065fe0",
+      "short_commit" : "9328020"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "57b14e5827b9675ff992e6814f1117393be132d55666dbc23fe4d9c675549762",
+      "strip_prefix" : "pg-uint-pg-uint128-66168d2",
+      "commit" : "66168d2a8993b77ca8f9834aee66c85702bb5ba4",
+      "short_commit" : "66168d2"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "5024dda4b48d75a50904ebfacdc42de567ab3e8a3e5e1d0c324b26d564b44cea",
+      "strip_prefix" : "pg-uint-pg-uint128-3387fb7",
+      "commit" : "3387fb7285f6629f4c8775d4f32eba09274ec6fd",
+      "short_commit" : "3387fb7"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Native uint128 type",
+        "module_pathname" : "$libdir/uint128",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "Native uint128 type",
+        "module_pathname" : "$libdir/uint128",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Native uint128 type",
+        "module_pathname" : "$libdir/uint128",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Native uint128 type",
+        "module_pathname" : "$libdir/uint128",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Native uint128 type",
+        "module_pathname" : "$libdir/uint128",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.2.0" : {
+        "name" : "uint128",
+        "abstract" : "Unsigned integer datatypes for PostgreSQL",
+        "description" : "This extension provides additional integer types for PostgreSQL: uint1, uint2, uint4, uint8, uint16, int1, int16",
+        "version" : "1.2.0",
+        "release_status" : "testing",
+        "maintainer" : [ "Dmitry K. <coder1994@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "uint128" : {
+            "abstract" : "Unsigned integer datatypes for PostgreSQL",
+            "file" : "uint128--1.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pg-uint/pg-uint128/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pg-uint/pg-uint128.git",
+            "web" : "https://github.com/pg-uint/pg-uint128",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Dmitry K.",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "integer", "unsigned", "unsigned integer", "uint", "uint1", "uint2", "uint4", "uint8", "uint16", "int1", "int16", "8 bit", "8 bit integer", "128 bit", "128 bit integer" ]
+      },
+      "1.1.1" : {
+        "name" : "uint128",
+        "abstract" : "Unsigned integer datatypes for PostgreSQL",
+        "description" : "This extension provides additional integer types for PostgreSQL: uint1, uint2, uint4, uint8, uint16, int1, int16",
+        "version" : "1.1.1",
+        "release_status" : "testing",
+        "maintainer" : [ "Dmitry K. <coder1994@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "uint128" : {
+            "abstract" : "Unsigned integer datatypes for PostgreSQL",
+            "file" : "uint128--1.1.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pg-uint/pg-uint128/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pg-uint/pg-uint128.git",
+            "web" : "https://github.com/pg-uint/pg-uint128",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Dmitry K.",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "integer", "unsigned", "unsigned integer", "uint", "uint1", "uint2", "uint4", "uint8", "uint16", "int1", "int16", "8 bit", "8 bit integer", "128 bit", "128 bit integer" ]
+      },
+      "1.1.0" : {
+        "name" : "uint128",
+        "abstract" : "Unsigned integer datatypes for PostgreSQL",
+        "description" : "This extension provides additional integer types for PostgreSQL: uint2, uint4, uint8, uint16, int16",
+        "version" : "1.1.0",
+        "release_status" : "testing",
+        "maintainer" : [ "Dmitry K. <coder1994@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "uint128" : {
+            "abstract" : "Unsigned integer datatypes for PostgreSQL",
+            "file" : "uint128--1.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pg-uint/pg-uint128/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pg-uint/pg-uint128.git",
+            "web" : "https://github.com/pg-uint/pg-uint128",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Dmitry K.",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "integer", "unsigned", "unsigned integer", "uint", "uint2", "uint4", "uint8", "uint16", "int16", "128 bit", "128 bit integer" ]
+      },
+      "1.0.1" : {
+        "name" : "uint128",
+        "abstract" : "Unsigned integer datatypes for PostgreSQL",
+        "description" : "This extension provides additional integer types for PostgreSQL: uint2, uint4, uint8, uint16, int16",
+        "version" : "1.0.1",
+        "release_status" : "testing",
+        "maintainer" : [ "Dmitry K. <coder1994@gmail.com>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "12.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "uint128" : {
+            "abstract" : "Unsigned integer datatypes for PostgreSQL",
+            "file" : "uint128--1.0.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/pg-uint/pg-uint128/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/pg-uint/pg-uint128.git",
+            "web" : "https://github.com/pg-uint/pg-uint128",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Dmitry K.",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "integer", "unsigned", "unsigned integer", "uint", "uint2", "uint4", "uint8", "uint16", "int16", "128 bit", "128 bit integer" ]
+      }
+    }
+  },
+  "version" : 1
+}

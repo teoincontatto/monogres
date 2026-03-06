@@ -1,0 +1,60 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petere/pguri/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.20251029.0" : {
+      "tag" : "1.20251029",
+      "sha256" : "b3d12e06442e72346a230c03ebc4a89128a064a83d75c6c15a27ea6b06a6643f",
+      "strip_prefix" : "petere-pguri-239b44a",
+      "commit" : "239b44a66bfeb4b97084adc42162517220ac3203",
+      "short_commit" : "239b44a"
+    },
+    "1.20151224.0" : {
+      "tag" : "1.20151224",
+      "sha256" : "8bf3365fa874401538bd774e06fee2228a4def62b5a55bf43501f5d76a147e09",
+      "strip_prefix" : "petere-pguri-dd3f459",
+      "commit" : "dd3f45945bb58c8fbd8058e6bd6d63a5c546a901",
+      "short_commit" : "dd3f459"
+    },
+    "1.20150415.0" : {
+      "tag" : "1.20150415",
+      "sha256" : "9cf44aff137c6e62ff1e3d189cde7dac0cc1d597b1ca45f8aca99e16f10f8075",
+      "strip_prefix" : "petere-pguri-8a02974",
+      "commit" : "8a02974787d66fbf7c92380bab4cac4418fcfa16",
+      "short_commit" : "8a02974"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.20251029.0" : {
+        "default_version" : "1",
+        "comment" : "uri type",
+        "module_pathname" : "$libdir/uri",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20151224.0" : {
+        "default_version" : "1",
+        "comment" : "uri type",
+        "module_pathname" : "$libdir/uri",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20150415.0" : {
+        "default_version" : "0",
+        "comment" : "uri type",
+        "module_pathname" : "$libdir/uri",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,135 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/EnterpriseDB/pldebugger/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.9.0" : {
+      "tag" : "v1.9",
+      "sha256" : "acbab90308dba4b2f700372d1b1d6e1845d2bfea0171522242a668c1f4ab3e9b",
+      "strip_prefix" : "EnterpriseDB-pldebugger-ff0db43",
+      "commit" : "ff0db437fc4e8dc75447e0e2fd792494249b05b4",
+      "short_commit" : "ff0db43"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8",
+      "sha256" : "1c9664da316b2838b41fa8e7dd1f4823d62e286ffec12cdac7734f7bc8b6d3b3",
+      "strip_prefix" : "EnterpriseDB-pldebugger-b139e3a",
+      "commit" : "b139e3a96829f04e15874a42ef11cdf7526931d4",
+      "short_commit" : "b139e3a"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7",
+      "sha256" : "40f92f25997d5a74d0ffb7aafeac55f405cd0eee1b53f8fb25735fe10f3e686a",
+      "strip_prefix" : "EnterpriseDB-pldebugger-d2711df",
+      "commit" : "d2711df9796e4410b4a3f472debb7b760440b812",
+      "short_commit" : "d2711df"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6",
+      "sha256" : "02bc6bd7ec9e7135845e30ae70fe8301b8b8660702b565a9be115161c5e2e05a",
+      "strip_prefix" : "EnterpriseDB-pldebugger-a2c7ff7",
+      "commit" : "a2c7ff7147f17ad07e860304f529e17ca56a8117",
+      "short_commit" : "a2c7ff7"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5",
+      "sha256" : "0637a3d5a50b070a2c729dd8b890ffc098ed1bc0a8e50ceb9aecc55186630d37",
+      "strip_prefix" : "EnterpriseDB-pldebugger-87a3487",
+      "commit" : "87a34870c8242541ac7b2930a92d59b5e8cd6dd6",
+      "short_commit" : "87a3487"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "6e71db8ce0d16e4b209301fd4980a91318c90b9f176ce36d14935bb6d6762fd2",
+      "strip_prefix" : "EnterpriseDB-pldebugger-0b35ef2",
+      "commit" : "0b35ef2eef2a2fe53a120a72ae519cce5ee749a0",
+      "short_commit" : "0b35ef2"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3",
+      "sha256" : "31d8a1942f2e85e8de62eea5fa0039a0e419875932c241c6b2cb256e0f7ef17c",
+      "strip_prefix" : "EnterpriseDB-pldebugger-81d8ce7",
+      "commit" : "81d8ce7348e86e20aadbac716e8cef6bbc0cdc06",
+      "short_commit" : "81d8ce7"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "56eb77440aa4c7b22a1733d81001248f40ac167448ecb40881f9369ee100e089",
+      "strip_prefix" : "EnterpriseDB-pldebugger-ca1041d",
+      "commit" : "ca1041dc3db6f516899be669dc6fbfd6339f8168",
+      "short_commit" : "ca1041d"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.9.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.8.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.1",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "server-side support for debugging PL/pgSQL functions",
+        "module_pathname" : "$libdir/pldbgapi",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

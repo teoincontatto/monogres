@@ -1,0 +1,351 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/cybertec-postgresql/pg_squeeze/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.9.1" : {
+      "tag" : "REL1_9_1",
+      "sha256" : "8d344103e492f249c196d79855177612523b18c94f049c46ff4c30d8ac92730d",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-66ac647",
+      "commit" : "66ac647c0a2b5ff716aabc055886e47c4cfa3baf",
+      "short_commit" : "66ac647"
+    },
+    "1.9.0" : {
+      "tag" : "REL1_9_0",
+      "sha256" : "b78542af549f78add5bb1571dc2e41947ce96cbdc6eb25eebde844629fdbb5b6",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-1a86753",
+      "commit" : "1a8675324f1de4c02a1f8423bde0fea94f7d2a21",
+      "short_commit" : "1a86753"
+    },
+    "1.8.0" : {
+      "tag" : "REL1_8_0",
+      "sha256" : "c4459372c7a0158a58c3b09d522f8b4e71be78916d99b90335b5a26e9540c512",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-b882299",
+      "commit" : "b882299c9bcadf4fcec68b2c1add8d8fb0b51b98",
+      "short_commit" : "b882299"
+    },
+    "1.7.0" : {
+      "tag" : "REL1_7_0",
+      "sha256" : "932a0edeca271197bfdcdc3f8ab382850d9305a411f5716eb1b74bf6e473ecec",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-9da6307",
+      "commit" : "9da6307b3c1d96ce5e1e318953a92d529b30ea52",
+      "short_commit" : "9da6307"
+    },
+    "1.6.3" : {
+      "tag" : "REL1_6_3",
+      "sha256" : "507e65947fa4e2dbe942f1e8edd2f0f9fd22039e1ba7c2aa3c7a26d462fb7bab",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-78913e0",
+      "commit" : "78913e0eb373e96bfb54d77ed473698a654d53bb",
+      "short_commit" : "78913e0"
+    },
+    "1.6.2" : {
+      "tag" : "REL1_6_2",
+      "sha256" : "1a1dbc58c6bb106ac41efd6153297bdd3d5556cdbe41f61e1abef97f4b7f9f9c",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-054e6da",
+      "commit" : "054e6da472c3535c3d15a4f807c1e7757d984cc4",
+      "short_commit" : "054e6da"
+    },
+    "1.6.1" : {
+      "tag" : "REL1_6_1",
+      "sha256" : "c3c86aa3c837576e891d21d35de76731d639ccd4281ab1a7812bb4e49cf9d868",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-e5f668c",
+      "commit" : "e5f668c067ba7c945d634d7c94a8c8c30414a7ab",
+      "short_commit" : "e5f668c"
+    },
+    "1.6.0" : {
+      "tag" : "REL1_6_0",
+      "sha256" : "b454f60eeef09fe58ddbae4e61b18fb69abae377b2fd8c78c2d48ce43b45771e",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-3921556",
+      "commit" : "39215567a9f11e3f0912867e576ea4f9ffbb6e5e",
+      "short_commit" : "3921556"
+    },
+    "1.5.2" : {
+      "tag" : "1.5.2",
+      "sha256" : "0c6742f083d824474ea8faf661428f5c6a0bc6934f6990336c4f89ceca856df6",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-c9b2391",
+      "commit" : "c9b23919d8a5d8c8ce5face5788ec325554b763e",
+      "short_commit" : "c9b2391"
+    },
+    "1.5.1" : {
+      "tag" : "1.5.1",
+      "sha256" : "64f7d7126c0f0ecb8f66047b7135ad2d61919b4d8be602ff68200f6e863675db",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-d7ee25a",
+      "commit" : "d7ee25a03e20e3285b0ad19a091766be62daf2e0",
+      "short_commit" : "d7ee25a"
+    },
+    "1.5.0" : {
+      "tag" : "REL1_5_0",
+      "sha256" : "844639dd152653db463f5927082e27b83f118eaa537c36b235d29893a416a97d",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-f49c284",
+      "commit" : "f49c28490b41d70c6a31d0a88ccca6c67743d010",
+      "short_commit" : "f49c284"
+    },
+    "1.4.1" : {
+      "tag" : "REL1_4_1",
+      "sha256" : "1e4b9138dd281a1bb0d225cc0b4847069069b204085a0a50ae5b4642c2d04643",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-5a9f139",
+      "commit" : "5a9f139f68122a68492d8301541478f231ae88a6",
+      "short_commit" : "5a9f139"
+    },
+    "1.4.0" : {
+      "tag" : "REL1_4_0",
+      "sha256" : "a4b9e34c688826ca5fed2f64d9e44fcc0add377ca5dd11977c22f77adae9d1eb",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-8977db2",
+      "commit" : "8977db2017c555174f1d4aa6486034cf25faeead",
+      "short_commit" : "8977db2"
+    },
+    "1.3.2" : {
+      "tag" : "REL1_3_2",
+      "sha256" : "2520bb574fb89f381fd649f3f87eda9a0df47850e3e4e8cb194dc211af2397f8",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-eb9bcd1",
+      "commit" : "eb9bcd1a39ebf46e71817b015e7b69e47ba9dcc5",
+      "short_commit" : "eb9bcd1"
+    },
+    "1.3.1" : {
+      "tag" : "REL1_3_1",
+      "sha256" : "7b5942952cdc7d94053130cadfee27f3dba08999548d3dda6c47858d91468e99",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-7edf2ff",
+      "commit" : "7edf2ff40b87120e644d0a95687f74194b9cecfa",
+      "short_commit" : "7edf2ff"
+    },
+    "1.3.0" : {
+      "tag" : "REL1_3_0",
+      "sha256" : "f70e7af286b263f4c0478a7181fbbb0f928f65a2339c338844698ee92ce0b082",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-8af7ce1",
+      "commit" : "8af7ce1e666930e6067117781dd2305988949c95",
+      "short_commit" : "8af7ce1"
+    },
+    "1.2.1" : {
+      "tag" : "REL1_2_1",
+      "sha256" : "6c84d44ce5b318221d0b018b4f92028af8178bebe38b321e86ee2f836ed48ef2",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-56a6a35",
+      "commit" : "56a6a3516f9c21946b948529f0cb920bca0b64a5",
+      "short_commit" : "56a6a35"
+    },
+    "1.2.0" : {
+      "tag" : "REL1_2_0",
+      "sha256" : "cf1f904fd529b216dba66aa2ab7e9d6bb37cdd0708089e6cccd4c4e7d8171fd6",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-718011b",
+      "commit" : "718011b21d986a3733a3397bd676095d077bfbf8",
+      "short_commit" : "718011b"
+    },
+    "1.1.2" : {
+      "tag" : "REL1_1_2",
+      "sha256" : "46c04547015091936f80764c33b093f9389beb083c805b11ee42d5f2c7c61430",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-8e9a455",
+      "commit" : "8e9a45589af679aa30f5114c20d5b21e772fe9ad",
+      "short_commit" : "8e9a455"
+    },
+    "1.1.1" : {
+      "tag" : "REL1_1_1",
+      "sha256" : "d480c9b16e9d6aacc763e2154c659cb5524f73771703973e8f969d1f7ec6ec59",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-616e3d3",
+      "commit" : "616e3d332603beabfe81740ac0bc35de72ee26a9",
+      "short_commit" : "616e3d3"
+    },
+    "1.1.0" : {
+      "tag" : "REL1_1_0",
+      "sha256" : "e65bcae8cc283bd442414c6efe9f7e2ca0778fb754ea34e7ee5f98245618be0a",
+      "strip_prefix" : "cybertec-postgresql-pg_squeeze-9074455",
+      "commit" : "907445590f628f845459df24af51c53dc47c7216",
+      "short_commit" : "9074455"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.9.1" : {
+        "default_version" : "1.9",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.9.0" : {
+        "default_version" : "1.8",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.8.0" : {
+        "default_version" : "1.8",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.6.3" : {
+        "default_version" : "1.6",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.6.2" : {
+        "default_version" : "1.6",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.6.1" : {
+        "default_version" : "1.6",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.5.2" : {
+        "default_version" : "1.5",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.5.1" : {
+        "default_version" : "1.5",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.4.1" : {
+        "default_version" : "1.4",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.3.2" : {
+        "default_version" : "1.3",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.3.1" : {
+        "default_version" : "1.3",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.2.1" : {
+        "default_version" : "1.2",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.1.2" : {
+        "default_version" : "1.1",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "A tool to remove unused space from a relation.",
+        "module_pathname" : "$libdir/pg_squeeze",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "squeeze"
+      }
+    }
+  },
+  "version" : 1
+}

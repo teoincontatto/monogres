@@ -1,0 +1,1793 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/debezium/postgres-decoderbufs/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.4.2" : {
+      "tag" : "v3.4.2.Final",
+      "sha256" : "c70c2795a17c18821bb024ea5469346fc6656afcd1ac255ee2444d53bb944beb",
+      "strip_prefix" : "debezium-postgres-decoderbufs-afb7236",
+      "commit" : "afb7236cd1959f0679934bf7a8453d7efb238ce4",
+      "short_commit" : "afb7236"
+    },
+    "3.4.1" : {
+      "tag" : "v3.4.1.Final",
+      "sha256" : "c70c2795a17c18821bb024ea5469346fc6656afcd1ac255ee2444d53bb944beb",
+      "strip_prefix" : "debezium-postgres-decoderbufs-afb7236",
+      "commit" : "afb7236cd1959f0679934bf7a8453d7efb238ce4",
+      "short_commit" : "afb7236"
+    },
+    "3.4.0" : {
+      "tag" : "v3.4.0.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.3.2" : {
+      "tag" : "v3.3.2.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.3.1" : {
+      "tag" : "v3.3.1.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.3.0" : {
+      "tag" : "v3.3.0.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.7" : {
+      "tag" : "v3.2.7.Final",
+      "sha256" : "c70c2795a17c18821bb024ea5469346fc6656afcd1ac255ee2444d53bb944beb",
+      "strip_prefix" : "debezium-postgres-decoderbufs-afb7236",
+      "commit" : "afb7236cd1959f0679934bf7a8453d7efb238ce4",
+      "short_commit" : "afb7236"
+    },
+    "3.2.6" : {
+      "tag" : "v3.2.6.Final",
+      "sha256" : "c70c2795a17c18821bb024ea5469346fc6656afcd1ac255ee2444d53bb944beb",
+      "strip_prefix" : "debezium-postgres-decoderbufs-afb7236",
+      "commit" : "afb7236cd1959f0679934bf7a8453d7efb238ce4",
+      "short_commit" : "afb7236"
+    },
+    "3.2.5" : {
+      "tag" : "v3.2.5.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.4" : {
+      "tag" : "v3.2.4.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.3" : {
+      "tag" : "v3.2.3.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.2" : {
+      "tag" : "v3.2.2.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.1" : {
+      "tag" : "v3.2.1.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.2.0" : {
+      "tag" : "v3.2.0.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.1.3" : {
+      "tag" : "v3.1.3.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.1.2" : {
+      "tag" : "v3.1.2.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.1.1" : {
+      "tag" : "v3.1.1.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1.0.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.8" : {
+      "tag" : "v3.0.8.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.7" : {
+      "tag" : "v3.0.7.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.6" : {
+      "tag" : "v3.0.6.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.5" : {
+      "tag" : "v3.0.5.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.4" : {
+      "tag" : "v3.0.4.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.3" : {
+      "tag" : "v3.0.3.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.2" : {
+      "tag" : "v3.0.2.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "3.0.1" : {
+      "tag" : "v3.0.1.Final",
+      "sha256" : "275ffb16f8f71a3066092441c83997fe3aa43e482910043f3b3055606400fa8a",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e1f8714",
+      "commit" : "e1f87147b720b03d8020b74cd137ca51b07f00e5",
+      "short_commit" : "e1f8714"
+    },
+    "3.0.0" : {
+      "tag" : "v3.0.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.7.4" : {
+      "tag" : "v2.7.4.Final",
+      "sha256" : "7f3f69554d7c50754b823a9a24528e4fc34d83bc9d8e693f932d60a3c06fa681",
+      "strip_prefix" : "debezium-postgres-decoderbufs-84f30f3",
+      "commit" : "84f30f3f4417968f756a269a214559f923bd5977",
+      "short_commit" : "84f30f3"
+    },
+    "2.7.3" : {
+      "tag" : "v2.7.3.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.7.2" : {
+      "tag" : "v2.7.2.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.7.1" : {
+      "tag" : "v2.7.1.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.7.0" : {
+      "tag" : "v2.7.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.6.2" : {
+      "tag" : "v2.6.2.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.6.1" : {
+      "tag" : "v2.6.1.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.6.0" : {
+      "tag" : "v2.6.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.5.4" : {
+      "tag" : "v2.5.4.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.5.3" : {
+      "tag" : "v2.5.3.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.5.2" : {
+      "tag" : "v2.5.2.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.5.1" : {
+      "tag" : "v2.5.1.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.5.0" : {
+      "tag" : "v2.5.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.4.2" : {
+      "tag" : "v2.4.2.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.4.1" : {
+      "tag" : "v2.4.1.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.4.0" : {
+      "tag" : "v2.4.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.7" : {
+      "tag" : "v2.3.7.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.6" : {
+      "tag" : "v2.3.6.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.5" : {
+      "tag" : "v2.3.5.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.4" : {
+      "tag" : "v2.3.4.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.3" : {
+      "tag" : "v2.3.3.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.2" : {
+      "tag" : "v2.3.2.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.1" : {
+      "tag" : "v2.3.1.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3.0.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "2.2.1" : {
+      "tag" : "v2.2.1.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.1.4" : {
+      "tag" : "v2.1.4.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.1.3" : {
+      "tag" : "v2.1.3.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.1.2" : {
+      "tag" : "v2.1.2.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.1.1" : {
+      "tag" : "v2.1.1.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.0.1" : {
+      "tag" : "v2.0.1.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.8" : {
+      "tag" : "v1.9.8.Final",
+      "sha256" : "b898909d4d08a25e30b4a37b3f9b3357fe0b4dad5ae8fe7ec8d8bb8f321c4a38",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e709f32",
+      "commit" : "e709f326cbcdf74d35ef747c0626da9abaca1375",
+      "short_commit" : "e709f32"
+    },
+    "1.9.7" : {
+      "tag" : "v1.9.7.Final",
+      "sha256" : "3e03542722b5015670fb6c20a8edfce50372b8645a30f036f5f665c4a059de36",
+      "strip_prefix" : "debezium-postgres-decoderbufs-cd4171a",
+      "commit" : "cd4171a030dfbc46cdf103d72ab754042f2fca54",
+      "short_commit" : "cd4171a"
+    },
+    "1.9.6" : {
+      "tag" : "v1.9.6.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.5" : {
+      "tag" : "v1.9.5.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.4" : {
+      "tag" : "v1.9.4.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.3" : {
+      "tag" : "v1.9.3.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.2" : {
+      "tag" : "v1.9.2.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.1" : {
+      "tag" : "v1.9.1.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.9.0" : {
+      "tag" : "v1.9.0.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.8.1" : {
+      "tag" : "v1.8.1.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.8.0" : {
+      "tag" : "v1.8.0.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.7.2" : {
+      "tag" : "v1.7.2.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.7.1" : {
+      "tag" : "v1.7.1.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.6.4" : {
+      "tag" : "v1.6.4.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.6.3" : {
+      "tag" : "v1.6.3.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.6.2" : {
+      "tag" : "v1.6.2.Final",
+      "sha256" : "d073a6a31f55da49f60f519ad86dd29b34503014fa00fd95c1b3ba34519b6ea3",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c9b00aa",
+      "commit" : "c9b00aa8c093fa77e08b256bb09d33069a30db86",
+      "short_commit" : "c9b00aa"
+    },
+    "1.6.1" : {
+      "tag" : "v1.6.1.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.5.4" : {
+      "tag" : "v1.5.4.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.5.3" : {
+      "tag" : "v1.5.3.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.5.2" : {
+      "tag" : "v1.5.2.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.4.2" : {
+      "tag" : "v1.4.2.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.4.1" : {
+      "tag" : "v1.4.1.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.3.1" : {
+      "tag" : "v.1.3.1.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0.Final",
+      "sha256" : "8c1614b217d2e15864b226b93e409ca9ce28339c8d309ca35fa5f3b0c6e4b698",
+      "strip_prefix" : "debezium-postgres-decoderbufs-7a8c8b8",
+      "commit" : "7a8c8b8f4666a6ad333ae2832729023930f7143e",
+      "short_commit" : "7a8c8b8"
+    },
+    "1.2.5" : {
+      "tag" : "v1.2.5.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.2.4" : {
+      "tag" : "v1.2.4.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.2.3" : {
+      "tag" : "v1.2.3.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.0.3" : {
+      "tag" : "v1.0.3.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.0.2" : {
+      "tag" : "v1.0.2.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1.Final",
+      "sha256" : "bbcfa6e7dfff24d8ac99121a6af001ea88defa0fc2ea4e8745a460683a4d8173",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e29a258",
+      "commit" : "e29a2580a50791956036615c25418b36663f3ea1",
+      "short_commit" : "e29a258"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0.Final",
+      "sha256" : "4cd60dc841be87e2bdc94ea4ed3ec7a22308f24392131de91c12c92ddf13a454",
+      "strip_prefix" : "debezium-postgres-decoderbufs-01126bf",
+      "commit" : "01126bfa8918965d82ba72647c34c574b9e67b60",
+      "short_commit" : "01126bf"
+    },
+    "0.10.0" : {
+      "tag" : "v0.10.0.Final",
+      "sha256" : "98facbd1d9826dfac1b443704ce81e907459b5e78d4c932f70b3810bc613352d",
+      "strip_prefix" : "debezium-postgres-decoderbufs-3c910ff",
+      "commit" : "3c910fff12ad68db0f2872d48ff06a04b4356465",
+      "short_commit" : "3c910ff"
+    },
+    "0.9.5" : {
+      "tag" : "v0.9.5.Final",
+      "sha256" : "d251d0d0214cedea11c72a652b1b5e745b2aef3fb1dbead743b3e8a53f448284",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c719d3f",
+      "commit" : "c719d3fa6a5c00d220100f0c6b8a7604325f6288",
+      "short_commit" : "c719d3f"
+    },
+    "0.9.4" : {
+      "tag" : "v0.9.4.Final",
+      "sha256" : "d251d0d0214cedea11c72a652b1b5e745b2aef3fb1dbead743b3e8a53f448284",
+      "strip_prefix" : "debezium-postgres-decoderbufs-c719d3f",
+      "commit" : "c719d3fa6a5c00d220100f0c6b8a7604325f6288",
+      "short_commit" : "c719d3f"
+    },
+    "0.9.3" : {
+      "tag" : "v0.9.3.Final",
+      "sha256" : "6b8af4f58794cffecef38081d092b926ba99b958a7eff85ba41d5b91fe555147",
+      "strip_prefix" : "debezium-postgres-decoderbufs-2a60a18",
+      "commit" : "2a60a18ab1a633cb788cbb54174a80d2e3900e49",
+      "short_commit" : "2a60a18"
+    },
+    "0.9.2" : {
+      "tag" : "v0.9.2.Final",
+      "sha256" : "6b8af4f58794cffecef38081d092b926ba99b958a7eff85ba41d5b91fe555147",
+      "strip_prefix" : "debezium-postgres-decoderbufs-2a60a18",
+      "commit" : "2a60a18ab1a633cb788cbb54174a80d2e3900e49",
+      "short_commit" : "2a60a18"
+    },
+    "0.9.1" : {
+      "tag" : "v0.9.1.Final",
+      "sha256" : "6b8af4f58794cffecef38081d092b926ba99b958a7eff85ba41d5b91fe555147",
+      "strip_prefix" : "debezium-postgres-decoderbufs-2a60a18",
+      "commit" : "2a60a18ab1a633cb788cbb54174a80d2e3900e49",
+      "short_commit" : "2a60a18"
+    },
+    "0.9.0" : {
+      "tag" : "v0.9.0.Final",
+      "sha256" : "6b8af4f58794cffecef38081d092b926ba99b958a7eff85ba41d5b91fe555147",
+      "strip_prefix" : "debezium-postgres-decoderbufs-2a60a18",
+      "commit" : "2a60a18ab1a633cb788cbb54174a80d2e3900e49",
+      "short_commit" : "2a60a18"
+    },
+    "0.8.3" : {
+      "tag" : "v0.8.3.Final",
+      "sha256" : "7609d5aa3f286d78ea8aaa4ee3b62974df07a55cdc3689338151d88e82c379e5",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e2da727",
+      "commit" : "e2da72713909d4315aa63f46819412ec4f9f6a42",
+      "short_commit" : "e2da727"
+    },
+    "0.8.2" : {
+      "tag" : "v0.8.2",
+      "sha256" : "7609d5aa3f286d78ea8aaa4ee3b62974df07a55cdc3689338151d88e82c379e5",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e2da727",
+      "commit" : "e2da72713909d4315aa63f46819412ec4f9f6a42",
+      "short_commit" : "e2da727"
+    },
+    "0.8.1" : {
+      "tag" : "v0.8.1.Final",
+      "sha256" : "7609d5aa3f286d78ea8aaa4ee3b62974df07a55cdc3689338151d88e82c379e5",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e2da727",
+      "commit" : "e2da72713909d4315aa63f46819412ec4f9f6a42",
+      "short_commit" : "e2da727"
+    },
+    "0.8.0" : {
+      "tag" : "v0.8.0.Final",
+      "sha256" : "7609d5aa3f286d78ea8aaa4ee3b62974df07a55cdc3689338151d88e82c379e5",
+      "strip_prefix" : "debezium-postgres-decoderbufs-e2da727",
+      "commit" : "e2da72713909d4315aa63f46819412ec4f9f6a42",
+      "short_commit" : "e2da727"
+    },
+    "0.7.5" : {
+      "tag" : "v0.7.5",
+      "sha256" : "99a09a7def3d737eb74ab1ca0ec69cb97b641f384d4bdb24c254444fd2dd8cd6",
+      "strip_prefix" : "debezium-postgres-decoderbufs-0d4db28",
+      "commit" : "0d4db2816bc16cae81c06dd06a3fda00b7491fba",
+      "short_commit" : "0d4db28"
+    },
+    "0.7.4" : {
+      "tag" : "v0.7.4",
+      "sha256" : "99a09a7def3d737eb74ab1ca0ec69cb97b641f384d4bdb24c254444fd2dd8cd6",
+      "strip_prefix" : "debezium-postgres-decoderbufs-0d4db28",
+      "commit" : "0d4db2816bc16cae81c06dd06a3fda00b7491fba",
+      "short_commit" : "0d4db28"
+    },
+    "0.7.3" : {
+      "tag" : "v0.7.3",
+      "sha256" : "c57f4522e33d6c63df47110fafff6859c5158464bf541e8348fb2fd876d0b785",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d9477a5",
+      "commit" : "d9477a5b994edc5ce71f5ebd22b2ada977f61f8f",
+      "short_commit" : "d9477a5"
+    },
+    "0.7.2" : {
+      "tag" : "v0.7.2",
+      "sha256" : "c57f4522e33d6c63df47110fafff6859c5158464bf541e8348fb2fd876d0b785",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d9477a5",
+      "commit" : "d9477a5b994edc5ce71f5ebd22b2ada977f61f8f",
+      "short_commit" : "d9477a5"
+    },
+    "0.7.1" : {
+      "tag" : "v0.7.1",
+      "sha256" : "08c98a49eed03629bf8bdfcd3a417b9fdbb012d3afa066a69080f11cf78ee983",
+      "strip_prefix" : "debezium-postgres-decoderbufs-8baab62",
+      "commit" : "8baab62456c7bde67bc3edd58815120be77ead51",
+      "short_commit" : "8baab62"
+    },
+    "0.7.0" : {
+      "tag" : "v0.7.0",
+      "sha256" : "08c98a49eed03629bf8bdfcd3a417b9fdbb012d3afa066a69080f11cf78ee983",
+      "strip_prefix" : "debezium-postgres-decoderbufs-8baab62",
+      "commit" : "8baab62456c7bde67bc3edd58815120be77ead51",
+      "short_commit" : "8baab62"
+    },
+    "0.6.2" : {
+      "tag" : "v0.6.2",
+      "sha256" : "40ec12983cbeaa015bd4e6f5fdf1bfc3f0090d6d0f09ae1d358785c1d59d713a",
+      "strip_prefix" : "debezium-postgres-decoderbufs-6c1723a",
+      "commit" : "6c1723a1797c60bbbf2b0dd9f269fb124f5342af",
+      "short_commit" : "6c1723a"
+    },
+    "0.6.1" : {
+      "tag" : "v0.6.1",
+      "sha256" : "07cf5d5d025e431ef4d845dede8a859f5553977f47aa36d8a1ccfa32b22b372c",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d08a755",
+      "commit" : "d08a75593c68897600e10f5250133337624bcf63",
+      "short_commit" : "d08a755"
+    },
+    "0.6.0" : {
+      "tag" : "v0.6.0",
+      "sha256" : "07cf5d5d025e431ef4d845dede8a859f5553977f47aa36d8a1ccfa32b22b372c",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d08a755",
+      "commit" : "d08a75593c68897600e10f5250133337624bcf63",
+      "short_commit" : "d08a755"
+    },
+    "0.5.2" : {
+      "tag" : "v0.5.2",
+      "sha256" : "07cf5d5d025e431ef4d845dede8a859f5553977f47aa36d8a1ccfa32b22b372c",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d08a755",
+      "commit" : "d08a75593c68897600e10f5250133337624bcf63",
+      "short_commit" : "d08a755"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5.1",
+      "sha256" : "07cf5d5d025e431ef4d845dede8a859f5553977f47aa36d8a1ccfa32b22b372c",
+      "strip_prefix" : "debezium-postgres-decoderbufs-d08a755",
+      "commit" : "d08a75593c68897600e10f5250133337624bcf63",
+      "short_commit" : "d08a755"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3.0",
+      "sha256" : "84032650b4c93bc14facca8db8b1406b31f58d8ef343ad328d2c2d99eacfc865",
+      "strip_prefix" : "debezium-postgres-decoderbufs-04f1dc3",
+      "commit" : "04f1dc3c9e54ac03643f7537bd133186fe04b5bf",
+      "short_commit" : "04f1dc3"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2.0",
+      "sha256" : "10b8da196fb55f0b54beac79daa0bcdc19cef43fc075c1f9438d03e8b8fd0cde",
+      "strip_prefix" : "debezium-postgres-decoderbufs-1baad6e",
+      "commit" : "1baad6ecc65275ff903731246c08dc5b4c9dd166",
+      "short_commit" : "1baad6e"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "be831cca2bd4f8842cfe8f955a84d7a63c684580d185c8837082577ba08af598",
+      "strip_prefix" : "debezium-postgres-decoderbufs-f921f2a",
+      "commit" : "f921f2af59d4dc0e1423aa59f50161b07760aa31",
+      "short_commit" : "f921f2a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.4.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.4.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.4.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.3.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.3.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.3.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.7" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.6" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.8" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.7" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.6" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.7.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.6.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.6.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.6.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.7" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.6" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.8" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.7" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.6" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.9.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.8.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.8.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.9.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.5" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.4" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.3" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.10.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

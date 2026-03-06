@@ -1,0 +1,1422 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ibarwick/firebird_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.1" : {
+      "tag" : "1.4.1",
+      "sha256" : "49a97345c464321076b676b9924a7c4c8bb973b2e0260d0492ba8cd14b7e53b3",
+      "strip_prefix" : "ibarwick-firebird_fdw-57167d9",
+      "commit" : "57167d9294725d9f198474926cbca3a1d76c29aa",
+      "short_commit" : "57167d9"
+    },
+    "1.4.0" : {
+      "tag" : "1.4.0",
+      "sha256" : "69d292f5da61976bfc1113655f547bd86045e04d4e5d68a2d95d945d237d9693",
+      "strip_prefix" : "ibarwick-firebird_fdw-bda82da",
+      "commit" : "bda82da9bdce0e5a9bf9ffd541bfb0008a9a62a6",
+      "short_commit" : "bda82da"
+    },
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "8afff8c9ed244c7a1c5709938cbdebb00699521978d11550d144df9922f3d9a1",
+      "strip_prefix" : "ibarwick-firebird_fdw-31be307",
+      "commit" : "31be3073dff22024df49d4b32eb886015e5f2cff",
+      "short_commit" : "31be307"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "9f03ddc716879a5cb46ba602387460ccb96306ae176432ca06ce873b08019854",
+      "strip_prefix" : "ibarwick-firebird_fdw-1166423",
+      "commit" : "1166423cfcb08e880f190f7e765ff12584e8ee66",
+      "short_commit" : "1166423"
+    },
+    "1.2.3" : {
+      "tag" : "1.2.3",
+      "sha256" : "1ceae785e1fa31142d4f955606c750052210c834ec9a431f4da7fed9a55b6b2c",
+      "strip_prefix" : "ibarwick-firebird_fdw-ab20cce",
+      "commit" : "ab20cced4238150a930fac0f0a4cf715c65ff421",
+      "short_commit" : "ab20cce"
+    },
+    "1.2.2" : {
+      "tag" : "1.2.2",
+      "sha256" : "08cb0f754975ae449df381147ecf407283ebc88d8336fb7829858ee9e3edea08",
+      "strip_prefix" : "ibarwick-firebird_fdw-1f359da",
+      "commit" : "1f359da715d968cbf849c5a0b16284ab35c6a232",
+      "short_commit" : "1f359da"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "9b233177ae3b830b1aa241d68ea4fc5c5dd9943560ac00fa3a1344c2d1c6561d",
+      "strip_prefix" : "ibarwick-firebird_fdw-ad0a645",
+      "commit" : "ad0a645158d000504808bc79a8d1e7b0fe7642a0",
+      "short_commit" : "ad0a645"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "efeee6c013ca89c680ca256dd387999edebdc7b91c114357c7d5e389f6c4881e",
+      "strip_prefix" : "ibarwick-firebird_fdw-fbd231b",
+      "commit" : "fbd231bb875798ca44e274e00acdab19aadd7da8",
+      "short_commit" : "fbd231b"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "96b6d6eba8118653c97ccfddff28b15dc1b12f57afb9edcde6ced038a5e650f1",
+      "strip_prefix" : "ibarwick-firebird_fdw-2f90bf2",
+      "commit" : "2f90bf268645bf62feb42583a6111da856424f91",
+      "short_commit" : "2f90bf2"
+    },
+    "0.5.0" : {
+      "tag" : "0.5.0",
+      "sha256" : "c27a8519053bd84f81081ded752ecd6312ad3d75ecac9f6df37679768e868a38",
+      "strip_prefix" : "ibarwick-firebird_fdw-5532a05",
+      "commit" : "5532a051e883dfeedb76ddd03aacac5b0187b3b1",
+      "short_commit" : "5532a05"
+    },
+    "0.4.0" : {
+      "tag" : "0.4.0",
+      "sha256" : "d46feb0805e64b1a5b8191eeffa8a546c8d5fc27b0c40817be728fcc89c1122f",
+      "strip_prefix" : "ibarwick-firebird_fdw-a0d3b63",
+      "commit" : "a0d3b63136163f946fef4449455a4c13a58aa88c",
+      "short_commit" : "a0d3b63"
+    },
+    "0.3.0" : {
+      "tag" : "0.3.0",
+      "sha256" : "7f0f22a443802446c9f4c2858653e0f4b9251eb03c72d2711f20f0c114fb3b85",
+      "strip_prefix" : "ibarwick-firebird_fdw-794d50e",
+      "commit" : "794d50e1a896e976b3866f76f14a37e213d42b76",
+      "short_commit" : "794d50e"
+    },
+    "0.2.5" : {
+      "tag" : "0.2.5",
+      "sha256" : "23d26ef976a2e6bcd2ee0364946131dc059f5158b1b098e0a59a271c2f2ee6b4",
+      "strip_prefix" : "ibarwick-firebird_fdw-0e091fb",
+      "commit" : "0e091fbe297e3905989883d9e732964dbd9dd2e3",
+      "short_commit" : "0e091fb"
+    },
+    "0.2.4" : {
+      "tag" : "0.2.4",
+      "sha256" : "86aaeea529e7b2db82d5c32755314a761fba291a674a1e788c8c1f4ecff33f9a",
+      "strip_prefix" : "ibarwick-firebird_fdw-4d9f95a",
+      "commit" : "4d9f95a20d6ca2e1b72b0e517d96063131bb5c12",
+      "short_commit" : "4d9f95a"
+    },
+    "0.2.3" : {
+      "tag" : "0.2.3",
+      "sha256" : "c8646ef0acb1f934bef81a669b71088e106661746642f0c3bffea4922dc99c76",
+      "strip_prefix" : "ibarwick-firebird_fdw-e929ead",
+      "commit" : "e929eadabe5d4b72d346378d07ec598e03ee5590",
+      "short_commit" : "e929ead"
+    },
+    "0.2.2" : {
+      "tag" : "0.2.2",
+      "sha256" : "a725166decec8c0f62172217148360022e1019e6cc0b89bf2421f48206e1e8ad",
+      "strip_prefix" : "ibarwick-firebird_fdw-55d2b8a",
+      "commit" : "55d2b8ae56cbe6ab5fc591fbe2d84f0d4785a0bf",
+      "short_commit" : "55d2b8a"
+    },
+    "0.2.1" : {
+      "tag" : "0.2.1",
+      "sha256" : "9c7625226a7036c18ea614d2f38bc1a30e623dd92b21b700dbe64c9c9b0265f0",
+      "strip_prefix" : "ibarwick-firebird_fdw-5f9680b",
+      "commit" : "5f9680bef0be789a35e1db1e7c82f63a0421d9d4",
+      "short_commit" : "5f9680b"
+    },
+    "0.2.0" : {
+      "tag" : "0.2.0",
+      "sha256" : "a93a0b6bace1b95a5f955fb1c91dd6018ce8aca68d024021d0c214b862fc59e2",
+      "strip_prefix" : "ibarwick-firebird_fdw-ddcc943",
+      "commit" : "ddcc943534c5ec0d11fa206b78e579beea6c3218",
+      "short_commit" : "ddcc943"
+    },
+    "0.1.6" : {
+      "tag" : "0.1.6",
+      "sha256" : "2c54ab0bdfa4bddb2f1cf9d23aeccb0e5fa6e2eda5dc8a707794cc295d94c268",
+      "strip_prefix" : "ibarwick-firebird_fdw-873ceb8",
+      "commit" : "873ceb8a0f9facb13a077e7967582ba53e9885c2",
+      "short_commit" : "873ceb8"
+    },
+    "0.1.5" : {
+      "tag" : "0.1.5",
+      "sha256" : "aa7772f94576229fcffa16e16a12f01d5c20600edc40a6a3aaf361150bb6f8a3",
+      "strip_prefix" : "ibarwick-firebird_fdw-9fce3c1",
+      "commit" : "9fce3c120e18a74c492f789837a8c8fe667d97df",
+      "short_commit" : "9fce3c1"
+    },
+    "0.1.4" : {
+      "tag" : "0.1.4",
+      "sha256" : "87fb8627d6930edce45f35d063486aa6937b12c5067907cf0dd23e4445b51ef0",
+      "strip_prefix" : "ibarwick-firebird_fdw-8109125",
+      "commit" : "81091254410b6d3465d3a078f9735b0d0b0116d6",
+      "short_commit" : "8109125"
+    },
+    "0.1.3" : {
+      "tag" : "0.1.3",
+      "sha256" : "f7ecc7ec13fa8320eec95c3bfb71fdbc6799eea3f1680c8fd1afae1ed76e3b5c",
+      "strip_prefix" : "ibarwick-firebird_fdw-8f165b9",
+      "commit" : "8f165b9b4b8ddd0780f14876145a5cd18c103c83",
+      "short_commit" : "8f165b9"
+    },
+    "0.1.2" : {
+      "tag" : "0.1.2",
+      "sha256" : "9dc2af98042e90f7ee82baef82ef422b5e9035cdbb7fe34b06e4c38d3bf7034a",
+      "strip_prefix" : "ibarwick-firebird_fdw-9a55d07",
+      "commit" : "9a55d072ee7714a5623defc986b74918f30927ab",
+      "short_commit" : "9a55d07"
+    },
+    "0.1.1" : {
+      "tag" : "0.1.1",
+      "sha256" : "268cbbf441f991e897cb28b54c87579ee0c46f17b4f269841326d8481ad358ad",
+      "strip_prefix" : "ibarwick-firebird_fdw-59e14fb",
+      "commit" : "59e14fb65da6370586b807a5551bfd1b63df65c9",
+      "short_commit" : "59e14fb"
+    },
+    "0.1.0" : {
+      "tag" : "0.1.0",
+      "sha256" : "94f818611862733e52cceae28546f4e1e14fbe3b2b619d06e0351af14f012a05",
+      "strip_prefix" : "ibarwick-firebird_fdw-a51aef3",
+      "commit" : "a51aef3bbed6570d512533f5386cdba61b994ede",
+      "short_commit" : "a51aef3"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.1" : {
+        "default_version" : "1.4.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.3.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.5" : {
+        "default_version" : "0.2.5",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.4" : {
+        "default_version" : "0.2.4",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.3" : {
+        "default_version" : "0.2.3",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.2" : {
+        "default_version" : "0.2.2",
+        "comment" : "foreign data wrapper for Firebird",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.1" : {
+        "default_version" : "0.2.1",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.6" : {
+        "default_version" : "0.1.6",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.5" : {
+        "default_version" : "0.1.5",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.4" : {
+        "default_version" : "0.1.4",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.3" : {
+        "default_version" : "0.1.3",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.2" : {
+        "default_version" : "0.1.2",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.1" : {
+        "default_version" : "0.1.1",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "Firebird Foreign Data Wrapper",
+        "module_pathname" : "$libdir/firebird_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.4.1" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.4.1",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.4.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.4.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.4.0",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.4.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.3.1" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.3.0",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.3.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.3.0",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.5.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.2.3" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.2.3",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.3"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.2.2" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.2.1",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.2"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.2.1" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.2.1",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.2.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.2.0",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--1.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.2.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "1.0.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "1.0.0",
+        "release_status" : "stable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.5.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://sql-info.de/postgresql/firebird-fdw/index.html",
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "https://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.5.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.5.0",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.5.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.4.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.4.0",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.4.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.4.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.3.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.3.0",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.3.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.2.5" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.5",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.5"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.2.4" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.4",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.4.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.4"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.2.3" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.3",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.3.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.3"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.2.2" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.2",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.2.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird", "sql med" ]
+      },
+      "0.2.1" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.1",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.2.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.1.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.2.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.2.0",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.2.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.2.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.6" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.6",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.6.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.6"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.5" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.5",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.5"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.4" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.4",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.4.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.4"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.3" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.3",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.3.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.3"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.2" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.2",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.2.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.1" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.1",
+        "release_status" : "unstable",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.1.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          },
+          "bugtracker" : {
+            "web" : "http://github.com/ibarwick/firebird_fdw/issues/"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      },
+      "0.1.0" : {
+        "name" : "firebird_fdw",
+        "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+        "version" : "0.1.0",
+        "maintainer" : "Ian Barwick <barwick@gmail.com>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "provides" : {
+          "firebird_fdw" : {
+            "abstract" : "A PostgreSQL foreign data wrapper (FDW) for Firebird",
+            "file" : "firebird_fdw--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/ibarwick/firebird_fdw.git",
+            "web" : "https://github.com/ibarwick/firebird_fdw",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "generated_by" : "Ian Barwick",
+        "tags" : [ "foreign data wrapper", "fdw", "firebird" ]
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,255 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/CartoDB/odbc_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.5.2" : {
+      "tag" : "0.5.2",
+      "sha256" : "fcafb339da9d7a436779e44f39f5baf4dccb07f66666c96435b838fac6beaf94",
+      "strip_prefix" : "CartoDB-odbc_fdw-91af33a",
+      "commit" : "91af33a80bac932164f52f782de0b5266485a386",
+      "short_commit" : "91af33a"
+    },
+    "0.5.2-3" : {
+      "tag" : "0.5.2.3",
+      "sha256" : "7dcf31cf44439398850a0e61923d59f323d968aa44eba67ec2805a0e078f9969",
+      "strip_prefix" : "CartoDB-odbc_fdw-65c9768",
+      "commit" : "65c97683364f826f215176deee6711afc2a3133e",
+      "short_commit" : "65c9768"
+    },
+    "0.5.2-2" : {
+      "tag" : "0.5.2.2",
+      "sha256" : "782bd8f9a4fb5ee0ded09b64f2a944240b38644627681a987f08da5bef49bc49",
+      "strip_prefix" : "CartoDB-odbc_fdw-701016a",
+      "commit" : "701016a5068a2eea395ae1b75762adb4b2d12af7",
+      "short_commit" : "701016a"
+    },
+    "0.5.2-1" : {
+      "tag" : "0.5.2.1",
+      "sha256" : "b330870b0b5b93504ff6b90922bcad43571fc849c28431e2411fd1e66f05bf24",
+      "strip_prefix" : "CartoDB-odbc_fdw-6aaf129",
+      "commit" : "6aaf129ef45c553c5a9b4761459144d499befabf",
+      "short_commit" : "6aaf129"
+    },
+    "0.5.1" : {
+      "tag" : "0.5.1",
+      "sha256" : "c59a75640adfdcd4190a79d82ab331771713ef596791191b3775484fa529d4ef",
+      "strip_prefix" : "CartoDB-odbc_fdw-945d1e8",
+      "commit" : "945d1e89ee6b309daf2ccc184b1651306dc71937",
+      "short_commit" : "945d1e8"
+    },
+    "0.5.0" : {
+      "tag" : "0.5.0",
+      "sha256" : "7a09e69782f42f54472d1cef27321874ed279ab8f72c9712173bbbcf3aa69b79",
+      "strip_prefix" : "CartoDB-odbc_fdw-86d7f44",
+      "commit" : "86d7f44888c417843e48322c3afb5767ea97e497",
+      "short_commit" : "86d7f44"
+    },
+    "0.4.0" : {
+      "tag" : "0.4.0",
+      "sha256" : "09ede02dc3606da102d4cc9d38f4a30475f4f29b63283460f463e136c727b709",
+      "strip_prefix" : "CartoDB-odbc_fdw-49579ac",
+      "commit" : "49579acb28793482fd1b7e54e1addd066be18686",
+      "short_commit" : "49579ac"
+    },
+    "0.3.1" : {
+      "tag" : "0.3.1",
+      "sha256" : "5d65fd743ecfc06891ff47684d608d35331d5da387ea94df82f962e1d108b38b",
+      "strip_prefix" : "CartoDB-odbc_fdw-7151dbe",
+      "commit" : "7151dbedc229af5739a503796f3086cbcee98d71",
+      "short_commit" : "7151dbe"
+    },
+    "0.3.0" : {
+      "tag" : "0.3.0",
+      "sha256" : "656c2b80407e2e34d83d7acaac23093abdbca9ef0990dacee0987625930e7ba7",
+      "strip_prefix" : "CartoDB-odbc_fdw-e911da7",
+      "commit" : "e911da73a2f5ed71d6a59e6a7ded1e239e4492ed",
+      "short_commit" : "e911da7"
+    },
+    "0.2.0" : {
+      "tag" : "0.2.0",
+      "sha256" : "b069d683aafa2305c9267f8a9bad624353ffdc20b8eee8a4dcc37e6f57ecd13e",
+      "strip_prefix" : "CartoDB-odbc_fdw-24c908a",
+      "commit" : "24c908a2145ae005548067373571744b4a85f35d",
+      "short_commit" : "24c908a"
+    },
+    "0.1.0-rc1" : {
+      "tag" : "0.1.0-rc1",
+      "sha256" : "b5c3c67fd7e586e6974af74ed8af4620f92e72629461c676467257b11974046d",
+      "strip_prefix" : "CartoDB-odbc_fdw-01c01d6",
+      "commit" : "01c01d6b1fcd50eac3d6f6f2c7c384f82b7d0deb",
+      "short_commit" : "01c01d6"
+    },
+    "0.0.1" : {
+      "tag" : "0.0.1",
+      "sha256" : "ba75c5b0f8ad12ee81646e014164ebc152b81c641c654af25b48e226b146a370",
+      "strip_prefix" : "CartoDB-odbc_fdw-6a80891",
+      "commit" : "6a808916ecf63a7a9362a6957dfcb24719fb6641",
+      "short_commit" : "6a80891"
+    },
+    "0.0.1-rc4" : {
+      "tag" : "0.0.1-rc4",
+      "sha256" : "ba75c5b0f8ad12ee81646e014164ebc152b81c641c654af25b48e226b146a370",
+      "strip_prefix" : "CartoDB-odbc_fdw-6a80891",
+      "commit" : "6a808916ecf63a7a9362a6957dfcb24719fb6641",
+      "short_commit" : "6a80891"
+    },
+    "0.0.1-rc3" : {
+      "tag" : "0.0.1-rc3",
+      "sha256" : "ba75c5b0f8ad12ee81646e014164ebc152b81c641c654af25b48e226b146a370",
+      "strip_prefix" : "CartoDB-odbc_fdw-6a80891",
+      "commit" : "6a808916ecf63a7a9362a6957dfcb24719fb6641",
+      "short_commit" : "6a80891"
+    },
+    "0.0.1-rc2" : {
+      "tag" : "0.0.1-rc2",
+      "sha256" : "33dac789a5091d931ea897f6f549ed9c4f4aa65f06e1c56ab91a2f8570b8d54c",
+      "strip_prefix" : "CartoDB-odbc_fdw-54d1421",
+      "commit" : "54d1421b571232afd983a14b6fc5d272832d1519",
+      "short_commit" : "54d1421"
+    },
+    "0.0.1-rc1" : {
+      "tag" : "0.0.1-rc1",
+      "sha256" : "e9f6d9dad5851f704e30c27166900b7925d9707b67b0063dc3f5915e426cc133",
+      "strip_prefix" : "CartoDB-odbc_fdw-28cda63",
+      "commit" : "28cda63a8849cc816cf33c190e31468ee320b250",
+      "short_commit" : "28cda63"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.5.2-3" : {
+        "default_version" : "0.5.2",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2-2" : {
+        "default_version" : "0.5.2",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2-1" : {
+        "default_version" : "0.5.2",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.2" : {
+        "default_version" : "0.5.2",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.5.1",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.1" : {
+        "default_version" : "0.3.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0-rc1" : {
+        "default_version" : "0.1.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-rc4" : {
+        "default_version" : "0.0.1",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-rc3" : {
+        "default_version" : "0.0.1",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-rc2" : {
+        "default_version" : "0.0.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1-rc1" : {
+        "default_version" : "0.0.0",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.0.1" : {
+        "default_version" : "0.0.1",
+        "comment" : "Foreign data wrapper for accessing remote databases using ODBC",
+        "module_pathname" : "$libdir/odbc_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

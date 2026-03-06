@@ -1,0 +1,43 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petere/plxslt/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.20140221.0" : {
+      "tag" : "0.20140221",
+      "sha256" : "9ca0d26b0cd4e8512728c6c9682e44402546fdcd3575d85208be29e17234d9bc",
+      "strip_prefix" : "petere-plxslt-dc3ea56",
+      "commit" : "dc3ea56d6ba1ab3448700b15e728218a2ce8fabb",
+      "short_commit" : "dc3ea56"
+    },
+    "0.0.1" : {
+      "tag" : "0.0.1",
+      "sha256" : "cdff26d687f4967d70e38264fc6cff321f6e171f94126e9d637242f06380c7e5",
+      "strip_prefix" : "petere-plxslt-9fccc9b",
+      "commit" : "9fccc9ba587226292c4258b965afb1b2c3c73247",
+      "short_commit" : "9fccc9b"
+    },
+    "0.0.0" : {
+      "tag" : "0.0.0",
+      "sha256" : "25367e1786c164f56778e8310115da13716ea9cd31d6e12271419737f53e7460",
+      "strip_prefix" : "petere-plxslt-e2c15ed",
+      "commit" : "e2c15ed452ec5a6b49b043f89d38141cce9dcdd5",
+      "short_commit" : "e2c15ed"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.20140221.0" : {
+        "default_version" : "1",
+        "comment" : "PL/XSLT procedural language",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

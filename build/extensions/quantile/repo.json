@@ -1,0 +1,114 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/quantile/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.1.8" : {
+      "tag" : "v1.1.8",
+      "sha256" : "253a615aac60435a28628937c0344aefc314d320fba3c178fb78c8b6d810540d",
+      "strip_prefix" : "tvondra-quantile-83ce53d",
+      "commit" : "83ce53d3c985d82cf18795e5a4b4a15cb140f922",
+      "short_commit" : "83ce53d"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "0840b9a023828fc69f7ec9e81a1cb31c8bde6cb2060a2dd3d68ef23a5783cfb2",
+      "strip_prefix" : "tvondra-quantile-e5c102e",
+      "commit" : "e5c102ee8074c71c93d8723b0074033c08081db8",
+      "short_commit" : "e5c102e"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.1.8" : {
+        "default_version" : "1.1.8",
+        "comment" : "Provides quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Provides quantile aggregate function.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.1.8" : {
+        "name" : "quantile",
+        "abstract" : "Aggregate for computing various quantiles (median, quartiles etc.) efficiently.",
+        "description" : "An extension written in C that allows you to evaluate various quantiles (with float and integer types) efficiently. It collects all the data in memory and allows you to compute multiple quantiles at the same time.",
+        "version" : "1.1.8",
+        "maintainer" : "Tomas Vondra <tv@fuzzy.cz>",
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "sql/quantile--1.1.8.sql",
+            "docfile" : "README.md",
+            "version" : "1.1.8"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/quantile.git",
+            "web" : "http://github.com/tvondra/quantile",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "quantile", "median", "quartile", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "stable"
+      },
+      "1.0.0" : {
+        "name" : "quantile",
+        "abstract" : "Aggregate for computing various quantiles (median, quartiles etc.) efficiently.",
+        "description" : "An extension written in C that allows you to evaluate various quantiles (with float and integer types) efficiently. It collects all the data in memory and allows you to compute multiple quantiles at the same time.",
+        "version" : "1.0.0",
+        "maintainer" : "Tomas Vondra <tv@fuzzy.cz>",
+        "license" : "gpl_3",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "sql/quantile--1.0.sql",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://tvondra@github.com/tvondra/quantile.git",
+            "web" : "http://github.com/tvondra/quantile",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "quantile", "median", "quartile", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "testing"
+      }
+    }
+  },
+  "version" : 1
+}

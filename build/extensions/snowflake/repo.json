@@ -1,0 +1,143 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgEdge/snowflake/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.4.0" : {
+      "tag" : "v2.4",
+      "sha256" : "9ef685dd6c7b40f87387efcb365bfc1ec2d6521a1236876ed0f8067f6865bcb3",
+      "strip_prefix" : "pgEdge-snowflake-6379065",
+      "commit" : "63790652ad5af881811b0bb96214b9c1476560ae",
+      "short_commit" : "6379065"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3",
+      "sha256" : "bcda93813c5a4bdc809f466d4b672af149123ee07c100baf4a8fdb4cdb248caf",
+      "strip_prefix" : "pgEdge-snowflake-db46480",
+      "commit" : "db46480fd8bb3079e4028365c0af54e1d863734a",
+      "short_commit" : "db46480"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2",
+      "sha256" : "e7d45622821cd196ef410392d5f12019aace7166a348245d85f1ee4acd2c375f",
+      "strip_prefix" : "pgEdge-snowflake-eb038c3",
+      "commit" : "eb038c3ac4e73105efb8f59a3d0f567c506967dd",
+      "short_commit" : "eb038c3"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1",
+      "sha256" : "7acddc7f556e2317ddae5bfb1ea4eaf6ae6ef6ada5638b7a3a3856a20b91e38f",
+      "strip_prefix" : "pgEdge-snowflake-5eddfbd",
+      "commit" : "5eddfbdc92e347f99f9fd4eb19b41545bed80185",
+      "short_commit" : "5eddfbd"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "6cd316157fbeb6ff1168cfb18e36dd390801c6b989a8a7b1261782858219e1d1",
+      "strip_prefix" : "pgEdge-snowflake-5fe3a91",
+      "commit" : "5fe3a91e1014d268f1d81cbd3c28cf2e3d56c56f",
+      "short_commit" : "5fe3a91"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "d9b07bfc68cea9e96d9366415d00cd9b90ef04802c692e647dcea677d190f801",
+      "strip_prefix" : "pgEdge-snowflake-c54dea8",
+      "commit" : "c54dea8eb141536f02f29276f0fb27465aefb0bc",
+      "short_commit" : "c54dea8"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "5292d3448ba05ea7341019d082ea73f7d699a7d64f7e548d567d61324022505f",
+      "strip_prefix" : "pgEdge-snowflake-863ecb9",
+      "commit" : "863ecb952dd3dc05935f0e985cde6aff06153e17",
+      "short_commit" : "863ecb9"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "e06992d15f06de1e99782aaf47680d8f1d6e07171e25d7429b13dccc637c72e0",
+      "strip_prefix" : "pgEdge-snowflake-b1380fb",
+      "commit" : "b1380fbf4809079a1e88ac26497ec85f0e858183",
+      "short_commit" : "b1380fb"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.4.0" : {
+        "default_version" : "2.4",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "2.3.0" : {
+        "default_version" : "2.3",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "2.2.0" : {
+        "default_version" : "2.2",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "2.1.0" : {
+        "default_version" : "2.0",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Snowflake style IDs for PostgreSQL",
+        "module_pathname" : "$libdir/snowflake",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "snowflake"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/eulerto/pg_similarity/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "pg_similarity_1_0",
+      "sha256" : "27a34b547accf25531b6a78a101bbb8d22f4829c91df02ac5a974ac8b5eb522e",
+      "strip_prefix" : "eulerto-pg_similarity-537413f",
+      "commit" : "537413f6a735b5936b4e243a0bbdf6026e01452e",
+      "short_commit" : "537413f"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "support similarity queries",
+        "module_pathname" : "$libdir/pg_similarity",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

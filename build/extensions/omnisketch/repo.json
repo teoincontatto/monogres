@@ -1,0 +1,164 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/omnisketch/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.2" : {
+      "tag" : "v1.0.2",
+      "sha256" : "eefaed370f409c8fc2237930eee5ed7791f1710423602167947ff15d4d4465ba",
+      "strip_prefix" : "tvondra-omnisketch-71496cb",
+      "commit" : "71496cb0fd5e3a7b4f7ed7bfac708ac181cf8ae5",
+      "short_commit" : "71496cb"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "7d8dc6733365aeeddc4e0eb9b9bdd770fea263fc904c1c331481dd786dfb261b",
+      "strip_prefix" : "tvondra-omnisketch-a7276aa",
+      "commit" : "a7276aaf9601421dfa0439f7b0a0bb4268639d1b",
+      "short_commit" : "a7276aa"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "2838ff530188b5ca062a3b4057c305b9186ab7f2eab923115ae3b098b8136202",
+      "strip_prefix" : "tvondra-omnisketch-d07c1ed",
+      "commit" : "d07c1ed1b01c513d3ad1225a8f32b1f24951d27f",
+      "short_commit" : "d07c1ed"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.2" : {
+        "default_version" : "1.0.1",
+        "comment" : "Provides OmniSketch sketch.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "Provides OmniSketch sketch.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Provides OmniSketch sketch.",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.2" : {
+        "name" : "omnisketch",
+        "abstract" : "A sketch that supports aggregates with filters on multiple attributes.",
+        "description" : "A sketch that scales to fast-paced and complex data streams (with many attributes), and supports aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution.",
+        "version" : "1.0.2",
+        "maintainer" : "Tomas Vondra <tomas@vondra.me>",
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "omnisketch--1.0.1--1.0.2.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/omnisketch.git",
+            "web" : "http://github.com/tvondra/omnisketch",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "sketch", "aggregate", "filter" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "unstable"
+      },
+      "1.0.1" : {
+        "name" : "omnisketch",
+        "abstract" : "A sketch that supports aggregates with filters on multiple attributes.",
+        "description" : "A sketch that scales to fast-paced and complex data streams (with many attributes), and supports aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution.",
+        "version" : "1.0.1",
+        "maintainer" : "Tomas Vondra <tomas@vondra.me>",
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "omnisketch--1.0.0--1.0.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/omnisketch.git",
+            "web" : "http://github.com/tvondra/omnisketch",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "sketch", "aggregate", "filter" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "unstable"
+      },
+      "1.0.0" : {
+        "name" : "omnisketch",
+        "abstract" : "A sketch that supports aggregates with filters on multiple attributes.",
+        "description" : "A sketch that scales to fast-paced and complex data streams (with many attributes), and supports aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution.",
+        "version" : "1.0.0",
+        "maintainer" : "Tomas Vondra <tomas@vondra.me>",
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "quantile" : {
+            "file" : "omnisketch--1.0.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/omnisketch.git",
+            "web" : "http://github.com/tvondra/omnisketch",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "sketch", "aggregate", "filter" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "unstable"
+      }
+    }
+  },
+  "version" : 1
+}

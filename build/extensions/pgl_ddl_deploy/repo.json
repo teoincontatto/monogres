@@ -1,0 +1,164 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/enova/pgl_ddl_deploy/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.2.1" : {
+      "tag" : "v2.2.1",
+      "sha256" : "11a538005f21881a4bac67e194b1cefa31694fb2e716ed5b01d3f11005e98a12",
+      "strip_prefix" : "enova-pgl_ddl_deploy-f6a3535",
+      "commit" : "f6a35350d495f8fcc2bf45d7cee2e45392097314",
+      "short_commit" : "f6a3535"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2.0",
+      "sha256" : "c25000d0ac0ff2e09c6d2f3387830b8fea4e55db6d98b373657d36fba83b3530",
+      "strip_prefix" : "enova-pgl_ddl_deploy-35efcc6",
+      "commit" : "35efcc6e603ef57aa59dd49ecc39254761c9b291",
+      "short_commit" : "35efcc6"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1.0",
+      "sha256" : "2251170901996c067fbfa2cfe45e1ed2f248fb1743d5a8e42b7bdec7ec54b7d7",
+      "strip_prefix" : "enova-pgl_ddl_deploy-5083d16",
+      "commit" : "5083d1640af64b4fad06e955a1713513f87836c4",
+      "short_commit" : "5083d16"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "378a5f4c622ce2f986d146dddf2527b1af958530df5e22c106e11f509e713ee3",
+      "strip_prefix" : "enova-pgl_ddl_deploy-37acd53",
+      "commit" : "37acd53143063c043471bcbde29efa7614f7ee0e",
+      "short_commit" : "37acd53"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "9f65165c21dbede841546751d83d7fb57091b2ae63139b424821c77810829d96",
+      "strip_prefix" : "enova-pgl_ddl_deploy-8f4c14f",
+      "commit" : "8f4c14fd2f3349e3c532dbc9798675672ed3e27c",
+      "short_commit" : "8f4c14f"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "91d065f33ed365c18dc7ffa1cabba81c0ee6d2993904572e05c7646fddbc637f",
+      "strip_prefix" : "enova-pgl_ddl_deploy-bd7c393",
+      "commit" : "bd7c393fef3c252816b185fbca4bed6462ef055c",
+      "short_commit" : "bd7c393"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1",
+      "sha256" : "229dcfd76a9eb63a0603d11a78b51ca0197696a427bca4ed8e31f18a168dec2d",
+      "strip_prefix" : "enova-pgl_ddl_deploy-f83ea71",
+      "commit" : "f83ea715de24108b526020d7d5d566478202d8eb",
+      "short_commit" : "f83ea71"
+    },
+    "1.4.0" : {
+      "tag" : "v1.4.0",
+      "sha256" : "011323e293a0ce2659140f2511034af78642cab2575f769dbca7fe8e2b4c3735",
+      "strip_prefix" : "enova-pgl_ddl_deploy-6968d84",
+      "commit" : "6968d8459a174b9f2f7066ffeecac400ce803f5b",
+      "short_commit" : "6968d84"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "60175b20df6cf6ac0177584c8c919c55de839a232534fdd748e35953f1334d47",
+      "strip_prefix" : "enova-pgl_ddl_deploy-b25c428",
+      "commit" : "b25c42868f7de4f16741cc3f49624f7754be1e73",
+      "short_commit" : "b25c428"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.2.1" : {
+        "default_version" : "2.2",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "2.2.0" : {
+        "default_version" : "2.2",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "requires" : [ "pglogical" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "requires" : [ "pglogical" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "1.5.1" : {
+        "default_version" : "1.5",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "requires" : [ "pglogical" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "requires" : [ "pglogical" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "automated ddl deployment using pglogical",
+        "module_pathname" : "$libdir/pgl_ddl_deploy",
+        "requires" : [ "pglogical" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pgl_ddl_deploy"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,127 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/enova/pg_fact_loader/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.0.1" : {
+      "tag" : "v2.0.1",
+      "sha256" : "ddbcfc036d99c3591164a2a2412e0c7d1fe9674215712cc9a6328be181df3fe9",
+      "strip_prefix" : "enova-pg_fact_loader-d75656b",
+      "commit" : "d75656b168df190bb443308b70edf85ab9b9c54c",
+      "short_commit" : "d75656b"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0.0",
+      "sha256" : "e5ef0d8d56943b426dfe6beff4c5dcd2fee720148796748f799b962a7503ffd9",
+      "strip_prefix" : "enova-pg_fact_loader-a92f75f",
+      "commit" : "a92f75ff4353faf1d0acaac215226223d270ec7f",
+      "short_commit" : "a92f75f"
+    },
+    "1.7.0" : {
+      "tag" : "v1.7.0",
+      "sha256" : "3bff6deddd36e6a2f0155e03467c42193b34cd48b312b234d2a86c71416efc42",
+      "strip_prefix" : "enova-pg_fact_loader-57fc3ca",
+      "commit" : "57fc3cab04c015bbb06c6ba1435886da10f92837",
+      "short_commit" : "57fc3ca"
+    },
+    "1.6.0" : {
+      "tag" : "v1.6.0",
+      "sha256" : "7da65d9f56a4210847dee504223dc9648fa0c2c56e7f925af37cd79cc74be8dc",
+      "strip_prefix" : "enova-pg_fact_loader-e5a646c",
+      "commit" : "e5a646cd54fe1b085801c05455669596c415ac93",
+      "short_commit" : "e5a646c"
+    },
+    "1.5.2" : {
+      "tag" : "v1.5.2",
+      "sha256" : "bf50ff2e9bea52704c95316ca9c892d4fa15563ae38c23d8eb1cd061456926c6",
+      "strip_prefix" : "enova-pg_fact_loader-6cd10fe",
+      "commit" : "6cd10fe15a712ac5945cb656bf4435f6e7cb461a",
+      "short_commit" : "6cd10fe"
+    },
+    "1.5.1" : {
+      "tag" : "v1.5.1",
+      "sha256" : "82f969b29fe1556d162f432f31aa1e847318c6a2fd8b4ce8610dc58ea6ff7a61",
+      "strip_prefix" : "enova-pg_fact_loader-873d628",
+      "commit" : "873d6289e59d28d5cc80b26574aee5cba2ba19ea",
+      "short_commit" : "873d628"
+    },
+    "1.5.0" : {
+      "tag" : "v1.5.0",
+      "sha256" : "8ab197646099fb26cf27fb79482d949b66367dd71561ec9ee950fb9e4cd25705",
+      "strip_prefix" : "enova-pg_fact_loader-188892f",
+      "commit" : "188892f74fe4f85cfddbd6eec331371962c61e1c",
+      "short_commit" : "188892f"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.0.1" : {
+        "default_version" : "2.0",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "1.5.2" : {
+        "default_version" : "1.5",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "1.5.1" : {
+        "default_version" : "1.5",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "build fact tables with Postgres",
+        "module_pathname" : "$libdir/pg_fact_loader",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "fact_loader"
+      }
+    }
+  },
+  "version" : 1
+}

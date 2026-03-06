@@ -1,0 +1,57 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/iCyberon/pg_hashids/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "23bebcb247527719b6c98b84b4046039b570e94c95f5caeb1fd573d2f76de415",
+      "strip_prefix" : "iCyberon-pg_hashids-1690724",
+      "commit" : "16907249ccbc300b31c89c3eccd6042c5674505f",
+      "short_commit" : "1690724"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "c5e11f83691cb3e4e036f7ddc6e120e76d2bd1946e0f09d5773473c589e204bd",
+      "strip_prefix" : "iCyberon-pg_hashids-59c3de6",
+      "commit" : "59c3de6fd9f7b93993af99bbf4b839672ee3b0eb",
+      "short_commit" : "59c3de6"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "9da6d14a06a003dc00c19d7995c86a1ae9c3cb79e56a8e915f2feb319e475196",
+      "strip_prefix" : "iCyberon-pg_hashids-98d0311",
+      "commit" : "98d0311755fdb29067dc21fe56c03fc9ab054cda",
+      "short_commit" : "98d0311"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.1" : {
+        "default_version" : "1.2.1",
+        "comment" : "pg_hashids",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "pg_hashids",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "pg_hashids",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

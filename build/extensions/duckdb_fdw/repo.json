@@ -1,0 +1,233 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/alitrack/duckdb_fdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.2" : {
+      "tag" : "v1.3.2",
+      "sha256" : "c158c5d1e142bfd5e822499321d65850e820bf73521a3b8f7024c2cfb928c181",
+      "strip_prefix" : "alitrack-duckdb_fdw-be4bcd5",
+      "commit" : "be4bcd530cf104fe47a89eaac181fc39e6cd8422",
+      "short_commit" : "be4bcd5"
+    },
+    "1.1.3" : {
+      "tag" : "v1.1.3",
+      "sha256" : "cc05cfcbea675edbaa79349584deaca0f95dbf9ad8a9ab19db26bb1d081aec97",
+      "strip_prefix" : "alitrack-duckdb_fdw-1d8ea13",
+      "commit" : "1d8ea13e8f85ca4241426bd8e05ec24f0073e835",
+      "short_commit" : "1d8ea13"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "239fff68c683d1a6bf1dfaf589d3896a693c554f0452c91db9adb2c8fdeb2981",
+      "strip_prefix" : "alitrack-duckdb_fdw-0cad698",
+      "commit" : "0cad6987e6520f3679eb7785de09e84d8ac10222",
+      "short_commit" : "0cad698"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "cda4de7d327f89d8b3b0f3b43ed573f399cc0798511262ebf9627dd890a0c8a6",
+      "strip_prefix" : "alitrack-duckdb_fdw-16d0501",
+      "commit" : "16d0501dfe5da1ccb8c1861d2f79b7188fe3fb3b",
+      "short_commit" : "16d0501"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.3.2" : {
+        "default_version" : "1.3.2",
+        "comment" : "DuckDB Foreign Data Wrapper",
+        "module_pathname" : "$libdir/duckdb_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.3" : {
+        "default_version" : "1.0.0",
+        "comment" : "DuckDB Foreign Data Wrapper",
+        "module_pathname" : "$libdir/duckdb_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "1.0.0",
+        "comment" : "DuckDB Foreign Data Wrapper",
+        "module_pathname" : "$libdir/duckdb_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "DuckDB Foreign Data Wrapper",
+        "module_pathname" : "$libdir/duckdb_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.3.2" : {
+        "name" : "duckdb_fdw",
+        "abstract" : "Foreign Data Wrapper for DuckDB databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for DuckDB databases.",
+        "version" : "2.1.1",
+        "maintainer" : "alitrack",
+        "license" : "postgresql",
+        "provides" : {
+          "duckdb_fdw" : {
+            "abstract" : "Foreign Data Wrapper for DuckDB databases",
+            "file" : "duckdb_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/alitrack/duckdb_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/alitrack/duckdb_fdw.git",
+            "web" : "https://github.com/alitrack/duckdb_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Steven Lee",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "duckdb", "fdw", "foreign data wrapper", "duckdb_fdw" ]
+      },
+      "1.1.3" : {
+        "name" : "duckdb_fdw",
+        "abstract" : "Foreign Data Wrapper for DuckDB databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for DuckDB databases.",
+        "version" : "2.1.1",
+        "maintainer" : "alitrack",
+        "license" : "postgresql",
+        "provides" : {
+          "duckdb_fdw" : {
+            "abstract" : "Foreign Data Wrapper for DuckDB databases",
+            "file" : "duckdb_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/alitrack/duckdb_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/alitrack/duckdb_fdw.git",
+            "web" : "https://github.com/alitrack/duckdb_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Steven Lee",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "duckdb", "fdw", "foreign data wrapper", "duckdb_fdw" ]
+      },
+      "1.1.2" : {
+        "name" : "duckdb_fdw",
+        "abstract" : "Foreign Data Wrapper for DuckDB databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for DuckDB databases.",
+        "version" : "2.1.1",
+        "maintainer" : "alitrack",
+        "license" : "postgresql",
+        "provides" : {
+          "duckdb_fdw" : {
+            "abstract" : "Foreign Data Wrapper for DuckDB databases",
+            "file" : "duckdb_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/alitrack/duckdb_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/alitrack/duckdb_fdw.git",
+            "web" : "https://github.com/alitrack/duckdb_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Steven Lee",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "duckdb", "fdw", "foreign data wrapper", "duckdb_fdw" ]
+      },
+      "1.0.0" : {
+        "name" : "duckdb_fdw",
+        "abstract" : "Foreign Data Wrapper for DuckDB databases",
+        "description" : "PostgreSQL extension which implements a Foreign Data Wrapper (FDW) for DuckDB databases.",
+        "version" : "2.1.1",
+        "maintainer" : "alitrack",
+        "license" : "postgresql",
+        "provides" : {
+          "duckdb_fdw" : {
+            "abstract" : "Foreign Data Wrapper for DuckDB databases",
+            "file" : "duckdb_fdw.c",
+            "docfile" : "README.md",
+            "version" : "2.1.1"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/alitrack/duckdb_fdw/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/alitrack/duckdb_fdw.git",
+            "web" : "https://github.com/alitrack/duckdb_fdw/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Steven Lee",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "duckdb", "fdw", "foreign data wrapper", "duckdb_fdw" ]
+      }
+    }
+  },
+  "version" : 1
+}

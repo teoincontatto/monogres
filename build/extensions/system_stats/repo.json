@@ -1,0 +1,120 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/EnterpriseDB/system_stats/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.2.1" : {
+      "tag" : "v3.2.1",
+      "sha256" : "1d7795a039c67168abc86c02b18045fb59764c3881b697d72e44749a67f69e62",
+      "strip_prefix" : "EnterpriseDB-system_stats-aea4a13",
+      "commit" : "aea4a1354e78acb87659ee3f9beccc10d2454768",
+      "short_commit" : "aea4a13"
+    },
+    "3.2.0" : {
+      "tag" : "v3.2",
+      "sha256" : "628b96b7cdf8a25f45ee5adba3495ed940c5b3bd0a81b49c021edaa65c0196d2",
+      "strip_prefix" : "EnterpriseDB-system_stats-a4f2c9b",
+      "commit" : "a4f2c9b089aa4c2f0b3144dc5a49f95ad5214d2b",
+      "short_commit" : "a4f2c9b"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1",
+      "sha256" : "6325c0a683c44a219e5f305776a57189aa567fe6418c2ace43e9450d3d788fae",
+      "strip_prefix" : "EnterpriseDB-system_stats-960c238",
+      "commit" : "960c238e258913fef524ebb710e2b4befc7984d3",
+      "short_commit" : "960c238"
+    },
+    "3.0.0" : {
+      "tag" : "v3.0",
+      "sha256" : "ce2b5b1f3e27ed1f8e04b8cda0bf812a446e0755b857f8dda22f2b37984b0834",
+      "strip_prefix" : "EnterpriseDB-system_stats-dcd8f1f",
+      "commit" : "dcd8f1f6984d6109ea9864aae01ffbd45e70df73",
+      "short_commit" : "dcd8f1f"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1",
+      "sha256" : "ec5b3b1723204726a304460460b9621ad5cf51f21a6659565c6a907d8b73aaca",
+      "strip_prefix" : "EnterpriseDB-system_stats-5df8fa4",
+      "commit" : "5df8fa4688a93b4a4a247058c325e42925df6ded",
+      "short_commit" : "5df8fa4"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "1e4c81ca4305e93c4e71bd994e0f7e56c3a748ce61b52974cc32e746b2bb6ac3",
+      "strip_prefix" : "EnterpriseDB-system_stats-f7f20fd",
+      "commit" : "f7f20fdea248dbb470b1aa2983bfb6a7f9c06d05",
+      "short_commit" : "f7f20fd"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "a63fca3a648f596f20058a8f586c3aabd798ca9da7424cce302787c4b1ed31d7",
+      "strip_prefix" : "EnterpriseDB-system_stats-b8bd874",
+      "commit" : "b8bd8740a6ccf1421b4e2ba93697bd223281701b",
+      "short_commit" : "b8bd874"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.2.1" : {
+        "default_version" : "3.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.0" : {
+        "default_version" : "3.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.0" : {
+        "default_version" : "3.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.0" : {
+        "default_version" : "3.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "EnterpriseDB system statistics for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "System statistic functions for PostgreSQL",
+        "module_pathname" : "$libdir/system_stats",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

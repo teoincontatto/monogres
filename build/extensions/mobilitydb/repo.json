@@ -1,0 +1,150 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/MobilityDB/MobilityDB/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.0-alpha" : {
+      "tag" : "v1.3.0-alpha",
+      "sha256" : "ade65cdc4ea1d19e0224376c52ef9a7c914f9db12bb02efe276d22e4a3d661c8",
+      "strip_prefix" : "MobilityDB-MobilityDB-2abab6b",
+      "commit" : "2abab6bd74ab362e3684b480ae7ab2735bd28e81",
+      "short_commit" : "2abab6b"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "0216eeec8a080cd376bba0e87daa959dfeb5b1d5baebdf47bf2db1c1744c0861",
+      "strip_prefix" : "MobilityDB-MobilityDB-24887b5",
+      "commit" : "24887b56bc1c83ef06b1fbbfef8682d8553d5bbd",
+      "short_commit" : "24887b5"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "79040261b22e086465bd0d15a44628ad58e8f424642582203d8689ecafba07c9",
+      "strip_prefix" : "MobilityDB-MobilityDB-60048b5",
+      "commit" : "60048b5b4b7ce2f7560c024d1af024db73b3bd5b",
+      "short_commit" : "60048b5"
+    },
+    "1.1.2" : {
+      "tag" : "v1.1.2",
+      "sha256" : "6ef97fc8ab168f2ee46919c63198b9090d26b6d535fc94ecb5d954716ca666a8",
+      "strip_prefix" : "MobilityDB-MobilityDB-6088e7b",
+      "commit" : "6088e7bc10a31dee34fbc3e3139288a218e4ec65",
+      "short_commit" : "6088e7b"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "59ee7acbcd4287f93e8f326cd6429a7ec351bdeaa978e6e7db717533556f32f6",
+      "strip_prefix" : "MobilityDB-MobilityDB-4273bdd",
+      "commit" : "4273bdd4f70ee6fb8b28cd269385d83da6eeba31",
+      "short_commit" : "4273bdd"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "8e56930c39a68d9d4add6c2553c05359b42cb3f08755d2bea8e91611e03e8ef3",
+      "strip_prefix" : "MobilityDB-MobilityDB-e00c69f",
+      "commit" : "e00c69f36a2948c4ad500dd98dfafc17fe46a8d2",
+      "short_commit" : "e00c69f"
+    },
+    "1.1.0-beta1" : {
+      "tag" : "v1.1.0-beta1",
+      "sha256" : "bc7f20fb097d465de714d8c0439dfedface331ba9da3b3bb743aee9d91dacd63",
+      "strip_prefix" : "MobilityDB-MobilityDB-641d081",
+      "commit" : "641d0818542acbfadbfbb54b131a3af75f8dc809",
+      "short_commit" : "641d081"
+    },
+    "1.1.0-alpha" : {
+      "tag" : "v1.1.0-alpha",
+      "sha256" : "b3d80984f3ca683b2a208ac5610f0f5bfbe41a2587f1fd7327b09f83f41f6db1",
+      "strip_prefix" : "MobilityDB-MobilityDB-ae74a3f",
+      "commit" : "ae74a3f12757a768942c6a38ed774323bcd446ec",
+      "short_commit" : "ae74a3f"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "5c7b9466d86c08d8a3f8ab82ed5c9ecb7a6ec90900bfb971571456785d6bd343",
+      "strip_prefix" : "MobilityDB-MobilityDB-ed738c1",
+      "commit" : "ed738c1ff8a317701888a60e641b0ec66724d095",
+      "short_commit" : "ed738c1"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.1" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.0" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.2" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.1" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0-beta1" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0-alpha" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB geospatial trajectory data management & analysis platform",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0" : {
+        "default_version" : "${MOBILITYDB_VERSION}",
+        "comment" : "MobilityDB Extension",
+        "module_pathname" : "${MOBILITYDB_MODULE_PATHNAME}",
+        "requires" : [ "postgis" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

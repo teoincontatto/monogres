@@ -1,0 +1,105 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/dimitri/preprepare/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.9.0" : {
+      "tag" : "v0.9",
+      "sha256" : "c7c259d40139c62a2ed2d903f7b52c15975922d4746cb0f4d4f5e9cf77ed1a41",
+      "strip_prefix" : "dimitri-preprepare-a5090cf",
+      "commit" : "a5090cff108da78f6111fd2985c7038b7a7dc3c1",
+      "short_commit" : "a5090cf"
+    },
+    "0.8.0" : {
+      "tag" : "v0.8",
+      "sha256" : "a0474f41e097bfe068485aec4765aed15f9fd2adcbcd5fb8a0066a05bbd93af1",
+      "strip_prefix" : "dimitri-preprepare-15cf707",
+      "commit" : "15cf707e1a06b70a5a08f15cdea15518067cd353",
+      "short_commit" : "15cf707"
+    },
+    "0.7.0" : {
+      "tag" : "v0.7",
+      "sha256" : "6c03f3ec4fd94c70df86769cee45f5b292f6fadfcdbef46d65aa932e28aa89e4",
+      "strip_prefix" : "dimitri-preprepare-3f1b092",
+      "commit" : "3f1b09248e5729bcde23b7d3ce6f3599410eac89",
+      "short_commit" : "3f1b092"
+    },
+    "0.6.0" : {
+      "tag" : "v0.6",
+      "sha256" : "7bb496c89de33bb37130a3974ccceaff89575846a1f8bfc4b282c37054e050cd",
+      "strip_prefix" : "dimitri-preprepare-d0b6a9a",
+      "commit" : "d0b6a9a8139a9ffefb37cda2aef80b865741035f",
+      "short_commit" : "d0b6a9a"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5-1",
+      "sha256" : "7bba8a30ceda5ffeac430552af082550d7bf10fde12735f80b877f6a28e17d95",
+      "strip_prefix" : "dimitri-preprepare-f939570",
+      "commit" : "f9395701535c7b508d324e38ada8b0920afa2c7c",
+      "short_commit" : "f939570"
+    },
+    "0.4.2" : {
+      "tag" : "v0.4-2",
+      "sha256" : "e8a2f54070692c77ab324bedd4ea02eff50cdd6bfba12a3bb81658445309c913",
+      "strip_prefix" : "dimitri-preprepare-d76ccdd",
+      "commit" : "d76ccdd497275d5d839481af6eabde7482e6246b",
+      "short_commit" : "d76ccdd"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.9.0" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.8.0" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.7.0" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.0" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.1" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.4.2" : {
+        "default_version" : "0.4",
+        "comment" : "Pre Prepare your Statement server side",
+        "module_pathname" : "$libdir/pre_prepare",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

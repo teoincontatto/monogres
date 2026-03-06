@@ -11,11 +11,11 @@ CFG = cfg.new(
     versions = VERSIONS,
     pg_targets = PG_CFG.targets,
     repo_name = REPO_NAME,
+    metadata = METADATA,
     buildtime_dependencies = [
         "@pgext_sslutils_deps_debian13//libssl-dev",
     ],
     runtime_dependencies = [
         "@pgext_sslutils_deps_debian13//libssl3t64",
     ],
-    metadata = METADATA,
 )

@@ -1,0 +1,159 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/okbob/url_encode/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.5" : {
+      "tag" : "v1.2.5",
+      "sha256" : "48261d3997736fd90a7c34254f851456d2d0dd36df13eb781ebdcb105feebd1e",
+      "strip_prefix" : "okbob-url_encode-32f47ed",
+      "commit" : "32f47ed464fd59c5973754976d96b6b260a938c0",
+      "short_commit" : "32f47ed"
+    },
+    "1.2.3" : {
+      "tag" : "v1.2.3",
+      "sha256" : "dea961463cac62a524b5f42dd0e990a158ced28a916e46f785f7fefe8626032d",
+      "strip_prefix" : "okbob-url_encode-2c048b3",
+      "commit" : "2c048b322051379c2783d36d3668c708a66c6187",
+      "short_commit" : "2c048b3"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "1d1fc931c911c3731e8bd1420b31b36083535c5df4e013fe6c2355eda2f35466",
+      "strip_prefix" : "okbob-url_encode-b3f1940",
+      "commit" : "b3f19406524dc3d8f867bb00a9034799f2c47122",
+      "short_commit" : "b3f1940"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.5" : {
+        "default_version" : "1.2",
+        "comment" : "url_encode, url_decode functions",
+        "module_pathname" : "$libdir/url_encode",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2",
+        "comment" : "url_encode, url_decode functions",
+        "module_pathname" : "$libdir/url_encode",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2",
+        "comment" : "url_encode, url_decode functions",
+        "module_pathname" : "$libdir/url_encode",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.2.5" : {
+        "name" : "url_encode",
+        "abstract" : "A url_encode, url_decode functions",
+        "version" : "1.2.5",
+        "maintainer" : "Pavel Stehule <pavel.stehule@gmail.com>",
+        "license" : "postgresql",
+        "provides" : {
+          "url_encode" : {
+            "abstract" : "url_enocode, url_decode functions",
+            "version" : "1.2.5",
+            "file" : "sql/url_encode--1.2.sql",
+            "docfile" : "README.md"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "11.0.0",
+              "plpgsql" : 0
+            }
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/okbob/url_encode",
+            "web" : "https://github.com/okbob/url_encode/blob/master/README.md",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Pavel Stehule",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.2.3" : {
+        "name" : "url_encode",
+        "abstract" : "A url_encode, url_decode functions",
+        "version" : "1.2.3",
+        "maintainer" : "Pavel Stehule <pavel.stehule@gmail.com>",
+        "license" : "postgresql",
+        "provides" : {
+          "url_encode" : {
+            "abstract" : "url_enocode, url_decode functions",
+            "version" : "1.2.3",
+            "file" : "sql/url_encode--1.2.sql",
+            "docfile" : "README.md"
+          }
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.1.0",
+              "plpgsql" : 0
+            }
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/okbob/url_encode",
+            "web" : "https://github.com/okbob/url_encode/blob/master/README.md",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Pavel Stehule",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      },
+      "1.2.2" : {
+        "name" : "url_encode",
+        "abstract" : "A url_encode, url_decode functions",
+        "version" : "1.2.2",
+        "maintainer" : "Pavel Stehule <pavel.stehule@gmail.com>",
+        "license" : "postgresql",
+        "provides" : {
+          "url_encode" : {
+            "abstract" : "url_enocode, url_decode functions",
+            "version" : "1.2.2",
+            "file" : "sql/url_encode--1.2.sql",
+            "docfile" : "README.md"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/okbob/url_encode",
+            "web" : "https://github.com/okbob/url_encode/blob/master/README.md",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Pavel Stehule",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        }
+      }
+    }
+  },
+  "version" : 1
+}

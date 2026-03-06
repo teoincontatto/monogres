@@ -1,0 +1,365 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/heterodb/pg-strom/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "6.1.0" : {
+      "tag" : "v6.1",
+      "sha256" : "122af944c2cc810d5af445db992869e42bed0fad3530a6dcae8a931b5954fdf7",
+      "strip_prefix" : "heterodb-pg-strom-4d12ef4",
+      "commit" : "4d12ef415759dc48cd4c1421565e9c694b7bd3f9",
+      "short_commit" : "4d12ef4"
+    },
+    "6.0.0" : {
+      "tag" : "v6.0",
+      "sha256" : "6b7c031dafc697ac51cdb3d59abe5f06258a7179cec66dd6db9c368030d7b5cf",
+      "strip_prefix" : "heterodb-pg-strom-2441a6f",
+      "commit" : "2441a6f7978a7f8187526e4bd90ca9e989b5eb5b",
+      "short_commit" : "2441a6f"
+    },
+    "5.2.2" : {
+      "tag" : "v5.2.2",
+      "sha256" : "2eb5009b79e3772385fb7a295b3236bea279fc9625825cfe9e9a6e50dc7221cc",
+      "strip_prefix" : "heterodb-pg-strom-b319f49",
+      "commit" : "b319f49da9fa0c3f7e33fe60b7aa40e16264568b",
+      "short_commit" : "b319f49"
+    },
+    "5.2.1" : {
+      "tag" : "v5.2.1",
+      "sha256" : "7f18caa7b0faa2a5e37999077e0fa22cc24883446855df8113a326d0276107c2",
+      "strip_prefix" : "heterodb-pg-strom-ee77f34",
+      "commit" : "ee77f34b2934b30cdd5b7dcd3a643bacbcbb3c5c",
+      "short_commit" : "ee77f34"
+    },
+    "5.1.2" : {
+      "tag" : "v5.1.2",
+      "sha256" : "9d44417573b48a2d92d3a6f0412fc0abf8616db60486ca87a44c913fd6416f43",
+      "strip_prefix" : "heterodb-pg-strom-dee74cd",
+      "commit" : "dee74cd260583b013851e568a41be2f7572adc60",
+      "short_commit" : "dee74cd"
+    },
+    "5.1.1" : {
+      "tag" : "v5.1-1",
+      "sha256" : "bc35ef6459685fa5675f496be21d280f773a757f69c28f2b92235abf4ccadfe9",
+      "strip_prefix" : "heterodb-pg-strom-1fe1104",
+      "commit" : "1fe1104526322979c38f5b709028685cee6a101b",
+      "short_commit" : "1fe1104"
+    },
+    "5.1.0" : {
+      "tag" : "v5.1",
+      "sha256" : "e0e61c9f78d8f34ca78588bc67e11b0f6c94885256517254374370d29eb47329",
+      "strip_prefix" : "heterodb-pg-strom-0e7f29d",
+      "commit" : "0e7f29d075747900ea93c7fb77190217229706e1",
+      "short_commit" : "0e7f29d"
+    },
+    "5.0.4" : {
+      "tag" : "v5.0-4",
+      "sha256" : "fe9619d678ca3f9b96d48f81d7bb0c97e4c63a8d5746849698c5d6a06b22fa49",
+      "strip_prefix" : "heterodb-pg-strom-e187ef6",
+      "commit" : "e187ef61b9dfd2a6d6a5e9f36bafe018f3ca1f0d",
+      "short_commit" : "e187ef6"
+    },
+    "5.0.3" : {
+      "tag" : "v5.0-3",
+      "sha256" : "5762a11a6b7badbb5e7e9a322707e3b591a2b24447a8038123e9f702d5f39a12",
+      "strip_prefix" : "heterodb-pg-strom-bbad925",
+      "commit" : "bbad9251737bc6c6b7637a56ca12798f613bb3fe",
+      "short_commit" : "bbad925"
+    },
+    "5.0.2" : {
+      "tag" : "v5.0-2",
+      "sha256" : "ae5a2619d359083556fd51b457577e096413c72f13c49fea4033591ceb1384d6",
+      "strip_prefix" : "heterodb-pg-strom-6498a09",
+      "commit" : "6498a099081be753121c42135be3b2c3fc55f918",
+      "short_commit" : "6498a09"
+    },
+    "5.0.0" : {
+      "tag" : "v5.0",
+      "sha256" : "b497f39bbb6660af1df973c166d0427568ff5ce72382897bc43d29001d9498ad",
+      "strip_prefix" : "heterodb-pg-strom-96a4336",
+      "commit" : "96a4336135329d4c4e979d33aef2b162019c6a6f",
+      "short_commit" : "96a4336"
+    },
+    "3.5.0" : {
+      "tag" : "v3.5",
+      "sha256" : "bd251454f6fa979dc3ca6079624a71212d187e2c3138574a04eda658029e26c3",
+      "strip_prefix" : "heterodb-pg-strom-374b150",
+      "commit" : "374b1501e3b6b258fc4db27bd043179660a4b340",
+      "short_commit" : "374b150"
+    },
+    "3.4.0" : {
+      "tag" : "v3.4",
+      "sha256" : "eb3f32fbe13420c6508aaa21ecabe9860918da03fa8a25ca0f1048314c9d1824",
+      "strip_prefix" : "heterodb-pg-strom-3a3b48f",
+      "commit" : "3a3b48ff02430a4945a955637ccc4ad6890144fb",
+      "short_commit" : "3a3b48f"
+    },
+    "3.3.2" : {
+      "tag" : "v3.3-2",
+      "sha256" : "93f63a68d09726011b05d13dbb5972854716c2ea0a34524590e36ec0fb304d1b",
+      "strip_prefix" : "heterodb-pg-strom-0f63e9f",
+      "commit" : "0f63e9fa5302185bf2a2fbec73d9a1bb045d13de",
+      "short_commit" : "0f63e9f"
+    },
+    "3.3.0" : {
+      "tag" : "v3.3",
+      "sha256" : "9de308ff6cb5b0816be22fa3e694cec4290d06d1f4a8e192b0f539c992e313f1",
+      "strip_prefix" : "heterodb-pg-strom-5693a90",
+      "commit" : "5693a90c2becd6d5bd0ae6a2900cd4620adcae28",
+      "short_commit" : "5693a90"
+    },
+    "3.2.0" : {
+      "tag" : "v3.2",
+      "sha256" : "ba1f4fd4d6ee272e2f294ba05edec28ea9766bd04f9e388d94fa3c55acda813a",
+      "strip_prefix" : "heterodb-pg-strom-d6d6413",
+      "commit" : "d6d64131a52b5a8105616f0b53065c64fbdad0f4",
+      "short_commit" : "d6d6413"
+    },
+    "3.1.0" : {
+      "tag" : "v3.1",
+      "sha256" : "8dd6f8cda21933974bcda8a45c5aa38708d40e67066372ee2665a554f30adf4d",
+      "strip_prefix" : "heterodb-pg-strom-bb8c571",
+      "commit" : "bb8c5716105b887aa8193581c4fc52c44b6069a0",
+      "short_commit" : "bb8c571"
+    },
+    "3.0.0" : {
+      "tag" : "v3.0",
+      "sha256" : "c0783334eb7286f121195a8f99286c8500b38f6d2847962c488023dcaf517fa9",
+      "strip_prefix" : "heterodb-pg-strom-9c1bfb4",
+      "commit" : "9c1bfb4159625f2e31af1bdccbaea00664e6e4e0",
+      "short_commit" : "9c1bfb4"
+    },
+    "2.3.0" : {
+      "tag" : "v2.3",
+      "sha256" : "e7e0adb1a567366ab95274d6ccaebf5c3e8ec75ebe878305d894a9d56884ecbd",
+      "strip_prefix" : "heterodb-pg-strom-ceb9439",
+      "commit" : "ceb943949feded0681937bcac0c2f06de6f58bc9",
+      "short_commit" : "ceb9439"
+    },
+    "2.2.0" : {
+      "tag" : "v2.2",
+      "sha256" : "20250f09f343e7b2acb2104d5963906f4877b42fa55c96fcd8ab0dfcc9b8f82a",
+      "strip_prefix" : "heterodb-pg-strom-e25f801",
+      "commit" : "e25f80138a94683ac87877090f4508ecef1f7051",
+      "short_commit" : "e25f801"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1",
+      "sha256" : "03e45d90041e646b3092e61c7c874eb4165d6d7e3ce4c94f88ca2fcc3bf335c9",
+      "strip_prefix" : "heterodb-pg-strom-dba342f",
+      "commit" : "dba342f6ae96bff923cff0b66795d8ed3680cd26",
+      "short_commit" : "dba342f"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "8cca25f12108f5baeed1ad67cd60f09a79f64ffe56226b67bef6817dd2657f47",
+      "strip_prefix" : "heterodb-pg-strom-997f073",
+      "commit" : "997f073aec6755481573922143772557a36b6114",
+      "short_commit" : "997f073"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "6.1.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "6.0",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "6.0.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "6.0",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.2" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.1",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.2.1" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.1",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.1.2" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.1",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.1.1" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.1",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.1.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.1",
+        "comment" : "PG-Strom - big-data processing acceleration using GPU and NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.4" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.0",
+        "comment" : "PG-Strom - Extension for Big-Data Processing using GPU/DPU/SPU",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.3" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.0",
+        "comment" : "PG-Strom - Extension for Big-Data Processing using GPU/DPU/SPU",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.2" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.0",
+        "comment" : "PG-Strom - Extension for Big-Data Processing using GPU/DPU/SPU",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "5.0.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "5.0",
+        "comment" : "PG-Strom - Extension for Big-Data Processing using GPU/DPU/SPU",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.5.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "4.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.4.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "4.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.3.2" : {
+        "directory" : "pg_strom",
+        "default_version" : "4.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.3.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "4.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "4.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "3.1",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "3.0",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "2.3",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.0" : {
+        "directory" : "pg_strom",
+        "default_version" : "2.2",
+        "comment" : "PG-Strom - Extension for Big-data processing using GPU/NVME",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.0",
+        "comment" : "PG-Strom -- GPU accelerated query execution engine for analytic workloads",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "pg_strom -- yet another executor powered by stream processor",
+        "module_pathname" : "$libdir/pg_strom",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,597 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/bigsmoke/pg_readme/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.7.0" : {
+      "tag" : "v0.7.0",
+      "sha256" : "5b2f18023429a49670409590a464e22f8edede88a4e9c47696510f62a29b5ff0",
+      "strip_prefix" : "bigsmoke-pg_readme-ff98440",
+      "commit" : "ff984406555837f23e183e5d4d45850ce87f8147",
+      "short_commit" : "ff98440"
+    },
+    "0.6.6" : {
+      "tag" : "v0.6.6",
+      "sha256" : "cad5293ba7468a6f464dd200ce9cb53b07d320bd7c670341fe9bb8d60236f3f0",
+      "strip_prefix" : "bigsmoke-pg_readme-ca8b769",
+      "commit" : "ca8b769dc7ca18b761d9f33f14208def961ca4c6",
+      "short_commit" : "ca8b769"
+    },
+    "0.6.5" : {
+      "tag" : "v0.6.5",
+      "sha256" : "4a5fdde477d43f1dabac8fe3db79a216bfc89718bf5f59b9d7636870b35dab94",
+      "strip_prefix" : "bigsmoke-pg_readme-58d512b",
+      "commit" : "58d512b2da32320b504b33e6a24b0f2d8a3bfd5a",
+      "short_commit" : "58d512b"
+    },
+    "0.6.4" : {
+      "tag" : "v0.6.4",
+      "sha256" : "01449a72626923f8024328a2ef043658359ff8eed4db54ee533873acb1dbca5e",
+      "strip_prefix" : "bigsmoke-pg_readme-70cac2a",
+      "commit" : "70cac2aa64bcba7e2854757f8ddfbdb58d811420",
+      "short_commit" : "70cac2a"
+    },
+    "0.6.3" : {
+      "tag" : "v0.6.3",
+      "sha256" : "721d4ea4dfc5f586e317a37e3cca1d3ce921729717afcc026f8741c0296545be",
+      "strip_prefix" : "bigsmoke-pg_readme-59fe63c",
+      "commit" : "59fe63c1847bf97fadf9ea1f4af6a860759a165a",
+      "short_commit" : "59fe63c"
+    },
+    "0.6.2" : {
+      "tag" : "v0.6.2",
+      "sha256" : "61a1be578c6df5561b08a1df0d163f7e6cbfddeeadc2bf51ff8faf03479e9887",
+      "strip_prefix" : "bigsmoke-pg_readme-33dbe7b",
+      "commit" : "33dbe7bb80dac2876b8cf08dd11bbc1320389d13",
+      "short_commit" : "33dbe7b"
+    },
+    "0.6.1" : {
+      "tag" : "v0.6.1",
+      "sha256" : "33f20e6167338c6aaf1487832181a8f26c20817efee39788c077a1c31fa105b6",
+      "strip_prefix" : "bigsmoke-pg_readme-999fa80",
+      "commit" : "999fa80fdecebba4f79fdd1c7f928ae4e9be5864",
+      "short_commit" : "999fa80"
+    },
+    "0.6.0" : {
+      "tag" : "v0.6.0",
+      "sha256" : "8ebea54f99f715e650bdefd9becf4969ef9d04a0f0d8aefe9050401db69f913a",
+      "strip_prefix" : "bigsmoke-pg_readme-5cc192b",
+      "commit" : "5cc192b413add014010aa51ee253ad753a552041",
+      "short_commit" : "5cc192b"
+    },
+    "0.5.6" : {
+      "tag" : "v0.5.6",
+      "sha256" : "74c3d71ff2adc0366c3e1ca5177b53d4db95d10e7a1fd75e571c33fb67ca285b",
+      "strip_prefix" : "bigsmoke-pg_readme-12fda94",
+      "commit" : "12fda942d297fb4f4b79b8f6370dcd7b76f8f639",
+      "short_commit" : "12fda94"
+    },
+    "0.5.5" : {
+      "tag" : "v0.5.5",
+      "sha256" : "e37dad3e0a3dc0c610878d59a22ffed4b519e588ce14fcaf8bdf40be762ba88a",
+      "strip_prefix" : "bigsmoke-pg_readme-14c7cea",
+      "commit" : "14c7cea6961db187ece4b14cbd9fb2d965518669",
+      "short_commit" : "14c7cea"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.7.0" : {
+        "default_version" : "0.7.0",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.6" : {
+        "default_version" : "0.6.6",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.5" : {
+        "default_version" : "0.6.5",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.4" : {
+        "default_version" : "0.6.4",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.3" : {
+        "default_version" : "0.6.3",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.2" : {
+        "default_version" : "0.6.2",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.1" : {
+        "default_version" : "0.6.1",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.6.0" : {
+        "default_version" : "0.6.0",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.6" : {
+        "default_version" : "0.5.6",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.5.5" : {
+        "default_version" : "0.5.5",
+        "requires" : [ "hstore" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.7.0" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.7.0",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.7.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.7.0"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.6" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.6",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.6.6.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.6"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.5" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.5",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.6.5.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.5"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.4" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.4",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.6.4.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.4"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.3" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.3",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.6.3.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.3"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.2" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.2",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.2"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.1" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.1",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.1"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.6.0" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.6.0",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.6.0"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.5.6" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "postgresql",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.5.6",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.6"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      },
+      "0.5.5" : {
+        "name" : "pg_readme",
+        "tags" : [ "documentation", "markdown", "meta", "plpgsql", "function", "functions" ],
+        "license" : "gpl_3",
+        "prereqs" : {
+          "test" : {
+            "requires" : {
+              "pgtap" : 0
+            }
+          },
+          "runtime" : {
+            "requires" : {
+              "hstore" : 0
+            }
+          }
+        },
+        "version" : "0.5.5",
+        "abstract" : "Generates a Markdown README from COMMENT objects found in the pg_description system catalog.",
+        "provides" : {
+          "pg_readme" : {
+            "file" : "pg_readme--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.5.5"
+          }
+        },
+        "meta-spec" : {
+          "url" : "https://pgxn.org/spec/",
+          "version" : "1.0.0"
+        },
+        "resources" : {
+          "homepage" : "https://blog.bigsmoke.us/tag/pg_readme",
+          "bugtracker" : {
+            "web" : "https://github.com/bigsmoke/pg_readme/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/bigsmoke/pg_readme.git",
+            "web" : "https://github.com/bigsmoke/pg_readme",
+            "type" : "git"
+          }
+        },
+        "maintainer" : [ "Rowan Rodrik van der Molen <rowan@bigsmoke.us>" ],
+        "description" : "The pg_readme PostgreSQL extension provides functions to generate a README.md document for a database extension or schema, based on COMMENT objects found in the pg_description system catalog.",
+        "generated_by" : "`select pg_readme_meta_pgxn()`"
+      }
+    }
+  },
+  "version" : 1
+}

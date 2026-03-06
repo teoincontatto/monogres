@@ -1,0 +1,69 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/adjust/pg-base36/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "effd63747b899c5191885fcd81f3ce580157c4717e4326c88f43654fd2268a3c",
+      "strip_prefix" : "adjust-pg-base36-a2596e3",
+      "commit" : "a2596e3aa19abd6c2a03d55546941bed24cb7e75",
+      "short_commit" : "a2596e3"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Integer Base36 types",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.0.0" : {
+        "name" : "base36",
+        "abstract" : "Integers represented in base36",
+        "version" : "1.0.0",
+        "maintainer" : [ "Chris Travers <chris.travers@adjust.com>", "Manuel Kniep <rapimo@adjust.com>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "provides" : {
+          "base36" : {
+            "file" : "sql/base36.sql",
+            "version" : "1.0.0",
+            "abstract" : "Integers represented in base36"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "description" : "Integers represented in base36",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.3.0"
+            }
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/adjust/pg-country/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/adjust/pg-country.git",
+            "web" : "http://github.com/adjust/pg-country",
+            "type" : "git"
+          }
+        }
+      }
+    }
+  },
+  "version" : 1
+}

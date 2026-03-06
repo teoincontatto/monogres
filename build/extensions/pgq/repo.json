@@ -1,0 +1,120 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgq/pgq/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.5.1" : {
+      "tag" : "v3.5.1",
+      "sha256" : "185b89eef5127347ae56cd15f0e50cbe55713cfb5c5ab49dc4739528d1888ae3",
+      "strip_prefix" : "pgq-pgq-d23425f",
+      "commit" : "d23425f10e39f8e9cca178f1a94d9162e473fd45",
+      "short_commit" : "d23425f"
+    },
+    "3.5.0" : {
+      "tag" : "v3.5",
+      "sha256" : "cfd63e0e969354dca217371a7d8f29f95922879fd5303b0efa25066dbecfbcef",
+      "strip_prefix" : "pgq-pgq-3b7991a",
+      "commit" : "3b7991aea73ddfc0249589540f3d18216dea213a",
+      "short_commit" : "3b7991a"
+    },
+    "3.4.2" : {
+      "tag" : "v3.4.2",
+      "sha256" : "2ca7480509ab0cb5de7b0e1943c8ffbe0dcec52cbcdb55c202d88594e73efc4d",
+      "strip_prefix" : "pgq-pgq-45e9bf8",
+      "commit" : "45e9bf843ebad4f1080aa42600768e42776adaca",
+      "short_commit" : "45e9bf8"
+    },
+    "3.4.1" : {
+      "tag" : "v3.4.1",
+      "sha256" : "d5bcb4393c5ae371a0e910b0ccd9dbb67cc21dc13a34161075b20b7208872c6a",
+      "strip_prefix" : "pgq-pgq-f74fe23",
+      "commit" : "f74fe2339d95cabe681cec4b6e14a4415b3a3256",
+      "short_commit" : "f74fe23"
+    },
+    "3.4.0" : {
+      "tag" : "v3.4",
+      "sha256" : "0aadaf348ee14969bbb9b88783e79ccd4ddba51ba8517374fc0f4d0063f68e8a",
+      "strip_prefix" : "pgq-pgq-51f46ce",
+      "commit" : "51f46ce90b11c45fedd665d78fdda50acd5f8a4c",
+      "short_commit" : "51f46ce"
+    },
+    "3.3.1" : {
+      "tag" : "v3.3.1",
+      "sha256" : "5c2847762f9ea84c184553aea22a34e525115971f723ae43cbd41797282f404b",
+      "strip_prefix" : "pgq-pgq-34fd752",
+      "commit" : "34fd752120c0da78ba8eefeefc985bde2c5c5571",
+      "short_commit" : "34fd752"
+    },
+    "3.3.0" : {
+      "tag" : "v3.3",
+      "sha256" : "d0a29fac3b9be97fca82ad45f91172f29dc3e11152090e1f0dec7595c4bb41c9",
+      "strip_prefix" : "pgq-pgq-69c0b33",
+      "commit" : "69c0b33d1a5306a6b207a75841e517f24c0a30e0",
+      "short_commit" : "69c0b33"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.5.1" : {
+        "default_version" : "3.5.1",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.5.0" : {
+        "default_version" : "3.5",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.4.2" : {
+        "default_version" : "3.4.2",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.4.1" : {
+        "default_version" : "3.4.1",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.4.0" : {
+        "default_version" : "3.4",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.3.1" : {
+        "default_version" : "3.3.1",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "3.3.0" : {
+        "default_version" : "3.2.6",
+        "comment" : "Generic queue for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,115 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/tvondra/count_distinct/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.0.2" : {
+      "tag" : "v3.0.2",
+      "sha256" : "540de4d1f81a89b816f8da06aca93bf4cb91787bce8321f040655f39b48886cd",
+      "strip_prefix" : "tvondra-count_distinct-ca86eff",
+      "commit" : "ca86eff0417ea1e4d74655d192d3397d2be96b6d",
+      "short_commit" : "ca86eff"
+    },
+    "3.0.1" : {
+      "tag" : "v3.0.1",
+      "sha256" : "a282f331146a7fce30906c8dcbc8e36a1c25f39d2c1e3b67c9f6f85ddf875e78",
+      "strip_prefix" : "tvondra-count_distinct-b5fd923",
+      "commit" : "b5fd923d52dbe63e41cb7dd5aca70f3f2091e16d",
+      "short_commit" : "b5fd923"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.0.2" : {
+        "default_version" : "3.0.2",
+        "comment" : "An alternative to COUNT(DISTINCT ...) aggregate, usable with HashAggregate",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.1" : {
+        "default_version" : "3.0.1",
+        "comment" : "An alternative to COUNT(DISTINCT ...) aggregate, usable with HashAggregate",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "3.0.2" : {
+        "name" : "count_distinct",
+        "abstract" : "Aggregate for computing number of distinct values using a sorted set.",
+        "description" : "The regular COUNT(DISTINCT ...) always performs a regular sort internally, which results in bad performance if there's a lot of duplicate values. This extension implements custom count_distinct aggregate function that uses an optimized sorted set to achieve the same purpose. The extension currently supports only data types passed by value",
+        "version" : "3.0.2",
+        "maintainer" : [ "Tomas Vondra <tv@fuzzy.cz>", "Alexey Bashtanov <bashtanov@imap.cc>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "count_distinct" : {
+            "file" : "sql/count_distinct--3.0.2.sql",
+            "docfile" : "README.md",
+            "version" : "3.0.2"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/count_distinct.git",
+            "web" : "http://github.com/tvondra/count_distinct",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "count", "distinct", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "testing"
+      },
+      "3.0.1" : {
+        "name" : "count_distinct",
+        "abstract" : "Aggregate for computing number of distinct values using a sorted set.",
+        "description" : "The regular COUNT(DISTINCT ...) always performs a regular sort internally, which results in bad performance if there's a lot of duplicate values. This extension implements custom count_distinct aggregate function that uses an optimized sorted set to achieve the same purpose. The extension currently supports only data types passed by value",
+        "version" : "3.0.1",
+        "maintainer" : [ "Tomas Vondra <tv@fuzzy.cz>", "Alexey Bashtanov <bashtanov@imap.cc>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "9.6.0"
+            }
+          }
+        },
+        "provides" : {
+          "count_distinct" : {
+            "file" : "sql/count_distinct--3.0.1.sql",
+            "docfile" : "README.md",
+            "version" : "3.0.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "https://github.com/tvondra/count_distinct.git",
+            "web" : "http://github.com/tvondra/count_distinct",
+            "type" : "git"
+          }
+        },
+        "tags" : [ "count", "distinct", "aggregate" ],
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "release_status" : "testing"
+      }
+    }
+  },
+  "version" : 1
+}

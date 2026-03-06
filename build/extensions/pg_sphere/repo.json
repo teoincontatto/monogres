@@ -1,0 +1,225 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/postgrespro/pgsphere/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.5.2" : {
+      "tag" : "1.5.2",
+      "sha256" : "5f779fa62cecbe5e86c2b7fed6d4fee9baf24f53a2aa650a7565222e4c587d4e",
+      "strip_prefix" : "postgrespro-pgsphere-36db9b9",
+      "commit" : "36db9b9e084bb5933bf253f5d161299e54d36ca3",
+      "short_commit" : "36db9b9"
+    },
+    "1.5.1" : {
+      "tag" : "1.5.1",
+      "sha256" : "8b43a7c5ec1d0606a82ace241b19cc4e2a52f0f2ad26b8d84d390491ce02f80f",
+      "strip_prefix" : "postgrespro-pgsphere-daa9478",
+      "commit" : "daa9478bcd1988d5934541b7e09b37a909d23b92",
+      "short_commit" : "daa9478"
+    },
+    "1.5.1-rc1" : {
+      "tag" : "1.5.1-rc1",
+      "sha256" : "8b43a7c5ec1d0606a82ace241b19cc4e2a52f0f2ad26b8d84d390491ce02f80f",
+      "strip_prefix" : "postgrespro-pgsphere-daa9478",
+      "commit" : "daa9478bcd1988d5934541b7e09b37a909d23b92",
+      "short_commit" : "daa9478"
+    },
+    "1.5.0" : {
+      "tag" : "1.5.0",
+      "sha256" : "d015935b7535abdcf2cda3f88e572f58c69b2f2a0d429c4bb0e8cb794dc24665",
+      "strip_prefix" : "postgrespro-pgsphere-8394ae7",
+      "commit" : "8394ae72fd4a01d415c8b9dc4d08d89872aa1164",
+      "short_commit" : "8394ae7"
+    },
+    "1.4.2" : {
+      "tag" : "1.4.2",
+      "sha256" : "db4db50a4f4a95146662c0281d23420cd10db34fda1273563b96435f27787500",
+      "strip_prefix" : "postgrespro-pgsphere-597600e",
+      "commit" : "597600eae6726bdffd1309627596d054da18c5ad",
+      "short_commit" : "597600e"
+    },
+    "1.4.1" : {
+      "tag" : "1.4.1",
+      "sha256" : "4840d5958531280f0e659fbaa78d51dd2071962078b8e3d1cc0a4fecf9e512ff",
+      "strip_prefix" : "postgrespro-pgsphere-65268ed",
+      "commit" : "65268ed9d0b25b11baa91e0fbb277d27e9a54eaa",
+      "short_commit" : "65268ed"
+    },
+    "1.4.0" : {
+      "tag" : "1.4.0",
+      "sha256" : "45cf620aaad862d8dd33505807d75dda848390c87dff1843eaccbcac92206d16",
+      "strip_prefix" : "postgrespro-pgsphere-94e498d",
+      "commit" : "94e498dfa013d13f55155c8b26c2150de1f41e9d",
+      "short_commit" : "94e498d"
+    },
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "200515cb4410e7694eec6f03f86b7e69e3d68b7f33ee45bf74be3494e6ce30e9",
+      "strip_prefix" : "postgrespro-pgsphere-fb93eb4",
+      "commit" : "fb93eb40c8c17f5bbfec66b7578cbbf79277d756",
+      "short_commit" : "fb93eb4"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "57d28a771172d01e2766e18aed6326dc465e24cb5df76fc86f6aaa77709ced08",
+      "strip_prefix" : "postgrespro-pgsphere-2385d5d",
+      "commit" : "2385d5de7d8883e532e4a3e0765b97987f68f83a",
+      "short_commit" : "2385d5d"
+    },
+    "1.2.3" : {
+      "tag" : "1.2.3",
+      "sha256" : "a2590017068ec94f91dbecd713fc83b35ef3e3f615ef6def2c1cc9f23213fb03",
+      "strip_prefix" : "postgrespro-pgsphere-612f06b",
+      "commit" : "612f06b0535d393bd0143ea56a169882b37167d3",
+      "short_commit" : "612f06b"
+    },
+    "1.2.2" : {
+      "tag" : "1.2.2",
+      "sha256" : "e4e34b20956308994cdda2f1c9fc427fbf8dff7faff832818cbb71c1950a230c",
+      "strip_prefix" : "postgrespro-pgsphere-2c4cd20",
+      "commit" : "2c4cd209b09d720fca0b9db14974173abf05f390",
+      "short_commit" : "2c4cd20"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "8e8bbec24454236401472f086bac39d00aede9aefd60aa52721d1bb388160923",
+      "strip_prefix" : "postgrespro-pgsphere-472b209",
+      "commit" : "472b209ed7663c1e59d81e07eef35d35d3804e90",
+      "short_commit" : "472b209"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "ebeef749d9bfe43196d4f60463409b80cbeee11ffdcec80640a24193cdfbedb5",
+      "strip_prefix" : "postgrespro-pgsphere-3a7f241",
+      "commit" : "3a7f2413d180423de04ce26c40ed0917798a5cc8",
+      "short_commit" : "3a7f241"
+    },
+    "1.1.5" : {
+      "tag" : "1.1.5",
+      "sha256" : "384df4e24bfdaac54efdbced64813d45caa44688b40900f0469eb021d248c5b3",
+      "strip_prefix" : "postgrespro-pgsphere-38b081b",
+      "commit" : "38b081bc0ce95cdf94f471f865b58fe95bc5a301",
+      "short_commit" : "38b081b"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.5.2" : {
+        "default_version" : "1.5.2",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.1-rc1" : {
+        "default_version" : "1.5.1",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.1" : {
+        "default_version" : "1.5.1",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5.0",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.2" : {
+        "default_version" : "1.4.2",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "1.4.1",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4.0",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.3.1",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2.3",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2.2",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.1",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.5" : {
+        "default_version" : "1.1.5beta4gavo",
+        "comment" : "spherical objects with useful functions, operators and index support",
+        "module_pathname" : "$libdir/pg_sphere",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

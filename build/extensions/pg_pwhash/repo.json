@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/cybertec-postgresql/pg_pwhash/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "e98239874b29fb00abd3d5a36789a455e9146bb3f4fc64a36372a8b6748cdfe6",
+      "strip_prefix" : "cybertec-postgresql-pg_pwhash-b8d5867",
+      "commit" : "b8d586713ae58680e6afc17cc613ca1ceb17346e",
+      "short_commit" : "b8d5867"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "pg_pwhash - An extension for advanced password hashing",
+        "module_pathname" : "$libdir/pg_pwhash",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

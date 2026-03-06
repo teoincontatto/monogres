@@ -1,0 +1,660 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/osdldbt/dbt2/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.61.7" : {
+      "tag" : "v0.61.7",
+      "sha256" : "474a5cff6cdeac26ad0e7a63fdcd0c0db3f2bd61fe263d329a83f58914c9652f",
+      "strip_prefix" : "osdldbt-dbt2-75a38ba",
+      "commit" : "75a38ba21a27cee6a9b349f674130a92076fdd0a",
+      "short_commit" : "75a38ba"
+    },
+    "0.61.6" : {
+      "tag" : "v0.61.6",
+      "sha256" : "6131dbbbcf7a1852461213c8baa32d31b16835e5c9542108cba541771d88c2b6",
+      "strip_prefix" : "osdldbt-dbt2-182c74b",
+      "commit" : "182c74b5556dd52f995a71b6ad1681f815f6bcf5",
+      "short_commit" : "182c74b"
+    },
+    "0.61.5" : {
+      "tag" : "v0.61.5",
+      "sha256" : "c027ee43c35e4b6ee4f5c3d9757a791452830ee130a528ce3cd5559cd1d6fdcd",
+      "strip_prefix" : "osdldbt-dbt2-af62162",
+      "commit" : "af621627258599b16a863437b1e49cdd77ec3631",
+      "short_commit" : "af62162"
+    },
+    "0.61.4" : {
+      "tag" : "v0.61.4",
+      "sha256" : "c332e194df5c524bc516ea989d9470b2d4a1f91683818b7a3e430e92bea13537",
+      "strip_prefix" : "osdldbt-dbt2-d813793",
+      "commit" : "d813793aa117827e5357074971dc4635a600fed0",
+      "short_commit" : "d813793"
+    },
+    "0.61.3" : {
+      "tag" : "v0.61.3",
+      "sha256" : "c9a01df2975bb67b02574b805be7ca6a3f44ca62481b9f44ac0e8582d3e053f2",
+      "strip_prefix" : "osdldbt-dbt2-9a97410",
+      "commit" : "9a9741048f53b3829c8129ac4c7f5f5c089aaf86",
+      "short_commit" : "9a97410"
+    },
+    "0.61.2" : {
+      "tag" : "v0.61.2",
+      "sha256" : "0675b098d9461345d0d7fdc2147f04e88bec4d2da9322de7a7975f93574d3912",
+      "strip_prefix" : "osdldbt-dbt2-4c75b67",
+      "commit" : "4c75b67712e2fef5bbac595e2fc928f4e3806778",
+      "short_commit" : "4c75b67"
+    },
+    "0.61.1" : {
+      "tag" : "v0.61.1",
+      "sha256" : "4e610dd66244efcd2ce34759a1d98254abe7d37d4e892a9f27a610f3735b47c1",
+      "strip_prefix" : "osdldbt-dbt2-181c0fd",
+      "commit" : "181c0fddd7d12dd949ffc6ee547a84f63a284920",
+      "short_commit" : "181c0fd"
+    },
+    "0.61.0" : {
+      "tag" : "v0.61.0",
+      "sha256" : "fdb3bee13a1f56e7bd7304989f80428128e677f94622cf52b72288d997a86287",
+      "strip_prefix" : "osdldbt-dbt2-fca35d8",
+      "commit" : "fca35d84b23497813616d00c5c27921947d3dd6c",
+      "short_commit" : "fca35d8"
+    },
+    "0.60.0" : {
+      "tag" : "v0.60.0",
+      "sha256" : "ad650280a15869a78a498f912d8ea2ba1a1f1f594fc38a2b9402d95ce0cc29cf",
+      "strip_prefix" : "osdldbt-dbt2-dbc6f2d",
+      "commit" : "dbc6f2da363ea2ffd43fdd7c4f39aa7783919873",
+      "short_commit" : "dbc6f2d"
+    },
+    "0.53.10" : {
+      "tag" : "v0.53.10",
+      "sha256" : "c8162ddc4194b3786d993af8fdcc452a6f428ff240351b5c4d23471c61ea0726",
+      "strip_prefix" : "osdldbt-dbt2-41e1e3c",
+      "commit" : "41e1e3c824bb8fbc82ea2a6db37b02bf85be3f25",
+      "short_commit" : "41e1e3c"
+    },
+    "0.53.9" : {
+      "tag" : "v0.53.9",
+      "sha256" : "a626d3d6df9b62973fe5f56acf4c2ec5eb6800ceeb34aa208514971526ff1dc6",
+      "strip_prefix" : "osdldbt-dbt2-d2f049b",
+      "commit" : "d2f049b3daf084b59ba580bc637dec6a6fb2dffd",
+      "short_commit" : "d2f049b"
+    },
+    "0.53.8" : {
+      "tag" : "v0.53.8",
+      "sha256" : "ec5583ac459aad977b013fd89ad84d6479b3f4370882584fcb09681ff534981e",
+      "strip_prefix" : "osdldbt-dbt2-d007c48",
+      "commit" : "d007c48a7ff0a9b97e3633e12f485e47db85692c",
+      "short_commit" : "d007c48"
+    },
+    "0.53.7" : {
+      "tag" : "v0.53.7",
+      "sha256" : "fc19d47cc093b979223035b4298ce748c713287f7de2960a92c5cebe4807ff79",
+      "strip_prefix" : "osdldbt-dbt2-4ad9707",
+      "commit" : "4ad9707eb2c97997214bd47059b4a026d148014b",
+      "short_commit" : "4ad9707"
+    },
+    "0.53.6" : {
+      "tag" : "v0.53.6",
+      "sha256" : "cfaeb98413ac8c4e194c51fffb9a258e1ea1196bf311f805ff919daa1b381d20",
+      "strip_prefix" : "osdldbt-dbt2-1915341",
+      "commit" : "1915341eb8ec13a453b21ada58757a267df8cbed",
+      "short_commit" : "1915341"
+    },
+    "0.53.5" : {
+      "tag" : "v0.53.5",
+      "sha256" : "528bdad743642d48b8b477005f63f6cd4c571f437baa6bff4e8da28fb3180fd1",
+      "strip_prefix" : "osdldbt-dbt2-81b50a9",
+      "commit" : "81b50a90f20a81e6b8352bdafa32a6c0dd0de252",
+      "short_commit" : "81b50a9"
+    },
+    "0.53.4" : {
+      "tag" : "v0.53.4",
+      "sha256" : "dada0fdae2c855ab5e108bb586c1d5359ae4f4346c320e82e8e69bcaeb13c180",
+      "strip_prefix" : "osdldbt-dbt2-58c5d90",
+      "commit" : "58c5d907eeb84c86fd3a5df252a409e1c9c3f3f0",
+      "short_commit" : "58c5d90"
+    },
+    "0.53.3" : {
+      "tag" : "v0.53.3",
+      "sha256" : "960cdb9eebc714d42baef88a998b856514863c798e91017430c22c74be433646",
+      "strip_prefix" : "osdldbt-dbt2-0903c53",
+      "commit" : "0903c53dfde759245cd16ade8621be0229ab7895",
+      "short_commit" : "0903c53"
+    },
+    "0.53.2" : {
+      "tag" : "v0.53.2",
+      "sha256" : "d9ff7073c7e94c9063334659bf15d079322c6aae5f616b6866ef4b411763c1b2",
+      "strip_prefix" : "osdldbt-dbt2-8b48f9a",
+      "commit" : "8b48f9a7c58ec75022e3715ed37f161968c9a466",
+      "short_commit" : "8b48f9a"
+    },
+    "0.53.1" : {
+      "tag" : "v0.53.1",
+      "sha256" : "6e1b41046b464df1012bd76a3c3b1f25382c8db828041781c763bf97668d239f",
+      "strip_prefix" : "osdldbt-dbt2-5ee4692",
+      "commit" : "5ee46921dbbfca511b636cfe1f416970bf1f609d",
+      "short_commit" : "5ee4692"
+    },
+    "0.53.0" : {
+      "tag" : "v0.53.0",
+      "sha256" : "d6020d8baee4c94ad4b0fc24f2129f8b91133315d4a73e0785042614356c2316",
+      "strip_prefix" : "osdldbt-dbt2-a8b1984",
+      "commit" : "a8b1984933eaf3301f5c2f7b768776781262a758",
+      "short_commit" : "a8b1984"
+    },
+    "0.52.0" : {
+      "tag" : "v0.52.0",
+      "sha256" : "d5e1d2485f758524b3318ded53d8dbc86f66814c8e954687b338577ae34d33c7",
+      "strip_prefix" : "osdldbt-dbt2-f680949",
+      "commit" : "f6809497cd55646e6e9c52f43f8de09a0e3b0d36",
+      "short_commit" : "f680949"
+    },
+    "0.51.0" : {
+      "tag" : "v0.51.0",
+      "sha256" : "46424eb291b6b507da85b618695aed2c28485d4abac2a161c3d6c99b793d2239",
+      "strip_prefix" : "osdldbt-dbt2-06bff14",
+      "commit" : "06bff14356d5ab7fdfecb2fa9f97b0153022f81f",
+      "short_commit" : "06bff14"
+    },
+    "0.50.1" : {
+      "tag" : "v0.50.1",
+      "sha256" : "8333590670699cbfcf6d5495fb883c80b42877a21b8a349eb8bb12766f9f6080",
+      "strip_prefix" : "osdldbt-dbt2-8e2008c",
+      "commit" : "8e2008cd7a2a6d14003dfcb26ef2b8e73a0a7014",
+      "short_commit" : "8e2008c"
+    },
+    "0.50.0" : {
+      "tag" : "v0.50.0",
+      "sha256" : "f88de5c066bbf1911bbe7dae1c729e1e96b298cb14ddb298f1d90a0484cb0c8d",
+      "strip_prefix" : "osdldbt-dbt2-9ff4630",
+      "commit" : "9ff46306b600c47de36a4d0b8f508134d1717080",
+      "short_commit" : "9ff4630"
+    },
+    "0.49.1" : {
+      "tag" : "v0.49.1",
+      "sha256" : "a2a9dcdc81d1346bac889a2859043bf0035e45090e2d49852eefcd2acbe60d62",
+      "strip_prefix" : "osdldbt-dbt2-4b34b6a",
+      "commit" : "4b34b6a1a3e2fb4c8e5287b71f14af025a586540",
+      "short_commit" : "4b34b6a"
+    },
+    "0.49.0" : {
+      "tag" : "v0.49.0",
+      "sha256" : "3fa7b0b0ea549e219e44019123588868356e939d9ee9f9805766910d44950fc2",
+      "strip_prefix" : "osdldbt-dbt2-00a2fc5",
+      "commit" : "00a2fc54863c53f9900da891b683b2b4f199bc1e",
+      "short_commit" : "00a2fc5"
+    },
+    "0.48.7" : {
+      "tag" : "v0.48.7",
+      "sha256" : "ae6a9acefe2c3b883f8e50eff545898865e9760779caac18f0ebc5e25c0304f3",
+      "strip_prefix" : "osdldbt-dbt2-778a371",
+      "commit" : "778a3717631da98c389dcecf9aa1c2e2e1ac06b5",
+      "short_commit" : "778a371"
+    },
+    "0.48.6" : {
+      "tag" : "v0.48.6",
+      "sha256" : "ed7091187a2c7f8b28501f4d17ed1d0cbfd85b3e7c65812b4889e5885f1e49d8",
+      "strip_prefix" : "osdldbt-dbt2-8976ab1",
+      "commit" : "8976ab1bc25fd513cb59020ab54c9e0e2a231268",
+      "short_commit" : "8976ab1"
+    },
+    "0.48.5" : {
+      "tag" : "v0.48.5",
+      "sha256" : "59c30da9d2f9cc4c6164bd0292d282b024342c25d1e8d034ae35e17ed67a3f24",
+      "strip_prefix" : "osdldbt-dbt2-e640985",
+      "commit" : "e640985c647e4340b4b9d03e44addefb2a8e4dd8",
+      "short_commit" : "e640985"
+    },
+    "0.48.4" : {
+      "tag" : "v0.48.4",
+      "sha256" : "5924f4d6bf7d1fc2ed8b7cffa1256c3b334ce37e14221791423f69eea728a817",
+      "strip_prefix" : "osdldbt-dbt2-1d3252a",
+      "commit" : "1d3252af7edfdc7fc950bb33e05467f7a236955a",
+      "short_commit" : "1d3252a"
+    },
+    "0.48.3" : {
+      "tag" : "v0.48.3",
+      "sha256" : "08df17d5cb8487cc42ca9dcc47add4ec83d52460d21e0187266fb48b52511a9b",
+      "strip_prefix" : "osdldbt-dbt2-42cf16d",
+      "commit" : "42cf16db4bea7e58196c5da137c173e6d831e54b",
+      "short_commit" : "42cf16d"
+    },
+    "0.48.2" : {
+      "tag" : "v0.48.2",
+      "sha256" : "67771113ef5d419d5049cbe4924c591b93035120ba73263b69d2002cf8b9e31b",
+      "strip_prefix" : "osdldbt-dbt2-51a5203",
+      "commit" : "51a520391dc44676ee166881e8f0559510f56c58",
+      "short_commit" : "51a5203"
+    },
+    "0.48.1" : {
+      "tag" : "v0.48.1",
+      "sha256" : "d01f5c321d9ec0bbbe4a000d4e2f6143ff4052b0545beebdbeb8b29d2cbdfe5a",
+      "strip_prefix" : "osdldbt-dbt2-46498f6",
+      "commit" : "46498f6580380f5ab88a31669fec6dbdcccaeabe",
+      "short_commit" : "46498f6"
+    },
+    "0.48.0" : {
+      "tag" : "v0.48.0",
+      "sha256" : "89e933d8fd98d70b513edf5bf23a77a72466b7899bc674d0d2f49648bea5c158",
+      "strip_prefix" : "osdldbt-dbt2-b45fd97",
+      "commit" : "b45fd977d8cee2d4dde990a12bc95ef2c0a44ec0",
+      "short_commit" : "b45fd97"
+    },
+    "0.47.0" : {
+      "tag" : "v0.47.0",
+      "sha256" : "8a6ddce20504dd6bffafec60979e01171fd7c919340651deffbfe78e9aa2fb24",
+      "strip_prefix" : "osdldbt-dbt2-44ca33f",
+      "commit" : "44ca33f4037edd2a101c505cde1624f577172dad",
+      "short_commit" : "44ca33f"
+    },
+    "0.46.2" : {
+      "tag" : "v0.46.2",
+      "sha256" : "273fce0033ea81b8c243fb8c7f111c41c5b35ccdb052c2f8bcd64fe7b14159c4",
+      "strip_prefix" : "osdldbt-dbt2-d6cb6fd",
+      "commit" : "d6cb6fdc3a7e33682cdaa3f02dbb17fcf913421d",
+      "short_commit" : "d6cb6fd"
+    },
+    "0.46.1" : {
+      "tag" : "v0.46.1",
+      "sha256" : "85ac74f36a3ff12b5c0f1836d9f3238368ce77ee2e64b042f9f97a3afe0e73fb",
+      "strip_prefix" : "osdldbt-dbt2-2d3d9c3",
+      "commit" : "2d3d9c346850a151114a07d80fd19e506bd9686b",
+      "short_commit" : "2d3d9c3"
+    },
+    "0.46.0" : {
+      "tag" : "v0.46.0",
+      "sha256" : "10d0a7ce84d7756a68dc88212924613c314290828b5320340d104d36234f962f",
+      "strip_prefix" : "osdldbt-dbt2-8b092f3",
+      "commit" : "8b092f38fca2bbd81076be6c8373ca85742a2834",
+      "short_commit" : "8b092f3"
+    },
+    "0.45.1" : {
+      "tag" : "v0.45.1",
+      "sha256" : "2cd5d08aad1e2e5899afc3f3e99eacca30b2b56adffca060c9f574197b7e7579",
+      "strip_prefix" : "osdldbt-dbt2-41886ef",
+      "commit" : "41886ef2328c3bcf145c04dab055bfb3407bcd37",
+      "short_commit" : "41886ef"
+    },
+    "0.45.0" : {
+      "tag" : "v0.45.0",
+      "sha256" : "96393bfd7424f1908a727e89ab9d45d104eea02526e40d2c95242da9f15161ca",
+      "strip_prefix" : "osdldbt-dbt2-53ab599",
+      "commit" : "53ab5999173239e22750974b78d07b8586dca542",
+      "short_commit" : "53ab599"
+    },
+    "0.44.0" : {
+      "tag" : "v0.44.0",
+      "sha256" : "3491907c78d0925b9cf86e7f0d71f34e71be6babe34307afa7a5b95f152d66fa",
+      "strip_prefix" : "osdldbt-dbt2-35b1ada",
+      "commit" : "35b1ada58426a50cb01351178fb16253348bb6b9",
+      "short_commit" : "35b1ada"
+    },
+    "0.43.0" : {
+      "tag" : "v0.43.0",
+      "sha256" : "c02671cea16ed79366154b222438b7c3cebfb2fa481e0664370c803c3b94a149",
+      "strip_prefix" : "osdldbt-dbt2-7d35e99",
+      "commit" : "7d35e994e98ed3a78e99fe746c650dc8ce07b61b",
+      "short_commit" : "7d35e99"
+    },
+    "0.42.0" : {
+      "tag" : "v0.42",
+      "sha256" : "651a0c02e0479eba7f8fcabe9535d236d81261946a6c8f62967f8a1217bfc5a2",
+      "strip_prefix" : "osdldbt-dbt2-82147e4",
+      "commit" : "82147e4792e89e46554d7374ecbfc9063786e0dc",
+      "short_commit" : "82147e4"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.61.7" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.6" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.5" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.4" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.3" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.2" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.61.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.60.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.9" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.8" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.7" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.6" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.5" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.4" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.3" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.2" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.10" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.53.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.52.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.51.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.50.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.50.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.49.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.49.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.7" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.6" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.5" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.4" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.3" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.2" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.48.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.47.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.46.2" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.46.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.46.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.45.1" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.45.0" : {
+        "default_version" : "0.45.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.44.0" : {
+        "default_version" : "0.44.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.43.0" : {
+        "default_version" : "0.44.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.42.0" : {
+        "default_version" : "0.44.0",
+        "comment" : "dbt-2 c stored functions",
+        "module_pathname" : "$libdir/dbt2",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

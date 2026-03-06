@@ -1,0 +1,1613 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/ossc-db/pg_hint_plan/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.8.0-pg18" : {
+      "tag" : "REL18_1_8_0",
+      "sha256" : "ebb8e3126bda55e13ad37d48d0cbb2f7c9938a4d937442c95c6b9af33c3f8c81",
+      "strip_prefix" : "ossc-db-pg_hint_plan-88437bd",
+      "commit" : "88437bde5947e7bc40719e8b82eb8be2b39d71e8",
+      "short_commit" : "88437bd"
+    },
+    "1.7.1-pg17" : {
+      "tag" : "REL17_1_7_1",
+      "sha256" : "f11450183437a4bd8a851a6fdfac4ba6f0cacc76327de94525abdc0b4c3cdbe4",
+      "strip_prefix" : "ossc-db-pg_hint_plan-1aee00c",
+      "commit" : "1aee00c81ef8ed4cb4e1c6951298ec7ff9fb4a17",
+      "short_commit" : "1aee00c"
+    },
+    "1.7.0-pg17" : {
+      "tag" : "REL17_1_7_0",
+      "sha256" : "62f6fc3117b7f3c00e956449c8023d1577491f3b86d572d11d2f946ac6a8a171",
+      "strip_prefix" : "ossc-db-pg_hint_plan-85e07af",
+      "commit" : "85e07af6ca4675a26fa2281370c37371b883b2a9",
+      "short_commit" : "85e07af"
+    },
+    "1.6.2-pg16" : {
+      "tag" : "REL16_1_6_2",
+      "sha256" : "5a53413347e182695cf2be6f49ec66b7364c1e9280abda005f66a8f8dce8da2e",
+      "strip_prefix" : "ossc-db-pg_hint_plan-b35a03c",
+      "commit" : "b35a03c789b5707a4f96e2ee719101d4f7016a88",
+      "short_commit" : "b35a03c"
+    },
+    "1.6.1-pg16" : {
+      "tag" : "REL16_1_6_1",
+      "sha256" : "09d728606ed857fa887fac7937493397746677b4c0c9bee825d161d091361666",
+      "strip_prefix" : "ossc-db-pg_hint_plan-54b4b03",
+      "commit" : "54b4b0358a6c96dc80b2b836bba50937415753b6",
+      "short_commit" : "54b4b03"
+    },
+    "1.6.0-pg16" : {
+      "tag" : "REL16_1_6_0",
+      "sha256" : "ec02308ee159e1efdcd9e6604cfde966b8a140346b5261c7be4fbacce45ebaad",
+      "strip_prefix" : "ossc-db-pg_hint_plan-fa0a461",
+      "commit" : "fa0a461af929c06f7c96956369458456c26e7ad9",
+      "short_commit" : "fa0a461"
+    },
+    "1.5.3-pg15" : {
+      "tag" : "REL15_1_5_3",
+      "sha256" : "fa5c963ca5113b4958c7c54afd59be20c578890ea8a4a1a00dc2849b944b60a9",
+      "strip_prefix" : "ossc-db-pg_hint_plan-701472c",
+      "commit" : "701472c2fcf6d5b535db3bd2f226d5e28f287f79",
+      "short_commit" : "701472c"
+    },
+    "1.5.2-pg15" : {
+      "tag" : "REL15_1_5_2",
+      "sha256" : "e6ae9eea23b6e1f8be054aed95a6942fb62268368d904db3c94ddc08197f54c5",
+      "strip_prefix" : "ossc-db-pg_hint_plan-fabd97b",
+      "commit" : "fabd97bd76361051b91c0e772eb819a45f3fd095",
+      "short_commit" : "fabd97b"
+    },
+    "1.5.1-pg15" : {
+      "tag" : "REL15_1_5_1",
+      "sha256" : "435ae387af309b4198fb804890249655f436c01be2993bdc9cc37b97d0a38c4c",
+      "strip_prefix" : "ossc-db-pg_hint_plan-7a41e7b",
+      "commit" : "7a41e7ba94c8769895fefbb282f6943067adac2e",
+      "short_commit" : "7a41e7b"
+    },
+    "1.5.0-pg15" : {
+      "tag" : "REL15_1_5_0",
+      "sha256" : "09cfbaae6a40f283759a74dfc43b1b965d238bbec27c49403bebde264981bc54",
+      "strip_prefix" : "ossc-db-pg_hint_plan-69747ab",
+      "commit" : "69747ab73062d763391ef6fc0ab17db49673ee74",
+      "short_commit" : "69747ab"
+    },
+    "1.4.4-pg14" : {
+      "tag" : "REL14_1_4_4",
+      "sha256" : "90a655dab94794b9c3ed61208cc4cbeb4a7b755de7bfbd3e0127a333720e64f4",
+      "strip_prefix" : "ossc-db-pg_hint_plan-d69d54c",
+      "commit" : "d69d54c206e6c49cccd7ca8ee4a3096e9147e446",
+      "short_commit" : "d69d54c"
+    },
+    "1.4.3-pg14" : {
+      "tag" : "REL14_1_4_3",
+      "sha256" : "0be2ff2df1a5aaaaec2728f88563fe3580918594259d1b253b440e710bbb7165",
+      "strip_prefix" : "ossc-db-pg_hint_plan-3b58a18",
+      "commit" : "3b58a184a41602aa5e163562320d8979c35e6586",
+      "short_commit" : "3b58a18"
+    },
+    "1.4.2-pg14" : {
+      "tag" : "REL14_1_4_2",
+      "sha256" : "044fb9d1f4de4e526364eb923f7f25730d61305225fdedecb093e91d83498c11",
+      "strip_prefix" : "ossc-db-pg_hint_plan-81e4f0f",
+      "commit" : "81e4f0f37966081bc1909db9796bfc1b1b5d2349",
+      "short_commit" : "81e4f0f"
+    },
+    "1.4.1-pg14" : {
+      "tag" : "REL14_1_4_1",
+      "sha256" : "3f706aa983c009aebbc172924a52b8b1ba81762f6ab4c667d953e0669c227768",
+      "strip_prefix" : "ossc-db-pg_hint_plan-c26349d",
+      "commit" : "c26349d7f14af8986fbf034ebbd350d0715b99af",
+      "short_commit" : "c26349d"
+    },
+    "1.4.0-pg14" : {
+      "tag" : "REL14_1_4_0",
+      "sha256" : "2a9834fa905a4d4bd4ebd716b21c6cfaaac746f95a9bcf1afe31bc46aeed3421",
+      "strip_prefix" : "ossc-db-pg_hint_plan-501fdfc",
+      "commit" : "501fdfce138690880661839510642f56cc26e669",
+      "short_commit" : "501fdfc"
+    },
+    "1.3.11-pg13" : {
+      "tag" : "REL13_1_3_11",
+      "sha256" : "7ae094b6d5b5aac157fdbab7965566f147e08c7252dd14a5df42373e46873948",
+      "strip_prefix" : "ossc-db-pg_hint_plan-49edfcb",
+      "commit" : "49edfcb3f6df0fc0b473f45df8f44b4fda05f99f",
+      "short_commit" : "49edfcb"
+    },
+    "1.3.10-pg13" : {
+      "tag" : "REL13_1_3_10",
+      "sha256" : "0bd4b263ce52eb0956bb3c3f65247dfc3e0075059fa2c2c77ca287a102e750c2",
+      "strip_prefix" : "ossc-db-pg_hint_plan-dd830f8",
+      "commit" : "dd830f858b3cbade61ee76503426a67040fbb2ad",
+      "short_commit" : "dd830f8"
+    },
+    "1.3.10-pg12" : {
+      "tag" : "REL12_1_3_10",
+      "sha256" : "69437816f848cf1a945779e77f60c36056f8b2a8dcdc07d11e144eae25cefa47",
+      "strip_prefix" : "ossc-db-pg_hint_plan-dc21d9b",
+      "commit" : "dc21d9ba98924d80753194ca4bd8c00aafbdec6e",
+      "short_commit" : "dc21d9b"
+    },
+    "1.3.9-pg13" : {
+      "tag" : "REL13_1_3_9",
+      "sha256" : "f6e7a09269bcf37aa0f64889fffcec4e4eee3e17929f1c3b1f15408c5834508f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-bed874e",
+      "commit" : "bed874e573dc82ba6d3e81fb6176dbb52b6190d3",
+      "short_commit" : "bed874e"
+    },
+    "1.3.9-pg12" : {
+      "tag" : "REL12_1_3_9",
+      "sha256" : "127b1fd0ff9afa10f27de37336069a9b56236a40edd69994a9b75562290c4748",
+      "strip_prefix" : "ossc-db-pg_hint_plan-dfb7d34",
+      "commit" : "dfb7d34c4a7440b19396b69ad313dd81cea34b78",
+      "short_commit" : "dfb7d34"
+    },
+    "1.3.9-pg11" : {
+      "tag" : "REL11_1_3_9",
+      "sha256" : "76d79526f91be4433765ce6bee403125e948263486a8fa5ee7d998330033b78c",
+      "strip_prefix" : "ossc-db-pg_hint_plan-a68d79b",
+      "commit" : "a68d79b774d927a54d703ccd884eccd9bfcdf81d",
+      "short_commit" : "a68d79b"
+    },
+    "1.3.8-pg13" : {
+      "tag" : "REL13_1_3_8",
+      "sha256" : "cbd0e2e549ac57582153fab314e1451c38039a5bfbec273a4e047102a80facfe",
+      "strip_prefix" : "ossc-db-pg_hint_plan-4f3643f",
+      "commit" : "4f3643fa9d49a569efcdd6ed3fbdb3adc87013c4",
+      "short_commit" : "4f3643f"
+    },
+    "1.3.8-pg12" : {
+      "tag" : "REL12_1_3_8",
+      "sha256" : "a552c9cd525b4ed5f4c0ea640bf176faa67cb0c151486c9b7a5f3e7147251d68",
+      "strip_prefix" : "ossc-db-pg_hint_plan-2bd1a64",
+      "commit" : "2bd1a642de6dd3bfea2f77448822dad922be94d8",
+      "short_commit" : "2bd1a64"
+    },
+    "1.3.8-pg11" : {
+      "tag" : "REL11_1_3_8",
+      "sha256" : "06863231efe4f14a9d4aba15bbada587d29bf4b0a3c3ca90e245d424c897766f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-be6d363",
+      "commit" : "be6d36393cbea4a1bc86bb30bc4312b5407796f9",
+      "short_commit" : "be6d363"
+    },
+    "1.3.7-pg13" : {
+      "tag" : "REL13_1_3_7",
+      "sha256" : "6c89b549ab0c165d09c6f7c97c80bdbb894a494b9a9f72ef48a95aa84a907ee2",
+      "strip_prefix" : "ossc-db-pg_hint_plan-4ffa97e",
+      "commit" : "4ffa97e5d239467ee6d0a94d32355e984cfd77a2",
+      "short_commit" : "4ffa97e"
+    },
+    "1.3.7-pg12" : {
+      "tag" : "REL12_1_3_7",
+      "sha256" : "74630fb936baf09a91a4bdfa7553bc26ebf94d4a20ee879dc5327b09f189bdb2",
+      "strip_prefix" : "ossc-db-pg_hint_plan-afe29b4",
+      "commit" : "afe29b4bff1516f2e3391cb4fe8a9774e7719725",
+      "short_commit" : "afe29b4"
+    },
+    "1.3.7-pg11" : {
+      "tag" : "REL11_1_3_7",
+      "sha256" : "49754d72cc7190740756c2efca5e58073371c73d14a8a083437c87276b55d56c",
+      "strip_prefix" : "ossc-db-pg_hint_plan-a797bcf",
+      "commit" : "a797bcf944d7f5c17d6d26cdaa2c57ef50b73a81",
+      "short_commit" : "a797bcf"
+    },
+    "1.3.7-pg10" : {
+      "tag" : "REL10_1_3_7",
+      "sha256" : "e9acc9fde19e013f633d8ba6404998ceafd943158d8d8703ee3046aa6716eae3",
+      "strip_prefix" : "ossc-db-pg_hint_plan-f253134",
+      "commit" : "f2531344f76f3fa7afa51b8d54013a10e9d3c5af",
+      "short_commit" : "f253134"
+    },
+    "1.3.6-pg12" : {
+      "tag" : "REL12_1_3_6",
+      "sha256" : "4831cf57465bc7847b369c576e9f00b666308bc8543d213891e0738914a91d75",
+      "strip_prefix" : "ossc-db-pg_hint_plan-744dea0",
+      "commit" : "744dea0a450c60452d2f96ef54483caf3bc7179e",
+      "short_commit" : "744dea0"
+    },
+    "1.3.6-pg11" : {
+      "tag" : "REL11_1_3_6",
+      "sha256" : "43e0bd4a31aa9ea8e9a76a7edbf1b40f9557d663bd83c467360dd3716b9b3eb7",
+      "strip_prefix" : "ossc-db-pg_hint_plan-7b86e22",
+      "commit" : "7b86e226f4e9e4b0ca6c3ee45f134284f9505285",
+      "short_commit" : "7b86e22"
+    },
+    "1.3.6-pg10" : {
+      "tag" : "REL10_1_3_6",
+      "sha256" : "d564285b369548feb7df7c96f37194cd22a23c6a58da3bdef66fa2ddf07cc562",
+      "strip_prefix" : "ossc-db-pg_hint_plan-c44dcca",
+      "commit" : "c44dcca707a461aa43a6b916b7c5002863c8843f",
+      "short_commit" : "c44dcca"
+    },
+    "1.3.5-pg12" : {
+      "tag" : "REL12_1_3_5",
+      "sha256" : "d2643977a0639165a6bad272a4fdc8bf96cc3351d982c03e868a852d3fbbabec",
+      "strip_prefix" : "ossc-db-pg_hint_plan-d518f03",
+      "commit" : "d518f0364a5615e4f063f9ac099f597d1fe92cb7",
+      "short_commit" : "d518f03"
+    },
+    "1.3.5-pg11" : {
+      "tag" : "REL11_1_3_5",
+      "sha256" : "585a0e1918f78ef6326af47d4cb71946162fd5b140fd702f21ff3be93c6e06b6",
+      "strip_prefix" : "ossc-db-pg_hint_plan-10efd8a",
+      "commit" : "10efd8abd59ca67fc9e490306de6e92a73da969a",
+      "short_commit" : "10efd8a"
+    },
+    "1.3.5-pg10" : {
+      "tag" : "REL10_1_3_5",
+      "sha256" : "14243fa27ac68ad4b2c1195942a47ae8050631c0b958ac11e09feff3c94c0fe7",
+      "strip_prefix" : "ossc-db-pg_hint_plan-8fe6bea",
+      "commit" : "8fe6beaa6fb61a981d88a6ae3a429cc23552d75f",
+      "short_commit" : "8fe6bea"
+    },
+    "1.3.4-pg11" : {
+      "tag" : "REL11_1_3_4",
+      "sha256" : "3a1e7317c0d1b6a2e0c5afb535fd6bab5bc9d6cbfb080146f25e2ee11759db84",
+      "strip_prefix" : "ossc-db-pg_hint_plan-771b62a",
+      "commit" : "771b62aecf23f466700d1f778fbd569243f04dbf",
+      "short_commit" : "771b62a"
+    },
+    "1.3.3-pg11" : {
+      "tag" : "REL11_1_3_3",
+      "sha256" : "51404da1696f6c48d5171a17df388c0dba6cb4edb92f5dbae6ab3c74718b434f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-e60d971",
+      "commit" : "e60d971b0485b6251225d257b808e316b8ab75a5",
+      "short_commit" : "e60d971"
+    },
+    "1.3.3-pg10" : {
+      "tag" : "REL10_1_3_3",
+      "sha256" : "7897888422a7e5e6372782cc3b2fbb8024cd430443ac4bb9abab258744ab4ee9",
+      "strip_prefix" : "ossc-db-pg_hint_plan-429bd37",
+      "commit" : "429bd37402bbab54d8bf66c339ba065851fc2a5e",
+      "short_commit" : "429bd37"
+    },
+    "1.3.2-pg11" : {
+      "tag" : "REL11_1_3_2",
+      "sha256" : "de2302cd718a18873931081f03a313d39808b77aaa1c850837979b4f15212304",
+      "strip_prefix" : "ossc-db-pg_hint_plan-6f4b798",
+      "commit" : "6f4b79877bb4ce41a25b8cf6eb436c246105558f",
+      "short_commit" : "6f4b798"
+    },
+    "1.3.2-pg10" : {
+      "tag" : "REL10_1_3_2",
+      "sha256" : "051c544a6c311022d58d0889202babc90546036c61b5b250b6c597c35cbba636",
+      "strip_prefix" : "ossc-db-pg_hint_plan-0160295",
+      "commit" : "016029553f36d017d2362caaa8ddf623b8bc8a62",
+      "short_commit" : "0160295"
+    },
+    "1.3.1-pg10" : {
+      "tag" : "REL10_1_3_1",
+      "sha256" : "5e33a1020b18be5c9d349ef49d80201eb108061cca6b43bc9c7515ad5fa10c7d",
+      "strip_prefix" : "ossc-db-pg_hint_plan-f5ad8dc",
+      "commit" : "f5ad8dc5ae6416f79ef4e8b7d7c6b63c378579ab",
+      "short_commit" : "f5ad8dc"
+    },
+    "1.3.0-pg10" : {
+      "tag" : "REL10_1_3_0",
+      "sha256" : "1be527e97feea0892840f809bcb300af15aa457d8057beb0975c3ed889b142cc",
+      "strip_prefix" : "ossc-db-pg_hint_plan-0973d0d",
+      "commit" : "0973d0d739ad37c20bd8bb24db79e12371da2eb7",
+      "short_commit" : "0973d0d"
+    },
+    "1.2.7-pg96" : {
+      "tag" : "REL96_1_2_7",
+      "sha256" : "7b825481b85223c176ecf5d58ea1f67f82dadeb7b9efe3faa7005c2fc50d5de3",
+      "strip_prefix" : "ossc-db-pg_hint_plan-d25d592",
+      "commit" : "d25d592932a9a211b0eafb68c0395cadc1d2e86a",
+      "short_commit" : "d25d592"
+    },
+    "1.2.6-pg96" : {
+      "tag" : "REL96_1_2_6",
+      "sha256" : "f5aeef4dfaf0e98fedddc3db4f94e0b569a84e1455d5d7f58e1eb485043a901c",
+      "strip_prefix" : "ossc-db-pg_hint_plan-d6dcece",
+      "commit" : "d6dcece5f3fe6d66c891120cec1c321f491d8214",
+      "short_commit" : "d6dcece"
+    },
+    "1.2.5-pg96" : {
+      "tag" : "REL96_1_2_5",
+      "sha256" : "04acab065dad5e116715d9536f419cacf32248b6a085b629cb327366343c5bcd",
+      "strip_prefix" : "ossc-db-pg_hint_plan-ef58744",
+      "commit" : "ef58744947c15b2d4a97e3e333015bfb56a23fd1",
+      "short_commit" : "ef58744"
+    },
+    "1.2.4-pg96" : {
+      "tag" : "REL96_1_2_4",
+      "sha256" : "c79dd00a861a4cffe8500ff10a36c393b9bd466aa8c5085dc3528fe649c8f4bb",
+      "strip_prefix" : "ossc-db-pg_hint_plan-9df458b",
+      "commit" : "9df458b7faea48fa02620e680264c3c9ae76f9d7",
+      "short_commit" : "9df458b"
+    },
+    "1.2.3-pg96" : {
+      "tag" : "REL96_1_2_3",
+      "sha256" : "2c8436034216adf7688a36b30c9f40a92ab788e2a2646152a4dd3f4891a64583",
+      "strip_prefix" : "ossc-db-pg_hint_plan-33ee9d0",
+      "commit" : "33ee9d0704564de24e6f734720fee5022bdc9d2d",
+      "short_commit" : "33ee9d0"
+    },
+    "1.2.2-pg96" : {
+      "tag" : "REL96_1_2_2",
+      "sha256" : "ba04023ea5d4ac48cd6470e0fff8af0003a8a443a32d0f32f4834042ae71cb6f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-70f2c6a",
+      "commit" : "70f2c6a9bd4e121d9d106bb24aca727ca883cf23",
+      "short_commit" : "70f2c6a"
+    },
+    "1.2.1-pg96" : {
+      "tag" : "REL96_1_2_1",
+      "sha256" : "50dd70b07c059cd88834dc96cf929b153796bbe394df3b69e94be88c4c968048",
+      "strip_prefix" : "ossc-db-pg_hint_plan-7500037",
+      "commit" : "75000377cb41bebef34736ea978a365a0a08e008",
+      "short_commit" : "7500037"
+    },
+    "1.2.0-pg96" : {
+      "tag" : "REL96_1_2_0",
+      "sha256" : "59c164d16ca6626b281fbcdbeb1fd34133025bf40df97662ce76107fb7ffa816",
+      "strip_prefix" : "ossc-db-pg_hint_plan-a5f9aa7",
+      "commit" : "a5f9aa7a5cc47181d502cceb787a66468168e39b",
+      "short_commit" : "a5f9aa7"
+    },
+    "1.1.9-pg95" : {
+      "tag" : "REL95_1_1_9",
+      "sha256" : "873506c9ae490f1032536f34c69044eb1a742717b59ed7b21c4219a053975a2f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-f7e3c76",
+      "commit" : "f7e3c76600651fd2563c82778e43532eb9631d0f",
+      "short_commit" : "f7e3c76"
+    },
+    "1.1.9-pg94" : {
+      "tag" : "REL94_1_1_9",
+      "sha256" : "54ad6111086b608982f99eccb95c7509b0a83a24801cfa93133451ba96aeab80",
+      "strip_prefix" : "ossc-db-pg_hint_plan-51231e4",
+      "commit" : "51231e4565eeecd5be7dcba4973df5fb39a3bc66",
+      "short_commit" : "51231e4"
+    },
+    "1.1.8-pg95" : {
+      "tag" : "REL95_1_1_8",
+      "sha256" : "fb251fbe1e9701f56beec33b1fb8506de143a42de3932a1d39fca2e6edfe0ba0",
+      "strip_prefix" : "ossc-db-pg_hint_plan-92b3545",
+      "commit" : "92b354587a6c38fce44eb50441fb45de75b60ec0",
+      "short_commit" : "92b3545"
+    },
+    "1.1.8-pg94" : {
+      "tag" : "REL94_1_1_8",
+      "sha256" : "784e617813c3b247b5c61dbb0ceb79ab28ee1db02906ea39e869cbc5c9ba6988",
+      "strip_prefix" : "ossc-db-pg_hint_plan-523c048",
+      "commit" : "523c048aac38ecfee1533ad68405a0f47195bb5c",
+      "short_commit" : "523c048"
+    },
+    "1.1.7-pg95" : {
+      "tag" : "REL95_1_1_7",
+      "sha256" : "4bb2a5dcb9097388237683e05b3ac6452faf2ec951b70ec22a89ebf66c3f55f9",
+      "strip_prefix" : "ossc-db-pg_hint_plan-9e354ac",
+      "commit" : "9e354ac713b355dd2400ccde7b47ecbe91c86f69",
+      "short_commit" : "9e354ac"
+    },
+    "1.1.7-pg94" : {
+      "tag" : "REL94_1_1_7",
+      "sha256" : "a7c664cb8864d2835b84f0775366929cf6db0f8bb50a76c76b4329324676164e",
+      "strip_prefix" : "ossc-db-pg_hint_plan-5a909ae",
+      "commit" : "5a909ae1d08623a7294532c1600c3449aca7e9f2",
+      "short_commit" : "5a909ae"
+    },
+    "1.1.6-pg95" : {
+      "tag" : "REL95_1_1_6",
+      "sha256" : "d571beb878d00a61897547ffc04b188385f043bc320ce45ed019a33777df58e2",
+      "strip_prefix" : "ossc-db-pg_hint_plan-fd64e6b",
+      "commit" : "fd64e6bae7521ce24a24e033c96c3697aae2f42d",
+      "short_commit" : "fd64e6b"
+    },
+    "1.1.6-pg94" : {
+      "tag" : "REL94_1_1_6",
+      "sha256" : "3d965d2ef50032507d5f5115a3f321892d5f20f0b14663f62d45297513833575",
+      "strip_prefix" : "ossc-db-pg_hint_plan-690a353",
+      "commit" : "690a3532cf11d6cae3fd6abe9e448fb0ad10a360",
+      "short_commit" : "690a353"
+    },
+    "1.1.6-pg93" : {
+      "tag" : "REL93_1_1_6",
+      "sha256" : "0156010f91d8b1926ea9e371f41032e2c110067a46895277ef5293f6f61b5be2",
+      "strip_prefix" : "ossc-db-pg_hint_plan-68b706a",
+      "commit" : "68b706a74484776551124c440ad6f1b005c0bbb4",
+      "short_commit" : "68b706a"
+    },
+    "1.1.5-pg95" : {
+      "tag" : "REL95_1_1_5",
+      "sha256" : "ba1128a56d0f61d5cde2e662501f4c19e5e0136f6b172de9d486437b5002264b",
+      "strip_prefix" : "ossc-db-pg_hint_plan-cdb7a47",
+      "commit" : "cdb7a47f14cffe0a8f3119d3341526cec2d808b8",
+      "short_commit" : "cdb7a47"
+    },
+    "1.1.5-pg94" : {
+      "tag" : "REL94_1_1_5",
+      "sha256" : "27fd3f8b16f35b8c9fa568e9565aa0e1c4649956ec1d5c091769335522f4b772",
+      "strip_prefix" : "ossc-db-pg_hint_plan-67ee094",
+      "commit" : "67ee094fa281e52a0fbdb24e86224f09829e093a",
+      "short_commit" : "67ee094"
+    },
+    "1.1.5-pg93" : {
+      "tag" : "REL93_1_1_5",
+      "sha256" : "00d0b94d434988138e72c12697596f60d4e556dc273e00cbcf13d1bf86ba4792",
+      "strip_prefix" : "ossc-db-pg_hint_plan-cdd0824",
+      "commit" : "cdd0824078d233ac42dc62deba45d7e660f96a00",
+      "short_commit" : "cdd0824"
+    },
+    "1.1.4-pg95" : {
+      "tag" : "REL95_1_1_4",
+      "sha256" : "fb0fb8ef45a6fb0055dd3883643b8173c8ab9f82c3097ba2250740c297771f42",
+      "strip_prefix" : "ossc-db-pg_hint_plan-00256f9",
+      "commit" : "00256f95cd05d9fa6d1c62661929be47ba107ef0",
+      "short_commit" : "00256f9"
+    },
+    "1.1.4-pg94" : {
+      "tag" : "REL94_1_1_4",
+      "sha256" : "729db2e8745955531caa9fd0c2b49352982f6bec7e8a310302a64042f30a3e42",
+      "strip_prefix" : "ossc-db-pg_hint_plan-1407e83",
+      "commit" : "1407e83006c68de21748d64b0b55579a82a9679c",
+      "short_commit" : "1407e83"
+    },
+    "1.1.4-pg93" : {
+      "tag" : "REL93_1_1_4",
+      "sha256" : "a049f862b144e9a2d428f4e5428748877890f6d547a9813792a9451c18ce0bad",
+      "strip_prefix" : "ossc-db-pg_hint_plan-b772d64",
+      "commit" : "b772d642ed83819ade16aa065d688a0206992d2e",
+      "short_commit" : "b772d64"
+    },
+    "1.1.3-pg96" : {
+      "tag" : "REL96_1_1_3",
+      "sha256" : "e262bdee7303f81a43163f8316f2f04e8adcc97ac60d71e66160ea9421a7628e",
+      "strip_prefix" : "ossc-db-pg_hint_plan-46f2ada",
+      "commit" : "46f2adad0e3569aae1b009f1a399c12780108d1b",
+      "short_commit" : "46f2ada"
+    },
+    "1.1.3-pg95" : {
+      "tag" : "REL95_1_1_3",
+      "sha256" : "f7d842058a53eacf04238acc032facff22017da1fbcc5cde1e2e382022b4ac1a",
+      "strip_prefix" : "ossc-db-pg_hint_plan-8edf1db",
+      "commit" : "8edf1db866961ff432fe9b89ff708e38267b4505",
+      "short_commit" : "8edf1db"
+    },
+    "1.1.3-pg94" : {
+      "tag" : "REL94_1_1_3",
+      "sha256" : "dfbe2d74f0a703fd29ee5c064ba3990b43d1c226561018a5336ac812da4cc0fa",
+      "strip_prefix" : "ossc-db-pg_hint_plan-02823d0",
+      "commit" : "02823d0bb8b33211e102e02ab5203cd0a5cc651a",
+      "short_commit" : "02823d0"
+    },
+    "1.1.3-pg93" : {
+      "tag" : "REL93_1_1_3",
+      "sha256" : "103a731e126ad6fb989af7d33d5a5f7c5e90ebb88e8884c1b43b982c8d2cbd4e",
+      "strip_prefix" : "ossc-db-pg_hint_plan-1c4e675",
+      "commit" : "1c4e6750f7683e0286475f9f8d85a4df231a7c38",
+      "short_commit" : "1c4e675"
+    },
+    "1.1.3-pg92" : {
+      "tag" : "REL92_1_1_3",
+      "sha256" : "06b35c1ccded499d1c16e6d9d19c585814685b4a084fa2b838cd43c399cbf60a",
+      "strip_prefix" : "ossc-db-pg_hint_plan-8c71c47",
+      "commit" : "8c71c477d513060acec45f4de54da85d15e51644",
+      "short_commit" : "8c71c47"
+    },
+    "1.1.2-pg94" : {
+      "tag" : "REL94_1_1_2",
+      "sha256" : "21e79c938a1cc3135feda2a85f1693d6c85394839faf1e96c4f738eabfb242fb",
+      "strip_prefix" : "ossc-db-pg_hint_plan-09bf8f7",
+      "commit" : "09bf8f7b62fa4918de109988ed85139dcb9cfbf6",
+      "short_commit" : "09bf8f7"
+    },
+    "1.1.2-pg93" : {
+      "tag" : "REL93_1_1_2",
+      "sha256" : "778f7c7cbc7fdf0b9eb929f96c6ddd0fc0f44badbabae99830c6b2347fa86822",
+      "strip_prefix" : "ossc-db-pg_hint_plan-ab11909",
+      "commit" : "ab11909d11c42f386fda0661c223c26e7082ac1b",
+      "short_commit" : "ab11909"
+    },
+    "1.1.2-pg92" : {
+      "tag" : "REL92_1_1_2",
+      "sha256" : "86f9ca9ed55184f562338475ab2a43a7769000978d605da57694962d88972cdc",
+      "strip_prefix" : "ossc-db-pg_hint_plan-b52b491",
+      "commit" : "b52b4910ee07b7d27d64b1c256c75548192d83e7",
+      "short_commit" : "b52b491"
+    },
+    "1.1.1-pg93" : {
+      "tag" : "REL93_1_1_1",
+      "sha256" : "53ebaa8e9ec1d53e09c8daf02571a25b1f972c926f780bc5da7780c0dd449f79",
+      "strip_prefix" : "ossc-db-pg_hint_plan-2990c59",
+      "commit" : "2990c5918903889cf281b87cd4f874548c0120b7",
+      "short_commit" : "2990c59"
+    },
+    "1.1.1-pg92" : {
+      "tag" : "REL92_1_1_1",
+      "sha256" : "aa30fbb45bdf713807cd246241dd41de69165310d342f2b4f935cd448af070df",
+      "strip_prefix" : "ossc-db-pg_hint_plan-a284f79",
+      "commit" : "a284f79d3f9a0ea76c74d15e42f13704a7db089e",
+      "short_commit" : "a284f79"
+    },
+    "1.1.1-pg91" : {
+      "tag" : "REL91_1_1_1",
+      "sha256" : "dbf37d6ad3095b56bcd88850c01c5bab25488fd1ed9713baf838ec2688f08348",
+      "strip_prefix" : "ossc-db-pg_hint_plan-4600e5e",
+      "commit" : "4600e5e5a3ebe1cd6fc4385e6f003bfad87e3842",
+      "short_commit" : "4600e5e"
+    },
+    "1.0.2-pg91" : {
+      "tag" : "REL91_1_0_2",
+      "sha256" : "325369d2496ceb9ba123b20ff747dd90617b1cfcf63409396722eae83391404f",
+      "strip_prefix" : "ossc-db-pg_hint_plan-044f0b8",
+      "commit" : "044f0b8aec245000a291071aeb00962deb738096",
+      "short_commit" : "044f0b8"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.8.0-pg18" : {
+        "default_version" : "1.8.0",
+        "comment" : "optimizer hints for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.7.1-pg17" : {
+        "default_version" : "1.7.1",
+        "comment" : "optimizer hints for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.7.0-pg17" : {
+        "default_version" : "1.7.0",
+        "comment" : "optimizer hints for PostgreSQL",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.6.2-pg16" : {
+        "default_version" : "1.6.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.6.1-pg16" : {
+        "default_version" : "1.6.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.6.0-pg16" : {
+        "default_version" : "1.6.0",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.5.3-pg15" : {
+        "default_version" : "1.5.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.5.2-pg15" : {
+        "default_version" : "1.5.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.5.1-pg15" : {
+        "default_version" : "1.5.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.5.0-pg15" : {
+        "default_version" : "1.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.4.4-pg14" : {
+        "default_version" : "1.4.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.4.3-pg14" : {
+        "default_version" : "1.4.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.4.2-pg14" : {
+        "default_version" : "1.4.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.4.1-pg14" : {
+        "default_version" : "1.4.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.4.0-pg14" : {
+        "default_version" : "1.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.9-pg13" : {
+        "default_version" : "1.3.9",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.9-pg12" : {
+        "default_version" : "1.3.9",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.9-pg11" : {
+        "default_version" : "1.3.9",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.8-pg13" : {
+        "default_version" : "1.3.8",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.8-pg12" : {
+        "default_version" : "1.3.8",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.8-pg11" : {
+        "default_version" : "1.3.8",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.7-pg13" : {
+        "default_version" : "1.3.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.7-pg12" : {
+        "default_version" : "1.3.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.7-pg11" : {
+        "default_version" : "1.3.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.7-pg10" : {
+        "default_version" : "1.3.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.6-pg12" : {
+        "default_version" : "1.3.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.6-pg11" : {
+        "default_version" : "1.3.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.6-pg10" : {
+        "default_version" : "1.3.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.5-pg12" : {
+        "default_version" : "1.3.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.5-pg11" : {
+        "default_version" : "1.3.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.5-pg10" : {
+        "default_version" : "1.3.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.4-pg11" : {
+        "default_version" : "1.3.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.3-pg11" : {
+        "default_version" : "1.3.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.3-pg10" : {
+        "default_version" : "1.3.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.2-pg11" : {
+        "default_version" : "1.3.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.2-pg10" : {
+        "default_version" : "1.3.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.11-pg13" : {
+        "default_version" : "1.3.11",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.10-pg13" : {
+        "default_version" : "1.3.10",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.10-pg12" : {
+        "default_version" : "1.3.10",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.1-pg10" : {
+        "default_version" : "1.3.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.3.0-pg10" : {
+        "default_version" : "1.3.0",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.7-pg96" : {
+        "default_version" : "1.2.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.6-pg96" : {
+        "default_version" : "1.2.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.5-pg96" : {
+        "default_version" : "1.2.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.4-pg96" : {
+        "default_version" : "1.2.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.3-pg96" : {
+        "default_version" : "1.2.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.2-pg96" : {
+        "default_version" : "1.2.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.1-pg96" : {
+        "default_version" : "1.2.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.2.0-pg96" : {
+        "default_version" : "1.2.0",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.9-pg95" : {
+        "default_version" : "1.1.9",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.9-pg94" : {
+        "default_version" : "1.1.9",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.8-pg95" : {
+        "default_version" : "1.1.8",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.8-pg94" : {
+        "default_version" : "1.1.8",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.7-pg95" : {
+        "default_version" : "1.1.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.7-pg94" : {
+        "default_version" : "1.1.7",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.6-pg95" : {
+        "default_version" : "1.1.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.6-pg94" : {
+        "default_version" : "1.1.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.6-pg93" : {
+        "default_version" : "1.1.6",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.5-pg95" : {
+        "default_version" : "1.1.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.5-pg94" : {
+        "default_version" : "1.1.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.5-pg93" : {
+        "default_version" : "1.1.5",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.4-pg95" : {
+        "default_version" : "1.1.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.4-pg94" : {
+        "default_version" : "1.1.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.4-pg93" : {
+        "default_version" : "1.1.4",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.3-pg96" : {
+        "default_version" : "1.1.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.3-pg95" : {
+        "default_version" : "1.1.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.3-pg94" : {
+        "default_version" : "1.1.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.3-pg93" : {
+        "default_version" : "1.1.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.3-pg92" : {
+        "default_version" : "1.1.3",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.2-pg94" : {
+        "default_version" : "1.1.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.2-pg93" : {
+        "default_version" : "1.1.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.2-pg92" : {
+        "default_version" : "1.1.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.1-pg93" : {
+        "default_version" : "1.1.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.1-pg92" : {
+        "default_version" : "1.1.1",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.1.1-pg91" : {
+        "default_version" : "1.0",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      },
+      "1.0.2-pg91" : {
+        "default_version" : "1.0.2",
+        "comment" : "",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "hint_plan"
+      }
+    },
+    "META.json" : {
+      "1.8.0-pg18" : {
+        "name" : "pg_hint_plan18",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 18.",
+        "version" : "1.8.0",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 18.0.0, < 19.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.8.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.7.1-pg17" : {
+        "name" : "pg_hint_plan17",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 17.",
+        "version" : "1.7.1",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 17.0.0, < 18.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.7.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.7.0-pg17" : {
+        "name" : "pg_hint_plan17",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 17.",
+        "version" : "1.7.0",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 17.0.0, < 18.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.7.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.6.2-pg16" : {
+        "name" : "pg_hint_plan16",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 16.",
+        "version" : "1.6.2",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 16.0.0, < 17.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.2"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.6.1-pg16" : {
+        "name" : "pg_hint_plan16",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 16.",
+        "version" : "1.6.1",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 16.0.0, < 17.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.6.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.5.3-pg15" : {
+        "name" : "pg_hint_plan15",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 15.",
+        "version" : "1.5.3",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 15.0.0, < 16.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.5.3"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.5.2-pg15" : {
+        "name" : "pg_hint_plan15",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 15.",
+        "version" : "1.5.2",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 15.0.0, < 16.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.5.2"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.4.4-pg14" : {
+        "name" : "pg_hint_plan14",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 14.",
+        "version" : "1.4.4",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 14.0.0, < 15.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.4"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.4.3-pg14" : {
+        "name" : "pg_hint_plan14",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 14.",
+        "version" : "1.4.3",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 14.0.0, < 15.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.4.3"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.3.11-pg13" : {
+        "name" : "pg_hint_plan13",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 13.",
+        "version" : "1.3.11",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 13.0.0, < 14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.11"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.3.10-pg13" : {
+        "name" : "pg_hint_plan13",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 13.",
+        "version" : "1.3.10",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 13.0.0, < 14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.10"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      },
+      "1.3.10-pg12" : {
+        "name" : "pg_hint_plan12",
+        "abstract" : "Query hints in SQL comments",
+        "description" : "This library adds support for query hints in SQL comments in PostgreSQL 12.",
+        "version" : "1.3.10",
+        "maintainer" : [ "Michael Paquier <michael@paquier.xyz>" ],
+        "license" : "bsd",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : ">= 12.0.0, < 13.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_hint_plan" : {
+            "abstract" : "Query hints in SQL comments",
+            "file" : "pg_hint_plan--1.3.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.10"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/ossc-db/pg_hint_plan/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/ossc-db/pg_hint_plan.git",
+            "web" : "https://github.com/ossc-db/pg_hint_plan/",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "sql", "plan", "performance", "hint" ]
+      }
+    }
+  },
+  "version" : 1
+}

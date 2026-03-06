@@ -1,0 +1,253 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pllua/pllua/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.0.12" : {
+      "tag" : "REL_2_0_12",
+      "sha256" : "1455139ed0818ac1aa04fc14ffdda187d626cf42a4641112fca1b9706446c389",
+      "strip_prefix" : "pllua-pllua-92fe71f",
+      "commit" : "92fe71f07a1ce82e0b75d61167f22b502e758cce",
+      "short_commit" : "92fe71f"
+    },
+    "2.0.11" : {
+      "tag" : "REL_2_0_11",
+      "sha256" : "f9f91a7e73cb3cee315cf6e1e1f3d99d6f88053fad5559985ef449f12e9c806d",
+      "strip_prefix" : "pllua-pllua-cd7dda5",
+      "commit" : "cd7dda517f8778dfcf58b2918fec6443b21b0dc0",
+      "short_commit" : "cd7dda5"
+    },
+    "2.0.10" : {
+      "tag" : "REL_2_0_10",
+      "sha256" : "174ba67584b2c1a52bf9361845a875d931011abb49405ea25b4d640d5d6d9f36",
+      "strip_prefix" : "pllua-pllua-2322423",
+      "commit" : "2322423338a384ebdf115033431c6e8813c24ce0",
+      "short_commit" : "2322423"
+    },
+    "2.0.9" : {
+      "tag" : "REL_2_0_9",
+      "sha256" : "355fb604f29af3e46d0a9a39341dad64770cb891c1bd138676252ff209d09fce",
+      "strip_prefix" : "pllua-pllua-abfbf30",
+      "commit" : "abfbf30aae21c1312ca1249a8a39e6c311ce1a4f",
+      "short_commit" : "abfbf30"
+    },
+    "2.0.8" : {
+      "tag" : "REL_2_0_8",
+      "sha256" : "8573136b67e97acc44aeecc60b2e14a704c89e50b5887dd89d5dbe7b1fa00fcd",
+      "strip_prefix" : "pllua-pllua-a19940c",
+      "commit" : "a19940c23350478ad0f967e0465d648d6cf31a8f",
+      "short_commit" : "a19940c"
+    },
+    "2.0.7" : {
+      "tag" : "REL_2_0_7",
+      "sha256" : "2d0d68cf3904b498c9bebf0fd1fdfc16671d1f3375d52d9bc01b81d301f7e0a5",
+      "strip_prefix" : "pllua-pllua-c2cd902",
+      "commit" : "c2cd9028d32bc44f57e944db9ef50b6cbe23bdde",
+      "short_commit" : "c2cd902"
+    },
+    "2.0.6" : {
+      "tag" : "REL_2_0_6",
+      "sha256" : "11aeb7469e1a47c75d1169db8bee4f6882842b2266a1aa60e9070c42202bcac0",
+      "strip_prefix" : "pllua-pllua-88f8b34",
+      "commit" : "88f8b348a7eeb253970ddef1691f9e0ae88bb04e",
+      "short_commit" : "88f8b34"
+    },
+    "2.0.5" : {
+      "tag" : "REL_2_0_5",
+      "sha256" : "44b718718e7d740524f113ab706dd3026c03ae38d69d4cf3dc8846560b532511",
+      "strip_prefix" : "pllua-pllua-69596c3",
+      "commit" : "69596c3d8e7bda67d34a3900fae6d0eabdefb422",
+      "short_commit" : "69596c3"
+    },
+    "2.0.4" : {
+      "tag" : "REL_2_0_4",
+      "sha256" : "d1aa790436a5e9d5e778c84ca80777f70dae433d175432298fe7a3787cab2ae8",
+      "strip_prefix" : "pllua-pllua-62e66bf",
+      "commit" : "62e66bf8d174c257021bb95718ebae792f8a535a",
+      "short_commit" : "62e66bf"
+    },
+    "2.0.3" : {
+      "tag" : "REL_2_0_3",
+      "sha256" : "74b3b535542ad43b1af1f636970e0a2d173eaaf1f347901d8c704bc44752bbd6",
+      "strip_prefix" : "pllua-pllua-16cb6dc",
+      "commit" : "16cb6dcf73695e3907817f0a09e81c8760770691",
+      "short_commit" : "16cb6dc"
+    },
+    "2.0.2" : {
+      "tag" : "REL_2_0_2",
+      "sha256" : "c876ac6d3c47964185da4dbc8c20a59c7b5217f9bbf3db85f144e8df663664ab",
+      "strip_prefix" : "pllua-pllua-41d1445",
+      "commit" : "41d1445b4870d24a7c5176947d64921e7788f502",
+      "short_commit" : "41d1445"
+    },
+    "2.0.1" : {
+      "tag" : "REL_2_0_1",
+      "sha256" : "8dcad77037cc35b5e278b3ff0576aa63c0a9a09e76d6191f7926648b07497113",
+      "strip_prefix" : "pllua-pllua-14e4d3d",
+      "commit" : "14e4d3d62c27d465b44e1a7b6d7c813644ae91dc",
+      "short_commit" : "14e4d3d"
+    },
+    "2.0.0" : {
+      "tag" : "REL_2_0",
+      "sha256" : "bdf74f31c472d6e0ccd6f497046f69c18ad7c9d0afa058a8525103190c0f313b",
+      "strip_prefix" : "pllua-pllua-f3e32b6",
+      "commit" : "f3e32b64687ecd2a754e4b8b961399bb9e0ae85f",
+      "short_commit" : "f3e32b6"
+    },
+    "0.9.0" : {
+      "tag" : "REL_0_9",
+      "sha256" : "ddb2d6272fb3637bb61290a1622406b454748c48124dd54f788663c351d8ed48",
+      "strip_prefix" : "pllua-pllua-6051cd8",
+      "commit" : "6051cd8bb9f6126d052acb29aa391cc17e4018cf",
+      "short_commit" : "6051cd8"
+    },
+    "0.2.0" : {
+      "tag" : "REL_0_2",
+      "sha256" : "7f1df8a5da17cf8c141ec3d4b9f18cf43b5519b9adc3179970c77a35de635f27",
+      "strip_prefix" : "pllua-pllua-9492d53",
+      "commit" : "9492d53f85be37471d6083a4a238a5008f45f841",
+      "short_commit" : "9492d53"
+    },
+    "0.1.0" : {
+      "tag" : "REL_0_1",
+      "sha256" : "257d756b76ac0ba17d0b2d970b23b6e16437d64d884542db7248f2b5d8d6e27f",
+      "strip_prefix" : "pllua-pllua-af6a948",
+      "commit" : "af6a9482cd7e7169c23b68460315195c2864246f",
+      "short_commit" : "af6a948"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.0.9" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.8" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.7" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.6" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.5" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.4" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.3" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.2" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.12" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.11" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.10" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.1" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "0.9.0" : {
+        "default_version" : "1.0",
+        "comment" : "Lua as a procedural language",
+        "module_pathname" : "$libdir/pllua",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    }
+  },
+  "version" : 1
+}

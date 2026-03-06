@@ -1,0 +1,416 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/HexaCluster/pg_dbms_errlog/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.2.0" : {
+      "tag" : "v2.2",
+      "sha256" : "92b36877257afcfd45c246381befdf9ccbebad75b747fdee0cc480515748a007",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-3ca137e",
+      "commit" : "3ca137ecf65c5eb678e5886f89c8c1aa4bf5684e",
+      "short_commit" : "3ca137e"
+    },
+    "2.1.0" : {
+      "tag" : "v2.1",
+      "sha256" : "efeda2ae1abf1189fd96b56384bcac64c4a0c11fd8e50547886c6ab338375b94",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-254fd11",
+      "commit" : "254fd114001ca4026ab645e9222d377dc15a8b88",
+      "short_commit" : "254fd11"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "c07b44db9d2719a5644e379e7fd9f6ee8fd2307e2c44cf37d7d8bd12ac9a77cf",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-bd21cb0",
+      "commit" : "bd21cb0b7b547fbf980505d123dd63efd989d3d3",
+      "short_commit" : "bd21cb0"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3",
+      "sha256" : "07eaa60cd8773226576259cc97f84c224adf41900f76533a48781aa4af1976f2",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-d22327f",
+      "commit" : "d22327f319046afae7ae7bcdf580c4a8141bd7d4",
+      "short_commit" : "d22327f"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2",
+      "sha256" : "f9169275be3feb7414314aacaa4eae39f4d37f9991d44ae89d4dda733dcfe984",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-131eeaf",
+      "commit" : "131eeaff975c2d4f500ecad1bb24e9f5375a598e",
+      "short_commit" : "131eeaf"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1",
+      "sha256" : "50d5799df44a7cb1b2c8069bca3a03d471b2b624a5bfd5f094318432f14357bb",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-82c0376",
+      "commit" : "82c0376f410d3a5afd4a53ccf7657df20635b786",
+      "short_commit" : "82c0376"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "28a8c2b85bb8b9aa2a9ff9d3a0826bfa4fdaa7f596145d896b7b54b004de2434",
+      "strip_prefix" : "HexaCluster-pg_dbms_errlog-2ba3c2a",
+      "commit" : "2ba3c2a46b843bcbf5e7d47327d3844dd4680885",
+      "short_commit" : "2ba3c2a"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.2.0" : {
+        "default_version" : "2.2",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "2.1.0" : {
+        "default_version" : "2.1",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "2.0.0" : {
+        "default_version" : "2.0",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "1.2.0" : {
+        "default_version" : "1.1",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module to log DML errors in a dedicated table.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Emulate DBMS_ERRLOG Oracle module but in a simplistic way.",
+        "module_pathname" : "$libdir/pg_dbms_errlog",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "dbms_errlog"
+      }
+    },
+    "META.json" : {
+      "2.2.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--2.2.sql",
+            "docfile" : "README.md",
+            "version" : "2.2",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/HexaCluster/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/HexaCluster/pg_dbms_errlog",
+            "web" : "https://github.com/HexaCluster/pg_dbms_errlog"
+          }
+        }
+      },
+      "2.1.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--2.1.sql",
+            "docfile" : "README.md",
+            "version" : "2.1",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      },
+      "2.0.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--2.0.sql",
+            "docfile" : "README.md",
+            "version" : "2.0",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "2.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      },
+      "1.3.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      },
+      "1.2.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      },
+      "1.1.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      },
+      "1.0.0" : {
+        "name" : "pg_dbms_errlog",
+        "abstract" : "Extension to log DML errors to dedicated tables",
+        "description" : "pg_dbms_errlog is a PostgreSQL extension to add Oracle like DBMS_ERRLOG feature.",
+        "version" : "1.0",
+        "maintainer" : "Gilles Darold <gilles@darold.net>",
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "10.0"
+            }
+          }
+        },
+        "provides" : {
+          "pg_dbms_errlog" : {
+            "file" : "sql/pg_dbms_errlog--1.0.sql",
+            "docfile" : "README.md",
+            "version" : "1.0",
+            "abstract" : "Extension to log DML errors to dedicated tables"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "error", "dml", "log" ],
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog/issues"
+          },
+          "repository" : {
+            "type" : "git",
+            "url" : "git://github.com/MigOpsRepos/pg_dbms_errlog",
+            "web" : "https://github.com/MigOpsRepos/pg_dbms_errlog"
+          }
+        }
+      }
+    }
+  },
+  "version" : 1
+}

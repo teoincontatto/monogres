@@ -1,0 +1,1366 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/theory/pgtap/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.4" : {
+      "tag" : "v1.3.4",
+      "sha256" : "3250bb92ed55036a0291160f4f44e350ffffb809b03d9bd24c24641d07d6e40b",
+      "strip_prefix" : "theory-pgtap-968eb53",
+      "commit" : "968eb53a33114e83042b3bdb0c664b5b80cf8bdf",
+      "short_commit" : "968eb53"
+    },
+    "1.3.3" : {
+      "tag" : "v1.3.3",
+      "sha256" : "882a45143ff23d6ab2962bdd945bf0b5a1c13c0ba3cfd30d0cc8d6287dd61a31",
+      "strip_prefix" : "theory-pgtap-b941782",
+      "commit" : "b941782fada240afdb7057065eb3261a21e8512c",
+      "short_commit" : "b941782"
+    },
+    "1.3.2" : {
+      "tag" : "v1.3.2",
+      "sha256" : "276fdae7602db364ae1dd65edcc54dd8599b9f162d53f4dfdb7a8bd48e872570",
+      "strip_prefix" : "theory-pgtap-0f62166",
+      "commit" : "0f62166098716e2de25b532018d50b364ff90cba",
+      "short_commit" : "0f62166"
+    },
+    "1.3.1" : {
+      "tag" : "v1.3.1",
+      "sha256" : "dfe3f3a4dae547b0c98edbb65eacb225cf38eb357c6e5dd85b73ca66755dbabf",
+      "strip_prefix" : "theory-pgtap-bcecdab",
+      "commit" : "bcecdab224162c6c6cbf9b6ce1953b8ec52db994",
+      "short_commit" : "bcecdab"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "bbf2c74e7123ab8401fa09f6de4c3ae92fe443cc3af89fff6008633d3fcfbe85",
+      "strip_prefix" : "theory-pgtap-acdd768",
+      "commit" : "acdd76876b19559538797a1f1dcf96e2e4200158",
+      "short_commit" : "acdd768"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "2454827c2d482f42b04697c682837ffc340f10d09af9bd754eb66ba2122a357d",
+      "strip_prefix" : "theory-pgtap-6ca7aec",
+      "commit" : "6ca7aec6d7e9ddca05fcecba3ac9132a446e2511",
+      "short_commit" : "6ca7aec"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "7f40d8fed4fedf1e10d715f77c6583a6e336608d83c25be0ff6ada4bf2811d99",
+      "strip_prefix" : "theory-pgtap-a83e2cc",
+      "commit" : "a83e2cc21035abca37103adc7e48b651393752e8",
+      "short_commit" : "a83e2cc"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "e73641715a3d8bab981fd9bad9849f65d2c566438a7ac68e4e312b7893b1d4e3",
+      "strip_prefix" : "theory-pgtap-24e2847",
+      "commit" : "24e2847a4eb9b73089d16b6f6fe75b0b57e72c26",
+      "short_commit" : "24e2847"
+    },
+    "0.99.0" : {
+      "tag" : "v0.99.0",
+      "sha256" : "6123157afbe74b5eb7beb7f9dce9c8ee6780d62a0734722978ae8597343441da",
+      "strip_prefix" : "theory-pgtap-d2f3476",
+      "commit" : "d2f34763409cb42a0893128510c63ce78019f34d",
+      "short_commit" : "d2f3476"
+    },
+    "0.98.0" : {
+      "tag" : "v0.98.0",
+      "sha256" : "727fadb1154c08f98380ccadd7338444a3c5a6390b673cafa41edbaa57288b1b",
+      "strip_prefix" : "theory-pgtap-3e7b57a",
+      "commit" : "3e7b57ae12316b211757e7b77e82dfd059e48cb6",
+      "short_commit" : "3e7b57a"
+    },
+    "0.97.0" : {
+      "tag" : "v0.97.0",
+      "sha256" : "d7e35d1be26984996e0e92b5d397335e84433fa4b2594ee28708a7b9f9d4fae9",
+      "strip_prefix" : "theory-pgtap-7efc3bf",
+      "commit" : "7efc3bffa7e4c7238ccb361d7169950e17889d99",
+      "short_commit" : "7efc3bf"
+    },
+    "0.96.0" : {
+      "tag" : "v0.96.0",
+      "sha256" : "1f7fedb9a609894e21f237902c132b0ca6e84074acab35cb32118863739747b1",
+      "strip_prefix" : "theory-pgtap-fe52f3a",
+      "commit" : "fe52f3a8abff1ad681879eae0a090cca3ad0dd96",
+      "short_commit" : "fe52f3a"
+    },
+    "0.95.0" : {
+      "tag" : "v0.95.0",
+      "sha256" : "dbf7400d4c9f8dbe5a52d892a4e30c0f8c9ad82cdaf88d8cc27dc8596659761b",
+      "strip_prefix" : "theory-pgtap-8c2d7a7",
+      "commit" : "8c2d7a789d51c502ddf1528e9229bf2a56183908",
+      "short_commit" : "8c2d7a7"
+    },
+    "0.94.0" : {
+      "tag" : "v0.94.0",
+      "sha256" : "e8ce03db8e0c3cd037b2653a925bd28fd716c664a21b5adfe59ea4c31e17ecc8",
+      "strip_prefix" : "theory-pgtap-7ab7852",
+      "commit" : "7ab7852d55aaf489e524ae028ee52140535fa0b4",
+      "short_commit" : "7ab7852"
+    },
+    "0.93.0" : {
+      "tag" : "v0.93.0",
+      "sha256" : "33baebe81be8361f438ee90ab9c02ce35d4032b0238fe7028c0d921225abfb43",
+      "strip_prefix" : "theory-pgtap-31f740c",
+      "commit" : "31f740cbe5d33c37e82c371063529992b5bd7776",
+      "short_commit" : "31f740c"
+    },
+    "0.92.0" : {
+      "tag" : "v0.92.0",
+      "sha256" : "f4e51b455ad5a62a0eec554ba5e5b05ea3beae2958620887d91c686876d3a388",
+      "strip_prefix" : "theory-pgtap-c6ccdbc",
+      "commit" : "c6ccdbcb73be62b170cd4b18d729027a9bc3b4ab",
+      "short_commit" : "c6ccdbc"
+    },
+    "0.91.0" : {
+      "tag" : "v0.91.0",
+      "sha256" : "6fe65e12e31eda8b30167a514e50a0f81c805b206e338476e13ddf30cfcc5d64",
+      "strip_prefix" : "theory-pgtap-da6eaab",
+      "commit" : "da6eaab658f5cc23ae4687849bd3c27323c95ec8",
+      "short_commit" : "da6eaab"
+    },
+    "0.90.0" : {
+      "tag" : "v0.90.0",
+      "sha256" : "8a67875405eafbb919dfe4f869d2d18169a2fbd748b0a08060b88c2ed30481ce",
+      "strip_prefix" : "theory-pgtap-f75d75a",
+      "commit" : "f75d75ac1c233c21414362468296aca446288f0a",
+      "short_commit" : "f75d75a"
+    },
+    "0.25.0" : {
+      "tag" : "v0.25.0",
+      "sha256" : "cd5b8e19ac6ca0f1e3358c7e2f0072acbb15d15cd41e9a989e9f8a2c986ee60f",
+      "strip_prefix" : "theory-pgtap-0d04cec",
+      "commit" : "0d04cec8a601eb5ec48c1a504809c3c5feeb64c0",
+      "short_commit" : "0d04cec"
+    },
+    "0.24.0" : {
+      "tag" : "v0.24",
+      "sha256" : "71ef241b0340f43e8ed9dd7d26c4364c118d26e685d7c7e99f7808e7626cda43",
+      "strip_prefix" : "theory-pgtap-5ed0175",
+      "commit" : "5ed017540fdb9e1b859f9d808e3026f1996633b7",
+      "short_commit" : "5ed0175"
+    },
+    "0.23.0" : {
+      "tag" : "v0.23",
+      "sha256" : "1b31b78f6165c1300c3251b8edc7fdabadfe7a458fcb6b54ff3cb53ae72d4cff",
+      "strip_prefix" : "theory-pgtap-a790afb",
+      "commit" : "a790afb3033b3c99d8dd085d34eff97613506b84",
+      "short_commit" : "a790afb"
+    },
+    "0.21.0" : {
+      "tag" : "v0.21",
+      "sha256" : "3678fc9426d14437248d1fce4470272025cd989dc70c6505768bb0da4e7b953c",
+      "strip_prefix" : "theory-pgtap-2e4227c",
+      "commit" : "2e4227c6837144a0e4ab883ce7a16f63e7cd641a",
+      "short_commit" : "2e4227c"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.3.4" : {
+        "default_version" : "1.3.4",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.3" : {
+        "default_version" : "1.3.3",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.2" : {
+        "default_version" : "1.3.2",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.3.1",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.99.0" : {
+        "default_version" : "0.99.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.98.0" : {
+        "default_version" : "0.98.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.97.0" : {
+        "default_version" : "0.97.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.96.0" : {
+        "default_version" : "0.95.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.95.0" : {
+        "default_version" : "0.95.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.94.0" : {
+        "default_version" : "0.94.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.93.0" : {
+        "default_version" : "0.93.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.92.0" : {
+        "default_version" : "0.92.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.91.0" : {
+        "default_version" : "0.91.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "requires" : [ "plpgsql" ],
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.90.0" : {
+        "default_version" : "0.90.0",
+        "comment" : "Unit testing for PostgreSQL",
+        "module_pathname" : "$libdir/pgtap",
+        "superuser" : false,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.3.4" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.3.4",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.3.4"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.3.4"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.3.4"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.3.3" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.3.3",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.3.3"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.3.3"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.3.3"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.3.2" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.3.2",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.3.2"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.3.2"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.3.2"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.3.1" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.3.1",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.3.1"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.3.1"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.3.1"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.3.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.3.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.3.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.3.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.3.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.2.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.2.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "https://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.2.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.2.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.2.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "https://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "https://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.1.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.1.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "9.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "9.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.1.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.1.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.1.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "1.0.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "1.0.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.3.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "1.0.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "1.0.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "1.0.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.99.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.99.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.99.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.99.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.99.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.98.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.98.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.98.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.98.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.98.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.97.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.97.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.97.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.97.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.97.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.96.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.96.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.96.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.96.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.96.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.95.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.95.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.95.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.95.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.95.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.94.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.94.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.94.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.94.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.94.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.93.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.93.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.93.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.93.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.93.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.92.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.92.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.92.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.92.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.92.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.91.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.91.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.91.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.91.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.91.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.90.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.90.0",
+        "maintainer" : [ "David E. Wheeler <david@justatheory.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.1.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap.sql",
+            "version" : "0.90.0"
+          },
+          "pgtap-core" : {
+            "abstract" : "Unit testing for PostgreSQL",
+            "file" : "sql/pgtap-core.sql",
+            "version" : "0.90.0"
+          },
+          "pgtap-schema" : {
+            "abstract" : "Schema unit testing for PostgreSQL",
+            "file" : "sql/pgtap-schema.sql",
+            "version" : "0.90.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      },
+      "0.25.0" : {
+        "name" : "pgTAP",
+        "abstract" : "Unit testing for PostgreSQL",
+        "description" : "pgTAP is a suite of database functions that make it easy to write TAP-emitting unit tests in psql scripts or xUnit-style test functions.",
+        "version" : "0.25.0",
+        "maintainer" : [ "David E. Wheeler <david@kineticode.com>", "pgTAP List <pgtap-users@pgfoundry.org>" ],
+        "license" : {
+          "PostgreSQL" : "http://www.postgresql.org/about/licence"
+        },
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "plpgsql" : 0,
+              "PostgreSQL" : "8.0.0"
+            },
+            "recommends" : {
+              "PostgreSQL" : "8.4.0"
+            }
+          }
+        },
+        "provides" : {
+          "pgtap" : {
+            "file" : "pgtap.sql",
+            "version" : "0.25.0"
+          }
+        },
+        "resources" : {
+          "homepage" : "http://pgtap.org/",
+          "bugtracker" : {
+            "web" : "https://github.com/theory/pgtap/issues"
+          },
+          "repository" : {
+            "url" : "https://github.com/theory/pgtap.git",
+            "web" : "https://github.com/theory/pgtap",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "David E. Wheeler",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "testing", "unit testing", "tap", "tddd", "test driven database development" ]
+      }
+    }
+  },
+  "version" : 1
+}

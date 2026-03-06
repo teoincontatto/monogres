@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/aws/postgresql-logfdw/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.0" : {
+      "tag" : "v1.4",
+      "sha256" : "2d7302e6b179cd19791a329e60a1b4ea54d22beb7a793f37c2d4653e5aff6e64",
+      "strip_prefix" : "aws-postgresql-logfdw-d2a8ec5",
+      "commit" : "d2a8ec5b852fa253c4b4f6b5f8e40dcbc39f8298",
+      "short_commit" : "d2a8ec5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "foreign-data wrapper for Postgres log file access",
+        "module_pathname" : "$libdir/log_fdw",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

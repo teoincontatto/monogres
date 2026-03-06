@@ -1,0 +1,675 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgaudit/pgaudit/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "18.0.0" : {
+      "tag" : "18.0",
+      "sha256" : "16735d9ab1c4c153d4c9c6fd24308df682d909a96774304e061ecc40955dc5e6",
+      "strip_prefix" : "pgaudit-pgaudit-f39f8db",
+      "commit" : "f39f8dbb15dc5bd4cbe5f1e5abe0d930ed7593a8",
+      "short_commit" : "f39f8db"
+    },
+    "17.1.0" : {
+      "tag" : "17.1",
+      "sha256" : "20e980bd0c22b4ae33305ec2b774bd846bf343642adad108b6c28b422a648312",
+      "strip_prefix" : "pgaudit-pgaudit-538f89a",
+      "commit" : "538f89a93d8fd0d8913f3d740cacaea7b7eb66d9",
+      "short_commit" : "538f89a"
+    },
+    "17.0.0" : {
+      "tag" : "17.0",
+      "sha256" : "1dd3ebbbd4ae6c33bdb262904140f5bde5344512d44b7b5fb5ca0309b33f03f4",
+      "strip_prefix" : "pgaudit-pgaudit-72dda46",
+      "commit" : "72dda46d61ba90e2f4bf5be495157b0ed73b56e9",
+      "short_commit" : "72dda46"
+    },
+    "16.1.0" : {
+      "tag" : "16.1",
+      "sha256" : "b0648fcebe5a67340c406126e6dddc703fd03821a9ace80390e128a0d1c91c73",
+      "strip_prefix" : "pgaudit-pgaudit-a81792e",
+      "commit" : "a81792e8a4ea8f7aaf75bd610fcc4c2f96650bdc",
+      "short_commit" : "a81792e"
+    },
+    "16.0.0" : {
+      "tag" : "16.0",
+      "sha256" : "d9b20b947d4a3a1bd5c1a10b87a522c09dfe549dcdb4de82d7cbbb7cb23bea12",
+      "strip_prefix" : "pgaudit-pgaudit-8b7bf85",
+      "commit" : "8b7bf8588d30c1a298638a6a57898ef90c9a63eb",
+      "short_commit" : "8b7bf85"
+    },
+    "1.7.1" : {
+      "tag" : "1.7.1",
+      "sha256" : "1e52448238908a09e0e78b3375dcefbfca51509fdbb3a4d92eb710e380ed3567",
+      "strip_prefix" : "pgaudit-pgaudit-72da89c",
+      "commit" : "72da89c3fa02f3f2b9f3933214d91ad9c3428467",
+      "short_commit" : "72da89c"
+    },
+    "1.7.0" : {
+      "tag" : "1.7.0",
+      "sha256" : "566acea765a7ab9ae48e4fe551a96520535d461348e21d1e8269aafa13d0da5c",
+      "strip_prefix" : "pgaudit-pgaudit-8349710",
+      "commit" : "8349710fbbe38ca9518ebe753a528b94f5ab2c19",
+      "short_commit" : "8349710"
+    },
+    "1.6.3" : {
+      "tag" : "1.6.3",
+      "sha256" : "3285b1c43ddd690ca26afa799064a9640152916ab498189d58ff5e977c7d70cd",
+      "strip_prefix" : "pgaudit-pgaudit-abdb653",
+      "commit" : "abdb653a57228c28c52600aefa4852616eb6b0af",
+      "short_commit" : "abdb653"
+    },
+    "1.6.2" : {
+      "tag" : "1.6.2",
+      "sha256" : "b1928dac544e2a408e9d48739acfaf432064f1a66583879eec9d26b3e7047cd0",
+      "strip_prefix" : "pgaudit-pgaudit-267eb83",
+      "commit" : "267eb83a14ca29f37821f297974991206aa91dee",
+      "short_commit" : "267eb83"
+    },
+    "1.6.1" : {
+      "tag" : "1.6.1",
+      "sha256" : "4af32b050a0ebc1655bc4760880760a9163aafcb505fc37373e41786785c3bb2",
+      "strip_prefix" : "pgaudit-pgaudit-881c617",
+      "commit" : "881c617084cac4985b9471426510af05c2a49dd7",
+      "short_commit" : "881c617"
+    },
+    "1.6.0" : {
+      "tag" : "1.6.0",
+      "sha256" : "a27bf3ec5358158e63e47d1b086680fd8faa77f77350ab875bcc856904cd8058",
+      "strip_prefix" : "pgaudit-pgaudit-6afeae5",
+      "commit" : "6afeae52d8e4569235bf6088e983d95ec26f13b7",
+      "short_commit" : "6afeae5"
+    },
+    "1.5.3" : {
+      "tag" : "1.5.3",
+      "sha256" : "f2059e932e0c5d7c3e2e82790b6e55dca36f4bd53a53a499db174c11b7a35439",
+      "strip_prefix" : "pgaudit-pgaudit-b5e3d92",
+      "commit" : "b5e3d92c56e2cbfa95329e35ebd43da8f1ff667e",
+      "short_commit" : "b5e3d92"
+    },
+    "1.5.2" : {
+      "tag" : "1.5.2",
+      "sha256" : "96c6b3c7a6807337790c57e85c961fcd0714f8111838f4d652bc8717a6061fa9",
+      "strip_prefix" : "pgaudit-pgaudit-59d9574",
+      "commit" : "59d9574ab966f69a549e3f8f60c1829ee5b78b3b",
+      "short_commit" : "59d9574"
+    },
+    "1.5.1" : {
+      "tag" : "1.5.1",
+      "sha256" : "d5782df753d882f93cacba1007acc43777d818d42127622c98c5d8b27998d2ae",
+      "strip_prefix" : "pgaudit-pgaudit-438fc93",
+      "commit" : "438fc93907bbd1c7c96d5acdd8a5a6307266cdfc",
+      "short_commit" : "438fc93"
+    },
+    "1.5.0" : {
+      "tag" : "1.5.0",
+      "sha256" : "c588e5c39c47656ea746286cec869ec84944947e4620b16497ea08e62281824e",
+      "strip_prefix" : "pgaudit-pgaudit-5096e75",
+      "commit" : "5096e75f1aa6635c3d0e203254c4ef7eae9d3087",
+      "short_commit" : "5096e75"
+    },
+    "1.4.3" : {
+      "tag" : "1.4.3",
+      "sha256" : "1f156ce1aa534a2999c3b4b32b36e56d47af153ff024f0d5aaaeca0851e308e8",
+      "strip_prefix" : "pgaudit-pgaudit-21fea07",
+      "commit" : "21fea0792139529302e02af145c90f7ec5cff2eb",
+      "short_commit" : "21fea07"
+    },
+    "1.4.2" : {
+      "tag" : "1.4.2",
+      "sha256" : "03ce3bfb557e422f164c45ac8d89cb8740325baa1847261071631ea1be9ffb08",
+      "strip_prefix" : "pgaudit-pgaudit-a85f82c",
+      "commit" : "a85f82cb902942a68528b02da0946c8642536806",
+      "short_commit" : "a85f82c"
+    },
+    "1.4.1" : {
+      "tag" : "1.4.1",
+      "sha256" : "1153a7ad33d09df6757dd15f7f30ea0ef73870d1869168dcbda53d5dd24cc58e",
+      "strip_prefix" : "pgaudit-pgaudit-a64bf29",
+      "commit" : "a64bf29700e5bef6644720c08ec52fc287a99c5b",
+      "short_commit" : "a64bf29"
+    },
+    "1.4.0" : {
+      "tag" : "1.4.0",
+      "sha256" : "14c23da204c04b06784c6e138a706ce6ed93b9b05b1cc86e93f517c6c5594ae1",
+      "strip_prefix" : "pgaudit-pgaudit-e1b2d89",
+      "commit" : "e1b2d890a393b8d70a10e4fb153cdba5a8fdb8b8",
+      "short_commit" : "e1b2d89"
+    },
+    "1.3.4" : {
+      "tag" : "1.3.4",
+      "sha256" : "b833ec434b6c9791b23ed4bfa10b743ff4b2d6e1c2bb08993245ae98f01bb62a",
+      "strip_prefix" : "pgaudit-pgaudit-6f77998",
+      "commit" : "6f7799839465a39dc1887e4ad10ef2f67519cd1e",
+      "short_commit" : "6f77998"
+    },
+    "1.3.3" : {
+      "tag" : "1.3.3",
+      "sha256" : "46747a9f918531f312518842a5fb9764c0d06853d7289e2b8216c7bfc7dca561",
+      "strip_prefix" : "pgaudit-pgaudit-6eb8b14",
+      "commit" : "6eb8b141711c04185abcd8d7d148effd3fb083e7",
+      "short_commit" : "6eb8b14"
+    },
+    "1.3.2" : {
+      "tag" : "1.3.2",
+      "sha256" : "d169ee404c490088f8eb5124110fe7d7be6d8d9eea5274437df1eff5df174b45",
+      "strip_prefix" : "pgaudit-pgaudit-08e259a",
+      "commit" : "08e259ae81e337d3b2bd2ef837d216b05b3348b7",
+      "short_commit" : "08e259a"
+    },
+    "1.3.1" : {
+      "tag" : "1.3.1",
+      "sha256" : "840a4c4e2a704ada8e21042fa225ed240ca4e957f679de50bdeb626096053806",
+      "strip_prefix" : "pgaudit-pgaudit-4e2e968",
+      "commit" : "4e2e968b364ebb6bb244784c5be39b0abd0bed7a",
+      "short_commit" : "4e2e968"
+    },
+    "1.3.0" : {
+      "tag" : "1.3.0",
+      "sha256" : "7ced8ced768c60c73267485259f0dd60112ef6294660db6400b5b18d3e091bb6",
+      "strip_prefix" : "pgaudit-pgaudit-1cd995f",
+      "commit" : "1cd995f451a02e4778bed24bec6b70cbe887fd86",
+      "short_commit" : "1cd995f"
+    },
+    "1.2.4" : {
+      "tag" : "1.2.4",
+      "sha256" : "9f4221ec63bdd41585d80d1c71c6c676b87d1de8ec14c697a26a4104732d8658",
+      "strip_prefix" : "pgaudit-pgaudit-6d9e5d4",
+      "commit" : "6d9e5d4ae4b0baf5039845fb71f6e7d52669bbd8",
+      "short_commit" : "6d9e5d4"
+    },
+    "1.2.3" : {
+      "tag" : "1.2.3",
+      "sha256" : "87e0dee25e13e62209908ca498bb129e9be2f965e68b7af37cfb1494287130f2",
+      "strip_prefix" : "pgaudit-pgaudit-8ddd48f",
+      "commit" : "8ddd48fc9688b7f059fcb2c41a319f8dfd3aa64c",
+      "short_commit" : "8ddd48f"
+    },
+    "1.2.2" : {
+      "tag" : "1.2.2",
+      "sha256" : "e1792049a328b9a4ebb52e9a70eca7ca1406d824014f638e59d83c5cc4082c5c",
+      "strip_prefix" : "pgaudit-pgaudit-8178fc3",
+      "commit" : "8178fc31cf758ccec7c1c9f7c21d1f6f41a4753b",
+      "short_commit" : "8178fc3"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "51ff487273c397b97cd0a07518c2d44cc2ea0c83f993fd5ceee1e8cd2501dd99",
+      "strip_prefix" : "pgaudit-pgaudit-f56258e",
+      "commit" : "f56258e1cf0642e7df02bbd85535f2fb446bdd9f",
+      "short_commit" : "f56258e"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "7e815970ec0f67b922551c39e6ca5c2c5d5aba042cdc20678c6e4e1d0c5d3e70",
+      "strip_prefix" : "pgaudit-pgaudit-6ce6e00",
+      "commit" : "6ce6e0067d631de3588d4a511c56500290c78c95",
+      "short_commit" : "6ce6e00"
+    },
+    "1.1.4" : {
+      "tag" : "1.1.4",
+      "sha256" : "a05c9c8db649ab558cc571d4759f009a2a34c6b0c793cf3b171ba27d288fc4ac",
+      "strip_prefix" : "pgaudit-pgaudit-c565fd9",
+      "commit" : "c565fd9cdfcb4395ee3ec5de9b9dbb4c04c594b0",
+      "short_commit" : "c565fd9"
+    },
+    "1.1.3" : {
+      "tag" : "1.1.3",
+      "sha256" : "73da46fab32a005ac9e65c5e466e94d2c1f7b1a7b4d463a1d549561866ffe00f",
+      "strip_prefix" : "pgaudit-pgaudit-edab096",
+      "commit" : "edab09603f2b9e25d2c3f7799400b1e7208ce40b",
+      "short_commit" : "edab096"
+    },
+    "1.1.2" : {
+      "tag" : "1.1.2",
+      "sha256" : "f696a78c331c088770e7a60ac4641d164c4e3e160283aa304fb083418b6c757c",
+      "strip_prefix" : "pgaudit-pgaudit-527fa21",
+      "commit" : "527fa2114bf9fec12593c71e00ed30f314acaf3a",
+      "short_commit" : "527fa21"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "ba58baba3d39b7535772f6cea6886924ceae5fed066549a3a3b6e9f56f6c4483",
+      "strip_prefix" : "pgaudit-pgaudit-7befa05",
+      "commit" : "7befa053a559c988387ba04394faa2d8a7c3203b",
+      "short_commit" : "7befa05"
+    },
+    "1.1.0" : {
+      "tag" : "1.1.0",
+      "sha256" : "f8541b6e985299316d3cac0f7a77c763e2e6775fea0e938a6212dcd7df622159",
+      "strip_prefix" : "pgaudit-pgaudit-081f5e3",
+      "commit" : "081f5e3722ea19112c3d322573480e94ab6068a4",
+      "short_commit" : "081f5e3"
+    },
+    "1.0.9" : {
+      "tag" : "1.0.9",
+      "sha256" : "711df69816cd32a8037c4042f5b172312237fe15c291d55e4f8face119df3c8a",
+      "strip_prefix" : "pgaudit-pgaudit-d364aa9",
+      "commit" : "d364aa95386113df4d68f80fbe7905c75924dc82",
+      "short_commit" : "d364aa9"
+    },
+    "1.0.8" : {
+      "tag" : "1.0.8",
+      "sha256" : "e85a24b3dc2ba20442e2a4562aa4b2c9064c7f5e6bd10ce28d64cd7a086be54b",
+      "strip_prefix" : "pgaudit-pgaudit-634911b",
+      "commit" : "634911bec73872ef8f1c8cb04ca55419c56de3ae",
+      "short_commit" : "634911b"
+    },
+    "1.0.7" : {
+      "tag" : "1.0.7",
+      "sha256" : "7b541d46670c9e7b8f02909b7848e82eae1df2ae9ea71f1eaf9a3f19cd1ec169",
+      "strip_prefix" : "pgaudit-pgaudit-847d3bd",
+      "commit" : "847d3bdbaba356a46d1408b2fe9105dd73d52cc7",
+      "short_commit" : "847d3bd"
+    },
+    "1.0.6" : {
+      "tag" : "1.0.6",
+      "sha256" : "14c0d63b25391283766e32028c7f3c0caaf7d00b0bf4cdabe434eed2668b7cd2",
+      "strip_prefix" : "pgaudit-pgaudit-d0fb52d",
+      "commit" : "d0fb52d446ed10cafe304aed16b193c1803cd906",
+      "short_commit" : "d0fb52d"
+    },
+    "1.0.5" : {
+      "tag" : "1.0.5",
+      "sha256" : "4d747ff79454faeddfede1fb4737f189cb0b7c06bca36a80a6fff62e40869415",
+      "strip_prefix" : "pgaudit-pgaudit-83a2f4e",
+      "commit" : "83a2f4e6040e63418b32b107494880a49b801a61",
+      "short_commit" : "83a2f4e"
+    },
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "855ddf7a58ae7e5d0f41a5c97e587a61ac02533102ed20825c9ce57471159c4e",
+      "strip_prefix" : "pgaudit-pgaudit-1c99eb9",
+      "commit" : "1c99eb969d28e950f8a236bc066aceac169bdc3a",
+      "short_commit" : "1c99eb9"
+    },
+    "1.0.3" : {
+      "tag" : "1.0.3",
+      "sha256" : "932b879909cfaca98fee9c947958ea48d6b17cf459647282754e98e56272197a",
+      "strip_prefix" : "pgaudit-pgaudit-a91f293",
+      "commit" : "a91f29388bdec6346e80fd596957659087706ac2",
+      "short_commit" : "a91f293"
+    },
+    "1.0.2" : {
+      "tag" : "1.0.2",
+      "sha256" : "ae33d3ab5c296d7c20bcecee54ac2516de17989020d3d53894c7a4cf40991105",
+      "strip_prefix" : "pgaudit-pgaudit-506ed71",
+      "commit" : "506ed71d906f875328b92d5bcf589047f322ff0f",
+      "short_commit" : "506ed71"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "5e41f85a1c3bdbeb0266872827f0f8db68aee3347aea8db7220148dc699ec626",
+      "strip_prefix" : "pgaudit-pgaudit-3296cef",
+      "commit" : "3296ceff06d06ab95ea4285e40503509c17a3cec",
+      "short_commit" : "3296cef"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "3b4e4d263330577902cdc640806a641fab334daf6757a23417381cd7044339a7",
+      "strip_prefix" : "pgaudit-pgaudit-da7f174",
+      "commit" : "da7f174b0a997b92b77e36a2729a66ff9c8ee9b0",
+      "short_commit" : "da7f174"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "18.0.0" : {
+        "default_version" : "18.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "17.1.0" : {
+        "default_version" : "17.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "17.0.0" : {
+        "default_version" : "17.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "16.1.0" : {
+        "default_version" : "16.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "16.0.0" : {
+        "default_version" : "16.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.1" : {
+        "default_version" : "1.7.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.7.0" : {
+        "default_version" : "1.7",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.3" : {
+        "default_version" : "1.6.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.2" : {
+        "default_version" : "1.6.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.1" : {
+        "default_version" : "1.6.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.6.0" : {
+        "default_version" : "1.6",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.3" : {
+        "default_version" : "1.5.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.2" : {
+        "default_version" : "1.5.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.1" : {
+        "default_version" : "1.5.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.5.0" : {
+        "default_version" : "1.5",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.3" : {
+        "default_version" : "1.4.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.2" : {
+        "default_version" : "1.4.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.1" : {
+        "default_version" : "1.4.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.4.0" : {
+        "default_version" : "1.4",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.4" : {
+        "default_version" : "1.3.4",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.3" : {
+        "default_version" : "1.3.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.2" : {
+        "default_version" : "1.3.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.1" : {
+        "default_version" : "1.3.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.4" : {
+        "default_version" : "1.2.4",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.4" : {
+        "default_version" : "1.1.4",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.3" : {
+        "default_version" : "1.1.3",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.2" : {
+        "default_version" : "1.1.2",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.9" : {
+        "default_version" : "1.0.9",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.8" : {
+        "default_version" : "1.0.8",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.7" : {
+        "default_version" : "1.0.7",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.6" : {
+        "default_version" : "1.0.6",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.5" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.4" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.3" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.2" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "provides auditing functionality",
+        "module_pathname" : "$libdir/pgaudit",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,31 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/okbob/pgmeminfo/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "VERSION_1_0_0",
+      "sha256" : "1a72c3cb039998232c39d303b2229c1b87e05621610bd4e6185c0238cf3fa497",
+      "strip_prefix" : "okbob-pgmeminfo-bc0b168",
+      "commit" : "bc0b1689c31304e7531d333f2e4c3cddcf558bcc",
+      "short_commit" : "bc0b168"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "show memory usage",
+        "module_pathname" : "$libdir/pgmeminfo",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : { }
+  },
+  "version" : 1
+}

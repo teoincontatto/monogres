@@ -1,0 +1,132 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/CrunchyData/pg_incremental/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.4.1" : {
+      "tag" : "v1.4.1",
+      "sha256" : "51ecf8b8df33957bbf02f29e55415e99ed2ab5cc6cf082a7ec9fed642916d925",
+      "strip_prefix" : "CrunchyData-pg_incremental-4bd054f",
+      "commit" : "4bd054f8a7cde1f226068493c01350369ac9bb30",
+      "short_commit" : "4bd054f"
+    },
+    "1.3.0" : {
+      "tag" : "v1.3.0",
+      "sha256" : "2a9b226ae075aba7c6e2551a6d8120b553ae55ad48c52732309b698671829e81",
+      "strip_prefix" : "CrunchyData-pg_incremental-21d4686",
+      "commit" : "21d4686db4288c883ae85592a8ecaadaff765c2f",
+      "short_commit" : "21d4686"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "7a6f1f60beb126eac5ac8de38d8a35d202a3ba623a6d5f06c6481f4cedf68d4a",
+      "strip_prefix" : "CrunchyData-pg_incremental-bb60eca",
+      "commit" : "bb60ecaa20c317bfa0b8c0ace4a6f71604949c3a",
+      "short_commit" : "bb60eca"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "838483b609620478638f9fd695a572f0908c3021036b8dd0cb90ce35ef2f959b",
+      "strip_prefix" : "CrunchyData-pg_incremental-cf557eb",
+      "commit" : "cf557eb3d56be741b4cecd1bdd9ed55e321859ea",
+      "short_commit" : "cf557eb"
+    },
+    "1.1.0" : {
+      "tag" : "v1.1.0",
+      "sha256" : "290da63819d4cad7c5c4d734c5d2ccfeb2aedb85375df83f2dbaa9d5d4215305",
+      "strip_prefix" : "CrunchyData-pg_incremental-a7b1545",
+      "commit" : "a7b154525d9aefdf0cf522845dc5cfc81a3f3b38",
+      "short_commit" : "a7b1545"
+    },
+    "1.0.1" : {
+      "tag" : "v1.0.1",
+      "sha256" : "da07c6b1a34e4684bd4fa237ab3f9bad4dfb41b801fe15e0672fadb2e1c332b1",
+      "strip_prefix" : "CrunchyData-pg_incremental-afe28c3",
+      "commit" : "afe28c3c3673a7b382492a1fa5f843d06baf06d8",
+      "short_commit" : "afe28c3"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "5b140d9bc6b03a45fed442b5188c3987958d051deecb22fdb3f9e99b2932edb2",
+      "strip_prefix" : "CrunchyData-pg_incremental-e668fc2",
+      "commit" : "e668fc2f8532663e840f381dd470b500b42bb7a9",
+      "short_commit" : "e668fc2"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.4.1" : {
+        "default_version" : "1.4",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.3.0" : {
+        "default_version" : "1.3",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.2.0" : {
+        "default_version" : "1.2",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "requires" : [ "pg_cron" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "requires" : [ "pg_cron" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.1.0" : {
+        "default_version" : "1.1",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "requires" : [ "pg_cron" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "requires" : [ "pg_cron" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Incremental Processing by Crunchy Data",
+        "module_pathname" : "$libdir/pg_incremental",
+        "requires" : [ "pg_cron" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    }
+  },
+  "version" : 1
+}

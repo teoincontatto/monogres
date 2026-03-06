@@ -1,0 +1,191 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/zubkov-andrei/pg_profile/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "4.11.0" : {
+      "tag" : "4.11",
+      "sha256" : "eae72c36029fa1046d08edefb829ba74e7dae9599c74f08866bf887b1359ddd5",
+      "strip_prefix" : "zubkov-andrei-pg_profile-306f0fe",
+      "commit" : "306f0fed2663cf8aaa9a88373de4394e75e31f19",
+      "short_commit" : "306f0fe"
+    },
+    "4.10.0" : {
+      "tag" : "4.10",
+      "sha256" : "c95af8f1de1562b5cb9f5d885e64f8e76547504abad6a54b63f6a54e55d966e3",
+      "strip_prefix" : "zubkov-andrei-pg_profile-46c04b0",
+      "commit" : "46c04b01177a407c5fadbfe57e21ede14dcd7a5b",
+      "short_commit" : "46c04b0"
+    },
+    "4.9.0" : {
+      "tag" : "4.9",
+      "sha256" : "f211931c093baf6b312a9729d8cb8c67f4f9ef007dd54a804b0cb5e68a397f77",
+      "strip_prefix" : "zubkov-andrei-pg_profile-5de28c0",
+      "commit" : "5de28c000c035aefc7d8109fcb1903fab37efb23",
+      "short_commit" : "5de28c0"
+    },
+    "4.8.0" : {
+      "tag" : "4.8",
+      "sha256" : "bf84f87627fd1e18ae68cb03f0e8385cb8835329035169aca60484f80d3b6fe2",
+      "strip_prefix" : "zubkov-andrei-pg_profile-6fe1a7d",
+      "commit" : "6fe1a7d1718bac0a5cca52739dfce7769a91d0a1",
+      "short_commit" : "6fe1a7d"
+    },
+    "4.7.0" : {
+      "tag" : "4.7",
+      "sha256" : "945e7223345567344c8ae5054929b776062f432b26a8bb05b58b94700978eda3",
+      "strip_prefix" : "zubkov-andrei-pg_profile-c076a1b",
+      "commit" : "c076a1bd851b1a20d70ba54a8f8f6e24f43bf8c1",
+      "short_commit" : "c076a1b"
+    },
+    "4.6.0" : {
+      "tag" : "4.6",
+      "sha256" : "c62842bb3bf1274bf132a7007066873bb6c429788fffcb80c3d090ce87b09223",
+      "strip_prefix" : "zubkov-andrei-pg_profile-b4983d2",
+      "commit" : "b4983d2634fc75ce880219d5d20ac82285f625d9",
+      "short_commit" : "b4983d2"
+    },
+    "4.5.0" : {
+      "tag" : "4.5",
+      "sha256" : "79f9558bb439018a388fbc8cef543305a565cc1e0ac454a3dc1c9cc49c2e3e5e",
+      "strip_prefix" : "zubkov-andrei-pg_profile-b567475",
+      "commit" : "b5674758928d185f692ec823d392b0ef5a86a593",
+      "short_commit" : "b567475"
+    },
+    "4.4.0" : {
+      "tag" : "4.4",
+      "sha256" : "65b4e15b1ed806e44f6cfb7a1ac7007dbb68a18a2a11da69464d8f50b9d76817",
+      "strip_prefix" : "zubkov-andrei-pg_profile-88d70ae",
+      "commit" : "88d70ae484076298e6dcffba5ef02dc15d8b5d07",
+      "short_commit" : "88d70ae"
+    },
+    "4.3.0" : {
+      "tag" : "4.3",
+      "sha256" : "eded322225a46e492276f8f2ee35b1578211cd6fee83a6cc89c48db2fd9caeb6",
+      "strip_prefix" : "zubkov-andrei-pg_profile-8632b36",
+      "commit" : "8632b36ffacd357deae1bba978cce54b8ef4bd6b",
+      "short_commit" : "8632b36"
+    },
+    "4.2.0" : {
+      "tag" : "4.2",
+      "sha256" : "cb932cae980f7f859670f9f1a8dab4c0856d37de0b0581f0f28909293c3ca8bf",
+      "strip_prefix" : "zubkov-andrei-pg_profile-d179b14",
+      "commit" : "d179b144ceeac0f43bc82ef244fd7ec484d43e27",
+      "short_commit" : "d179b14"
+    },
+    "4.1.0" : {
+      "tag" : "4.1",
+      "sha256" : "dbf22ccce3ddc07456cac57760123f70a3151c399acb34b869c31c658f80b28e",
+      "strip_prefix" : "zubkov-andrei-pg_profile-335fe32",
+      "commit" : "335fe328b1aceb88e950a8f12268d8adc23afa6a",
+      "short_commit" : "335fe32"
+    },
+    "4.0.0" : {
+      "tag" : "4.0",
+      "sha256" : "adc142ac3f2919a4131487731b3f35bd2e1c89705ee73a3fca9b836cdcd0228e",
+      "strip_prefix" : "zubkov-andrei-pg_profile-3809a9a",
+      "commit" : "3809a9afcc3fea26d4b453f277973ecd3f9177ce",
+      "short_commit" : "3809a9a"
+    },
+    "0.3.6" : {
+      "tag" : "0.3.6",
+      "sha256" : "daf2ffe738b398f7503a0f4ae025e978bbc2b678efeafabc4605ce3925750b51",
+      "strip_prefix" : "zubkov-andrei-pg_profile-dd8272f",
+      "commit" : "dd8272f8dd326f65f6ccfb00d1e596ca5a028fea",
+      "short_commit" : "dd8272f"
+    },
+    "0.3.5" : {
+      "tag" : "0.3.5",
+      "sha256" : "aa70fa993c589cb6cfe8976777edb47d38df4f570285cdf780dddb4f4bc88852",
+      "strip_prefix" : "zubkov-andrei-pg_profile-5e9d9e2",
+      "commit" : "5e9d9e2e6a458384d2968085e989f7df869b4aa9",
+      "short_commit" : "5e9d9e2"
+    },
+    "0.3.4" : {
+      "tag" : "0.3.4",
+      "sha256" : "733d5d843450315be6b5e7e6d515b095eab74453fda46cf986c82cf2aa89a4f1",
+      "strip_prefix" : "zubkov-andrei-pg_profile-5f60c9e",
+      "commit" : "5f60c9e3766853222adbdfc09d3018d533e8aa1f",
+      "short_commit" : "5f60c9e"
+    },
+    "0.3.3" : {
+      "tag" : "0.3.3",
+      "sha256" : "d1736ef8b33b6e8e1a6638bc451b15eb31a4e57303ded877989428266f2cab5b",
+      "strip_prefix" : "zubkov-andrei-pg_profile-2c236ae",
+      "commit" : "2c236aeefa2aab87171f919bdd086ac0ebb5c366",
+      "short_commit" : "2c236ae"
+    },
+    "0.3.2" : {
+      "tag" : "0.3.2",
+      "sha256" : "f4c2fb3a3e32922e6adb204d761be73277be18f9be148be44f409cd68c238d6b",
+      "strip_prefix" : "zubkov-andrei-pg_profile-cbe0851",
+      "commit" : "cbe085193bbddbd49fcaec2362d04c23e68b079e",
+      "short_commit" : "cbe0851"
+    },
+    "0.3.1" : {
+      "tag" : "0.3.1",
+      "sha256" : "50aecc2c558ef7cb1423f30a6753ed8b1e95ac2b9f8655f1d31ea7a18e7e8875",
+      "strip_prefix" : "zubkov-andrei-pg_profile-c0fc6ad",
+      "commit" : "c0fc6adae9556b86654e33223a51c7a3475f81b0",
+      "short_commit" : "c0fc6ad"
+    },
+    "0.2.1" : {
+      "tag" : "0.2.1",
+      "sha256" : "1cdaac1d01b33b877482f10c7205f2ce51232e1c679e5042a0833e7e69336ecd",
+      "strip_prefix" : "zubkov-andrei-pg_profile-dc7282b",
+      "commit" : "dc7282b3d149c8d0595870f0a395ae860f52b418",
+      "short_commit" : "dc7282b"
+    },
+    "0.1.4" : {
+      "tag" : "0.1.4",
+      "sha256" : "6543513ac2f55a8729533099dffe0f329d2c8585c83068b8086d18bd2f2464c0",
+      "strip_prefix" : "zubkov-andrei-pg_profile-ababa47",
+      "commit" : "ababa4774ecfacb469419c421557f286c5e9d33c",
+      "short_commit" : "ababa47"
+    },
+    "0.1.3" : {
+      "tag" : "0.1.3",
+      "sha256" : "4fbf8d5b5e0de9643864d41ddf9bbbf1aae659437dd16b86dbc4a44bf47b0cd8",
+      "strip_prefix" : "zubkov-andrei-pg_profile-e6df1b2",
+      "commit" : "e6df1b2bba13ffde072e1aaefb6669cf6c951a6e",
+      "short_commit" : "e6df1b2"
+    },
+    "0.1.2" : {
+      "tag" : "0.1.2",
+      "sha256" : "fcd2585c5b4f8c289c7af83b253a62ef8c203d08b52994bb4f46f67da64b73eb",
+      "strip_prefix" : "zubkov-andrei-pg_profile-0de1aea",
+      "commit" : "0de1aeaa97e7b0dd51a52b073767f8689e65cae8",
+      "short_commit" : "0de1aea"
+    },
+    "0.1.1" : {
+      "tag" : "0.1.1",
+      "sha256" : "bf096c6846eb4a6753fed2154a5b839114021b205e7f3ed56e4aeef0ea77968a",
+      "strip_prefix" : "zubkov-andrei-pg_profile-6e8da9b",
+      "commit" : "6e8da9b234d3bd5388f7eeaf0f71391710e84904",
+      "short_commit" : "6e8da9b"
+    },
+    "0.0.7" : {
+      "tag" : "0.0.7",
+      "sha256" : "d6a5d1acd88a17653664dcf97202cd533ad8c373ea0e7d64559ab7ed03936b4b",
+      "strip_prefix" : "zubkov-andrei-pg_profile-a8a99f9",
+      "commit" : "a8a99f969ada149bb9885221ab3ab64c9a9df6e9",
+      "short_commit" : "a8a99f9"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.0.7" : {
+        "default_version" : "0.0.7",
+        "comment" : "PostgreSQL load profile repository and report builder",
+        "requires" : [ "dblink", "plpgsql" ],
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

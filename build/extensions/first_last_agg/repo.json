@@ -1,0 +1,278 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/wulczer/first_last_agg/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.1.4" : {
+      "tag" : "v0.1.4",
+      "sha256" : "bfbc0f0f5fb59e36280005d192228e1eba111c4a485608ec87d43dab5979b64e",
+      "strip_prefix" : "wulczer-first_last_agg-7c72797",
+      "commit" : "7c72797c4031197f166801b8cd3222a75782d964",
+      "short_commit" : "7c72797"
+    },
+    "0.1.3" : {
+      "tag" : "v0.1.3",
+      "sha256" : "fcee8007522d23d373bdf2548bfe3d8ca7a3265366c145f7ec5d8ecd0d39f9b6",
+      "strip_prefix" : "wulczer-first_last_agg-fcbb2ba",
+      "commit" : "fcbb2ba9c04ccf05f1b2c24fcb44c7b7ba9a1494",
+      "short_commit" : "fcbb2ba"
+    },
+    "0.1.2" : {
+      "tag" : "v0.1.2",
+      "sha256" : "cd09c2e96c4ae904dbe5e839b6f139c3e76a42f64003315272a7b9c7b12d2f32",
+      "strip_prefix" : "wulczer-first_last_agg-4a74913",
+      "commit" : "4a7491337d8b4050a2807961be09756f154dee8a",
+      "short_commit" : "4a74913"
+    },
+    "0.1.1" : {
+      "tag" : "v0.1.1",
+      "sha256" : "38337920bf0ecdbba4750ef5c520f3793a5675f5798696f58dd1d24b470ba5df",
+      "strip_prefix" : "wulczer-first_last_agg-e9da970",
+      "commit" : "e9da970da638dbb33a8b39f8581bdf25fd102fad",
+      "short_commit" : "e9da970"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "5d65d7f2feb4f3bc5587f1ea97a5d5ea9e992809f7e454a4b968d819b6072c7c",
+      "strip_prefix" : "wulczer-first_last_agg-3505392",
+      "commit" : "350539206f87dac80a01fdd51513e003e6208d8c",
+      "short_commit" : "3505392"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.4" : {
+        "default_version" : "0.1.4",
+        "comment" : "first() and last() aggregate functions",
+        "module_pathname" : "$libdir/first_last_agg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.3" : {
+        "default_version" : "0.1.3",
+        "comment" : "first() and last() aggregate functions",
+        "module_pathname" : "$libdir/first_last_agg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.2" : {
+        "default_version" : "0.1.1",
+        "comment" : "first() and last() aggregate functions",
+        "module_pathname" : "$libdir/first_last_agg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.1" : {
+        "default_version" : "0.1.1",
+        "comment" : "first() and last() aggregate functions",
+        "module_pathname" : "$libdir/first_last_agg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "first() and last() aggregate functions",
+        "module_pathname" : "$libdir/first_last_agg",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "0.1.4" : {
+        "name" : "first_last_agg",
+        "abstract" : "Provides first() and last() aggregate functions.",
+        "version" : "0.1.4",
+        "maintainer" : [ "Jan Urbański <wulczer@wulczer.org>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "prereqs" : {
+          "build" : {
+            "requires" : {
+              "PostgreSQL" : "9.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "first_last_agg" : {
+            "file" : "sql/first_last_agg.sql",
+            "docfile" : "doc/first_last_agg.md",
+            "version" : "0.1.4"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/wulczer/first_last_agg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/wulczer/first_last_agg.git",
+            "web" : "http://github.com/wulczer/first_last_agg/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Jan Urbański",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "first aggregate", "last aggregate", "aggregate function" ]
+      },
+      "0.1.3" : {
+        "name" : "first_last_agg",
+        "abstract" : "Provides first() and last() aggregate functions.",
+        "version" : "0.1.3",
+        "maintainer" : [ "Jan Urbański <wulczer@wulczer.org>" ],
+        "release_status" : "stable",
+        "license" : "postgresql",
+        "prereqs" : {
+          "build" : {
+            "requires" : {
+              "PostgreSQL" : "9.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "first_last_agg" : {
+            "file" : "sql/first_last_agg.sql",
+            "docfile" : "doc/first_last_agg.md",
+            "version" : "0.1.3"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/wulczer/first_last_agg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/wulczer/first_last_agg.git",
+            "web" : "http://github.com/wulczer/first_last_agg/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Jan Urbański",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "first aggregate", "last aggregate", "aggregate function" ]
+      },
+      "0.1.2" : {
+        "name" : "first_last_agg",
+        "abstract" : "Provides first() and last() aggregate functions.",
+        "version" : "0.1.2",
+        "maintainer" : [ "Jan Urbański <wulczer@wulczer.org>" ],
+        "release_status" : "testing",
+        "license" : "postgresql",
+        "prereqs" : {
+          "build" : {
+            "requires" : {
+              "PostgreSQL" : "9.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "first_last_agg" : {
+            "file" : "sql/first_last_agg.sql",
+            "docfile" : "doc/first_last_agg.md",
+            "version" : "0.1.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/wulczer/first_last_agg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/wulczer/first_last_agg.git",
+            "web" : "http://github.com/wulczer/first_last_agg/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Jan Urbański",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "first aggregate", "last aggregate", "aggregate function" ]
+      },
+      "0.1.1" : {
+        "name" : "first_last_agg",
+        "abstract" : "Provides first() and last() aggregate functions.",
+        "version" : "0.1.1",
+        "maintainer" : [ "Jan Urbański <wulczer@wulczer.org>" ],
+        "release_status" : "testing",
+        "license" : "postgresql",
+        "prereqs" : {
+          "build" : {
+            "PostgreSQL" : "9.0.0"
+          }
+        },
+        "provides" : {
+          "first_last_agg" : {
+            "file" : "sql/first_last_agg.sql",
+            "docfile" : "doc/first_last_agg.md",
+            "version" : "0.1.1"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/wulczer/first_last_agg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/wulczer/first_last_agg.git",
+            "web" : "http://github.com/wulczer/first_last_agg/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Jan Urbański",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "first aggregate", "last aggregate", "aggregate function" ]
+      },
+      "0.1.0" : {
+        "name" : "first_last_agg",
+        "abstract" : "Provides first() and last() aggregate functions.",
+        "version" : "0.1.0",
+        "maintainer" : [ "Jan Urbański <wulczer@wulczer.org>" ],
+        "release_status" : "testing",
+        "license" : "postgresql",
+        "prereqs" : {
+          "build" : {
+            "PostgreSQL" : "9.0.0"
+          }
+        },
+        "provides" : {
+          "first_last_agg" : {
+            "file" : "sql/first_last_agg.sql",
+            "docfile" : "doc/first_last_agg.md",
+            "version" : "0.1.0"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "http://github.com/wulczer/first_last_agg/issues/"
+          },
+          "repository" : {
+            "url" : "git://github.com/wulczer/first_last_agg.git",
+            "web" : "http://github.com/wulczer/first_last_agg/",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Jan Urbański",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "first aggregate", "last aggregate", "aggregate function" ]
+      }
+    }
+  },
+  "version" : 1
+}

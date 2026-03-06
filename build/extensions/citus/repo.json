@@ -1,23 +1,2665 @@
 {
-  "version": 1,
-  "sources": {
-    "gh": {
-      "tag": "v{version}",
-      "gh_org": "citusdata",
-      "name": "citus",
-      "filename": "{tag}",
-      "strip_prefix": "{name}-{version}",
-      "url": "https://github.com/citusdata/citus/archive/refs/tags/{filename}.tar.gz"
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/citusdata/citus/tarball/{commit}",
+      "type" : "tar.gz"
     }
   },
-  "versions": {
-    "13.2.0": {
-      "sha256": "82cc117bb1000da9eeea1499ee9a8f2706feccc19e2c5ca623274793d98a217a"
+  "versions" : {
+    "14.0.0" : {
+      "tag" : "v14.0.0",
+      "sha256" : "9c0dac2d99582e79a2185577b1ee5bb7ea3a4e577266fb29b92030e97a6d013b",
+      "strip_prefix" : "citusdata-citus-dfe71fc",
+      "commit" : "dfe71fc40f15b4f3c546964bc8d26d375c0b4957",
+      "short_commit" : "dfe71fc"
+    },
+    "13.2.0" : {
+      "tag" : "v13.2.0",
+      "sha256" : "be0c84ac905258a426fca40aca88a2f529ae131f989db6b8f103b732647d2a54",
+      "strip_prefix" : "citusdata-citus-e8e06d8",
+      "commit" : "e8e06d8d0cc103b1150feeac7250efc488a3cd5b",
+      "short_commit" : "e8e06d8"
+    },
+    "13.1.1" : {
+      "tag" : "v13.1.1",
+      "sha256" : "816eba4eed8bb82a3891a5f78300b480b9dbcd64d03504706332e4c1e3109555",
+      "strip_prefix" : "citusdata-citus-147619d",
+      "commit" : "147619d79a1ae66994e91baf2fadd730eb4dd9b3",
+      "short_commit" : "147619d"
+    },
+    "13.1.0" : {
+      "tag" : "v13.1.0",
+      "sha256" : "b0785b85159bb7650f98d9eb55392171d2af9b5e32bacd525e5f70ece8e300d9",
+      "strip_prefix" : "citusdata-citus-ad266a2",
+      "commit" : "ad266a2c0a3c9bdab1426ed33d1bc2d9a7d74f45",
+      "short_commit" : "ad266a2"
+    },
+    "13.0.5" : {
+      "tag" : "v13.0.5",
+      "sha256" : "8831d18b78630bc05496aabf5f908fdbaa0c7186e076011bc69b4d86934ea39b",
+      "strip_prefix" : "citusdata-citus-2433c98",
+      "commit" : "2433c980e1523942c17de3326aa5a773529aa5de",
+      "short_commit" : "2433c98"
+    },
+    "13.0.4" : {
+      "tag" : "v13.0.4",
+      "sha256" : "0f9147e7506f6761042ddc1506ca7200154d6b265073e557ca0cd1afe7c95ccd",
+      "strip_prefix" : "citusdata-citus-1e5deca",
+      "commit" : "1e5decad7514c2c23d5a13a7984c2075bb6e5c71",
+      "short_commit" : "1e5deca"
+    },
+    "13.0.3" : {
+      "tag" : "v13.0.3",
+      "sha256" : "b49175e16864f504d5e0c65b318a1f350b844f54caf8e9c801f14daf0c0c6696",
+      "strip_prefix" : "citusdata-citus-4c7004d",
+      "commit" : "4c7004df425c4eb5c91fd817d5802595a03779d7",
+      "short_commit" : "4c7004d"
+    },
+    "13.0.1" : {
+      "tag" : "v13.0.1",
+      "sha256" : "4a6366e9592e2c83cbbffc791e411f5eee6ed337e0ef25469b68bfb513a0dddf",
+      "strip_prefix" : "citusdata-citus-d28a5ea",
+      "commit" : "d28a5eae6c78935313824d319480632783d48d10",
+      "short_commit" : "d28a5ea"
+    },
+    "13.0.0" : {
+      "tag" : "v13.0.0",
+      "sha256" : "59eb314493eb7383798ad266e049327252c65d9ffc30b49bf098c5b5065e4e96",
+      "strip_prefix" : "citusdata-citus-548395f",
+      "commit" : "548395fd77d2f73a026dfa8ed81aa8bae3b75e07",
+      "short_commit" : "548395f"
+    },
+    "12.1.10" : {
+      "tag" : "v12.1.10",
+      "sha256" : "499272d64064216b9c43d0aef44aed970daebfd80f030aa4b2cc0de991ec1f46",
+      "strip_prefix" : "citusdata-citus-b509d95",
+      "commit" : "b509d952cee1b70a23bcf6649a74ab90883c7d1d",
+      "short_commit" : "b509d95"
+    },
+    "12.1.9" : {
+      "tag" : "v12.1.9",
+      "sha256" : "d390285d2ac77bb0ad68b79a4d33e925210f6aac21bd7fb897cd4c3169c54fae",
+      "strip_prefix" : "citusdata-citus-8bc6ff6",
+      "commit" : "8bc6ff673107bbc2e63f700cda76ecd07b34657e",
+      "short_commit" : "8bc6ff6"
+    },
+    "12.1.8" : {
+      "tag" : "v12.1.8",
+      "sha256" : "d6f013ee4d108f00fbb327fb7ff62430dadb86022b7dcb14aea9ca3a37796f64",
+      "strip_prefix" : "citusdata-citus-3222536",
+      "commit" : "32225367ec184609d383716f2c9be7f8f2f4817a",
+      "short_commit" : "3222536"
+    },
+    "12.1.7" : {
+      "tag" : "v12.1.7",
+      "sha256" : "0367bd4ca587d9b3621fa6392cbd43417ca00dba921f5ad5a87f44f8435e4c81",
+      "strip_prefix" : "citusdata-citus-f3cb3d9",
+      "commit" : "f3cb3d99eed7dd3db82104ab2a4a13b1233d0023",
+      "short_commit" : "f3cb3d9"
+    },
+    "12.1.6" : {
+      "tag" : "v12.1.6",
+      "sha256" : "0ce4ce1971ad5a7b39809992c4c7aa2131b023fe5c0f1f96d3d0e7aecc0c6271",
+      "strip_prefix" : "citusdata-citus-c44682a",
+      "commit" : "c44682a7d0641748c7fb3427fdb90ea2ae465a47",
+      "short_commit" : "c44682a"
+    },
+    "12.1.5" : {
+      "tag" : "v12.1.5",
+      "sha256" : "380e8a55855a271586a85dcaedb2474d15fcac67ed1fbc759eea6b987287cb8b",
+      "strip_prefix" : "citusdata-citus-15ecc37",
+      "commit" : "15ecc37ecd766af4393c9bb222aa1efe038dc5f3",
+      "short_commit" : "15ecc37"
+    },
+    "12.1.4" : {
+      "tag" : "v12.1.4",
+      "sha256" : "e1eb87f3d327fa1c2bf12e17b9d5612ec0c476a06600e1ab973ff7d6f6809072",
+      "strip_prefix" : "citusdata-citus-7e0dc18",
+      "commit" : "7e0dc18b22b71b16a3b418d7c2c2d86d65bff8a2",
+      "short_commit" : "7e0dc18"
+    },
+    "12.1.3" : {
+      "tag" : "v12.1.3",
+      "sha256" : "c2c30b63235a47a7d82e024b319aaa8baa3d1e76cfad6f82a62fe84939a26fb9",
+      "strip_prefix" : "citusdata-citus-035aa6e",
+      "commit" : "035aa6eada5a1d35454d008711b9b75341d942da",
+      "short_commit" : "035aa6e"
+    },
+    "12.1.2" : {
+      "tag" : "v12.1.2",
+      "sha256" : "4ede29141caf10d18dd46517249aa1a0c62ad8322886262e7ab885c492d5c802",
+      "strip_prefix" : "citusdata-citus-e2d18c5",
+      "commit" : "e2d18c5472379a4dd1b2f27ed0559fa815d21a59",
+      "short_commit" : "e2d18c5"
+    },
+    "12.1.1" : {
+      "tag" : "v12.1.1",
+      "sha256" : "8733ec9b04adc05fdc560c4eb91878e01af198b124bab6f6e77c88d592f72c57",
+      "strip_prefix" : "citusdata-citus-2c630ec",
+      "commit" : "2c630eca50595c56c79417d58897ffae9fe8b326",
+      "short_commit" : "2c630ec"
+    },
+    "12.1.0" : {
+      "tag" : "v12.1.0",
+      "sha256" : "6096873f32dd3dcf27c7ec05fb1905547d0a2e10a5a6a82c7fdf98ae71caba53",
+      "strip_prefix" : "citusdata-citus-3b908ee",
+      "commit" : "3b908eec2aa281159966b4fa7bdee56ad92fd6de",
+      "short_commit" : "3b908ee"
+    },
+    "12.0.1" : {
+      "tag" : "v12.0.1",
+      "sha256" : "562bfd65fdb7f3f9d4df8fe9b1edfba85e5d4e0f10c107c7b2bf9ce37a1313e6",
+      "strip_prefix" : "citusdata-citus-56fdf0e",
+      "commit" : "56fdf0e80e001200669d27478283bafb48f154d1",
+      "short_commit" : "56fdf0e"
+    },
+    "12.0.0" : {
+      "tag" : "v12.0.0",
+      "sha256" : "a5744ae29664ae03ace003df78a8da66e6a7cf6210fdb93428dfafe88b018b83",
+      "strip_prefix" : "citusdata-citus-19ef03a",
+      "commit" : "19ef03ab72ab512aae5e576a2a832c275830a2de",
+      "short_commit" : "19ef03a"
+    },
+    "11.3.1" : {
+      "tag" : "v11.3.1",
+      "sha256" : "e657574f13db670d2c0c05df5089de34800b30177abb94c21ebabe561a968768",
+      "strip_prefix" : "citusdata-citus-17f09d4",
+      "commit" : "17f09d4ad7ec0e95704e01bdf5492c9b4cb7b316",
+      "short_commit" : "17f09d4"
+    },
+    "11.3.0" : {
+      "tag" : "v11.3.0",
+      "sha256" : "8c7647d0be6d95133454e486683bf16ade743ccc8a817ec8bdff77ed4ffbef6e",
+      "strip_prefix" : "citusdata-citus-fcd3b6c",
+      "commit" : "fcd3b6c12f2c512578b682a4d814ebaa3e423d8b",
+      "short_commit" : "fcd3b6c"
+    },
+    "11.2.2" : {
+      "tag" : "v11.2.2",
+      "sha256" : "b1b26f66fe4c4e420592615a928e680bc76886da93dff3cd1c5d38e540b0fae1",
+      "strip_prefix" : "citusdata-citus-bf46e10",
+      "commit" : "bf46e109058de37a477e6c999478f2ac0faf5fd0",
+      "short_commit" : "bf46e10"
+    },
+    "11.2.1" : {
+      "tag" : "v11.2.1",
+      "sha256" : "766bc988b933395d49fc9eb340c87ef149831469566a60a74c17c28acf6fb8f2",
+      "strip_prefix" : "citusdata-citus-4886473",
+      "commit" : "4886473f355f0b998994c3d6914e8fa2d92625c4",
+      "short_commit" : "4886473"
+    },
+    "11.2.0" : {
+      "tag" : "v11.2.0",
+      "sha256" : "b16a8eff9bc6fa10609b9b3d8351629fdd4f606d4f38c12fe61e0d23c0abe2f9",
+      "strip_prefix" : "citusdata-citus-c173b13",
+      "commit" : "c173b13b73a16e342854c336fff16962697d5818",
+      "short_commit" : "c173b13"
+    },
+    "11.1.7" : {
+      "tag" : "v11.1.7",
+      "sha256" : "694bff1f4af51c9628a31637c3e3523a87a0f9bb9eb2e54b330ce98e24ed795c",
+      "strip_prefix" : "citusdata-citus-5e4b05b",
+      "commit" : "5e4b05bcaeb3bba6f054c21fda337c8b4bc2174e",
+      "short_commit" : "5e4b05b"
+    },
+    "11.1.6" : {
+      "tag" : "v11.1.6",
+      "sha256" : "2a24c9d58175b36cee3374995af9faa8deb47735b7bf955e6eac23e975cdd63d",
+      "strip_prefix" : "citusdata-citus-5442458",
+      "commit" : "54424583c514184ea662acd733b5abecac937198",
+      "short_commit" : "5442458"
+    },
+    "11.1.5" : {
+      "tag" : "v11.1.5",
+      "sha256" : "f2b277f55e9ae0aa609f6c514cb7f78b075f3f68e9c91823a7553a1fd6883f5d",
+      "strip_prefix" : "citusdata-citus-8e0ce65",
+      "commit" : "8e0ce65d6dad1262270234bc32776b92ce574a63",
+      "short_commit" : "8e0ce65"
+    },
+    "11.1.4" : {
+      "tag" : "v11.1.4",
+      "sha256" : "a94aa9b28190f59883367845a4b2c5b60b7de75b490de5000060d2a4dcde7eba",
+      "strip_prefix" : "citusdata-citus-846cf8e",
+      "commit" : "846cf8e3d717d232d615064f4c76f8ca0ba8eed7",
+      "short_commit" : "846cf8e"
+    },
+    "11.1.3" : {
+      "tag" : "v11.1.3",
+      "sha256" : "f99e15293b383d5f60f1e8b1daeb4dbf2a140a713d826a4b0f5bd2b173dbfb00",
+      "strip_prefix" : "citusdata-citus-51ef251",
+      "commit" : "51ef251535c46a679d9bba7582facbb105329ec1",
+      "short_commit" : "51ef251"
+    },
+    "11.1.2" : {
+      "tag" : "v11.1.2",
+      "sha256" : "cdf8b15aad5e0d9a994bc2148cd5dccc464b6be41e97182c6eb1bf5e7e3a5cfc",
+      "strip_prefix" : "citusdata-citus-9b19e41",
+      "commit" : "9b19e41e4652fc83da61b87c927b54e36227fbc8",
+      "short_commit" : "9b19e41"
+    },
+    "11.1.1" : {
+      "tag" : "v11.1.1",
+      "sha256" : "a55dd7a2adbcb98910ce52aae1dfd6bf169282f8246119d2488eb67e65ea9390",
+      "strip_prefix" : "citusdata-citus-b7ae596",
+      "commit" : "b7ae596fe8a4758f251cafc6ebb95ae9b971d202",
+      "short_commit" : "b7ae596"
+    },
+    "11.1.0" : {
+      "tag" : "v11.1.0",
+      "sha256" : "f1c540a4fc7f000ba3d983082ae026e86910744a7172b43b44daa844c55b6df5",
+      "strip_prefix" : "citusdata-citus-0995234",
+      "commit" : "099523452ec828e3711979bfe95f9e16981b7b8e",
+      "short_commit" : "0995234"
+    },
+    "11.0.10" : {
+      "tag" : "v11.0.10",
+      "sha256" : "3ed6c0b9395882ff61c3c7e4ee42a4046d5f49ff029a06e37b487d7bf85295a4",
+      "strip_prefix" : "citusdata-citus-f44248c",
+      "commit" : "f44248c1d5663429910de34fd547bdf8f1edd60c",
+      "short_commit" : "f44248c"
+    },
+    "11.0.8" : {
+      "tag" : "v11.0.8",
+      "sha256" : "7a22b2972fe9555fc20ec40fb9ebb9308b6c0f704e40c3a383122330f3f79910",
+      "strip_prefix" : "citusdata-citus-7603fe5",
+      "commit" : "7603fe510ac34e6e534aaaceaea50c7294fd142f",
+      "short_commit" : "7603fe5"
+    },
+    "11.0.7" : {
+      "tag" : "v11.0.7",
+      "sha256" : "4e108c3855c700685533639e61341868d274530c39f3645f2273cb9cf9535609",
+      "strip_prefix" : "citusdata-citus-a005db8",
+      "commit" : "a005db871a1d381921dc1d48677c48c0a1869fc6",
+      "short_commit" : "a005db8"
+    },
+    "11.0.6" : {
+      "tag" : "v11.0.6",
+      "sha256" : "0e4804c61c2c0ab93c60ae23c7827476d957e94f55469b89b1c91d653c50e53a",
+      "strip_prefix" : "citusdata-citus-dbfdaca",
+      "commit" : "dbfdaca0f077c815357b8958da4b7559de0975cc",
+      "short_commit" : "dbfdaca"
+    },
+    "11.0.5" : {
+      "tag" : "v11.0.5",
+      "sha256" : "123e4401e971e2519139d5f7c7c8c4d271ee5b2c6a0ba5a454b6b6218c2ed6a2",
+      "strip_prefix" : "citusdata-citus-f8e3e8c",
+      "commit" : "f8e3e8c444e4e0296d304b79b35c8ce0486b6a3a",
+      "short_commit" : "f8e3e8c"
+    },
+    "11.0.4" : {
+      "tag" : "v11.0.4",
+      "sha256" : "a292414b0b1fe4af7933fe906e6d96b896e457cadb228646befc2260238ad093",
+      "strip_prefix" : "citusdata-citus-5ca792a",
+      "commit" : "5ca792aef99f4983ae89073ca084fb1a2557d440",
+      "short_commit" : "5ca792a"
+    },
+    "11.0.3" : {
+      "tag" : "v11.0.3",
+      "sha256" : "f3e181167bfc4bb9a97df83d415ac2b9ece830022b7508be8ba595216006bf04",
+      "strip_prefix" : "citusdata-citus-2bb1065",
+      "commit" : "2bb106508a6133f09e74eb90d327662ef08b435d",
+      "short_commit" : "2bb1065"
+    },
+    "11.0.2" : {
+      "tag" : "v11.0.2",
+      "sha256" : "6e6db725df42e5772a6088c444a45930deb5f86ebf60dc973bfe0b774b71c248",
+      "strip_prefix" : "citusdata-citus-9d05c30",
+      "commit" : "9d05c30c13b09cde3a8c75c6e5bd1505bf165aeb",
+      "short_commit" : "9d05c30"
+    },
+    "10.2.9" : {
+      "tag" : "v10.2.9",
+      "sha256" : "32c06267cfb4c74f23d88877336eab2aaf1e9990c723af56d1f65e7283356627",
+      "strip_prefix" : "citusdata-citus-4bc11c9",
+      "commit" : "4bc11c9bb4ecefc2f840dc5904b34d14500e4a35",
+      "short_commit" : "4bc11c9"
+    },
+    "10.2.8" : {
+      "tag" : "v10.2.8",
+      "sha256" : "a39f455554bafc9099b772c63538dba01138471d2b07edc88b90091c8489c23d",
+      "strip_prefix" : "citusdata-citus-2badbf3",
+      "commit" : "2badbf3b55fb91547cab7f9b5c9e96eba3e199e0",
+      "short_commit" : "2badbf3"
+    },
+    "10.2.7" : {
+      "tag" : "v10.2.7",
+      "sha256" : "cbc4198c14f5c7c2bbbf573f8bc19665d49b541e18170837ca3579730a66cc70",
+      "strip_prefix" : "citusdata-citus-814d302",
+      "commit" : "814d302ba8cfdbc6618c1095272b5945a8cbc327",
+      "short_commit" : "814d302"
+    },
+    "10.2.5" : {
+      "tag" : "v10.2.5",
+      "sha256" : "28a2510fec44dd4a11dfa2dbf1f72270b42069b501cf818fd539a885fb9d4fe8",
+      "strip_prefix" : "citusdata-citus-6663635",
+      "commit" : "6663635593ed70a50f98f4688b9fb8ccfa0662d0",
+      "short_commit" : "6663635"
+    },
+    "10.2.4" : {
+      "tag" : "v10.2.4",
+      "sha256" : "925f0c63ca6410977d04fdef4ef94106823b6d0db6374f6c745caf851d605728",
+      "strip_prefix" : "citusdata-citus-cb21065",
+      "commit" : "cb210657491e02aab6b716946b494f5d0ba8930a",
+      "short_commit" : "cb21065"
+    },
+    "10.2.3" : {
+      "tag" : "v10.2.3",
+      "sha256" : "bc564bd20c8b7153db818cbff964c76c74475000d8a4f7dc4ebecf87e590d278",
+      "strip_prefix" : "citusdata-citus-e190895",
+      "commit" : "e19089503edf12e3bdd5919d32f5db1f5482d59f",
+      "short_commit" : "e190895"
+    },
+    "10.2.2" : {
+      "tag" : "v10.2.2",
+      "sha256" : "6886aaf4fcc666fe9f0f5d98c402e1429a39f64d8e637948dd992ec38fa70cc0",
+      "strip_prefix" : "citusdata-citus-ef2c6d5",
+      "commit" : "ef2c6d51b20a8e41b8ff3fb043c31ffa0c0e0ec0",
+      "short_commit" : "ef2c6d5"
+    },
+    "10.2.1" : {
+      "tag" : "v10.2.1",
+      "sha256" : "02e73c8aa894cdc40b8f9d9f6b0a14f75e4131b8cbf49adb0c24e176ffaf0ad6",
+      "strip_prefix" : "citusdata-citus-8e5b9a0",
+      "commit" : "8e5b9a06adf186fd4bf48bad8912587b2f924839",
+      "short_commit" : "8e5b9a0"
+    },
+    "10.2.0" : {
+      "tag" : "v10.2.0",
+      "sha256" : "606f74858ec27a51dbd3c7e543d279801660f4e58446fcd8e0cbaa912961f3a3",
+      "strip_prefix" : "citusdata-citus-a913b90",
+      "commit" : "a913b90ff34030e2e2d4b4fdc9bbcaaadacb8cf8",
+      "short_commit" : "a913b90"
+    },
+    "10.1.6" : {
+      "tag" : "v10.1.6",
+      "sha256" : "7f3914913d65cb15300773cf38be4db1634571dd0f4735cef118145e064daea3",
+      "strip_prefix" : "citusdata-citus-d01527e",
+      "commit" : "d01527e77bf730687326e85f1b3c41c240a113b9",
+      "short_commit" : "d01527e"
+    },
+    "10.1.4" : {
+      "tag" : "v10.1.4",
+      "sha256" : "2dd3547af17db82b128f8dcd902ffb36e4f7b2280011ec94762e6094f455d666",
+      "strip_prefix" : "citusdata-citus-5e6eb2c",
+      "commit" : "5e6eb2cd97885174c5de89765b97a19f8aa9a458",
+      "short_commit" : "5e6eb2c"
+    },
+    "10.1.3" : {
+      "tag" : "v10.1.3",
+      "sha256" : "4189af9e0bdc7b01ddbaed772da416e27dc250e8a326fe2ed2f6c3af61d5a587",
+      "strip_prefix" : "citusdata-citus-aa20cc5",
+      "commit" : "aa20cc53bac5c546495d21f69cce755d9189cce1",
+      "short_commit" : "aa20cc5"
+    },
+    "10.1.2" : {
+      "tag" : "v10.1.2",
+      "sha256" : "5628fca81cf6ee83094926ca5db81ae6496276a3a0b27d29a2d9ad8628b89cb6",
+      "strip_prefix" : "citusdata-citus-280bc70",
+      "commit" : "280bc704d0012258dc6e855ba858e2dd2c746087",
+      "short_commit" : "280bc70"
+    },
+    "10.1.1" : {
+      "tag" : "v10.1.1",
+      "sha256" : "f6c45a23d14033f5dcb02f49e8323a76e183a441b7e0fa7e7fde759514aa3ddb",
+      "strip_prefix" : "citusdata-citus-b394751",
+      "commit" : "b3947510b973873eb96c148aee6d445ae964e591",
+      "short_commit" : "b394751"
+    },
+    "10.1.0" : {
+      "tag" : "v10.1.0",
+      "sha256" : "3de3837130f58a6087c71d84e2afc0af058f1420ba949b6d543a7c2a9c3ef9b1",
+      "strip_prefix" : "citusdata-citus-f571abc",
+      "commit" : "f571abcca67e486c06f19a0ff54ccc8d67aaf62c",
+      "short_commit" : "f571abc"
+    },
+    "10.0.8" : {
+      "tag" : "v10.0.8",
+      "sha256" : "265291a44104b29b632624ab196637c3c78cc7efd399b1ffc4ac1083aeae2bf9",
+      "strip_prefix" : "citusdata-citus-11db009",
+      "commit" : "11db00990f5f8ffd1905df17be0cb807672fe35d",
+      "short_commit" : "11db009"
+    },
+    "10.0.6" : {
+      "tag" : "v10.0.6",
+      "sha256" : "3b080b0f08d2c66d352a2164e24ae392d1e21e9d7743b66a0f92f205f2f634bd",
+      "strip_prefix" : "citusdata-citus-d13b989",
+      "commit" : "d13b989cfff66b10c568be8d1f3e5e7848ce010b",
+      "short_commit" : "d13b989"
+    },
+    "10.0.5" : {
+      "tag" : "v10.0.5",
+      "sha256" : "f51a488f4c416c14c62f9a72cff8116148526cf6abd08a4eaefc1c8c074e2bad",
+      "strip_prefix" : "citusdata-citus-5f5e5ef",
+      "commit" : "5f5e5ef47190f0f7afb0a2d85ff06ea2090c0667",
+      "short_commit" : "5f5e5ef"
+    },
+    "10.0.4" : {
+      "tag" : "v10.0.4",
+      "sha256" : "fe8f30c3334e28e169dc701dfe08d2888ea32c25f3d1c303095a09c1d821bb46",
+      "strip_prefix" : "citusdata-citus-1492bd1",
+      "commit" : "1492bd1e8b8bc8bb63be4499ae5fb913a6b63af4",
+      "short_commit" : "1492bd1"
+    },
+    "10.0.3" : {
+      "tag" : "v10.0.3",
+      "sha256" : "4881fcae9c9b05b9eed666e4f9e35da80fcf0678a7ce6d224f9e6ebd2604c2d6",
+      "strip_prefix" : "citusdata-citus-fcb9322",
+      "commit" : "fcb932268a3a6dd3c2229bb44119a9e0b58aca4a",
+      "short_commit" : "fcb9322"
+    },
+    "10.0.2" : {
+      "tag" : "v10.0.2",
+      "sha256" : "9c51ed7f87c998c8821bdae6a7082db800f275d314c95fc903a7af4d4c250510",
+      "strip_prefix" : "citusdata-citus-85a87af",
+      "commit" : "85a87af11c4e5159b0f00f005e00596e8c218903",
+      "short_commit" : "85a87af"
+    },
+    "10.0.1" : {
+      "tag" : "v10.0.1",
+      "sha256" : "196904a02b0de3822be46807b2715834d8ab4f3440cedde696bd0b2650ca0b19",
+      "strip_prefix" : "citusdata-citus-ca4b529",
+      "commit" : "ca4b5297519af924b16e1a234bbaabd5239339fa",
+      "short_commit" : "ca4b529"
+    },
+    "10.0.0" : {
+      "tag" : "v10.0.0",
+      "sha256" : "94575e0818bd3297a4a621de3b3709070a217360737eb872231b46ea739cd17c",
+      "strip_prefix" : "citusdata-citus-2a390b4",
+      "commit" : "2a390b4c1d7f845b63156ea2fde634922c21030c",
+      "short_commit" : "2a390b4"
+    },
+    "9.5.12" : {
+      "tag" : "v9.5.12",
+      "sha256" : "83ff2a7fcb1691c43ce61d0cf39cc60cdd3efd8f39b8a98485a2764aa23d03cb",
+      "strip_prefix" : "citusdata-citus-00cd336",
+      "commit" : "00cd336e7052f610b4f34a5a0f68965dfb467643",
+      "short_commit" : "00cd336"
+    },
+    "9.5.10" : {
+      "tag" : "v9.5.10",
+      "sha256" : "5c36b3c5dbbc948ff8b78904ae1c16709560d6a91c1cab0056bcb4d137918307",
+      "strip_prefix" : "citusdata-citus-0750cc3",
+      "commit" : "0750cc3a8e66db0bb00c8e44f746df2fec632c82",
+      "short_commit" : "0750cc3"
+    },
+    "9.5.9" : {
+      "tag" : "v9.5.9",
+      "sha256" : "b2a7d668d7554c4e891b15f1e6e4137f8f7d86bfa137e3d0f36e3cec01ba9853",
+      "strip_prefix" : "citusdata-citus-27ef29a",
+      "commit" : "27ef29a9815ed05827e8b30b8182bb93f4d32895",
+      "short_commit" : "27ef29a"
+    },
+    "9.5.8" : {
+      "tag" : "v9.5.8",
+      "sha256" : "805120bcb5039d8f563d075e0c65e7971f799d7b0452b28b985e21c726d0ddf6",
+      "strip_prefix" : "citusdata-citus-b3dd39b",
+      "commit" : "b3dd39bf8216d91c18589c33f6e472fcf318238b",
+      "short_commit" : "b3dd39b"
+    },
+    "9.5.7" : {
+      "tag" : "v9.5.7",
+      "sha256" : "2095465ade4ab61f45fe284a6d50e406a07c9de3a553b120bc559fd01c0c9341",
+      "strip_prefix" : "citusdata-citus-2090490",
+      "commit" : "209049006cd25255d403c0e06854db7ec3fd3dbc",
+      "short_commit" : "2090490"
+    },
+    "9.5.6" : {
+      "tag" : "v9.5.6",
+      "sha256" : "b8954bb18897ea1e96f1bfb71d8b8f897c615155c05971667539e282cfaa785b",
+      "strip_prefix" : "citusdata-citus-a529866",
+      "commit" : "a529866f93f2812a2ed27b046754bd96c1d832d0",
+      "short_commit" : "a529866"
+    },
+    "9.5.5" : {
+      "tag" : "v9.5.5",
+      "sha256" : "16a802ff5ef5fbd9957e2ac3651a68e0d11fb6b5a9222201eade9295ede6c597",
+      "strip_prefix" : "citusdata-citus-5ba6eda",
+      "commit" : "5ba6edaa48332499b75453bdb3ce7af56d30dc60",
+      "short_commit" : "5ba6eda"
+    },
+    "9.5.4" : {
+      "tag" : "v9.5.4",
+      "sha256" : "9e987bc7fed5d7b542761bd000cba2da0c7a5c0c0a12c61c099fc0d79e8dc4df",
+      "strip_prefix" : "citusdata-citus-cd1e706",
+      "commit" : "cd1e706acbdfdd3dbdf4276eac5394529c923096",
+      "short_commit" : "cd1e706"
+    },
+    "9.5.3" : {
+      "tag" : "v9.5.3",
+      "sha256" : "8a5663f550aaf2a4a27ffd35ef63d99dccd8e70fffb79a3915b8456bcda3a116",
+      "strip_prefix" : "citusdata-citus-1eec630",
+      "commit" : "1eec630640be0d13e53e955233c088ec23d516bd",
+      "short_commit" : "1eec630"
+    },
+    "9.5.2" : {
+      "tag" : "v9.5.2",
+      "sha256" : "5eb819dac3f5c4714e5a01b3961e33679d8d1772ec498b36962ea18ca9f73660",
+      "strip_prefix" : "citusdata-citus-5bb4bb4",
+      "commit" : "5bb4bb4b5febaf9f3ecb0bba92b6097158890408",
+      "short_commit" : "5bb4bb4"
+    },
+    "9.5.1" : {
+      "tag" : "v9.5.1",
+      "sha256" : "404f7eb0d3a45ae7333cfc26d51bc148d8953685d51609b389a4140f674828d8",
+      "strip_prefix" : "citusdata-citus-4a1255f",
+      "commit" : "4a1255fd107ce96be7784c68fbeb6448bdaa47d2",
+      "short_commit" : "4a1255f"
+    },
+    "9.5.0" : {
+      "tag" : "v9.5.0",
+      "sha256" : "1dfd7bfd5f463b814a70f0bc8cb6e6f61a7fffc92a27c9d6156f61dfe6bef0a6",
+      "strip_prefix" : "citusdata-citus-4e373fa",
+      "commit" : "4e373fadd881548b68983ebb20ea85d47ede061b",
+      "short_commit" : "4e373fa"
+    },
+    "9.4.6" : {
+      "tag" : "v9.4.6",
+      "sha256" : "c39aeea0f00b8887d4296501247d59a245a5fae72e26b08b3f275c6f8e193c37",
+      "strip_prefix" : "citusdata-citus-a9c5925",
+      "commit" : "a9c5925d2e9cd611b9ffa82ea9a4c533fedbf45c",
+      "short_commit" : "a9c5925"
+    },
+    "9.4.5" : {
+      "tag" : "v9.4.5",
+      "sha256" : "6bccdfc897ca284afe799b4b1f091f752fa69c3a0166e878fc7750e7d4a1373b",
+      "strip_prefix" : "citusdata-citus-2a17fdb",
+      "commit" : "2a17fdbb886154a5e6fc4f321495a12a45c2efb9",
+      "short_commit" : "2a17fdb"
+    },
+    "9.4.4" : {
+      "tag" : "v9.4.4",
+      "sha256" : "68990070e8e539335c7cc04147efad8286988f00236a0ec3e7b001ea99b0d0b0",
+      "strip_prefix" : "citusdata-citus-d0000a1",
+      "commit" : "d0000a15bd9729aab0a6d2815f292c54e7add8e1",
+      "short_commit" : "d0000a1"
+    },
+    "9.4.3" : {
+      "tag" : "v9.4.3",
+      "sha256" : "312fbeab6d5fd2ed2cbb94203baaad19c722e0de3cfd057f96dc2c5f0e4efbcc",
+      "strip_prefix" : "citusdata-citus-221aa1a",
+      "commit" : "221aa1a381642a9354a6c0522d49e24d8367842b",
+      "short_commit" : "221aa1a"
+    },
+    "9.4.2" : {
+      "tag" : "v9.4.2",
+      "sha256" : "0a86a5828cdb133a18ff82a9448a04910f9795b656b9f9d1d5fece7b5b1f725a",
+      "strip_prefix" : "citusdata-citus-ca2bbd8",
+      "commit" : "ca2bbd89b6ab64ef1398460862da9c912e2aa538",
+      "short_commit" : "ca2bbd8"
+    },
+    "9.4.1" : {
+      "tag" : "v9.4.1",
+      "sha256" : "85680966fb9e3ce3aa46c55e86d3e49f13af123fcd4f12ddbe2000bdcc7567cf",
+      "strip_prefix" : "citusdata-citus-6aac62e",
+      "commit" : "6aac62e84788acfd5e3a481787c0d2d715957dd3",
+      "short_commit" : "6aac62e"
+    },
+    "9.4.0" : {
+      "tag" : "v9.4.0",
+      "sha256" : "48c507aad42407a14bb64e3baa5cbe2faa622ee09531e9bf4d8302082da9c18e",
+      "strip_prefix" : "citusdata-citus-51b7b01",
+      "commit" : "51b7b01a09d957329c5cb0bc6ba54ba1ee3a0200",
+      "short_commit" : "51b7b01"
+    },
+    "9.3.5" : {
+      "tag" : "v9.3.5",
+      "sha256" : "62445083bb45a0321e12f3d5dbc29a20c7e64605f435beae0dfae067dc2eb25a",
+      "strip_prefix" : "citusdata-citus-69d0c42",
+      "commit" : "69d0c42b1e49a687932fd60d71a58a4f3e89cb33",
+      "short_commit" : "69d0c42"
+    },
+    "9.3.4" : {
+      "tag" : "v9.3.4",
+      "sha256" : "2eece66645a7db0f9e5266851168328fedd9de04bf46845396df9e79a0d3cf1b",
+      "strip_prefix" : "citusdata-citus-5bf2074",
+      "commit" : "5bf2074dce8fd094ded08a00e34f047b1ecfb4ae",
+      "short_commit" : "5bf2074"
+    },
+    "9.3.3" : {
+      "tag" : "v9.3.3",
+      "sha256" : "191cca33dbf15cc0554443e2c03cc0bab1a0be711336dbf53f6b3791235ee558",
+      "strip_prefix" : "citusdata-citus-ccb9b8f",
+      "commit" : "ccb9b8fd51cb00e0c66ff81c3e1b4dbab6f96b41",
+      "short_commit" : "ccb9b8f"
+    },
+    "9.3.2" : {
+      "tag" : "v9.3.2",
+      "sha256" : "1f53213661b569e76842fd17a2b8c1728daf340bb623036873aa3d9dc16e60e2",
+      "strip_prefix" : "citusdata-citus-4f574c1",
+      "commit" : "4f574c1712cabfb0493ba60426174aab54d389d0",
+      "short_commit" : "4f574c1"
+    },
+    "9.3.0" : {
+      "tag" : "v9.3.0",
+      "sha256" : "f2ae54676ea830c01d2d063bd77f3b42a39e62ba15f015a122a546973f118043",
+      "strip_prefix" : "citusdata-citus-95c4aed",
+      "commit" : "95c4aed73bb00d7d54ab9fc262a085a8cfbe6b62",
+      "short_commit" : "95c4aed"
+    },
+    "9.2.8" : {
+      "tag" : "v9.2.8",
+      "sha256" : "d99561ba5f868f81522f55bf79c7ca406c24cdd0b7c8ab69256e1c9bfdc82d5a",
+      "strip_prefix" : "citusdata-citus-8456363",
+      "commit" : "84563635d7ce957b9203abeb674c5622d76b7ce9",
+      "short_commit" : "8456363"
+    },
+    "9.2.7" : {
+      "tag" : "v9.2.7",
+      "sha256" : "127f789f12c7b4165c983c816b1cb11f75ec8eb54d787461c22eed174a3fb182",
+      "strip_prefix" : "citusdata-citus-ccc042a",
+      "commit" : "ccc042a9d4fb7a4da49d3fee402f11e6394ae42f",
+      "short_commit" : "ccc042a"
+    },
+    "9.2.6" : {
+      "tag" : "v9.2.6",
+      "sha256" : "d7c04328fb359d916a83b2f37039ede4b786891bc1de1d0dc4739621acb4621a",
+      "strip_prefix" : "citusdata-citus-0419d34",
+      "commit" : "0419d340b6d03108c722833640a15c5333d21036",
+      "short_commit" : "0419d34"
+    },
+    "9.2.4" : {
+      "tag" : "v9.2.4",
+      "sha256" : "60976248879afcf559890bc9c031a281c343c7b922a3019336eb49f378d6429a",
+      "strip_prefix" : "citusdata-citus-1038870",
+      "commit" : "103887024dff7fd3481ebb5fcddf4c9f7895fe30",
+      "short_commit" : "1038870"
+    },
+    "9.2.3-DO-NOT-INSTALL" : {
+      "tag" : "v9.2.3-DO-NOT-INSTALL",
+      "sha256" : "5cdd62913ef0efabb6c648f18c0545048bc1da5ecbd208953b152e3554446b4f",
+      "strip_prefix" : "citusdata-citus-36ff150",
+      "commit" : "36ff1504650f185db09fd01967b43aaccc10c147",
+      "short_commit" : "36ff150"
+    },
+    "9.2.2" : {
+      "tag" : "v9.2.2",
+      "sha256" : "d1f0bd4c780b073bc4f70603f3be1983430582b5d7c690af4a907d67bbc751ab",
+      "strip_prefix" : "citusdata-citus-f2035b9",
+      "commit" : "f2035b9f33c28beb5b9af014adf7806b7abc73c1",
+      "short_commit" : "f2035b9"
+    },
+    "9.2.1" : {
+      "tag" : "v9.2.1",
+      "sha256" : "72bfe764a4daf0bab78057031b00d55fc5e1e90e1572ff8d7f7aa89c2f2caa04",
+      "strip_prefix" : "citusdata-citus-7188574",
+      "commit" : "7188574c628ac95324b2d6b8e80a067fc6baeedd",
+      "short_commit" : "7188574"
+    },
+    "9.2.0" : {
+      "tag" : "v9.2.0",
+      "sha256" : "6c6bdf53bd01181bf7fc50e466e9e62275126237ef0732f7d1c2ee4983d091fe",
+      "strip_prefix" : "citusdata-citus-6522965",
+      "commit" : "652296596307c6981cc8db1842fb45f13c17b794",
+      "short_commit" : "6522965"
+    },
+    "9.1.2" : {
+      "tag" : "v9.1.2",
+      "sha256" : "a429fbae06d4ae1fd160b1f3574384cd72beb4504fd3b50e11362d6ee078edd5",
+      "strip_prefix" : "citusdata-citus-2d2cdbf",
+      "commit" : "2d2cdbf01c53bddccc321caf07151ec7cf54a4c8",
+      "short_commit" : "2d2cdbf"
+    },
+    "9.1.1" : {
+      "tag" : "v9.1.1",
+      "sha256" : "7e0db88c1c7b8dd1dd07a1624e18e92dfae07d952483da1829be4f766a60ba01",
+      "strip_prefix" : "citusdata-citus-9a68f4a",
+      "commit" : "9a68f4ace19c8e232b4a3696fc6b89d5450f9b3e",
+      "short_commit" : "9a68f4a"
+    },
+    "9.1.0" : {
+      "tag" : "v9.1.0",
+      "sha256" : "3824f8fb392dfe0dc6575ef2367be1cc3e0c72fbfdd91e793505e1fa84e4945d",
+      "strip_prefix" : "citusdata-citus-19f427f",
+      "commit" : "19f427f34f3bacf4e7707a79744d5d46f70f471e",
+      "short_commit" : "19f427f"
+    },
+    "9.0.2" : {
+      "tag" : "v9.0.2",
+      "sha256" : "1f8c3457c64a00b00edf3b203b9663144ddb117a90b4812e3c664c4b39cec59e",
+      "strip_prefix" : "citusdata-citus-b79743f",
+      "commit" : "b79743fd99a975a376b9118ce3f5b984784de735",
+      "short_commit" : "b79743f"
+    },
+    "9.0.1" : {
+      "tag" : "v9.0.1",
+      "sha256" : "377b0caddae76636d3a39f933eccb549b925593b99e3ab51fb3fd6b18061050e",
+      "strip_prefix" : "citusdata-citus-a853a82",
+      "commit" : "a853a824a5bc89831ca06ca3e0a54f837679824d",
+      "short_commit" : "a853a82"
+    },
+    "9.0.0" : {
+      "tag" : "v9.0.0",
+      "sha256" : "011bb9b70e9fb54e9878ded8575c03cd77967e55179cabe0fdf25e4ada27f0ff",
+      "strip_prefix" : "citusdata-citus-e760dd6",
+      "commit" : "e760dd69acd2c728e29148117136e72e9c27beeb",
+      "short_commit" : "e760dd6"
+    },
+    "8.3.3" : {
+      "tag" : "v8.3.3",
+      "sha256" : "e67920a430927d2c8747cfda9e0493e2609ae419e85b0ae2e3aaf581203cadf3",
+      "strip_prefix" : "citusdata-citus-2b6b82f",
+      "commit" : "2b6b82f6605b108030a79ffbc55d8a1c2db77a56",
+      "short_commit" : "2b6b82f"
+    },
+    "8.3.2" : {
+      "tag" : "v8.3.2",
+      "sha256" : "c3242999dc0e392b4a28c3aa56cb3a24f0e3544dc17b57efe26adb5f208dd72f",
+      "strip_prefix" : "citusdata-citus-28a8f3f",
+      "commit" : "28a8f3fb95a449bb9c762528e3f4a4d59aace642",
+      "short_commit" : "28a8f3f"
+    },
+    "8.3.1" : {
+      "tag" : "v8.3.1",
+      "sha256" : "d7390e8519c443468a9cd05da1bf02f3abd4252d43efae674718fbcaa68a8ac6",
+      "strip_prefix" : "citusdata-citus-c4e4834",
+      "commit" : "c4e4834dbbf5f2e86f2d7dd046085756630fb4a6",
+      "short_commit" : "c4e4834"
+    },
+    "8.3.0" : {
+      "tag" : "v8.3.0",
+      "sha256" : "3ea7f11f42a9ec9a807db278c70c9151abfaa23e3885b3681fa76fc67b7b5885",
+      "strip_prefix" : "citusdata-citus-c0f9eb7",
+      "commit" : "c0f9eb7e4ffabb498488fdcea159d00b5a9802fd",
+      "short_commit" : "c0f9eb7"
+    },
+    "8.2.2" : {
+      "tag" : "v8.2.2",
+      "sha256" : "e5052007f8ed33fb3dd04a61bfd9b00463ce393ced266f5a377250bc98805f6e",
+      "strip_prefix" : "citusdata-citus-482063b",
+      "commit" : "482063b8eff04ef9d2808e68ab9aff3f8491d488",
+      "short_commit" : "482063b"
+    },
+    "8.2.1" : {
+      "tag" : "v8.2.1",
+      "sha256" : "045dad0049c12353d89253b0ffdab0c2ad417473b55ef29bf0db654abf09664b",
+      "strip_prefix" : "citusdata-citus-d59b1be",
+      "commit" : "d59b1be3dd13f96d61db8655922347f1f9de5583",
+      "short_commit" : "d59b1be"
+    },
+    "8.2.0" : {
+      "tag" : "v8.2.0",
+      "sha256" : "a3a4d4551a571d3a85ed67b55536974624ed1554005443f2bb62713caf57ba98",
+      "strip_prefix" : "citusdata-citus-ba8a3a6",
+      "commit" : "ba8a3a667dfc8f4abda428da6d86923b5d757e68",
+      "short_commit" : "ba8a3a6"
+    },
+    "8.1.2" : {
+      "tag" : "v8.1.2",
+      "sha256" : "92ca41dbe2caae6d2cd36b2a282ee78e7c8c7c1b2506a69a314b34f10b22001e",
+      "strip_prefix" : "citusdata-citus-22bf55b",
+      "commit" : "22bf55b34a2b0ba9fdf66af6694f70bb64fb7e4c",
+      "short_commit" : "22bf55b"
+    },
+    "8.1.1" : {
+      "tag" : "v8.1.1",
+      "sha256" : "e7d1db08faac18f004e7cd8aa3bc35017dc5a5d2446e35fd525b771866abf205",
+      "strip_prefix" : "citusdata-citus-4d5225e",
+      "commit" : "4d5225eb305046203e048dd8b9a65ed9600fe5a9",
+      "short_commit" : "4d5225e"
+    },
+    "8.1.0" : {
+      "tag" : "v8.1.0",
+      "sha256" : "8cd78c2ab7e473955c2f5bfc4adbcb556158e84f0f122f803695de1f91d7e05d",
+      "strip_prefix" : "citusdata-citus-5877ee3",
+      "commit" : "5877ee303062c1282dab3b0f51d708d3c8d6be1d",
+      "short_commit" : "5877ee3"
+    },
+    "8.0.3" : {
+      "tag" : "v8.0.3",
+      "sha256" : "8ef79e13cfcdf4d1338c76c532b1104b1af3ef4ee3c95c0427b23766a8409aac",
+      "strip_prefix" : "citusdata-citus-20f84f2",
+      "commit" : "20f84f239608413fbada33c7b964b3d09ceddeed",
+      "short_commit" : "20f84f2"
+    },
+    "8.0.2" : {
+      "tag" : "v8.0.2",
+      "sha256" : "34b9f7afe8cdd71882ef7005f6076738f27955dfca3cad0e45febeadbf5e8068",
+      "strip_prefix" : "citusdata-citus-1e3969c",
+      "commit" : "1e3969cae1f700274a8bdee7559f56076dff4a0f",
+      "short_commit" : "1e3969c"
+    },
+    "8.0.1" : {
+      "tag" : "v8.0.1",
+      "sha256" : "213cbb91fa0521ceb038bf36ed81cac6de4e5a37e257d2e645c8f43cf24daa40",
+      "strip_prefix" : "citusdata-citus-2de7b85",
+      "commit" : "2de7b85b89194d73dad72880e4a944473d84e2d0",
+      "short_commit" : "2de7b85"
+    },
+    "8.0.0" : {
+      "tag" : "v8.0.0",
+      "sha256" : "6db35328d69c053a75c1e6d071870e3bcba10e17d81e1553645e732e8dc66274",
+      "strip_prefix" : "citusdata-citus-da0b98c",
+      "commit" : "da0b98c991c717c7f8d33399587c7994e5a26cf6",
+      "short_commit" : "da0b98c"
+    },
+    "7.5.4" : {
+      "tag" : "v7.5.4",
+      "sha256" : "6edac365a5abec61f20061dba0b4da554b58f059d1c95b4e14f360dcc6a9c65e",
+      "strip_prefix" : "citusdata-citus-b8e4c58",
+      "commit" : "b8e4c58114fafa2eb86fbf45f2084a5d62145b4f",
+      "short_commit" : "b8e4c58"
+    },
+    "7.5.3" : {
+      "tag" : "v7.5.3",
+      "sha256" : "e88b8f460c7cdcfaaaaeac45661692f42c6df2663624fdcf05b3cfe71bd95486",
+      "strip_prefix" : "citusdata-citus-79b0090",
+      "commit" : "79b009036a460557c2188964b087f66941148984",
+      "short_commit" : "79b0090"
+    },
+    "7.5.2" : {
+      "tag" : "v7.5.2",
+      "sha256" : "dba66b3e92ae624c2b435875efe060761a2bbb1b9af73824e4732926e92aa90b",
+      "strip_prefix" : "citusdata-citus-7000b4e",
+      "commit" : "7000b4e98c23e185d4cbd05799e377ef1af4b2ec",
+      "short_commit" : "7000b4e"
+    },
+    "7.5.1" : {
+      "tag" : "v7.5.1",
+      "sha256" : "f24981a2dc993464e2d372e84e6b112a1ba3f3872c43aaf77e7b0e29f9a4ad6c",
+      "strip_prefix" : "citusdata-citus-8027fdb",
+      "commit" : "8027fdbfb882686fd28e918396b0ea5d24468333",
+      "short_commit" : "8027fdb"
+    },
+    "7.5.0" : {
+      "tag" : "v7.5.0",
+      "sha256" : "3b60220bc88606cb035e4e8ed855cf57d2d4a979ec3948314cc6f605d841f11e",
+      "strip_prefix" : "citusdata-citus-00bd8bf",
+      "commit" : "00bd8bfa8ae9d8f43e917075086824b06f8c94ea",
+      "short_commit" : "00bd8bf"
+    },
+    "7.4.2" : {
+      "tag" : "v7.4.2",
+      "sha256" : "b8e94e1f3e78a0e576dcceb240d23198c0da9ad51b9be31dba663f7f694d52ab",
+      "strip_prefix" : "citusdata-citus-96dfb35",
+      "commit" : "96dfb35605a41a8a1d7f3a52c527d16ec30670aa",
+      "short_commit" : "96dfb35"
+    },
+    "7.4.1" : {
+      "tag" : "v7.4.1",
+      "sha256" : "9f36c65590bf3e2a96754a63f4076cb7542155c7f30a3e4c71610459c55a9b5c",
+      "strip_prefix" : "citusdata-citus-e494f17",
+      "commit" : "e494f172a16f9a4760af09a86a9a57dd9d3db559",
+      "short_commit" : "e494f17"
+    },
+    "7.4.0" : {
+      "tag" : "v7.4.0",
+      "sha256" : "ae941a946a3bb3a1b0f853d037303d96405c88204d6fbfc4dd0de5c9bf253d25",
+      "strip_prefix" : "citusdata-citus-05597a9",
+      "commit" : "05597a9d5c98252bade8979f00ad25bc34e055b3",
+      "short_commit" : "05597a9"
+    },
+    "7.3.0" : {
+      "tag" : "v7.3.0",
+      "sha256" : "914a06e652ce9d1f7ea3bfda4c1fe5db4f168514fa5262037d8ab616035354f2",
+      "strip_prefix" : "citusdata-citus-f1955ce",
+      "commit" : "f1955cea631738137640a4dd04a742e5ca49bf9b",
+      "short_commit" : "f1955ce"
+    },
+    "7.2.2" : {
+      "tag" : "v7.2.2",
+      "sha256" : "0baddc58560c3e0c8f3c00c8cbaafb57e096e8b0a208bdae4f22a78b04e8663f",
+      "strip_prefix" : "citusdata-citus-e8a8d30",
+      "commit" : "e8a8d300ec66605bab8e19b74dab56648d2bf072",
+      "short_commit" : "e8a8d30"
+    },
+    "7.2.1" : {
+      "tag" : "v7.2.1",
+      "sha256" : "61f3b377a19baf39c88cf58ffccd37b10c80bec588cef803d7df277d8b053489",
+      "strip_prefix" : "citusdata-citus-18b0feb",
+      "commit" : "18b0feb4f81123d91f65b7bfdceb504c44db1c94",
+      "short_commit" : "18b0feb"
+    },
+    "7.2.0" : {
+      "tag" : "v7.2.0",
+      "sha256" : "2c50c626344726759868e46e90baa8f8909bcb14e90952b8a375b6e247a937a1",
+      "strip_prefix" : "citusdata-citus-c774938",
+      "commit" : "c774938711ad305868013d54fff3f4c2fe91a40e",
+      "short_commit" : "c774938"
+    },
+    "7.1.2" : {
+      "tag" : "v7.1.2",
+      "sha256" : "a456d9191c5039343d686ad36d346f41bd2889b5cfe7d5cb2a521a3197044574",
+      "strip_prefix" : "citusdata-citus-407acc9",
+      "commit" : "407acc942ee219eebab076183707359dcd85b3ac",
+      "short_commit" : "407acc9"
+    },
+    "7.1.1" : {
+      "tag" : "v7.1.1",
+      "sha256" : "2b9cbb9cc996db2e9332ad6bdbd0586d4e9cf16a039d08e234a45a10e7768d74",
+      "strip_prefix" : "citusdata-citus-017ff3e",
+      "commit" : "017ff3e358c420af4102ade9a740c459aaa5dcb7",
+      "short_commit" : "017ff3e"
+    },
+    "7.1.0" : {
+      "tag" : "v7.1.0",
+      "sha256" : "0db4b8b0920a44a66b6307ba07f70e6fc7edbd698945d14995041180c179c63b",
+      "strip_prefix" : "citusdata-citus-e1d5143",
+      "commit" : "e1d51432ee2790a1c3270b12c7df6b1d98b0bb66",
+      "short_commit" : "e1d5143"
+    },
+    "7.0.3" : {
+      "tag" : "v7.0.3",
+      "sha256" : "6649e63ba218e20774d718e21968c09d0882bc496ad4a9589f5edfdb195b3573",
+      "strip_prefix" : "citusdata-citus-e5a156b",
+      "commit" : "e5a156ba633c8362fe5e7cecbf9ce71bde5a9b4e",
+      "short_commit" : "e5a156b"
+    },
+    "7.0.2" : {
+      "tag" : "v7.0.2",
+      "sha256" : "d1697aeac096515f85a4c91e2fa2bd9d5c9d3e61c1f4e5d43b1e6fdbb825ff34",
+      "strip_prefix" : "citusdata-citus-1f83929",
+      "commit" : "1f83929e804788034c6ca5b0d9c202e1dc34601c",
+      "short_commit" : "1f83929"
+    },
+    "7.0.1" : {
+      "tag" : "v7.0.1",
+      "sha256" : "e161059e512dbfed02abc73eafc5a9f17396db98916f5d6294e560fd28e76a3a",
+      "strip_prefix" : "citusdata-citus-4873d77",
+      "commit" : "4873d771e8c14a386692e7f456b33b90e1612c52",
+      "short_commit" : "4873d77"
+    },
+    "7.0.0" : {
+      "tag" : "v7.0.0",
+      "sha256" : "5bce6afa52a537b3ad70e3a8af6492d9ffd98afdd4c897833c91ba7a7fa4f5df",
+      "strip_prefix" : "citusdata-citus-34c6bd4",
+      "commit" : "34c6bd4b449bdbe8f4a707c0627eab2436ad46c2",
+      "short_commit" : "34c6bd4"
+    },
+    "6.2.6" : {
+      "tag" : "v6.2.6",
+      "sha256" : "c773c0e5c5bbf5a1a6474b6a19c5fe80887cc846fbbb954747a8f5ff1b13c6f5",
+      "strip_prefix" : "citusdata-citus-cba54fe",
+      "commit" : "cba54fe9a82cf2bd4109a678dfe03a291f27372c",
+      "short_commit" : "cba54fe"
+    },
+    "6.2.5" : {
+      "tag" : "v6.2.5",
+      "sha256" : "c20cee04a9f80adfdc47066f71fb97384ff1838a1f92c17fe64dcd17dbc363e0",
+      "strip_prefix" : "citusdata-citus-6001f75",
+      "commit" : "6001f753ed1cc1683cfd0307b6409280ee2fd4ba",
+      "short_commit" : "6001f75"
+    },
+    "6.2.4" : {
+      "tag" : "v6.2.4",
+      "sha256" : "31b1dc6e3556c06b38817cfb7e8fc3a35f289053d7410b325ea60ad7fa241d0f",
+      "strip_prefix" : "citusdata-citus-0ed3351",
+      "commit" : "0ed33515a1c4a65e8b77f509a784867cf73b7d3a",
+      "short_commit" : "0ed3351"
+    },
+    "6.2.3" : {
+      "tag" : "v6.2.3",
+      "sha256" : "1ce4f6a97eaa91c3cce7f82c07720759bd1655f6a67590a8b392f6d8019f7f68",
+      "strip_prefix" : "citusdata-citus-124b0f9",
+      "commit" : "124b0f9020ad083716f2376f69d8b68cc20cba73",
+      "short_commit" : "124b0f9"
+    },
+    "6.2.2" : {
+      "tag" : "v6.2.2",
+      "sha256" : "b1415c1547f303d97a19c560f314cf261bcc825f0b08bd4d2fc1cf6526e4b735",
+      "strip_prefix" : "citusdata-citus-16798e3",
+      "commit" : "16798e38f9aae74b762cbb5e53a131b78aa46628",
+      "short_commit" : "16798e3"
+    },
+    "6.2.1" : {
+      "tag" : "v6.2.1",
+      "sha256" : "527372e3b692fb06c86ae60011858b938ed4207da9740fd485a329c4633aeb9e",
+      "strip_prefix" : "citusdata-citus-aa2d2f4",
+      "commit" : "aa2d2f46f4349abd2f5c4575f8ecb7908e3f8935",
+      "short_commit" : "aa2d2f4"
+    },
+    "6.2.0" : {
+      "tag" : "v6.2.0",
+      "sha256" : "ba5d2a25544206b058e954f81d182c7bfbd9fb655f57c0cc0685ea54ef814531",
+      "strip_prefix" : "citusdata-citus-062734a",
+      "commit" : "062734a6f59cdada7bbaaaffa286e92c0b5bb6ed",
+      "short_commit" : "062734a"
+    },
+    "6.1.3" : {
+      "tag" : "v6.1.3",
+      "sha256" : "062c3db5612407a023171eb7fd6dcf7d1916e68cc1e71d729119ef00d4c32866",
+      "strip_prefix" : "citusdata-citus-4abe7f1",
+      "commit" : "4abe7f18ab98b9e8f38819b24fc515bd0f71b065",
+      "short_commit" : "4abe7f1"
+    },
+    "6.1.2" : {
+      "tag" : "v6.1.2",
+      "sha256" : "ff9d8a13e6ba091a5206de5216ea0eeb4e6ba693680db9713df9e81ec2fad189",
+      "strip_prefix" : "citusdata-citus-118fd6c",
+      "commit" : "118fd6c50484636538a5ed980e8118045a33d99b",
+      "short_commit" : "118fd6c"
+    },
+    "6.1.1" : {
+      "tag" : "v6.1.1",
+      "sha256" : "349f069e0ca37b75475d66c0cdf0dfaa29760cd665a99f0a512d3ee6e3dddbfb",
+      "strip_prefix" : "citusdata-citus-20612e3",
+      "commit" : "20612e3c6e8c38504b01c503cdc38d1bcf37b8aa",
+      "short_commit" : "20612e3"
+    },
+    "6.1.0" : {
+      "tag" : "v6.1.0",
+      "sha256" : "114cad75f6073769c39ffab8e07990cf62ca1b14fd0d1d7c90e442621ce6818b",
+      "strip_prefix" : "citusdata-citus-2d6915c",
+      "commit" : "2d6915c82a38a245ad3f414555d61dbe47a807bc",
+      "short_commit" : "2d6915c"
+    },
+    "6.1.0-rc2" : {
+      "tag" : "v6.1.0-rc2",
+      "sha256" : "da72f04633b3dbe7303591549fb259f6b733524361851200810fc986b0e0b732",
+      "strip_prefix" : "citusdata-citus-e6e5f63",
+      "commit" : "e6e5f63d9dc3da3b1cb59f8cfb76e6ffc8dbd54e",
+      "short_commit" : "e6e5f63"
+    },
+    "6.1.0-rc1" : {
+      "tag" : "v6.1.0-rc1",
+      "sha256" : "4785a75c4a07389276328f3f970ea7dc25dfece141420cff19c31ab3df2db863",
+      "strip_prefix" : "citusdata-citus-88f4956",
+      "commit" : "88f4956064f8af10229f4dea9d6abe14bd44b146",
+      "short_commit" : "88f4956"
+    },
+    "6.0.1" : {
+      "tag" : "v6.0.1",
+      "sha256" : "03f9474f8d0cb858c04576064bb8632687b21bc21cd59fe24427990f0722bf20",
+      "strip_prefix" : "citusdata-citus-1438e17",
+      "commit" : "1438e177fd38df169d7e7c0835b5d8200c2bdb37",
+      "short_commit" : "1438e17"
+    },
+    "6.0.0" : {
+      "tag" : "v6.0.0",
+      "sha256" : "c1aee867ba6e2e561d26399d8fe0f386e1b060ec5d30f578827ff0221f7902fe",
+      "strip_prefix" : "citusdata-citus-40be554",
+      "commit" : "40be5549018908e34d2d9963cafa3f03708ea947",
+      "short_commit" : "40be554"
+    },
+    "6.0.0-rc.1" : {
+      "tag" : "v6.0.0-rc.1",
+      "sha256" : "4763d86245732e4a65b6f7ad0409146011f5b926bfe4efb03b35be9e79cb6a99",
+      "strip_prefix" : "citusdata-citus-03c06a3",
+      "commit" : "03c06a3b68429cfb0dc0d7b7f446fdad44bc6db5",
+      "short_commit" : "03c06a3"
+    },
+    "5.2.2" : {
+      "tag" : "v5.2.2",
+      "sha256" : "57c6fcc76b571533bff85f237bc43a0ce1b728b2de8b3e5c5d5bb52cf753469d",
+      "strip_prefix" : "citusdata-citus-fa60208",
+      "commit" : "fa6020802615093ca4a9f8fbaa6a484fd150bddc",
+      "short_commit" : "fa60208"
+    },
+    "5.2.1" : {
+      "tag" : "v5.2.1",
+      "sha256" : "0635d620d65bb649dd5a6746a9372794fa5dfbf2f2ff0b7d56e7467f13f35847",
+      "strip_prefix" : "citusdata-citus-1b7c24a",
+      "commit" : "1b7c24a9386d1ea4813e413ddabb62c2278aecfd",
+      "short_commit" : "1b7c24a"
+    },
+    "5.2.0" : {
+      "tag" : "v5.2.0",
+      "sha256" : "46e46e2d6b6f13721a20265d98c9bce4f3aadd6e4cd095f054303ef7f0e05945",
+      "strip_prefix" : "citusdata-citus-a091353",
+      "commit" : "a091353c0c91bcb29a510251221dfb6c04828413",
+      "short_commit" : "a091353"
+    },
+    "5.2.0-rc.1" : {
+      "tag" : "v5.2.0-rc.1",
+      "sha256" : "c66222af64bec5f0f771f9c390ce6ae8cf8280381fe3651f0a180a9392d2a907",
+      "strip_prefix" : "citusdata-citus-3ff1877",
+      "commit" : "3ff187710810c34a47291bfc48ac1f52e613cb7d",
+      "short_commit" : "3ff1877"
+    },
+    "5.1.1" : {
+      "tag" : "v5.1.1",
+      "sha256" : "bc5ed10ce46e5a5abbb11d10c8243ec865a844e00645fe9f55c53fc688cc94d4",
+      "strip_prefix" : "citusdata-citus-ef86c07",
+      "commit" : "ef86c0784e82f00900bcfb7890e365ef993ace72",
+      "short_commit" : "ef86c07"
+    },
+    "5.1.0" : {
+      "tag" : "v5.1.0",
+      "sha256" : "11af3f7b50859028c288dd93b1a9cfde13cb12554900274641869ec36636a765",
+      "strip_prefix" : "citusdata-citus-242ac82",
+      "commit" : "242ac821f119df664e3e9065031f8e9f346729e2",
+      "short_commit" : "242ac82"
+    },
+    "5.1.0-rc.2" : {
+      "tag" : "v5.1.0-rc.2",
+      "sha256" : "5b17eba13d2ff254a5c5fc486d2c12b660f49f0e9128c6f4435d94b80b7131d3",
+      "strip_prefix" : "citusdata-citus-7bdfbf1",
+      "commit" : "7bdfbf1f678d38d54dba619caa222ad800540c18",
+      "short_commit" : "7bdfbf1"
+    },
+    "5.1.0-rc.1" : {
+      "tag" : "v5.1.0-rc.1",
+      "sha256" : "e37a6f94d92a14ad95994bd4dfe1a6e48e65156c81afc35198817b02890b7521",
+      "strip_prefix" : "citusdata-citus-eab60e2",
+      "commit" : "eab60e20de6fdb66efec06863232d5787d73b0a0",
+      "short_commit" : "eab60e2"
+    },
+    "5.0.1" : {
+      "tag" : "v5.0.1",
+      "sha256" : "9372b3ce3af2d1035f181ba422a37a0ac3d403b295ac93f10c078f4d9f3481b9",
+      "strip_prefix" : "citusdata-citus-342c69d",
+      "commit" : "342c69d0340a15061a9b0d83c6e2028d94c7e5e0",
+      "short_commit" : "342c69d"
+    },
+    "5.0.0" : {
+      "tag" : "v5.0.0",
+      "sha256" : "8383322cb3b2ecab9a3a0cdb9470a9b1c5d8127e86dbd255ada3d853164b5f32",
+      "strip_prefix" : "citusdata-citus-11a5aef",
+      "commit" : "11a5aef00121a0ed13530681278710cfd025b447",
+      "short_commit" : "11a5aef"
+    },
+    "5.0.0-rc.3" : {
+      "tag" : "v5.0.0-rc.3",
+      "sha256" : "82488429c1d09c892ea1383616fde3dedc1423f9892052eabaec401196b97b5a",
+      "strip_prefix" : "citusdata-citus-d9a1eae",
+      "commit" : "d9a1eaeb925d67782660c468a0832c7ebe940b54",
+      "short_commit" : "d9a1eae"
+    },
+    "5.0.0-rc.2" : {
+      "tag" : "v5.0.0-rc.2",
+      "sha256" : "d99a31d91536a5e383d7951279db554aa60b188fd7c26fdbe8f86e6469eab528",
+      "strip_prefix" : "citusdata-citus-297bd57",
+      "commit" : "297bd5768d818c8fbe3c07ca397b1f3166f582eb",
+      "short_commit" : "297bd57"
     }
   },
-  "metadata": {
-    "compatible_with": {
-      "13.2.0": "<=17"
+  "metadata" : {
+    ".control" : {
+      "9.5.9" : {
+        "default_version" : "9.5-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.8" : {
+        "default_version" : "9.5-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.7" : {
+        "default_version" : "9.5-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.6" : {
+        "default_version" : "9.5-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.5" : {
+        "default_version" : "9.5-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.4" : {
+        "default_version" : "9.5-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.3" : {
+        "default_version" : "9.5-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.2" : {
+        "default_version" : "9.5-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.12" : {
+        "default_version" : "9.5-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.10" : {
+        "default_version" : "9.5-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.1" : {
+        "default_version" : "9.5-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.5.0" : {
+        "default_version" : "9.5-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.6" : {
+        "default_version" : "9.4-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.5" : {
+        "default_version" : "9.4-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.4" : {
+        "default_version" : "9.4-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.3" : {
+        "default_version" : "9.4-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.2" : {
+        "default_version" : "9.4-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.1" : {
+        "default_version" : "9.4-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.4.0" : {
+        "default_version" : "9.4-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.3.5" : {
+        "default_version" : "9.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.3.4" : {
+        "default_version" : "9.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.3.3" : {
+        "default_version" : "9.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.3.2" : {
+        "default_version" : "9.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.3.0" : {
+        "default_version" : "9.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.8" : {
+        "default_version" : "9.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.7" : {
+        "default_version" : "9.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.6" : {
+        "default_version" : "9.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.4" : {
+        "default_version" : "9.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.3-DO-NOT-INSTALL" : {
+        "default_version" : "9.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.2" : {
+        "default_version" : "9.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.1" : {
+        "default_version" : "9.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.2.0" : {
+        "default_version" : "9.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.1.2" : {
+        "default_version" : "9.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.1.1" : {
+        "default_version" : "9.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.1.0" : {
+        "default_version" : "9.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.0.2" : {
+        "default_version" : "9.0-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.0.1" : {
+        "default_version" : "9.0-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "9.0.0" : {
+        "default_version" : "9.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.3.3" : {
+        "default_version" : "8.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.3.2" : {
+        "default_version" : "8.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.3.1" : {
+        "default_version" : "8.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.3.0" : {
+        "default_version" : "8.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.2.2" : {
+        "default_version" : "8.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.2.1" : {
+        "default_version" : "8.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.2.0" : {
+        "default_version" : "8.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.1.2" : {
+        "default_version" : "8.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.1.1" : {
+        "default_version" : "8.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.1.0" : {
+        "default_version" : "8.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.0.3" : {
+        "default_version" : "8.0-8",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.0.2" : {
+        "default_version" : "8.0-8",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.0.1" : {
+        "default_version" : "8.0-8",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "8.0.0" : {
+        "default_version" : "8.0-8",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.5.4" : {
+        "default_version" : "7.5-7",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.5.3" : {
+        "default_version" : "7.5-7",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.5.2" : {
+        "default_version" : "7.5-7",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.5.1" : {
+        "default_version" : "7.5-7",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.5.0" : {
+        "default_version" : "7.5-7",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.4.2" : {
+        "default_version" : "7.4-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.4.1" : {
+        "default_version" : "7.4-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.4.0" : {
+        "default_version" : "7.4-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.3.0" : {
+        "default_version" : "7.3-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.2.2" : {
+        "default_version" : "7.2-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.2.1" : {
+        "default_version" : "7.2-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.2.0" : {
+        "default_version" : "7.2-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.1.2" : {
+        "default_version" : "7.1-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.1.1" : {
+        "default_version" : "7.1-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.1.0" : {
+        "default_version" : "7.1-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.0.3" : {
+        "default_version" : "7.0-15",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.0.2" : {
+        "default_version" : "7.0-15",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.0.1" : {
+        "default_version" : "7.0-15",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "7.0.0" : {
+        "default_version" : "7.0-15",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.6" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.5" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.4" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.3" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.2" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.1" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.2.0" : {
+        "default_version" : "6.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.3" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.2" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.1" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.0-rc2" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.0-rc1" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.1.0" : {
+        "default_version" : "6.1-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.0.1" : {
+        "default_version" : "6.0-18",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.0.0-rc.1" : {
+        "default_version" : "6.0-17",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "6.0.0" : {
+        "default_version" : "6.0-18",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.2.2" : {
+        "default_version" : "5.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.2.1" : {
+        "default_version" : "5.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.2.0-rc.1" : {
+        "default_version" : "5.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.2.0" : {
+        "default_version" : "5.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.1.1" : {
+        "default_version" : "5.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.1.0-rc.2" : {
+        "default_version" : "5.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.1.0-rc.1" : {
+        "default_version" : "5.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.1.0" : {
+        "default_version" : "5.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.0.1" : {
+        "default_version" : "5.0",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.0.0-rc.3" : {
+        "default_version" : "5.0",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.0.0-rc.2" : {
+        "default_version" : "5.0",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "5.0.0" : {
+        "default_version" : "5.0",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "14.0.0" : {
+        "default_version" : "14.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.2.0" : {
+        "default_version" : "13.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.1.1" : {
+        "default_version" : "13.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.1.0" : {
+        "default_version" : "13.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.0.5" : {
+        "default_version" : "13.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.0.4" : {
+        "default_version" : "13.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.0.3" : {
+        "default_version" : "13.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.0.1" : {
+        "default_version" : "13.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "13.0.0" : {
+        "default_version" : "13.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.9" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.8" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.7" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.6" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.5" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.4" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.3" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.2" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.10" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.1" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.1.0" : {
+        "default_version" : "12.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.0.1" : {
+        "default_version" : "12.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "12.0.0" : {
+        "default_version" : "12.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.3.1" : {
+        "default_version" : "11.3-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.3.0" : {
+        "default_version" : "11.3-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.2.2" : {
+        "default_version" : "11.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.2.1" : {
+        "default_version" : "11.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.2.0" : {
+        "default_version" : "11.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.7" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.6" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.5" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.4" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.3" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.2" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.1" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.1.0" : {
+        "default_version" : "11.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.8" : {
+        "default_version" : "11.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.7" : {
+        "default_version" : "11.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.6" : {
+        "default_version" : "11.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.5" : {
+        "default_version" : "11.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.4" : {
+        "default_version" : "11.0-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.3" : {
+        "default_version" : "11.0-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.2" : {
+        "default_version" : "11.0-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "11.0.10" : {
+        "default_version" : "11.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.9" : {
+        "default_version" : "10.2-5",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.8" : {
+        "default_version" : "10.2-5",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.7" : {
+        "default_version" : "10.2-5",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.5" : {
+        "default_version" : "10.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.4" : {
+        "default_version" : "10.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.3" : {
+        "default_version" : "10.2-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.2" : {
+        "default_version" : "10.2-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.1" : {
+        "default_version" : "10.2-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.2.0" : {
+        "default_version" : "10.2-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.6" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.4" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.3" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.2" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.1" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.1.0" : {
+        "default_version" : "10.1-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.8" : {
+        "default_version" : "10.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.6" : {
+        "default_version" : "10.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.5" : {
+        "default_version" : "10.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.4" : {
+        "default_version" : "10.0-4",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.3" : {
+        "default_version" : "10.0-3",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.2" : {
+        "default_version" : "10.0-2",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.1" : {
+        "default_version" : "10.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      },
+      "10.0.0" : {
+        "default_version" : "10.0-1",
+        "comment" : "Citus distributed database",
+        "module_pathname" : "$libdir/citus",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false,
+        "schema" : "pg_catalog"
+      }
+    },
+    "buildtime_dependencies" : {
+      "debian13" : [ "libcurl4-openssl-dev", "libicu-dev", "libkrb5-dev", "liblz4-dev", "libssl-dev", "libzstd-dev" ]
+    },
+    "compatible_with" : {
+      "14.0.0" : ">=16, <=18",
+      "13.2.0" : ">=15, <=17"
+    },
+    "runtime_dependencies" : {
+      "debian13" : [ "libcurl4t64", "libgssapi-krb5-2", "libkrb5-3", "liblz4-1", "libssl3t64", "libzstd1" ]
     }
-  }
+  },
+  "version" : 1
 }

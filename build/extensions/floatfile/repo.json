@@ -1,0 +1,60 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pjungwir/floatfile/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.3.1" : {
+      "tag" : "v1.3.1",
+      "sha256" : "649a94b238167fd5b6cc3bf18fba8d70f43f2d314f6764c1c8067f175220e85f",
+      "strip_prefix" : "pjungwir-floatfile-5b9a618",
+      "commit" : "5b9a618f7d6ee81729d427a6f80fd65f5439d0ff",
+      "short_commit" : "5b9a618"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.3.1" : {
+        "default_version" : "1.3.1",
+        "comment" : "Simple file storage for arrays of floats",
+        "module_pathname" : "$libdir/floatfile",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    },
+    "META.json" : {
+      "1.3.1" : {
+        "name" : "floatfile",
+        "abstract" : "Simple file storage for arrays of floats",
+        "version" : "1.3.1",
+        "maintainer" : "Paul A. Jungwirth <pj@illuminatedcomputing.com>",
+        "license" : "mit",
+        "provides" : {
+          "floatfile" : {
+            "abstract" : "Simple file storage for arrays of floats",
+            "file" : "floatfile--1.3.1.sql",
+            "docfile" : "README.md",
+            "version" : "1.3.1"
+          }
+        },
+        "resources" : {
+          "repository" : {
+            "url" : "git://github.com/pjungwir/floatfile.git",
+            "web" : "https://github.com/pjungwir/floatfile",
+            "type" : "git"
+          }
+        },
+        "generated_by" : "Paul A. Jungwirth",
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "arrays", "vectors" ]
+      }
+    }
+  },
+  "version" : 1
+}

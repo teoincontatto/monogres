@@ -1,0 +1,344 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/supabase/pg_net/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.20.2" : {
+      "tag" : "v0.20.2",
+      "sha256" : "a3bb102a11e602cef5f4dc279a0d70d03d7751d7132ea7a2338a337cb01f9cb6",
+      "strip_prefix" : "supabase-pg_net-8203cb7",
+      "commit" : "8203cb72c87479d39c9e3e47ce3e493242110f83",
+      "short_commit" : "8203cb7"
+    },
+    "0.20.1" : {
+      "tag" : "v0.20.1",
+      "sha256" : "cd723ab16540565bb858aa1148ddca42153f7f98016a3fe880929aac91b16d65",
+      "strip_prefix" : "supabase-pg_net-e0e6d08",
+      "commit" : "e0e6d08c6a37dbadf688eefa39edaa584729f531",
+      "short_commit" : "e0e6d08"
+    },
+    "0.20.0" : {
+      "tag" : "v0.20.0",
+      "sha256" : "b1f225623321409e75677440e1c21a53ccef7f7febcbfba45357b09fc2c949ae",
+      "strip_prefix" : "supabase-pg_net-5a4456c",
+      "commit" : "5a4456c8d27aec412f1be5227a200664f83fb33b",
+      "short_commit" : "5a4456c"
+    },
+    "0.19.7" : {
+      "tag" : "v0.19.7",
+      "sha256" : "61f07bc19c730dc1d429f59e9b7bd83548bb0ef29d73cd0423698a005c974138",
+      "strip_prefix" : "supabase-pg_net-314d00e",
+      "commit" : "314d00e34e22378ca2b733838f96b4c179d727a9",
+      "short_commit" : "314d00e"
+    },
+    "0.19.6" : {
+      "tag" : "v0.19.6",
+      "sha256" : "0cb2a63e5c529a2300a67a91ee76604efafa560ceb4679c04ca66838aecc95a9",
+      "strip_prefix" : "supabase-pg_net-1d714e1",
+      "commit" : "1d714e1406dec466168464bbb7cbad02bc39e174",
+      "short_commit" : "1d714e1"
+    },
+    "0.19.5" : {
+      "tag" : "v0.19.5",
+      "sha256" : "855f33ecf738094a55f6ee4c89e620e12ca33d574a2b33f89d1fc730f6b62630",
+      "strip_prefix" : "supabase-pg_net-a7792bf",
+      "commit" : "a7792bfd913c7859e14025d606624982706c2a7f",
+      "short_commit" : "a7792bf"
+    },
+    "0.19.4" : {
+      "tag" : "v0.19.4",
+      "sha256" : "877b5098b8509cbeea75705623fbc7b8451b9adb2310d07f8a0c8fb346cfafd1",
+      "strip_prefix" : "supabase-pg_net-e8ec709",
+      "commit" : "e8ec7097b729ddd41bd0e11a059c2758514c58d7",
+      "short_commit" : "e8ec709"
+    },
+    "0.19.3" : {
+      "tag" : "v0.19.3",
+      "sha256" : "9bc125a00959dfea3f612b004d752ecec3f9c66808de229f4ffe91c815e0dee1",
+      "strip_prefix" : "supabase-pg_net-25a0ab8",
+      "commit" : "25a0ab8a32d278bd295b594587158aac51cf3d8d",
+      "short_commit" : "25a0ab8"
+    },
+    "0.19.2" : {
+      "tag" : "v0.19.2",
+      "sha256" : "b0e6edc07a720ee6bda98ae238afa05d7284b34deb914771184a26b8e5a62166",
+      "strip_prefix" : "supabase-pg_net-bc2421b",
+      "commit" : "bc2421bec599008fd3f112e42e015a393756615a",
+      "short_commit" : "bc2421b"
+    },
+    "0.19.1" : {
+      "tag" : "v0.19.1",
+      "sha256" : "a1772b037632cb58b445c1e45ab97d25317e548f94145a7637c586fda7f355a3",
+      "strip_prefix" : "supabase-pg_net-331d16d",
+      "commit" : "331d16d3f6446a4d30e81a5e387bf9437369f177",
+      "short_commit" : "331d16d"
+    },
+    "0.19.0" : {
+      "tag" : "v0.19.0",
+      "sha256" : "e1e28d558676b3ce1196141d0fd78911972dfd1ebee72bf4d7e0ccccb3bba588",
+      "strip_prefix" : "supabase-pg_net-dbb6d60",
+      "commit" : "dbb6d606b4d87a426b9d8ec2572e2fa7ce603878",
+      "short_commit" : "dbb6d60"
+    },
+    "0.18.0" : {
+      "tag" : "v0.18.0",
+      "sha256" : "1cfa1b1c3061bb3bef7655301841faec4a9521d23e6043006401beecb8ac9966",
+      "strip_prefix" : "supabase-pg_net-6539a2a",
+      "commit" : "6539a2a1ad1044918bcfe01398c672a8013834d0",
+      "short_commit" : "6539a2a"
+    },
+    "0.17.0" : {
+      "tag" : "v0.17.0",
+      "sha256" : "fa1114dbad3af3a9d6010d34fc203c725b71e05dfa8c231c270efab918aaf63d",
+      "strip_prefix" : "supabase-pg_net-c4c068e",
+      "commit" : "c4c068ebcd3d806538844be4f51eeb9fc5075960",
+      "short_commit" : "c4c068e"
+    },
+    "0.16.0" : {
+      "tag" : "v0.16.0",
+      "sha256" : "3b97a5d065e92c513d8a846db7632de5f7f108b0b39d450d537864ee1f5563df",
+      "strip_prefix" : "supabase-pg_net-e141cbe",
+      "commit" : "e141cbec580a6a35c91db23d6b3f3cbb634defae",
+      "short_commit" : "e141cbe"
+    },
+    "0.15.1" : {
+      "tag" : "v0.15.1",
+      "sha256" : "f7a5922cd59cefd4984c5370349eead74783408abb52c0310953d32800469b22",
+      "strip_prefix" : "supabase-pg_net-0207e64",
+      "commit" : "0207e647da951ab5b2977915ec7887de1bdaae38",
+      "short_commit" : "0207e64"
+    },
+    "0.15.0" : {
+      "tag" : "v0.15.0",
+      "sha256" : "0f78f7e24c44103d48fed7f7538cacc1159761637cc57af670aed1d190d3ebbc",
+      "strip_prefix" : "supabase-pg_net-3c25beb",
+      "commit" : "3c25beb56ad227310fd586ca41eba520457bae5c",
+      "short_commit" : "3c25beb"
+    },
+    "0.14.0" : {
+      "tag" : "v0.14.0",
+      "sha256" : "5b72c2d36e72a066d128515dadf1318c06603c9c081732afb39bf536ec25e2b5",
+      "strip_prefix" : "supabase-pg_net-9752f19",
+      "commit" : "9752f197f878c0562def4ac88c1dd2e64739d2b1",
+      "short_commit" : "9752f19"
+    },
+    "0.13.0" : {
+      "tag" : "v0.13.0",
+      "sha256" : "1fd11665a1c63c2f0dda679b6748ba1ff663d472e73eeb1a014fc59998ffaa79",
+      "strip_prefix" : "supabase-pg_net-4cf6c24",
+      "commit" : "4cf6c2465820827fc7ab2905f23970cef817d631",
+      "short_commit" : "4cf6c24"
+    },
+    "0.12.0" : {
+      "tag" : "v0.12.0",
+      "sha256" : "258eb13a888bb0f759db80155d11451b3ed5ebf7f39ac0370a85870ba4b727bb",
+      "strip_prefix" : "supabase-pg_net-1eb33d5",
+      "commit" : "1eb33d508bfc67bc7a64138142042545fc4e4650",
+      "short_commit" : "1eb33d5"
+    },
+    "0.11.0" : {
+      "tag" : "v0.11.0",
+      "sha256" : "b32145bee8c228448105ec83a1bf146e7ba6cd1218b12afeabe2cda805a8be54",
+      "strip_prefix" : "supabase-pg_net-72bc757",
+      "commit" : "72bc7570ffdea1ce8763361e554d6d0603de1db7",
+      "short_commit" : "72bc757"
+    },
+    "0.10.0" : {
+      "tag" : "v0.10.0",
+      "sha256" : "72d4a2f7e3520cc0b12af510f6c35945489b3f47d1429d4deeb4df0372556c02",
+      "strip_prefix" : "supabase-pg_net-fb98045",
+      "commit" : "fb9804544e275aeb6b564eac35318d5ed8d7275c",
+      "short_commit" : "fb98045"
+    },
+    "0.9.3" : {
+      "tag" : "v0.9.3",
+      "sha256" : "64067c537ea8f94b3cb2e800b0a08ba2843b588278dbc073033173d2516b8358",
+      "strip_prefix" : "supabase-pg_net-6cfa1c3",
+      "commit" : "6cfa1c33d0f94896b4d071ce1f1c2a0c1068a614",
+      "short_commit" : "6cfa1c3"
+    },
+    "0.9.2" : {
+      "tag" : "v0.9.2",
+      "sha256" : "13bc3d91b19491a6563d0f28cd524b03257117678378fb91bd28fa9baa24d342",
+      "strip_prefix" : "supabase-pg_net-47e3c1a",
+      "commit" : "47e3c1a82ee342df0acd1c7170fbc9a9f97609b1",
+      "short_commit" : "47e3c1a"
+    },
+    "0.9.1" : {
+      "tag" : "v0.9.1",
+      "sha256" : "4e9126aae1e4d8c08c45d1ece46e4e53b0992337491056a1a45486eeacd055f4",
+      "strip_prefix" : "supabase-pg_net-006d49e",
+      "commit" : "006d49ed7483b0ab7013c77978c2c2c304764c18",
+      "short_commit" : "006d49e"
+    },
+    "0.9.0" : {
+      "tag" : "v0.9.0",
+      "sha256" : "3cd610e21069eaac9703e1f07fa157d64c53016350db3cb33be9c1bdf3e27fc2",
+      "strip_prefix" : "supabase-pg_net-f03664b",
+      "commit" : "f03664bac01a39f28cf0cb0ae4b013794184d4e0",
+      "short_commit" : "f03664b"
+    },
+    "0.8.0" : {
+      "tag" : "v0.8.0",
+      "sha256" : "5711f97040598c07dd9ba508cbf6a48349517a37ee6e3db35426bb616a46606d",
+      "strip_prefix" : "supabase-pg_net-8d6bc83",
+      "commit" : "8d6bc83d76cef2d37e7dc50f452d62f96c20469e",
+      "short_commit" : "8d6bc83"
+    },
+    "0.7.3" : {
+      "tag" : "v0.7.3",
+      "sha256" : "590dfae954bef6739cff47f53fade343983c47fa4b92181be9140d648e10e72c",
+      "strip_prefix" : "supabase-pg_net-84a264c",
+      "commit" : "84a264cd6a530432bb80b97d17cdcaf1912197e9",
+      "short_commit" : "84a264c"
+    },
+    "0.7.2" : {
+      "tag" : "v0.7.2",
+      "sha256" : "88a62b2771eaca44467a80a0b10f39bdb73b0d9c6529531732944af6242c9be7",
+      "strip_prefix" : "supabase-pg_net-2ae8373",
+      "commit" : "2ae83739abbd3949209915938051af618196e58a",
+      "short_commit" : "2ae8373"
+    },
+    "0.7.1" : {
+      "tag" : "v0.7.1",
+      "sha256" : "a801550bdc0326a62b9cc2f07f4e0f86276d19a7cd1836b66c04a68f45abb238",
+      "strip_prefix" : "supabase-pg_net-b2a8825",
+      "commit" : "b2a88254b3e9236bf42a84ec23bd89057785bdcd",
+      "short_commit" : "b2a8825"
+    },
+    "0.7.0" : {
+      "tag" : "v0.7",
+      "sha256" : "3f8f2d7c03a51db242e12ddbcaef1a7893cf7d7df0a0e7ff081e077df24ca525",
+      "strip_prefix" : "supabase-pg_net-aa4b284",
+      "commit" : "aa4b284fac41cc280b3c3334b63a24ef33a17c26",
+      "short_commit" : "aa4b284"
+    },
+    "0.6.1" : {
+      "tag" : "v0.6.1",
+      "sha256" : "104f5ab4ad60f548f93ed0231f0250998f72796d95c36e2b396bd892cbe3be5f",
+      "strip_prefix" : "supabase-pg_net-639b049",
+      "commit" : "639b0498fd1835a59ab763c2a84a1dfe4c3a21dd",
+      "short_commit" : "639b049"
+    },
+    "0.6.0" : {
+      "tag" : "v0.6",
+      "sha256" : "3a96ea01dfdea35c008ff7cfe0d8ac0ba85d531b7cd510a0d39e9fd36dc5e537",
+      "strip_prefix" : "supabase-pg_net-6b8fcf2",
+      "commit" : "6b8fcf24a46e28bdf99cfec43d027377f1ff5f01",
+      "short_commit" : "6b8fcf2"
+    },
+    "0.5.1" : {
+      "tag" : "v0.5.1",
+      "sha256" : "d6d8f0973244b2c30dd99ea6ecc28ff46efa52dfa6a033324815a4b1546f4d41",
+      "strip_prefix" : "supabase-pg_net-f7f00c1",
+      "commit" : "f7f00c17ef41a94b6fd92986f8ed989e7e222d3e",
+      "short_commit" : "f7f00c1"
+    },
+    "0.5.0" : {
+      "tag" : "v0.5",
+      "sha256" : "835430f41f4f8efe619ec67bfded4a34e8edf44e1555a7eea5d4a7f1e358fb54",
+      "strip_prefix" : "supabase-pg_net-824b163",
+      "commit" : "824b16338fd82fb459af92a1baab8e6b292367e5",
+      "short_commit" : "824b163"
+    },
+    "0.3.0" : {
+      "tag" : "v0.3",
+      "sha256" : "cc4382dee25caa8efd67ad3f8ba7f88dbe03ba5ab643310e92d7e3bce1fe06be",
+      "strip_prefix" : "supabase-pg_net-2b6fb64",
+      "commit" : "2b6fb64d0999b0a380c9145b94546f116df44dd5",
+      "short_commit" : "2b6fb64"
+    },
+    "0.2.0" : {
+      "tag" : "v0.2",
+      "sha256" : "3fbfe8fc3909f47bbde2e8c8e502f5c12b03eba4abd341b70e2092013d9c6a65",
+      "strip_prefix" : "supabase-pg_net-5ff8b6b",
+      "commit" : "5ff8b6b6f0d61f4c2ea04e1c2967548474fcd32e",
+      "short_commit" : "5ff8b6b"
+    },
+    "0.1.0" : {
+      "tag" : "v0.1",
+      "sha256" : "f3d68ffcb5e98117618955ad265ab736f754dd02adbe17f00ef1e0cfb3a3d016",
+      "strip_prefix" : "supabase-pg_net-bedcdd8",
+      "commit" : "bedcdd89fed801a93030ea743e0861ebb6bebfa7",
+      "short_commit" : "bedcdd8"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.7.2" : {
+        "default_version" : "0.7.1",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.7.1" : {
+        "default_version" : "0.7.1",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.7.0" : {
+        "default_version" : "0.7",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.1" : {
+        "default_version" : "0.6",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.0" : {
+        "default_version" : "0.6",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.5.1" : {
+        "default_version" : "0.5.1",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.5.0" : {
+        "default_version" : "0.2",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.3.0" : {
+        "default_version" : "0.2",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.2.0" : {
+        "default_version" : "0.2",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.1.0" : {
+        "default_version" : "0.1",
+        "comment" : "Async HTTP",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

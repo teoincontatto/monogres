@@ -1,0 +1,30 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/AbdulYadi/pgqr/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "ea0a4754de03b4acff80cac80df83f8c84fef9f6bb4d4b2d95d892c1ee0338fe",
+      "strip_prefix" : "AbdulYadi-pgqr-ab55fd5",
+      "commit" : "ab55fd511724781cc42923d7d52c1956e9360fca",
+      "short_commit" : "ab55fd5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "qr code generator",
+        "module_pathname" : "$libdir/pgqr",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,71 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/Florents-Tselai/vasco/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "0.1.0" : {
+      "tag" : "v0.1.0",
+      "sha256" : "e36193829ee4fa476fecb035578f2147bff0f89d9468a0ce6dfe2840a3ccfeeb",
+      "strip_prefix" : "Florents-Tselai-vasco-fe8c366",
+      "commit" : "fe8c3660f34ecf58a32f089533f88c01b86603f6",
+      "short_commit" : "fe8c366"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "0.1.0" : {
+        "default_version" : "0.1.0",
+        "comment" : "vasco: discover hidden correlations in your data",
+        "module_pathname" : "$libdir/vasco",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    },
+    "META.json" : {
+      "0.1.0" : {
+        "name" : "vasco",
+        "abstract" : "vasco: Maximal Information Coefficient (MIC) Extension for Postgres\n",
+        "version" : "0.1.0",
+        "maintainer" : [ "Florents Tselai <florents.tselai@gmail.com>" ],
+        "license" : "gpl_2",
+        "generated_by" : "Florents Tselai",
+        "release_status" : "stable",
+        "prereqs" : {
+          "runtime" : {
+            "requires" : {
+              "PostgreSQL" : "14.0.0"
+            }
+          }
+        },
+        "provides" : {
+          "vasco" : {
+            "file" : "sql/vasco--0.1.0.sql",
+            "docfile" : "README.md",
+            "version" : "0.1.0",
+            "abstract" : "vasco: Maximal Information Coefficient (MIC) Extension for Postgres"
+          }
+        },
+        "resources" : {
+          "bugtracker" : {
+            "web" : "https://github.com/Florents-Tselai/vasco/issues"
+          },
+          "repository" : {
+            "url" : "git://github.com/Florents-Tselai/vasco.git",
+            "web" : "https://github.com/Florents-Tselai/vasco",
+            "type" : "git"
+          }
+        },
+        "meta-spec" : {
+          "version" : "1.0.0",
+          "url" : "http://pgxn.org/meta/spec.txt"
+        },
+        "tags" : [ "statistics", "correlation" ]
+      }
+    }
+  },
+  "version" : 1
+}

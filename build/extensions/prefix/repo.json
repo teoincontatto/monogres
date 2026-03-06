@@ -1,0 +1,202 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/dimitri/prefix/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.2.10" : {
+      "tag" : "v1.2.10",
+      "sha256" : "431d4bc2f4d9471ffc7dea1edecb912da0c258b9bdabce94707a5804692e0af2",
+      "strip_prefix" : "dimitri-prefix-148985b",
+      "commit" : "148985b874fe97cf5871aff4b7357728dc246314",
+      "short_commit" : "148985b"
+    },
+    "1.2.9" : {
+      "tag" : "v1.2.9",
+      "sha256" : "d4b6b5c253cc94df0eb85c7da8d287421ac72a16774bf4445a703dd7632b1c02",
+      "strip_prefix" : "dimitri-prefix-43d880c",
+      "commit" : "43d880c5470aaba4835a9cce1b3ea9ade899fd07",
+      "short_commit" : "43d880c"
+    },
+    "1.2.8" : {
+      "tag" : "v1.2.8",
+      "sha256" : "62c09c36d506c57ebaa039b90a6fe3113f7d1c8696ccf7c32d73fee1b8d7b7e3",
+      "strip_prefix" : "dimitri-prefix-e2b6aa7",
+      "commit" : "e2b6aa76b521bc864f1afb2fc552a18348398d43",
+      "short_commit" : "e2b6aa7"
+    },
+    "1.2.7" : {
+      "tag" : "v1.2.7",
+      "sha256" : "425a9b4c0f3898bcdf06bcb65066c985e2463c510de06b1d85f3edb1fd177088",
+      "strip_prefix" : "dimitri-prefix-a684f6a",
+      "commit" : "a684f6aeccf53132ae58fa2642bbdf8abbe1ba03",
+      "short_commit" : "a684f6a"
+    },
+    "1.2.6" : {
+      "tag" : "v1.2.6",
+      "sha256" : "48a480fa64ff212c32f98b6fdb85afe8b4c07690b4d124904c164c81717cee19",
+      "strip_prefix" : "dimitri-prefix-8b0a39e",
+      "commit" : "8b0a39e30c085562077c2323306c4cd0667e5e4d",
+      "short_commit" : "8b0a39e"
+    },
+    "1.2.5" : {
+      "tag" : "v1.2.5",
+      "sha256" : "db38d496d5dc16be757e1bb2e34cb8a99f431860eae89cd78e787d2431538a93",
+      "strip_prefix" : "dimitri-prefix-945431d",
+      "commit" : "945431da3c5a5ef6fd28f357356547d63e037790",
+      "short_commit" : "945431d"
+    },
+    "1.2.4" : {
+      "tag" : "v1.2.4",
+      "sha256" : "1dd6cb7a4d3642319ac2fe30adac109b6f2375377844889056546377bd07d5bd",
+      "strip_prefix" : "dimitri-prefix-069f32d",
+      "commit" : "069f32d8ee4dcb982b097ea5d1af7e5e5f13e002",
+      "short_commit" : "069f32d"
+    },
+    "1.2.3" : {
+      "tag" : "v1.2.3",
+      "sha256" : "dad023d1fb6b15d48b95c27e6f64d815468c6a1dfcfdc95c744b58b211f78138",
+      "strip_prefix" : "dimitri-prefix-8dd9486",
+      "commit" : "8dd9486757b5827c33a51c0a605d5424b097a587",
+      "short_commit" : "8dd9486"
+    },
+    "1.2.2" : {
+      "tag" : "v1.2.2",
+      "sha256" : "efab5aa649e4b6e87b03c274124cfb9701bc8f61bc10f7642b4a1f6192c8c57e",
+      "strip_prefix" : "dimitri-prefix-07dc1bd",
+      "commit" : "07dc1bd2d412f1aa74330095f3eacaf85f792b3c",
+      "short_commit" : "07dc1bd"
+    },
+    "1.2.1" : {
+      "tag" : "v1.2.1",
+      "sha256" : "cf18403ee73feed8cb562d7f440e51a49442f335e38ba2e9f07615dd72f4c6d7",
+      "strip_prefix" : "dimitri-prefix-3bb1fea",
+      "commit" : "3bb1fea14206fcb248ca24c066819ee27e24df15",
+      "short_commit" : "3bb1fea"
+    },
+    "1.2.0" : {
+      "tag" : "v1.2.0",
+      "sha256" : "b90b57288e03aa6a7682b125d7b6b674c2aba8da428ae92ef1eb632c59586cbc",
+      "strip_prefix" : "dimitri-prefix-0a83cb1",
+      "commit" : "0a83cb186adad73059f9f67a3e025a4bdda2e6ec",
+      "short_commit" : "0a83cb1"
+    },
+    "1.1.1" : {
+      "tag" : "v1.1.1",
+      "sha256" : "123917c6cfe9ace88d2d4335a800fa22c1349a214a37c1349a2c247111cfe874",
+      "strip_prefix" : "dimitri-prefix-c350837",
+      "commit" : "c350837544a9f4609017530f1472cb323659a051",
+      "short_commit" : "c350837"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0.0",
+      "sha256" : "c0fd80198a47a412d0247368b442f57880c0cc113fcd263c28fa088e61f1e726",
+      "strip_prefix" : "dimitri-prefix-a59d2a9",
+      "commit" : "a59d2a9925e53381e20ee44518cf1c7167ab9d11",
+      "short_commit" : "a59d2a9"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.2.9" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.8" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.7" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.6" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.5" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.4" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.3" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.2" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.10" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.1" : {
+        "default_version" : "1.1",
+        "comment" : "Prefix Range module for PostgreSQL",
+        "module_pathname" : "$libdir/prefix",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

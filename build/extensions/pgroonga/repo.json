@@ -1,0 +1,1665 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/pgroonga/pgroonga/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "4.0.5" : {
+      "tag" : "4.0.5",
+      "sha256" : "2c948511714f5c7e0f51777ebe9eeeace272be5f4934253d8ae52eda9750da2a",
+      "strip_prefix" : "pgroonga-pgroonga-15c8ed3",
+      "commit" : "15c8ed3e00c65577e71071a9f1e408c9237f39e3",
+      "short_commit" : "15c8ed3"
+    },
+    "4.0.4" : {
+      "tag" : "4.0.4",
+      "sha256" : "b5fa787300a2d516143aaf29baaded8cb32271436152a87e09751bf65a5329a7",
+      "strip_prefix" : "pgroonga-pgroonga-ce46bfe",
+      "commit" : "ce46bfe8d1f0803574e1a14998821f06e0bec4de",
+      "short_commit" : "ce46bfe"
+    },
+    "4.0.3" : {
+      "tag" : "4.0.3",
+      "sha256" : "d4c53abf1f7422a19302b14d3a85cb4834f62fceb8240005554f3d7b07f382e7",
+      "strip_prefix" : "pgroonga-pgroonga-7c64958",
+      "commit" : "7c64958bbb958f4cfdcb1dc015200f2eb74572ee",
+      "short_commit" : "7c64958"
+    },
+    "4.0.2" : {
+      "tag" : "4.0.2",
+      "sha256" : "f19f3f3b36d3d3ff2a2a94069ebe4c775972c28ab85538412436840c378c5f49",
+      "strip_prefix" : "pgroonga-pgroonga-27806f4",
+      "commit" : "27806f4459a17c8d81a75a023e8d9458a5fccb21",
+      "short_commit" : "27806f4"
+    },
+    "4.0.1" : {
+      "tag" : "4.0.1",
+      "sha256" : "67bd0cd983c1466133237039381fac7441a14a10c2c10d8279204180222a3f87",
+      "strip_prefix" : "pgroonga-pgroonga-92c46a3",
+      "commit" : "92c46a327eb4a504cb49afbf3578263c84d9abea",
+      "short_commit" : "92c46a3"
+    },
+    "4.0.0" : {
+      "tag" : "4.0.0",
+      "sha256" : "1fe2a7e885ee4d9afd844fd3057f63d2e6970cc9089840c365b6108f8aeb0a9f",
+      "strip_prefix" : "pgroonga-pgroonga-b778fa3",
+      "commit" : "b778fa35ad3a6456bb9e1ca0657e03ed13a38b52",
+      "short_commit" : "b778fa3"
+    },
+    "3.2.5" : {
+      "tag" : "3.2.5",
+      "sha256" : "f3e26149e922b419371f2532db0687f8ed673bf1bed43eb4ed84a184e13ef522",
+      "strip_prefix" : "pgroonga-pgroonga-bd4797b",
+      "commit" : "bd4797be1f030a883cd18afb0ca5654da73e3255",
+      "short_commit" : "bd4797b"
+    },
+    "3.2.4" : {
+      "tag" : "3.2.4",
+      "sha256" : "8267ad00247853f9f120f06082d14db8f5b3a638de7b88f18c0a02b18b844ea1",
+      "strip_prefix" : "pgroonga-pgroonga-6319855",
+      "commit" : "6319855f6e7c68475378f5c2b9221efc93ccfee0",
+      "short_commit" : "6319855"
+    },
+    "3.2.3" : {
+      "tag" : "3.2.3",
+      "sha256" : "54d054e36b3696c9112d1e7806c11269a02c885e4b37a409d7ea8f762727a685",
+      "strip_prefix" : "pgroonga-pgroonga-cab1d41",
+      "commit" : "cab1d41af5d38604d914f97f7c9670d27931eb8f",
+      "short_commit" : "cab1d41"
+    },
+    "3.2.2" : {
+      "tag" : "3.2.2",
+      "sha256" : "a3993499cc59c777d8b9ddc4c07e2835e2928b2a2058196958633dd8dfde469c",
+      "strip_prefix" : "pgroonga-pgroonga-b7715b7",
+      "commit" : "b7715b79ba1cd852eb77cc0e68b1d9ac4ee92f35",
+      "short_commit" : "b7715b7"
+    },
+    "3.2.1" : {
+      "tag" : "3.2.1",
+      "sha256" : "c6f66f1bc27fd93591dfb442a65c0d8b04e8d0f26dbcf7b94a20cbf4cc10c682",
+      "strip_prefix" : "pgroonga-pgroonga-5fba18e",
+      "commit" : "5fba18ef778d88433dabdf38dfcb2e5d63cfb14b",
+      "short_commit" : "5fba18e"
+    },
+    "3.2.0" : {
+      "tag" : "3.2.0",
+      "sha256" : "4550e9dddd8e71b67832ec1077051d291fb1f080a2d22f8c9ba80ca9873ce8c3",
+      "strip_prefix" : "pgroonga-pgroonga-500f184",
+      "commit" : "500f1848505bb4ec66f99e2e4ea48db7ef44a332",
+      "short_commit" : "500f184"
+    },
+    "3.1.9" : {
+      "tag" : "3.1.9",
+      "sha256" : "0224718af79bef91c1d64c1240d41e780354dbd3bca4f93621557e3963b887af",
+      "strip_prefix" : "pgroonga-pgroonga-9aa9c9f",
+      "commit" : "9aa9c9fb1ae57b5ac40bd5133a1dc9d0cac06db3",
+      "short_commit" : "9aa9c9f"
+    },
+    "3.1.8" : {
+      "tag" : "3.1.8",
+      "sha256" : "87fddf978b141b9855a4ea1753a29ba654033ce5216eeee3794635d2bbf5d50a",
+      "strip_prefix" : "pgroonga-pgroonga-f15428a",
+      "commit" : "f15428a73eb87ea476dcccc6545a0b7735eed0b0",
+      "short_commit" : "f15428a"
+    },
+    "3.1.7" : {
+      "tag" : "3.1.7",
+      "sha256" : "afae381f3d4cc39ca3973d545d192f7ac5f7ccb4909c2cd3faedcc620a19d60b",
+      "strip_prefix" : "pgroonga-pgroonga-6c8f371",
+      "commit" : "6c8f37161d5e582c2369286755e2c21121ffdaaf",
+      "short_commit" : "6c8f371"
+    },
+    "3.1.6" : {
+      "tag" : "3.1.6",
+      "sha256" : "93a2bf2c3138a4f62c26c556eed8491c4112a3fc3fa62846236b8fc196599baa",
+      "strip_prefix" : "pgroonga-pgroonga-76beb4b",
+      "commit" : "76beb4b006c73154218446d0349790dc62e32fcf",
+      "short_commit" : "76beb4b"
+    },
+    "3.1.5" : {
+      "tag" : "3.1.5",
+      "sha256" : "8af27926202fd363ce97a2bbf73bb55e8d56feedf719f66212a36e1a92daf67b",
+      "strip_prefix" : "pgroonga-pgroonga-7f605ef",
+      "commit" : "7f605ef09082652205418a8ab9d9156178a6475a",
+      "short_commit" : "7f605ef"
+    },
+    "3.1.4" : {
+      "tag" : "3.1.4",
+      "sha256" : "1ef4389e489acd6c251a6519f9ee6e6eea22b55f2a2133a3ef19356c4a48c2db",
+      "strip_prefix" : "pgroonga-pgroonga-20a9080",
+      "commit" : "20a90809667019c1a582b4f9ad54c165f1ee71a4",
+      "short_commit" : "20a9080"
+    },
+    "3.1.3" : {
+      "tag" : "3.1.3",
+      "sha256" : "c51915f00b14d135d9ba45f17404806010f2ae7e2d9bfdb1cb005a36993a3530",
+      "strip_prefix" : "pgroonga-pgroonga-d02a205",
+      "commit" : "d02a205fcbe4275693ec317c5205630cbece871c",
+      "short_commit" : "d02a205"
+    },
+    "3.1.2" : {
+      "tag" : "3.1.2",
+      "sha256" : "2d0b2bcc54b87dac7f381c13d76d7c7654d2daa9940f5d382d9bd9506ec4846e",
+      "strip_prefix" : "pgroonga-pgroonga-cc693ab",
+      "commit" : "cc693ab2b346361503c469b9364f016cdc526e6f",
+      "short_commit" : "cc693ab"
+    },
+    "3.1.1" : {
+      "tag" : "3.1.1",
+      "sha256" : "9983af6f5491c39a8ed7cebe69e845ffb2cca60c994ba5991adf0893f398c7ae",
+      "strip_prefix" : "pgroonga-pgroonga-2a6ed81",
+      "commit" : "2a6ed81e415d1d66bebd1b7a65bf0c599f1e0329",
+      "short_commit" : "2a6ed81"
+    },
+    "3.1.0" : {
+      "tag" : "3.1.0",
+      "sha256" : "17a521bdb505677403ce853f96a3338e6eacae211503778778660269386cc22e",
+      "strip_prefix" : "pgroonga-pgroonga-f24bb81",
+      "commit" : "f24bb81e02a7fbfecbb5f85d8e04172152c69be1",
+      "short_commit" : "f24bb81"
+    },
+    "3.0.9" : {
+      "tag" : "3.0.9",
+      "sha256" : "213d669535881a8ed2f363a036f1465b08ae336bf8470b176cb7c8cc2618e9da",
+      "strip_prefix" : "pgroonga-pgroonga-a994259",
+      "commit" : "a9942593c017251a37d013285209975156352455",
+      "short_commit" : "a994259"
+    },
+    "3.0.8" : {
+      "tag" : "3.0.8",
+      "sha256" : "20ae535e0a23c6f040ff2f18ea8d04abf1af7365543e6fd4970e90a34ed3f973",
+      "strip_prefix" : "pgroonga-pgroonga-23ef860",
+      "commit" : "23ef86058e120dd1254a6de5b9ee987071422baa",
+      "short_commit" : "23ef860"
+    },
+    "3.0.7" : {
+      "tag" : "3.0.7",
+      "sha256" : "9b7d24d681a187abe1a2a5316579dab229385ddd9f1440d9f51fd8e1f08cda91",
+      "strip_prefix" : "pgroonga-pgroonga-986e5cd",
+      "commit" : "986e5cd167c7c91e67e5904aab9cd0e85bc98641",
+      "short_commit" : "986e5cd"
+    },
+    "3.0.6" : {
+      "tag" : "3.0.6",
+      "sha256" : "796b4739e917bf6782ef91f6e0100af8a3b9ef66f5e02daef1cd3105b8cdc29c",
+      "strip_prefix" : "pgroonga-pgroonga-2642fb3",
+      "commit" : "2642fb3b60ce3545a72ede9bfdc8de23586fd1da",
+      "short_commit" : "2642fb3"
+    },
+    "3.0.5" : {
+      "tag" : "3.0.5",
+      "sha256" : "e8c7370cb1de8b6e19777ad83a5bc9f73d3ccd4bdeb70cd153558acd215d4ef3",
+      "strip_prefix" : "pgroonga-pgroonga-48350c4",
+      "commit" : "48350c4caa6a0aa71bdd600b50a22edf1b81b611",
+      "short_commit" : "48350c4"
+    },
+    "3.0.4" : {
+      "tag" : "3.0.4",
+      "sha256" : "105ed279c51c19708c3699379a0c3a6375fc77b4e2c691454a1a227ea09a1578",
+      "strip_prefix" : "pgroonga-pgroonga-c301d91",
+      "commit" : "c301d91d1bcffb92482a0b0d18e7212a5ac778a4",
+      "short_commit" : "c301d91"
+    },
+    "3.0.3" : {
+      "tag" : "3.0.3",
+      "sha256" : "da5f278e4d77743b7550adb5087e0f19a51755b06cb7f12f460cc0204e5f9dcf",
+      "strip_prefix" : "pgroonga-pgroonga-127d22f",
+      "commit" : "127d22fc2ec920dea88e710915e3a93a6ba62dfc",
+      "short_commit" : "127d22f"
+    },
+    "3.0.2" : {
+      "tag" : "3.0.2",
+      "sha256" : "35efc2a54eab7bc9d1c51139f0105cc07c12bcd804ed1f2cee9c2beba8aebcad",
+      "strip_prefix" : "pgroonga-pgroonga-050d885",
+      "commit" : "050d8852d8a8add514972f17e6c01d82196b6be1",
+      "short_commit" : "050d885"
+    },
+    "3.0.1" : {
+      "tag" : "3.0.1",
+      "sha256" : "7c4a124cf820f81ba768bc35a0ef31826738cbdbf533a9bc653888e9494a6355",
+      "strip_prefix" : "pgroonga-pgroonga-64c8967",
+      "commit" : "64c89672b35646c5cc679d23d2cb49a7d934690f",
+      "short_commit" : "64c8967"
+    },
+    "3.0.0" : {
+      "tag" : "3.0.0",
+      "sha256" : "0f4a0a62c8ee698b2531d40a8c8ba0f49153add606f1b2fb0b66efb7747b8ea4",
+      "strip_prefix" : "pgroonga-pgroonga-5b3b0b9",
+      "commit" : "5b3b0b9f76476a0ff46cb6a1974a3528e624210c",
+      "short_commit" : "5b3b0b9"
+    },
+    "2.4.7" : {
+      "tag" : "2.4.7",
+      "sha256" : "4d1d9ccc2faa94a3b1a5114996010ef5b49b24c76ad679f189a74a0268f9f7e0",
+      "strip_prefix" : "pgroonga-pgroonga-89beaff",
+      "commit" : "89beaffff430c31678aadbed6959bc9184af3dc8",
+      "short_commit" : "89beaff"
+    },
+    "2.4.6" : {
+      "tag" : "2.4.6",
+      "sha256" : "dd1b32ceb1889b3d910a4b32f17a426036863bac93a6cfd24ed00160decc7e33",
+      "strip_prefix" : "pgroonga-pgroonga-97e1eba",
+      "commit" : "97e1ebad86ba200f3460b5376224ba0878865478",
+      "short_commit" : "97e1eba"
+    },
+    "2.4.5" : {
+      "tag" : "2.4.5",
+      "sha256" : "f0123222fe0a5f5105622a6a05aad8675a2fc7ae6d0656b55771d66c1e2b7986",
+      "strip_prefix" : "pgroonga-pgroonga-8c891f4",
+      "commit" : "8c891f4b74e1151fb4f75e06b3d5eb8146236198",
+      "short_commit" : "8c891f4"
+    },
+    "2.4.4" : {
+      "tag" : "2.4.4",
+      "sha256" : "d5fb0f41427370ecff67eaf2e53d19d79a464a18138a66d62f8db7a2c0f5a220",
+      "strip_prefix" : "pgroonga-pgroonga-ba92c45",
+      "commit" : "ba92c4537ba047c88cd2607a61cf0002646f4bff",
+      "short_commit" : "ba92c45"
+    },
+    "2.4.3" : {
+      "tag" : "2.4.3",
+      "sha256" : "5049cc366262355e6b4855f3082f4d6f3d11867b17a4395ebb28705ba7a3fbd6",
+      "strip_prefix" : "pgroonga-pgroonga-3b3dca4",
+      "commit" : "3b3dca4b0ea66d4c30db2402046404784de5e69a",
+      "short_commit" : "3b3dca4"
+    },
+    "2.4.2" : {
+      "tag" : "2.4.2",
+      "sha256" : "99de5d4414b603ceff90445cfdf0f870be1b5a6ef452fec0f06cd86cbdfa3263",
+      "strip_prefix" : "pgroonga-pgroonga-24c804d",
+      "commit" : "24c804d664f2528ae07324a81f23092e510a1020",
+      "short_commit" : "24c804d"
+    },
+    "2.4.1" : {
+      "tag" : "2.4.1",
+      "sha256" : "1d1245176ddd8275a4ab5aa7ae49322d36bf3a56714d64ad93f6080e7040772e",
+      "strip_prefix" : "pgroonga-pgroonga-70e0125",
+      "commit" : "70e0125d4871caf1731bef9fc7b87be7187e9a6e",
+      "short_commit" : "70e0125"
+    },
+    "2.4.0" : {
+      "tag" : "2.4.0",
+      "sha256" : "efe29e586e0229ebb45aa64cbcd578bd8f0a5b70194d3acd3ca9475be93be535",
+      "strip_prefix" : "pgroonga-pgroonga-f87d7e4",
+      "commit" : "f87d7e455027a2f7688be1e2371804703d678ff0",
+      "short_commit" : "f87d7e4"
+    },
+    "2.3.9" : {
+      "tag" : "2.3.9",
+      "sha256" : "0f07028b9132c1c7c75eeacd792b39ec6b7817e726189f429a86bfc2ca7251cc",
+      "strip_prefix" : "pgroonga-pgroonga-f9bab4a",
+      "commit" : "f9bab4a5630fe4775fb6f3cd215f0747a84228e5",
+      "short_commit" : "f9bab4a"
+    },
+    "2.3.8" : {
+      "tag" : "2.3.8",
+      "sha256" : "cf5da971cf2720bbd32ea5e4f26ea748597a2731b439ae36b18761c0d3e63481",
+      "strip_prefix" : "pgroonga-pgroonga-e2dfdac",
+      "commit" : "e2dfdac3c1dd5e29b32b3895f0a0c61d0c962370",
+      "short_commit" : "e2dfdac"
+    },
+    "2.3.7" : {
+      "tag" : "2.3.7",
+      "sha256" : "2a6442970a2e8e0d06ed90faf225a8801bdf7f6f9b7a5461d0a82a316d9515bf",
+      "strip_prefix" : "pgroonga-pgroonga-aedbaff",
+      "commit" : "aedbaff1673656fdacfe5b511f7b3af41d213f32",
+      "short_commit" : "aedbaff"
+    },
+    "2.3.6" : {
+      "tag" : "2.3.6",
+      "sha256" : "6564c342b1c6f35822be46a8046d10edfd1f31973c9793b2fce36b672b62aca0",
+      "strip_prefix" : "pgroonga-pgroonga-f8bb86c",
+      "commit" : "f8bb86cba05c452c86b9c13cb22304e000dbc3d1",
+      "short_commit" : "f8bb86c"
+    },
+    "2.3.5" : {
+      "tag" : "2.3.5",
+      "sha256" : "4cfb16aa77e8d337d29c41c276974fcf4f5d91fd8a55f3e358ffdc56bc46f1fa",
+      "strip_prefix" : "pgroonga-pgroonga-75577a6",
+      "commit" : "75577a68d57d863a6fe79f924b54eb0d1ecc374d",
+      "short_commit" : "75577a6"
+    },
+    "2.3.4" : {
+      "tag" : "2.3.4",
+      "sha256" : "69f6bdf05949a8a240ffbf2d38dce3721ce15b1fbc867a0b1445868113de0df4",
+      "strip_prefix" : "pgroonga-pgroonga-a11325e",
+      "commit" : "a11325e72299d3954d2d11199d707ed008c113ef",
+      "short_commit" : "a11325e"
+    },
+    "2.3.3" : {
+      "tag" : "2.3.3",
+      "sha256" : "d1ad808a26c67d14aab401b55cba2497544ca19f6e137d3f302f0ef3940f3bb8",
+      "strip_prefix" : "pgroonga-pgroonga-9a2d5da",
+      "commit" : "9a2d5da4be651f749f4d17cdf81f9ff7912a7a68",
+      "short_commit" : "9a2d5da"
+    },
+    "2.3.2" : {
+      "tag" : "2.3.2",
+      "sha256" : "ed76623ec58764e490b3731a01dfd0f664788a1d4227a3a325586ef089097482",
+      "strip_prefix" : "pgroonga-pgroonga-eedfc45",
+      "commit" : "eedfc4562c74c8ce0f01ed41a65755cdd10e8666",
+      "short_commit" : "eedfc45"
+    },
+    "2.3.1" : {
+      "tag" : "2.3.1",
+      "sha256" : "a0376415724b42be51ff3346de9e8b6090a8a8cbf84f3311ce7819e5f82ee920",
+      "strip_prefix" : "pgroonga-pgroonga-a5e04cd",
+      "commit" : "a5e04cde089f7b1fb32529bcc2a50c0167bc3c66",
+      "short_commit" : "a5e04cd"
+    },
+    "2.3.0" : {
+      "tag" : "2.3.0",
+      "sha256" : "0f24a61045f46af82cb06863faa66c32adfcb7e0d029afc1c1831bb71990035f",
+      "strip_prefix" : "pgroonga-pgroonga-e81d64d",
+      "commit" : "e81d64d58382d6413522ce3846e32edb49e05408",
+      "short_commit" : "e81d64d"
+    },
+    "2.2.9" : {
+      "tag" : "2.2.9",
+      "sha256" : "369c4238bb5e646c9d1b0c52bcd66ee9bc12e57c091618b12d19a57fd7e2910e",
+      "strip_prefix" : "pgroonga-pgroonga-fb47654",
+      "commit" : "fb476543b38857042f4e5fd5733f1c38eb021837",
+      "short_commit" : "fb47654"
+    },
+    "2.2.8" : {
+      "tag" : "2.2.8",
+      "sha256" : "0140a8bd888ca62360908d5da8c6fec5a5f01362cbcb49aecdf688ec9f5d8421",
+      "strip_prefix" : "pgroonga-pgroonga-497ef55",
+      "commit" : "497ef5581edbd8620c5244ef66f8620e24c0d39e",
+      "short_commit" : "497ef55"
+    },
+    "2.2.7" : {
+      "tag" : "2.2.7",
+      "sha256" : "ee2639d84562780ea332e7f0c23bb270b8f77d3e50d4d293e86ca00e3ddd047e",
+      "strip_prefix" : "pgroonga-pgroonga-75a98d5",
+      "commit" : "75a98d50e80f5cd0c91010e9a496fe1c4f3ab74c",
+      "short_commit" : "75a98d5"
+    },
+    "2.2.6" : {
+      "tag" : "2.2.6",
+      "sha256" : "52e70b37a4e04aa2a8989af6908fc117fa20600d45e5ed9dedc5c98abca528d2",
+      "strip_prefix" : "pgroonga-pgroonga-bf5b615",
+      "commit" : "bf5b6157d46151284bdb12689fc34631b25b7a65",
+      "short_commit" : "bf5b615"
+    },
+    "2.2.5" : {
+      "tag" : "2.2.5",
+      "sha256" : "acea99f39144d3de0da0ed1b0d225a2bf1daeef0bd8de8561d393ea5d4fabfe9",
+      "strip_prefix" : "pgroonga-pgroonga-2e37560",
+      "commit" : "2e375604b4ad0f8a35bcb465196932eb108035a5",
+      "short_commit" : "2e37560"
+    },
+    "2.2.4" : {
+      "tag" : "2.2.4",
+      "sha256" : "2ec5ea62e966eb225154743c2ed0955eaf4d28fbd8803b2317b4f6ba994d10aa",
+      "strip_prefix" : "pgroonga-pgroonga-6ef3b5f",
+      "commit" : "6ef3b5f3ff7319aa49af7b528cf12db7ece805eb",
+      "short_commit" : "6ef3b5f"
+    },
+    "2.2.3" : {
+      "tag" : "2.2.3",
+      "sha256" : "28042bd0820be7831cab56edf9817d2bf3562fc3be1735e8f98924ca52fa87a5",
+      "strip_prefix" : "pgroonga-pgroonga-f172284",
+      "commit" : "f17228475feb22b0dba4aa1aa870f8962615b7da",
+      "short_commit" : "f172284"
+    },
+    "2.2.2" : {
+      "tag" : "2.2.2",
+      "sha256" : "4b5f950c946d022e89ed0dfb079033df2c71523c7c6f047bff4051e890a25e9b",
+      "strip_prefix" : "pgroonga-pgroonga-4491a83",
+      "commit" : "4491a831d617147a04b119517be8976d909c4872",
+      "short_commit" : "4491a83"
+    },
+    "2.2.1" : {
+      "tag" : "2.2.1",
+      "sha256" : "9c7d7ca6c181db7b2468c5b2b5392993374fe1cdc822ee9dcf029846eafdedfa",
+      "strip_prefix" : "pgroonga-pgroonga-0c52440",
+      "commit" : "0c52440ce659211f1f14805b055362965470c082",
+      "short_commit" : "0c52440"
+    },
+    "2.2.0" : {
+      "tag" : "2.2.0",
+      "sha256" : "776479cc639d74c5e5b6b835ca6376219c32c5ef7a41034bbedc3080c95f8553",
+      "strip_prefix" : "pgroonga-pgroonga-fbf7331",
+      "commit" : "fbf733115c1261c868ee9fd37e1326553f222290",
+      "short_commit" : "fbf7331"
+    },
+    "2.1.9" : {
+      "tag" : "2.1.9",
+      "sha256" : "187346fda09d20d980fbf6971af7a358152bc7d768b8ac739cfa4d89844d132a",
+      "strip_prefix" : "pgroonga-pgroonga-22a486b",
+      "commit" : "22a486b97293901831bf10390454294e74af17a8",
+      "short_commit" : "22a486b"
+    },
+    "2.1.8" : {
+      "tag" : "2.1.8",
+      "sha256" : "3c43e3c948d538266b46ce4859652b2b46fab229d1d252008d78bb6b6f1b1e1d",
+      "strip_prefix" : "pgroonga-pgroonga-4630375",
+      "commit" : "4630375f7a95cc598953529b13aec26b9bcea27c",
+      "short_commit" : "4630375"
+    },
+    "2.1.7" : {
+      "tag" : "2.1.7",
+      "sha256" : "27f30226a387ea92100be383b401a74600f35920be1e0ac633ab2d2180eb19ba",
+      "strip_prefix" : "pgroonga-pgroonga-22b616a",
+      "commit" : "22b616ab352d07d80f5fdc32c7454f6e0d1d6645",
+      "short_commit" : "22b616a"
+    },
+    "2.1.6" : {
+      "tag" : "2.1.6",
+      "sha256" : "f0d780d9766ace8d89c103994522f391cefef6da07aa70c5e0a773d865d1278d",
+      "strip_prefix" : "pgroonga-pgroonga-e6af62e",
+      "commit" : "e6af62ed811a2745fc638289c5bf0fc6752ee6fa",
+      "short_commit" : "e6af62e"
+    },
+    "2.1.4" : {
+      "tag" : "2.1.4",
+      "sha256" : "bb2b5646d491a06bb99e472950facc2c817639e36d0a202c8b4948282800dc84",
+      "strip_prefix" : "pgroonga-pgroonga-9eeb62b",
+      "commit" : "9eeb62bc953d40befae99c2db2e4263238fdf4dd",
+      "short_commit" : "9eeb62b"
+    },
+    "2.1.3" : {
+      "tag" : "2.1.3",
+      "sha256" : "180002d4f46bc4e687c8ecebe7220be1a78dc2db8bf76278425a54b86066e81d",
+      "strip_prefix" : "pgroonga-pgroonga-8e6f444",
+      "commit" : "8e6f44472a44a7760bf5edbb84ab52da343baa15",
+      "short_commit" : "8e6f444"
+    },
+    "2.1.2" : {
+      "tag" : "2.1.2",
+      "sha256" : "4dfe148fec51ed81b31dfe967880069a431f430d20b14186bdd6f90d5f04b651",
+      "strip_prefix" : "pgroonga-pgroonga-49c4668",
+      "commit" : "49c466877ecc8e30dd9777db64a046604aa5eb81",
+      "short_commit" : "49c4668"
+    },
+    "2.1.1" : {
+      "tag" : "2.1.1",
+      "sha256" : "d66919e1b7fba57cbe26496426985771dae1f8bac127f6628c791233cb52ef6b",
+      "strip_prefix" : "pgroonga-pgroonga-7484e0c",
+      "commit" : "7484e0cdc450754a440e1ec16f4a3ba11248bd6c",
+      "short_commit" : "7484e0c"
+    },
+    "2.1.0" : {
+      "tag" : "2.1.0",
+      "sha256" : "93e1fc93d4b73ce0adde8c1d4e31643243be3584d2e25c53034c87a5fa246273",
+      "strip_prefix" : "pgroonga-pgroonga-7e8c9ba",
+      "commit" : "7e8c9ba99382b2c96fc243d94baf8a9f035bc265",
+      "short_commit" : "7e8c9ba"
+    },
+    "2.0.9" : {
+      "tag" : "2.0.9",
+      "sha256" : "4dd46d16d28cb19002543b59a2a75d27e843145907fbe463d07e0850ee864f38",
+      "strip_prefix" : "pgroonga-pgroonga-c7c8edd",
+      "commit" : "c7c8edd23cfb7a7d1f667dd7a83fe9ff8b4953df",
+      "short_commit" : "c7c8edd"
+    },
+    "2.0.8" : {
+      "tag" : "2.0.8",
+      "sha256" : "3dbdef1774dd251615acf43106577a0b77c984f5d433672d06ebc5850dbdc6bd",
+      "strip_prefix" : "pgroonga-pgroonga-0c206ef",
+      "commit" : "0c206ef326ddd58db20fde6ea2fc78362b4e907d",
+      "short_commit" : "0c206ef"
+    },
+    "2.0.7" : {
+      "tag" : "2.0.7",
+      "sha256" : "57f113067fc987879e7190c23ba302d2ab3c68377390769b97ab02a311e41c89",
+      "strip_prefix" : "pgroonga-pgroonga-773791d",
+      "commit" : "773791d35d84e1e27cfd5462dda52c855c43d77b",
+      "short_commit" : "773791d"
+    },
+    "2.0.6" : {
+      "tag" : "2.0.6",
+      "sha256" : "d4ac64405d51c28d772efa779ac686e21a41573d02d4d60c7907f4bf1d5ec405",
+      "strip_prefix" : "pgroonga-pgroonga-33590bf",
+      "commit" : "33590bf841b258d635abc82229bad4f2daad73b1",
+      "short_commit" : "33590bf"
+    },
+    "2.0.5" : {
+      "tag" : "2.0.5",
+      "sha256" : "d55f6e9348bcfdc94019135a6c41201da235ede707ad848bfb3da2ee23fbebf2",
+      "strip_prefix" : "pgroonga-pgroonga-ca0f775",
+      "commit" : "ca0f7754e9824b35802b38d6a45638e02283876d",
+      "short_commit" : "ca0f775"
+    },
+    "2.0.4" : {
+      "tag" : "2.0.4",
+      "sha256" : "476cc8eba37d08be37efbb86b9bb8d305cf65f673669cdbc2507e96525ff37f1",
+      "strip_prefix" : "pgroonga-pgroonga-03cd523",
+      "commit" : "03cd523002b5a51b8b803186b9af99a39771e8a4",
+      "short_commit" : "03cd523"
+    },
+    "2.0.3" : {
+      "tag" : "2.0.3",
+      "sha256" : "3bcd2163c853a9bece7ad84ec3c3e4a32ad35ea8ba16bee3405d21bf243ea1fa",
+      "strip_prefix" : "pgroonga-pgroonga-a8f7a1b",
+      "commit" : "a8f7a1b460b8a3ace7c21f78067d6665ba3c1dae",
+      "short_commit" : "a8f7a1b"
+    },
+    "2.0.2" : {
+      "tag" : "2.0.2",
+      "sha256" : "310edeadbd4d2e14689568fc11c78884c8bbf7572eb0fcc3f9ec99b0d32fd39e",
+      "strip_prefix" : "pgroonga-pgroonga-fab6c94",
+      "commit" : "fab6c942074ec1ab99635e2b4c6ecfe20da5956a",
+      "short_commit" : "fab6c94"
+    },
+    "2.0.1" : {
+      "tag" : "2.0.1",
+      "sha256" : "56042f9707e8a3ee3f5e2667945a7b74dec6cb1fd38af46681404ce7c61fe5d0",
+      "strip_prefix" : "pgroonga-pgroonga-9ac1d5b",
+      "commit" : "9ac1d5bb14023ede612aec425d561923a484a46d",
+      "short_commit" : "9ac1d5b"
+    },
+    "2.0.0" : {
+      "tag" : "2.0.0",
+      "sha256" : "9295c249779ccbb636de2144cf25f9e05a4f56819b1856c9fafee55ed0360e05",
+      "strip_prefix" : "pgroonga-pgroonga-389a13b",
+      "commit" : "389a13bedb9d1aef2271cd1158d13868b4e58b17",
+      "short_commit" : "389a13b"
+    },
+    "1.2.3" : {
+      "tag" : "1.2.3",
+      "sha256" : "98ab1ef352123abb262b05c012124c97d1625f43fcd12f2f4040b58d250d933b",
+      "strip_prefix" : "pgroonga-pgroonga-9420e56",
+      "commit" : "9420e56bfc9523cf01ce6192c96f406f2c6db2ab",
+      "short_commit" : "9420e56"
+    },
+    "1.2.1" : {
+      "tag" : "1.2.1",
+      "sha256" : "cf068b38715b5e8d6b7f340acd3e34715411c67c11ddb721137cc41c71ee59dc",
+      "strip_prefix" : "pgroonga-pgroonga-59fa6c2",
+      "commit" : "59fa6c2fb38b4ac3ff292b73703855fc0b21ff4f",
+      "short_commit" : "59fa6c2"
+    },
+    "1.2.0" : {
+      "tag" : "1.2.0",
+      "sha256" : "a392881b87151099ba776859432d04a25d87571d477fe06d52880347a7105197",
+      "strip_prefix" : "pgroonga-pgroonga-57e6637",
+      "commit" : "57e66373c157425f14673b1fdf58d9f24e7fc322",
+      "short_commit" : "57e6637"
+    },
+    "1.1.9" : {
+      "tag" : "1.1.9",
+      "sha256" : "98928ecd2a89f2d88cfb66ca5ac01b308ed5ccdc13a854f64bb462a289d2d3cc",
+      "strip_prefix" : "pgroonga-pgroonga-92c94a6",
+      "commit" : "92c94a6bca33b0308441eaa076813d51108d5ef2",
+      "short_commit" : "92c94a6"
+    },
+    "1.1.8" : {
+      "tag" : "1.1.8",
+      "sha256" : "137dcf848f14adef77de989bb883646ccbdceb8d400ffbb2bc34b2a801b592b8",
+      "strip_prefix" : "pgroonga-pgroonga-3777d97",
+      "commit" : "3777d97a70fa03f4377e4096743a84ef85ef031d",
+      "short_commit" : "3777d97"
+    },
+    "1.1.7" : {
+      "tag" : "1.1.7",
+      "sha256" : "88b2ffdf2814abc128c9e1e137d6cdb79b775cdb1622c10073e25b4f4c85fe67",
+      "strip_prefix" : "pgroonga-pgroonga-9d4012e",
+      "commit" : "9d4012e51f41aed0e600ac182ff00669f1847ca8",
+      "short_commit" : "9d4012e"
+    },
+    "1.1.6" : {
+      "tag" : "1.1.6",
+      "sha256" : "b78c3773bfdae8e6252bcc7db00f4a92264a98f3426ada2c62ce8dfb610f4d1f",
+      "strip_prefix" : "pgroonga-pgroonga-4709ec9",
+      "commit" : "4709ec95a6b0ef356839be6a156bf607b29a6d58",
+      "short_commit" : "4709ec9"
+    },
+    "1.1.5" : {
+      "tag" : "1.1.5",
+      "sha256" : "dd3e3a00e9c0ad12d525d6c229bde6fc2170cf39f467615c4ddb916bbb8288aa",
+      "strip_prefix" : "pgroonga-pgroonga-e9ed10b",
+      "commit" : "e9ed10b7611233704181aa7fb3d33d5e03f47e35",
+      "short_commit" : "e9ed10b"
+    },
+    "1.1.4" : {
+      "tag" : "1.1.4",
+      "sha256" : "9a597c92d5a04f58f07cf061450867f09c1d19594e08f2cb480a64bf94f31a8a",
+      "strip_prefix" : "pgroonga-pgroonga-969b2dd",
+      "commit" : "969b2ddf278ebf33b07fe2ce5a86418e5106dc6c",
+      "short_commit" : "969b2dd"
+    },
+    "1.1.3" : {
+      "tag" : "1.1.3",
+      "sha256" : "842105d5c7d6c34cfce515572a48763861ff1a60cbfdf5aea3154d69c3111343",
+      "strip_prefix" : "pgroonga-pgroonga-dc8bb09",
+      "commit" : "dc8bb092185bfae1a492ea964540aed8b900c2ca",
+      "short_commit" : "dc8bb09"
+    },
+    "1.1.2" : {
+      "tag" : "1.1.2",
+      "sha256" : "bc84636281b915b96456cc46d9f10501bc3f912200c553c316c1057ecc128302",
+      "strip_prefix" : "pgroonga-pgroonga-ff45276",
+      "commit" : "ff452764e03f35fd5bce60396eccb59c19090bd1",
+      "short_commit" : "ff45276"
+    },
+    "1.1.1" : {
+      "tag" : "1.1.1",
+      "sha256" : "ee0bc7a2f6d62d39d216d5ca15bca10d7f4ce383506b8d090e6713cbb8d1d443",
+      "strip_prefix" : "pgroonga-pgroonga-f14e1c4",
+      "commit" : "f14e1c4748944832e9921172fe1919ddf92adac3",
+      "short_commit" : "f14e1c4"
+    },
+    "1.1.0" : {
+      "tag" : "1.1.0",
+      "sha256" : "abb642433047158b36972c3d214e0c34ae74058d5913e742758c38435ce0f0f4",
+      "strip_prefix" : "pgroonga-pgroonga-8618e03",
+      "commit" : "8618e03ff76cb6fa5535f2b3d248805bd058db48",
+      "short_commit" : "8618e03"
+    },
+    "1.0.9" : {
+      "tag" : "1.0.9",
+      "sha256" : "a9398ad20f92ac0848b36ad2ed8ac7d71fc20a75c9a9b3020cc8e87c848626f4",
+      "strip_prefix" : "pgroonga-pgroonga-57f9f2c",
+      "commit" : "57f9f2cab9bc1b9d90066cea49054e1ff1cbb4ad",
+      "short_commit" : "57f9f2c"
+    },
+    "1.0.8" : {
+      "tag" : "1.0.8",
+      "sha256" : "1cd33b9d888ce61a00feb28dc3e7ad4d89fee55e43ffb982772889cfcdb1da47",
+      "strip_prefix" : "pgroonga-pgroonga-4959868",
+      "commit" : "49598683f65aa9349324b6ee6c5115513d7d66f5",
+      "short_commit" : "4959868"
+    },
+    "1.0.7" : {
+      "tag" : "1.0.7",
+      "sha256" : "d33381a808a69362cf94d8099e1c340d97f9cdd8f8e63ee022a321b80e273cca",
+      "strip_prefix" : "pgroonga-pgroonga-fd1baf4",
+      "commit" : "fd1baf41fb41ea3b7299624cbc33f7e357de67a7",
+      "short_commit" : "fd1baf4"
+    },
+    "1.0.6" : {
+      "tag" : "1.0.6",
+      "sha256" : "ab6a7810ad2b4046e3fae0c5c262802a3927c4772e2dced280c857af81b0127a",
+      "strip_prefix" : "pgroonga-pgroonga-4b70384",
+      "commit" : "4b70384d63ddbd6f4d8c3eb96d6455f64bfd6fc6",
+      "short_commit" : "4b70384"
+    },
+    "1.0.5" : {
+      "tag" : "1.0.5",
+      "sha256" : "abe1a90056f9bd5bb784f5d86446d53fbdc1bd7bc877ab1c992c0b8036622f46",
+      "strip_prefix" : "pgroonga-pgroonga-d559342",
+      "commit" : "d55934297dfa899e978a5f4143c301ca040d5371",
+      "short_commit" : "d559342"
+    },
+    "1.0.4" : {
+      "tag" : "1.0.4",
+      "sha256" : "714bc49231a2e74e54c4c8653968d15151789a69833b909aaea7f1894f1408b4",
+      "strip_prefix" : "pgroonga-pgroonga-387e401",
+      "commit" : "387e40158f0a94d19bfe71a3e3d1eb91663556b0",
+      "short_commit" : "387e401"
+    },
+    "1.0.3" : {
+      "tag" : "1.0.3",
+      "sha256" : "0974c2d294240b77c2cd6714964a875b2c9b7150d44d8f5ecab4366158fd210c",
+      "strip_prefix" : "pgroonga-pgroonga-30768e4",
+      "commit" : "30768e4f895d0c772f8d50fa542b1f240abd0933",
+      "short_commit" : "30768e4"
+    },
+    "1.0.2" : {
+      "tag" : "1.0.2",
+      "sha256" : "8cb8bfefb6d7243ed76c2e988a1ec8a3cfc321fc1e44e3d017822525678be184",
+      "strip_prefix" : "pgroonga-pgroonga-3fdebcb",
+      "commit" : "3fdebcb84e3a3308edf204847595848ae66135cc",
+      "short_commit" : "3fdebcb"
+    },
+    "1.0.1" : {
+      "tag" : "1.0.1",
+      "sha256" : "e0b9e3fda34c2e4381e85de57d4cb26e48892fc1fe8eda620813bc8ecde011e0",
+      "strip_prefix" : "pgroonga-pgroonga-9a0272b",
+      "commit" : "9a0272b84d105280c2d5bc09c8caf4f82c4789c4",
+      "short_commit" : "9a0272b"
+    },
+    "1.0.0" : {
+      "tag" : "1.0.0",
+      "sha256" : "1a120d803a2fa8badce1bc1917f8d7775244a920d64dfc06a2a38e9970b0b1db",
+      "strip_prefix" : "pgroonga-pgroonga-9e95f23",
+      "commit" : "9e95f23bef5c3d5429d7ed9803bc98559462c256",
+      "short_commit" : "9e95f23"
+    },
+    "0.9.0" : {
+      "tag" : "0.9.0",
+      "sha256" : "250a87e69d05ab0a5595f15aa02c58ec94d5506375225fd4c8c7957c15a221d6",
+      "strip_prefix" : "pgroonga-pgroonga-1ccc94e",
+      "commit" : "1ccc94e3355e5cd63e2d6fac303d165a85c553e7",
+      "short_commit" : "1ccc94e"
+    },
+    "0.8.0" : {
+      "tag" : "0.8.0",
+      "sha256" : "06b2ab7486620f7d1fcaad7f106de88419a352ee48c0ca3e8830b2cb476cd23e",
+      "strip_prefix" : "pgroonga-pgroonga-d5467ac",
+      "commit" : "d5467acd9e384b9ef374854d693febf2e92b5103",
+      "short_commit" : "d5467ac"
+    },
+    "0.7.0" : {
+      "tag" : "0.7.0",
+      "sha256" : "f58cb9b9def3d716c3e6e4ebc9487454d4b1605130e86e64eff3c6fa2e307714",
+      "strip_prefix" : "pgroonga-pgroonga-0901fc2",
+      "commit" : "0901fc28f42087ca4f27ce9a77652a7c75c4ffab",
+      "short_commit" : "0901fc2"
+    },
+    "0.6.0" : {
+      "tag" : "0.6.0",
+      "sha256" : "967cac13bec94deb705b078717631fb913cf5cec1447933ba513648d06cd9b3b",
+      "strip_prefix" : "pgroonga-pgroonga-9f57bf8",
+      "commit" : "9f57bf88f4e7a1609739db3cd54d5084b03ed133",
+      "short_commit" : "9f57bf8"
+    },
+    "0.5.0" : {
+      "tag" : "0.5.0",
+      "sha256" : "abc068e55cfb4149cfc8b304c14855e6ccbf0c222c3e560f5c9005ac57322333",
+      "strip_prefix" : "pgroonga-pgroonga-ed3d5bd",
+      "commit" : "ed3d5bdd6e041a3a13c59f482113d7bef5e41aac",
+      "short_commit" : "ed3d5bd"
+    },
+    "0.4.0" : {
+      "tag" : "0.4.0",
+      "sha256" : "47b030a74f5747416d033533503e4bbf716c61ba7eb0ea141d1eb1c377dee944",
+      "strip_prefix" : "pgroonga-pgroonga-8c41ba7",
+      "commit" : "8c41ba71d9f70349b468fedb46a715f3639d9257",
+      "short_commit" : "8c41ba7"
+    },
+    "0.3.0" : {
+      "tag" : "0.3.0",
+      "sha256" : "6211a0d309f9ec67f249cc58aa241008c05c4184e3e5923a090e847c3a46f4ad",
+      "strip_prefix" : "pgroonga-pgroonga-2dd84a1",
+      "commit" : "2dd84a1c62e395d6dc4420d75f1ecc7bcbb45ea8",
+      "short_commit" : "2dd84a1"
+    },
+    "0.2.0" : {
+      "tag" : "0.2.0",
+      "sha256" : "543adedf11b5bf1a248fa631a8439e5c4b7492ec794629e9776228133ff7007f",
+      "strip_prefix" : "pgroonga-pgroonga-435da89",
+      "commit" : "435da8991279525a2d1e3141b87e6247f199d94b",
+      "short_commit" : "435da89"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "4.0.5" : {
+        "default_version" : "4.0.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.4" : {
+        "default_version" : "4.0.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.3" : {
+        "default_version" : "4.0.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.2" : {
+        "default_version" : "4.0.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.1" : {
+        "default_version" : "4.0.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "4.0.0" : {
+        "default_version" : "4.0.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.5" : {
+        "default_version" : "3.2.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.4" : {
+        "default_version" : "3.2.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.3" : {
+        "default_version" : "3.2.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.2" : {
+        "default_version" : "3.2.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.1" : {
+        "default_version" : "3.2.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.2.0" : {
+        "default_version" : "3.2.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.9" : {
+        "default_version" : "3.1.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.8" : {
+        "default_version" : "3.1.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.7" : {
+        "default_version" : "3.1.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.6" : {
+        "default_version" : "3.1.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.5" : {
+        "default_version" : "3.1.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.4" : {
+        "default_version" : "3.1.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.3" : {
+        "default_version" : "3.1.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.2" : {
+        "default_version" : "3.1.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.1" : {
+        "default_version" : "3.1.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.1.0" : {
+        "default_version" : "3.1.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.9" : {
+        "default_version" : "3.0.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.8" : {
+        "default_version" : "3.0.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.7" : {
+        "default_version" : "3.0.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.6" : {
+        "default_version" : "3.0.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.5" : {
+        "default_version" : "3.0.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.4" : {
+        "default_version" : "3.0.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.3" : {
+        "default_version" : "3.0.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.2" : {
+        "default_version" : "3.0.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.1" : {
+        "default_version" : "3.0.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "3.0.0" : {
+        "default_version" : "3.0.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.7" : {
+        "default_version" : "2.4.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.6" : {
+        "default_version" : "2.4.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.5" : {
+        "default_version" : "2.4.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.4" : {
+        "default_version" : "2.4.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.3" : {
+        "default_version" : "2.4.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.2" : {
+        "default_version" : "2.4.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.1" : {
+        "default_version" : "2.4.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.4.0" : {
+        "default_version" : "2.4.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.9" : {
+        "default_version" : "2.3.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.8" : {
+        "default_version" : "2.3.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.7" : {
+        "default_version" : "2.3.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.6" : {
+        "default_version" : "2.3.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.5" : {
+        "default_version" : "2.3.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.4" : {
+        "default_version" : "2.3.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.3" : {
+        "default_version" : "2.3.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.2" : {
+        "default_version" : "2.3.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.1" : {
+        "default_version" : "2.3.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.3.0" : {
+        "default_version" : "2.3.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.9" : {
+        "default_version" : "2.2.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.8" : {
+        "default_version" : "2.2.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.7" : {
+        "default_version" : "2.2.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.6" : {
+        "default_version" : "2.2.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.5" : {
+        "default_version" : "2.2.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.4" : {
+        "default_version" : "2.2.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.3" : {
+        "default_version" : "2.2.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.2" : {
+        "default_version" : "2.2.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.1" : {
+        "default_version" : "2.2.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.2.0" : {
+        "default_version" : "2.2.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.9" : {
+        "default_version" : "2.1.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.8" : {
+        "default_version" : "2.1.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.7" : {
+        "default_version" : "2.1.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.6" : {
+        "default_version" : "2.1.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.4" : {
+        "default_version" : "2.1.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.3" : {
+        "default_version" : "2.1.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.2" : {
+        "default_version" : "2.1.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.1" : {
+        "default_version" : "2.1.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.1.0" : {
+        "default_version" : "2.1.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.9" : {
+        "default_version" : "2.0.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.8" : {
+        "default_version" : "2.0.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.7" : {
+        "default_version" : "2.0.7",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.6" : {
+        "default_version" : "2.0.6",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.5" : {
+        "default_version" : "2.0.5",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.4" : {
+        "default_version" : "2.0.4",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.3" : {
+        "default_version" : "2.0.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.2" : {
+        "default_version" : "2.0.2",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.1" : {
+        "default_version" : "2.0.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "2.0.0" : {
+        "default_version" : "2.0.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.3" : {
+        "default_version" : "1.2.3",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.1" : {
+        "default_version" : "1.2.1",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.2.0" : {
+        "default_version" : "1.2.0",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.9" : {
+        "default_version" : "1.1.9",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.8" : {
+        "default_version" : "1.1.8",
+        "comment" : "Super fast and all languages supported full text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.7" : {
+        "default_version" : "1.1.7",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.6" : {
+        "default_version" : "1.1.6",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.5" : {
+        "default_version" : "1.1.5",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.4" : {
+        "default_version" : "1.1.4",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.3" : {
+        "default_version" : "1.1.3",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.2" : {
+        "default_version" : "1.1.2",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.1" : {
+        "default_version" : "1.1.1",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.1.0" : {
+        "default_version" : "1.1.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.9" : {
+        "default_version" : "1.0.9",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.8" : {
+        "default_version" : "1.0.8",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.7" : {
+        "default_version" : "1.0.7",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.6" : {
+        "default_version" : "1.0.6",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.5" : {
+        "default_version" : "1.0.5",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.4" : {
+        "default_version" : "1.0.4",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.3" : {
+        "default_version" : "1.0.3",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.2" : {
+        "default_version" : "1.0.2",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.1" : {
+        "default_version" : "1.0.1",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "1.0.0" : {
+        "default_version" : "1.0.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.9.0" : {
+        "default_version" : "0.9.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.8.0" : {
+        "default_version" : "0.8.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.7.0" : {
+        "default_version" : "0.7.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.6.0" : {
+        "default_version" : "0.6.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.5.0" : {
+        "default_version" : "0.5.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.4.0" : {
+        "default_version" : "0.4.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.3.0" : {
+        "default_version" : "0.3.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      },
+      "0.2.0" : {
+        "default_version" : "0.2.0",
+        "comment" : "CJK-ready fast full-text search index based on Groonga",
+        "module_pathname" : "$libdir/pgroonga",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : false
+      }
+    }
+  },
+  "version" : 1
+}

@@ -38,6 +38,7 @@ def _new(name, versions, pg_targets, repo_name, buildtime_dependencies = None, r
           - `default`: the default `pgext_target` (the first target)
     """
     dependencies = (metadata or {}).get("dependencies", [])
+    test_dependencies = (metadata or {}).get("test_dependencies", [])
 
     targets = [
         struct(
@@ -50,6 +51,7 @@ def _new(name, versions, pg_targets, repo_name, buildtime_dependencies = None, r
             buildtime_dependencies = buildtime_dependencies or [],
             runtime_dependencies = runtime_dependencies or [],
             dependencies = dependencies,
+            test_dependencies = test_dependencies,
         )
         for version in versions
         for pg_target in pg_targets

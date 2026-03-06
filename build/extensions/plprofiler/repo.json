@@ -1,0 +1,240 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/bigsql/plprofiler/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "4.2.5" : {
+      "tag" : "REL4_2_5",
+      "sha256" : "55d1b7b8f89013329f5451d705f0aa8bd6ac4485b31414759ac0060e7e1c5cba",
+      "strip_prefix" : "bigsql-plprofiler-92c4d4a",
+      "commit" : "92c4d4af1823b4e56740dd2c07d68f53c4188de4",
+      "short_commit" : "92c4d4a"
+    },
+    "4.2.4" : {
+      "tag" : "REL4_2_4",
+      "sha256" : "244d997d43371e8c9c71721d822838a70d672d09bfef10b23099abcb4d6349c5",
+      "strip_prefix" : "bigsql-plprofiler-e15bca2",
+      "commit" : "e15bca2a48d3ef31aee4911ee0342d36e981df47",
+      "short_commit" : "e15bca2"
+    },
+    "4.2.3" : {
+      "tag" : "REL4_2_3",
+      "sha256" : "7b20bce6322e8d7aa0a1710fb3d8a6e3fd5d4cacd35bf7a2a2a62dd3b4a77501",
+      "strip_prefix" : "bigsql-plprofiler-34b0527",
+      "commit" : "34b052720b52e6323d3423f3e703c353034dbced",
+      "short_commit" : "34b0527"
+    },
+    "4.2.2" : {
+      "tag" : "REL4_2_2",
+      "sha256" : "7b20bce6322e8d7aa0a1710fb3d8a6e3fd5d4cacd35bf7a2a2a62dd3b4a77501",
+      "strip_prefix" : "bigsql-plprofiler-34b0527",
+      "commit" : "34b052720b52e6323d3423f3e703c353034dbced",
+      "short_commit" : "34b0527"
+    },
+    "4.2.1" : {
+      "tag" : "REL4_2_1",
+      "sha256" : "fd947472d876ce9c8a6c5903f5c237282b354843979a36ac115b9a03164150b7",
+      "strip_prefix" : "bigsql-plprofiler-88f0a24",
+      "commit" : "88f0a244a0364ade97a18b966c447ee0c2e04f78",
+      "short_commit" : "88f0a24"
+    },
+    "4.2.0" : {
+      "tag" : "REL4_2",
+      "sha256" : "de37b68f95c9545bbc0b24dc917dcc708ec3b82d9269d1fcb5d66dbe6deeb8af",
+      "strip_prefix" : "bigsql-plprofiler-ca1b9e1",
+      "commit" : "ca1b9e16f96006a28b37139a34a312341135c3c0",
+      "short_commit" : "ca1b9e1"
+    },
+    "4.1.0" : {
+      "tag" : "REL4_1",
+      "sha256" : "58a694919daae3b648b31f998871ac21873867e7b8abe7b101dd0da95cc58ed6",
+      "strip_prefix" : "bigsql-plprofiler-bdb799e",
+      "commit" : "bdb799e0bfd6bb0cf10466d2fa42b2844f3f05fe",
+      "short_commit" : "bdb799e"
+    },
+    "4.0.0" : {
+      "tag" : "REL4_0",
+      "sha256" : "9f53ca1a0aeeaf6fc5300348fed7ce2cc1f219ef3f87cd42abaa00d788770621",
+      "strip_prefix" : "bigsql-plprofiler-58a8738",
+      "commit" : "58a873856d0e1f307e8d37c4367352612db4633a",
+      "short_commit" : "58a8738"
+    },
+    "3.5.0" : {
+      "tag" : "REL3_5",
+      "sha256" : "2dae2eba99537ba56406c8dc70a37f9cad19369c48cfb7e9e17c83e5f8b70379",
+      "strip_prefix" : "bigsql-plprofiler-694595a",
+      "commit" : "694595abba5978edda509250ae128d1900c6ff3b",
+      "short_commit" : "694595a"
+    },
+    "3.4.0" : {
+      "tag" : "REL3_4",
+      "sha256" : "0916717710a3d8037c9cd334a636f83db1ed99eacf458073fb1587f638e7fcdd",
+      "strip_prefix" : "bigsql-plprofiler-c42403d",
+      "commit" : "c42403dab8c8f463054670ff56daf73ea89a70d8",
+      "short_commit" : "c42403d"
+    },
+    "3.2.0" : {
+      "tag" : "REL3_2",
+      "sha256" : "e9204351516a53c99ef5c00b530d1cf6b55e7e17550136f3a6b4e09312953d5a",
+      "strip_prefix" : "bigsql-plprofiler-380a6e1",
+      "commit" : "380a6e19d5a7397d06eea9bfcfbc87777933e61a",
+      "short_commit" : "380a6e1"
+    },
+    "3.1.0" : {
+      "tag" : "REL3_1",
+      "sha256" : "9456919cecfff708f57c87e62291118bd49973a1b1d673b940f1433b52f7d915",
+      "strip_prefix" : "bigsql-plprofiler-fd05b00",
+      "commit" : "fd05b0005ec29c14a01717e6a5e0dacc716289bf",
+      "short_commit" : "fd05b00"
+    },
+    "3.0.0" : {
+      "tag" : "REL3_0",
+      "sha256" : "199757ba53aed5be3d449c459216c4f65c82132bb5c093ff87c249d7d0836df5",
+      "strip_prefix" : "bigsql-plprofiler-36bf07f",
+      "commit" : "36bf07f8851468ace1caaf06934d19fad0292d3d",
+      "short_commit" : "36bf07f"
+    },
+    "1.0.1" : {
+      "tag" : "REL1_0_1",
+      "sha256" : "ea34b24547c8b4513c22636510e17cbe418b40916366c0f9bc6f8eb32dd196c9",
+      "strip_prefix" : "bigsql-plprofiler-ae78c3e",
+      "commit" : "ae78c3e646665854d255f7d83ca8657a2fec2a79",
+      "short_commit" : "ae78c3e"
+    },
+    "1.0.0" : {
+      "tag" : "REL1_0_0",
+      "sha256" : "e25f859a18551ce5152819ac8afe089176520d838c7cdd7fa0234801fb784239",
+      "strip_prefix" : "bigsql-plprofiler-db11ca5",
+      "commit" : "db11ca5e4bb5914074d41787b3901d11b91626ba",
+      "short_commit" : "db11ca5"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "4.2.5" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.2.4" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.2.3" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.2.2" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.2.1" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.2.0" : {
+        "default_version" : "4.2",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.1.0" : {
+        "default_version" : "4.1",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "4.0.0" : {
+        "default_version" : "4.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.5.0" : {
+        "default_version" : "3.5",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.4.0" : {
+        "default_version" : "3.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.2.0" : {
+        "default_version" : "3.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.1.0" : {
+        "default_version" : "3.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "3.0.0" : {
+        "default_version" : "3.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.1" : {
+        "default_version" : "1.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "server-side support for profiling PL/pgSQL functions",
+        "module_pathname" : "$libdir/plprofiler",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

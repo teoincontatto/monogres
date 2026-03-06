@@ -1,0 +1,60 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/RafiaSabih/pg_auth_mon/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "3.0.0" : {
+      "tag" : "v3.0",
+      "sha256" : "1549d463e4761b9cc0041bcd0cd9326eb9a2da40a18af9eb1fd88e8db323f8ca",
+      "strip_prefix" : "RafiaSabih-pg_auth_mon-cdab237",
+      "commit" : "cdab237c11c98dc81dbe7bdfb2c07a80e0336640",
+      "short_commit" : "cdab237"
+    },
+    "2.0.0" : {
+      "tag" : "v2.0",
+      "sha256" : "461f65b95f3f94eed2f33bdd6ac6eed7f720fbcaee68c23f0b03b631ab04a5da",
+      "strip_prefix" : "RafiaSabih-pg_auth_mon-b10818c",
+      "commit" : "b10818cae5445beca71229ba08c07329c4082d68",
+      "short_commit" : "b10818c"
+    },
+    "1.0.0" : {
+      "tag" : "v1.0",
+      "sha256" : "738ab096979a7f2e063b5c8da43ed5511f0df32d5189db885121d3b1916e552a",
+      "strip_prefix" : "RafiaSabih-pg_auth_mon-8a57226",
+      "commit" : "8a572266125922915b42d30cdaa709006828766b",
+      "short_commit" : "8a57226"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "3.0.0" : {
+        "default_version" : "1.1",
+        "comment" : "monitor connection attempts per user",
+        "module_pathname" : "$libdir/pg_auth_mon",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "1.1",
+        "comment" : "monitor connection attempts per user",
+        "module_pathname" : "$libdir/pg_auth_mon",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "monitor connection attempts per user",
+        "module_pathname" : "$libdir/pg_auth_mon",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

@@ -1,0 +1,195 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/df7cb/pg_dirtyread/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "2.7.0" : {
+      "tag" : "2.7",
+      "sha256" : "e5f128aa0cdcd756cf9fe72392fae691ec9616f20a7848b5d8f42f1b3029869f",
+      "strip_prefix" : "df7cb-pg_dirtyread-3e48547",
+      "commit" : "3e48547c79278efc238651e8b1e52c0e16f35912",
+      "short_commit" : "3e48547"
+    },
+    "2.6.0" : {
+      "tag" : "2.6",
+      "sha256" : "23899691647f651dcdd33cdcd9e8355dae14a6fe7341d479c22d5dcd6179e13b",
+      "strip_prefix" : "df7cb-pg_dirtyread-f3c89f4",
+      "commit" : "f3c89f42cd90e7832467271cab3d3a86bc9c6110",
+      "short_commit" : "f3c89f4"
+    },
+    "2.5.0" : {
+      "tag" : "2.5",
+      "sha256" : "2326c895382c42abc9b4f6f7f28cd55776f552410784c31dca4d82cc849593ee",
+      "strip_prefix" : "df7cb-pg_dirtyread-7591cae",
+      "commit" : "7591caed257340442fe031ce1eb0b356d78a2cd2",
+      "short_commit" : "7591cae"
+    },
+    "2.4.0" : {
+      "tag" : "2.4",
+      "sha256" : "917b83b043bf1bec2c21322e2a28e5a0b0c2124f6997c7343e91bac49f895a0d",
+      "strip_prefix" : "df7cb-pg_dirtyread-c63bd76",
+      "commit" : "c63bd76115265ce4c21a94ad8e58dfc7623c2b52",
+      "short_commit" : "c63bd76"
+    },
+    "2.3.0" : {
+      "tag" : "2.3",
+      "sha256" : "6614488bb11487f33c8e03e088acec5859ba78d292835bc6138042ff8a6e7946",
+      "strip_prefix" : "df7cb-pg_dirtyread-04afb53",
+      "commit" : "04afb532bffcd4715990e58fe5e8fa29f6ab02a7",
+      "short_commit" : "04afb53"
+    },
+    "2.2.0" : {
+      "tag" : "2.2",
+      "sha256" : "bad88c0902f7088c05625742c900a7f063c17e8cc0af1b8ebc641c26f3ef8c05",
+      "strip_prefix" : "df7cb-pg_dirtyread-34f7aec",
+      "commit" : "34f7aecfe7e7c0e25cdb9e6892a0b178cea33d33",
+      "short_commit" : "34f7aec"
+    },
+    "2.1.0" : {
+      "tag" : "2.1",
+      "sha256" : "8bec35150014a773d9024e37c77bae8d25ff408d3a1a8577a093c58d914a9a58",
+      "strip_prefix" : "df7cb-pg_dirtyread-adc9051",
+      "commit" : "adc9051d831d53697d184a2393cd9470394399c9",
+      "short_commit" : "adc9051"
+    },
+    "2.0.0" : {
+      "tag" : "2.0",
+      "sha256" : "027f4be98557afb973cd0ec2fbaeb599667143e6209ee891514901370f2c7a85",
+      "strip_prefix" : "df7cb-pg_dirtyread-87b633c",
+      "commit" : "87b633c04deae88dff5508f3aa4328dff66086be",
+      "short_commit" : "87b633c"
+    },
+    "1.3.0" : {
+      "tag" : "1.3",
+      "sha256" : "bed37c3719f827a485859657700e3ec39c565c8e723b29bd7eeeda1343bdcfbf",
+      "strip_prefix" : "df7cb-pg_dirtyread-8fe4656",
+      "commit" : "8fe46569b860d508dcab273f166026e39e175034",
+      "short_commit" : "8fe4656"
+    },
+    "1.2.0" : {
+      "tag" : "1.2",
+      "sha256" : "af29500774ea7dcbc4fb3bb78f9d36ce7809113bea51a6510178bf1bdf72271c",
+      "strip_prefix" : "df7cb-pg_dirtyread-fdaa40d",
+      "commit" : "fdaa40dcd04d5325cfc5b7015d124603aa5caf2f",
+      "short_commit" : "fdaa40d"
+    },
+    "1.1.0" : {
+      "tag" : "1.1",
+      "sha256" : "62f3efb1642ea81d18b5f19e6d4b4d1bbd273f1b002ba564f85be904cb7cf5e9",
+      "strip_prefix" : "df7cb-pg_dirtyread-efe0db2",
+      "commit" : "efe0db26afa8670d78c0c0a776913f7debd664a3",
+      "short_commit" : "efe0db2"
+    },
+    "1.0.0" : {
+      "tag" : "1.0",
+      "sha256" : "526e3af37901731d070e13011ac8d7307f566a02cf1278a40ab4fb870c4460e2",
+      "strip_prefix" : "df7cb-pg_dirtyread-f9d1963",
+      "commit" : "f9d1963ebb3094db319b56750df55936c69ba6d4",
+      "short_commit" : "f9d1963"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "2.7.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.6.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.5.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.4.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.3.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.2.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.1.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "2.0.0" : {
+        "default_version" : "2",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.3.0" : {
+        "default_version" : "1.0",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.2.0" : {
+        "default_version" : "1.0",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.1.0" : {
+        "default_version" : "1.0",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.0.0" : {
+        "default_version" : "1.0",
+        "comment" : "Read dead but unvacuumed rows from table",
+        "module_pathname" : "$libdir/pg_dirtyread",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}

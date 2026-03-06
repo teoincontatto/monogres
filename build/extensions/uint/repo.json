@@ -1,0 +1,120 @@
+{
+  "sources" : {
+    "github.com" : {
+      "url" : "https://api.github.com/repos/petere/pguint/tarball/{commit}",
+      "type" : "tar.gz"
+    }
+  },
+  "versions" : {
+    "1.20250815.0" : {
+      "tag" : "1.20250815",
+      "sha256" : "0f9d86346b2fa1dc406b468a2001c4c7c59c58e110917ef86ac33f6a45134d90",
+      "strip_prefix" : "petere-pguint-4bd044a",
+      "commit" : "4bd044aa80bccba7c6021ddef266ef75a45a27a2",
+      "short_commit" : "4bd044a"
+    },
+    "1.20231206.0" : {
+      "tag" : "1.20231206",
+      "sha256" : "804a940fb347c000dd6a0051f504468318b91c305d04cac99c0adf2eefe3c3f8",
+      "strip_prefix" : "petere-pguint-7e6d6a6",
+      "commit" : "7e6d6a60598153c2133b1bcae18329be89995782",
+      "short_commit" : "7e6d6a6"
+    },
+    "1.20220601.0" : {
+      "tag" : "1.20220601",
+      "sha256" : "4b2c7a678e5bdad583ae1f1678c544c90bc186a70af4714762f7eed73de60349",
+      "strip_prefix" : "petere-pguint-e483dc0",
+      "commit" : "e483dc0890f121a725dc37ec8f98f5b3208db098",
+      "short_commit" : "e483dc0"
+    },
+    "1.20200704.0" : {
+      "tag" : "1.20200704",
+      "sha256" : "ec9b5f2ba5bf013f92c795ef03c64e122aaf5991f9eaad7d89e1b2cfafc58ed7",
+      "strip_prefix" : "petere-pguint-e5f325b",
+      "commit" : "e5f325bf8965ce73c867008d6778616e3323b8a1",
+      "short_commit" : "e5f325b"
+    },
+    "1.20160819.0" : {
+      "tag" : "1.20160819",
+      "sha256" : "f9b3a60d96f8d3b3a02402156bad5a786d4530cc3492613a8e91252707626186",
+      "strip_prefix" : "petere-pguint-a30e09a",
+      "commit" : "a30e09a4c52d5ac49133380953507263a7f80069",
+      "short_commit" : "a30e09a"
+    },
+    "1.20150301.0" : {
+      "tag" : "1.20150301",
+      "sha256" : "fe608e55a2712398291896e1b34e8bd98c3619e4ededc7cffa61ccacf2ddf1a8",
+      "strip_prefix" : "petere-pguint-f0d2d19",
+      "commit" : "f0d2d19df6f72a63f3b92c25971a079099382eb2",
+      "short_commit" : "f0d2d19"
+    },
+    "0.20150208.0" : {
+      "tag" : "0.20150208",
+      "sha256" : "971a820626835239beb1c366d16aa138cc5528d6cd487ce8995127db7e6058e5",
+      "strip_prefix" : "petere-pguint-6dda698",
+      "commit" : "6dda698b75b31530656445410ebb3116f98c1f11",
+      "short_commit" : "6dda698"
+    }
+  },
+  "metadata" : {
+    ".control" : {
+      "1.20250815.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20231206.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20220601.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20200704.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20160819.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "1.20150301.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      },
+      "0.20150208.0" : {
+        "default_version" : "0",
+        "comment" : "unsigned integer types",
+        "module_pathname" : "$libdir/uint",
+        "superuser" : true,
+        "trusted" : false,
+        "relocatable" : true
+      }
+    }
+  },
+  "version" : 1
+}
