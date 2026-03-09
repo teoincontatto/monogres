@@ -11,3 +11,6 @@ MODULE.bazel.lock
 
 # ignore the "Makefile locks"
 /docker/.*.lock
+
+# Temp ignore: ondb-cloud clone
+/ondb-cloud
