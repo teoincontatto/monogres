@@ -13,6 +13,7 @@ TARGET ?= rbe
 DOCKER_TARGET := $(if $(TARGET),$(BASE_NAME)-$(TARGET),$(BASE_NAME))
 DOCKER_TARGET_LOCK := .$(DOCKER_TARGET).lock
 IMAGE_NAME := $(PROJECT_NAME)/$(DOCKER_TARGET)
+CONTAINER_NAME_PREFIX ?= sandbox
 
 REGISTRY := ghcr.io
 GH_ORG := monogres
@@ -126,7 +127,7 @@ run-image:
     # OTHERWISE IT JUST SILENTLY CONTINUES WITHOUT HERMETIC SANDBOX!!?
 	$(DOCKER) run \
 		--platform "linux/$(ARCH)" \
-		--name "sandbox_$(PROJECT_NAME)_$(ARCH)" \
+		--name "$(CONTAINER_NAME_PREFIX)_$(PROJECT_NAME)_$(ARCH)" \
 		--privileged \
 		--rm \
 		--tty \
