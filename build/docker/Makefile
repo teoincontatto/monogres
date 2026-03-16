@@ -25,6 +25,7 @@ USERNAME = postgres
 
 BUILD_PLATFORMS ?= "linux/amd64,linux/arm64"
 USE_CACHE ?= false
+DETACHED ?= false
 
 BASE_IMAGE=debian
 # https://hub.docker.com/_/debian/tags
@@ -75,6 +76,14 @@ all:
 
 .PHONY: all
 
+ifeq ($(DETACHED),false)
+RUN_MODE := --tty --interactive
+EXEC_CMD := /bin/bash
+else
+RUN_MODE := --detach
+EXEC_CMD := sleep infinity
+endif
+
 ifneq ($(USE_CACHE),false)
 CACHE_MOUNTS := --mount type=volume,src=bazel-cache,dst=/cache
 
@@ -119,7 +128,7 @@ ENTRYPOINT_SCRIPT := \
 		--reuid=$$USER_UID \
 		--regid=$$USER_GID \
 		--groups=$$USER_GID,0,$$HOST_GID \
-		-- /bin/bash
+		-- $(EXEC_CMD)
 
 run-image:
 	# NOTE:
@@ -130,8 +139,7 @@ run-image:
 		--name "$(CONTAINER_NAME_PREFIX)_$(PROJECT_NAME)_$(ARCH)" \
 		--privileged \
 		--rm \
-		--tty \
-		--interactive \
+		$(RUN_MODE) \
 		--user "root" \
 		--group-add root \
 		--group-add "$(shell id -g)" \
