@@ -25,6 +25,7 @@ USERNAME = postgres
 
 BUILD_PLATFORMS ?= "linux/amd64,linux/arm64"
 USE_CACHE ?= false
+CACHE_VOLUME_NAME ?= bazel-cache
 DETACHED ?= false
 
 BASE_IMAGE=debian
@@ -85,7 +86,7 @@ EXEC_CMD := sleep infinity
 endif
 
 ifneq ($(USE_CACHE),false)
-CACHE_MOUNTS := --mount type=volume,src=bazel-cache,dst=/cache
+CACHE_MOUNTS := --mount type=volume,src=$(CACHE_VOLUME_NAME),dst=/cache
 
 # initialize cache volume and symlink into $HOME
 CACHE_SETUP_SCRIPT := \
