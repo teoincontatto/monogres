@@ -118,9 +118,9 @@ repos:
       - id: jsonnetfmt
   - repo: local
     hooks:
-      - id: bazel-test
-        name: bazel-test
-        entry: cd build && bazel test //...
+      - id: bazel-test-all
+        name: bazel-test-all
+        entry: .pre-commit-hooks/bazel-test-all.sh
         language: system
         pass_filenames: false
         verbose: false

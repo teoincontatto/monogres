@@ -192,11 +192,15 @@ pull-image:
 
 .PHONY: pull-image
 
+container-name:
+	@echo "$(CONTAINER_NAME_PREFIX)_$(PROJECT_NAME)_$(ARCH)"
+
+.PHONY: container-name
+
 test:
 	@echo "No tests — run project-level tests instead"
 
 .PHONY: test
-
 clean:
 	rm -f .*.lock
 
