@@ -153,6 +153,7 @@ run-image:
 		--group-add root \
 		--group-add "$(shell id -g)" \
 		--env HOST_GID="$(shell id -g)" \
+		--add-host=host-gateway:host-gateway \
 		--volume "$(REPO)":/src/repo:ro \
 		--volume "$(REPO)":/src/workspace:rw \
 		--volume "$(REPO)/../.git":/src/.git:ro \
