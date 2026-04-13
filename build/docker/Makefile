@@ -28,6 +28,11 @@ USE_CACHE ?= false
 CACHE_VOLUME_NAME ?= bazel-cache
 DETACHED ?= false
 
+# Extra read-only bind mounts. Space-separated NAME=PATH pairs.
+# Each is mounted at /src/NAME:ro inside the container.
+# Example: BIND_MOUNTS="bazel_download_archives=/home/user/repos/bazel_download_archives"
+BIND_MOUNTS ?=
+
 BASE_IMAGE=debian
 # https://hub.docker.com/_/debian/tags
 BASE_IMAGE_TAG=stable-20250113-slim
@@ -131,6 +136,9 @@ ENTRYPOINT_SCRIPT := \
 		--groups=$$USER_GID,0,$$HOST_GID \
 		-- $(EXEC_CMD)
 
+EXTRA_VOLUME_FLAGS := $(foreach mount,$(BIND_MOUNTS),\
+	--volume "$(lastword $(subst =, ,$(mount)))":/src/$(firstword $(subst =, ,$(mount))):ro)
+
 run-image:
 	# NOTE:
     # MUST RUN --privileged so that Bazel --experimental_use_hermetic_linux_sandbox works!
@@ -149,6 +157,7 @@ run-image:
 		--volume "$(REPO)":/src/workspace:rw \
 		--volume "$(REPO)/../.git":/src/.git:ro \
 		$(CACHE_MOUNTS) \
+		$(EXTRA_VOLUME_FLAGS) \
 		--workdir /src/workspace \
 		--entrypoint /bin/bash \
 		$(TAG) \
