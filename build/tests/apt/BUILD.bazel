@@ -1,0 +1,8 @@
+load(":lock.bzl", lock_test_suite = "test_suite")
+load(":schema.bzl", schema_test_suite = "test_suite")
+
+package(default_visibility = ["//tests/apt:__subpackages__"])
+
+lock_test_suite()
+
+schema_test_suite()

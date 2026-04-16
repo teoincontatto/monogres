@@ -5,6 +5,7 @@ package(default_visibility = ["//visibility:public"])
 exports_files([
     "arch.bzl",
     "declare_outputs.bzl",
+    "stable_key.bzl",
 ])
 
 bzl_library(
@@ -18,4 +19,9 @@ bzl_library(
     deps = [
         "@bazel_skylib//lib:paths",
     ],
+)
+
+bzl_library(
+    name = "stable_key",
+    srcs = ["stable_key.bzl"],
 )

@@ -1,0 +1,5 @@
+load(":stable_key.bzl", stable_key_test_suite = "test_suite")
+
+package(default_visibility = ["//tests/utils:__subpackages__"])
+
+stable_key_test_suite()

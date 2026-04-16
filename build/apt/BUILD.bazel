@@ -1,0 +1,7 @@
+package(default_visibility = ["//visibility:private"])
+
+exports_files([
+    "apt_lock.bzl",
+    "apt_pkgs.bzl",
+    "schema.bzl",
+])
