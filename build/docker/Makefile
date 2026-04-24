@@ -96,6 +96,7 @@ endif
 		--tty \
 		--interactive \
 		--group-add root \
+		--group-add "$(shell id -g)" \
 		--volume "$(REPO)":/src/repo:ro \
 		--volume "$(REPO)":/src/workspace:rw \
 		$(CACHE_PARAMETER) \
