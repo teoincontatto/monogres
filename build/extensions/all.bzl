@@ -83,7 +83,6 @@ load("//extensions/pgmp:cfg.bzl", CFG_PGMP = "CFG")
 load("//extensions/pg_net:cfg.bzl", CFG_PG_NET = "CFG")
 load("//extensions/pgnodemx:cfg.bzl", CFG_PGNODEMX = "CFG")
 load("//extensions/pg_partman:cfg.bzl", CFG_PG_PARTMAN = "CFG")
-load("//extensions/pgpcre:cfg.bzl", CFG_PGPCRE = "CFG")
 load("//extensions/pgpdf:cfg.bzl", CFG_PGPDF = "CFG")
 load("//extensions/pg_proctab:cfg.bzl", CFG_PG_PROCTAB = "CFG")
 load("//extensions/pg_profile:cfg.bzl", CFG_PG_PROFILE = "CFG")
@@ -252,7 +251,6 @@ CFGS_ALL = {
     "pg_net": [CFG_PG_NET],
     "pgnodemx": [CFG_PGNODEMX],
     "pg_partman": [CFG_PG_PARTMAN],
-    "pgpcre": [CFG_PGPCRE],
     "pgpdf": [CFG_PGPDF],
     "pg_proctab": [CFG_PG_PROCTAB],
     "pg_profile": [CFG_PG_PROFILE],

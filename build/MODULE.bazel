@@ -575,11 +575,6 @@ PG_EXTENSIONS = [
         },
     ],
     [
-        "pgpcre",
-        {
-        },
-    ],
-    [
         "pg_partman",
         {
         },
