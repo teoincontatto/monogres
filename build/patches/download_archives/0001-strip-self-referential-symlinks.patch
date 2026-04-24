@@ -1,0 +1,41 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Matteo Melli <matteom@ongres.com>
+Date: Thu, 23 Apr 2026 00:00:00 +0000
+Subject: [PATCH] strip self-referential symlinks after download
+
+Some GitHub tarballs include a "_codeql_detected_source_root" symlink
+that points to "." (the package root). Bazel's glob(["**"]) evaluation
+over the downloaded source tree then fails with:
+
+  ERROR: infinite symlink expansion detected
+
+and patches applied via rctx.patch can't even be read through the
+symlink (it resolves to a directory). Delete any "-> ." symlinks right
+after extraction so both the glob and subsequent patch application
+behave.
+---
+ download/archives/repository.bzl | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/download/archives/repository.bzl b/download/archives/repository.bzl
+--- a/download/archives/repository.bzl
++++ b/download/archives/repository.bzl
+@@ -664,6 +664,15 @@ def _impl(rctx):
+                 failed_downloads[version].append(version)
+                 continue
+ 
++            # Some GitHub tarballs (CodeQL-enabled repos) include a
++            # "_codeql_detected_source_root" symlink pointing to "."
++            # which makes glob(["**"]) loop and also breaks rctx.patch.
++            # Strip any symlink whose target is literally ".".
++            rctx.execute(
++                ["find", repo_path, "-type", "l", "-lname", ".", "-delete"],
++                quiet = True,
++            )
++
+             if "integrity" not in repo.context:
+                 msg = "{}/{}: WARNING: integrity missing. "
+                 msg += "Please add the integrity / sha256 to the index: {} / {}"
+-- 
+2.39.5
+

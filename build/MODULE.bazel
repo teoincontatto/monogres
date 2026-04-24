@@ -32,6 +32,14 @@ local_path_override(
     path = "starlark_utils",
 )
 
+single_version_override(
+    module_name = "download_archives",
+    patch_strip = 1,
+    patches = [
+        "//patches/download_archives:0001-strip-self-referential-symlinks.patch",
+    ],
+)
+
 RFCC_COMMIT = "2eca712c15301c1f4e71ceec21e6271f373501e2"
 
 archive_override(
