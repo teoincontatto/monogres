@@ -240,11 +240,30 @@ def pgxs_build(name, pgxs_src, deps_buildtime, base_version, base_hub, prefix_di
                 env
             }} >> "$$LOG_FILE"
 
+            # Copy the log out of the sandbox to a persistent location under
+            # the bazel cache so the reported path stays valid after sandbox
+            # teardown. The sandbox execroot has the shape
+            #   /postgres/.cache/bazel/_bazel_<user>/<id>/sandbox/<strategy>/<N>/execroot/<repo>
+            # Strip everything from "/sandbox/" on to recover the cache root
+            # (which is persistent). Falls back to the in-sandbox log path
+            # if the copy can't be made.
+            local cache_root real_log_file dest_dir dest
+            cache_root="$$(printf %s "$$PWD" | sed -E 's|/sandbox/.*||')"
+            real_log_file="$$LOG_FILE"
+            if [ -n "$$cache_root" ] && [ "$$cache_root" != "$$PWD" ]; then
+                dest_dir="$$cache_root/monogres-action-logs"
+                dest="$$dest_dir/$$(basename "$$LOG_FILE")"
+                mkdir -p "$$dest_dir" 2>/dev/null || :
+                if cp -f "$$LOG_FILE" "$$dest" 2>/dev/null; then
+                    real_log_file="$$dest"
+                fi
+            fi
+
             {{
                 echo
                 echo
                 echo "========================================================"
-                echo "  >> LOG: $${{LOG_FILE#"$$EXT_BUILD_ROOT/"}}"
+                echo "  >> LOG: $$real_log_file"
                 echo "========================================================"
                 echo
                 echo
