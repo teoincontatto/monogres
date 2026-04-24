@@ -1,0 +1,34 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Matteo Melli <matteom@ongres.com>
+Date: Tue, 21 Apr 2026 00:00:00 +0000
+Subject: [PATCH 10/10] fix: ivy_xmlisvalid returning NULL from Datum branch
+
+contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c has an
+#else (no-USE_LIBXML) branch in ivy_xmlisvalid() that ends with
+"return NULL;". The function returns Datum, and modern clang (>=15)
+treats -Wint-conversion as an error by default, so the build fails:
+
+  error: incompatible pointer to integer conversion returning
+  'void *' from a function with result type 'Datum' (aka
+  'unsigned long') [-Wint-conversion]
+
+NO_XML_SUPPORT() ereports an ERROR before the return runs, so the
+value is unreachable; use PG_RETURN_NULL() to satisfy the compiler.
+---
+ contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c b/contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c
+--- a/contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c
++++ b/contrib/ivorysql_ora/src/xml_functions/ora_xml_functions.c
+@@ -2416,6 +2416,6 @@ Datum ivy_xmlisvalid(PG_FUNCTION_ARGS)
+ 	}
+ #else
+ 	NO_XML_SUPPORT();
+-	return NULL;
++	PG_RETURN_NULL();
+ #endif
+ }
+-- 
+2.39.5
+

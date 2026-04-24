@@ -2,8 +2,26 @@
 Postgres build configuration.
 """
 
-load("@pg_src//:repo.bzl", "DEFAULT_VERSION", "METADATA", "REPO_NAME", "VERSIONS")
+load("@pg_src//:repo.bzl", "DEFAULT_VERSION", "LOCK", "METADATA", "REPO_NAME", "VERSIONS")
 load(":build_options.bzl", "DEFAULT_OPTION_SET", "OPTION_SETS", "build_options")
+
+_ARCHIVE_EXTS = (".tar.gz", ".tgz", ".tar.xz", ".tar.bz2", ".zip")
+
+def _fork_version(version, fork_name):
+    """Extract the fork's own version (e.g. '5.3') from the tag recorded in
+    LOCK. Expects tags of the form '<fork_name>_<version>' (e.g.
+    'IvorySQL_5.3'); returns '' if the tag doesn't match.
+    """
+    url = LOCK.get(version, {}).get("url", "")
+    tag = url.rsplit("/", 1)[-1]
+    for ext in _ARCHIVE_EXTS:
+        if tag.endswith(ext):
+            tag = tag[:-len(ext)]
+            break
+    prefix = fork_name + "_"
+    if tag.startswith(prefix):
+        return tag[len(prefix):]
+    return ""
 
 def _target(name, version, option_set, repo_name, buildtime_dependencies, runtime_dependencies, with_contrib = False):
     """
@@ -56,9 +74,31 @@ def _target(name, version, option_set, repo_name, buildtime_dependencies, runtim
         target_name = name
         extra_version_suffix = ""
 
-    # Update extra_version to reflect contrib status
+    # Update extra_version to reflect contrib status, and wrap fork+vendor
+    # info from repo.json metadata in a Debian-style parenthesized suffix so
+    # PG_VERSION (and therefore the psql banner) carries it. For IvorySQL
+    # pinned to IvorySQL_5.3 with metadata fork="IvorySQL" vendor="OnDB",
+    # option_set "regular" with contrib becomes:
+    #   extra_version = " (IvorySQL 5.3; OnDB regular-contrib)"
+    #   PG_VERSION    = "18.3 (IvorySQL 5.3; OnDB regular-contrib)"
     if "extra_version" in options:
-        options["extra_version"] = options["extra_version"] + extra_version_suffix
+        option_label = options["extra_version"] + extra_version_suffix
+        fork_name = METADATA.get("fork", "")
+        vendor = METADATA.get("vendor", "")
+
+        fork_part = ""
+        if fork_name:
+            fork_ver = _fork_version(version, fork_name)
+            fork_part = fork_name + ((" " + fork_ver) if fork_ver else "")
+
+        vendor_option_part = ((vendor + " ") if vendor else "") + option_label
+
+        if fork_part:
+            options["extra_version"] = " (%s; %s)" % (fork_part, vendor_option_part)
+        elif vendor:
+            options["extra_version"] = " (%s)" % vendor_option_part
+        else:
+            options["extra_version"] = option_label
 
     pg_version = None
 

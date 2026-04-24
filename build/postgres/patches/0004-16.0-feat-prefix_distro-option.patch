@@ -19,38 +19,38 @@ diff --git a/meson.build b/meson.build
 index 38e4f03e602..65af743d7b9 100644
 --- a/meson.build
 +++ b/meson.build
-@@ -471,6 +471,11 @@ endif
+@@ -498,6 +498,11 @@ endif
  pkg = 'postgresql'
- 
+
  dir_prefix = get_option('prefix')
 +dir_prefix_distro = get_option('prefix_distro')
 +
 +if dir_prefix_distro == ''
 +  dir_prefix_distro = dir_prefix
 +endif
- 
- dir_prefix_contains_pg = (dir_prefix.contains('pgsql') or dir_prefix.contains('postgres'))
- 
+
+ dir_prefix_contains_pg = (dir_prefix.contains('pgsql') or dir_prefix.contains('postgres') or dir_prefix.contains('IvorySQL'))
+
 diff --git a/meson_options.txt b/meson_options.txt
 index d2f95cfec36..1ca1e164962 100644
 --- a/meson_options.txt
 +++ b/meson_options.txt
-@@ -70,6 +70,8 @@ option('darwin_sysroot', type: 'string', value: '',
+@@ -74,6 +74,8 @@ option('darwin_sysroot', type: 'string', value: '',
  option('rpath', type: 'boolean', value: true,
    description: 'Embed shared library search path in executables')
- 
+
 +option('prefix_distro', type: 'string', value: '',
 +  description: 'Select a "distro prefix" (a path different from prefix where Postgres will be installed). Useful if the distro install path will be different from the install path at build time.')
- 
+
  # External dependencies
- 
+
 diff --git a/src/include/meson.build b/src/include/meson.build
 index d7e1ecd4c96..f01440f97cf 100644
 --- a/src/include/meson.build
 +++ b/src/include/meson.build
-@@ -28,18 +28,18 @@ configure_files += pg_config
- 
- 
+@@ -20,18 +20,18 @@ configure_files += pg_config
+
+
  config_paths_data = configuration_data()
 -config_paths_data.set_quoted('PGBINDIR', dir_prefix / dir_bin)
 -config_paths_data.set_quoted('PGSHAREDIR', dir_prefix / dir_data)
@@ -76,9 +76,9 @@ index d7e1ecd4c96..f01440f97cf 100644
 +config_paths_data.set_quoted('DOCDIR', dir_prefix_distro / dir_doc)
 +config_paths_data.set_quoted('HTMLDIR', dir_prefix_distro / dir_doc_html)
 +config_paths_data.set_quoted('MANDIR', dir_prefix_distro / dir_man)
- 
- 
+
+
  var_cc = ' '.join(cc.cmd_array())
--- 
+--
 2.39.5 (Apple Git-154)
 

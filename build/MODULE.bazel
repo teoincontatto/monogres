@@ -130,6 +130,10 @@ download_archives(
         "//postgres/patches:0006-17.0-feat-contrib-option.patch": ">=17.0,<17.3/*",
         "//postgres/patches:0006-17.3-feat-contrib-option.patch": ">=17.3,<18.0/*",
         "//postgres/patches:0006-18.0-feat-contrib-option.patch": ">=18.0/*",
+        "//postgres/patches:0007-18.0-feat-install-preload-ora-misc-unconditionally.patch": ">=18.0/*",
+        "//postgres/patches:0008-18.0-fix-gb18030-2022-broken-custom-target.patch": ">=18.0/*",
+        "//postgres/patches:0009-18.0-fix-gensql-pl-path-independent.patch": ">=18.0/*",
+        "//postgres/patches:0010-18.0-fix-ivy-xml-return-type.patch": ">=18.0/*",
     },
     version_scheme = "pgver",
 )

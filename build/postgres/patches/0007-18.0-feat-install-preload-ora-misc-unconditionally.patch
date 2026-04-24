@@ -1,0 +1,50 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Matteo Melli <matteom@ongres.com>
+Date: Tue, 21 Apr 2026 00:00:00 +0000
+Subject: [PATCH 7/7] feat: install preload_ora_misc.sql unconditionally
+
+IvorySQL's initdb requires share/preload_ora_misc.sql whenever the
+database_mode is DB_ORACLE (the default). That file, however, is only
+installed by contrib/ivorysql_ora/meson.build, so builds with
+contrib=false produce a tree where initdb fails with:
+
+  initdb: error: file ".../share/preload_ora_misc.sql" does not exist
+
+Move the install_data() call from contrib/ivorysql_ora/meson.build to
+src/backend/utils/misc/meson.build (next to ivorysql.conf.sample) so the
+file ships with every build regardless of the contrib option.
+---
+ contrib/ivorysql_ora/meson.build   | 5 -----
+ src/backend/utils/misc/meson.build | 1 +
+ 2 files changed, 1 insertion(+), 5 deletions(-)
+
+diff --git a/contrib/ivorysql_ora/meson.build b/contrib/ivorysql_ora/meson.build
+--- a/contrib/ivorysql_ora/meson.build
++++ b/contrib/ivorysql_ora/meson.build
+@@ -51,11 +51,6 @@ contrib_targets += ivorysql_ora
+ install_data(
+   'ivorysql_ora.control',
+   kwargs: contrib_data_args,
+ )
+ 
+-install_data(
+-  'preload_ora_misc.sql',
+-  install_dir: dir_data,
+-)
+-
+ tests += {
+diff --git a/src/backend/utils/misc/meson.build b/src/backend/utils/misc/meson.build
+--- a/src/backend/utils/misc/meson.build
++++ b/src/backend/utils/misc/meson.build
+@@ -36,7 +36,8 @@ backend_link_with += static_library('guc-file',
+ )
+ 
+ install_data(
+  'postgresql.conf.sample',
+  'ivorysql.conf.sample',
++ '../../../../contrib/ivorysql_ora/preload_ora_misc.sql',
+   install_dir: dir_data,
+ )
+-- 
+2.39.5
+
