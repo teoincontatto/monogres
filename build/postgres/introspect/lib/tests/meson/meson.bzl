@@ -375,7 +375,7 @@ def _get_installed_paths_test_impl(ctx):
     """Integration test: parse mock introspect JSON → relativized paths"""
     env = unittest.begin(ctx)
 
-    result = MesonIntrospect.get_installed_paths(_MOCK_INTROSPECT_JSON, "x86_64")
+    result = MesonIntrospect.get_installed_paths(_MOCK_INTROSPECT_JSON, "amd64")
 
     # Build paths are relativized (stripped of /build/ prefix)
     asserts.true(env, "src/backend/postgres" in result)
@@ -399,7 +399,7 @@ def _get_installed_paths_multiarch_normalization_test_impl(ctx):
     """Debian multiarch libdir (lib/{arch}-linux-gnu/) normalized to lib/"""
     env = unittest.begin(ctx)
 
-    result = MesonIntrospect.get_installed_paths(_MOCK_INTROSPECT_MULTIARCH, "x86_64")
+    result = MesonIntrospect.get_installed_paths(_MOCK_INTROSPECT_MULTIARCH, "amd64")
 
     asserts.equals(env, "lib/example.so", result["contrib/example/example.so"])
 
@@ -419,7 +419,7 @@ def _get_contrib_installed_paths_test_impl(ctx):
         _MOCK_INSTALLED_PATHS,
         "pgcrypto",
         "18.1",
-        "x86_64",
+        "amd64",
     )
 
     asserts.equals(env, [
@@ -442,7 +442,7 @@ def _get_contrib_installed_paths_nonexistent_test_impl(ctx):
         _MOCK_INSTALLED_PATHS,
         "nonexistent",
         "18.1",
-        "x86_64",
+        "amd64",
     )
 
     asserts.equals(env, [], paths)
@@ -462,7 +462,7 @@ def _get_contrib_installed_paths_override_test_impl(ctx):
         _MOCK_INSTALLED_PATHS,
         "sepgsql",
         "16.6",
-        "x86_64",
+        "amd64",
     )
 
     asserts.equals(env, [
@@ -474,7 +474,7 @@ def _get_contrib_installed_paths_override_test_impl(ctx):
         _MOCK_INSTALLED_PATHS,
         "sepgsql",
         "16.8",
-        "x86_64",
+        "amd64",
     )
 
     asserts.equals(env, [
@@ -517,7 +517,7 @@ def _paths_no_overlap_test_impl(ctx):
                 _MOCK_INSTALLED_PATHS,
                 name,
                 "18.1",
-                "x86_64",
+                "amd64",
             ),
         )
 

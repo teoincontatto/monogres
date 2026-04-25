@@ -17,6 +17,7 @@ bzl_library(
     srcs = ["meson.bzl"],
     deps = [
         ":metadata",
+        "//platforms:archs",
         "@starlark_utils//starlark",
         "@version_utils//spec",
     ],

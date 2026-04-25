@@ -17,15 +17,11 @@ load("@rules_distroless//apt/private:lockfile.bzl", "lockfile")
 
 # buildifier: disable=bzl-visibility
 load("@rules_distroless//apt/private:version_constraint.bzl", "version_constraint")
+load("//platforms:archs.bzl", "ARCHS")
 
 _CODENAME = "stable"
 _SNAPSHOT_URL = "https://snapshot-cloudflare.debian.org/archive"
 SNAPSHOT = "20250113T000000Z"
-
-ARCHS = [
-    "amd64",
-    "arm64",
-]
 
 _SOURCES = [
     (
