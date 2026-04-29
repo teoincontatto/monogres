@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "citusdata",
+      "name": "citus",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/citusdata/citus/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "13.2.0": {
+      "sha256": "82cc117bb1000da9eeea1499ee9a8f2706feccc19e2c5ca623274793d98a217a"
+    }
+  },
+  "metadata": {
+    "patches": [
+      {
+        "label": "//catalog/extensions/citus/patches:0001-13.2.0-fix-hardcoded-cpp.patch",
+        "spec": ">=13.2.0/*"
+      }
+    ],
+    "compatible_with": {
+      "13.2.0": "<=17"
+    },
+    "deps": {
+      "buildtime": {
+        "debian": {
+          "*": [
+            "libcurl4-openssl-dev",
+            "libkrb5-dev",
+            "liblz4-dev",
+            "libssl-dev",
+            "libzstd-dev"
+          ]
+        }
+      },
+      "runtime": {
+        "debian": {
+          "*": [
+            "libcurl4",
+            "libgssapi-krb5-2",
+            "libkrb5-3",
+            "liblz4-1",
+            "libssl3",
+            "libzstd1"
+          ]
+        }
+      }
+    }
+  }
+}

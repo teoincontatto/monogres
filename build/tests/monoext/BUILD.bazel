@@ -1,0 +1,5 @@
+load(":monoext.bzl", monoext_suite = "test_suite")
+
+package(default_visibility = ["//tests/monoext:__subpackages__"])
+
+monoext_suite()

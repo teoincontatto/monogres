@@ -3,8 +3,8 @@
 set -euo pipefail
 
 _build_all_introspect() {
-    # Build all introspect (manual) targets from //postgres
-    bazel query 'filter("postgres~.*--introspect$", //postgres/...)' |
+    # Build all introspect (manual) targets from the @pg hub
+    bazel query 'filter(":introspect$", kind("meson", @pg//...))' --output=label |
         xargs bazel build
 }
 
@@ -19,9 +19,18 @@ _make_comparable() {
         s;<BAZEL_CACHE>/sandbox/[a-z]+-sandbox/[0-9]+/execroot/_main;<BAZEL_CACHE>/<SANDBOX>/<BAZEL-BUILD>;g
         s;<BAZEL_CACHE>/execroot/_main;<BAZEL_CACHE>/<BAZEL-BUILD>;g
 
+        # Bzlmod canonical prefix for per-version PG source repos
+        # (@{hub}_src-{v}; download_archives convention). Must come before
+        # the <PG_HUB> pattern below since '+pg_src-' also contains +pg.
+        s;external/[^/\"]+[+]pg_src-[^/\"]+([/\"]);external/<PG_SRC>\1;g
+
+        # Bzlmod canonical prefix for the @pg hub repo (e.g. +monoext+pg,
+        # monogres++monoext+pg, …): abstract to '<PG_HUB>'. The trailing
+        # boundary guards against matching @pg_src, @pg_ext, etc.
+        s;external/[^/\"]+[+]pg([/\"]);external/<PG_HUB>\1;g
+
         # Cleanup remaining tokens like PG version, build architecture, etc
         s;${pg_version};<PG_VERSION>;g
-        s;postgres~<PG_VERSION>~[a-z]+;<PG_TARGET>;g
         s;aarch64;{arch};g
         s;x86_64;{arch};g
         s;amd64;{arch};g
@@ -31,14 +40,15 @@ _make_comparable() {
 export -f _make_comparable
 
 _make_comparable_all() {
-    local json_dir="postgres/introspect/json"
+    local json_dir="catalog/postgres/introspect"
 
     rm -rf "${json_dir}"/postgres~*.json
 
     # shellcheck disable=SC2016
-    find bazel-bin/postgres/postgres~*--introspect \
-        -name "*.json" \
-        -path "*--introspect/*" \
+    find bazel-bin/external/+monoext+pg \
+        -name "tar.json" \
+        -path "*/introspect/*" \
+        -not -path '*/copy_introspect/*' \
         -type f -print0 |
     xargs -0 -I@ /bin/bash -c '
         # Extract version and option_set from the path:
@@ -51,7 +61,7 @@ _make_comparable_all() {
         # echo "option_set: $option_set"
         version="$(basename "$(dirname "${dir}")")"
         # echo "version: $version"
-        outname="$(basename "@")"
+        outname="postgres~${version}~${option_set}.json"
         # echo "outname: $outname"
 
         _make_comparable "@" "${version}" >| "'"${json_dir}"'/${outname}"

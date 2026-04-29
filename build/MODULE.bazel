@@ -33,6 +33,11 @@ local_path_override(
     path = "starlark_utils",
 )
 
+local_path_override(
+    module_name = "download_archives",
+    path = "/src/bazel_download_archives",
+)
+
 RFCC_COMMIT = "2eca712c15301c1f4e71ceec21e6271f373501e2"
 
 archive_override(
@@ -130,83 +135,11 @@ python.toolchain(
 )
 use_repo(python, "python_3_11")
 
-# postgres/
-download_archives = use_repo_rule("@download_archives//download/archives:defs.bzl", "download_archives")
-
-download_archives(
-    name = "pg_src",
-    index = "//postgres:repo.json",
-    patches = {
-        "//postgres/patches:0001-16.0-fix-pgflex-propagate-environment-to-flex-subprocess.patch": "*",
-        "//postgres/patches:0002-16.0-fix-pgflex-suppress-line-directives.patch": "*",
-        "//postgres/patches:0003-16.0-fix-pgflex-flex-2.6.4-noline-bugs.patch": "<17.*/*",
-        "//postgres/patches:0004-16.0-feat-prefix_distro-option.patch": "*",
-        "//postgres/patches:0005-16.0-hack-remove-execroot-from-CC.patch": "16.*/*",
-        "//postgres/patches:0005-17.0-hack-remove-execroot-from-CC.patch": ">=17.*/*",
-        "//postgres/patches:0006-16.0-feat-add-build-option-to-disable-contrib-builds.patch": ">=16.0,<16.7/*",
-        "//postgres/patches:0006-16.7-feat-add-build-option-to-disable-contrib-builds.patch": ">=16.7,<17.0/*",
-        "//postgres/patches:0006-17.0-feat-add-build-option-to-disable-contrib-builds.patch": ">=17.0,<17.3/*",
-        "//postgres/patches:0006-17.3-feat-add-build-option-to-disable-contrib-builds.patch": ">=17.3,<18.0/*",
-        "//postgres/patches:0006-18.0-feat-add-build-option-to-disable-contrib-builds.patch": ">=18.0/*",
-    },
-    version_scheme = "pgver",
+monoext = use_extension("//monoext:monoext.bzl", "monoext")
+monoext.monogres(
+    name = "pg",
+    base = "//catalog/postgres:repo.json",
+    deb_lock = "//catalog/locks:pg_pkgs.lock",
+    extensions = "//catalog/extensions:index.json",
 )
-
-# postgres/introspect/
-introspect = use_repo_rule("//postgres/introspect:repository.bzl", "repo")
-
-introspect(
-    name = "pg_introspect",
-    pg_src = "@pg_src",
-)
-
-# extensions/
-PG_EXTENSIONS = [
-    [
-        "noset",
-        {
-        },
-    ],
-    [
-        "sslutils",
-        {
-        },
-    ],
-    [
-        "citus",
-        {
-            "//extensions/citus/patches:0001-13.2.0-fix-hardcoded-cpp.patch": ">=13.2.0/*",
-        },
-    ],
-]
-
-[
-    download_archives(
-        name = "pgext_%s" % ext,
-        index = "//extensions/%s:repo.json" % ext,
-        patches = patches,
-    )
-    for ext, patches in PG_EXTENSIONS
-]
-
-apt = use_extension("@rules_distroless//apt:extensions.bzl", "apt")
-apt.install(
-    name = "pg_deps_debian12",
-    manifest = "//postgres:deps_debian12.yaml",
-    nolock = True,
-)
-use_repo(apt, "pg_deps_debian12")
-
-apt.install(
-    name = "pgext_sslutils_deps_debian12",
-    manifest = "//extensions/sslutils:deps_debian12.yaml",
-    nolock = True,
-)
-use_repo(apt, "pgext_sslutils_deps_debian12")
-
-apt.install(
-    name = "pgext_citus_deps_debian12",
-    manifest = "//extensions/citus:deps_debian12.yaml",
-    nolock = True,
-)
-use_repo(apt, "pgext_citus_deps_debian12")
+use_repo(monoext, "pg", "pg_ext", "pg_pkgs")

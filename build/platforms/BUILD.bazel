@@ -2,11 +2,19 @@ load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 package(default_visibility = ["//visibility:public"])
 
-exports_files(["archs.bzl"])
+exports_files([
+    "archs.bzl",
+    "platform_build.bzl",
+])
 
 bzl_library(
     name = "archs",
     srcs = ["archs.bzl"],
+)
+
+bzl_library(
+    name = "platform_build",
+    srcs = ["platform_build.bzl"],
 )
 
 # ---------------------------------------------------------------------------

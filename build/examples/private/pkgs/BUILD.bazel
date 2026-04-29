@@ -1,0 +1,43 @@
+"""Private e2e tests for @pg_pkgs hub structure."""
+
+load("@monogres//platforms:archs.bzl", "ARCHS")
+load(":test.bzl", "e2e_tests")
+
+# sample packages picked to cover different Debian version string formats: each
+# resolves to exactly one version per arch from the pinned snapshot
+_PACKAGES = {
+    # epoch-less, plain deb
+    "libcurl4-openssl-dev": {
+        "archs": ARCHS,
+        "version": "7.88.1-10+deb12u8",
+    },
+    # version contains `~` (deb backport marker)
+    "libssl-dev": {
+        "archs": ARCHS,
+        "version": "3.0.15-1~deb12u1",
+    },
+}
+
+# sysroot groups to validate: each must resolve at
+# `@pg_pkgs//deb/sysroots:{key}` (key computed via `stable_key(...,
+# prefix="sysroot")` in test.bzl).
+_SYSROOT_GROUPS = {
+    "citus_buildtime": [
+        "@pg_pkgs//deb/libcurl4-openssl-dev:libcurl4-openssl-dev",
+        "@pg_pkgs//deb/libkrb5-dev:libkrb5-dev",
+        "@pg_pkgs//deb/liblz4-dev:liblz4-dev",
+        "@pg_pkgs//deb/libssl-dev:libssl-dev",
+        "@pg_pkgs//deb/libzstd-dev:libzstd-dev",
+    ],
+    "citus_runtime": [
+        "@pg_pkgs//deb/libcurl4:libcurl4",
+        "@pg_pkgs//deb/liblz4-1:liblz4-1",
+        "@pg_pkgs//deb/libzstd1:libzstd1",
+    ],
+}
+
+e2e_tests(
+    name = "pkgs",
+    packages = _PACKAGES,
+    sysroot_groups = _SYSROOT_GROUPS,
+)
