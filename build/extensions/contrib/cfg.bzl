@@ -1,9 +1,8 @@
 """
 Postgres contrib extensions build configuration.
 
-This module defines a build configuration for a Postgres contrib extension.
-It's intended to be imported into BUILD files to then call `pgext_contrib`
-rules.
+This module defines a build configuration for a Postgres contrib extension. It's
+intended to be imported into BUILD files to then call `pgext_contrib` rules.
 """
 
 load("@pg_introspect//:defs.bzl", "INTROSPECTIONS")
