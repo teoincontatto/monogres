@@ -14,6 +14,7 @@ each `version x option_set` combo, and delegates hub file generation to the
 
 load("@download_archives//download/archives:extensions.bzl", download_archives = "archives")
 load("@download_archives//lib:index.bzl", Index = "index")
+load("@version_utils//version:version.bzl", Version = "version")
 load("//monoext/private:pkgs.bzl", "pkgs_group")
 load("//monoext/private:repo_names.bzl", "bind", "repo_names")
 load("//monoext/private/base:hub.bzl", "base_repo")
@@ -98,7 +99,12 @@ def create_base_src(ctx, hub_name, base_label):
         introspect_repos = introspect_repos,
         introspect_paths_repos = introspect_paths_repos,
         metadata = metadata,
-        pkgs_group = pkgs_group("postgres", versions, metadata),
+        pkgs_group = pkgs_group(
+            "postgres",
+            versions,
+            metadata,
+            version_scheme = Version.SCHEME.PGVER,
+        ),
         source_repo = src_repo,
         versions = versions,
     )

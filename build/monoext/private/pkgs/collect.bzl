@@ -5,6 +5,7 @@ Pure function that takes data (not `ctx`), making it unit-testable. Used by the
 `@pkgs` layer to build globally-deduplicated package groups.
 """
 
+load("@version_utils//version:version.bzl", Version = "version")
 load(":schema.bzl", _PkgsSchema = "schema")
 load(":version_deps.bzl", "get_version_deps")
 
@@ -32,11 +33,21 @@ def collect_package_groups(extensions):
     ext_dep_groups = {}
 
     for name, ext in sorted(extensions.items()):
+        # `version_scheme` is set by `pkgs_group` (defaults to SEMVER for the
+        # extension layer; the base layer overrides to PGVER so PG-style
+        # `15.0`-shaped versions parse correctly under the
+        # `metadata.deps.<kind>.debian.<spec>` map). Default to SEMVER for test
+        # fixtures and callers that pre-date the `version_scheme` field.
+        version_scheme = ext.get("version_scheme", Version.SCHEME.SEMVER)
         for kind in _PkgsSchema.KINDS:
             deps = _deps(ext["metadata"], kind)
 
             for ext_version in ext["ext_versions"]:
-                packages = get_version_deps(ext_version, deps)
+                packages = get_version_deps(
+                    ext_version,
+                    deps,
+                    version_scheme = version_scheme,
+                )
 
                 if packages:
                     key = ",".join(sorted(packages))

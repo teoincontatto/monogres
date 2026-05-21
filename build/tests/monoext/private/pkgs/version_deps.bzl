@@ -6,6 +6,7 @@ versions to their dependency package sets via versioned spec maps in repo.json.
 """
 
 load("@bazel_skylib//lib:unittest.bzl", "asserts", "unittest")
+load("@version_utils//version:version.bzl", Version = "version")
 
 # buildifier: disable=bzl-visibility
 load(
@@ -69,6 +70,28 @@ def _range_test_impl(ctx):
     return unittest.end(env)
 
 range_test = unittest.make(_range_test_impl)
+
+def _pgver_exact_test_impl(ctx):
+    """PGVER scheme matches PG-style 2-part versions"""
+    env = unittest.begin(ctx)
+
+    pgver = Version.SCHEME.PGVER
+
+    # PG-style versions ("major.minor") parse under PGVER scheme.
+    asserts.true(env, spec_matches(">=15.0", "15.0", version_scheme = pgver))
+    asserts.true(env, spec_matches(">=15.0", "16.1", version_scheme = pgver))
+    asserts.true(env, spec_matches(">=15.0", "17.0", version_scheme = pgver))
+    asserts.false(env, spec_matches(">=15.0", "14.5", version_scheme = pgver))
+
+    # Half-open and closed ranges.
+    asserts.true(env, spec_matches("<16.0", "15.0", version_scheme = pgver))
+    asserts.false(env, spec_matches("<16.0", "16.0", version_scheme = pgver))
+    asserts.true(env, spec_matches(">=16.0, <18.0", "17.4", version_scheme = pgver))
+    asserts.false(env, spec_matches(">=16.0, <18.0", "18.0", version_scheme = pgver))
+
+    return unittest.end(env)
+
+pgver_exact_test = unittest.make(_pgver_exact_test_impl)
 
 def _get_wildcard_test_impl(ctx):
     """Wildcard spec resolves deps for all versions"""
@@ -241,6 +264,7 @@ TEST_SUITE_TESTS = dict(
     semver_exact = semver_exact_test,
     semver_patch = semver_patch_test,
     range = range_test,
+    pgver_exact = pgver_exact_test,
     # spec_matches with arch
     parse_spec = parse_spec_test,
     arch_matches = arch_matches_test,

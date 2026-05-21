@@ -7,6 +7,7 @@ computes sysroot groups, and delegates hub file generation to the `pkgs_repo`
 repository rule in `pkgs/hub.bzl`.
 """
 
+load("@version_utils//version:version.bzl", Version = "version")
 load("//apt:apt_pkgs.bzl", "apt_pkgs")
 load("//monoext/private:repo_names.bzl", "bind", "repo_names")
 load("//monoext/private/pkgs:collect.bzl", "collect_package_groups")
@@ -22,7 +23,7 @@ def _group_labels(hub_name, group):
         labels.append(f("@{hub}//deb/{pkg}:{pkg}"))
     return labels
 
-def pkgs_group(name, versions, metadata):
+def pkgs_group(name, versions, metadata, version_scheme = Version.SCHEME.SEMVER):
     """Construct a pkgs group entry: the metadata contract for `create_pkgs`.
 
     Each group contributes one "thing" (e.g. the base flavor, or one extension)
@@ -34,14 +35,21 @@ def pkgs_group(name, versions, metadata):
         versions: List of version strings for this group.
         metadata: Metadata dict with `deps.{build,run}time.debian.{spec:
             [pkgs]}`.
+        version_scheme: A `Version.SCHEME` constant controlling how
+            `metadata.deps.<kind>.debian.<spec>` keys parse `versions` strings.
+            Defaults to `SEMVER` (extensions use 3-part `13.2.0`-style
+            versions). Pass `PGVER` for the base flavor (PG-style 2-part `15.0`
+            versions).
 
     Returns:
-        A `struct` with `name`, `versions`, and `metadata` fields.
+        A `struct` with `name`, `versions`, `metadata`, and `version_scheme`
+        fields.
     """
     return struct(
         name = name,
         versions = versions,
         metadata = metadata,
+        version_scheme = version_scheme,
     )
 
 def create_pkgs(ctx, hub_name, groups, lock = None):
@@ -79,7 +87,11 @@ def create_pkgs(ctx, hub_name, groups, lock = None):
         ) % (hub_name, hub_name, hub_name))
 
     entries = {
-        g.name: {"ext_versions": g.versions, "metadata": g.metadata}
+        g.name: {
+            "ext_versions": g.versions,
+            "metadata": g.metadata,
+            "version_scheme": g.version_scheme,
+        }
         for g in groups
     }
 
