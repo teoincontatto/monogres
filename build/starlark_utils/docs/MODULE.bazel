@@ -4,9 +4,9 @@ module(
 )
 
 bazel_dep(name = "starlark_utils", version = "", dev_dependency = True)
-bazel_dep(name = "aspect_bazel_lib", version = "2.20.0", dev_dependency = True)
-bazel_dep(name = "bazel_skylib", version = "1.8.2", dev_dependency = True)
-bazel_dep(name = "rules_java", version = "8.11.0", dev_dependency = True)
+bazel_dep(name = "aspect_bazel_lib", version = "2.22.5", dev_dependency = True)
+bazel_dep(name = "bazel_skylib", version = "1.9.0", dev_dependency = True)
+bazel_dep(name = "rules_java", version = "9.6.1", dev_dependency = True)
 
 local_path_override(
     module_name = "starlark_utils",
