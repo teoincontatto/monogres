@@ -1,0 +1,34 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Placeholder Author <placeholder@example.com>
+Date: Thu, 1 Jan 1970 00:00:00 +0000
+Subject: [PATCH] cc_wrapper: handle response files without trailing newline
+
+bash `read` returns non-zero at EOF when the final "line" lacks a
+trailing newline, which silently skips the loop body for that line.
+Some build systems (e.g. meson 1.10.1, when generating ninja link
+response files) emit @rsp files without a trailing newline, so the
+sanitized tmpfile ends up empty and clang is invoked with no
+arguments.
+
+Use the standard `read ... || [ -n "$opt" ]` idiom so the final,
+unterminated line is also processed.
+
+Anchored against toolchains_llvm v1.5.0; also applies cleanly at
+v1.7.0 with a 9-line offset under `patch -p1` (the surrounding
+context inside the `while` loop is identical at both tags).
+---
+ toolchain/cc_wrapper.sh.tpl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/toolchain/cc_wrapper.sh.tpl b/toolchain/cc_wrapper.sh.tpl
+--- a/toolchain/cc_wrapper.sh.tpl
++++ b/toolchain/cc_wrapper.sh.tpl
+@@ -113,7 +113,7 @@ for ((i = 0; i <= $#; i++)); do
+     # Create a new, sanitized file.
+     tmpfile=$(mktemp)
+     CLEANUP_FILES+=("${tmpfile}")
+-    while IFS= read -r opt; do
++    while IFS= read -r opt || [ -n "${opt}" ]; do
+       opt="$(
+         set -e
+         sanitize_option "${opt}"
