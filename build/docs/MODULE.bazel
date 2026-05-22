@@ -20,9 +20,17 @@ local_path_override(
     path = "../starlark_utils",
 )
 
-local_path_override(
+BDA_VERSION = "0.1.0"
+
+archive_override(
     module_name = "download_archives",
-    path = "/src/bazel_download_archives",
+    patch_strip = 1,
+    patches = [
+        "//patches/download_archives:bazel-download-archives-lazy.patch",
+    ],
+    sha256 = "185e9e328ba59ccdc6f97968b2bbe31d7d2f64590aa321df7ca754cf5777f9e4",
+    strip_prefix = "bazel_download_archives-{}".format(BDA_VERSION),
+    url = "https://github.com/jjmaestro/bazel_download_archives/archive/refs/tags/v{}.tar.gz".format(BDA_VERSION),
 )
 
 http_jar = use_repo_rule("@bazel_tools//tools/build_defs/repo:http.bzl", "http_jar")
