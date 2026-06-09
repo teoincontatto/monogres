@@ -19,9 +19,9 @@ load("@rules_distroless//apt/private:lockfile.bzl", "lockfile")
 load("@rules_distroless//apt/private:version_constraint.bzl", "version_constraint")
 load("//platforms:archs.bzl", "ARCHS")
 
-_CODENAME = "stable"
+_CODENAME = "trixie"
 _SNAPSHOT_URL = "https://snapshot-cloudflare.debian.org/archive"
-SNAPSHOT = "20250113T000000Z"
+SNAPSHOT = "20260112T000000Z"
 
 _SOURCES = [
     (

@@ -30,7 +30,7 @@ _SYSROOT_GROUPS = {
         "@pg_pkgs//deb/libzstd-dev:libzstd-dev",
     ],
     "citus_runtime": [
-        "@pg_pkgs//deb/libcurl4:libcurl4",
+        "@pg_pkgs//deb/libcurl4t64:libcurl4t64",
         "@pg_pkgs//deb/liblz4-1:liblz4-1",
         "@pg_pkgs//deb/libzstd1:libzstd1",
     ],

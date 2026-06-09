@@ -24,7 +24,7 @@
       },
       "runtime": {
         "debian": {
-          "*": ["libssl3"]
+          "*": ["libssl3t64"]
         }
       }
     }

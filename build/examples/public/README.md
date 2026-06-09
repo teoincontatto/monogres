@@ -62,7 +62,7 @@ target.deps = struct(
     ),
     runtime = struct(
         sysroot  = "@pg//18.1/deps/runtime:sysroot",
-        packages = ["@pg//18.1/deps/runtime/pkgs:libssl3", ...],
+        packages = ["@pg//18.1/deps/runtime/pkgs:libssl3t64", ...],
     ),
 )
 ```

@@ -16,7 +16,7 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot = None):
         "@m4//bin:m4",
         "@flex//bin:flex",
         "@bison//bin:bison",
-        "@python_3_11//:python3",
+        "@python_3_13//:python3",
     ]
 
     if sysroot:
@@ -48,7 +48,7 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot = None):
         # env variable and if not set, it will just call `m4` and will let
         # `execvp` to resolve it using `PATH`.
         M4 = "$(execpath @m4//bin:m4)",
-        PYTHON = "$(execpath @python_3_11//:python3)",
+        PYTHON = "$(execpath @python_3_13//:python3)",
     )
 
     # NOTE:
@@ -116,19 +116,19 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot = None):
     # Build PATH with python3 directory and optionally sysroot bin directories.
     # This ensures scripts using `/usr/bin/env python3` can find python, and
     # tools from the sysroot (like llvm-config for JIT, msgfmt for i18n) are
-    # available. The system LLVM path (/usr/lib/llvm-14/bin) must come before
+    # available. The system LLVM path (/usr/lib/llvm-19/bin) must come before
     # the sysroot path so that meson finds the system clang (which is in Docker)
     # rather than looking for clang in the sysroot (where only llvm-config
     # exists).
-    path_components = ["$$(dirname $(execpath @python_3_11//:python3))"]
+    path_components = ["$$(dirname $(execpath @python_3_13//:python3))"]
 
     if sysroot:
         # Add system LLVM bin directory first (for clang from system toolchain)
-        path_components.append("/usr/lib/llvm-14/bin")
+        path_components.append("/usr/lib/llvm-19/bin")
 
         # Add sysroot bin directories for tools
         path_components.append("$$SYSROOT_DIR/usr/bin")
-        path_components.append("$$SYSROOT_DIR/usr/lib/llvm-14/bin")
+        path_components.append("$$SYSROOT_DIR/usr/lib/llvm-19/bin")
 
     path_components.append("$$PATH")
 

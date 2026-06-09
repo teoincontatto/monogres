@@ -78,34 +78,34 @@ llvm = use_extension("@toolchains_llvm//toolchain/extensions:llvm.bzl", "llvm", 
 
 # NOTE:
 # We use a system LLVM toolchain, so it will use the LLVM installed in the
-# Docker image. This requires llvm-14, clang-14, lld-14, and libc6-dev to be
+# Docker image. This requires llvm-19, clang-19, lld-19, and libc6-dev to be
 # installed. Also, absolute_paths=True is needed because the system toolchain
 # uses absolute paths for builtin headers:
-# /usr/lib/llvm-14/lib/clang/14.0.6/include/. Plus using libstdc++ instead of
+# /usr/lib/llvm-19/lib/clang/19.1.7/include/. Plus using libstdc++ instead of
 # libc++ to match Debian's LLVM libraries ABI.
 llvm.toolchain(
     name = "llvm_toolchain_system_linux_amd64",
     absolute_paths = True,
     exec_arch = "amd64",
     exec_os = "linux",
-    llvm_version = "14.0.6",
+    llvm_version = "19.1.7",
     stdlib = {"": "stdc++"},
 )
 llvm.toolchain_root(
     name = "llvm_toolchain_system_linux_amd64",
-    path = "/usr/lib/llvm-14",
+    path = "/usr/lib/llvm-19",
 )
 llvm.toolchain(
     name = "llvm_toolchain_system_linux_arm64",
     absolute_paths = True,
     exec_arch = "arm64",
     exec_os = "linux",
-    llvm_version = "14.0.6",
+    llvm_version = "19.1.7",
     stdlib = {"": "stdc++"},
 )
 llvm.toolchain_root(
     name = "llvm_toolchain_system_linux_arm64",
-    path = "/usr/lib/llvm-14",
+    path = "/usr/lib/llvm-19",
 )
 use_repo(llvm, "llvm_toolchain_system_linux_amd64", "llvm_toolchain_system_linux_arm64")
 
@@ -153,9 +153,9 @@ use_repo(zstd_toolchains, "zstd_toolchains")
 
 python = use_extension("@rules_python//python/extensions:python.bzl", "python")
 python.toolchain(
-    python_version = "3.11",
+    python_version = "3.13",
 )
-use_repo(python, "python_3_11")
+use_repo(python, "python_3_13")
 
 monoext = use_extension("//monoext:monoext.bzl", "monoext")
 monoext.monogres(

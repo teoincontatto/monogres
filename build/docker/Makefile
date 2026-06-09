@@ -35,7 +35,7 @@ BIND_MOUNTS ?=
 
 BASE_IMAGE=debian
 # https://hub.docker.com/_/debian/tags
-BASE_IMAGE_TAG=stable-20250113-slim
+BASE_IMAGE_TAG=trixie-20260112-slim
 # https://github.com/bazelbuild/bazel
 BAZEL_VERSION := $(shell cat $(REPO)/.bazelversion 2>/dev/null || echo 8.4.2)
 # https://github.com/reproducible-containers/repro-sources-list.sh
@@ -44,15 +44,15 @@ REPRODUCIBLE_CONTAINERS_VERSION ?= 0.1.4
 BAZELISK_VERSION ?= 1.27.0
 
 DEPS_CC_TOOLCHAIN = \
-	clang-14 \
-	libc++-14-dev \
-	libc++abi-14-dev \
+	clang-19 \
+	libc++-19-dev \
+	libc++abi-19-dev \
 	libc6-dev \
-	libclang-rt-14-dev \
-	libunwind-14-dev \
-	lld-14 \
-	llvm-14 \
-	llvm-14-dev
+	libclang-rt-19-dev \
+	libunwind-19-dev \
+	lld-19 \
+	llvm-19 \
+	llvm-19-dev
 
 # rules_distroless: xz-utils
 DEPS_NON_HERMETIC_BAZEL_RULES = \

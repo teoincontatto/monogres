@@ -74,21 +74,21 @@ llvm.toolchain(
     name = "llvm_toolchain_system_linux_amd64",
     exec_arch = "amd64",
     exec_os = "linux",
-    llvm_version = "14.0.6",
+    llvm_version = "19.1.7",
 )
 llvm.toolchain_root(
     name = "llvm_toolchain_system_linux_amd64",
-    path = "/usr/lib/llvm-14",
+    path = "/usr/lib/llvm-19",
 )
 llvm.toolchain(
     name = "llvm_toolchain_system_linux_arm64",
     exec_arch = "arm64",
     exec_os = "linux",
-    llvm_version = "14.0.6",
+    llvm_version = "19.1.7",
 )
 llvm.toolchain_root(
     name = "llvm_toolchain_system_linux_arm64",
-    path = "/usr/lib/llvm-14",
+    path = "/usr/lib/llvm-19",
 )
 use_repo(llvm, "llvm_toolchain_system_linux_amd64", "llvm_toolchain_system_linux_arm64")
 
