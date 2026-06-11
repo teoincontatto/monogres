@@ -163,13 +163,62 @@ def _meson_common_args(pg_src, build_options, auto_features, sysroot = None):
         visibility = ["//visibility:public"],
     )
 
-def _pg_build_meson(name, pg_src, build_options, auto_features, sysroot = None):
-    pg_binaries = [
-        "initdb",
-        "postgres",
-        "pg_config",
-        "pg_isready",
-    ]
+# Client/server binaries installed by every supported PostgreSQL major (>=16),
+# verified against the leanest option set (`minimal`). Declaring them means
+# `@pg//<v>/<opt>:tar` exposes psql, createdb, pg_dump, ... — needed by
+# downstream consumers such as the host-side pg_regress driver.
+_PG_BINARIES = [
+    "clusterdb",
+    "createdb",
+    "createuser",
+    "dropdb",
+    "dropuser",
+    "ecpg",
+    "initdb",
+    "pg_amcheck",
+    "pg_archivecleanup",
+    "pg_basebackup",
+    "pg_checksums",
+    "pg_config",
+    "pg_controldata",
+    "pg_ctl",
+    "pg_dump",
+    "pg_dumpall",
+    "pg_isready",
+    "pg_receivewal",
+    "pg_recvlogical",
+    "pg_resetwal",
+    "pg_restore",
+    "pg_rewind",
+    "pg_test_fsync",
+    "pg_test_timing",
+    "pg_upgrade",
+    "pg_verifybackup",
+    "pg_waldump",
+    "pgbench",
+    "postgres",
+    "psql",
+    "reindexdb",
+    "vacuumdb",
+]
+
+# Binaries introduced in PostgreSQL 17 (absent on PG 16); declaring them on a
+# PG 16 build would fail since rules_foreign_cc can't find the declared output.
+_PG_BINARIES_17 = [
+    "pg_combinebackup",
+    "pg_createsubscriber",
+    "pg_walsummary",
+]
+
+def _pg_major(version):
+    """Major version int from a version string (e.g. "16.11" -> 16)."""
+    return int(version.split(".")[0]) if version else 0
+
+def _pg_build_meson(name, pg_src, build_options, auto_features, version = None, sysroot = None):
+    pg_binaries = list(_PG_BINARIES)
+
+    if _pg_major(version) >= 17:
+        pg_binaries.extend(_PG_BINARIES_17)
 
     # NOTE: these binaries are only built when contrib is enabled
     if build_options.get("contrib", "false") == "true":
@@ -233,7 +282,7 @@ def _pg_build_introspect(name, pg_src, build_options, auto_features, sysroot = N
         tags = ["manual"],
     )
 
-def pg_build(name, pg_src, build_options, auto_features, sysroot = None):
+def pg_build(name, pg_src, build_options, auto_features, version = None, sysroot = None):
     """
     Generates a Bazel target to build Postgres with the Meson build system.
 
@@ -249,12 +298,14 @@ def pg_build(name, pg_src, build_options, auto_features, sysroot = None):
             Postgres features not specified in `build_options` will be
             `enable`d, `disable`d or `auto` (enabled or disabled based on
             detected system capabilities).
+        version (str): PostgreSQL version string (e.g. "16.11"); selects the
+            version-specific set of installed binaries to declare as outputs.
         sysroot (str): Optional sysroot tarball label from `@pkgs`. Exposed to
             the Meson build through environment variables such as
             `PKG_CONFIG_SYSROOT_DIR`, `CFLAGS`, and `LD_LIBRARY_PATH`.
     """
 
-    _pg_build_meson(name, pg_src, build_options, auto_features, sysroot)
+    _pg_build_meson(name, pg_src, build_options, auto_features, version = version, sysroot = sysroot)
 
     _pg_build_introspect(name, pg_src, build_options, auto_features, sysroot)
 
