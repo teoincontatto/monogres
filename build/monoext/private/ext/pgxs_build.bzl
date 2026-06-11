@@ -31,8 +31,13 @@ def pgxs_build(name, pgxs_src, deps_buildtime, base_version, base_hub, prefix_di
 
     tar_file, log_file = ["%s%s" % (name, file) for file in (".tar", ".log")]
 
+    # The genrule produces both the artifact tarball and its build log. The
+    # public `name` target must expose ONLY the tarball (consumers feed it to
+    # tar-merging rules like pkg_tar, which would choke on the log), so the
+    # genrule gets an internal name and `name` aliases the tar output file.
+    # The log stays addressable as `:{name}.log`.
     native.genrule(
-        name = name,
+        name = "%s~build" % name,
         srcs = [
             "%s//%s" % (base_hub, base_version["version"]),
             pgxs_src,
@@ -337,5 +342,12 @@ def pgxs_build(name, pgxs_src, deps_buildtime, base_version, base_hub, prefix_di
             "@rules_foreign_cc//toolchains:current_make_toolchain",
             "%s//%s:toolchain" % (base_hub, base_version["version"]),
         ],
+        visibility = ["//visibility:public"],
+    )
+
+    # Public artifact target: the tarball only (see NOTE above the genrule).
+    native.alias(
+        name = name,
+        actual = ":%s" % tar_file,
         visibility = ["//visibility:public"],
     )
