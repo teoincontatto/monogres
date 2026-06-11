@@ -175,24 +175,24 @@ def _pg_build_test_impl(ctx):
 
     asserts.true(
         env,
-        '"@bazel_lib//lib:copy_directory.bzl"' in out,
+        '"@monogres//monoext/private/ext:copy_tree.bzl"' in out,
     )
     asserts.true(
         env,
         '"@monogres//monoext/private/ext:pgxs_build.bzl"' in out,
     )
-    asserts.true(env, '"copy_directory"' in out)
+    asserts.true(env, '"copy_tree"' in out)
     asserts.true(env, '"pgxs_build"' in out)
 
-    # copy_directory wraps the source :dir into a tree artifact named src_dir
-    asserts.true(env, "copy_directory(" in out)
+    # copy_tree wraps the source :dir into a tree artifact named src_dir,
+    # dereferencing symlinks (which bazel_lib's copy_directory drops)
+    asserts.true(env, "copy_tree(" in out)
     asserts.true(env, 'name = "src_dir"' in out)
     asserts.true(
         env,
         'src = "@pg_ext_src--citus//13.2.0:dir"' in out,
     )
     asserts.true(env, 'out = "src_dir"' in out)
-    asserts.true(env, 'hardlink = "on"' in out)
 
     # pgxs_build consumes the tree artifact, not the raw :dir
     asserts.true(env, "pgxs_build(" in out)
