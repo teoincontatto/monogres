@@ -99,6 +99,7 @@ def _base_target_init(
         deps,
         introspect,
         option_set,
+        regress,
         source,
         version):
     return struct(
@@ -108,6 +109,7 @@ def _base_target_init(
         deps = deps,
         introspect = introspect,
         option_set = option_set,
+        regress = regress,
         source = source,
         version = version,
     )
@@ -145,6 +147,7 @@ def _base_target_new(
         deps = _PkgsSchema.TargetDeps.qualify(f("@{hub}//{v}"), vd),
         introspect = f("@{hub}//{v}/{opt}:introspect"),
         option_set = option_set,
+        regress = f("@{hub}//{v}/{opt}:regress"),
         source = _base_source_init(
             dir = f("@{hub}//{v}:dir"),
             files = f("@{hub}//{v}:files"),
@@ -162,6 +165,7 @@ def _base_target_from_dict(d):
         deps = _PkgsSchema.TargetDeps.from_dict(d["deps"]),
         introspect = d["introspect"],
         option_set = d["option_set"],
+        regress = d["regress"],
         source = _base_source_from_dict(d["source"]),
         version = d["version"],
     )

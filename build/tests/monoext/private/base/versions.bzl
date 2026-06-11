@@ -89,6 +89,7 @@ def _option_set_build_test_impl(ctx):
     asserts.true(env, "pg_build(" in out)
     asserts.true(env, 'name = "tar"' in out)
     asserts.true(env, 'pg_src = "@pg_src//18.1"' in out)
+    asserts.true(env, 'version = "18.1"' in out)
     asserts.true(env, 'auto_features = "enabled"' in out)
     asserts.true(
         env,
@@ -98,6 +99,15 @@ def _option_set_build_test_impl(ctx):
     # alias: :full → :tar
     asserts.true(env, 'name = "full"' in out)
     asserts.true(env, 'actual = ":tar"' in out)
+
+    # regress.so helper: load + regress_build("regress", ...)
+    asserts.true(
+        env,
+        '"@monogres//monoext/private/base:regress.bzl"' in out,
+    )
+    asserts.true(env, "regress_build(" in out)
+    asserts.true(env, 'name = "regress"' in out)
+    asserts.true(env, 'pg_src = "@pg_src//18.1:files"' in out)
 
     return unittest.end(env)
 

@@ -82,6 +82,11 @@ def _build_entries_one_version_no_deps_test_impl(ctx):
             "@pg//18.1/%s:tar" % target.option_set,
             target.artifact,
         )
+        asserts.equals(
+            env,
+            "@pg//18.1/%s:regress" % target.option_set,
+            target.regress,
+        )
         asserts.equals(env, entry.source, target.source)
 
     return unittest.end(env)
