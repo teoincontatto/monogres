@@ -15,6 +15,23 @@ NixOS project. `flake.nix` + `.envrc` (direnv) provide the dev shell.
   command runs in the empty-chroot hermetic sandbox with no extra flags. Keep runs
   hermetic; never disable the sandbox. Cross-arch/RBE override with their own
   `--config=` (e.g. `--config=remote-buildbarn --config=linux-arm64-buildbarn`).
+- **Unprivileged userns**: the hermetic sandbox needs an unprivileged user
+  namespace. Ubuntu 24.04+ ships `kernel.apparmor_restrict_unprivileged_userns=1`,
+  which denies one to `postgres`, and Bazel then *silently* degrades to
+  `processwrapper-sandbox` rather than failing. What that breaks: make-path
+  versions (PG <= 15.x) die in `set_up_sysroots` with `ln: failed to create
+  symbolic link '/usr/bin/perl': Permission denied` (only the empty chroot has a
+  writable `/usr/bin`), and every test-lane `sh_test` dies with `ERROR: runner not
+  executable:` (`--nobuild_runfile_links` means the runfiles tree materializes
+  only inside the chroot, so the harness cannot find `pg_regress`). Confirm with
+  `bazel build --spawn_strategy=linux-sandbox //...`: "no strategy with that
+  identifier was registered" means it is off. Fix on the *host*, not in the
+  container: `sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0`
+  (persist under `/etc/sysctl.d/`), then `bazel shutdown` -- sandbox support is
+  probed once per server start, so a server started before the change keeps the
+  fallback. Neither workaround works: `docker exec --privileged` leaves a non-root
+  uid with an empty permitted capability set, and running Bazel as `root` gets the
+  sandbox but not the tests, since `initdb` refuses to run as root.
 - **Docker**: start container (if not running)
   `nix develop --command bash -c 'make -C build/docker run-image USE_CACHE=true DETACHED=true'`
   Container: `bzlsndbx-<project>_<arch>` (ask user if arch != x86_64)
