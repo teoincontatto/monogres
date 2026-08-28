@@ -65,6 +65,22 @@
         "/src/contrib/uuid-ossp/Makefile",
         "/src/contrib/vacuumlo/Makefile"
     ],
+    "contrib_requires": {
+        "earthdistance": [
+            "cube"
+        ],
+        "hstore_plpython": [
+            "hstore",
+            "plpython3u"
+        ],
+        "jsonb_plpython": [
+            "plpython3u"
+        ],
+        "ltree_plpython": [
+            "ltree",
+            "plpython3u"
+        ]
+    },
     "installed": {
         "contrib/adminpack/adminpack--1.0--1.1.sql": "/postgres/<PG_VERSION>/share/extension/adminpack--1.0--1.1.sql",
         "contrib/adminpack/adminpack--1.0.sql": "/postgres/<PG_VERSION>/share/extension/adminpack--1.0.sql",
@@ -4488,34 +4504,5 @@
                 "100_bugs"
             ]
         }
-    ],
-    "contrib_requires": {
-        "bool_plperl": [
-            "plperl",
-            "plperlu"
-        ],
-        "earthdistance": [
-            "cube"
-        ],
-        "hstore_plperl": [
-            "hstore",
-            "plperl",
-            "plperlu"
-        ],
-        "hstore_plpython": [
-            "hstore",
-            "plpython3u"
-        ],
-        "jsonb_plperl": [
-            "plperl",
-            "plperlu"
-        ],
-        "jsonb_plpython": [
-            "plpython3u"
-        ],
-        "ltree_plpython": [
-            "ltree",
-            "plpython3u"
-        ]
-    }
+    ]
 }
