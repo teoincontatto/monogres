@@ -2,27 +2,58 @@
   "kind": "contrib",
   "metadata": {
     "files": {
+      "babelfish": {
+        "4.0": [
+          "lib/postgresql/bitcode/hstore_plperl.index.bc",
+          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
+        ],
+        "5.1": [
+          "lib/postgresql/bitcode/hstore_plperl.index.bc",
+          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
+        ]
+      },
       "ivorysql": {
         "3.0": [
-          "lib/hstore_plperl.so",
-          "share/extension/hstore_plperl--1.0.sql",
-          "share/extension/hstore_plperl.control",
-          "share/extension/hstore_plperlu--1.0.sql",
-          "share/extension/hstore_plperlu.control"
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
         ],
         "4.0": [
-          "lib/hstore_plperl.so",
-          "share/extension/hstore_plperl--1.0.sql",
-          "share/extension/hstore_plperl.control",
-          "share/extension/hstore_plperlu--1.0.sql",
-          "share/extension/hstore_plperlu.control"
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
         ],
         "5.0": [
-          "lib/hstore_plperl.so",
-          "share/extension/hstore_plperl--1.0.sql",
-          "share/extension/hstore_plperl.control",
-          "share/extension/hstore_plperlu--1.0.sql",
-          "share/extension/hstore_plperlu.control"
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
+        ]
+      },
+      "openhalo": {
+        "1beta1": [
+          "lib/postgresql/bitcode/hstore_plperl.index.bc",
+          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/postgresql/hstore_plperl.so",
+          "share/postgresql/extension/hstore_plperl--1.0.sql",
+          "share/postgresql/extension/hstore_plperl.control",
+          "share/postgresql/extension/hstore_plperlu--1.0.sql",
+          "share/postgresql/extension/hstore_plperlu.control"
         ]
       },
       "postgres": {
@@ -48,6 +79,34 @@
           "share/extension/hstore_plperlu.control"
         ],
         "16.11": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "16.12": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "16.13": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "16.14": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "16.15": [
           "lib/hstore_plperl.so",
           "share/extension/hstore_plperl--1.0.sql",
           "share/extension/hstore_plperl.control",
@@ -124,6 +183,20 @@
           "share/extension/hstore_plperlu--1.0.sql",
           "share/extension/hstore_plperlu.control"
         ],
+        "17.10": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "17.11": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
         "17.2": [
           "lib/hstore_plperl.so",
           "share/extension/hstore_plperl--1.0.sql",
@@ -166,6 +239,20 @@
           "share/extension/hstore_plperlu--1.0.sql",
           "share/extension/hstore_plperlu.control"
         ],
+        "17.8": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "17.9": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
         "18.0": [
           "lib/hstore_plperl.so",
           "share/extension/hstore_plperl--1.0.sql",
@@ -179,10 +266,59 @@
           "share/extension/hstore_plperl.control",
           "share/extension/hstore_plperlu--1.0.sql",
           "share/extension/hstore_plperlu.control"
+        ],
+        "18.2": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "18.3": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "18.4": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "18.6": [
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ]
       }
     },
     "requires": {
+      "babelfish": {
+        "*": [
+          "hstore",
+          "plperl",
+          "plperlu"
+        ]
+      },
+      "ivorysql": {
+        "*": [
+          "hstore",
+          "plperl",
+          "plperlu"
+        ]
+      },
+      "openhalo": {
+        "1beta1": [
+          "hstore",
+          "plperl",
+          "plperlu"
+        ]
+      },
       "postgres": {
         "*": [
           "hstore",
@@ -194,16 +330,27 @@
   },
   "version": 1,
   "versions": {
+    "babelfish": [
+      "4.0",
+      "5.1"
+    ],
     "ivorysql": [
       "3.0",
       "4.0",
       "5.0"
+    ],
+    "openhalo": [
+      "1beta1"
     ],
     "postgres": [
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",
@@ -214,14 +361,22 @@
       "16.9",
       "17.0",
       "17.1",
+      "17.10",
+      "17.11",
       "17.2",
       "17.3",
       "17.4",
       "17.5",
       "17.6",
       "17.7",
+      "17.8",
+      "17.9",
       "18.0",
-      "18.1"
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "18.6"
     ]
   }
 }

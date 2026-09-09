@@ -4,19 +4,26 @@
     "files": {
       "ivorysql": {
         "3.0": [
-          "lib/ora_btree_gist.so",
-          "share/extension/ora_btree_gist--1.0.sql",
-          "share/extension/ora_btree_gist.control"
+          "lib/postgresql/ora_btree_gist.so",
+          "share/postgresql/extension/ora_btree_gist--1.0.sql",
+          "share/postgresql/extension/ora_btree_gist.control"
         ],
         "4.0": [
-          "lib/ora_btree_gist.so",
-          "share/extension/ora_btree_gist--1.0.sql",
-          "share/extension/ora_btree_gist.control"
+          "lib/postgresql/ora_btree_gist.so",
+          "share/postgresql/extension/ora_btree_gist--1.0.sql",
+          "share/postgresql/extension/ora_btree_gist.control"
         ],
         "5.0": [
-          "lib/ora_btree_gist.so",
-          "share/extension/ora_btree_gist--1.0.sql",
-          "share/extension/ora_btree_gist.control"
+          "lib/postgresql/ora_btree_gist.so",
+          "share/postgresql/extension/ora_btree_gist--1.0.sql",
+          "share/postgresql/extension/ora_btree_gist.control"
+        ]
+      }
+    },
+    "requires": {
+      "ivorysql": {
+        "*": [
+          "ivorysql_ora"
         ]
       }
     }

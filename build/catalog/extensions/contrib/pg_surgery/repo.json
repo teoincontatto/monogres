@@ -20,19 +20,19 @@
       },
       "ivorysql": {
         "3.0": [
-          "lib/pg_surgery.so",
-          "share/extension/pg_surgery--1.0.sql",
-          "share/extension/pg_surgery.control"
+          "lib/postgresql/pg_surgery.so",
+          "share/postgresql/extension/pg_surgery--1.0.sql",
+          "share/postgresql/extension/pg_surgery.control"
         ],
         "4.0": [
-          "lib/pg_surgery.so",
-          "share/extension/pg_surgery--1.0.sql",
-          "share/extension/pg_surgery.control"
+          "lib/postgresql/pg_surgery.so",
+          "share/postgresql/extension/pg_surgery--1.0.sql",
+          "share/postgresql/extension/pg_surgery.control"
         ],
         "5.0": [
-          "lib/pg_surgery.so",
-          "share/extension/pg_surgery--1.0.sql",
-          "share/extension/pg_surgery.control"
+          "lib/postgresql/pg_surgery.so",
+          "share/postgresql/extension/pg_surgery--1.0.sql",
+          "share/postgresql/extension/pg_surgery.control"
         ]
       },
       "openhalo": {
@@ -46,6 +46,139 @@
       },
       "postgres": {
         "15.0": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.1": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.10": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.11": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.12": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.13": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.14": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.15": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.16": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.17": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.18": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.19": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.2": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.3": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.4": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.5": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.6": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.7": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.8": [
+          "lib/bitcode/pg_surgery.index.bc",
+          "lib/bitcode/pg_surgery/heap_surgery.bc",
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "15.9": [
           "lib/bitcode/pg_surgery.index.bc",
           "lib/bitcode/pg_surgery/heap_surgery.bc",
           "lib/pg_surgery.so",
@@ -68,6 +201,26 @@
           "share/extension/pg_surgery.control"
         ],
         "16.11": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "16.12": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "16.13": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "16.14": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "16.15": [
           "lib/pg_surgery.so",
           "share/extension/pg_surgery--1.0.sql",
           "share/extension/pg_surgery.control"
@@ -122,6 +275,16 @@
           "share/extension/pg_surgery--1.0.sql",
           "share/extension/pg_surgery.control"
         ],
+        "17.10": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "17.11": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
         "17.2": [
           "lib/pg_surgery.so",
           "share/extension/pg_surgery--1.0.sql",
@@ -152,12 +315,42 @@
           "share/extension/pg_surgery--1.0.sql",
           "share/extension/pg_surgery.control"
         ],
+        "17.8": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "17.9": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
         "18.0": [
           "lib/pg_surgery.so",
           "share/extension/pg_surgery--1.0.sql",
           "share/extension/pg_surgery.control"
         ],
         "18.1": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "18.2": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "18.3": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "18.4": [
+          "lib/pg_surgery.so",
+          "share/extension/pg_surgery--1.0.sql",
+          "share/extension/pg_surgery.control"
+        ],
+        "18.6": [
           "lib/pg_surgery.so",
           "share/extension/pg_surgery--1.0.sql",
           "share/extension/pg_surgery.control"
@@ -181,10 +374,33 @@
     ],
     "postgres": [
       "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
+      "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",
@@ -195,14 +411,22 @@
       "16.9",
       "17.0",
       "17.1",
+      "17.10",
+      "17.11",
       "17.2",
       "17.3",
       "17.4",
       "17.5",
       "17.6",
       "17.7",
+      "17.8",
+      "17.9",
       "18.0",
-      "18.1"
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "18.6"
     ]
   }
 }

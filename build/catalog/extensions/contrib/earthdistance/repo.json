@@ -23,23 +23,23 @@
       },
       "ivorysql": {
         "3.0": [
-          "lib/earthdistance.so",
-          "share/extension/earthdistance--1.0--1.1.sql",
-          "share/extension/earthdistance--1.1.sql",
-          "share/extension/earthdistance.control"
+          "lib/postgresql/earthdistance.so",
+          "share/postgresql/extension/earthdistance--1.0--1.1.sql",
+          "share/postgresql/extension/earthdistance--1.1.sql",
+          "share/postgresql/extension/earthdistance.control"
         ],
         "4.0": [
-          "lib/earthdistance.so",
-          "share/extension/earthdistance--1.0--1.1.sql",
-          "share/extension/earthdistance--1.1.sql",
-          "share/extension/earthdistance.control"
+          "lib/postgresql/earthdistance.so",
+          "share/postgresql/extension/earthdistance--1.0--1.1.sql",
+          "share/postgresql/extension/earthdistance--1.1.sql",
+          "share/postgresql/extension/earthdistance.control"
         ],
         "5.0": [
-          "lib/earthdistance.so",
-          "share/extension/earthdistance--1.0--1.1.sql",
-          "share/extension/earthdistance--1.1--1.2.sql",
-          "share/extension/earthdistance--1.1.sql",
-          "share/extension/earthdistance.control"
+          "lib/postgresql/earthdistance.so",
+          "share/postgresql/extension/earthdistance--1.0--1.1.sql",
+          "share/postgresql/extension/earthdistance--1.1--1.2.sql",
+          "share/postgresql/extension/earthdistance--1.1.sql",
+          "share/postgresql/extension/earthdistance.control"
         ]
       },
       "openhalo": {
@@ -54,6 +54,158 @@
       },
       "postgres": {
         "15.0": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.1": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.10": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.11": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.12": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.13": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.14": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.15": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.16": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.17": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.18": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.19": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.2": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.3": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.4": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.5": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.6": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.7": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.8": [
+          "lib/bitcode/earthdistance.index.bc",
+          "lib/bitcode/earthdistance/earthdistance.bc",
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "15.9": [
           "lib/bitcode/earthdistance.index.bc",
           "lib/bitcode/earthdistance/earthdistance.bc",
           "lib/earthdistance.so",
@@ -81,6 +233,34 @@
           "share/extension/earthdistance.control"
         ],
         "16.11": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "16.12": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "16.13": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "16.14": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "16.15": [
           "lib/earthdistance.so",
           "share/extension/earthdistance--1.0--1.1.sql",
           "share/extension/earthdistance--1.1--1.2.sql",
@@ -150,6 +330,20 @@
           "share/extension/earthdistance--1.1.sql",
           "share/extension/earthdistance.control"
         ],
+        "17.10": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "17.11": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
         "17.2": [
           "lib/earthdistance.so",
           "share/extension/earthdistance--1.0--1.1.sql",
@@ -191,6 +385,20 @@
           "share/extension/earthdistance--1.1.sql",
           "share/extension/earthdistance.control"
         ],
+        "17.8": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "17.9": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
         "18.0": [
           "lib/earthdistance.so",
           "share/extension/earthdistance--1.0--1.1.sql",
@@ -199,6 +407,34 @@
           "share/extension/earthdistance.control"
         ],
         "18.1": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "18.2": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "18.3": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "18.4": [
+          "lib/earthdistance.so",
+          "share/extension/earthdistance--1.0--1.1.sql",
+          "share/extension/earthdistance--1.1--1.2.sql",
+          "share/extension/earthdistance--1.1.sql",
+          "share/extension/earthdistance.control"
+        ],
+        "18.6": [
           "lib/earthdistance.so",
           "share/extension/earthdistance--1.0--1.1.sql",
           "share/extension/earthdistance--1.1--1.2.sql",
@@ -246,10 +482,33 @@
     ],
     "postgres": [
       "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
+      "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",
@@ -260,14 +519,22 @@
       "16.9",
       "17.0",
       "17.1",
+      "17.10",
+      "17.11",
       "17.2",
       "17.3",
       "17.4",
       "17.5",
       "17.6",
       "17.7",
+      "17.8",
+      "17.9",
       "18.0",
-      "18.1"
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "18.6"
     ]
   }
 }

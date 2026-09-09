@@ -30,23 +30,23 @@
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgres_fdw.so",
-          "share/extension/postgres_fdw--1.0--1.1.sql",
-          "share/extension/postgres_fdw--1.0.sql",
-          "share/extension/postgres_fdw.control"
+          "lib/postgresql/postgres_fdw.so",
+          "share/postgresql/extension/postgres_fdw--1.0--1.1.sql",
+          "share/postgresql/extension/postgres_fdw--1.0.sql",
+          "share/postgresql/extension/postgres_fdw.control"
         ],
         "4.0": [
-          "lib/postgres_fdw.so",
-          "share/extension/postgres_fdw--1.0--1.1.sql",
-          "share/extension/postgres_fdw--1.0.sql",
-          "share/extension/postgres_fdw.control"
+          "lib/postgresql/postgres_fdw.so",
+          "share/postgresql/extension/postgres_fdw--1.0--1.1.sql",
+          "share/postgresql/extension/postgres_fdw--1.0.sql",
+          "share/postgresql/extension/postgres_fdw.control"
         ],
         "5.0": [
-          "lib/postgres_fdw.so",
-          "share/extension/postgres_fdw--1.0--1.1.sql",
-          "share/extension/postgres_fdw--1.0.sql",
-          "share/extension/postgres_fdw--1.1--1.2.sql",
-          "share/extension/postgres_fdw.control"
+          "lib/postgresql/postgres_fdw.so",
+          "share/postgresql/extension/postgres_fdw--1.0--1.1.sql",
+          "share/postgresql/extension/postgres_fdw--1.0.sql",
+          "share/postgresql/extension/postgres_fdw--1.1--1.2.sql",
+          "share/postgresql/extension/postgres_fdw.control"
         ]
       },
       "openhalo": {
@@ -65,6 +65,234 @@
       },
       "postgres": {
         "15.0": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.1": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.10": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.11": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.12": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.13": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.14": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.15": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.16": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.17": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.18": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.19": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.2": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.3": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.4": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.5": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.6": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.7": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.8": [
+          "lib/bitcode/postgres_fdw.index.bc",
+          "lib/bitcode/postgres_fdw/connection.bc",
+          "lib/bitcode/postgres_fdw/deparse.bc",
+          "lib/bitcode/postgres_fdw/option.bc",
+          "lib/bitcode/postgres_fdw/postgres_fdw.bc",
+          "lib/bitcode/postgres_fdw/shippable.bc",
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "15.9": [
           "lib/bitcode/postgres_fdw.index.bc",
           "lib/bitcode/postgres_fdw/connection.bc",
           "lib/bitcode/postgres_fdw/deparse.bc",
@@ -95,6 +323,30 @@
           "share/extension/postgres_fdw.control"
         ],
         "16.11": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "16.12": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "16.13": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "16.14": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "16.15": [
           "lib/postgres_fdw.so",
           "share/extension/postgres_fdw--1.0--1.1.sql",
           "share/extension/postgres_fdw--1.0.sql",
@@ -160,6 +412,18 @@
           "share/extension/postgres_fdw--1.0.sql",
           "share/extension/postgres_fdw.control"
         ],
+        "17.10": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "17.11": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
         "17.2": [
           "lib/postgres_fdw.so",
           "share/extension/postgres_fdw--1.0--1.1.sql",
@@ -196,6 +460,18 @@
           "share/extension/postgres_fdw--1.0.sql",
           "share/extension/postgres_fdw.control"
         ],
+        "17.8": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "17.9": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw.control"
+        ],
         "18.0": [
           "lib/postgres_fdw.so",
           "share/extension/postgres_fdw--1.0--1.1.sql",
@@ -204,6 +480,34 @@
           "share/extension/postgres_fdw.control"
         ],
         "18.1": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw--1.1--1.2.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "18.2": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw--1.1--1.2.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "18.3": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw--1.1--1.2.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "18.4": [
+          "lib/postgres_fdw.so",
+          "share/extension/postgres_fdw--1.0--1.1.sql",
+          "share/extension/postgres_fdw--1.0.sql",
+          "share/extension/postgres_fdw--1.1--1.2.sql",
+          "share/extension/postgres_fdw.control"
+        ],
+        "18.6": [
           "lib/postgres_fdw.so",
           "share/extension/postgres_fdw--1.0--1.1.sql",
           "share/extension/postgres_fdw--1.0.sql",
@@ -229,10 +533,33 @@
     ],
     "postgres": [
       "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
+      "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",
@@ -243,14 +570,22 @@
       "16.9",
       "17.0",
       "17.1",
+      "17.10",
+      "17.11",
       "17.2",
       "17.3",
       "17.4",
       "17.5",
       "17.6",
       "17.7",
+      "17.8",
+      "17.9",
       "18.0",
-      "18.1"
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "18.6"
     ]
   }
 }

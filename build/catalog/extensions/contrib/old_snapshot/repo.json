@@ -14,9 +14,9 @@
       },
       "ivorysql": {
         "3.0": [
-          "lib/old_snapshot.so",
-          "share/extension/old_snapshot--1.0.sql",
-          "share/extension/old_snapshot.control"
+          "lib/postgresql/old_snapshot.so",
+          "share/postgresql/extension/old_snapshot--1.0.sql",
+          "share/postgresql/extension/old_snapshot.control"
         ]
       },
       "openhalo": {
@@ -31,6 +31,158 @@
       },
       "postgres": {
         "15.0": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.1": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.10": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.11": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.12": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.13": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.14": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.15": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.16": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.17": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.18": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.19": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.2": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.3": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.4": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.5": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.6": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.7": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.8": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "15.9": [
           "include/server/utils/old_snapshot.h",
           "lib/bitcode/old_snapshot.index.bc",
           "lib/bitcode/old_snapshot/time_mapping.bc",
@@ -54,6 +206,26 @@
           "share/extension/old_snapshot.control"
         ],
         "16.11": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "16.12": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "16.13": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "16.14": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "16.15": [
           "lib/old_snapshot.so",
           "share/extension/old_snapshot--1.0.sql",
           "share/extension/old_snapshot.control"
@@ -114,10 +286,33 @@
     ],
     "postgres": [
       "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
+      "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",

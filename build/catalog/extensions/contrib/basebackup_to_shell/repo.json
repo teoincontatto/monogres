@@ -16,17 +16,112 @@
       },
       "ivorysql": {
         "3.0": [
-          "lib/basebackup_to_shell.so"
+          "lib/postgresql/basebackup_to_shell.so"
         ],
         "4.0": [
-          "lib/basebackup_to_shell.so"
+          "lib/postgresql/basebackup_to_shell.so"
         ],
         "5.0": [
-          "lib/basebackup_to_shell.so"
+          "lib/postgresql/basebackup_to_shell.so"
         ]
       },
       "postgres": {
         "15.0": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.1": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.10": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.11": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.12": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.13": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.14": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.15": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.16": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.17": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.18": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.19": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.2": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.3": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.4": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.5": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.6": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.7": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.8": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "15.9": [
           "lib/basebackup_to_shell.so",
           "lib/bitcode/basebackup_to_shell.index.bc",
           "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
@@ -41,6 +136,18 @@
           "lib/basebackup_to_shell.so"
         ],
         "16.11": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "16.12": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "16.13": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "16.14": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "16.15": [
           "lib/basebackup_to_shell.so"
         ],
         "16.2": [
@@ -73,6 +180,12 @@
         "17.1": [
           "lib/basebackup_to_shell.so"
         ],
+        "17.10": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "17.11": [
+          "lib/basebackup_to_shell.so"
+        ],
         "17.2": [
           "lib/basebackup_to_shell.so"
         ],
@@ -91,10 +204,28 @@
         "17.7": [
           "lib/basebackup_to_shell.so"
         ],
+        "17.8": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "17.9": [
+          "lib/basebackup_to_shell.so"
+        ],
         "18.0": [
           "lib/basebackup_to_shell.so"
         ],
         "18.1": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "18.2": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "18.3": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "18.4": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "18.6": [
           "lib/basebackup_to_shell.so"
         ]
       }
@@ -113,10 +244,33 @@
     ],
     "postgres": [
       "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
+      "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",
       "16.11",
+      "16.12",
+      "16.13",
+      "16.14",
+      "16.15",
       "16.2",
       "16.3",
       "16.4",
@@ -127,14 +281,22 @@
       "16.9",
       "17.0",
       "17.1",
+      "17.10",
+      "17.11",
       "17.2",
       "17.3",
       "17.4",
       "17.5",
       "17.6",
       "17.7",
+      "17.8",
+      "17.9",
       "18.0",
-      "18.1"
+      "18.1",
+      "18.2",
+      "18.3",
+      "18.4",
+      "18.6"
     ]
   }
 }

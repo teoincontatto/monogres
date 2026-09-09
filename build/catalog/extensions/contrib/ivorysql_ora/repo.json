@@ -4,20 +4,20 @@
     "files": {
       "ivorysql": {
         "3.0": [
-          "lib/ivorysql_ora.so",
-          "share/extension/ivorysql_ora--1.0.sql",
-          "share/extension/ivorysql_ora.control"
+          "lib/postgresql/ivorysql_ora.so",
+          "share/postgresql/extension/ivorysql_ora--1.0.sql",
+          "share/postgresql/extension/ivorysql_ora.control"
         ],
         "4.0": [
-          "lib/ivorysql_ora.so",
-          "share/extension/ivorysql_ora--1.0.sql",
-          "share/extension/ivorysql_ora.control"
+          "lib/postgresql/ivorysql_ora.so",
+          "share/postgresql/extension/ivorysql_ora--1.0.sql",
+          "share/postgresql/extension/ivorysql_ora.control"
         ],
         "5.0": [
-          "lib/ivorysql_ora.so",
-          "share/extension/ivorysql_ora--1.0.sql",
-          "share/extension/ivorysql_ora.control",
-          "share/preload_ora_misc.sql"
+          "lib/postgresql/ivorysql_ora.so",
+          "share/postgresql/extension/ivorysql_ora--1.0.sql",
+          "share/postgresql/extension/ivorysql_ora.control",
+          "share/postgresql/preload_ora_misc.sql"
         ]
       }
     }
