@@ -164,6 +164,11 @@ def _installed_paths(introspect_json, version):
             name: contrib_requires_meta.get(name)
             for name in contrib_names
         },
+        # A subset of `postgres_paths`, not a fourth bucket beside it: the PLs
+        # are built from the flavor's own tree, so they are postgres paths that
+        # happen to be separable. Consumers that want the whole install keep
+        # reading `postgres_paths` unchanged.
+        pl_paths = BuildIntrospect.get_pl_installed_paths(postgres_paths),
         postgres_paths = postgres_paths,
     )
 
@@ -178,6 +183,12 @@ def write_introspect(rctx):
 
     Args:
         rctx: Repository context (base_repo).
+
+    Returns:
+        `{version: [option_set]}` for the combos a Layer 1 stub was written for.
+        `versions.bzl` renders the runtime carve only for those: a combo with no
+        introspect JSON has no per-file attribution, so there is nothing to tell
+        contrib and the procedural languages apart by.
     """
     hub_root = rctx.path(Label(rctx.attr.pg_src)).dirname
 
@@ -189,6 +200,7 @@ def write_introspect(rctx):
 
     introspections = {}
     loads = []
+    paths_stubs = {}
 
     for repos in index.repos.values():
         if not repos:
@@ -212,6 +224,9 @@ def write_introspect(rctx):
                 "introspect/json/%s/%s/defs.bzl" % (pg_version, option_set),
                 _paths_stub_bzl(paths_repo, option_set),
             )
+
+            if paths_repo:
+                paths_stubs.setdefault(pg_version, []).append(option_set)
 
             key = (pg_version, option_set)
             key_load = "%s_%s" % (pg_version.replace(
@@ -251,6 +266,8 @@ def write_introspect(rctx):
                     option_set = option_set,
                 ),
             )
+
+    return paths_stubs
 
 # ---------------------------------------------------------------------------
 # Layer 2: per-version lazy repos for source-dependent data
@@ -321,6 +338,10 @@ def _pg_introspect_version_impl(rctx):
             "contrib": {
                 name: _contrib_entry(name)
                 for name in paths.contrib_names
+            },
+            "pl": {
+                language: {"paths": pl_paths}
+                for language, pl_paths in paths.pl_paths.items()
             },
             "postgres": {"paths": paths.postgres_paths},
         }
@@ -451,6 +472,10 @@ def _pg_introspect_paths_impl(rctx):
                 for name in paths.contrib_names
             },
             "flavor": rctx.attr.flavor,
+            "pl": {
+                language: {"paths": pl_paths}
+                for language, pl_paths in paths.pl_paths.items()
+            },
             "postgres": {"paths": paths.postgres_paths},
         }
 

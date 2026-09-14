@@ -41,6 +41,14 @@ def _filegroup(*args, **kwargs):
 # `meson install` an out-of-tree extension or libpq client compiles against.
 _MESON_DEV_PATHS = ["include", "lib/pgxs", "lib/pkgconfig", "lib/*.a"]
 
+# The rest of that carve: contrib and the procedural languages the flavor does
+# not ship, which `runtime_tree.bzl` reads off the package's own Layer 1
+# `INTROSPECTION`. Kept out of the globs above because no glob expresses it --
+# contrib installs `lib/*.so` and `share/extension/*` right beside plpgsql's --
+# and computed at load time rather than baked in so the hub stays cheap to
+# materialize.
+_EXCLUDE_PATHS = "_EXCLUDE_PATHS"
+
 def _version_root_build(version, default_option_set):
     """Render {version}/BUILD.bazel"""
     f = bind(v = version, opt = default_option_set)
@@ -55,28 +63,77 @@ def _version_root_build(version, default_option_set):
         header = _HEADER,
     )
 
+def _carve(build_repo, version, option_set, introspected):
+    """The load + assignment + kwargs that put the runtime carve in one package.
+
+    Args:
+        build_repo: Name of the build repo (e.g. `"monogres"`).
+        version: Base version string.
+        option_set: Option set name.
+        introspected: Whether this combo has a Layer 1 introspect stub. Without
+            one there is no per-file attribution, so contrib and the procedural
+            languages cannot be told apart from the backend and the package
+            renders the dev-path carve alone.
+
+    Returns:
+        `(loads, assignments, kwargs)` to splice into the package: the loads and
+        assignments as `Star.file()` parts, the kwargs for `pg_install_tree`.
+    """
+    if not introspected:
+        return [], [], {}
+
+    f = bind(build = build_repo, v = version, opt = option_set)
+
+    return (
+        [
+            Star.load_(
+                f("@{build}//monoext/private/base:runtime_tree.bzl"),
+                "runtime_exclude_paths",
+            ),
+            Star.load_(
+                f("//:introspect/json/{v}/{opt}/defs.bzl"),
+                "INTROSPECTION",
+            ),
+        ],
+        [
+            Star.assign(
+                _EXCLUDE_PATHS,
+                Star.fn("runtime_exclude_paths", Star.ref("INTROSPECTION")),
+            ),
+        ],
+        {"exclude_paths": Star.ref(_EXCLUDE_PATHS)},
+    )
+
 def _option_set_build(
         build_repo,
         target,
         source_repo,
         version,
         option_set,
-        build_options = None):
+        build_options = None,
+        introspected = False):
     """Render a production or test-variant {version}/{option_set} build package.
 
     Dispatches between the Meson and autoconf+make build wrappers based on
     `target.build_system`. The production package exposes a runtime / SDK / test
-    surface: `:tar` (the shippable runtime: backend, frontends, loadable
-    modules), `:tar.dev` (the SDK: the full `meson install` an out-of-tree
-    extension / libpq client compiles against, headers + PGXS + pkg-config +
-    static archives), and `:tar.test` (the install:false test fixtures over the
-    SDK, aliased from the test-enabled sibling). On meson, `:tar.dev` is the raw
-    build and `:tar` carves the dev-only paths back out of it; on make the
-    single full tree serves as `:tar` with `:tar.dev` aliased onto it.
+    surface: `:tar` (the shippable runtime: backend, frontends, and the loadable
+    modules an image is expected to ship), `:tar.dev` (the SDK: the full install
+    an out-of-tree extension / libpq client compiles against, and the tree
+    contrib layers are carved from), and `:tar.test` (the install:false test
+    fixtures over the SDK, aliased from the test-enabled sibling).
+
+    `:tar.dev` is the raw build on both paths; `:tar` is `pg_install_tree`
+    carving it down to the runtime. The carve drops the dev-only paths (meson
+    only -- the make tree's headers and PGXS have always shipped), all of
+    contrib, and every procedural language but the flavor's own. Both keep
+    *building*: the contrib layers are carved out of `:tar.dev`, so switching
+    them off at the build option would take the carving source with them. They
+    simply stop being in the base image, where they were never asked for.
 
     The test-enabled sibling (`{version}/{option_set}/test/`) is a single
     tap_tests-enabled build named `:tar` (the `_TEST_OVERLAY`-augmented
-    `target.test_build_options`); it is the fixtures source `:tar.test` aliases.
+    `target.test_build_options`), carved not at all: it is the fixtures source
+    `:tar.test` aliases, and the regress suites run the full tree.
     """
     f = bind(build = build_repo, src = source_repo, v = version)
 
@@ -84,6 +141,13 @@ def _option_set_build(
     # `target.test_build_options` dict for the test-enabled sibling.
     is_test = build_options != None
     bopts = build_options if is_test else target.build_options
+
+    carve_loads, carve_assignments, carve_kwargs = _carve(
+        build_repo,
+        version,
+        option_set,
+        introspected and not is_test,
+    )
 
     # Sibling source trees merged into the primary tree by the make wrapper
     # (`metadata.extra_sources`). Rendered only when present so single-source
@@ -98,17 +162,31 @@ def _option_set_build(
         # `./configure && make TARGET && make INSTALL_TARGET DESTDIR=...`. No
         # `auto_features` arg — autoconf has no equivalent of Meson's
         # auto-features metaknob (`to_configure_args` anchors every known
-        # boolean option explicitly instead). The single full tree is `:tar`;
-        # the production package aliases `:tar.dev` onto it (the make tree ships
-        # headers + PGXS, so it already is the SDK).
-        parts = [
+        # boolean option explicitly instead).
+        #
+        # The full tree is `:tar.dev` — the SDK as built, since the make install
+        # ships headers + PGXS — and the production package carves `:tar` out of
+        # it the way the meson path does. It has to: `:tar.dev` is what contrib
+        # layers are carved from, so excluding contrib in place would strip the
+        # carving source and break every contrib layer of a make version.
+        loads = [
             Star.load_(
                 f("@{build}//monoext/private/base:pg_build_make.bzl"),
                 "pg_build_make",
             ),
+        ]
+        if not is_test:
+            loads.append(Star.load_(
+                f("@{build}//monoext/private/base:install_tree.bzl"),
+                "pg_install_tree",
+            ))
+            loads.extend(carve_loads)
+
+        parts = loads + [
             Star.package(default_visibility = ["//visibility:public"]),
+        ] + carve_assignments + [
             _pg_build_make(
-                name = "tar",
+                name = "tar" if is_test else "tar.dev",
                 pg_src = f("@{src}//{v}:dir"),
                 build_options = bopts,
                 # Absolute label so the resolved path lives in build_repo (where
@@ -130,14 +208,23 @@ def _option_set_build(
                 exec_sysroot_tar = target.deps.buildtime.exec_sysroot_tar,
                 **extras_kwargs
             ),
-            Star.alias(name = option_set, actual = ":tar"),
         ]
         if not is_test:
-            parts.append(Star.alias(name = "tar.dev", actual = ":tar"))
+            parts.append(_filegroup(
+                name = "tar.dev.gen_dir",
+                srcs = [":tar.dev"],
+                output_group = "gen_dir",
+            ))
+            parts.append(_pg_install_tree(
+                name = "tar",
+                base = ":tar.dev.gen_dir",
+                **carve_kwargs
+            ))
             parts.append(Star.alias(
                 name = "tar.test",
                 actual = "//%s/%s/test:tar" % (version, option_set),
             ))
+        parts.append(Star.alias(name = option_set, actual = ":tar"))
         return Star.file(header = _HEADER, *parts)
 
     # Meson-based path. The build args are shared between the production and
@@ -165,9 +252,9 @@ def _option_set_build(
         )
 
     # Production: the full `meson install` is the SDK tree (`:tar.dev`); the
-    # runtime `:tar` carves the dev-only paths out of its `gen_dir` (the whole
-    # INSTALLDIR, captured as one tree artifact). Both ride the SAME compile.
-    return Star.file(
+    # runtime `:tar` carves it down out of its `gen_dir` (the whole INSTALLDIR,
+    # captured as one tree artifact). Both ride the SAME compile.
+    parts = [
         Star.load_(
             f("@{build}//monoext/private/base:pg_build.bzl"),
             "pg_build",
@@ -176,7 +263,9 @@ def _option_set_build(
             f("@{build}//monoext/private/base:install_tree.bzl"),
             "pg_install_tree",
         ),
+    ] + carve_loads + [
         Star.package(default_visibility = ["//visibility:public"]),
+    ] + carve_assignments + [
         _pg_build(name = "tar.dev", build_options = bopts, **meson_kwargs),
         _filegroup(
             name = "tar.dev.gen_dir",
@@ -187,14 +276,15 @@ def _option_set_build(
             name = "tar",
             base = ":tar.dev.gen_dir",
             exclude = _MESON_DEV_PATHS,
+            **carve_kwargs
         ),
         Star.alias(
             name = "tar.test",
             actual = "//%s/%s/test:tar" % (version, option_set),
         ),
         Star.alias(name = option_set, actual = ":tar"),
-        header = _HEADER,
-    )
+    ]
+    return Star.file(header = _HEADER, *parts)
 
 def _arch_build(build_repo, actual, platform):
     """Render {version}/{option_set}/{arch}/BUILD.bazel: transition wrapper."""
@@ -273,7 +363,14 @@ def _deps_kind_build(aliases, exec_files_targets = None):
 # Writers
 # ---------------------------------------------------------------------------
 
-def write_base_version(rctx, version, entry, build_repo, option_sets, archs):
+def write_base_version(
+        rctx,
+        version,
+        entry,
+        build_repo,
+        option_sets,
+        archs,
+        introspected = []):
     """Generates the full directory hierarchy for one base version.
 
     Args:
@@ -283,6 +380,9 @@ def write_base_version(rctx, version, entry, build_repo, option_sets, archs):
         build_repo: Name of the build repo (e.g. "monogres").
         option_sets: Ordered list of option set names.
         archs: List of architecture names for per-arch targets.
+        introspected: Option sets of this version that have a Layer 1 introspect
+            stub, from `write_introspect`. Only those can render the runtime
+            carve; the rest keep the whole install tree as `:tar`.
     """
     source_repo = entry.source_repo
     targets = entry.targets
@@ -305,6 +405,7 @@ def write_base_version(rctx, version, entry, build_repo, option_sets, archs):
                 source_repo,
                 version,
                 option_set,
+                introspected = option_set in introspected,
             ),
         )
 

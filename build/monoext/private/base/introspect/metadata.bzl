@@ -74,6 +74,54 @@ DEP_TO_FEATURE = {
 # The paths use "lib/" instead of "lib/{cpu}-linux-gnu/" because the actual
 # meson builds configure libdir = "lib" (in build_options.bzl) rather than
 # Debian's default multiarch libdir.
+# NOTE:
+# The procedural languages a flavor's own tree builds under `src/pl/`, keyed by
+# language and valued by the three artifact name sets one installs:
+#
+#   extensions: `share/extension/<name>.control` plus `<name>--*.sql`. A
+#               language registers more than one when it has an untrusted
+#               variant (plperl / plperlu).
+#   modules:    `lib/<name>.so`, the loadable the call handler lives in. Not
+#               derivable from the extension name: `plpython3u` is served by
+#               `plpython3.so`.
+#   catalogs:   `share/locale/*/LC_MESSAGES/<name>-<major>.mo`. Not derivable
+#               either: plpython3's message catalogs are named `plpython`.
+#
+# Curated by hand rather than introspected because only the Meson JSONs carry a
+# `src/pl/<language>/` build path to group by. The make-path JSONs are
+# synthesized by walking the finished install tree
+# (`tools/pg_build_make_introspect.py`), where a PL's files are
+# indistinguishable from the backend's own. `build_introspect` checks the table
+# against the data instead: a core extension it cannot attribute to a language
+# here fails the introspect rather than being silently misfiled.
+PL_LANGUAGES = {
+    "plisql": struct(
+        extensions = ["plisql"],
+        modules = ["plisql"],
+        catalogs = ["plisql"],
+    ),
+    "plperl": struct(
+        extensions = ["plperl", "plperlu"],
+        modules = ["plperl"],
+        catalogs = ["plperl"],
+    ),
+    "plpgsql": struct(
+        extensions = ["plpgsql"],
+        modules = ["plpgsql"],
+        catalogs = ["plpgsql"],
+    ),
+    "plpython": struct(
+        extensions = ["plpython3u"],
+        modules = ["plpython3"],
+        catalogs = ["plpython"],
+    ),
+    "pltcl": struct(
+        extensions = ["pltcl", "pltclu"],
+        modules = ["pltcl"],
+        catalogs = ["pltcl"],
+    ),
+}
+
 CONTRIB_INSTALLED_PATHS_OVERRIDE = {
     "sepgsql": {
         "<16.7": [

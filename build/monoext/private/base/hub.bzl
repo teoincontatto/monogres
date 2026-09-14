@@ -90,6 +90,10 @@ def _impl(rctx):
     option_sets = json.decode(rctx.attr.option_sets)
     archs = rctx.attr.archs
 
+    # Written first: the per-version build packages render the runtime carve
+    # against the Layer 1 stubs, and only for the combos that have one.
+    introspected = write_introspect(rctx)
+
     for version in sorted(rctx.attr.entries):
         entry = _BaseSchema.BaseEntry.decode(rctx.attr.entries[version])
         entries[version] = entry
@@ -100,6 +104,7 @@ def _impl(rctx):
             rctx.attr.build_repo,
             option_sets,
             archs,
+            introspected = introspected.get(version, []),
         )
 
     rctx.file("BUILD.bazel", _root_build())
@@ -110,8 +115,6 @@ def _impl(rctx):
         archs,
         rctx.attr.flavor,
     ))
-
-    write_introspect(rctx)
 
     # The core/pl/module test introspect: one `sh_test` per suite under
     # `<v>/<opt>/tests/`. A no-op when the introspect attrs are empty (a flavor

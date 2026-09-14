@@ -56,10 +56,7 @@ version_root_build_test = unittest.make(_version_root_build_test_impl)
 
 # --- option_set_build ------------------------------------------------------
 
-def _option_set_build_test_impl(ctx):
-    """{version}/{option_set}/BUILD.bazel: :tar.dev build + runtime :tar carve."""
-    env = unittest.begin(ctx)
-
+def _target(build_system = "meson"):
     bt = _PkgsSchema.DepsInfo.new(
         packages = ["libssl-dev"],
         pkgs_labels = ["@pg_pkgs//deb/libssl-dev:libssl-dev"],
@@ -72,22 +69,31 @@ def _option_set_build_test_impl(ctx):
             "arm64": "@pgbuildtime-bt//debian/12/arm64:sysroot.tar",
         },
     )
-    vd = _PkgsSchema.VersionDeps.new(buildtime = bt)
-    target = _BaseSchema.BaseTarget.new(
+    return _BaseSchema.BaseTarget.new(
         hub_name = "pg",
         version = "18.1",
         option_set = "full",
         auto_features = "enabled",
         build_options = {"libdir": "lib", "rpath": "false"},
-        version_deps = vd,
+        version_deps = _PkgsSchema.VersionDeps.new(buildtime = bt),
+        build_system = build_system,
     )
-    out = _BaseVersions._option_set_build(
+
+def _build(build_system = "meson", **kwargs):
+    return _BaseVersions._option_set_build(
         build_repo = "monogres",
-        target = target,
+        target = _target(build_system),
         source_repo = "pg_src",
         version = "18.1",
         option_set = "full",
+        **kwargs
     )
+
+def _option_set_build_test_impl(ctx):
+    """{version}/{option_set}/BUILD.bazel: :tar.dev build + runtime :tar carve."""
+    env = unittest.begin(ctx)
+
+    out = _build()
 
     # loads: pg_build + pg_install_tree
     asserts.true(
@@ -118,6 +124,11 @@ def _option_set_build_test_impl(ctx):
     asserts.true(env, 'base = ":tar.dev.gen_dir"' in out)
     asserts.true(env, '"lib/pgxs"' in out)
 
+    # without a Layer 1 introspect stub there is no per-file attribution, so the
+    # dev-path globs are the whole carve
+    asserts.false(env, "runtime_exclude_paths" in out)
+    asserts.false(env, "exclude_paths" in out)
+
     # alias: :full → :tar
     asserts.true(env, 'name = "full"' in out)
     asserts.true(env, 'actual = ":tar"' in out)
@@ -125,6 +136,101 @@ def _option_set_build_test_impl(ctx):
     return unittest.end(env)
 
 option_set_build_test = unittest.make(_option_set_build_test_impl)
+
+def _option_set_build_carve_test_impl(ctx):
+    """An introspected combo carves contrib + the non-shipped PLs as well."""
+    env = unittest.begin(ctx)
+
+    out = _build(introspected = True)
+
+    # the exclude list is computed at load time from the package's own Layer 1
+    # INTROSPECTION, not baked in: keeps the hub cheap to materialize
+    asserts.true(
+        env,
+        '"@monogres//monoext/private/base:runtime_tree.bzl"' in out,
+    )
+    asserts.true(env, '"runtime_exclude_paths"' in out)
+    asserts.true(env, '"//:introspect/json/18.1/full/defs.bzl"' in out)
+    asserts.true(env, '"INTROSPECTION"' in out)
+    asserts.true(
+        env,
+        "_EXCLUDE_PATHS = runtime_exclude_paths(INTROSPECTION)" in out,
+    )
+
+    # both carves reach the same pg_install_tree: globs for the dev paths,
+    # literal paths for what no glob separates
+    asserts.true(env, '"lib/pgxs"' in out)
+    asserts.true(env, "exclude_paths = _EXCLUDE_PATHS" in out)
+
+    return unittest.end(env)
+
+option_set_build_carve_test = unittest.make(_option_set_build_carve_test_impl)
+
+def _option_set_build_test_variant_test_impl(ctx):
+    """The test-enabled sibling is the whole tree: contrib and every PL."""
+    env = unittest.begin(ctx)
+
+    out = _build(introspected = True, build_options = {"tap_tests": "enabled"})
+
+    # one build named :tar, no carve of any kind -- the regress suites run
+    # against contrib and the PLs
+    asserts.true(env, 'name = "tar"' in out)
+    asserts.false(env, "pg_install_tree" in out)
+    asserts.false(env, "runtime_exclude_paths" in out)
+    asserts.true(env, 'actual = ":tar"' in out)
+
+    return unittest.end(env)
+
+option_set_build_test_variant_test = unittest.make(
+    _option_set_build_test_variant_test_impl,
+)
+
+def _option_set_build_make_test_impl(ctx):
+    """The make path splits the same way: raw :tar.dev, carved :tar."""
+    env = unittest.begin(ctx)
+
+    out = _build(build_system = "make", introspected = True)
+
+    # the full `make install` tree is :tar.dev -- which is what contrib layers
+    # are carved from, so the carve cannot happen in place
+    asserts.true(env, "pg_build_make(" in out)
+    asserts.true(env, 'name = "tar.dev"' in out)
+    asserts.true(env, 'output_group = "gen_dir"' in out)
+    asserts.true(env, "pg_install_tree(" in out)
+    asserts.true(env, 'base = ":tar.dev.gen_dir"' in out)
+    asserts.true(env, "exclude_paths = _EXCLUDE_PATHS" in out)
+
+    # ... but not the dev-path globs: the make tree's headers and PGXS have
+    # always shipped in :tar, and that is not this carve's business
+    asserts.false(env, '"lib/pgxs"' in out)
+
+    asserts.true(env, 'actual = "//18.1/full/test:tar"' in out)
+    asserts.true(env, 'name = "full"' in out)
+
+    return unittest.end(env)
+
+option_set_build_make_test = unittest.make(_option_set_build_make_test_impl)
+
+def _option_set_build_make_test_variant_test_impl(ctx):
+    """The make test-enabled sibling stays a single uncarved :tar."""
+    env = unittest.begin(ctx)
+
+    out = _build(
+        build_system = "make",
+        introspected = True,
+        build_options = {"tap_tests": "enabled"},
+    )
+
+    asserts.true(env, "pg_build_make(" in out)
+    asserts.true(env, 'name = "tar"' in out)
+    asserts.false(env, "tar.dev" in out)
+    asserts.false(env, "pg_install_tree" in out)
+
+    return unittest.end(env)
+
+option_set_build_make_test_variant_test = unittest.make(
+    _option_set_build_make_test_variant_test_impl,
+)
 
 # --- src_build -------------------------------------------------------------
 
@@ -219,6 +325,10 @@ TEST_SUITE_TESTS = dict(
     deps_kind_build_multiple_aliases = deps_kind_build_multiple_aliases_test,
     deps_kind_build_single_alias = deps_kind_build_single_alias_test,
     option_set_build = option_set_build_test,
+    option_set_build_carve = option_set_build_carve_test,
+    option_set_build_make = option_set_build_make_test,
+    option_set_build_make_test_variant = option_set_build_make_test_variant_test,
+    option_set_build_test_variant = option_set_build_test_variant_test,
     src_build = src_build_test,
     version_root_build = version_root_build_test,
 )

@@ -36,6 +36,14 @@ install creates them.
 # (shell-globbed `rm -rf`), so a runtime subset can be derived from a full base:
 # `:tar` drops the dev-only paths (headers, pgxs, pkg-config, static archives)
 # the meson `:tar.dev` keeps.
+#
+# `exclude_paths` carves the same way but from a manifest of literal paths, for
+# the carve no glob can express: contrib and the procedural languages install
+# into `lib/` and `share/extension/` right beside the backend's own modules and
+# plpgsql, so the only thing separating them is the introspection's per-file
+# attribution. Emptied parent directories are walked back off the tree too --
+# `share/doc/extension/` holds nothing but contrib, and an empty directory in
+# the runtime still says the extension is there.
 _INSTALL_CMD = """\
 set -eu
 mkdir -p "{out}"
@@ -44,6 +52,16 @@ if [ -n "{base}" ]; then
     chmod -R u+w "{out}"
 fi
 {excludes}
+if [ -n "{exclude_manifest}" ]; then
+    while IFS= read -r path; do
+        [ -n "$path" ] || continue
+        rm -rf "{out}/$path"
+        dir="$(dirname "$path")"
+        while [ "$dir" != "." ] && rmdir "{out}/$dir" 2>/dev/null; do
+            dir="$(dirname "$dir")"
+        done
+    done < "{exclude_manifest}"
+fi
 while IFS="$(printf '\\t')" read -r kind a b; do
     case "$kind" in
         F)
@@ -72,7 +90,7 @@ def _pg_install_tree_impl(ctx):
         base_path = base_files[0].path
         inputs.append(base_files[0])
 
-    if ctx.attr.exclude and not ctx.attr.base:
+    if (ctx.attr.exclude or ctx.attr.exclude_paths) and not ctx.attr.base:
         fail("pg_install_tree: exclude requires base (it carves the base tree)")
     exclude_cmd = ""
     if ctx.attr.exclude:
@@ -82,6 +100,20 @@ def _pg_install_tree_impl(ctx):
         exclude_cmd = '(cd "%s" && rm -rf %s)' % (out.path, " ".join(
             ctx.attr.exclude,
         ))
+
+    # Written to a file rather than interpolated: this list runs to hundreds of
+    # paths (all of contrib, every non-shipped PL), and they are literal, so
+    # they must not reach the shell as an unquoted word list the way the globs
+    # above deliberately do.
+    exclude_manifest = None
+    if ctx.attr.exclude_paths:
+        exclude_manifest = ctx.actions.declare_file(
+            ctx.label.name + ".excludes",
+        )
+        ctx.actions.write(
+            exclude_manifest,
+            "\n".join(ctx.attr.exclude_paths) + "\n",
+        )
 
     lines = []
     for target, dest in ctx.attr.files.items():
@@ -117,13 +149,16 @@ def _pg_install_tree_impl(ctx):
     ctx.actions.write(manifest, "\n".join(lines) + "\n")
 
     ctx.actions.run_shell(
-        inputs = inputs + [manifest],
+        inputs = inputs + [manifest] + (
+            [exclude_manifest] if exclude_manifest else []
+        ),
         outputs = [out],
         command = _INSTALL_CMD.format(
             out = out.path,
             manifest = manifest.path,
             base = base_path,
             excludes = exclude_cmd,
+            exclude_manifest = exclude_manifest.path if exclude_manifest else "",
         ),
         mnemonic = "PgInstallTree",
         progress_message = "Assembling PG install tree %{output}",
@@ -151,6 +186,13 @@ pg_install_tree = rule(
                   "base is laid down, deriving a runtime subset from a full base " +
                   "(drop headers / pgxs / pkg-config / static archives). " +
                   "Requires base; shell-globbed (e.g. lib/*.a).",
+        ),
+        "exclude_paths": attr.string_list(
+            doc = "Literal relative paths removed from the composed tree, and " +
+                  "the parent directories that empties. For the carve no glob " +
+                  "can express (contrib and the non-shipped procedural " +
+                  "languages, which install beside the backend's own files); " +
+                  "the paths come from the introspection. Requires base.",
         ),
         "files": attr.label_keyed_string_dict(
             allow_files = True,

@@ -478,11 +478,17 @@ _COPY_INTROSPECT_DIR_NAME = "copy_introspect"
 # (`<flavor>~<v>~<os>+test.json`) beside the tap-disabled production sibling.
 _TEST_VARIANT_DIR_NAME = "test"
 _TEST_VARIANT_SUFFIX = "+test"
-# Make-built versions synthesize their introspect JSON as a genrule output
-# named `tar.introspect.json` directly in the option-set package (there is no
-# separate `introspect/` rule directory on the make path). Layout:
-# .../external/+monoext+pg/<v>/<os>/tar.introspect.json
-_MAKE_INTROSPECT_JSON_NAME = "tar.introspect.json"
+# Make-built versions synthesize their introspect JSON as a genrule output named
+# after the build target, directly in the option-set package (there is no
+# separate `introspect/` rule directory on the make path). The build is
+# `:tar.dev` on both paths -- `:tar` is the carved runtime -- so the file is
+# `tar.dev.introspect.json`. Layout:
+# .../external/+monoext+pg/<v>/<os>/tar.dev.introspect.json
+#
+# The test-enabled sibling is still built as `:tar` (it has no runtime carve),
+# so it lands at `.../<v>/<os>/test/tar.introspect.json`; both names are
+# matched.
+_MAKE_INTROSPECT_JSON_NAMES = ("tar.dev.introspect.json", "tar.introspect.json")
 
 # ---------------------------------------------------------------------------
 # `.control requires` enrichment
@@ -910,12 +916,13 @@ def _iter_runfiles_introspect_jsons() -> list[Path]:
             continue
         results.append(candidate)
 
-    # Make-built versions: `tar.introspect.json` sits directly in the
-    # option-set package (no `introspect/` rule dir to filter on).
-    for candidate in runfiles_root.rglob(_MAKE_INTROSPECT_JSON_NAME):
-        if _COPY_INTROSPECT_DIR_NAME in candidate.parts:
-            continue
-        results.append(candidate)
+    # Make-built versions: the synthesized JSON sits directly in the option-set
+    # package (no `introspect/` rule dir to filter on).
+    for name in _MAKE_INTROSPECT_JSON_NAMES:
+        for candidate in runfiles_root.rglob(name):
+            if _COPY_INTROSPECT_DIR_NAME in candidate.parts:
+                continue
+            results.append(candidate)
     return results
 
 
@@ -923,8 +930,9 @@ def _split_version_and_option_set(tar_json: Path) -> tuple[str, str, str]:
     """Extract `(pg_version, option_set, variant)` from an introspect JSON path.
 
     Meson layout: `.../<v>/<os>/introspect/tar.json` (walk past the
-    `introspect/` rule dir). Make layout: `.../<v>/<os>/tar.introspect.json`
-    (the JSON sits directly in the option-set package).
+    `introspect/` rule dir). Make layout:
+    `.../<v>/<os>/tar.dev.introspect.json` (the JSON sits directly in the
+    option-set package, named after the build target).
 
     The test-enabled build variant nests its introspect under an extra `test/`
     segment (`.../<v>/<os>/test/introspect/tar.json` for meson,

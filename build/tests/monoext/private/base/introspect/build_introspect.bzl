@@ -581,6 +581,96 @@ def _paths_no_overlap_test_impl(ctx):
 
 paths_no_overlap_test = unittest.make(_paths_no_overlap_test_impl)
 
+# --- get_pl_installed_paths ------------------------------------------------
+
+# One of each shape a PL installs, for two languages plus the one that always
+# ships, mixed in with backend files that look similar on purpose: `libpq.so.5`
+# is a module the name rule must not claim, `plpgsql-18.mo` a catalog it must
+# leave alone, and `postgres-18.mo` a catalog for something that is not a PL at
+# all.
+_MOCK_PL_PATHS = [
+    "bin/postgres",
+    "lib/libpq.so.5",
+    "lib/plperl.so",
+    "lib/plpgsql.so",
+    "lib/plpython3.so",
+    "share/extension/plperl--1.0.sql",
+    "share/extension/plperl.control",
+    "share/extension/plperlu--1.0.sql",
+    "share/extension/plperlu.control",
+    "share/extension/plpgsql--1.0.sql",
+    "share/extension/plpgsql.control",
+    "share/extension/plpython3u--1.0.sql",
+    "share/extension/plpython3u.control",
+    "share/locale/de/LC_MESSAGES/plperl-18.mo",
+    "share/locale/de/LC_MESSAGES/plpgsql-18.mo",
+    "share/locale/de/LC_MESSAGES/plpython-18.mo",
+    "share/locale/de/LC_MESSAGES/postgres-18.mo",
+]
+
+def _get_pl_installed_paths_test_impl(ctx):
+    """Each PL's module, extensions and message catalogs, grouped."""
+    env = unittest.begin(ctx)
+
+    result = BuildIntrospect.get_pl_installed_paths(_MOCK_PL_PATHS)
+
+    asserts.equals(env, ["plperl", "plpgsql", "plpython"], sorted(result))
+
+    # plperl registers two extensions -- the trusted and untrusted variants --
+    # off one module
+    asserts.equals(env, [
+        "lib/plperl.so",
+        "share/extension/plperl--1.0.sql",
+        "share/extension/plperl.control",
+        "share/extension/plperlu--1.0.sql",
+        "share/extension/plperlu.control",
+        "share/locale/de/LC_MESSAGES/plperl-18.mo",
+    ], result["plperl"])
+
+    # plpython3u's module and catalogs are named neither after it nor after
+    # each other -- the reason PL_LANGUAGES spells all three name sets out
+    asserts.equals(env, [
+        "lib/plpython3.so",
+        "share/extension/plpython3u--1.0.sql",
+        "share/extension/plpython3u.control",
+        "share/locale/de/LC_MESSAGES/plpython-18.mo",
+    ], result["plpython"])
+
+    # the backend's own files are not claimed by any language
+    claimed = []
+    for pl_paths in result.values():
+        claimed.extend(pl_paths)
+
+    asserts.false(env, "bin/postgres" in claimed)
+    asserts.false(env, "lib/libpq.so.5" in claimed)
+    asserts.false(env, "share/locale/de/LC_MESSAGES/postgres-18.mo" in claimed)
+
+    return unittest.end(env)
+
+get_pl_installed_paths_test = unittest.make(_get_pl_installed_paths_test_impl)
+
+def _get_pl_installed_paths_unknown_fails_test_impl(ctx):
+    """A core extension no language claims fails rather than being misfiled."""
+    env = unittest.begin(ctx)
+
+    failures = []
+    BuildIntrospect.get_pl_installed_paths(
+        ["share/extension/plisql.control", "share/extension/plfuture.control"],
+        _fail = lambda msg: failures.append(msg),
+    )
+
+    asserts.equals(env, 1, len(failures))
+    asserts.true(env, "plfuture" in failures[0])
+
+    # plisql is in the table, so it is not what tripped the check
+    asserts.false(env, "plisql" in failures[0])
+
+    return unittest.end(env)
+
+get_pl_installed_paths_unknown_fails_test = unittest.make(
+    _get_pl_installed_paths_unknown_fails_test_impl,
+)
+
 # --- validate_contrib_paths ------------------------------------------------
 
 def _validate_contrib_paths_ok_test_impl(ctx):
@@ -729,6 +819,9 @@ TEST_SUITE_TESTS = dict(
     # get_postgres_installed_paths
     get_postgres_installed_paths = get_postgres_installed_paths_test,
     paths_no_overlap = paths_no_overlap_test,
+    # get_pl_installed_paths
+    get_pl_installed_paths = get_pl_installed_paths_test,
+    get_pl_installed_paths_unknown_fails = get_pl_installed_paths_unknown_fails_test,
     # validate_contrib_paths
     validate_contrib_paths_ok = validate_contrib_paths_ok_test,
     validate_contrib_paths_empty_no_fail = validate_contrib_paths_empty_no_fail_test,

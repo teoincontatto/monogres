@@ -14,7 +14,7 @@ load("@sysroots//apt:layout.bzl", "multiarch")
 load("@version_utils//spec:spec.bzl", Spec = "spec")
 load("@version_utils//version:version.bzl", Version = "version")
 load("//platforms:targets.bzl", "ARCH_CPU")
-load(":metadata.bzl", "CONTRIB_INSTALLED_PATHS_OVERRIDE", "DEP_TO_FEATURE", "FEATURES_OVERRIDE", "FEATURES_TO_DEB_PKGS")
+load(":metadata.bzl", "CONTRIB_INSTALLED_PATHS_OVERRIDE", "DEP_TO_FEATURE", "FEATURES_OVERRIDE", "FEATURES_TO_DEB_PKGS", "PL_LANGUAGES")
 
 def _meson_options_bzl(meson_options_txt):
     return '''\
@@ -350,6 +350,89 @@ def _get_postgres_installed_paths(installed_paths):
 
     return sorted(rest_paths)
 
+def _pl_index(field):
+    """Invert `PL_LANGUAGES` on one field: `{artifact name: language}`."""
+    index = {}
+
+    for language, spec in PL_LANGUAGES.items():
+        for name in getattr(spec, field):
+            index[name] = language
+
+    return index
+
+def _extension_name(basename):
+    """The extension a `share/extension/` file belongs to.
+
+    Both shapes an extension installs there lead with its name: the control
+    file `<ext>.control` and the script files `<ext>--<version>.sql` /
+    `<ext>--<from>--<to>.sql`.
+    """
+    name = basename.split("--")[0]
+
+    for suffix in (".control", ".sql"):
+        if name.endswith(suffix):
+            return name[:-len(suffix)]
+
+    return name
+
+def _get_pl_installed_paths(postgres_installed_paths, _fail = fail):
+    """Group the procedural languages' own installed paths by language.
+
+    A PL is built from the flavor's tree, not from `contrib/`, so its files land
+    in `get_postgres_installed_paths` alongside the backend's -- which is why
+    they need picking out by name rather than by build path (see `PL_LANGUAGES`
+    for why the names are curated).
+
+    Args:
+        postgres_installed_paths: `get_postgres_installed_paths` output, i.e.
+            the install-relative paths that did NOT come from `contrib/`.
+        _fail: Seam for testing the failure path.
+
+    Returns:
+        `{language: [installed paths]}` for each language that installed
+        anything. A language the option set did not build is absent, not empty.
+    """
+    extensions = _pl_index("extensions")
+    modules = _pl_index("modules")
+    catalogs = _pl_index("catalogs")
+
+    by_language = {}
+    unknown = {}
+
+    for path in postgres_installed_paths:
+        parent = paths.basename(paths.dirname(path))
+        name = paths.basename(path)
+        language = None
+
+        if parent == "extension":
+            # Every core (non-contrib) extension is a PL: the backend registers
+            # nothing else this way. So an unrecognized one is a language
+            # `PL_LANGUAGES` has not been told about, and shipping decisions
+            # made from this data would silently skip it.
+            extension = _extension_name(name)
+            language = extensions.get(extension)
+
+            if not language:
+                unknown[extension] = path
+                continue
+        elif name.endswith(".so"):
+            language = modules.get(name[:-len(".so")])
+        elif parent == "LC_MESSAGES" and name.endswith(".mo"):
+            # `<catalog>-<pg major>.mo`
+            language = catalogs.get(name[:-len(".mo")].rsplit("-", 1)[0])
+
+        if language:
+            by_language.setdefault(language, []).append(path)
+
+    if unknown:
+        msg = "ERROR: core extensions missing from PL_LANGUAGES: %r"
+        return _fail(msg % unknown)
+
+    return {
+        language: sorted(paths_)
+        for language, paths_ in by_language.items()
+    }
+
 def _validate_contrib_paths(
         contrib_paths,
         contrib_names,
@@ -377,6 +460,7 @@ build_introspect = struct(
     get_contrib_names = _get_contrib_names,
     get_contrib_features = _get_contrib_features,
     get_contrib_installed_paths = _get_contrib_installed_paths,
+    get_pl_installed_paths = _get_pl_installed_paths,
     get_postgres_installed_paths = _get_postgres_installed_paths,
     validate_contrib_features = _validate_contrib_features,
     validate_contrib_paths = _validate_contrib_paths,
