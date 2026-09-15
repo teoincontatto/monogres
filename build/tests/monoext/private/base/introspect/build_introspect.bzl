@@ -541,6 +541,43 @@ get_contrib_installed_paths_override_test = unittest.make(
     _get_contrib_installed_paths_override_test_impl,
 )
 
+# What a make build -- every 15.x, and every flavor -- actually installs.
+_MOCK_SEPGSQL_INSTALLED_PATHS = {
+    "contrib/sepgsql/sepgsql.so": "lib/sepgsql.so",
+    "contrib/sepgsql/sepgsql.sql": "share/contrib/sepgsql.sql",
+}
+
+def _get_contrib_installed_paths_override_range_test_impl(ctx):
+    """The override covers meson before 16.7 and nothing below it."""
+    env = unittest.begin(ctx)
+
+    # 15.19 is a make build: `share/contrib`, straight from the introspection.
+    asserts.equals(env, [
+        "lib/sepgsql.so",
+        "share/contrib/sepgsql.sql",
+    ], BuildIntrospect.get_contrib_installed_paths(
+        _MOCK_SEPGSQL_INSTALLED_PATHS,
+        "sepgsql",
+        "15.19",
+    ))
+
+    # A flavor's own version reads as "< 16.7" to a PostgreSQL version spec;
+    # it must not pick up a PostgreSQL-versioned override either.
+    asserts.equals(env, [
+        "lib/sepgsql.so",
+        "share/contrib/sepgsql.sql",
+    ], BuildIntrospect.get_contrib_installed_paths(
+        _MOCK_SEPGSQL_INSTALLED_PATHS,
+        "sepgsql",
+        "4.0",
+    ))
+
+    return unittest.end(env)
+
+get_contrib_installed_paths_override_range_test = unittest.make(
+    _get_contrib_installed_paths_override_range_test_impl,
+)
+
 def _get_postgres_installed_paths_test_impl(ctx):
     """Postgres installed paths exclude contrib entries."""
     env = unittest.begin(ctx)
@@ -815,6 +852,7 @@ TEST_SUITE_TESTS = dict(
     get_contrib_installed_paths = get_contrib_installed_paths_test,
     get_contrib_installed_paths_nonexistent = get_contrib_installed_paths_nonexistent_test,
     get_contrib_installed_paths_override = get_contrib_installed_paths_override_test,
+    get_contrib_installed_paths_override_range = get_contrib_installed_paths_override_range_test,
     get_contrib_installed_paths_prefix_boundary = get_contrib_installed_paths_prefix_boundary_test,
     # get_postgres_installed_paths
     get_postgres_installed_paths = get_postgres_installed_paths_test,

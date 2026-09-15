@@ -122,9 +122,16 @@ PL_LANGUAGES = {
     ),
 }
 
+# NOTE: the lower bound on the first entry is not decoration. `share/extension`
+# was never where a *make* build put `sepgsql.sql` -- every 15.x install tree
+# has it under `share/contrib`, and so do the flavors, whose versions (ivorysql
+# 3.0, babelfish 4.0, openhalo 1beta1) all read as "< 16.7" to a PostgreSQL
+# version spec. Only meson got the directory wrong, and only until 16.7. An
+# override that reached past that range described a tree nobody builds and
+# `declare_outputs` failed on it: `can't stat .../share/extension/sepgsql.sql`.
 CONTRIB_INSTALLED_PATHS_OVERRIDE = {
     "sepgsql": {
-        "<16.7": [
+        ">=16.0,<16.7": [
             "lib/sepgsql.so",
             "share/extension/sepgsql.sql",
         ],

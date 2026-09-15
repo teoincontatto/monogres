@@ -4,114 +4,344 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/bitcode/babelfishpg_tsql/src/hooks.bc",
+          "lib/postgresql/bitcode/postgres/access/common/relation.bc",
+          "lib/postgresql/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/postgresql/bitcode/sepgsql.index.bc",
+          "lib/postgresql/bitcode/sepgsql/database.bc",
+          "lib/postgresql/bitcode/sepgsql/dml.bc",
+          "lib/postgresql/bitcode/sepgsql/label.bc",
+          "lib/postgresql/bitcode/sepgsql/schema.bc",
+          "lib/postgresql/bitcode/sepgsql/selinux.bc",
+          "lib/postgresql/bitcode/sepgsql/uavc.bc",
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/contrib/sepgsql.sql"
         ],
         "5.1": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/bitcode/babelfishpg_tsql/src/hooks.bc",
+          "lib/postgresql/bitcode/postgres/access/common/relation.bc",
+          "lib/postgresql/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/postgresql/bitcode/sepgsql.index.bc",
+          "lib/postgresql/bitcode/sepgsql/database.bc",
+          "lib/postgresql/bitcode/sepgsql/dml.bc",
+          "lib/postgresql/bitcode/sepgsql/label.bc",
+          "lib/postgresql/bitcode/sepgsql/schema.bc",
+          "lib/postgresql/bitcode/sepgsql/selinux.bc",
+          "lib/postgresql/bitcode/sepgsql/uavc.bc",
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/contrib/sepgsql.sql"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/extension/sepgsql.sql"
         ],
         "4.0": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/extension/sepgsql.sql"
         ],
         "5.0": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/contrib/sepgsql.sql"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "lib/postgresql/bitcode/postgres/access/common/relation.bc",
+          "lib/postgresql/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/postgresql/bitcode/sepgsql.index.bc",
+          "lib/postgresql/bitcode/sepgsql/database.bc",
+          "lib/postgresql/bitcode/sepgsql/dml.bc",
+          "lib/postgresql/bitcode/sepgsql/hooks.bc",
+          "lib/postgresql/bitcode/sepgsql/label.bc",
+          "lib/postgresql/bitcode/sepgsql/schema.bc",
+          "lib/postgresql/bitcode/sepgsql/selinux.bc",
+          "lib/postgresql/bitcode/sepgsql/uavc.bc",
+          "lib/postgresql/sepgsql.so",
+          "share/postgresql/contrib/sepgsql.sql"
         ]
       },
       "postgres": {
         "15.0": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.1": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.10": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.11": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.12": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.13": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.14": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.15": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.16": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.17": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.18": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.19": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.2": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.3": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.4": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.5": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.6": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.7": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.8": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "15.9": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
-          "share/extension/sepgsql.sql"
+          "share/contrib/sepgsql.sql"
         ],
         "16.0": [
           "lib/sepgsql.so",
