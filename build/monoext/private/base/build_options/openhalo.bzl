@@ -43,7 +43,7 @@ load(
 OPTION_SETS = _OPTION_SETS
 DEFAULT_OPTION_SET = _DEFAULT_OPTION_SET
 
-_PREFIX_DISTRO = "/openhalo"
+PREFIX_DISTRO = "/openhalo"
 
 _UUID_BACKEND = "ossp"
 
@@ -83,7 +83,7 @@ def build_options(version, option_set, build_options_metadata, debug = False):
         version,
         option_set,
         build_options_metadata,
-        prefix_distro = _PREFIX_DISTRO,
+        prefix_distro = PREFIX_DISTRO,
         debug = debug,
     )
 

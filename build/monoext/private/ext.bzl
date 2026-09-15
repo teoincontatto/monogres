@@ -12,6 +12,7 @@ load(
 )
 load("//monoext/private:pkgs.bzl", "pkgs_group")
 load("//monoext/private:repo_names.bzl", "bind", "repo_names")
+load("//monoext/private/base/build_options:flavors.bzl", "FLAVORS")
 load("//monoext/private/ext:build_data.bzl", "build_data_repo")
 load("//monoext/private/ext:compat.bzl", "is_compatible")
 load("//monoext/private/ext:hub.bzl", "ext_repo")
@@ -702,6 +703,9 @@ def create_ext(
         entries = entries,
         base_hub_name = base_hub_name,
         base_flavor = base_flavor,
+        # Where the flavor installs itself, so a contrib layer's files land at
+        # the paths the base image put the rest of the install at.
+        base_prefix_distro = FLAVORS[base_flavor].PREFIX_DISTRO,
         locks = locks,
         build_repo = build_repo,
         pgrx_crates = json.encode(pgrx_crates),

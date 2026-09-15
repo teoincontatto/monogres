@@ -254,6 +254,7 @@ def _impl(rctx):
                 entry,
                 rctx.attr.build_repo,
                 base_hub_name = rctx.attr.base_hub_name,
+                prefix_distro = rctx.attr.base_prefix_distro,
                 archs = archs,
             )
         else:
@@ -315,6 +316,13 @@ _ATTRS = dict(
     entries = attr.string_dict(mandatory = True),
     base_hub_name = attr.string(mandatory = True),
     base_flavor = attr.string(mandatory = True),
+    base_prefix_distro = attr.string(
+        mandatory = True,
+        doc = "The flavor's install prefix (`/postgres`, `/ivorysql`, ...). " +
+              "A contrib layer's files are packaged under " +
+              "`<prefix>/<base version>/` so they land on top of the install " +
+              "the base image put there.",
+    ),
     locks = attr.string_keyed_label_dict(default = {}),
     build_repo = attr.string(default = "monogres"),
     # `{pgrx_version: {package: dir_name}}` (JSON): the crate pool repos backing

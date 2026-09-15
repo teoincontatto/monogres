@@ -20,6 +20,7 @@ return a constant.
 load(
     ":babelfish.bzl",
     _babelfish_OPTION_SETS = "OPTION_SETS",
+    _babelfish_PREFIX_DISTRO = "PREFIX_DISTRO",
     _babelfish_build_options = "build_options",
     _babelfish_build_system = "build_system",
     _babelfish_pg_base_version = "pg_base_version",
@@ -27,6 +28,7 @@ load(
 load(
     ":ivory.bzl",
     _ivory_OPTION_SETS = "OPTION_SETS",
+    _ivory_PREFIX_DISTRO = "PREFIX_DISTRO",
     _ivory_build_options = "build_options",
     _ivory_build_system = "build_system",
     _ivory_pg_base_version = "pg_base_version",
@@ -34,6 +36,7 @@ load(
 load(
     ":openhalo.bzl",
     _openhalo_OPTION_SETS = "OPTION_SETS",
+    _openhalo_PREFIX_DISTRO = "PREFIX_DISTRO",
     _openhalo_build_options = "build_options",
     _openhalo_build_system = "build_system",
     _openhalo_pg_base_version = "pg_base_version",
@@ -41,6 +44,7 @@ load(
 load(
     ":pg.bzl",
     _pg_OPTION_SETS = "OPTION_SETS",
+    _pg_PREFIX_DISTRO = "DEFAULT_PREFIX_DISTRO",
     _pg_build_options = "build_options",
     _pg_build_system = "build_system",
     _pg_pg_base_version = "pg_base_version",
@@ -49,6 +53,7 @@ load(
 FLAVORS = {
     "babelfish": struct(
         OPTION_SETS = _babelfish_OPTION_SETS,
+        PREFIX_DISTRO = _babelfish_PREFIX_DISTRO,
         build_options = _babelfish_build_options,
         build_system = _babelfish_build_system,
         pg_base_version = _babelfish_pg_base_version,
@@ -56,6 +61,7 @@ FLAVORS = {
     ),
     "ivorysql": struct(
         OPTION_SETS = _ivory_OPTION_SETS,
+        PREFIX_DISTRO = _ivory_PREFIX_DISTRO,
         build_options = _ivory_build_options,
         build_system = _ivory_build_system,
         pg_base_version = _ivory_pg_base_version,
@@ -63,6 +69,7 @@ FLAVORS = {
     ),
     "openhalo": struct(
         OPTION_SETS = _openhalo_OPTION_SETS,
+        PREFIX_DISTRO = _openhalo_PREFIX_DISTRO,
         build_options = _openhalo_build_options,
         build_system = _openhalo_build_system,
         pg_base_version = _openhalo_pg_base_version,
@@ -70,6 +77,7 @@ FLAVORS = {
     ),
     "postgres": struct(
         OPTION_SETS = _pg_OPTION_SETS,
+        PREFIX_DISTRO = _pg_PREFIX_DISTRO,
         build_options = _pg_build_options,
         build_system = _pg_build_system,
         pg_base_version = _pg_pg_base_version,

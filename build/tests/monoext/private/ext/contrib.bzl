@@ -66,7 +66,7 @@ def _contrib_pg_build_test_impl(ctx):
         name = "pgcrypto",
         base_hub_name = "pg",
         base_version = "18.1",
-        strip_prefix = "contrib/pgcrypto/18.1/tar/files",
+        prefix_distro = "/postgres",
         files = ["lib/pgcrypto.so", "share/extension/pgcrypto.control"],
     )
 
@@ -92,8 +92,21 @@ def _contrib_pg_build_test_impl(ctx):
     asserts.true(env, "tar(" in out)
     asserts.true(env, 'name = "tar"' in out)
     asserts.true(env, 'out = "pgcrypto.tar"' in out)
-    asserts.true(env, 'strip_prefix = "contrib/pgcrypto/18.1/tar/files"' in out)
     asserts.true(env, 'ownername = "postgres"' in out)
+
+    # The prefix stripped has to be where `declare_outputs` actually writes:
+    # `<package>/<src label name>/<rule name>`. A prefix that misses drops every
+    # entry rather than failing, so the layer comes out an empty archive -- the
+    # two spellings are written from one constant for that reason, and this
+    # asserts they agree.
+    asserts.true(
+        env,
+        'strip_prefix = "contrib/pgcrypto/18.1/tar.dev/files"' in out,
+    )
+
+    # And the files are laid back down where the base image put the install,
+    # not at the filesystem root.
+    asserts.true(env, 'package_dir = "postgres/18.1"' in out)
 
     return unittest.end(env)
 
