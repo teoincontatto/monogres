@@ -1,24 +1,38 @@
-"""Rule to generate contrib extension repo.json files."""
+"""Rule to generate the repo.json of every extension carved from the base.
+
+"contrib" here names a pipeline, not just the PostgreSQL `contrib/` directory:
+what these entries have in common is that the flavor's own tree builds them,
+the base image does not ship them, and their layer is carved out of
+`:tar.dev` by an explicit path list. The procedural languages are that too, and
+go through the same catalog rather than beside it -- `runtime_tree.layered_entries`
+is what decides the set, so the carve and the catalog cannot disagree.
+"""
+
+# buildifier: disable=bzl-visibility
+load("//monoext/private/base:runtime_tree.bzl", "layered_entries")
 
 # ---------------------------------------------------------------------------
 # gen_contrib (macro + rule) + update_contrib (run)
 # ---------------------------------------------------------------------------
 
 def _get_contrib_data(introspections_list, option_set):
-    """[INTROSPECTIONS, ...] -> {ext_name: {"files": ..., "requires": ...}}
+    """[INTROSPECTIONS, ...] -> {ext_name: {"kind", "files", "requires"}}
 
     Each list element is one flavor's `@<hub>//:introspect.bzl` INTROSPECTIONS
     dict; the flavor is read from each entry's `introspection["flavor"]` (which
     `base/introspect.bzl` renders into the data), so the flavor is
     self-described rather than supplied as a caller-side dict key.
 
-    Returns a dict keyed by contrib name, each value containing:
+    Returns a dict keyed by entry name, each value containing:
+      - `kind`: `"contrib"` or `"pl"`, from `layered_entries`. One flavor's
+        answer settles it -- an entry is one or the other everywhere.
       - `files`: `{flavor: {base_v: [paths]}}` — installed paths per
         (flavor, base_v); always populated.
       - `requires`: `{flavor: {base_v: [reqs]}}` — install-time PG-extension
         dependencies parsed from `.control` files at JSON-generation time (see
         `tools/gen_pg_introspect_jsons.py`); entries are omitted when empty (the
-        underlying `INTROSPECTION` skips the key).
+        underlying `INTROSPECTION` skips the key). A procedural language has
+        none: nothing in core requires one.
     """
     all_contribs = {}
 
@@ -29,9 +43,13 @@ def _get_contrib_data(introspections_list, option_set):
                 continue
 
             flavor = introspection["flavor"]
-            for name, data in introspection["contrib"].items():
+            for name, data in layered_entries(introspection).items():
                 if name not in all_contribs:
-                    all_contribs[name] = {"files": {}, "requires": {}}
+                    all_contribs[name] = {
+                        "files": {},
+                        "kind": data["kind"],
+                        "requires": {},
+                    }
                 if flavor not in all_contribs[name]["files"]:
                     all_contribs[name]["files"][flavor] = {}
                     all_contribs[name]["requires"][flavor] = {}
@@ -173,7 +191,7 @@ def _gen_contrib_repo_json(contrib_data):
         metadata["requires"] = requires
 
     repo_json = {
-        "kind": "contrib",
+        "kind": contrib_data["kind"],
         "metadata": metadata,
         "version": 1,
         "versions": {
@@ -203,21 +221,24 @@ _gen_contrib = rule(
     attrs = {
         "contribs_json": attr.string(
             mandatory = True,
-            doc = "JSON-encoded {ext_name: {\"files\": {flavor: {base_v: [paths]}}, " +
+            doc = "JSON-encoded {ext_name: {\"kind\": \"contrib\" | \"pl\", " +
+                  "\"files\": {flavor: {base_v: [paths]}}, " +
                   "\"requires\": {flavor: {base_v: [reqs]}}}} contrib data",
         ),
     },
 )
 
 def gen_contrib(name, introspections, option_set = "full"):
-    """Generate contrib extension repo.json files.
+    """Generate the repo.json of every extension carved from the base install.
 
-    Reads Layer 1's `INTROSPECTIONS` aggregator: each entry's
-    `INTROSPECTION["contrib"][name]` carries installed `paths` and an optional
-    `requires` list. The `requires` data is baked into the committed introspect
-    JSONs at generation time by `tools/gen_pg_introspect_jsons.py` (which walks
-    the source tree's `.control` files), so this consumer needs no source
-    download.
+    Reads Layer 1's `INTROSPECTIONS` aggregator through
+    `runtime_tree.layered_entries`, which is the same function the runtime
+    carve uses to decide what to leave out -- so every file the base image
+    drops is a file some entry here ships. Each entry carries installed `paths`
+    and, for contrib, an optional `requires` list. The `requires` data is baked
+    into the committed introspect JSONs at generation time by
+    `tools/gen_pg_introspect_jsons.py` (which walks the source tree's
+    `.control` files), so this consumer needs no source download.
 
     Args:
         name: rule target name.
