@@ -79,7 +79,9 @@
               "libgdal36",
               "libxml2",
               "libjson-c5",
-              "libprotobuf-c1"
+              "libprotobuf-c1",
+              "libblas3",
+              "liblapack3"
             ]
           },
           "13": {
@@ -89,7 +91,9 @@
               "libgdal36",
               "libxml2",
               "libjson-c5",
-              "libprotobuf-c1"
+              "libprotobuf-c1",
+              "libblas3",
+              "liblapack3"
             ]
           }
         }
