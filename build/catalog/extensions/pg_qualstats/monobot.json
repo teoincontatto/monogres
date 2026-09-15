@@ -22,6 +22,7 @@
       }
     },
     "test_ext": {
+      "requires": ["pg_stat_statements"],
       "smoke": {
         "extensions": ["pg_qualstats"],
         "preload": ["pg_stat_statements", "pg_qualstats"]
