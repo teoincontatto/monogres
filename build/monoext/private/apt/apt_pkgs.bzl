@@ -39,6 +39,50 @@ load("//monoext/private/apt:schema.bzl", _AptSchema = "schema")
 load("//monoext/private/apt:snapshot.bzl", "SNAPSHOT")
 load("//platforms:targets.bzl", "ARCHS")
 
+# Packages no image should get by way of a dependency edge, because a PostgreSQL
+# install is already the provider of that soname and a second copy does not sit
+# quietly beside the first.
+#
+# `deb_translate_lock` renders one `filegroup` per package whose `srcs` are its
+# whole transitive closure, and that filegroup is what an image layer depends
+# on. So an extension layer that reaches libpq5 -- nothing asks for it, GDAL
+# does, which is how postgis came by it -- lands Debian's
+# `usr/lib/<arch>-linux-gnu/libpq.so.5` on top of the symlink the base image
+# points at `/postgres/<version>/lib/libpq.so.5`, and every client binary in the
+# composed image loads Debian's instead. The failure is not a missing symbol but
+# a quieter one: `pg_isready` prints the socket directory *its own* build
+# compiled in and connects to the one Debian's libpq did, so a healthy server
+# answers "no response".
+#
+# Only the edges are cut, and only in the lock handed to `deb_translate_lock`.
+# A package that names one of these directly still resolves, and
+# `apt_result.packages` keeps them, so the compile sysroots `apt_group` builds
+# are untouched -- an out-of-tree extension still links against libpq there,
+# where there is no PostgreSQL install to provide it.
+_PROVIDED_BY_THE_BASE_IMAGE = ["libpq5"]
+
+def _without_provided_edges(packages):
+    """Drop dependency edges onto `_PROVIDED_BY_THE_BASE_IMAGE`.
+
+    Args:
+        packages: Lockfile-shaped package dicts.
+
+    Returns:
+        The same packages, each with those edges removed from `dependencies`.
+    """
+    provided = {name: True for name in _PROVIDED_BY_THE_BASE_IMAGE}
+
+    pruned = []
+    for pkg in packages:
+        deps = pkg.get("dependencies", [])
+        kept = [dep for dep in deps if dep["name"] not in provided]
+        if len(kept) == len(deps):
+            pruned.append(pkg)
+        else:
+            pruned.append(dict(pkg, dependencies = kept))
+
+    return pruned
+
 def apt_pkgs(ctx, name, package_groups, lock = None):
     """Creates a shared repo of Debian packages.
 
@@ -63,7 +107,7 @@ def apt_pkgs(ctx, name, package_groups, lock = None):
         packages = lock.packages
         package_name_map = lock.package_name_map
         lock_content = json.encode({
-            "packages": lock.packages,
+            "packages": _without_provided_edges(lock.packages),
             "version": lock.version,
         })
     else:
@@ -83,7 +127,10 @@ def apt_pkgs(ctx, name, package_groups, lock = None):
         )
 
         packages = lockf.packages()
-        lock_content = lockf.as_json()
+        lock_content = json.encode({
+            "packages": _without_provided_edges(packages),
+            "version": json.decode(lockf.as_json())["version"],
+        })
         lock = _AptLock.new(
             snapshot = SNAPSHOT,
             archs = list(ARCHS),
