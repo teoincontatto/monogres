@@ -103,6 +103,28 @@ def apt_pkgs(ctx, name, package_groups, lock = None):
         A tuple of `(AptResult, lock_json)` where `lock_json` is the JSON
         serialized `AptLock`.
     """
+    requested = sorted(set([
+        pkg
+        for pkgs in package_groups.values()
+        for pkg in pkgs
+    ]))
+
+    # The roots this lock was generated for have to be the roots being asked for
+    # now, or its closures answer a different question. `monoext.bzl` validates
+    # the lock too, but against a superset -- every spec of the active release,
+    # not the specs these versions actually select -- so the exact comparison
+    # belongs here, where `package_groups` is already filtered.
+    if lock:
+        mismatch = _AptLock.requested_mismatch(lock, requested)
+        if mismatch:
+            # buildifier: disable=print
+            print((
+                "WARNING: apt lockfile for '%s' is stale (%s). " +
+                "Falling back to live resolution.\n" +
+                "Regenerate with: bazel run @%s//deb/lock:update"
+            ) % (name, mismatch, name))
+            lock = None
+
     if lock:
         packages = lock.packages
         package_name_map = lock.package_name_map
@@ -112,17 +134,11 @@ def apt_pkgs(ctx, name, package_groups, lock = None):
         })
     else:
         # live resolution
-        packages = sorted(set([
-            pkg
-            for pkgs in package_groups.values()
-            for pkg in pkgs
-        ]))
-
         lockf, package_name_map = resolve(
             ctx,
             name,
             list(ARCHS),
-            packages,
+            requested,
             SNAPSHOT,
         )
 
@@ -136,6 +152,7 @@ def apt_pkgs(ctx, name, package_groups, lock = None):
             archs = list(ARCHS),
             packages = packages,
             package_name_map = package_name_map,
+            requested = requested,
         )
 
     for p in packages:

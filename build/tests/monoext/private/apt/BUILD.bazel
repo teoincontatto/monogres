@@ -1,0 +1,3 @@
+load(":apt_lock.bzl", apt_lock_suite = "test_suite")
+
+apt_lock_suite()

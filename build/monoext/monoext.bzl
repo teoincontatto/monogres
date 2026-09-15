@@ -27,14 +27,12 @@ Internal repos:
   - `@{name}_pkgs_deb`: internal deb_translate_lock repo.
 """
 
-load("@platform_debian//:versions.bzl", "RELEASE")
 load("@sysroots//common:tag_key.bzl", "tag_key")
 load("//monoext/private:base.bzl", "create_base", "create_base_src")
 load("//monoext/private:ext.bzl", "create_ext", "create_ext_src")
-load("//monoext/private:pkgs.bzl", "LLVM_PREREQS", "create_pkgs")
+load("//monoext/private:pkgs.bzl", "create_pkgs")
 load("//monoext/private:repo_names.bzl", "repo_names")
 load("//monoext/private/apt:apt_lock.bzl", "SNAPSHOT", _AptLock = "apt_lock")
-load("//monoext/private/pkgs:schema.bzl", "KINDS")
 load("//platforms:targets.bzl", "ARCHS")
 
 def create_monogres(
@@ -94,17 +92,16 @@ def create_monogres(
     if deb_lock:
         lock = _AptLock.decode(ctx.read(deb_lock))
 
-        # LLVM_PREREQS is the compile-time floor `create_pkgs` adds to every
-        # buildtime hub's closure. The lockfile MUST already have them — without
-        # it, the buildtime hubs would silently come out missing `crt*.o` /
-        # `libgcc*` (citus 13.2.0 link check surfaces this).
+        # Only what the lock was resolved *against* is checked here. Whether it
+        # was resolved for the right packages -- including LLVM_PREREQS, the
+        # compile-time floor `create_pkgs` adds to every buildtime hub, without
+        # which they come out missing `crt*.o` / `libgcc*` (citus 13.2.0's link
+        # check surfaces that) -- is `apt_pkgs`' call to `requested_mismatch`,
+        # which sees the release- and spec-filtered groups this one does not.
         error = _AptLock.validate(
             lock,
             snapshot = SNAPSHOT,
             archs = list(ARCHS),
-            requested_packages = (
-                _collect_all_packages(package_groups) + LLVM_PREREQS
-            ),
         )
         if error:
             # buildifier: disable=print
@@ -152,23 +149,6 @@ def create_monogres(
         repos.append(ext_name)
 
     return repos
-
-def _collect_all_packages(package_groups):
-    """Collects all unique requested package names for lockfile validation."""
-
-    def get_packages(metadata, kind):
-        # deps.<kind>.debian is release-keyed; validate the active release.
-        debian = metadata.get("deps", {}).get(kind, {}).get("debian", {})
-        return debian.get(RELEASE.version, {}).values()
-
-    all_pkgs = [
-        pkg
-        for group in package_groups
-        for kind in KINDS
-        for packages in get_packages(group.metadata, kind)
-        for pkg in packages
-    ]
-    return sorted(set(all_pkgs))
 
 def _monoext_impl(ctx):
     direct_deps = []

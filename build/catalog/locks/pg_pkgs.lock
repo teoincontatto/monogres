@@ -1990,6 +1990,33 @@
       "arch": "amd64",
       "dependencies": [
         {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libblas3_3.12.1-6_amd64",
+      "name": "libblas3",
+      "sha256": "4af245ecafc30bfa1de9d20af02fec96654ead2f06b1dac40cb03fc9eb0bfbe6",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/l/lapack/libblas3_3.12.1-6_amd64.deb"
+      ],
+      "version": "3.12.1-6"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
           "key": "libboost-date-time1.83-dev_1.83.0-4.2_amd64",
           "name": "libboost-date-time1.83-dev",
           "version": "1.83.0-4.2"
@@ -2182,6 +2209,128 @@
         "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost1.83/libboost-date-time1.83.0_1.83.0-4.2_amd64.deb"
       ],
       "version": "1.83.0-4.2"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
+          "key": "libboost1.83-dev_1.83.0-4.2_amd64",
+          "name": "libboost1.83-dev",
+          "version": "1.83.0-4.2"
+        },
+        {
+          "key": "libstdc-p--p--14-dev_14.2.0-19_amd64",
+          "name": "libstdc++-14-dev",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6-dev_2.41-12-p-deb13u2_amd64",
+          "name": "libc6-dev",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "rpcsvc-proto_1.4.3-1_amd64",
+          "name": "rpcsvc-proto",
+          "version": "1.4.3-1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libcrypt-dev_1-4.4.38-1_amd64",
+          "name": "libcrypt-dev",
+          "version": "1:4.4.38-1"
+        },
+        {
+          "key": "libcrypt1_1-4.4.38-1_amd64",
+          "name": "libcrypt1",
+          "version": "1:4.4.38-1"
+        },
+        {
+          "key": "linux-libc-dev_6.12.74-2_amd64",
+          "name": "linux-libc-dev",
+          "version": "6.12.74-2"
+        },
+        {
+          "key": "libc-dev-bin_2.41-12-p-deb13u2_amd64",
+          "name": "libc-dev-bin",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libstdc-p--p-6_14.2.0-19_amd64",
+          "name": "libstdc++6",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-14-dev_14.2.0-19_amd64",
+          "name": "libgcc-14-dev",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libquadmath0_14.2.0-19_amd64",
+          "name": "libquadmath0",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhwasan0_14.2.0-19_amd64",
+          "name": "libhwasan0",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libubsan1_14.2.0-19_amd64",
+          "name": "libubsan1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libtsan2_14.2.0-19_amd64",
+          "name": "libtsan2",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "liblsan0_14.2.0-19_amd64",
+          "name": "liblsan0",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libasan8_14.2.0-19_amd64",
+          "name": "libasan8",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libatomic1_14.2.0-19_amd64",
+          "name": "libatomic1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libitm1_14.2.0-19_amd64",
+          "name": "libitm1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgomp1_14.2.0-19_amd64",
+          "name": "libgomp1",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libboost-dev_1.83.0.2-p-b2_amd64",
+      "name": "libboost-dev",
+      "sha256": "00a8b3f70dc56337e2e516b7fc05a1ee2e916b7fdf2ba8a9d89a068ea8878df0",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost-defaults/libboost-dev_1.83.0.2+b2_amd64.deb"
+      ],
+      "version": "1.83.0.2+b2"
     },
     {
       "arch": "amd64",
@@ -9300,17 +9449,6 @@
     {
       "arch": "amd64",
       "dependencies": [],
-      "key": "libboost-dev_1.83.0.2-p-b2_amd64",
-      "name": "libboost-dev",
-      "sha256": "00a8b3f70dc56337e2e516b7fc05a1ee2e916b7fdf2ba8a9d89a068ea8878df0",
-      "urls": [
-        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost-defaults/libboost-dev_1.83.0.2+b2_amd64.deb"
-      ],
-      "version": "1.83.0.2+b2"
-    },
-    {
-      "arch": "amd64",
-      "dependencies": [],
       "key": "libkmlxsd1t64_1.3.0-12-p-b2_amd64",
       "name": "libkmlxsd1t64",
       "sha256": "5499202259821ddd05f5eb918b38d38babb73099e6bd505fe9e06fefad411fb8",
@@ -9876,17 +10014,6 @@
     {
       "arch": "amd64",
       "dependencies": [],
-      "key": "libblas3_3.12.1-6_amd64",
-      "name": "libblas3",
-      "sha256": "4af245ecafc30bfa1de9d20af02fec96654ead2f06b1dac40cb03fc9eb0bfbe6",
-      "urls": [
-        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/l/lapack/libblas3_3.12.1-6_amd64.deb"
-      ],
-      "version": "3.12.1-6"
-    },
-    {
-      "arch": "amd64",
-      "dependencies": [],
       "key": "libarpack2-dev_3.9.1-6_amd64",
       "name": "libarpack2-dev",
       "sha256": "6fc56094f0f9100fcf5e7cfba6390d93aecd79c4305e21b17bdab145dfb015bf",
@@ -9919,7 +10046,33 @@
     },
     {
       "arch": "amd64",
-      "dependencies": [],
+      "dependencies": [
+        {
+          "key": "libgfortran5_14.2.0-19_amd64",
+          "name": "libgfortran5",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libblas3_3.12.1-6_amd64",
+          "name": "libblas3",
+          "version": "3.12.1-6"
+        }
+      ],
       "key": "liblapack3_3.12.1-6_amd64",
       "name": "liblapack3",
       "sha256": "abfc59c8410beee738617bb6daf86b295e45ec0bd08cc0e97bfecc3cfa40fe75",
@@ -15483,6 +15636,33 @@
       "arch": "arm64",
       "dependencies": [
         {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libblas3_3.12.1-6_arm64",
+      "name": "libblas3",
+      "sha256": "33ed1d0770978f11493d24e0416a51ea7de77ede8c23d179a8ad88802a167be2",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/l/lapack/libblas3_3.12.1-6_arm64.deb"
+      ],
+      "version": "3.12.1-6"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
           "key": "libboost-date-time1.83-dev_1.83.0-4.2_arm64",
           "name": "libboost-date-time1.83-dev",
           "version": "1.83.0-4.2"
@@ -15670,6 +15850,123 @@
         "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost1.83/libboost-date-time1.83.0_1.83.0-4.2_arm64.deb"
       ],
       "version": "1.83.0-4.2"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "libboost1.83-dev_1.83.0-4.2_arm64",
+          "name": "libboost1.83-dev",
+          "version": "1.83.0-4.2"
+        },
+        {
+          "key": "libstdc-p--p--14-dev_14.2.0-19_arm64",
+          "name": "libstdc++-14-dev",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6-dev_2.41-12-p-deb13u2_arm64",
+          "name": "libc6-dev",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "rpcsvc-proto_1.4.3-1-p-b1_arm64",
+          "name": "rpcsvc-proto",
+          "version": "1.4.3-1+b1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libcrypt-dev_1-4.4.38-1_arm64",
+          "name": "libcrypt-dev",
+          "version": "1:4.4.38-1"
+        },
+        {
+          "key": "libcrypt1_1-4.4.38-1_arm64",
+          "name": "libcrypt1",
+          "version": "1:4.4.38-1"
+        },
+        {
+          "key": "linux-libc-dev_6.12.74-2_arm64",
+          "name": "linux-libc-dev",
+          "version": "6.12.74-2"
+        },
+        {
+          "key": "libc-dev-bin_2.41-12-p-deb13u2_arm64",
+          "name": "libc-dev-bin",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libstdc-p--p-6_14.2.0-19_arm64",
+          "name": "libstdc++6",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-14-dev_14.2.0-19_arm64",
+          "name": "libgcc-14-dev",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhwasan0_14.2.0-19_arm64",
+          "name": "libhwasan0",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libubsan1_14.2.0-19_arm64",
+          "name": "libubsan1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libtsan2_14.2.0-19_arm64",
+          "name": "libtsan2",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "liblsan0_14.2.0-19_arm64",
+          "name": "liblsan0",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libasan8_14.2.0-19_arm64",
+          "name": "libasan8",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libatomic1_14.2.0-19_arm64",
+          "name": "libatomic1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libitm1_14.2.0-19_arm64",
+          "name": "libitm1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgomp1_14.2.0-19_arm64",
+          "name": "libgomp1",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libboost-dev_1.83.0.2-p-b2_arm64",
+      "name": "libboost-dev",
+      "sha256": "346e0dc8fe3c50fe3b8794d964536ef37bcd6ae7b166081f2b6b509240e2284d",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost-defaults/libboost-dev_1.83.0.2+b2_arm64.deb"
+      ],
+      "version": "1.83.0.2+b2"
     },
     {
       "arch": "arm64",
@@ -22763,17 +23060,6 @@
     {
       "arch": "arm64",
       "dependencies": [],
-      "key": "libboost-dev_1.83.0.2-p-b2_arm64",
-      "name": "libboost-dev",
-      "sha256": "346e0dc8fe3c50fe3b8794d964536ef37bcd6ae7b166081f2b6b509240e2284d",
-      "urls": [
-        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/b/boost-defaults/libboost-dev_1.83.0.2+b2_arm64.deb"
-      ],
-      "version": "1.83.0.2+b2"
-    },
-    {
-      "arch": "arm64",
-      "dependencies": [],
       "key": "libkmlxsd1t64_1.3.0-12-p-b2_arm64",
       "name": "libkmlxsd1t64",
       "sha256": "74d1d4be8d29562035dfd04375c1dbfd6c5f60d54803ff4fecccecca77984bf7",
@@ -23339,17 +23625,6 @@
     {
       "arch": "arm64",
       "dependencies": [],
-      "key": "libblas3_3.12.1-6_arm64",
-      "name": "libblas3",
-      "sha256": "33ed1d0770978f11493d24e0416a51ea7de77ede8c23d179a8ad88802a167be2",
-      "urls": [
-        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/l/lapack/libblas3_3.12.1-6_arm64.deb"
-      ],
-      "version": "3.12.1-6"
-    },
-    {
-      "arch": "arm64",
-      "dependencies": [],
       "key": "libarpack2-dev_3.9.1-6_arm64",
       "name": "libarpack2-dev",
       "sha256": "b958d43063274a6012d3175796897f84c133f7148282fa2d9d724097faf6c171",
@@ -23382,7 +23657,33 @@
     },
     {
       "arch": "arm64",
-      "dependencies": [],
+      "dependencies": [
+        {
+          "key": "libgfortran5_14.2.0-19_arm64",
+          "name": "libgfortran5",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libblas3_3.12.1-6_arm64",
+          "name": "libblas3",
+          "version": "3.12.1-6"
+        }
+      ],
       "key": "liblapack3_3.12.1-6_arm64",
       "name": "liblapack3",
       "sha256": "b1375f31fd6977f0cdacdd1de44a5f5081433d91737ea8fe9d0e64ab2ccfab12",
@@ -26991,6 +27292,99 @@
       ],
       "version": "2.41-5"
     }
+  ],
+  "requested": [
+    "binutils",
+    "bison",
+    "clang-19",
+    "flex",
+    "gettext",
+    "libavahi-compat-libdnssd-dev",
+    "libavahi-compat-libdnssd1",
+    "libblas3",
+    "libboost-date-time-dev",
+    "libboost-dev",
+    "libboost-filesystem-dev",
+    "libboost-regex-dev",
+    "libboost-system-dev",
+    "libboost-thread-dev",
+    "libc-bin",
+    "libc6",
+    "libc6-dev",
+    "libcurl4",
+    "libcurl4-openssl-dev",
+    "libcurl4t64",
+    "libedit-dev",
+    "libedit2",
+    "libeditreadline-dev",
+    "libgcc-14-dev",
+    "libgcc-s1",
+    "libgdal-dev",
+    "libgdal36",
+    "libgeos-c1t64",
+    "libgeos-dev",
+    "libgssapi-krb5-2",
+    "libicu-dev",
+    "libicu76",
+    "libipc-run-perl",
+    "libjson-c-dev",
+    "libjson-c5",
+    "libkrb5-3",
+    "libkrb5-dev",
+    "liblapack3",
+    "libldap-dev",
+    "libldap2",
+    "libllvm19",
+    "liblz4-1",
+    "liblz4-dev",
+    "libnuma-dev",
+    "libnuma1",
+    "libossp-uuid-dev",
+    "libossp-uuid16",
+    "libpam0g",
+    "libpam0g-dev",
+    "libperl-dev",
+    "libperl5.40",
+    "libpq-dev",
+    "libproj-dev",
+    "libproj25",
+    "libprotobuf-c-dev",
+    "libprotobuf-c1",
+    "libpython3-dev",
+    "libpython3.13",
+    "libselinux1",
+    "libselinux1-dev",
+    "libssl-dev",
+    "libssl3",
+    "libstdc++-14-dev",
+    "libstdc++6",
+    "libsystemd-dev",
+    "libsystemd0",
+    "libtext-trim-perl",
+    "liburing-dev",
+    "liburing2",
+    "libuuid1",
+    "libxml2",
+    "libxml2-dev",
+    "libxslt1-dev",
+    "libxslt1.1",
+    "libzstd-dev",
+    "libzstd1",
+    "linux-libc-dev",
+    "llvm-19-dev",
+    "llvm-19-runtime",
+    "m4",
+    "make",
+    "ncurses-term",
+    "pkgconf",
+    "protobuf-c-compiler",
+    "tcl",
+    "tcl-dev",
+    "tcl8.6",
+    "tzdata",
+    "uuid-dev",
+    "zlib1g",
+    "zlib1g-dev"
   ],
   "snapshot": "20260316T000000Z",
   "version": 1
