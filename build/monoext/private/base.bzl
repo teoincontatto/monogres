@@ -33,6 +33,7 @@ load(
     "DEFAULT_FLAVOR",
     "FLAVORS",
 )
+load("//monoext/private/base/build_options:helpers.bzl", _Helpers = "helpers")
 load("//monoext/private/pkgs:schema.bzl", _PkgsSchema = "schema")
 load("//monoext/private/test:introspect.bzl", "introspect_payload")
 
@@ -47,6 +48,126 @@ load("//monoext/private/test:introspect.bzl", "introspect_payload")
 _TEST_OVERLAY = {
     "tap_tests": "enabled",
 }
+
+def _group_metadata(metadata):
+    """The flavor's metadata with every option's deps folded into `deps`.
+
+    What the flavor *requests* is the union: the hub has to be able to name a
+    package that any option set needs, and the apt lock records the union of
+    requested roots across groups, so folding these in rather than resolving
+    per option set is what keeps one lock answering for all of them.
+
+    Narrowing happens per target instead (`_option_excluded_packages`), which is
+    the only place it can: an option set is a property of a build, not of the
+    flavor.
+
+    Args:
+        metadata: The flavor's `repo.json` `metadata` block.
+
+    Returns:
+        A copy with `deps.<kind>.<distro>.<release>.<spec>` carrying the
+        `option_deps` packages too. The input is left alone -- it is also what
+        the build options and the test payload read.
+    """
+    option_deps = metadata.get("option_deps", {})
+    if not option_deps:
+        return metadata
+
+    deps = {
+        kind: {
+            distro: {rel: dict(by_spec) for rel, by_spec in by_rel.items()}
+            for distro, by_rel in by_distro.items()
+        }
+        for kind, by_distro in metadata.get("deps", {}).items()
+    }
+
+    for option in sorted(option_deps):
+        for kind, by_distro in option_deps[option].items():
+            by_distro_out = deps.setdefault(kind, {})
+            for distro, by_rel in by_distro.items():
+                by_rel_out = by_distro_out.setdefault(distro, {})
+                for rel, by_spec in by_rel.items():
+                    by_spec_out = by_rel_out.setdefault(rel, {})
+                    for spec, packages in by_spec.items():
+                        merged = {p: True for p in by_spec_out.get(spec, [])}
+                        for package in packages:
+                            merged[package] = True
+                        by_spec_out[spec] = sorted(merged)
+
+    return dict(metadata, deps = deps)
+
+def _option_excluded_packages(option_deps, options, auto_features):
+    """`{kind: {package: True}}` for the options this build does not have.
+
+    Matched on the catalog's own package names, which is what `DepsInfo.packages`
+    carries, and across every distro and release: a name belonging to the other
+    release is not in the resolved list to begin with.
+
+    Args:
+        option_deps: The flavor's `metadata.option_deps` block.
+        options: The Meson build options for this (version, option set).
+        auto_features: The `--auto-features` value for the same.
+
+    Returns:
+        `{kind: {package: True}}`, empty when the build has every option.
+    """
+    excluded = {}
+
+    for option, by_kind in option_deps.items():
+        if _Helpers.option_enabled(options, auto_features, option):
+            continue
+
+        for kind, by_distro in by_kind.items():
+            per_kind = excluded.setdefault(kind, {})
+            for by_rel in by_distro.values():
+                for by_spec in by_rel.values():
+                    for packages in by_spec.values():
+                        for package in packages:
+                            per_kind[package] = True
+
+    return excluded
+
+def _filter_version_deps(version_deps, excluded):
+    """The deps of one target: the flavor's, minus what its options turned off.
+
+    Only `packages` (and the `pkgs_labels` parallel to it) narrow. The sysroot
+    stays the group's, because a sysroot is a built tree and there is one per
+    group -- it is read by the regress harness, never by an image, so the
+    over-inclusion costs nothing shipped. The package labels are what
+    `//postgres:cfg.bzl` hands to the layer, and they are the point of this.
+
+    Args:
+        version_deps: The flavor's `VersionDeps` for this version.
+        excluded: From `_option_excluded_packages`.
+
+    Returns:
+        A `VersionDeps`; the input itself when nothing is excluded.
+    """
+    if not version_deps or not excluded:
+        return version_deps
+
+    kinds = {}
+    for kind in _PkgsSchema.KINDS:
+        info = getattr(version_deps, kind)
+        drop = excluded.get(kind, {})
+
+        if not info or not drop:
+            kinds[kind] = info
+            continue
+
+        keep = [i for i, p in enumerate(info.packages) if p not in drop]
+        if len(keep) == len(info.packages):
+            kinds[kind] = info
+            continue
+
+        kinds[kind] = _PkgsSchema.DepsInfo.new(
+            packages = [info.packages[i] for i in keep],
+            pkgs_labels = [info.pkgs_labels[i] for i in keep],
+            sysroot_labels_by_arch = info.sysroot_labels_by_arch,
+            sysroot_tar_labels_by_arch = info.sysroot_tar_labels_by_arch,
+        )
+
+    return _PkgsSchema.VersionDeps.new(**kinds)
 
 def create_base_src(ctx, hub_name, base_label):
     """Create base source repos, introspect repos, and return base_data.
@@ -181,7 +302,7 @@ def create_base_src(ctx, hub_name, base_label):
         pkgs_group = pkgs_group(
             flavor,
             versions,
-            metadata,
+            _group_metadata(metadata),
             version_scheme = Version.SCHEME.PGVER,
         ),
         source_repo = src_repo,
@@ -210,6 +331,7 @@ def _build_entries(base_data, versions_deps, hub_name, layered_deps = {}):
     metadata = base_data.metadata
     source_repo = base_data.source_repo
     build_options_metadata = metadata.get("build_options", {})
+    option_deps = metadata.get("option_deps", {})
     flavor_mod = FLAVORS[base_data.flavor]
     entries = {}
 
@@ -269,6 +391,10 @@ def _build_entries(base_data, versions_deps, hub_name, layered_deps = {}):
             if ip_spec and is_compatible_with(version, ip_spec):
                 test_build_options["injection_points"] = "true"
 
+            # What this build actually links. A package the flavor requests
+            # because some option set needs it is not this target's unless this
+            # target has that option: `barebones` and `minimal` build no JIT,
+            # and were shipping libLLVM (and libz3 behind it) regardless.
             targets.append(_BaseSchema.BaseTarget.new(
                 hub_name = hub_name,
                 version = version,
@@ -276,7 +402,14 @@ def _build_entries(base_data, versions_deps, hub_name, layered_deps = {}):
                 auto_features = auto_features,
                 build_options = options,
                 test_build_options = test_build_options,
-                version_deps = vd,
+                version_deps = _filter_version_deps(
+                    vd,
+                    _option_excluded_packages(
+                        option_deps,
+                        options,
+                        auto_features,
+                    ),
+                ),
                 build_system = build_system,
                 pg_base_version = pg_base_version,
                 extra_sources = per_version_extras,
@@ -339,4 +472,7 @@ def create_base(
 
 testing = struct(
     _build_entries = _build_entries,
+    _group_metadata = _group_metadata,
+    _option_excluded_packages = _option_excluded_packages,
+    _filter_version_deps = _filter_version_deps,
 )

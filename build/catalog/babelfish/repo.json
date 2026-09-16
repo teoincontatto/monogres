@@ -176,7 +176,6 @@
               "libicu72",
               "libkrb5-3",
               "libldap-2.5-0",
-              "libllvm14",
               "liblz4-1",
               "libossp-uuid16",
               "libpam0g",
@@ -187,7 +186,6 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-14-runtime",
               "ncurses-term",
               "tzdata",
               "zlib1g"
@@ -203,7 +201,6 @@
               "libicu76",
               "libkrb5-3",
               "libldap2",
-              "libllvm19",
               "liblz4-1",
               "libossp-uuid16",
               "libpam0g",
@@ -214,7 +211,6 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-19-runtime",
               "ncurses-term",
               "tzdata",
               "zlib1g"
@@ -229,6 +225,26 @@
           },
           "13": {
             "*": ["libipc-run-perl"]
+          }
+        }
+      }
+    },
+    "option_deps": {
+      "llvm": {
+        "runtime": {
+          "debian": {
+            "12": {
+              "*": [
+                "libllvm14",
+                "llvm-14-runtime"
+              ]
+            },
+            "13": {
+              "*": [
+                "libllvm19",
+                "llvm-19-runtime"
+              ]
+            }
           }
         }
       }

@@ -6,6 +6,12 @@ function that maps a `BaseData` + per-version deps into the JSON-encoded
 `BaseEntry` values passed to `base_repo.entries`. `hub_name` is used to
 pre-qualify `@{hub_name}//{version}/deps/...` alias labels baked onto each
 `BaseTarget.deps` before the JSON boundary.
+
+Also covers the option-conditional deps: `_group_metadata` (what the flavor
+requests -- the union, so the hub can name every package and one apt lock
+answers for every option set) and `_option_excluded_packages` /
+`_filter_version_deps` (what one target lists -- only the options its build
+actually has).
 """
 
 load("@bazel_skylib//lib:unittest.bzl", "asserts", "unittest")
@@ -184,6 +190,195 @@ build_entries_multiple_versions_test = unittest.make(
     _build_entries_multiple_versions_test_impl,
 )
 
+# --- option-conditional deps ----------------------------------------------
+
+_LLVM_OPTION_DEPS = {
+    "llvm": {
+        "runtime": {
+            "debian": {
+                "12": {"*": ["libllvm14", "llvm-14-runtime"]},
+                "13": {"*": ["libllvm19", "llvm-19-runtime"]},
+            },
+        },
+    },
+}
+
+_BASE_DEPS = {
+    "runtime": {"debian": {"13": {"*": ["libssl3", "zlib1g"]}}},
+}
+
+def _group_metadata_test_impl(ctx):
+    """The flavor requests the union, so every package stays nameable."""
+    env = unittest.begin(ctx)
+
+    merged = _Base._group_metadata({
+        "deps": _BASE_DEPS,
+        "option_deps": _LLVM_OPTION_DEPS,
+    })
+
+    asserts.equals(
+        env,
+        ["libllvm19", "libssl3", "llvm-19-runtime", "zlib1g"],
+        merged["deps"]["runtime"]["debian"]["13"]["*"],
+    )
+
+    # A release the base block says nothing about still gets its option's
+    # packages -- the union is over both, not an intersection.
+    asserts.equals(
+        env,
+        ["libllvm14", "llvm-14-runtime"],
+        merged["deps"]["runtime"]["debian"]["12"]["*"],
+    )
+
+    # The caller's metadata is also what the build options and the test payload
+    # read, so it must come back untouched.
+    asserts.equals(
+        env,
+        ["libssl3", "zlib1g"],
+        _BASE_DEPS["runtime"]["debian"]["13"]["*"],
+    )
+
+    return unittest.end(env)
+
+group_metadata_test = unittest.make(_group_metadata_test_impl)
+
+def _group_metadata_no_options_test_impl(ctx):
+    """A flavor with no option_deps is handed back as it came."""
+    env = unittest.begin(ctx)
+
+    metadata = {"deps": _BASE_DEPS}
+    asserts.equals(env, metadata, _Base._group_metadata(metadata))
+
+    return unittest.end(env)
+
+group_metadata_no_options_test = unittest.make(
+    _group_metadata_no_options_test_impl,
+)
+
+def _option_excluded_packages_test_impl(ctx):
+    """Off means: named by no set that builds it, and not auto-detected."""
+    env = unittest.begin(ctx)
+
+    # `minimal`: no llvm, and auto-features off -- nothing detects it.
+    asserts.equals(
+        env,
+        {"runtime": {
+            "libllvm14": True,
+            "libllvm19": True,
+            "llvm-14-runtime": True,
+            "llvm-19-runtime": True,
+        }},
+        _Base._option_excluded_packages(_LLVM_OPTION_DEPS, {}, "disabled"),
+    )
+
+    # `regular`: named explicitly.
+    asserts.equals(
+        env,
+        {},
+        _Base._option_excluded_packages(
+            _LLVM_OPTION_DEPS,
+            {"llvm": "enabled"},
+            "disabled",
+        ),
+    )
+
+    # `full`: not named, but auto-features finds it -- which is how that set
+    # gets plperl and pltcl without listing them either.
+    asserts.equals(
+        env,
+        {},
+        _Base._option_excluded_packages(_LLVM_OPTION_DEPS, {}, "enabled"),
+    )
+
+    # Explicitly off beats auto-detection.
+    asserts.equals(
+        env,
+        {"runtime": {
+            "libllvm14": True,
+            "libllvm19": True,
+            "llvm-14-runtime": True,
+            "llvm-19-runtime": True,
+        }},
+        _Base._option_excluded_packages(
+            _LLVM_OPTION_DEPS,
+            {"llvm": "disabled"},
+            "enabled",
+        ),
+    )
+
+    return unittest.end(env)
+
+option_excluded_packages_test = unittest.make(
+    _option_excluded_packages_test_impl,
+)
+
+def _filter_version_deps_test_impl(ctx):
+    """`packages` and its parallel labels narrow together; the sysroot does not."""
+    env = unittest.begin(ctx)
+
+    runtime = _PkgsSchema.DepsInfo.new(
+        packages = ["libllvm19", "libssl3", "llvm-19-runtime", "zlib1g"],
+        pkgs_labels = [
+            "@pg_pkgs//deb/libllvm19:libllvm19",
+            "@pg_pkgs//deb/libssl3:libssl3",
+            "@pg_pkgs//deb/llvm-19-runtime:llvm-19-runtime",
+            "@pg_pkgs//deb/zlib1g:zlib1g",
+        ],
+        sysroot_tar_labels_by_arch = {"amd64": "@pgbuildtime-rt//13/amd64:t"},
+    )
+    vd = _PkgsSchema.VersionDeps.new(runtime = runtime)
+
+    filtered = _Base._filter_version_deps(
+        vd,
+        {"runtime": {"libllvm19": True, "llvm-19-runtime": True}},
+    )
+
+    asserts.equals(env, ["libssl3", "zlib1g"], filtered.runtime.packages)
+    asserts.equals(
+        env,
+        [
+            "@pg_pkgs//deb/libssl3:libssl3",
+            "@pg_pkgs//deb/zlib1g:zlib1g",
+        ],
+        filtered.runtime.pkgs_labels,
+    )
+
+    # A sysroot is a built tree, one per group, and only the regress harness
+    # reads it -- so it stays whole rather than becoming a tree nothing built.
+    asserts.equals(
+        env,
+        {"amd64": "@pgbuildtime-rt//13/amd64:t"},
+        filtered.runtime.sysroot_tar_labels_by_arch,
+    )
+
+    # A kind the exclusion says nothing about is passed through by identity.
+    asserts.equals(env, vd.buildtime, filtered.buildtime)
+
+    return unittest.end(env)
+
+filter_version_deps_test = unittest.make(_filter_version_deps_test_impl)
+
+def _filter_version_deps_nothing_excluded_test_impl(ctx):
+    """Nothing to drop returns the input itself, not a rebuilt copy."""
+    env = unittest.begin(ctx)
+
+    vd = _PkgsSchema.VersionDeps.new(
+        runtime = _PkgsSchema.DepsInfo.new(packages = ["libssl3"]),
+    )
+
+    asserts.equals(env, vd, _Base._filter_version_deps(vd, {}))
+    asserts.equals(
+        env,
+        vd,
+        _Base._filter_version_deps(vd, {"buildtime": {"clang-19": True}}),
+    )
+
+    return unittest.end(env)
+
+filter_version_deps_nothing_excluded_test = unittest.make(
+    _filter_version_deps_nothing_excluded_test_impl,
+)
+
 TEST_SUITE_NAME = "base_top"
 
 TEST_SUITE_TESTS = dict(
@@ -191,6 +386,13 @@ TEST_SUITE_TESTS = dict(
     build_entries_multiple_versions = build_entries_multiple_versions_test,
     build_entries_one_version_no_deps = build_entries_one_version_no_deps_test,
     build_entries_option_sets_coverage = build_entries_option_sets_coverage_test,
+    filter_version_deps = filter_version_deps_test,
+    filter_version_deps_nothing_excluded = (
+        filter_version_deps_nothing_excluded_test
+    ),
+    group_metadata = group_metadata_test,
+    group_metadata_no_options = group_metadata_no_options_test,
+    option_excluded_packages = option_excluded_packages_test,
 )
 
 test_suite = lambda: _test_suite(TEST_SUITE_NAME, TEST_SUITE_TESTS)

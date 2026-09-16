@@ -13,6 +13,9 @@ two pieces:
   to whether the special `"all"` token appears (which expands to Meson's
   `--auto-features=enabled`). The flavor module owns the option-set composition;
   this module owns the merge.
+- `option_enabled`: reads the answer back out of what `compute` produced, for
+  everything downstream that has to know whether a build *has* a feature rather
+  than how it was asked for.
 """
 
 load("//monoext/private/base:compat.bzl", "is_compatible_with")
@@ -113,7 +116,35 @@ def _compute(
 
     return options, auto_features
 
+def _option_enabled(options, auto_features, option):
+    """Whether a build carries a feature, given what `compute` produced.
+
+    Not the same question as "was it asked for". Meson's third state is `auto`:
+    with `--auto-features=enabled` an option nobody named is detected and built
+    if its dependency is present, which is exactly how the `full` set gets
+    plperl and pltcl without listing them. So an option is off only when it was
+    left out of a set that does not auto-detect, or explicitly turned off.
+
+    Args:
+        options (dict): The Meson build options from `compute`.
+        auto_features (string): The `--auto-features` value from `compute`
+            (`"enabled"` or `"disabled"`).
+        option (string): The option name to test.
+
+    Returns:
+        `True` if the build has the feature.
+    """
+    value = options.get(option)
+
+    if value in ("enabled", "true"):
+        return True
+    if value in ("disabled", "false"):
+        return False
+
+    return auto_features == "enabled"
+
 helpers = struct(
     is_compatible = _is_compatible,
     compute = _compute,
+    option_enabled = _option_enabled,
 )

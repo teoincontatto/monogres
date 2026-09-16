@@ -370,7 +370,6 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-14-runtime",
               "ncurses-term",
               "zlib1g"
             ]
@@ -396,7 +395,6 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-19-runtime",
               "ncurses-term",
               "zlib1g"
             ]
@@ -410,6 +408,24 @@
           },
           "13": {
             "*": ["libipc-run-perl"]
+          }
+        }
+      }
+    },
+    "option_deps": {
+      "llvm": {
+        "runtime": {
+          "debian": {
+            "12": {
+              "*": [
+                "llvm-14-runtime"
+              ]
+            },
+            "13": {
+              "*": [
+                "llvm-19-runtime"
+              ]
+            }
           }
         }
       }
