@@ -8,8 +8,7 @@ per-base-version packages (with `pgxs_build`), and dependency aliases.
 
 load("@starlark_utils//starlark:starlark.bzl", Star = "starlark")
 load("//monoext/private:repo_names.bzl", "bind")
-load("//monoext/private/pkgs:schema.bzl", _PkgsSchema = "schema")
-load("//platforms:targets.bzl", "ARCH_CPU")
+load("//monoext/private/ext:deps.bzl", "deps_kind_build", "write_deps_package")
 
 # ---------------------------------------------------------------------------
 # File rendering helpers
@@ -286,59 +285,9 @@ def _arch_build(build_repo, target_name, actual, platform):
         header = _HEADER,
     )
 
-def _sysroot_select(labels_by_arch):
-    """Build a `Star.select` node keyed by `@platforms//cpu:*` constraints.
-
-    Args:
-        labels_by_arch: `{arch_name: label_str}` from
-            `DepsInfo.sysroot_labels_by_arch`.
-
-    Returns:
-        A `Star.select` node for use as an `alias(actual = ...)` value.
-    """
-    return Star.select({
-        "@platforms//cpu:%s" % ARCH_CPU[arch]: label
-        for arch, label in labels_by_arch.items()
-    })
-
-def _deps_kind_build(alias_pairs):
-    """Render {name}/{version}/deps/{kind}/BUILD.bazel: package + N aliases."""
-    return Star.file(
-        Star.package(default_visibility = ["//visibility:public"]),
-        header = _HEADER,
-        *[Star.alias(name, actual) for name, actual in alias_pairs]
-    )
-
 # ---------------------------------------------------------------------------
 # Writers
 # ---------------------------------------------------------------------------
-
-def _write_deps_package(rctx, name, version, version_deps):
-    """Writes the {name}/{version}/deps/ hierarchy."""
-    for kind in _PkgsSchema.KINDS:
-        deps_info = getattr(version_deps, kind)
-        if not deps_info:
-            continue
-
-        alias_pairs = [
-            ("sysroot", _sysroot_select(deps_info.sysroot_labels_by_arch)),
-            ("sysroot_tar", _sysroot_select(
-                deps_info.sysroot_tar_labels_by_arch,
-            )),
-        ]
-        rctx.file(
-            "%s/%s/deps/%s/BUILD.bazel" % (name, version, kind),
-            _deps_kind_build(alias_pairs),
-        )
-
-        if deps_info.packages:
-            rctx.file(
-                "%s/%s/deps/%s/pkgs/BUILD.bazel" % (name, version, kind),
-                _deps_kind_build([
-                    (pkg, deps_info.pkgs_labels[i])
-                    for i, pkg in enumerate(deps_info.packages)
-                ]),
-            )
 
 def write_extension_package(rctx, entry, name, archs):
     """Generates the full external extension directory hierarchy.
@@ -443,7 +392,7 @@ def write_extension_package(rctx, entry, name, archs):
 
         vd = versions_deps.get(version)
         if vd:
-            _write_deps_package(rctx, name, version, vd)
+            write_deps_package(rctx, "%s/%s" % (name, version), vd)
 
 testing = struct(
     _default_pg_alias = _default_pg_alias,
@@ -454,5 +403,5 @@ testing = struct(
     _src_leaf_build = _src_leaf_build,
     _pg_build = _pg_build,
     _arch_build = _arch_build,
-    _deps_kind_build = _deps_kind_build,
+    _deps_kind_build = deps_kind_build,
 )

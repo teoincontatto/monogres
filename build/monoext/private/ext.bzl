@@ -10,6 +10,7 @@ load(
     "@download_archives//download/archives:extensions.bzl",
     download_archives = "archives",
 )
+load("@version_utils//version:version.bzl", Version = "version")
 load("//monoext/private:pkgs.bzl", "pkgs_group")
 load("//monoext/private:repo_names.bzl", "bind", "repo_names")
 load("//monoext/private/base/build_options:flavors.bzl", "FLAVORS")
@@ -328,6 +329,48 @@ def _declare_build_data(
         "files": {path: f("@{data}//:%s" % path) for path in sorted(files)},
     }
 
+def _read_contrib_deps(ctx, catalog_label, contrib_names, _fail = fail):
+    """The Debian deps of the entries carved out of the base, by entry name.
+
+    `catalog/extensions/contrib/deps.json`, in the same
+    `{kind: {distro: {release: {spec: [pkg]}}}}` shape an external extension
+    writes into its own `repo.json` -- and read here for the same reason: an
+    entry that ships as a layer of its own has to bring whatever the distro side
+    of it needs, because the base image stopped carrying it.
+
+    It is a file beside the entries rather than a key inside each one because
+    `tools/gen_contrib.bzl` renders `contrib/<name>/repo.json` in full from the
+    introspection: anything hand-written there survives until the next
+    `bazel run //catalog/extensions:update_contrib` and no longer.
+
+    Args:
+        ctx: Module extension context.
+        catalog_label: Label of the catalog `index.json`.
+        contrib_names: The catalog's contrib entry names, to hold the keys to.
+        _fail: Seam for testing the failure path.
+
+    Returns:
+        `{entry name: metadata.deps block}`. Entries needing nothing from the
+        distro -- which is all of contrib proper -- are simply absent.
+    """
+    deps_label = catalog_label.relative(":contrib/deps.json")
+    deps = json.decode(ctx.read(deps_label)).get("deps", {})
+
+    # A key naming no entry buys nothing and costs a silence: the packages are
+    # simply never requested, and the layer that needed them ships without
+    # them. Checked against the catalog's whole contrib list rather than this
+    # flavor's slice of it -- `plpython3u` is a postgres-only entry, and saying
+    # so is not a typo.
+    known = {name: True for name in contrib_names}
+    unknown = [name for name in sorted(deps) if name not in known]
+    if unknown:
+        return _fail(
+            ("ERROR: %s names %s, which the extensions catalog has no " +
+             "contrib entry for") % (deps_label, ", ".join(unknown)),
+        )
+
+    return deps
+
 def create_ext_src(
         ctx,
         hub_name,
@@ -371,6 +414,11 @@ def create_ext_src(
         data_declared = {}
 
     catalog = json.decode(ctx.read(catalog_label))
+    contrib_deps = _read_contrib_deps(
+        ctx,
+        catalog_label,
+        catalog.get("contrib", []),
+    )
     extensions = {}
 
     for ext_name in sorted(catalog.get("extensions", [])):
@@ -465,16 +513,37 @@ def create_ext_src(
         metadata = dict(repo.get("metadata", {}))
         metadata["files"] = files_by_flavor.get(base_flavor, {})
 
+        # The entry's own `repo.json` is generated wholesale by
+        # `//catalog/extensions:update_contrib`, so what the entry *needs* from
+        # the distro is kept beside the catalog rather than in it.
+        deps = contrib_deps.get(ext_name)
+        if deps:
+            metadata["deps"] = deps
+
         extensions[ext_name] = _ExtSchema.ExtensionEntry.new(
             ext_versions = flavor_versions,
             is_contrib = True,
             metadata = metadata,
         )
 
+    # Contrib is a package group like any other. It used to be left out on the
+    # grounds that a contrib inherits PostgreSQL's deps -- true while contrib
+    # shipped inside the base image, and false since it was carved into layers
+    # of its own: `plperl.so` needs libperl wherever it lands, and the base no
+    # longer carries it (ongres/stackgres-cloud#133).
+    #
+    # `PGVER` because a contrib's "versions" are the base flavor's
+    # (`18.6`, not `1.7.2`).
     pkgs_groups = [
-        pkgs_group(ext_name, ext.ext_versions, ext.metadata)
+        pkgs_group(
+            ext_name,
+            ext.ext_versions,
+            ext.metadata,
+            version_scheme = (
+                Version.SCHEME.PGVER if ext.is_contrib else Version.SCHEME.SEMVER
+            ),
+        )
         for ext_name, ext in extensions.items()
-        if not ext.is_contrib
     ]
 
     # A generator is only built when something needs it, so its closure is only
@@ -586,11 +655,16 @@ def _introspect_manifest(external, base_versions, base_flavor):
             manifest[name] = versions
     return manifest
 
-def _build_contrib(extensions, hub_name, base_flavor = "postgres"):
+def _build_contrib(extensions, versions_deps, hub_name, base_flavor = "postgres"):
     """Builds JSON-encoded `ExtContribEntry` values for ext_repo.
 
     `hub_name` is used to pre-qualify `@{hub_name}//contrib/{name}/{base_v}:tar`
-    artifact labels baked onto each `ExtContribTarget` before the JSON boundary.
+    artifact labels, and the `deps/<kind>` labels beside them, baked onto each
+    `ExtContribTarget` before the JSON boundary.
+
+    `versions_deps` is the whole `{group: {version: VersionDeps}}` map; a
+    contrib's group is keyed by its own name and its versions are the base
+    flavor's, so an entry that declares no distro deps just reads as `{}`.
     """
     entries = {}
 
@@ -601,6 +675,7 @@ def _build_contrib(extensions, hub_name, base_flavor = "postgres"):
             ext_name = name,
             ext_versions = ext.ext_versions,
             metadata = ext.metadata,
+            ext_versions_deps = versions_deps.get(name, {}),
             base_flavor = base_flavor,
         )
         entries[name] = json.encode(entry)
@@ -618,7 +693,8 @@ def create_ext(
         base_data,
         archs,
         pgrx_crates = {},
-        build_repo = "monogres"):
+        build_repo = "monogres",
+        layered_deps = {}):
     """Build entries and create the extensions hub repo.
 
     Sources must already be instantiated via `create_ext_src`; this function
@@ -646,6 +722,10 @@ def create_ext(
             pgrx version the extensions pin. Empty when no extension is pgrx, in
             which case the hub renders no generator at all.
         build_repo: Repo containing the build rules (default `"monogres"`).
+        layered_deps: `{base version: {entry name: DepsInfo}}` for the entries
+            carved out of the base install tree. Passed through to the contrib
+            test suites, which run against the uncarved tree. See
+            `introspect_payload`.
     """
     external = {n: e for n, e in extensions.items() if not e.is_contrib}
     contrib = {n: e for n, e in extensions.items() if e.is_contrib}
@@ -660,7 +740,12 @@ def create_ext(
         hub_name,
     )
 
-    entries |= _build_contrib(contrib, hub_name, base_flavor)
+    entries |= _build_contrib(
+        contrib,
+        pkgs_result.versions_deps,
+        hub_name,
+        base_flavor,
+    )
 
     # The external extensions' `metadata.test_ext` (the smoke + upstream regress
     # introspect), threaded to the hub so it renders the external test packages
@@ -712,11 +797,16 @@ def create_ext(
         base_versions_deps = json.encode(base_versions_deps),
         external_test_meta = json.encode(external_test_meta),
         ext_introspect_manifest = json.encode(ext_introspect_manifest),
-        **introspect_payload(base_hub_name, base_data)
+        **introspect_payload(
+            base_hub_name,
+            base_data,
+            layered_deps = layered_deps,
+        )
     )
 
 testing = struct(
     _build_external = _build_external,
     _build_contrib = _build_contrib,
     _declare_build_data = _declare_build_data,
+    _read_contrib_deps = _read_contrib_deps,
 )

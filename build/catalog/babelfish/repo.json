@@ -180,8 +180,6 @@
               "liblz4-1",
               "libossp-uuid16",
               "libpam0g",
-              "libperl5.36",
-              "libpython3.11",
               "libselinux1",
               "libssl3",
               "libsystemd0",
@@ -191,7 +189,6 @@
               "libzstd1",
               "llvm-14-runtime",
               "ncurses-term",
-              "tcl",
               "tzdata",
               "zlib1g"
             ]
@@ -210,8 +207,6 @@
               "liblz4-1",
               "libossp-uuid16",
               "libpam0g",
-              "libperl5.40",
-              "libpython3.13",
               "libselinux1",
               "libssl3",
               "libsystemd0",
@@ -221,7 +216,6 @@
               "libzstd1",
               "llvm-19-runtime",
               "ncurses-term",
-              "tcl",
               "tzdata",
               "zlib1g"
             ]

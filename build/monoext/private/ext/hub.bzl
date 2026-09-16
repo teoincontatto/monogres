@@ -144,9 +144,11 @@ def _root_all_bzl(entries, archs, contrib_entries = None):
     Each `ExtExternalEntry` already carries pre-expanded `targets` and `sources`
     with fully-qualified `@{hub_name}//...` labels (baked by
     `//monoext/private:ext.bzl::_build_external`). Same for
-    `ExtContribEntry.targets`. This renderer forwards them directly; contrib
-    targets carry no `deps` or `source` (contribs are built inside PG and
-    inherit PG's deps transitively).
+    `ExtContribEntry.targets`. This renderer forwards them directly; a contrib
+    target carries no `source` (it is built inside the base flavor's own tree)
+    but it does carry `deps`, empty unless the entry declares any -- a layer
+    composed onto a base image that no longer ships it cannot inherit the
+    distro packages it needs.
     """
     loads = []
     cfgs = {}

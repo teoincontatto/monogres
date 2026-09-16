@@ -256,6 +256,14 @@ def _runner_args(
         # PGROOT/lib/postgresql (where pg_build's postfix captures regress.so).
         args += ["--dlpath-from", rlocs.test_libs]
 
+    # The carved-out entries' runtime deps, layered onto the closure the same
+    # way an external extension's are. Every kind carries them: what decides
+    # whether they are needed is the install tree under test, not the suite --
+    # `plperl.so` is in `:tar.test` for all of them, and `LOAD`ing it without
+    # libperl is the same failure whichever driver asks.
+    for tar in rlocs.layered_tars:
+        args += ["--ext-runtime-from", tar]
+
     if info.kind == _TestSchema.KIND_TAP:
         # TAP runs the perl .pl scripts, which need IPC::Run from the `test`
         # deps sysroot layered onto the runtime closure (see regress_runner.sh's
@@ -513,7 +521,13 @@ def _rloc(label):
     """`$(rlocationpath <label>)` make-variable string (single-file label)."""
     return "$(rlocationpath %s)" % label
 
-def _rlocs(build_repo, pg_tar, runtime_tar, src_dir, test_libs = None):
+def _rlocs(
+        build_repo,
+        pg_tar,
+        runtime_tar,
+        src_dir,
+        test_libs = None,
+        layered_tars = []):
     """Assemble the per-suite runfiles arg strings + the `data` list.
 
     The harness receives `$(rlocationpath[s] ...)` positionals and resolves them
@@ -528,6 +542,10 @@ def _rlocs(build_repo, pg_tar, runtime_tar, src_dir, test_libs = None):
         src_dir: label of the source tree (`@pg//{v}/src:dir`); the harness
             reads `sql/`, `expected/`, the schedule + `data/` from it.
         test_libs: optional `:test-libs` label overriding the default --dlpath.
+        layered_tars: `@pg//{v}/deps/layered:<entry>` sysroot tars -- the runtime
+            deps of the entries carved out of the install tree, layered onto the
+            closure. What the suites run against is `:tar.test`, the tree before
+            the carve, so `plperl.so` is in it and libperl has to be too.
 
     Returns a struct of arg strings (consumed by `_runner_args`) plus the
     fully-built `data` list (consumed by `_suite_test`).
@@ -556,7 +574,7 @@ def _rlocs(build_repo, pg_tar, runtime_tar, src_dir, test_libs = None):
         src_dir,
         bsdtar,
         runfiles,
-    ]
+    ] + list(layered_tars)
     if test_libs:
         data.append(test_libs)
 
@@ -567,6 +585,7 @@ def _rlocs(build_repo, pg_tar, runtime_tar, src_dir, test_libs = None):
         bsdtar = _rloc(bsdtar),
         runtime_tar = _rloc(runtime_tar),
         test_sysroot = _rloc(test_sysroot_tar),
+        layered_tars = [_rloc(t) for t in layered_tars],
         # install tree + source tree are directory trees: pass EVERY file
         # (`rlocationpaths`, plural) so the harness rlocation's the roots then
         # locates bin/initdb + src/test/regress by content.
@@ -1021,7 +1040,8 @@ def write_test_version(
         overrides = {},
         test_meta = {},
         test_libs_by_opt = {},
-        test_pg_tar_by_opt = {}):
+        test_pg_tar_by_opt = {},
+        layered_tars = []):
     """Generate the `@{name}` packages (+ the IvorySQL oracle suite).
 
     For each option set, decode the suites -- from the introspect `.tests` array
@@ -1043,6 +1063,8 @@ def write_test_version(
         introspect_labels: `{option_set: Label}` of the introspect JSONs.
         pg_tar_by_opt: `{option_set: install-tree label}`.
         runtime_tar: runtime sysroot tar label (test-exec closure base).
+        layered_tars: the carved-out entries' runtime sysroot tars, layered onto
+            that closure (see `_rlocs`).
         src_dir: source-tree label (sql/expected/schedules/specs/data).
         overrides: `metadata.test_overrides`, resolved per kind by suite.
         test_meta: `metadata.test` introspect, read when `.tests` is empty.
@@ -1086,6 +1108,7 @@ def write_test_version(
             runtime_tar,
             src_dir,
             test_libs = test_libs_by_opt.get(option_set),
+            layered_tars = layered_tars,
         )
 
         # The module + TAP suites LOAD / CREATE EXTENSION src/test/modules
@@ -1099,6 +1122,7 @@ def write_test_version(
             runtime_tar,
             src_dir,
             test_libs = test_libs_by_opt.get(option_set),
+            layered_tars = layered_tars,
         )
 
         if mirror_source:
@@ -1172,7 +1196,8 @@ def write_ext_test_version(
         src_dir,
         overrides = {},
         test_meta = {},
-        test_libs_default = None):
+        test_libs_default = None,
+        layered_tars = []):
     """Render the contrib test packages for ONE version into @{name}_ext.
 
     Contrib is option-set-invariant (in PG's tree), so every contrib suite runs
@@ -1195,6 +1220,10 @@ def write_ext_test_version(
         overrides: `metadata.test_overrides`, resolved per kind by suite.
         test_meta: `metadata.test` introspect, read when `.tests` is empty.
         test_libs_default: optional default-option-set `:test-libs` label.
+        layered_tars: the carved-out entries' runtime sysroot tars, layered onto
+            the closure (see `_rlocs`). This is the lane the six PL-dependent
+            contribs run in -- `hstore_plperl` LOADs `plperl.so`, which is in
+            the tree under test whether or not the base image ships it.
     """
     if introspect.get("tests"):
         groups = _TestSchema.suites_from_tests(introspect["tests"])
@@ -1214,6 +1243,7 @@ def write_ext_test_version(
         runtime_tar,
         src_dir,
         test_libs = test_libs_default,
+        layered_tars = layered_tars,
     )
 
     for name in sorted(contrib_groups):

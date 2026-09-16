@@ -222,7 +222,12 @@ def _base_target_from_dict(d):
         extra_sources = d.get("extra_sources", {}),
     )
 
-def _base_entry_init(source_repo, source = None, targets = [], versions_deps = None):
+def _base_entry_init(
+        source_repo,
+        source = None,
+        targets = [],
+        versions_deps = None,
+        layered_deps = {}):
     return struct(
         source = source,
         source_repo = source_repo,
@@ -230,9 +235,16 @@ def _base_entry_init(source_repo, source = None, targets = [], versions_deps = N
         versions_deps = (
             versions_deps if versions_deps else _PkgsSchema.VersionDeps.new()
         ),
+        layered_deps = layered_deps,
     )
 
-def _base_entry_new(hub_name, version, source_repo, targets = [], versions_deps = None):
+def _base_entry_new(
+        hub_name,
+        version,
+        source_repo,
+        targets = [],
+        versions_deps = None,
+        layered_deps = {}):
     """Constructs a `BaseEntry`.
 
     Derives the per-version `BaseSource` from `hub_name` and `version`. Takes
@@ -248,6 +260,11 @@ def _base_entry_new(hub_name, version, source_repo, targets = [], versions_deps 
         source_repo: Name of the `@{name}_src` source index repo.
         targets: List of `BaseTarget` structs for this base version.
         versions_deps: `VersionDeps` for this version (or `None`).
+        layered_deps: `{entry name: DepsInfo}` -- the runtime deps of the
+            entries carved out of this version's install tree into layers of
+            their own. Not the base image's own deps: the base image ships none
+            of it. The test build is uncarved, so the regress harness needs
+            every one of them back, and takes them from here.
 
     Returns:
         A `BaseEntry` struct.
@@ -262,6 +279,7 @@ def _base_entry_new(hub_name, version, source_repo, targets = [], versions_deps 
         source_repo = source_repo,
         targets = targets,
         versions_deps = versions_deps,
+        layered_deps = layered_deps,
     )
 
 def _base_entry_from_dict(d):
@@ -274,6 +292,10 @@ def _base_entry_from_dict(d):
         versions_deps = _PkgsSchema.VersionDeps.from_dict(
             d.get("versions_deps"),
         ),
+        layered_deps = {
+            name: _PkgsSchema.DepsInfo.from_dict(raw)
+            for name, raw in d.get("layered_deps", {}).items()
+        },
     )
 
 def _base_entry_decode(json_str):

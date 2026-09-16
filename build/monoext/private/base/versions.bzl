@@ -485,6 +485,25 @@ def write_base_version(
                 _deps_kind_build(pkg_aliases),
             )
 
+    # --- {version}/deps/layered/BUILD.bazel: one sysroot tar per layered entry
+    #
+    # Not a kind: these are other groups' runtime deps, named here because the
+    # thing that needs them is in this repo. `:tar` ships none of it -- that is
+    # the point of carving the entry out -- but `:tar.test` is the uncarved
+    # tree, so a suite exercising plperl still has to find libperl. It layers
+    # the entry's own deps rather than a copy of them, which is what keeps the
+    # test honest about what the image will be.
+    if entry.layered_deps:
+        rctx.file(
+            "%s/deps/layered/BUILD.bazel" % version,
+            _deps_kind_build({
+                name: _sysroot_select(
+                    entry.layered_deps[name].sysroot_tar_labels_by_arch,
+                )
+                for name in sorted(entry.layered_deps)
+            }),
+        )
+
 testing = struct(
     _version_root_build = _version_root_build,
     _option_set_build = _option_set_build,

@@ -10,7 +10,13 @@ load("//tools:gen_index.bzl", "gen_index", "update_index")
 package(default_visibility = ["//visibility:public"])
 
 exports_files(
-    ["index.json"] + glob([
+    [
+        "index.json",
+        # What the entries carved out of the base flavor's own tree need from
+        # the distro. Beside them rather than in them: `update_contrib` writes
+        # every `contrib/<name>/repo.json` in full and would drop it.
+        "contrib/deps.json",
+    ] + glob([
         "**/repo.json",
         "*/introspect/*.json",
     ]) + glob([

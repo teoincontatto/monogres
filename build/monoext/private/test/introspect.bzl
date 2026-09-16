@@ -73,6 +73,11 @@ INTROSPECT_ATTRS = dict(
     test_pg_tar_labels = attr.string(default = "{}"),
     # JSON `{version: runtime_sysroot_tar_label_str}` -- runtime closure base.
     runtime_tar_labels = attr.string(default = "{}"),
+    # JSON `{version: [sysroot_tar_label_str]}` -- the runtime deps of the
+    # entries carved out of the install tree (the procedural languages'
+    # interpreters, today). The suites run against the uncarved `:tar.test`, so
+    # they layer these onto the runtime closure above.
+    layered_tar_labels = attr.string(default = "{}"),
     # JSON `{version: src_dir_label_str}` -- source tree
     # (sql/expected/schedules).
     src_dir_labels = attr.string(default = "{}"),
@@ -90,7 +95,7 @@ INTROSPECT_ATTRS = dict(
     introspect_jsons = attr.label_keyed_string_dict(default = {}),
 )
 
-def introspect_payload(name, base_data):
+def introspect_payload(name, base_data, layered_deps = {}):
     """Assemble the introspect repo-rule attrs for a unified hub.
 
     Runs in module-extension context (called from `create_base` / `create_ext`).
@@ -102,6 +107,10 @@ def introspect_payload(name, base_data):
     Args:
         name: the base hub name (e.g. `"pg"`); labels are `@{name}//...`.
         base_data: `BaseData` from `create_base_src`.
+        layered_deps: `{version: {entry name: DepsInfo}}` for the entries carved
+            out of the install tree into layers of their own. Only the names are
+            used here -- the base hub renders one `deps/layered:<entry>` alias
+            per entry, and both hubs' suites take the label.
 
     Returns:
         a `dict` to splat into the `base_repo` / `ext_repo` call.
@@ -168,12 +177,28 @@ def introspect_payload(name, base_data):
         if lbl
     }
 
+    # {version: [label]} -- one per entry carved out of that version's tree that
+    # needs something from the distro. The harness layers them onto the runtime
+    # closure for every suite, because what it runs against (`:tar.test`) is the
+    # tree before the carve.
+    layered_tars = {
+        v: [
+            bind(name = name, v = v, entry = entry)(
+                "@{name}//{v}/deps/layered:{entry}",
+            )
+            for entry in sorted(entries)
+        ]
+        for v, entries in layered_deps.items()
+        if entries
+    }
+
     return dict(
         option_sets = json.encode(option_sets),
         introspect_labels = json.encode(introspect_meta),
         pg_tar_labels = json.encode(pg_tars),
         test_pg_tar_labels = json.encode(test_pg_tars),
         runtime_tar_labels = json.encode(runtime_tars),
+        layered_tar_labels = json.encode(layered_tars),
         src_dir_labels = json.encode(src_dirs),
         # `:test-libs` is optional (regress.so rides `:tar` via pg_build's
         # postfix, and the harness defaults --dlpath to pkglibdir); empty today.
@@ -191,6 +216,7 @@ def _decode(rctx):
         pg_tars = json.decode(rctx.attr.pg_tar_labels),
         test_pg_tars = json.decode(rctx.attr.test_pg_tar_labels),
         runtime_tars = json.decode(rctx.attr.runtime_tar_labels),
+        layered_tars = json.decode(rctx.attr.layered_tar_labels),
         src_dirs = json.decode(rctx.attr.src_dir_labels),
         test_libs = json.decode(rctx.attr.test_libs_labels),
         overrides = json.decode(rctx.attr.overrides),
@@ -229,6 +255,7 @@ def render_core_tests(rctx, flavor, build_repo):
             pg_tar_by_opt = c.pg_tars[version],
             test_pg_tar_by_opt = c.test_pg_tars.get(version, {}),
             runtime_tar = c.runtime_tars[version],
+            layered_tars = c.layered_tars.get(version, []),
             src_dir = c.src_dirs[version],
             overrides = c.overrides,
             test_meta = c.test_meta,
@@ -274,6 +301,7 @@ def render_contrib_tests(rctx, flavor, build_repo):
             introspect = json.decode(rctx.read(rctx.path(label))),
             pg_tar_default = c.pg_tars[version][default_option_set],
             runtime_tar = c.runtime_tars[version],
+            layered_tars = c.layered_tars.get(version, []),
             src_dir = c.src_dirs[version],
             overrides = c.overrides,
             test_meta = c.test_meta,

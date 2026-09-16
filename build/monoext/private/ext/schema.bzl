@@ -197,37 +197,54 @@ def _ext_external_target_from_dict(d):
         version = d["version"],
     )
 
-def _ext_contrib_target_init(artifact, base_version):
+def _ext_contrib_target_init(artifact, base_version, deps = None):
     return struct(
         artifact = artifact,
         base_version = base_version,
+        deps = deps if deps else _PkgsSchema.TargetDeps.new(),
     )
 
-def _ext_contrib_target_new(ext_hub_name, ext_name, base_v, flavor = "postgres"):
+def _ext_contrib_target_new(
+        ext_hub_name,
+        ext_name,
+        base_v,
+        version_deps = None,
+        flavor = "postgres"):
     """Constructs an `ExtContribTarget`.
 
-    Derives artifact and base_version from primitive inputs. Contribs have no
-    own `deps` or `source` (they inherit from PG).
+    Derives artifact, base_version and deps from primitive inputs. Contribs have
+    no `source` of their own -- they are built inside the base flavor's tree --
+    but they do have `deps`: a contrib carved into a layer of its own carries
+    whatever the distro side of it needs, since the base image it composes onto
+    no longer does. Empty for all of contrib proper, which needs nothing beyond
+    what PostgreSQL itself links; populated for the procedural languages, which
+    drag an interpreter in (see `catalog/extensions/contrib/deps.json`).
 
     Args:
         ext_hub_name: Apparent name of the extensions hub repo.
         ext_name: Contrib extension name.
         base_v: Base version string.
+        version_deps: `VersionDeps` for this base version, or `None`.
         flavor: Base flavor identity (e.g. "postgres", "ivorysql").
 
     Returns:
-        A `struct(artifact, base_version)`.
+        A `struct(artifact, base_version, deps)`.
     """
     f = bind(hub = ext_hub_name, name = ext_name, base_v = base_v)
     return _ext_contrib_target_init(
         artifact = f("@{hub}//contrib/{name}/{base_v}:tar"),
         base_version = _base_version_struct(base_v, flavor = flavor),
+        deps = _PkgsSchema.TargetDeps.qualify(
+            f("@{hub}//contrib/{name}/{base_v}"),
+            version_deps,
+        ),
     )
 
 def _ext_contrib_target_from_dict(d):
     return _ext_contrib_target_init(
         artifact = d["artifact"],
         base_version = _base_version_from_dict(d["base_version"]),
+        deps = _PkgsSchema.TargetDeps.from_dict(d["deps"]),
     )
 
 def _ext_external_entry_init(
@@ -427,7 +444,12 @@ def _ext_external_entry_from_dict(d):
         cargo = d.get("cargo", {}),
     )
 
-def _ext_contrib_entry_init(ext_versions, metadata, name, targets = []):
+def _ext_contrib_entry_init(
+        ext_versions,
+        metadata,
+        name,
+        targets = [],
+        versions_deps = {}):
     """Raw initializer for contrib entries; sets `is_contrib = True`."""
     return struct(
         ext_versions = ext_versions,
@@ -435,6 +457,7 @@ def _ext_contrib_entry_init(ext_versions, metadata, name, targets = []):
         metadata = metadata,
         name = name,
         targets = targets,
+        versions_deps = versions_deps,
     )
 
 def _ext_contrib_entry_new(
@@ -442,6 +465,7 @@ def _ext_contrib_entry_new(
         ext_name,
         ext_versions,
         metadata,
+        ext_versions_deps = {},
         base_flavor = "postgres"):
     """Constructs an `ExtContribEntry`.
 
@@ -452,23 +476,30 @@ def _ext_contrib_entry_new(
         ext_name: Contrib extension name.
         ext_versions: Sorted list of base version strings the contrib ships for.
         metadata: Raw contrib `metadata` block.
+        ext_versions_deps: `{base_version: VersionDeps}` from the shared deps
+            pool. Keyed by base version, because that is what a contrib's
+            versions are. Empty for an entry that needs nothing from the distro.
         base_flavor: Base flavor identity (e.g. "postgres", "ivorysql").
 
     Returns:
         An `ExtContribEntry` struct.
     """
-    targets = []
-    for base_v in sorted(ext_versions):
-        f = bind(hub = ext_hub_name, name = ext_name, base_v = base_v)
-        targets.append(_ext_contrib_target_init(
-            artifact = f("@{hub}//contrib/{name}/{base_v}:tar"),
-            base_version = _base_version_struct(base_v, flavor = base_flavor),
-        ))
+    targets = [
+        _ext_contrib_target_new(
+            ext_hub_name,
+            ext_name,
+            base_v,
+            version_deps = ext_versions_deps.get(base_v),
+            flavor = base_flavor,
+        )
+        for base_v in sorted(ext_versions)
+    ]
     return _ext_contrib_entry_init(
         ext_versions = ext_versions,
         metadata = metadata,
         name = ext_name,
         targets = targets,
+        versions_deps = ext_versions_deps,
     )
 
 def _ext_contrib_entry_from_dict(d):
@@ -481,6 +512,10 @@ def _ext_contrib_entry_from_dict(d):
             _ext_contrib_target_from_dict(t)
             for t in d.get("targets", [])
         ],
+        versions_deps = {
+            version: _PkgsSchema.VersionDeps.from_dict(vd)
+            for version, vd in d.get("versions_deps", {}).items()
+        },
     )
 
 def _ext_contrib_entry_decode(json_str):

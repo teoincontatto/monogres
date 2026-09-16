@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "deps": {
+    "plperl": {
+      "runtime": {
+        "debian": {
+          "12": {
+            "*": [
+              "libperl5.36"
+            ]
+          },
+          "13": {
+            "*": [
+              "libperl5.40"
+            ]
+          }
+        }
+      }
+    },
+    "plpython3u": {
+      "runtime": {
+        "debian": {
+          "12": {
+            "*": [
+              "libpython3.11"
+            ]
+          },
+          "13": {
+            "*": [
+              "libpython3.13"
+            ]
+          }
+        }
+      }
+    },
+    "pltcl": {
+      "runtime": {
+        "debian": {
+          "12": {
+            "*": [
+              "tcl",
+              "tcl8.6"
+            ]
+          },
+          "13": {
+            "*": [
+              "tcl",
+              "tcl8.6"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

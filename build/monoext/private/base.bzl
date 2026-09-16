@@ -190,7 +190,7 @@ def create_base_src(ctx, hub_name, base_label):
         extra_sources = extra_sources,
     )
 
-def _build_entries(base_data, versions_deps, hub_name):
+def _build_entries(base_data, versions_deps, hub_name, layered_deps = {}):
     """Build JSON-encoded `BaseEntry` values for base_repo, one per base version.
 
     Args:
@@ -200,6 +200,9 @@ def _build_entries(base_data, versions_deps, hub_name):
             pre-qualify all `@{hub_name}//...` alias labels baked onto each
             `BaseTarget` (`artifact`, `source.{dir,files}`, `deps.*`) and each
             `BaseEntry.source` before the JSON boundary.
+        layered_deps: `{version: {entry name: DepsInfo}}` -- the runtime deps of
+            the entries carved out of the install tree into layers of their own.
+            See `BaseEntry.new`.
 
     Returns:
         Dict of `{version: json_encoded_entry}`.
@@ -285,12 +288,19 @@ def _build_entries(base_data, versions_deps, hub_name):
             source_repo = source_repo,
             targets = targets,
             versions_deps = vd,
+            layered_deps = layered_deps.get(version, {}),
         )
         entries[version] = json.encode(entry)
 
     return entries
 
-def create_base(hub_name, base_data, pkgs_result, archs, build_repo = "monogres"):
+def create_base(
+        hub_name,
+        base_data,
+        pkgs_result,
+        archs,
+        build_repo = "monogres",
+        layered_deps = {}):
     """Create the base hub repo with build targets and introspect data.
 
     Must be called from a module extension context.
@@ -301,11 +311,15 @@ def create_base(hub_name, base_data, pkgs_result, archs, build_repo = "monogres"
         pkgs_result: `PkgsResult` struct from `create_pkgs()`.
         archs: List of architecture names for per-arch targets.
         build_repo: Build repo name (default "monogres").
+        layered_deps: `{version: {entry name: DepsInfo}}` -- the runtime deps of
+            the entries this hub's install tree is carved into layers for. The
+            base image ships none of them; the uncarved test build needs all of
+            them. See `BaseEntry.new`.
     """
     flavor = base_data.flavor
     versions_deps = pkgs_result.versions_deps.get(flavor, {})
 
-    entries = _build_entries(base_data, versions_deps, hub_name)
+    entries = _build_entries(base_data, versions_deps, hub_name, layered_deps)
 
     # `introspect_payload` supplies `option_sets` + the test-introspect attrs;
     # the base hub renders the core/pl/module suites alongside the build
@@ -320,7 +334,7 @@ def create_base(hub_name, base_data, pkgs_result, archs, build_repo = "monogres"
         pg_src = "@%s" % base_data.source_repo,
         build_repo = build_repo,
         flavor = flavor,
-        **introspect_payload(hub_name, base_data)
+        **introspect_payload(hub_name, base_data, layered_deps = layered_deps)
     )
 
 testing = struct(

@@ -8,6 +8,7 @@ files with inlined packaging targets.
 
 load("@starlark_utils//starlark:starlark.bzl", Star = "starlark")
 load("//monoext/private:repo_names.bzl", "bind")
+load("//monoext/private/ext:deps.bzl", "write_deps_package")
 
 # ---------------------------------------------------------------------------
 # File rendering helpers
@@ -157,7 +158,8 @@ def write_contrib_extension(
     Args:
         rctx: Repository context.
         name: Contrib extension name.
-        entry: `ExtContribEntry` struct with ext_versions and metadata.
+        entry: `ExtContribEntry` struct with ext_versions, metadata and
+            versions_deps.
         build_repo: Name of the build repo (e.g. `"monogres"`).
         base_hub_name: Apparent name of the base hub repo. Contrib targets
             reference `@{base_hub_name}//{base_version}/full:tar.dev`.
@@ -195,6 +197,15 @@ def write_contrib_extension(
                 files = files,
             ),
         )
+
+        # --- contrib/{name}/{base_v}/deps/{kind}/BUILD.bazel ---
+        #
+        # Only the entries that need something from the distro get one: the
+        # interpreters the procedural languages embed. The rest of contrib links
+        # nothing PostgreSQL does not, and renders no `deps/` at all.
+        vd = entry.versions_deps.get(base_version)
+        if vd:
+            write_deps_package(rctx, hub_package, vd)
 
         # --- contrib/{name}/{base_v}/{arch}/BUILD.bazel ---
         for arch in archs:

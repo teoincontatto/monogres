@@ -4,7 +4,11 @@ Unit tests for monoext/private/ext.bzl pure helpers:
 - `_build_external(extensions, versions_deps, base_versions, hub_name)`:
   per-extension JSON entry assembly, including is_compatible filtering and the
   pre-qualification of `entry.deps.{ext_v}.{buildtime,runtime}` alias labels.
-- `_build_contrib(extensions)`: per-contrib JSON entry assembly
+- `_build_contrib(extensions, versions_deps)`: per-contrib JSON entry assembly,
+  including the `deps/<kind>` labels an entry carved into a layer of its own
+  needs (empty for the contribs that ask nothing of the distro)
+- `_read_contrib_deps(ctx, catalog_label, contrib_names)`: the hand-written
+  table of what the carved-out entries need from the distro
 - `_declare_build_data(ext_name, build_data, declared)`: the repo holding the
   files an extension's build stages instead of downloading them itself
 """
@@ -214,6 +218,7 @@ def _build_contrib_basic_test_impl(ctx):
 
     entries = _Ext._build_contrib(
         extensions,
+        {},
         hub_name = "pg_ext",
         base_flavor = "postgres",
     )
@@ -244,9 +249,129 @@ def _build_contrib_basic_test_impl(ctx):
         entry.targets[1].artifact,
     )
 
+    # Most of contrib needs nothing Debian-side that PostgreSQL itself does
+    # not, so no `deps/` package is rendered and nothing points at one.
+    asserts.equals(env, [], entry.targets[0].deps.runtime.packages)
+    asserts.equals(env, None, entry.targets[0].deps.runtime.sysroot_tar)
+
     return unittest.end(env)
 
 build_contrib_basic_test = unittest.make(_build_contrib_basic_test_impl)
+
+def _build_contrib_deps_test_impl(ctx):
+    """A contrib carved into a layer carries its own distro deps.
+
+    It cannot inherit them: the base image it composes onto stopped shipping
+    the entry, and with it the interpreter the entry links.
+    """
+    env = unittest.begin(ctx)
+
+    runtime = _PkgsSchema.DepsInfo.new(
+        packages = ["libperl5.40"],
+        pkgs_labels = ["@pg_pkgs//deb/libperl5.40:libperl5.40"],
+        sysroot_labels_by_arch = {
+            "amd64": "@pgbuildtime-perl//debian/13/amd64:sysroot",
+        },
+        sysroot_tar_labels_by_arch = {
+            "amd64": "@pgbuildtime-perl//debian/13/amd64:sysroot.tar",
+        },
+    )
+
+    extensions = {
+        "plperl": _ExtSchema.ExtensionEntry.new(
+            ext_versions = ["18.1"],
+            is_contrib = True,
+            metadata = {"files": {"18.1": ["lib/plperl.so"]}},
+        ),
+    }
+
+    entries = _Ext._build_contrib(
+        extensions,
+        {"plperl": {"18.1": _PkgsSchema.VersionDeps.new(runtime = runtime)}},
+        hub_name = "pg_ext",
+        base_flavor = "postgres",
+    )
+
+    target = _ExtSchema.ExtContribEntry.decode(entries["plperl"]).targets[0]
+
+    # Qualified against the contrib package, which is where `contrib.bzl`
+    # renders the `deps/` tree -- the two read the same prefix.
+    asserts.equals(
+        env,
+        ["@pg_ext//contrib/plperl/18.1/deps/runtime/pkgs:libperl5.40"],
+        target.deps.runtime.packages,
+    )
+    asserts.equals(
+        env,
+        "@pg_ext//contrib/plperl/18.1/deps/runtime:sysroot_tar",
+        target.deps.runtime.sysroot_tar,
+    )
+
+    # A contrib is compiled inside the base flavor's own build, so it has no
+    # buildtime deps of its own however many runtime ones it declares.
+    asserts.equals(env, [], target.deps.buildtime.packages)
+
+    return unittest.end(env)
+
+build_contrib_deps_test = unittest.make(_build_contrib_deps_test_impl)
+
+# --- _read_contrib_deps ----------------------------------------------------
+
+def _contrib_deps_ctx(payload):
+    """A module-extension ctx + catalog label reading one `deps.json`."""
+    return (
+        struct(read = lambda _label: json.encode(payload)),
+        struct(relative = lambda path: "//catalog/extensions%s" % path),
+    )
+
+_PLPERL_DEPS = {
+    "runtime": {"debian": {"13": {"*": ["libperl5.40"]}}},
+}
+
+def _read_contrib_deps_test_impl(ctx):
+    """The table is keyed by entry name and carries a `metadata.deps` block."""
+    env = unittest.begin(ctx)
+
+    ext_ctx, catalog = _contrib_deps_ctx(
+        {"deps": {"plperl": _PLPERL_DEPS}, "version": 1},
+    )
+
+    asserts.equals(
+        env,
+        {"plperl": _PLPERL_DEPS},
+        _Ext._read_contrib_deps(ext_ctx, catalog, ["hstore", "plperl"]),
+    )
+
+    return unittest.end(env)
+
+read_contrib_deps_test = unittest.make(_read_contrib_deps_test_impl)
+
+def _read_contrib_deps_unknown_test_impl(ctx):
+    """A key naming no entry is a silent no-op otherwise: the layer ships broken."""
+    env = unittest.begin(ctx)
+
+    ext_ctx, catalog = _contrib_deps_ctx({"deps": {"plperl5": _PLPERL_DEPS}})
+
+    failures = []
+    _Ext._read_contrib_deps(
+        ext_ctx,
+        catalog,
+        ["hstore", "plperl"],
+        _fail = failures.append,
+    )
+
+    asserts.equals(env, 1, len(failures))
+    asserts.true(
+        env,
+        "no contrib entry for" in failures[0],
+        "unexpected failure message: %s" % failures,
+    )
+
+    return unittest.end(env)
+
+read_contrib_deps_unknown_test = unittest.make(
+    _read_contrib_deps_unknown_test_impl,
+)
 
 # --- _declare_build_data ---------------------------------------------------
 
@@ -336,6 +461,9 @@ TEST_SUITE_NAME = "ext_top"
 
 TEST_SUITE_TESTS = dict(
     build_contrib_basic = build_contrib_basic_test,
+    build_contrib_deps = build_contrib_deps_test,
+    read_contrib_deps = read_contrib_deps_test,
+    read_contrib_deps_unknown = read_contrib_deps_unknown_test,
     declare_build_data = declare_build_data_test,
     declare_build_data_none = declare_build_data_none_test,
     declare_build_data_shared = declare_build_data_shared_test,

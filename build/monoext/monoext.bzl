@@ -35,6 +35,38 @@ load("//monoext/private:repo_names.bzl", "repo_names")
 load("//monoext/private/apt:apt_lock.bzl", "SNAPSHOT", _AptLock = "apt_lock")
 load("//platforms:targets.bzl", "ARCHS")
 
+def _layered_deps(ext_data, pkgs_result):
+    """The runtime deps of the entries carved out of the base install tree.
+
+    An entry built inside the flavor's own tree ships as a layer composed onto
+    the base image, so whatever it needs from the distro is its own: the base
+    image carries none of it. That makes one table serve two readers that would
+    otherwise drift -- the layer, which stages these packages, and the regress
+    harness, which runs against the *uncarved* `:tar.test` and so needs every
+    one of them back.
+
+    Args:
+        ext_data: `ExtData` from `create_ext_src`.
+        pkgs_result: `PkgsResult` from `create_pkgs`; a contrib group is keyed
+            by the entry's name and its versions are the base flavor's.
+
+    Returns:
+        `{base version: {entry name: DepsInfo}}`, holding only the entries that
+        need something from the distro -- the procedural languages, today.
+    """
+    layered = {}
+
+    for name, entry in ext_data.extensions.items():
+        if not entry.is_contrib:
+            continue
+
+        for version, vd in pkgs_result.versions_deps.get(name, {}).items():
+            if not vd.runtime or not vd.runtime.packages:
+                continue
+            layered.setdefault(version, {})[name] = vd.runtime
+
+    return layered
+
 def create_monogres(
         ctx,
         name,
@@ -115,6 +147,8 @@ def create_monogres(
     # 4. shared deps pool: @{name}_pkgs
     pkgs_result = create_pkgs(ctx, pkgs_name, package_groups, lock = lock)
 
+    layered_deps = _layered_deps(ext_data, pkgs_result)
+
     # 5. base hub: @{name}. Renders the build targets AND the core/pl/module
     # test introspect (one sh_test per (version x option_set x suite) under
     # `<v>/<opt>/tests/`).
@@ -124,6 +158,7 @@ def create_monogres(
         pkgs_result = pkgs_result,
         archs = ARCHS,
         build_repo = build_repo,
+        layered_deps = layered_deps,
     )
 
     repos = [name, pkgs_name]
@@ -145,6 +180,7 @@ def create_monogres(
             archs = ARCHS,
             pgrx_crates = ext_data.pgrx_crates,
             build_repo = build_repo,
+            layered_deps = layered_deps,
         )
         repos.append(ext_name)
 
