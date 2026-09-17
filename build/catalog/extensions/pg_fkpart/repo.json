@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "lemoineat",
+      "name": "pg_fkpart",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.7.0": {
+      "sha256": "dbe078dbfa60395aacc7be5ae86492d9563a1bb575ca688db19c761bb86cd4fe"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.7.0": ">=16"
+      }
+    }
+  }
+}

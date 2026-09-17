@@ -1,0 +1,19 @@
+{
+    "controls": [
+        "pg_readonly"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "temp_config": "pg_readonly.conf",
+            "tests": {
+                "*": [
+                    "test"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

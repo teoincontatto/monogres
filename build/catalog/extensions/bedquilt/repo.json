@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "BedquiltDB",
+      "name": "bedquilt-core",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "2.1.0": {
+      "sha256": "57ed050685adbc19b63fa0365b60d228e6d984af58c03a2b2e51bb644a31cca1"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "2.1.0": ">=16"
+      }
+    },
+    "test_ext": {
+      "requires": ["pgcrypto", "plpython3u"],
+      "smoke": {
+        "extensions": ["bedquilt"],
+        "cascade": true
+      }
+    }
+  }
+}

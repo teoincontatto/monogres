@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "theory",
+      "name": "pg-semver",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "0.41.0": {
+      "sha256": "51e284f68eaa1ac230899254aa2211fffe1dadc45c47f8d114246cb04f4c03f9"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.41.0": ">=16"
+      }
+    }
+  }
+}

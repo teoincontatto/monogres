@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pg_fkpart",
+  "url": "https://github.com/lemoineat/pg_fkpart",
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "lemoineat",
+      "name": "pg_fkpart",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.7.0"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.7.0": ">=16"
+      }
+    }
+  }
+}

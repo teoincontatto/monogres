@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "timescale",
+      "name": "pg_textsearch",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.4.0": {
+      "sha256": "cab02b4e8af11f98b428d17cca9c5235ab55e12d79c20fa8fbb950708c4a1e92"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.4.0": ">=17"
+      }
+    },
+    "test_ext": {
+      "smoke": {
+        "extensions": ["pg_textsearch"],
+        "preload": ["pg_textsearch"]
+      },
+      "test_overrides": {
+        "regress": {
+          "preload": ["pg_textsearch"],
+          "exclude_tests": ["bmw", "explicit_index", "vector_v1_rejected"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "controls": [
+        "semver"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "inputdir": "test",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "base",
+                    "corpus"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

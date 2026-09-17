@@ -1,0 +1,60 @@
+{
+    "controls": [
+        "pglogical",
+        "pglogical_origin"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "preseed",
+                    "infofuncs",
+                    "init_fail",
+                    "init",
+                    "preseed_check",
+                    "basic",
+                    "extended",
+                    "conflict_secondary_unique",
+                    "toasted",
+                    "replication_set",
+                    "add_table",
+                    "matview",
+                    "bidirectional",
+                    "primary_key",
+                    "interfaces",
+                    "foreign_key",
+                    "functions",
+                    "copy",
+                    "sequence",
+                    "triggers",
+                    "parallel",
+                    "row_filter",
+                    "row_filter_sampling",
+                    "att_list",
+                    "column_filter",
+                    "apply_delay",
+                    "multiple_upstreams",
+                    "node_origin_cascade",
+                    "drop"
+                ]
+            }
+        },
+        {
+            "kind": "tap",
+            "slug": "tap",
+            "tests": {
+                "*": [
+                    "010_pglogical_create_subscriber",
+                    "011_pglogical_cascade_sub",
+                    "020_non_default_replication_set",
+                    "030_pglogical_daylight_times_switching",
+                    "040_pglogical_sync_during_write"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

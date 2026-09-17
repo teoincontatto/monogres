@@ -1,0 +1,9 @@
+{
+  "default_version": "{{VERSION}}",
+  "comment": "A json document store",
+  "module_pathname": "$libdir/bedquilt",
+  "requires": ["plpgsql", "pgcrypto", "plpython3u"],
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

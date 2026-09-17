@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "jx_io",
+  "url": "https://github.com/asotolongo/jx_io",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "asotolongo",
+      "name": "jx_io",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["0.1.1"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1.1": ">=16"
+      }
+    }
+  }
+}

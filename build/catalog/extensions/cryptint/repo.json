@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "dverite",
+      "name": "cryptint",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.1": {
+      "commit": "2a06bbf609ae02e16e0e32d62453141cada57906",
+      "sha256": "005ab6dfc13fd24fa0dd423d9eda8a15b5d59e0840344e1efae4514f3d2b899f"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.1": ">=16"
+      }
+    }
+  }
+}

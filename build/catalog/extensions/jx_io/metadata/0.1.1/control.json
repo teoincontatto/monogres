@@ -1,0 +1,8 @@
+{
+  "default_version": "0.1.1",
+  "comment": "Extension to export and import json and xml from/to postgres ",
+  "superuser": false,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "jx_io"
+}

@@ -1,0 +1,22 @@
+{
+    "controls": [
+        "unnest_ordinality"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression_unnest_ordinality",
+            "inputdir": "test",
+            "kind": "regress",
+            "load_extensions": [
+                "unnest_ordinality"
+            ],
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "unnest_ordinality"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

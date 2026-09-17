@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "floatvec",
+  "url": "https://github.com/pjungwir/floatvec",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "pjungwir",
+      "name": "floatvec",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.1.1"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.1.1": ">=16"
+      }
+    }
+  }
+}

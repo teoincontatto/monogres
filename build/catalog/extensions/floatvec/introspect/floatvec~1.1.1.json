@@ -1,0 +1,24 @@
+{
+    "controls": [
+        "floatvec"
+    ],
+    "test_suites": [
+        {
+            "dbname": "floatvec_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "setup",
+                    "vec_add",
+                    "vec_div",
+                    "vec_elements",
+                    "vec_mul",
+                    "vec_pow",
+                    "vec_sub"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

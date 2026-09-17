@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pg_hashids",
+  "url": "https://github.com/iCyberon/pg_hashids",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "iCyberon",
+      "name": "pg_hashids",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.2.1"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.1": ">=16"
+      }
+    }
+  }
+}

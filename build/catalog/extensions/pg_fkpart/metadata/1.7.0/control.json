@@ -1,0 +1,9 @@
+{
+  "default_version": "1.7",
+  "comment": "Table partitioning by foreign key utility",
+  "module_pathname": "$libdir/pg_fkpart",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "pgfkpart"
+}

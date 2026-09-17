@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0.0",
+  "comment": "Encryption functions for int and bigint values",
+  "module_pathname": "$libdir/cryptint",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

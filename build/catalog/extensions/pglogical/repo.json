@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "gh_org": "2ndQuadrant",
+      "name": "pglogical",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "2.4.8": {
+      "tag": "REL2_4_8",
+      "sha256": "88bd4d0077169a34bfff2b1a88a46068b037d0c84e188d29e6d08f6d2302dbb3"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "2.4.8": ">=16"
+      }
+    },
+    "test_ext": {
+      "smoke": {
+        "extensions": ["pglogical"],
+        "preload": ["pglogical"]
+      },
+      "test_overrides": {
+        "regress": {
+          "exclude": true
+        },
+        "tap": {
+          "exclude": true
+        }
+      }
+    }
+  }
+}

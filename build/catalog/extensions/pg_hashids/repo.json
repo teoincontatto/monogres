@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "iCyberon",
+      "name": "pg_hashids",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.2.1": {
+      "sha256": "74576b992d9277c92196dd8d816baa2cc2d8046fe102f3dcd7f3c3febed6822a"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.1": ">=16"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pg_readonly",
+  "url": "https://github.com/pierreforstmann/pg_readonly",
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "pierreforstmann",
+      "name": "pg_readonly",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.6"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.6": ">=16"
+      }
+    }
+  }
+}

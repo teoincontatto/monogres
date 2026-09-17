@@ -1,0 +1,8 @@
+{
+  "default_version": "0.41.0",
+  "comment": "Semantic version data type",
+  "module_pathname": "semver",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

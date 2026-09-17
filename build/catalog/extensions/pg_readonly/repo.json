@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "pierreforstmann",
+      "name": "pg_readonly",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.6": {
+      "sha256": "6b2d0230cb0f8f7cd75440611fb848372a498d090bd8e3d1097a7b94e0f4573a"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.6": ">=16"
+      }
+    }
+  }
+}

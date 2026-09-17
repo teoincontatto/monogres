@@ -1,0 +1,8 @@
+{
+  "default_version": "1.1.1",
+  "comment": "Math for vectors (arrays) of numbers",
+  "module_pathname": "$libdir/floatvec",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

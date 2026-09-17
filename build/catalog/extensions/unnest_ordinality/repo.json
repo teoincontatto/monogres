@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "gh_org": "pgexperts",
+      "name": "unnest_ordinality",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.1": {
+      "tag": "REL_1_0_1",
+      "sha256": "cd3d9faf6904aa0c15679d4480561f4a4bf92852c5e5f99b082f58830555b5bf"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.1": ">=16"
+      }
+    }
+  }
+}
