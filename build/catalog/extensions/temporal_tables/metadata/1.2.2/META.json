@@ -1,0 +1,56 @@
+{
+  "name": "temporal_tables",
+  "abstract": "Temporal Tables Extension",
+  "description": "This extension provides support for temporal tables. System-period data versioning (also known as transaction time or system time) allows you to specify that old rows are archived into another table (that is called the history table).",
+  "version": "1.2.2",
+  "release_status": "stable",
+  "maintainer": ["Vladislav Arkhipov <vlad@arkhipov.ru>"],
+  "license": "bsd",
+  "provides": {
+    "temporal_tables": {
+      "abstract": "Temporal Tables Extension",
+      "file": "temporal_tables--1.2.2.sql",
+      "docfile": "README.md",
+      "version": "1.2.2"
+    }
+  },
+  "prereqs": {
+    "runtime": {
+      "requires": {
+        "PostgreSQL": ">= 9.2.0"
+      }
+    }
+  },
+  "resources": {
+    "homepage": "https://arkhipov.ru",
+    "repository": {
+      "url": "https://github.com/arkhipov/temporal_tables.git",
+      "web": "https://github.com/arkhipov/temporal_tables",
+      "type": "git"
+    },
+    "bugtracker": {
+      "web": "https://github.com/arkhipov/temporal_tables/issues"
+    }
+  },
+  "generated_by": "Vladislav Arkhipov",
+  "meta-spec": {
+    "version": "1.0.0",
+    "url": "http://pgxn.org/meta/spec.txt"
+  },
+  "tags": [
+    "temporal database",
+    "temporal table",
+    "temporal",
+    "system-period data versioning",
+    "system-versioned table",
+    "system time",
+    "transaction time",
+    "table audit",
+    "history table",
+    "time travel",
+    "audit",
+    "versioning",
+    "snapshot",
+    "flashback"
+  ]
+}

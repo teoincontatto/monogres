@@ -1,0 +1,7 @@
+{
+    "controls": [
+        "pgbouncer_fdw"
+    ],
+    "test_suites": [],
+    "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "CrunchyData",
+      "name": "pgbouncer_fdw",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.4.0": {
+      "sha256": "b379f686e970b4891eba32ca393344e594ef8ce90ab91201ba1c5a270dce4bde"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.4.0": ">=16"
+      }
+    },
+    "test_ext": {
+      "requires": ["dblink"],
+      "smoke": {
+        "extensions": ["pgbouncer_fdw"],
+        "cascade": true
+      }
+    }
+  }
+}

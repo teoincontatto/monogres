@@ -1,0 +1,9 @@
+{
+  "default_version": "4.6.0",
+  "comment": "Extension to add Global Temporary Tables feature to PostgreSQL",
+  "module_pathname": "$libdir/pgtt",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "pgtt_schema"
+}

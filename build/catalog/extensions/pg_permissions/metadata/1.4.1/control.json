@@ -1,0 +1,7 @@
+{
+  "default_version": "1.4",
+  "comment": "view object permissions and compare them with the desired state",
+  "superuser": false,
+  "trusted": false,
+  "relocatable": false
+}

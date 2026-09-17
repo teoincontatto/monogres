@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "name": "pg_permissions",
+  "url": "https://github.com/cybertec-postgresql/pg_permissions",
+  "sources": {
+    "gh": {
+      "gh_org": "cybertec-postgresql",
+      "name": "pg_permissions",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": {
+      "1.4.1": {
+        "tag": "REL_1_4_1"
+      }
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.4.1": ">=16"
+      }
+    }
+  }
+}

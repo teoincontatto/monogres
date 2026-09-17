@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "dverite",
+      "name": "permuteseq",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.2.2": {
+      "sha256": "d3cf0eff1dd75c7cf66130c8c02fe05a70f6e503690f792684dadb553a7e5417"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.2": ">=16"
+      }
+    }
+  }
+}

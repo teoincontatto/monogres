@@ -1,0 +1,7 @@
+{
+  "default_version": "2",
+  "comment": "PL/sh procedural language",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

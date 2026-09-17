@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "temporal_tables",
+  "url": "https://github.com/arkhipov/temporal_tables",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "arkhipov",
+      "name": "temporal_tables",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.2.2"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.2": ">=16"
+      }
+    }
+  }
+}

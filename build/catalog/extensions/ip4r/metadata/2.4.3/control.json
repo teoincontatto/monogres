@@ -1,0 +1,8 @@
+{
+  "default_version": "2.4",
+  "comment": "data types and operators for storing, indexing, and manipulating IPv4 and IPv6 addresses and ranges",
+  "module_pathname": "$libdir/ip4r",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

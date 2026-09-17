@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "permuteseq",
+  "url": "https://github.com/dverite/permuteseq",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "dverite",
+      "name": "permuteseq",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.2.2"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.2": ">=16"
+      }
+    }
+  }
+}

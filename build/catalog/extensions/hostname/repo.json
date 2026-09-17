@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "theory",
+      "name": "pg-hostname",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.4": {
+      "sha256": "b9813ed67d990527436c65ed5a7d366c1e6924eac97cd03ad8c2552b39c5fda9"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.4": ">=16"
+      }
+    }
+  }
+}

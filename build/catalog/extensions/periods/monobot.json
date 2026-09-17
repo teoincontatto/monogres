@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "name": "periods",
+  "url": "https://github.com/xocolatl/periods",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "xocolatl",
+      "name": "periods",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.2.3"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.2.3": ">=16"
+      }
+    },
+    "test_ext": {
+      "requires": ["btree_gist"],
+      "smoke": {
+        "extensions": ["periods"],
+        "cascade": true
+      }
+    }
+  }
+}

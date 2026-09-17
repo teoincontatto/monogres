@@ -1,0 +1,8 @@
+{
+  "default_version": "1.7.0",
+  "comment": "Lists the column names in a PostgreSQL RECORD value",
+  "module_pathname": "colnames",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

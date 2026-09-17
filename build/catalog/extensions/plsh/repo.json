@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "petere",
+      "name": "plsh",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.20220917": {
+      "sha256": "4fc926c8a98756fd40a93cf14005b2b408363338775466a9672e8ec810afcadb"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.20220917": ">=16"
+      }
+    },
+    "test_ext": {
+      "test_overrides": {
+        "regress": {
+          "exclude": true
+        }
+      }
+    }
+  }
+}

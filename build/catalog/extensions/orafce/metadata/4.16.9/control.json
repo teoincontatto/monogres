@@ -1,0 +1,8 @@
+{
+  "default_version": "4.16",
+  "comment": "Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS",
+  "module_pathname": "$libdir/orafce",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

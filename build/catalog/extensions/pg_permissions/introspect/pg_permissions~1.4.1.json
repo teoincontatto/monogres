@@ -1,0 +1,18 @@
+{
+    "controls": [
+        "pg_permissions"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "sample"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

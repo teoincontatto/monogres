@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "MigOpsRepos",
+      "name": "credcheck",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "5.0": {
+      "sha256": "549125dd43546c27e1f6db7dfc02f9621be6b459bce9edb561649ca87f88428f"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "5.0": ">=16"
+      }
+    },
+    "test_ext": {
+      "smoke": {
+        "extensions": ["credcheck"],
+        "preload": ["credcheck"]
+      },
+      "test_overrides": {
+        "regress": {
+          "preload": ["credcheck"]
+        }
+      }
+    }
+  }
+}

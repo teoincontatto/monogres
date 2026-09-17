@@ -1,0 +1,25 @@
+{
+    "controls": [
+        "plsh"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "inputdir": "test",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "init",
+                    "function",
+                    "trigger",
+                    "crlf",
+                    "psql",
+                    "inline",
+                    "event_trigger"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

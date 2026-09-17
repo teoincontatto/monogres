@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "RhodiumToad",
+      "name": "ip4r",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "2.4.3": {
+      "sha256": "b49157a38b520c919a327637bfa6478b9985d9ec7c78b47c68595ba0271371a1"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "2.4.3": ">=16"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "pierreforstmann",
+      "name": "pg_timeout",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.0": {
+      "sha256": "c9836d7e091ed1397f83523f34bf887d01eb96af77752bcbe38c05e2a898bf2c"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    }
+  }
+}

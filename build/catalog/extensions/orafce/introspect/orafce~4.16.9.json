@@ -1,0 +1,31 @@
+{
+    "controls": [
+        "orafce"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "encoding": "utf8",
+            "kind": "regress",
+            "schedule": "parallel_schedule",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "orafce",
+                    "orafce2",
+                    "dbms_output",
+                    "dbms_utility",
+                    "files",
+                    "varchar2",
+                    "nvarchar2",
+                    "aggregates",
+                    "nlssort",
+                    "dbms_random",
+                    "regexp_func",
+                    "dbms_sql"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

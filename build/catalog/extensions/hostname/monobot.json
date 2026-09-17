@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "hostname",
+  "url": "https://github.com/theory/pg-hostname",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "theory",
+      "name": "pg-hostname",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.4"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.4": ">=16"
+      }
+    }
+  }
+}

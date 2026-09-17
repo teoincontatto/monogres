@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "colnames",
+  "url": "https://github.com/theory/colnames",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "theory",
+      "name": "colnames",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.7.1"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.7.1": ">=16"
+      }
+    }
+  }
+}

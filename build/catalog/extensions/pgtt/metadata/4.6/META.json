@@ -1,0 +1,39 @@
+{
+  "name": "pgtt",
+  "abstract": "Extension to add Global Temporary Tables feature to PostgreSQL.",
+  "version": "4.6.0",
+  "maintainer": "Gilles Darold <gilles@darold.net>",
+  "license": "postgresql",
+  "release_status": "stable",
+  "provides": {
+    "pgtt": {
+      "abstract": "Extension to manage Global Temporary Tables",
+      "file": "sql/pgtt--4.6.0.sql",
+      "docfile": "doc/pgtt.md",
+      "version": "4.6.0"
+    }
+  },
+  "resources": {
+    "bugtracker": {
+      "web": "https://github.com/darold/pgtt/issues"
+    },
+    "repository": {
+      "url": "git://github.com/darold/pgtt.git",
+      "web": "https://github.com/darold/pgtt.git",
+      "type": "git"
+    }
+  },
+  "prereqs": {
+    "runtime": {
+      "requires": {
+        "PostgreSQL": "12.0"
+      }
+    }
+  },
+  "generated_by": "Gilles Darold",
+  "meta-spec": {
+    "version": "1.0.0",
+    "url": "http://pgxn.org/meta/spec.txt"
+  },
+  "tags": ["global", "temporary", "table"]
+}

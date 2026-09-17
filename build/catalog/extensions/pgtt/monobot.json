@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pgtt",
+  "url": "https://github.com/darold/pgtt",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "darold",
+      "name": "pgtt",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["4.6"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "4.6": ">=16"
+      }
+    }
+  }
+}

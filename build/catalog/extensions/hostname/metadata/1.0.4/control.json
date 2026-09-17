@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0.0",
+  "comment": "Get the server host name",
+  "module_pathname": "hostname",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

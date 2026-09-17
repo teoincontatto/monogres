@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pg_timeout",
+  "url": "https://github.com/pierreforstmann/pg_timeout",
+  "sources": {
+    "gh": {
+      "tag": "{version}",
+      "gh_org": "pierreforstmann",
+      "name": "pg_timeout",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.0"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    }
+  }
+}

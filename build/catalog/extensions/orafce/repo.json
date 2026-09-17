@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "gh_org": "orafce",
+      "name": "orafce",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "4.16.9": {
+      "tag": "VERSION_4_16_9",
+      "sha256": "b70b3ba3befd816424d9f50a6dc1fa1b97966cda31d091a3bc0918ab037871a0"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "4.16.9": ">=16"
+      }
+    }
+  }
+}

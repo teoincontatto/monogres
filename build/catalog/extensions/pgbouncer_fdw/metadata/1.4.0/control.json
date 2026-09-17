@@ -1,0 +1,8 @@
+{
+  "default_version": "1.4.0",
+  "comment": "Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions",
+  "requires": ["dblink"],
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

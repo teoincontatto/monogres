@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "name": "pg_background",
+  "url": "https://github.com/vibhorkum/pg_background",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "vibhorkum",
+      "name": "pg_background",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["2.0.3"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "2.0.3": ">=16"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "name": "orafce",
+  "url": "https://github.com/orafce/orafce",
+  "sources": {
+    "gh": {
+      "gh_org": "orafce",
+      "name": "orafce",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": {
+      "4.16.9": {
+        "tag": "VERSION_4_16_9"
+      }
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "4.16.9": ">=16"
+      }
+    }
+  }
+}

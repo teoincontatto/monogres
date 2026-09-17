@@ -1,0 +1,19 @@
+{
+    "controls": [
+        "hostname"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "inputdir": "test",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "base"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

@@ -1,0 +1,20 @@
+{
+    "controls": [
+        "ip4r"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "ip4r",
+                    "ip4r-softerr",
+                    "ip4r-v11"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}
