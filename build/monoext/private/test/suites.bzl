@@ -1531,7 +1531,18 @@ def _ext_regress_test(
         "--option-set",
         default_option_set,
     ]
-    args += _repeated_flag("--tests", info.test_names)
+
+    # An upstream `make installcheck` that drives pg_regress from a schedule
+    # file names the schedule rather than an inline list, and
+    # `_suite_decl_to_info` leaves `test_names` empty for one -- so a suite
+    # like orafce's `parallel_schedule` would otherwise reach the harness with
+    # neither. The harness resolves the schedule against its srcdir, which on
+    # this lane is `--ext-srcdir` joined with `--ext-inputdir`: the extension's
+    # own tree, where the file ships.
+    if info.schedule:
+        args += ["--schedule", info.schedule]
+    else:
+        args += _repeated_flag("--tests", info.test_names)
     if info.dbname:
         args += ["--dbname", info.dbname]
     for ext in info.load_extensions:
