@@ -363,8 +363,6 @@
               "libnuma1",
               "libossp-uuid16",
               "libpam0g",
-              "libperl5.36",
-              "libpython3.11",
               "libselinux1",
               "libssl3",
               "libsystemd0",
@@ -373,9 +371,7 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-14-runtime",
               "ncurses-term",
-              "tcl",
               "zlib1g"
             ]
           },
@@ -392,8 +388,6 @@
               "libnuma1",
               "libossp-uuid16",
               "libpam0g",
-              "libperl5.40",
-              "libpython3.13",
               "libselinux1",
               "libssl3",
               "libsystemd0",
@@ -402,9 +396,7 @@
               "libxml2",
               "libxslt1.1",
               "libzstd1",
-              "llvm-19-runtime",
               "ncurses-term",
-              "tcl",
               "zlib1g"
             ]
           }
@@ -417,6 +409,20 @@
           },
           "13": {
             "*": ["libipc-run-perl"]
+          }
+        }
+      }
+    },
+    "option_deps": {
+      "llvm": {
+        "runtime": {
+          "debian": {
+            "12": {
+              "*": ["llvm-14-runtime"]
+            },
+            "13": {
+              "*": ["llvm-19-runtime"]
+            }
           }
         }
       }

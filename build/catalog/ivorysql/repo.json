@@ -417,14 +417,10 @@
         "runtime": {
           "debian": {
             "12": {
-              "*": [
-                "llvm-14-runtime"
-              ]
+              "*": ["llvm-14-runtime"]
             },
             "13": {
-              "*": [
-                "llvm-19-runtime"
-              ]
+              "*": ["llvm-19-runtime"]
             }
           }
         }
