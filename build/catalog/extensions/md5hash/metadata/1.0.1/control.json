@@ -1,0 +1,7 @@
+{
+  "default_version": "1.0.1",
+  "comment": "type for storing 128-bit binary data inline",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

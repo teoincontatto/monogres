@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "resetsequence",
+  "url": "https://pgxn.org/dist/resetsequence",
+  "sources": {
+    "pgxn": {
+      "name": "resetsequence",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.0"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    }
+  }
+}

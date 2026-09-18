@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": {
+    "pgxn": {
+      "name": "short_ids",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "0.1.0": {
+      "sha256": "9b031dfd2641fbbf4940c08cdb728a9a1b74237dac7cdaedec344db028b9f097"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1.0": ">=16"
+      }
+    }
+  }
+}

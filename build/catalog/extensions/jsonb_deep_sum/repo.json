@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": {
+    "pgxn": {
+      "name": "jsonb_deep_sum",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "0.0.2": {
+      "sha256": "d6250a38e916c6639a87a6bb450c853669b61f0ff1873446bd53d7100218bc8f"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.0.2": ">=16"
+      }
+    }
+  }
+}

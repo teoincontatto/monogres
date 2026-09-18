@@ -1,0 +1,7 @@
+{
+  "default_version": "0.1.0",
+  "comment": "Extension to generate short, textual, unique id strings",
+  "superuser": false,
+  "trusted": false,
+  "relocatable": false
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": {
+    "pgxn": {
+      "name": "md5hash",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "1.0.1": {
+      "sha256": "0b7cb43c12f973ef73933d88a3821f96140f50d3e6e6f319f69aab9fac36b0bf"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.1": ">=16"
+      }
+    }
+  }
+}

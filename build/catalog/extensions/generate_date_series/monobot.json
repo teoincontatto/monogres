@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "generate_date_series",
+  "url": "https://github.com/corlogic-code/generate_date_series",
+  "sources": {
+    "pgxn": {
+      "name": "generate_date_series",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.0"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    }
+  }
+}

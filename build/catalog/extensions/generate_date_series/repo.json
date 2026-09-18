@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": {
+    "pgxn": {
+      "name": "generate_date_series",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "1.0.0": {
+      "sha256": "9ccee4709f0fae16893de472d128dc8c3e6c7ef5eb1d0b60321b23ca47fedb87"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    }
+  }
+}

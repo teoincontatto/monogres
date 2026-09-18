@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0.0",
+  "comment": "generate_series() for pure date values",
+  "module_pathname": "$libdir/generate_date_series",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

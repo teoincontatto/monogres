@@ -1,0 +1,19 @@
+{
+    "controls": [
+        "jsonb_deep_sum"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "jsonb_deep_add_test",
+                    "jsonb_deep_sum_test"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "jsonb_deep_sum",
+  "url": "https://github.com/furstenheim/jsonb_deep_sum",
+  "sources": {
+    "pgxn": {
+      "name": "jsonb_deep_sum",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "pin": ["0.0.2"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.0.2": ">=16"
+      }
+    }
+  }
+}

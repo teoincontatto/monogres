@@ -1,0 +1,7 @@
+{
+  "default_version": "0.0.2",
+  "comment": "jsonb deep sum",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

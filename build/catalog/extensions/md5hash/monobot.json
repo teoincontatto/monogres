@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "name": "md5hash",
+  "url": "https://github.com/tvondra/md5hash",
+  "sources": {
+    "pgxn": {
+      "name": "md5hash",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+    }
+  },
+  "versions": {
+    "pin": ["1.0.1"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.1": ">=16"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0.0",
+  "comment": "functions to reset sequences to values contained in tables",
+  "module_pathname": "$libdir/resetsequence",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}
