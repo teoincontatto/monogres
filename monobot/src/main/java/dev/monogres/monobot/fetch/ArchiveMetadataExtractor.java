@@ -8,14 +8,19 @@ import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.Closeable;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.Instant;
+import java.util.Arrays;
+import java.util.zip.ZipInputStream;
+import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveInputStream;
+import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
 import org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream;
 import org.jboss.logging.Logger;
 
@@ -41,11 +46,16 @@ public class ArchiveMetadataExtractor {
 
   @Inject ObjectMapper objectMapper;
 
-  private byte[] extractTarEntryBytes(TarArchiveInputStream tarIn) throws IOException {
+  // What a zip starts with, whatever it holds: a local file header, an empty archive's end record,
+  // or a spanning marker all begin "PK". Sniffed rather than taken from the filename, because the
+  // name a source serves an archive under is the source's decision and says nothing binding.
+  private static final byte[] ZIP_MAGIC = {0x50, 0x4b};
+
+  private byte[] extractEntryBytes(InputStream archiveIn) throws IOException {
     var out = new ByteArrayOutputStream();
     var buffer = new byte[8192];
     int len;
-    while ((len = tarIn.read(buffer)) != -1) {
+    while ((len = archiveIn.read(buffer)) != -1) {
       out.write(buffer, 0, len);
     }
 
@@ -55,9 +65,8 @@ public class ArchiveMetadataExtractor {
   /// The entry's bytes, or null when it is larger than one of its kind is allowed to be. Null
   /// rather than a throw, because the entry answers for the metadata and not for the version: the
   /// version, its commit and its digest are all sound whatever this file turned out to be.
-  private byte[] extractFromArchive(
-      TarArchiveInputStream tarIn, TarArchiveEntry entry, int maxSizeBytes) {
-    if (entry.getRealSize() > maxSizeBytes) {
+  private byte[] extractFromArchive(Walk walk, ArchiveEntry entry, int maxSizeBytes) {
+    if (sizeOf(entry) > maxSizeBytes) {
       LOG.warnv(
           "Entry {0} is larger than the {1} bytes allowed, so it is left out",
           entry.getName(), String.valueOf(maxSizeBytes));
@@ -66,10 +75,32 @@ public class ArchiveMetadataExtractor {
     }
 
     try {
-      return extractTarEntryBytes(tarIn);
+      return extractEntryBytes(walk.content());
     } catch (IOException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  /// What the entry says it holds. A tar entry's real size is the content it expands to rather
+  /// than the bytes it occupies, which is the number the bounds are about; a zip entry that was
+  /// written as a stream declares nothing until after its data, and reports -1 until then.
+  private static long sizeOf(ArchiveEntry entry) {
+    if (entry instanceof TarArchiveEntry tarEntry) {
+      return tarEntry.getRealSize();
+    }
+
+    return Math.max(0L, entry.getSize());
+  }
+
+  /// When the entry was last modified, as the archive recorded it. A zip need not carry one.
+  private static Instant modifiedOf(ArchiveEntry entry) {
+    if (entry instanceof ZipArchiveEntry zipEntry) {
+      var modified = zipEntry.getLastModifiedTime();
+
+      return modified == null ? Instant.MIN : modified.toInstant();
+    }
+
+    return ((TarArchiveEntry) entry).getLastModifiedTime().toInstant();
   }
 
   /// The control file as the directives it declares, which is what a reader of it wants: the
@@ -110,6 +141,74 @@ public class ArchiveMetadataExtractor {
     return new BufferedInputStream(new FileInputStream(archivePath.toFile()));
   }
 
+  /// One archive as the entries it holds, so the walk below can be written once. Both shapes
+  /// present an [ArchiveEntry] and a stream positioned on its content; only where they come from
+  /// differs.
+  private interface Walk extends Closeable {
+    /// The next entry, or null when the archive is spent.
+    ArchiveEntry next() throws IOException;
+
+    /// The current entry's content.
+    InputStream content();
+  }
+
+  private record TarWalk(TarArchiveInputStream tarIn) implements Walk {
+    @Override
+    public ArchiveEntry next() throws IOException {
+      return tarIn.getNextEntry();
+    }
+
+    @Override
+    public InputStream content() {
+      return tarIn;
+    }
+
+    @Override
+    public void close() throws IOException {
+      tarIn.close();
+    }
+  }
+
+  /// The JDK's zip reader rather than the one in commons-compress, which is otherwise the obvious
+  /// choice. Its reader dispatches over every compression method a zip entry may declare, one of
+  /// which binds to zstd-jni -- an optional dependency nothing here wants. On the JVM that is
+  /// merely unused; in a native image the analysis reaches the call, cannot resolve it, and fails
+  /// the build. The JDK reader has no such dispatch, and stored and deflated entries are all a
+  /// source distribution is. Its entries are handed on as [ZipArchiveEntry] so that everything
+  /// downstream sees one kind of thing.
+  private record ZipWalk(ZipInputStream zipIn) implements Walk {
+    @Override
+    public ArchiveEntry next() throws IOException {
+      var entry = zipIn.getNextEntry();
+
+      return entry == null ? null : new ZipArchiveEntry(entry);
+    }
+
+    @Override
+    public InputStream content() {
+      return zipIn;
+    }
+
+    @Override
+    public void close() throws IOException {
+      zipIn.close();
+    }
+  }
+
+  /// The archive as entries, whichever of the two shapes a source serves. A forge tag is a
+  /// gzipped tar and a PGXN distribution is a zip. The stream is sniffed and put back, so this
+  /// costs no second open.
+  private Walk entriesOf(InputStream raw) throws IOException {
+    var in = raw.markSupported() ? raw : new BufferedInputStream(raw);
+    in.mark(ZIP_MAGIC.length);
+    var head = in.readNBytes(ZIP_MAGIC.length);
+    in.reset();
+
+    return Arrays.equals(head, ZIP_MAGIC)
+        ? new ZipWalk(new ZipInputStream(in))
+        : new TarWalk(new TarArchiveInputStream(new GzipCompressorInputStream(in)));
+  }
+
   /// The entry that answers for a version, out of however many of that name the archive holds. An
   /// extension that ships a test fixture ships a second `{name}.control`, and which entry a forge
   /// wrote last is the forge's decision, so the choice is a rule: closest to the root, and on a
@@ -126,7 +225,7 @@ public class ArchiveMetadataExtractor {
     }
   }
 
-  private static Chosen choose(Chosen chosen, TarArchiveEntry entry, byte[] bytes) {
+  private static Chosen choose(Chosen chosen, ArchiveEntry entry, byte[] bytes) {
     if (bytes == null) {
       return chosen;
     }
@@ -142,13 +241,12 @@ public class ArchiveMetadataExtractor {
     var lastModified = Instant.MIN;
 
     try (var raw = open(archivePath);
-        var gzipIn = new GzipCompressorInputStream(raw);
-        var tarIn = new TarArchiveInputStream(gzipIn)) {
-      TarArchiveEntry entry;
+        var walk = entriesOf(raw)) {
+      ArchiveEntry entry;
       var entries = 0;
       var declaredBytes = 0L;
 
-      while ((entry = tarIn.getNextEntry()) != null) {
+      while ((entry = walk.next()) != null) {
         entries++;
         declaredBytes += Math.max(0L, entry.getSize());
         if (entries > MAX_ENTRIES || declaredBytes > MAX_DECOMPRESSED_BYTES) {
@@ -162,7 +260,7 @@ public class ArchiveMetadataExtractor {
                   + " bytes a source archive is allowed");
         }
 
-        var modified = entry.getLastModifiedTime().toInstant();
+        var modified = modifiedOf(entry);
         if (modified.isAfter(lastModified)) {
           lastModified = modified;
         }
@@ -171,13 +269,15 @@ public class ArchiveMetadataExtractor {
         if (PGXN_META_JSON_FILENAME.equals(fileName)) {
           metaJson =
               choose(
-                  metaJson, entry, extractFromArchive(tarIn, entry, MAX_SIZE_BYTES_PGXN_META_JSON));
+                  metaJson,
+                  entry,
+                  extractFromArchive(walk, entry, MAX_SIZE_BYTES_PGXN_META_JSON));
         } else if (name != null && fileName.equals(name + POSTGRES_CONTROL_FILE_EXTENSION)) {
           control =
               choose(
                   control,
                   entry,
-                  extractFromArchive(tarIn, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
+                  extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
         }
       }
     } catch (IOException e) {

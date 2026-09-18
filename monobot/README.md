@@ -329,6 +329,22 @@ booleans Postgres defaults emitted whether or not the file names them, and any
 directive monobot does not model carried through beside the ones it does.
 `META.json` is verbatim. The cache keeps both as the archive spelled them.
 
+Both archive shapes are read: a gzipped tar, which is what a forge serves for a
+tag, and a zip, which is what PGXN serves for a distribution. Which one an
+archive is comes from its first bytes and not from its name, so a source is free
+to serve either under any filename. An extension whose only published source is
+a PGXN zip needs nothing said about it:
+
+```json
+"sources": {
+  "pgxn": {
+    "name": "md5hash",
+    "strip_prefix": "{name}-{version}",
+    "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
+  }
+}
+```
+
 ## Running
 
 From this directory:

@@ -7,14 +7,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveOutputStream;
+import org.apache.commons.compress.archivers.zip.ZipArchiveEntry;
+import org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream;
 import org.apache.commons.compress.compressors.gzip.GzipCompressorOutputStream;
 import org.apache.commons.compress.compressors.gzip.GzipParameters;
 import org.junit.jupiter.api.AfterEach;
@@ -157,6 +161,46 @@ class ArchiveMetadataExtractorTest {
 
       return super.open(archivePath);
     }
+  }
+
+  /// A forge serves a tag as a gzipped tar and PGXN serves a distribution as a zip, and the same
+  /// rules have to answer for both: one pass, the control closest to the root, the PGXN metadata
+  /// verbatim. The format is sniffed from the bytes, so a zip is read as one whatever it is named.
+  @Test
+  void zipIsReadLikeGzippedTar() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("fixture-1.0.1/test/fixtures/fixture.control", NESTED_CONTROL);
+    entries.put("fixture-1.0.1/fixture.control", ROOT_CONTROL);
+    entries.put("fixture-1.0.1/META.json", "{\"name\": \"fixture\"}");
+
+    var counting = new CountingExtractor();
+    counting.objectMapper = new ObjectMapper();
+    var contents = counting.read("fixture", zipArchive(entries));
+
+    assertEquals(1, counting.opens.get(), "the archive was read more than once");
+    assertEquals("the real one", counting.controlOf(contents.control()).get("comment").asText());
+    assertEquals("fixture", counting.metaJsonOf(contents.metaJson()).get("name").asText());
+    assertTrue(
+        contents.lastModified().isAfter(Instant.MIN),
+        "the walk recorded no modification time, which is what an empty archive reports");
+  }
+
+  private Path zipArchive(Map<String, String> entries) throws Exception {
+    var path = directory.resolve(entries.hashCode() + ".zip");
+
+    try (var zip = new ZipArchiveOutputStream(path.toFile())) {
+      for (var each : entries.entrySet()) {
+        var body = each.getValue().getBytes(StandardCharsets.UTF_8);
+        var entry = new ZipArchiveEntry(each.getKey());
+        entry.setSize(body.length);
+        entry.setLastModifiedTime(FileTime.from(Instant.parse("2020-01-02T03:04:05Z")));
+        zip.putArchiveEntry(entry);
+        zip.write(body);
+        zip.closeArchiveEntry();
+      }
+    }
+
+    return path;
   }
 
   /// Two at the same depth cannot be told apart by depth, so the tie goes to the lower path and
