@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "name": "pg_xxhash",
+  "url": "https://github.com/fabriziomello/pg_xxhash",
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "fabriziomello",
+      "name": "pg_xxhash",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": {
+      "0.1": {
+        "commit": "3fb24f08afc2ebf804b99fea58f2eeef24cef6f2"
+      }
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1": ">=16"
+      }
+    }
+  }
+}

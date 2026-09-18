@@ -1,0 +1,7 @@
+{
+  "default_version": "0.1.4",
+  "comment": "jsonb schema validator",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

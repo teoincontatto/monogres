@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "pjungwir",
+      "name": "inetrange",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.0.2": {
+      "commit": "9d62352afda4b84be01d2fb3375805a04a64995f",
+      "sha256": "a3a2d258d0b22154f455e11e55ab8d14deb22c0a4b2f72425c3cd21449ae8f0a"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.2": ">=16"
+      }
+    }
+  }
+}

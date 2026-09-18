@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "michelp",
+      "name": "pgsodium",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "3.1.9": {
+      "sha256": "44284da99215051ad8304849e48f1840780ef59cb28b9043a97428f9abda1d06"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "3.1.9": ">=16"
+      }
+    },
+    "deps": {
+      "buildtime": {
+        "debian": {
+          "12": {
+            "*": ["libsodium-dev"]
+          },
+          "13": {
+            "*": ["libsodium-dev"]
+          }
+        }
+      },
+      "runtime": {
+        "debian": {
+          "12": {
+            "*": ["libsodium23"]
+          },
+          "13": {
+            "*": ["libsodium23"]
+          }
+        }
+      }
+    }
+  }
+}

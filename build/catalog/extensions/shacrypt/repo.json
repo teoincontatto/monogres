@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "dverite",
+      "name": "postgres-shacrypt",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "1.1": {
+      "commit": "09cc46affa270f79d0402eb0c4ce140588118309",
+      "sha256": "13c83814ff20727f2ae59f5c965e8fcb8dc0f1e66405b6ce68157608c86900b6"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.1": ">=16"
+      }
+    }
+  }
+}

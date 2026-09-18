@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "name": "pgcozy",
+  "url": "https://github.com/vventirozos/pgcozy",
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "vventirozos",
+      "name": "pgcozy",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": {
+      "1.0.0": {
+        "commit": "1f3603631b69244eca49204938e8f7c65985fbae"
+      }
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.0.0": ">=16"
+      }
+    },
+    "test_ext": {
+      "requires": ["pg_prewarm", "pg_buffercache"],
+      "smoke": {
+        "extensions": ["pgcozy"],
+        "cascade": true
+      }
+    }
+  }
+}

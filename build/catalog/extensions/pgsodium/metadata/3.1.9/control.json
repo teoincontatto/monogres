@@ -1,0 +1,8 @@
+{
+  "default_version": "3.1.9",
+  "comment": "Postgres extension for libsodium functions",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "pgsodium"
+}

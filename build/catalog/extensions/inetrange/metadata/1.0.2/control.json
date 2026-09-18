@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0.2",
+  "comment": "Range type for inet",
+  "module_pathname": "$libdir/inetrange",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

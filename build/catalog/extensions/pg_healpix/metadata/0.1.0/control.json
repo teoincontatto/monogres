@@ -1,0 +1,8 @@
+{
+  "default_version": "1.0",
+  "comment": "HEALPIX functions for PostgreSQL",
+  "module_pathname": "$libdir/pg_healpix",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

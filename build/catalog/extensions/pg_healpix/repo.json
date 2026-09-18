@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "sources": {
+    "gl": {
+      "gl_group": "ongresinc",
+      "name": "pg_healpix",
+      "strip_prefix": "{name}-{tag}",
+      "url": "https://gitlab.com/{gl_group}/{name}/-/archive/{tag}/{name}-{tag}.tar.gz"
+    }
+  },
+  "versions": {
+    "0.1.0": {
+      "tag": "v0.1.0",
+      "sha256": "674ddda790af9d37295e84e9501b5d41ce84b96a41dd5501fe4cdc53161f4fdf"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1.0": ">=16"
+      }
+    }
+  }
+}

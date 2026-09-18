@@ -1,0 +1,7 @@
+{
+    "controls": [
+        "tds_fdw"
+    ],
+    "test_suites": [],
+    "version": 1
+}

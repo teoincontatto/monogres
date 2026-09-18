@@ -3116,6 +3116,292 @@
       "arch": "amd64",
       "dependencies": [
         {
+          "key": "libsybdb5_1.3.17-p-ds-2-p-deb13u1_amd64",
+          "name": "libsybdb5",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_amd64",
+          "name": "freetds-common",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "libnettle8t64_3.10.1-1_amd64",
+          "name": "libnettle8t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhogweed6t64_3.10.1-1_amd64",
+          "name": "libhogweed6t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_amd64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libgssapi-krb5-2_1.21.3-5_amd64",
+          "name": "libgssapi-krb5-2",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libkrb5support0_1.21.3-5_amd64",
+          "name": "libkrb5support0",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libk5crypto3_1.21.3-5_amd64",
+          "name": "libk5crypto3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libcom-err2_1.47.2-3-p-b10_amd64",
+          "name": "libcom-err2",
+          "version": "1.47.2-3+b10"
+        },
+        {
+          "key": "libkrb5-3_1.21.3-5_amd64",
+          "name": "libkrb5-3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libssl3t64_3.5.5-1_deb13u1_amd64",
+          "name": "libssl3t64",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "openssl-provider-legacy_3.5.5-1_deb13u1_amd64",
+          "name": "openssl-provider-legacy",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_amd64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libkeyutils1_1.6.3-6_amd64",
+          "name": "libkeyutils1",
+          "version": "1.6.3-6"
+        },
+        {
+          "key": "libgnutls30t64_3.8.9-3-p-deb13u2_amd64",
+          "name": "libgnutls30t64",
+          "version": "3.8.9-3+deb13u2"
+        },
+        {
+          "key": "libunistring5_1.3-2_amd64",
+          "name": "libunistring5",
+          "version": "1.3-2"
+        },
+        {
+          "key": "libtasn1-6_4.20.0-2_amd64",
+          "name": "libtasn1-6",
+          "version": "4.20.0-2"
+        },
+        {
+          "key": "libp11-kit0_0.25.5-3_amd64",
+          "name": "libp11-kit0",
+          "version": "0.25.5-3"
+        },
+        {
+          "key": "libffi8_3.4.8-2_amd64",
+          "name": "libffi8",
+          "version": "3.4.8-2"
+        },
+        {
+          "key": "libidn2-0_2.3.8-2_amd64",
+          "name": "libidn2-0",
+          "version": "2.3.8-2"
+        },
+        {
+          "key": "libct4_1.3.17-p-ds-2-p-deb13u1_amd64",
+          "name": "libct4",
+          "version": "1.3.17+ds-2+deb13u1"
+        }
+      ],
+      "key": "freetds-dev_1.3.17-p-ds-2-p-deb13u1_amd64",
+      "name": "freetds-dev",
+      "sha256": "3293b46c00b0cc726c1b842e837181fe145f1429567cd315a346f8ac60ddf6be",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/freetds-dev_1.3.17+ds-2+deb13u1_amd64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
+          "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_amd64",
+          "name": "freetds-common",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "libnettle8t64_3.10.1-1_amd64",
+          "name": "libnettle8t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhogweed6t64_3.10.1-1_amd64",
+          "name": "libhogweed6t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_amd64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libgssapi-krb5-2_1.21.3-5_amd64",
+          "name": "libgssapi-krb5-2",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libkrb5support0_1.21.3-5_amd64",
+          "name": "libkrb5support0",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libk5crypto3_1.21.3-5_amd64",
+          "name": "libk5crypto3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libcom-err2_1.47.2-3-p-b10_amd64",
+          "name": "libcom-err2",
+          "version": "1.47.2-3+b10"
+        },
+        {
+          "key": "libkrb5-3_1.21.3-5_amd64",
+          "name": "libkrb5-3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libssl3t64_3.5.5-1_deb13u1_amd64",
+          "name": "libssl3t64",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "openssl-provider-legacy_3.5.5-1_deb13u1_amd64",
+          "name": "openssl-provider-legacy",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_amd64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libkeyutils1_1.6.3-6_amd64",
+          "name": "libkeyutils1",
+          "version": "1.6.3-6"
+        },
+        {
+          "key": "libgnutls30t64_3.8.9-3-p-deb13u2_amd64",
+          "name": "libgnutls30t64",
+          "version": "3.8.9-3+deb13u2"
+        },
+        {
+          "key": "libunistring5_1.3-2_amd64",
+          "name": "libunistring5",
+          "version": "1.3-2"
+        },
+        {
+          "key": "libtasn1-6_4.20.0-2_amd64",
+          "name": "libtasn1-6",
+          "version": "4.20.0-2"
+        },
+        {
+          "key": "libp11-kit0_0.25.5-3_amd64",
+          "name": "libp11-kit0",
+          "version": "0.25.5-3"
+        },
+        {
+          "key": "libffi8_3.4.8-2_amd64",
+          "name": "libffi8",
+          "version": "3.4.8-2"
+        },
+        {
+          "key": "libidn2-0_2.3.8-2_amd64",
+          "name": "libidn2-0",
+          "version": "2.3.8-2"
+        }
+      ],
+      "key": "libsybdb5_1.3.17-p-ds-2-p-deb13u1_amd64",
+      "name": "libsybdb5",
+      "sha256": "3536468594207bc098726ace0a0fc11d3d47d507bae8441a67d4a3e8120a7016",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/libsybdb5_1.3.17+ds-2+deb13u1_amd64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_amd64",
+      "name": "freetds-common",
+      "sha256": "0dd5cff9fc1393930e8b3d47fe048eb2f72e2bc1db4243eb22f932ee07e186ac",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/freetds-common_1.3.17+ds-2+deb13u1_all.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "libct4_1.3.17-p-ds-2-p-deb13u1_amd64",
+      "name": "libct4",
+      "sha256": "d942f89da60e7cc9388d77efe91514c69753164659a25f2f66ec1bae24801562",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/libct4_1.3.17+ds-2+deb13u1_amd64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
           "key": "libxml2_2.12.7-p-dfsg-p-really2.9.14-2.1-p-deb13u2_amd64",
           "name": "libxml2",
           "version": "2.12.7+dfsg+really2.9.14-2.1+deb13u2"
@@ -12619,6 +12905,65 @@
     },
     {
       "arch": "amd64",
+      "dependencies": [
+        {
+          "key": "libsodium23_1.0.18-1-p-deb13u1_amd64",
+          "name": "libsodium23",
+          "version": "1.0.18-1+deb13u1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libsodium-dev_1.0.18-1-p-deb13u1_amd64",
+      "name": "libsodium-dev",
+      "sha256": "eb6425199b9ecd4a997a834be40dbef6ccf3974da9fe6b2c07cfed5d56423c40",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian-security/20260316T000000Z/pool/updates/main/libs/libsodium/libsodium-dev_1.0.18-1+deb13u1_amd64.deb"
+      ],
+      "version": "1.0.18-1+deb13u1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libsodium23_1.0.18-1-p-deb13u1_amd64",
+      "name": "libsodium23",
+      "sha256": "9ff9d97bb7ce3aee7f6e6ec3a785cdbe237454a7b9fd84728121bc4ef2bebebe",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian-security/20260316T000000Z/pool/updates/main/libs/libsodium/libsodium23_1.0.18-1+deb13u1_amd64.deb"
+      ],
+      "version": "1.0.18-1+deb13u1"
+    },
+    {
+      "arch": "amd64",
       "dependencies": [],
       "key": "libutfcpp-dev_4.0.5-1_amd64",
       "name": "libutfcpp-dev",
@@ -17227,6 +17572,292 @@
         "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/flex/flex_2.6.4-8.2+b4_arm64.deb"
       ],
       "version": "2.6.4-8.2+b4"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "libsybdb5_1.3.17-p-ds-2-p-deb13u1_arm64",
+          "name": "libsybdb5",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_arm64",
+          "name": "freetds-common",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "libnettle8t64_3.10.1-1_arm64",
+          "name": "libnettle8t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhogweed6t64_3.10.1-1_arm64",
+          "name": "libhogweed6t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_arm64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libgssapi-krb5-2_1.21.3-5_arm64",
+          "name": "libgssapi-krb5-2",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libkrb5support0_1.21.3-5_arm64",
+          "name": "libkrb5support0",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libk5crypto3_1.21.3-5_arm64",
+          "name": "libk5crypto3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libcom-err2_1.47.2-3-p-b10_arm64",
+          "name": "libcom-err2",
+          "version": "1.47.2-3+b10"
+        },
+        {
+          "key": "libkrb5-3_1.21.3-5_arm64",
+          "name": "libkrb5-3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libssl3t64_3.5.5-1_deb13u1_arm64",
+          "name": "libssl3t64",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "openssl-provider-legacy_3.5.5-1_deb13u1_arm64",
+          "name": "openssl-provider-legacy",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_arm64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libkeyutils1_1.6.3-6_arm64",
+          "name": "libkeyutils1",
+          "version": "1.6.3-6"
+        },
+        {
+          "key": "libgnutls30t64_3.8.9-3-p-deb13u2_arm64",
+          "name": "libgnutls30t64",
+          "version": "3.8.9-3+deb13u2"
+        },
+        {
+          "key": "libunistring5_1.3-2_arm64",
+          "name": "libunistring5",
+          "version": "1.3-2"
+        },
+        {
+          "key": "libtasn1-6_4.20.0-2_arm64",
+          "name": "libtasn1-6",
+          "version": "4.20.0-2"
+        },
+        {
+          "key": "libp11-kit0_0.25.5-3_arm64",
+          "name": "libp11-kit0",
+          "version": "0.25.5-3"
+        },
+        {
+          "key": "libffi8_3.4.8-2_arm64",
+          "name": "libffi8",
+          "version": "3.4.8-2"
+        },
+        {
+          "key": "libidn2-0_2.3.8-2_arm64",
+          "name": "libidn2-0",
+          "version": "2.3.8-2"
+        },
+        {
+          "key": "libct4_1.3.17-p-ds-2-p-deb13u1_arm64",
+          "name": "libct4",
+          "version": "1.3.17+ds-2+deb13u1"
+        }
+      ],
+      "key": "freetds-dev_1.3.17-p-ds-2-p-deb13u1_arm64",
+      "name": "freetds-dev",
+      "sha256": "abda852c987c129a26baa6443712b9e985f93c6f4a1339b2adefd33bfac00755",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/freetds-dev_1.3.17+ds-2+deb13u1_arm64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_arm64",
+          "name": "freetds-common",
+          "version": "1.3.17+ds-2+deb13u1"
+        },
+        {
+          "key": "libnettle8t64_3.10.1-1_arm64",
+          "name": "libnettle8t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libhogweed6t64_3.10.1-1_arm64",
+          "name": "libhogweed6t64",
+          "version": "3.10.1-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_arm64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libgssapi-krb5-2_1.21.3-5_arm64",
+          "name": "libgssapi-krb5-2",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libkrb5support0_1.21.3-5_arm64",
+          "name": "libkrb5support0",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libk5crypto3_1.21.3-5_arm64",
+          "name": "libk5crypto3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libcom-err2_1.47.2-3-p-b10_arm64",
+          "name": "libcom-err2",
+          "version": "1.47.2-3+b10"
+        },
+        {
+          "key": "libkrb5-3_1.21.3-5_arm64",
+          "name": "libkrb5-3",
+          "version": "1.21.3-5"
+        },
+        {
+          "key": "libssl3t64_3.5.5-1_deb13u1_arm64",
+          "name": "libssl3t64",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "openssl-provider-legacy_3.5.5-1_deb13u1_arm64",
+          "name": "openssl-provider-legacy",
+          "version": "3.5.5-1~deb13u1"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_arm64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libkeyutils1_1.6.3-6_arm64",
+          "name": "libkeyutils1",
+          "version": "1.6.3-6"
+        },
+        {
+          "key": "libgnutls30t64_3.8.9-3-p-deb13u2_arm64",
+          "name": "libgnutls30t64",
+          "version": "3.8.9-3+deb13u2"
+        },
+        {
+          "key": "libunistring5_1.3-2_arm64",
+          "name": "libunistring5",
+          "version": "1.3-2"
+        },
+        {
+          "key": "libtasn1-6_4.20.0-2_arm64",
+          "name": "libtasn1-6",
+          "version": "4.20.0-2"
+        },
+        {
+          "key": "libp11-kit0_0.25.5-3_arm64",
+          "name": "libp11-kit0",
+          "version": "0.25.5-3"
+        },
+        {
+          "key": "libffi8_3.4.8-2_arm64",
+          "name": "libffi8",
+          "version": "3.4.8-2"
+        },
+        {
+          "key": "libidn2-0_2.3.8-2_arm64",
+          "name": "libidn2-0",
+          "version": "2.3.8-2"
+        }
+      ],
+      "key": "libsybdb5_1.3.17-p-ds-2-p-deb13u1_arm64",
+      "name": "libsybdb5",
+      "sha256": "8da66008e80eab10a72235f401095472afb87aad0ce1d0e2f2d8a5f1699f7c54",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/libsybdb5_1.3.17+ds-2+deb13u1_arm64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "freetds-common_1.3.17-p-ds-2-p-deb13u1_arm64",
+      "name": "freetds-common",
+      "sha256": "0dd5cff9fc1393930e8b3d47fe048eb2f72e2bc1db4243eb22f932ee07e186ac",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/freetds-common_1.3.17+ds-2+deb13u1_all.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "libct4_1.3.17-p-ds-2-p-deb13u1_arm64",
+      "name": "libct4",
+      "sha256": "348462f1c4e22148da90994f9e7aa5ff46df7cb1ba689cb102f2a334fcef8f42",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/f/freetds/libct4_1.3.17+ds-2+deb13u1_arm64.deb"
+      ],
+      "version": "1.3.17+ds-2+deb13u1"
     },
     {
       "arch": "arm64",
@@ -26700,6 +27331,65 @@
     },
     {
       "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "libsodium23_1.0.18-1-p-deb13u1_arm64",
+          "name": "libsodium23",
+          "version": "1.0.18-1+deb13u1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libsodium-dev_1.0.18-1-p-deb13u1_arm64",
+      "name": "libsodium-dev",
+      "sha256": "15ebade6ea8b253542a7a0c849d34043b9d143c524e2ed3ffc397c84f67a32fc",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian-security/20260316T000000Z/pool/updates/main/libs/libsodium/libsodium-dev_1.0.18-1+deb13u1_arm64.deb"
+      ],
+      "version": "1.0.18-1+deb13u1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libsodium23_1.0.18-1-p-deb13u1_arm64",
+      "name": "libsodium23",
+      "sha256": "d94fc46204b65a965e356ebc19f9f88aeb20a9c777cb9a6569e75f75d0ae5523",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian-security/20260316T000000Z/pool/updates/main/libs/libsodium/libsodium23_1.0.18-1+deb13u1_arm64.deb"
+      ],
+      "version": "1.0.18-1+deb13u1"
+    },
+    {
+      "arch": "arm64",
       "dependencies": [],
       "key": "libutfcpp-dev_4.0.5-1_arm64",
       "name": "libutfcpp-dev",
@@ -28240,6 +28930,7 @@
     "cmake",
     "default-jre-headless",
     "flex",
+    "freetds-dev",
     "gettext",
     "libavahi-compat-libdnssd-dev",
     "libavahi-compat-libdnssd1",
@@ -28294,10 +28985,13 @@
     "libpython3.13",
     "libselinux1",
     "libselinux1-dev",
+    "libsodium-dev",
+    "libsodium23",
     "libssl-dev",
     "libssl3",
     "libstdc++-14-dev",
     "libstdc++6",
+    "libsybdb5",
     "libsystemd-dev",
     "libsystemd0",
     "libutfcpp-dev",

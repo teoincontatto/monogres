@@ -1,0 +1,8 @@
+{
+  "default_version": "1.11",
+  "comment": "Access ICU functions",
+  "module_pathname": "$libdir/icu_ext",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

@@ -1,0 +1,20 @@
+{
+    "controls": [
+        "shacrypt"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "init",
+                    "sha256",
+                    "sha512"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

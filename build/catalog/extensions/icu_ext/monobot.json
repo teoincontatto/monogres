@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "name": "icu_ext",
+  "url": "https://github.com/dverite/icu_ext",
+  "sources": {
+    "gh": {
+      "tag": "v{version}",
+      "gh_org": "dverite",
+      "name": "icu_ext",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{version}",
+      "url": "https://github.com/{gh_org}/{name}/archive/refs/tags/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": ["1.11.0"]
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "1.11.0": ">=16"
+      }
+    },
+    "deps": {
+      "buildtime": {
+        "debian": {
+          "12": {
+            "*": ["libicu-dev"]
+          },
+          "13": {
+            "*": ["libicu-dev"]
+          }
+        }
+      },
+      "runtime": {
+        "debian": {
+          "12": {
+            "*": ["libicu72"]
+          },
+          "13": {
+            "*": ["libicu76"]
+          }
+        }
+      }
+    },
+    "test_ext": {
+      "test_overrides": {
+        "regress": {
+          "encoding": "utf8"
+        }
+      }
+    }
+  }
+}

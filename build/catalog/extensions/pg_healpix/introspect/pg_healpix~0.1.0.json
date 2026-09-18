@@ -1,0 +1,21 @@
+{
+    "controls": [
+        "pg_healpix"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "simple1",
+                    "simple2",
+                    "simple3",
+                    "simple4"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

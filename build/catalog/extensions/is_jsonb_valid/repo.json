@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "furstenheim",
+      "name": "is_jsonb_valid",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "0.1.4": {
+      "commit": "1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce",
+      "sha256": "55836219b52d6040d85e0fe36feba694b8e74e3ae85284dd35ecbdf0c8fc3878"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1.4": ">=16"
+      }
+    },
+    "test_ext": {
+      "test_overrides": {
+        "regress": {
+          "encoding": "utf8"
+        }
+      }
+    }
+  }
+}

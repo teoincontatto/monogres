@@ -1,0 +1,19 @@
+{
+    "controls": [
+        "icu_ext"
+    ],
+    "test_suites": [
+        {
+            "dbname": "contrib_regression",
+            "kind": "regress",
+            "slug": "regress",
+            "tests": {
+                "*": [
+                    "tests-01",
+                    "tests-datetime"
+                ]
+            }
+        }
+    ],
+    "version": 1
+}

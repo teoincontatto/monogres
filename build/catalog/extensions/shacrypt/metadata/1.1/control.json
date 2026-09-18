@@ -1,0 +1,8 @@
+{
+  "default_version": "1.1",
+  "comment": "Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes",
+  "module_pathname": "$libdir/shacrypt",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": true
+}

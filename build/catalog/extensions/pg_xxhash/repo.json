@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "fabriziomello",
+      "name": "pg_xxhash",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "0.1": {
+      "commit": "3fb24f08afc2ebf804b99fea58f2eeef24cef6f2",
+      "sha256": "11c334fddcbc80f13c6eed40cdb1e288ab3d2ec76bec2ca42765a85d03614c85"
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1": ">=16"
+      }
+    }
+  }
+}

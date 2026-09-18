@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "name": "is_jsonb_valid",
+  "url": "https://github.com/furstenheim/is_jsonb_valid",
+  "sources": {
+    "gh": {
+      "tag": "{commit}",
+      "gh_org": "furstenheim",
+      "name": "is_jsonb_valid",
+      "filename": "{tag}",
+      "strip_prefix": "{name}-{commit}",
+      "url": "https://github.com/{gh_org}/{name}/archive/{filename}.tar.gz"
+    }
+  },
+  "versions": {
+    "pin": {
+      "0.1.4": {
+        "commit": "1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce"
+      }
+    }
+  },
+  "metadata": {
+    "compatible_with": {
+      "postgres": {
+        "0.1.4": ">=16"
+      }
+    },
+    "test_ext": {
+      "test_overrides": {
+        "regress": {
+          "encoding": "utf8"
+        }
+      }
+    }
+  }
+}
