@@ -1867,8 +1867,8 @@
                     "c"
                 ],
                 "default_suffix": "c",
-                "version": "1<PG_VERSION>.6",
-                "full_version": "Debian clang version 1<PG_VERSION>.6",
+                "version": "14.0.6",
+                "full_version": "Debian clang version 14.0.6",
                 "linker_id": "ld.lld"
             },
             "cpp": {
@@ -1900,8 +1900,8 @@
                     "H"
                 ],
                 "default_suffix": "cpp",
-                "version": "1<PG_VERSION>.6",
-                "full_version": "Debian clang version 1<PG_VERSION>.6",
+                "version": "14.0.6",
+                "full_version": "Debian clang version 14.0.6",
                 "linker_id": "ld.lld"
             }
         },
@@ -1930,7 +1930,7 @@
         {
             "name": "LLVM",
             "type": "config-tool",
-            "version": "1<PG_VERSION>.6",
+            "version": "14.0.6",
             "compile_args": [
                 "-I<BAZEL-BUILD>/external/sysroots++sysroots+llvm_sysroot/debian/12/{cpu}/usr/lib/llvm-<LLVM_VERSION>/include",
                 "-D_GNU_SOURCE",

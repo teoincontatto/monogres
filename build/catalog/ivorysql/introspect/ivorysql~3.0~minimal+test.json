@@ -1726,7 +1726,7 @@
         {
             "name": "openssl",
             "type": "pkgconfig",
-            "version": "<PG_VERSION>.15",
+            "version": "3.0.15",
             "compile_args": [],
             "link_args": [
                 "<BAZEL-BUILD>/sysroot/usr/lib/{cpu}-linux-gnu/libssl.so",

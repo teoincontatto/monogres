@@ -2,26 +2,6 @@
   "kind": "contrib",
   "metadata": {
     "files": {
-      "babelfish": {
-        "4.0": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
-        ],
-        "5.1": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
-        ]
-      },
       "ivorysql": {
         "3.0": [
           "lib/postgresql/hstore_plperl.so",
@@ -298,13 +278,6 @@
       }
     },
     "requires": {
-      "babelfish": {
-        "*": [
-          "hstore",
-          "plperl",
-          "plperlu"
-        ]
-      },
       "ivorysql": {
         "*": [
           "hstore",
@@ -330,10 +303,6 @@
   },
   "version": 1,
   "versions": {
-    "babelfish": [
-      "4.0",
-      "5.1"
-    ],
     "ivorysql": [
       "3.0",
       "4.0",

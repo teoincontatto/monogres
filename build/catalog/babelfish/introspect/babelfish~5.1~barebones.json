@@ -965,7 +965,7 @@
         "src/lib/libpq.a": "/babelfish/<PG_VERSION>/lib/libpq.a",
         "src/lib/libpq.so": "/babelfish/<PG_VERSION>/lib/libpq.so",
         "src/lib/libpq.so.5": "/babelfish/<PG_VERSION>/lib/libpq.so.5",
-        "src/lib/libpq.so.<PG_VERSION>7": "/babelfish/<PG_VERSION>/lib/libpq.so.<PG_VERSION>7",
+        "src/lib/libpq.so.5.17": "/babelfish/<PG_VERSION>/lib/libpq.so.5.17",
         "src/lib/pkgconfig/libecpg.pc": "/babelfish/<PG_VERSION>/lib/pkgconfig/libecpg.pc",
         "src/lib/pkgconfig/libecpg_compat.pc": "/babelfish/<PG_VERSION>/lib/pkgconfig/libecpg_compat.pc",
         "src/lib/pkgconfig/libpgtypes.pc": "/babelfish/<PG_VERSION>/lib/pkgconfig/libpgtypes.pc",

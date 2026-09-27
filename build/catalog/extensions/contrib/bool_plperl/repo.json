@@ -2,26 +2,6 @@
   "kind": "contrib",
   "metadata": {
     "files": {
-      "babelfish": {
-        "4.0": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
-        ],
-        "5.1": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
-        ]
-      },
       "ivorysql": {
         "3.0": [
           "lib/postgresql/bool_plperl.so",
@@ -298,12 +278,6 @@
       }
     },
     "requires": {
-      "babelfish": {
-        "*": [
-          "plperl",
-          "plperlu"
-        ]
-      },
       "ivorysql": {
         "*": [
           "plperl",
@@ -326,10 +300,6 @@
   },
   "version": 1,
   "versions": {
-    "babelfish": [
-      "4.0",
-      "5.1"
-    ],
     "ivorysql": [
       "3.0",
       "4.0",

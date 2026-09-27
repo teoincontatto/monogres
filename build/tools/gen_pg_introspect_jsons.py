@@ -68,9 +68,18 @@ placeholders are inserted before inner patterns can depend on them.
      bumps any of these toolchains — no second source of truth to keep in
      sync.
 
-  7. **PG version** — the literal version string (e.g. `17.4`) anywhere in
-     the JSON becomes `<PG_VERSION>`. Done via `content.replace()` rather
-     than regex because the version is known at processing time.
+  7. **PG version** — the version string (e.g. `17.4`) becomes
+     `<PG_VERSION>` wherever it stands on its own: as a path segment
+     (`/babelfish/5.1/lib`), a target-name field (`babelfish~5.1~full`), or a
+     whole JSON value. It is left alone where it is part of a longer number,
+     which a plain `str.replace` could not tell apart. Babelfish 5.1 ships
+     `babelfishpg_common--5.0.0--5.1.0.sql` and links `libpq.so.5.17`, and
+     both were being rewritten to carry the placeholder mid-token; the
+     extension filename then reached the shell as a redirect from a file
+     named PG_VERSION, and the build could not produce the output it had
+     declared. Guarded with lookarounds over `[0-9.]` rather than `\b`,
+     because a version is digits and dots and `\b` does not see a boundary
+     between `5.1` and `.0`.
 
   8. **PG target name** — `postgres~<v>~<option_set>` (the per-build Bazel
      target name) becomes `<PG_TARGET>`. This rule was accidentally dropped
@@ -782,6 +791,32 @@ def normalize_structural(content: str) -> str:
     return json.dumps(data, indent=4) + "\n"
 
 
+def _substitute_version(content: str, pg_version: str) -> str:
+    """Replace `pg_version` with `<PG_VERSION>`, but only where it stands alone.
+
+    A version is digits and dots, so the thing to protect against is a longer
+    number that happens to contain it: `2.4.0` contains babelfish 4.0's `4.0`,
+    and `libpq.so.5.17` contains 5.1's `5.1`. Neither is the server version, and
+    rewriting them produces a placeholder that no consumer can substitute back.
+
+    The test is what sits either side. Every legitimate occurrence is delimited
+    by something that is not a version character -- `/` in a path, `~` in a
+    target name, `"` around a whole JSON value -- so requiring that is enough,
+    and is the whole rule.
+
+    Args:
+        content: the JSON text being normalized.
+        pg_version: the version to replace, e.g. `"17.4"`.
+
+    Returns:
+        `content` with the standalone occurrences replaced.
+    """
+    return re.sub(
+        r"(?<![0-9.])" + re.escape(pg_version) + r"(?![0-9.])",
+        "<PG_VERSION>",
+        content,
+    )
+
 def make_comparable(
     content: str,
     pg_version: str,
@@ -821,9 +856,7 @@ def make_comparable(
         "external/<PG_HUB>",
         content,
     )
-    # `pg_version` is a literal (e.g. "17.4") known at call time. Doing it
-    # as a `str.replace` is faster than a regex and avoids quoting issues.
-    content = content.replace(pg_version, "<PG_VERSION>")
+    content = _substitute_version(content, pg_version)
     # `<PG_TARGET>` depends on `<PG_VERSION>` being substituted first, so
     # do it now rather than via SUBSTITUTIONS.
     content = re.sub(

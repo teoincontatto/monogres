@@ -1697,8 +1697,8 @@
                     "c"
                 ],
                 "default_suffix": "c",
-                "version": "1<PG_VERSION>.6",
-                "full_version": "Debian clang version 1<PG_VERSION>.6",
+                "version": "14.0.6",
+                "full_version": "Debian clang version 14.0.6",
                 "linker_id": "ld.lld"
             }
         },

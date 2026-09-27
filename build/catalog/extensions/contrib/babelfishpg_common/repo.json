@@ -15,16 +15,16 @@
           "share/postgresql/extension/babelfishpg_common--2.0.0--2.1.0.sql",
           "share/postgresql/extension/babelfishpg_common--2.1.0--2.2.0.sql",
           "share/postgresql/extension/babelfishpg_common--2.2.0--2.3.0.sql",
-          "share/postgresql/extension/babelfishpg_common--2.3.0--2.<PG_VERSION>.sql",
+          "share/postgresql/extension/babelfishpg_common--2.3.0--2.4.0.sql",
           "share/postgresql/extension/babelfishpg_common--2.3.0--3.0.0.sql",
+          "share/postgresql/extension/babelfishpg_common--2.4.0--3.0.0.sql",
           "share/postgresql/extension/babelfishpg_common--2.5.0--3.0.0.sql",
           "share/postgresql/extension/babelfishpg_common--2.6.0--3.0.0.sql",
-          "share/postgresql/extension/babelfishpg_common--2.<PG_VERSION>--3.0.0.sql",
           "share/postgresql/extension/babelfishpg_common--3.0.0--3.1.0.sql",
           "share/postgresql/extension/babelfishpg_common--3.1.0--3.2.0.sql",
           "share/postgresql/extension/babelfishpg_common--3.2.0--3.3.0.sql",
-          "share/postgresql/extension/babelfishpg_common--3.3.0--<PG_VERSION>.0.sql",
-          "share/postgresql/extension/babelfishpg_common--<PG_VERSION>.0.sql",
+          "share/postgresql/extension/babelfishpg_common--3.3.0--4.0.0.sql",
+          "share/postgresql/extension/babelfishpg_common--4.0.0.sql",
           "share/postgresql/extension/babelfishpg_common.control"
         ],
         "5.1": [
@@ -61,8 +61,8 @@
           "share/postgresql/extension/babelfishpg_common--4.3.0--4.4.0.sql",
           "share/postgresql/extension/babelfishpg_common--4.4.0--5.0.0.sql",
           "share/postgresql/extension/babelfishpg_common--4.5.0--5.0.0.sql",
-          "share/postgresql/extension/babelfishpg_common--5.0.0--<PG_VERSION>.0.sql",
-          "share/postgresql/extension/babelfishpg_common--<PG_VERSION>.0.sql",
+          "share/postgresql/extension/babelfishpg_common--5.0.0--5.1.0.sql",
+          "share/postgresql/extension/babelfishpg_common--5.1.0.sql",
           "share/postgresql/extension/babelfishpg_common.control"
         ]
       }
