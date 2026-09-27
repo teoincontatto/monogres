@@ -299,18 +299,61 @@ _COMPILE_EXTENSION = """
             # (GNU make precedence), so the `$$(shell ...)` probes still
             # run but their results are discarded.
             local abs_pg_install_dir="$$EXT_BUILD_ROOT/$(PG_INSTALL_DIR)"
+
+            # Where this base actually put its modules and its data, read off
+            # the install tree rather than assumed.
+            #
+            # PostgreSQL's `Makefile.global` appends `/postgresql` to libdir
+            # and datadir unless the configured path already mentions postgres
+            # or pgsql -- two nested `ifeq "findstring"` guards around an
+            # `override pkglibdir := pkglibdir/postgresql`.
+            #
+            # So `/postgres/18.6/lib` stays flat and `/babelfish/5.1/lib`
+            # becomes `lib/postgresql` -- from the prefix spelling alone, not
+            # from the build system or the flavor. Hard-coding the flat form
+            # worked only for as long as every prefix happened to contain
+            # "postgres"; babelfish is the first that does not, and its
+            # extensions failed at the `include PGXS` line of every
+            # extension Makefile, with no such file.
+            #
+            # Each is found by an anchor file that the directory is defined
+            # by: pgxs.mk *is* what PGXS means, `server/postgres.h` is what a
+            # server include directory is, `extension/plpgsql.control` is what
+            # a share directory holds. Finding the file and walking back up is
+            # exact where a guess is not.
+            _dir_holding() {{
+                # <relative dir>, given a path pattern and the suffix to strip.
+                local found
+                found="$$(cd "$$abs_pg_install_dir" && find . -path "$$1" -print -quit)"
+                if [ -z "$$found" ]; then
+                    echo "nothing matching $$1 under $$abs_pg_install_dir" >&2
+                    return 1
+                fi
+                found="$${{found#./}}"
+                echo "$${{found%$$2}}"
+            }}
+
+            local pkglibdir_rel pkgincludedir_rel datadir_rel
+            pkglibdir_rel="$$(_dir_holding '*/pgxs/src/makefiles/pgxs.mk' /pgxs/src/makefiles/pgxs.mk)" || return 1
+            pkgincludedir_rel="$$(_dir_holding '*/server/postgres.h' /server/postgres.h)" || return 1
+            datadir_rel="$$(_dir_holding '*/extension/plpgsql.control' /extension/plpgsql.control)" || return 1
+
+            echo "pkglibdir:     $$pkglibdir_rel"
+            echo "pkgincludedir: $$pkgincludedir_rel"
+            echo "datadir:       $$datadir_rel"
+
             local pg_path_overrides=(
                 "bindir=$$abs_pg_install_dir/bin"
-                "datadir=$$abs_pg_install_dir/share"
+                "datadir=$$abs_pg_install_dir/$$datadir_rel"
                 "sysconfdir=$$abs_pg_install_dir/etc"
                 "libdir=$$abs_pg_install_dir/lib"
-                "pkglibdir=$$abs_pg_install_dir/lib"
+                "pkglibdir=$$abs_pg_install_dir/$$pkglibdir_rel"
                 "includedir=$$abs_pg_install_dir/include"
-                "pkgincludedir=$$abs_pg_install_dir/include"
+                "pkgincludedir=$$abs_pg_install_dir/$$pkgincludedir_rel"
                 "mandir=$$abs_pg_install_dir/share/man"
                 "docdir=$$abs_pg_install_dir/share/doc"
                 "localedir=$$abs_pg_install_dir/share/locale"
-                "PGXS=$$abs_pg_install_dir/lib/pgxs/src/makefiles/pgxs.mk"
+                "PGXS=$$abs_pg_install_dir/$$pkglibdir_rel/pgxs/src/makefiles/pgxs.mk"
             )
 
             if [ "$$has_configure" -eq 1 ]
