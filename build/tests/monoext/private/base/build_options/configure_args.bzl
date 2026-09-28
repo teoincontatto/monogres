@@ -505,9 +505,114 @@ def _pg15_regular_set_test_impl(ctx):
 
 pg15_regular_set_test = unittest.make(_pg15_regular_set_test_impl)
 
+# --- auto_features ----------------------------------------------------------
+
+def _auto_features_enabled_test_impl(ctx):
+    """`auto_features = "enabled"` turns on the features nobody named.
+
+    This is what `full` means by "all". The six below are exactly the options
+    `full` leaves unnamed, and before this they came out `--without-` on the
+    autoconf path while Meson turned them on -- so PostgreSQL 15.x and
+    babelfish quietly lacked perl, tcl, GSSAPI, LDAP, libxml and PAM.
+    """
+    env = unittest.begin(ctx)
+
+    args = to_configure_args({}, auto_features = "enabled")
+
+    for flag in (
+        "--with-gssapi",
+        "--with-ldap",
+        "--with-libxml",
+        "--with-pam",
+        "--with-perl",
+        "--with-tcl",
+    ):
+        asserts.true(env, flag in args, "missing %r in %r" % (flag, args))
+
+    return unittest.end(env)
+
+auto_features_enabled_test = unittest.make(_auto_features_enabled_test_impl)
+
+def _auto_features_spares_non_features_test_impl(ctx):
+    """`auto_features` does not reach options Meson does not declare a feature.
+
+    `cassert` is a boolean and turning it on with `full` would make every
+    release build slow; `debug` is a Meson builtin; `ssl` is a combo whose
+    value names the backend. All three must stay off when absent, however
+    `auto_features` is set.
+    """
+    env = unittest.begin(ctx)
+
+    args = to_configure_args({}, auto_features = "enabled")
+
+    for flag in ("--disable-cassert", "--disable-debug", "--without-openssl"):
+        asserts.true(env, flag in args, "missing %r in %r" % (flag, args))
+    for flag in ("--enable-cassert", "--enable-debug", "--with-openssl"):
+        asserts.true(env, flag not in args, "unexpected %r in %r" % (flag, args))
+
+    return unittest.end(env)
+
+auto_features_spares_non_features_test = unittest.make(
+    _auto_features_spares_non_features_test_impl,
+)
+
+def _auto_features_disabled_test_impl(ctx):
+    """Every option set but `full` passes `"disabled"`, and nothing turns on.
+
+    The anchoring behaviour `barebones` depends on: absent means off, so
+    autoconf cannot fall back to its own `yes` defaults and link ICU. `"auto"`
+    behaves the same -- only `"enabled"` turns anything on.
+    """
+    env = unittest.begin(ctx)
+
+    for auto_features in ("disabled", "auto"):
+        args = to_configure_args({}, auto_features = auto_features)
+        for flag in (
+            "--with-gssapi",
+            "--with-ldap",
+            "--with-libxml",
+            "--with-pam",
+            "--with-perl",
+            "--with-tcl",
+            "--with-icu",
+        ):
+            asserts.true(env, flag not in args, "unexpected %r in %r" % (flag, args))
+        asserts.true(env, "--without-icu" in args)
+
+    return unittest.end(env)
+
+auto_features_disabled_test = unittest.make(_auto_features_disabled_test_impl)
+
+def _auto_features_respects_explicit_test_impl(ctx):
+    """An option the set names keeps its value; `auto_features` is only a default."""
+    env = unittest.begin(ctx)
+
+    args = to_configure_args(
+        {
+            "ldap": "disabled",
+            "pam": "enabled",
+            "plperl": "disabled",
+        },
+        auto_features = "enabled",
+    )
+
+    asserts.true(env, "--without-ldap" in args, args)
+    asserts.true(env, "--without-perl" in args, args)
+    asserts.true(env, "--with-pam" in args, args)
+
+    return unittest.end(env)
+
+auto_features_respects_explicit_test = unittest.make(
+    _auto_features_respects_explicit_test_impl,
+)
+
 TEST_SUITE_NAME = "configure_args"
 
 TEST_SUITE_TESTS = dict(
+    auto_features_disabled = auto_features_disabled_test,
+    auto_features_enabled = auto_features_enabled_test,
+    auto_features_respects_explicit = auto_features_respects_explicit_test,
+    auto_features_spares_non_features = auto_features_spares_non_features_test,
     bool_enable = bool_enable_test,
     bool_with_falsy = bool_with_falsy_test,
     bool_with_truthy = bool_with_truthy_test,

@@ -85,6 +85,26 @@ _BOOL_OPTIONS_WITH_FROM_STRING = {
     "ssl": ("openssl", "openssl"),
 }
 
+# Options that do NOT follow `auto_features`, with why. Everything else this
+# module knows is declared `type: 'feature'` in PostgreSQL's
+# `meson_options.txt`, and Meson's `auto_features` sets every one of those that
+# is still `auto`. These three are not features, so they keep their own default
+# whatever `auto_features` says -- and two of them would be actively wrong to
+# turn on, which is the reason this is an explicit list and not a guess.
+_NOT_AUTO_FEATURES = {
+    "cassert": (
+        "`type: 'boolean'`. Assertions are a debug build, not a feature; " +
+        "enabling them with `full` would make every release build slow."
+    ),
+    "debug": (
+        "Meson builtin (`-Ddebug`), not declared in meson_options.txt at all."
+    ),
+    "ssl": (
+        "`type: 'combo'` (none/openssl/auto). Its value picks the backend, " +
+        "which `_BOOL_OPTIONS_WITH_FROM_STRING` already reads."
+    ),
+}
+
 # Meson options the configure_args translator does NOT emit as `./configure`
 # flags. Each entry's description leads with a tag:
 #
@@ -111,10 +131,11 @@ _DROPPED_OPTIONS = {
         "user-tunable."
     ),
     "auto_features": (
-        "[DROP] Meson-only metafeature controlling the default for each " +
-        "`feature()` option (`enabled` / `disabled` / `auto`). PG's " +
-        "autoconf has no equivalent; each `--with-X` is explicitly " +
-        "toggled by this translator's enumeration above."
+        "[OOB] Meson metafeature controlling the default for each " +
+        "`feature()` option (`enabled` / `disabled` / `auto`). It emits no " +
+        "flag of its own -- autoconf has no equivalent -- but it is honored: " +
+        "`to_configure_args` reads it to decide which side an option the " +
+        "option set does not name comes out on. See `_enabled_when_absent`."
     ),
     "b_coverage": (
         "[DROP] Meson-only build option enabling compiler `-fprofile-arcs` " +
@@ -239,21 +260,56 @@ def _readline_args(options):
         return ["--with-readline"]
     return []
 
-def to_configure_args(options, debug = False):
+def _enabled_when_absent(auto_features, name):
+    """Which side an option the option set does not name should come out on.
+
+    Meson's `auto_features` is the default for every `feature()` option left at
+    `auto`, so under `auto_features = "enabled"` -- which is what the `full`
+    option set means by "all" -- a feature nobody named is ON. autoconf has no
+    such metafeature, so the same intent has to be applied here, one option at
+    a time.
+
+    Without this the two build systems disagreed about what `full` means.
+    `full` names `plpython` but not `plperl` or `pltcl`, and names neither
+    `gssapi`, `ldap`, `libxml` nor `pam`; Meson turned all six on and autoconf
+    emitted `--without-` for every one. PostgreSQL 15.x and babelfish are the
+    builds that go through autoconf, so those six were silently missing there
+    and present everywhere else -- which is why babelfish had no `plperl.so`
+    for its catalog to carve out.
+
+    Args:
+        auto_features: the Meson `auto_features` value the target was
+            configured with -- `"enabled"` for `full`, `"disabled"` otherwise.
+        name: the option that is absent from the options dict.
+
+    Returns:
+        True when the option should be emitted as enabled.
+    """
+    return auto_features == "enabled" and name not in _NOT_AUTO_FEATURES
+
+def to_configure_args(options, auto_features = "disabled", debug = False):
     """Translate a Meson-shaped options dict into autoconf `./configure` args.
 
-    Crucially, this enumerates the *full* known boolean option set and emits
-    `--without-X` (or `--disable-X`) for each option that's absent from the
-    input dict. This is the autoconf-side analog of Meson's `auto_features =
-    "disabled"` (the value the flavor framework passes for every set except
-    `full`): without this enumeration, autoconf would fall back to its built-in
-    defaults (ICU, readline, etc. default to `yes` in PG 16/17), pulling in
-    dependencies the option set explicitly excludes. `barebones` builds in
-    particular would otherwise try to link ICU and fail.
+    Crucially, this enumerates the *full* known boolean option set and emits a
+    flag for every option, including the ones absent from the input dict:
+    without that, autoconf would fall back to its built-in defaults (ICU,
+    readline, etc. default to `yes` in PG 16/17) and pull in dependencies the
+    option set excludes. `barebones` in particular would otherwise try to link
+    ICU and fail.
+
+    Which side an absent option comes out on is `auto_features`, the same as it
+    is under Meson -- `--without-X` for the `"disabled"` every set but `full`
+    passes, `--with-X` for `full`'s `"enabled"`. See `_enabled_when_absent`,
+    and `_NOT_AUTO_FEATURES` for the three options that are not features and so
+    do not follow it.
 
     Args:
         options (dict): Meson option name → value, as produced by
             `flavors.FLAVORS[<flavor>].build_options(...)`.
+        auto_features (str): the Meson `auto_features` value for this target,
+            which the flavor framework returns alongside the options rather
+            than inside them. Decides which side an option the set does not
+            name comes out on.
         debug (bool): If `True`, prints a debug line for any unmapped option
             that gets dropped.
 
@@ -280,16 +336,22 @@ def to_configure_args(options, debug = False):
 
     # Enumerate the full known boolean option set: emit `--with-X` /
     # `--without-X` (or `--enable-X` / `--disable-X`) for every known option,
-    # defaulting to the disabled side when absent. This anchors the configure
-    # step against autoconf's built-in defaults. Skip options already consumed
-    # by special-case handling above (e.g. readline, folded with
+    # including the absent ones, so the configure step is anchored against
+    # autoconf's built-in defaults rather than inheriting them. Which side an
+    # absent option takes is `_enabled_when_absent`. Skip options already
+    # consumed by special-case handling above (e.g. readline, folded with
     # libedit_preferred).
     for name, autoconf_name in sorted(_BOOL_OPTIONS_WITH.items()):
         if name in seen:
             continue
         seen[name] = True
         value = options.get(name)
-        if value == None or _is_falsy(value):
+        if value == None:
+            args.append("--{}-{}".format(
+                "with" if _enabled_when_absent(auto_features, name) else "without",
+                autoconf_name,
+            ))
+        elif _is_falsy(value):
             args.append("--without-{}".format(autoconf_name))
         elif _is_truthy(value):
             args.append("--with-{}".format(autoconf_name))
@@ -299,7 +361,12 @@ def to_configure_args(options, debug = False):
             continue
         seen[name] = True
         value = options.get(name)
-        if value == None or _is_falsy(value):
+        if value == None:
+            args.append("--{}-{}".format(
+                "enable" if _enabled_when_absent(auto_features, name) else "disable",
+                autoconf_name,
+            ))
+        elif _is_falsy(value):
             args.append("--disable-{}".format(autoconf_name))
         elif _is_truthy(value):
             args.append("--enable-{}".format(autoconf_name))
@@ -313,6 +380,8 @@ def to_configure_args(options, debug = False):
         seen[name] = True
         value = options.get(name)
         if value == signal or (signal == "true" and _is_truthy(value)):
+            args.append("--with-{}".format(flag))
+        elif value == None and _enabled_when_absent(auto_features, name):
             args.append("--with-{}".format(flag))
         else:
             args.append("--without-{}".format(flag))

@@ -42,6 +42,14 @@
         ]
       },
       "postgres": {
+        "15.19": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
         "16.0": [
           "lib/pgxml.so",
           "share/extension/xml2--1.0--1.1.sql",
@@ -267,6 +275,7 @@
       "5.0"
     ],
     "postgres": [
+      "15.19",
       "16.0",
       "16.1",
       "16.10",

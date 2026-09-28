@@ -2,6 +2,60 @@
   "kind": "pl",
   "metadata": {
     "files": {
+      "babelfish": {
+        "4.0": [
+          "lib/postgresql/plperl.so",
+          "share/locale/cs/LC_MESSAGES/plperl-16.mo",
+          "share/locale/de/LC_MESSAGES/plperl-16.mo",
+          "share/locale/el/LC_MESSAGES/plperl-16.mo",
+          "share/locale/es/LC_MESSAGES/plperl-16.mo",
+          "share/locale/fr/LC_MESSAGES/plperl-16.mo",
+          "share/locale/it/LC_MESSAGES/plperl-16.mo",
+          "share/locale/ja/LC_MESSAGES/plperl-16.mo",
+          "share/locale/ka/LC_MESSAGES/plperl-16.mo",
+          "share/locale/ko/LC_MESSAGES/plperl-16.mo",
+          "share/locale/pl/LC_MESSAGES/plperl-16.mo",
+          "share/locale/pt_BR/LC_MESSAGES/plperl-16.mo",
+          "share/locale/ro/LC_MESSAGES/plperl-16.mo",
+          "share/locale/ru/LC_MESSAGES/plperl-16.mo",
+          "share/locale/sv/LC_MESSAGES/plperl-16.mo",
+          "share/locale/tr/LC_MESSAGES/plperl-16.mo",
+          "share/locale/uk/LC_MESSAGES/plperl-16.mo",
+          "share/locale/vi/LC_MESSAGES/plperl-16.mo",
+          "share/locale/zh_CN/LC_MESSAGES/plperl-16.mo",
+          "share/locale/zh_TW/LC_MESSAGES/plperl-16.mo",
+          "share/postgresql/extension/plperl--1.0.sql",
+          "share/postgresql/extension/plperl.control",
+          "share/postgresql/extension/plperlu--1.0.sql",
+          "share/postgresql/extension/plperlu.control"
+        ],
+        "5.1": [
+          "lib/postgresql/plperl.so",
+          "share/locale/cs/LC_MESSAGES/plperl-17.mo",
+          "share/locale/de/LC_MESSAGES/plperl-17.mo",
+          "share/locale/el/LC_MESSAGES/plperl-17.mo",
+          "share/locale/es/LC_MESSAGES/plperl-17.mo",
+          "share/locale/fr/LC_MESSAGES/plperl-17.mo",
+          "share/locale/it/LC_MESSAGES/plperl-17.mo",
+          "share/locale/ja/LC_MESSAGES/plperl-17.mo",
+          "share/locale/ka/LC_MESSAGES/plperl-17.mo",
+          "share/locale/ko/LC_MESSAGES/plperl-17.mo",
+          "share/locale/pl/LC_MESSAGES/plperl-17.mo",
+          "share/locale/pt_BR/LC_MESSAGES/plperl-17.mo",
+          "share/locale/ro/LC_MESSAGES/plperl-17.mo",
+          "share/locale/ru/LC_MESSAGES/plperl-17.mo",
+          "share/locale/sv/LC_MESSAGES/plperl-17.mo",
+          "share/locale/tr/LC_MESSAGES/plperl-17.mo",
+          "share/locale/uk/LC_MESSAGES/plperl-17.mo",
+          "share/locale/vi/LC_MESSAGES/plperl-17.mo",
+          "share/locale/zh_CN/LC_MESSAGES/plperl-17.mo",
+          "share/locale/zh_TW/LC_MESSAGES/plperl-17.mo",
+          "share/postgresql/extension/plperl--1.0.sql",
+          "share/postgresql/extension/plperl.control",
+          "share/postgresql/extension/plperlu--1.0.sql",
+          "share/postgresql/extension/plperlu.control"
+        ]
+      },
       "ivorysql": {
         "3.0": [
           "lib/postgresql/plperl.so",
@@ -109,6 +163,30 @@
         ]
       },
       "postgres": {
+        "15.19": [
+          "lib/plperl.so",
+          "share/extension/plperl--1.0.sql",
+          "share/extension/plperl.control",
+          "share/extension/plperlu--1.0.sql",
+          "share/extension/plperlu.control",
+          "share/locale/cs/LC_MESSAGES/plperl-15.mo",
+          "share/locale/de/LC_MESSAGES/plperl-15.mo",
+          "share/locale/el/LC_MESSAGES/plperl-15.mo",
+          "share/locale/es/LC_MESSAGES/plperl-15.mo",
+          "share/locale/fr/LC_MESSAGES/plperl-15.mo",
+          "share/locale/it/LC_MESSAGES/plperl-15.mo",
+          "share/locale/ja/LC_MESSAGES/plperl-15.mo",
+          "share/locale/ka/LC_MESSAGES/plperl-15.mo",
+          "share/locale/ko/LC_MESSAGES/plperl-15.mo",
+          "share/locale/pl/LC_MESSAGES/plperl-15.mo",
+          "share/locale/pt_BR/LC_MESSAGES/plperl-15.mo",
+          "share/locale/ru/LC_MESSAGES/plperl-15.mo",
+          "share/locale/sv/LC_MESSAGES/plperl-15.mo",
+          "share/locale/tr/LC_MESSAGES/plperl-15.mo",
+          "share/locale/uk/LC_MESSAGES/plperl-15.mo",
+          "share/locale/vi/LC_MESSAGES/plperl-15.mo",
+          "share/locale/zh_CN/LC_MESSAGES/plperl-15.mo"
+        ],
         "16.0": [
           "lib/plperl.so",
           "share/extension/plperl--1.0.sql",
@@ -998,6 +1076,10 @@
   },
   "version": 1,
   "versions": {
+    "babelfish": [
+      "4.0",
+      "5.1"
+    ],
     "ivorysql": [
       "3.0",
       "4.0",
@@ -1007,6 +1089,7 @@
       "1beta1"
     ],
     "postgres": [
+      "15.19",
       "16.0",
       "16.1",
       "16.10",

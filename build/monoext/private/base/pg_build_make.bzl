@@ -1973,22 +1973,24 @@ def pg_build_make(
             tree at their configured in-tree destinations before `./configure`;
             each is a `:dir` tree artifact like `pg_src`. Empty (`{}`) for
             single-source flavors.
-        auto_features (str): Meson `auto_features` value. Accepted for API
-            symmetry with `pg_build` (the per-target BUILD files render the same
-            kwargs for both build systems) and ignored: the autoconf+make path
-            has no `--auto-features` counterpart and does not consume it.
+        auto_features (str): Meson `auto_features` value. autoconf has no
+            `--auto-features` counterpart, so `to_configure_args` applies it
+            one option at a time: under `"enabled"` a feature the option set
+            does not name is emitted `--with-X` rather than `--without-X`,
+            which is what Meson does with the same value.
         debug (bool): If `True`, the build script enables `set -x`.
     """
-
-    # buildifier: disable=unused-variable
-    _ = auto_features
 
     if not sysroot_tar or not exec_sysroot_tar:
         fail("pg_build_make requires sysroot_tar + exec_sysroot_tar (the " +
              "make path sources its compiler and build tools from the per-PG " +
              "sysroot; there is no host fallback)")
 
-    configure_args = to_configure_args(build_options, debug = debug)
+    configure_args = to_configure_args(
+        build_options,
+        auto_features = auto_features,
+        debug = debug,
+    )
     extra_libs = extra_libs_for(build_options)
     targets = make_target_for(build_options)
     install_targets = make_install_target_for(build_options)

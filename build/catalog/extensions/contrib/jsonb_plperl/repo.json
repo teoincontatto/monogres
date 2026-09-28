@@ -2,6 +2,26 @@
   "kind": "contrib",
   "metadata": {
     "files": {
+      "babelfish": {
+        "4.0": [
+          "lib/postgresql/bitcode/jsonb_plperl.index.bc",
+          "lib/postgresql/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/postgresql/jsonb_plperl.so",
+          "share/postgresql/extension/jsonb_plperl--1.0.sql",
+          "share/postgresql/extension/jsonb_plperl.control",
+          "share/postgresql/extension/jsonb_plperlu--1.0.sql",
+          "share/postgresql/extension/jsonb_plperlu.control"
+        ],
+        "5.1": [
+          "lib/postgresql/bitcode/jsonb_plperl.index.bc",
+          "lib/postgresql/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/postgresql/jsonb_plperl.so",
+          "share/postgresql/extension/jsonb_plperl--1.0.sql",
+          "share/postgresql/extension/jsonb_plperl.control",
+          "share/postgresql/extension/jsonb_plperlu--1.0.sql",
+          "share/postgresql/extension/jsonb_plperlu.control"
+        ]
+      },
       "ivorysql": {
         "3.0": [
           "lib/postgresql/jsonb_plperl.so",
@@ -37,6 +57,15 @@
         ]
       },
       "postgres": {
+        "15.19": [
+          "lib/bitcode/jsonb_plperl.index.bc",
+          "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
         "16.0": [
           "lib/jsonb_plperl.so",
           "share/extension/jsonb_plperl--1.0.sql",
@@ -278,6 +307,12 @@
       }
     },
     "requires": {
+      "babelfish": {
+        "*": [
+          "plperl",
+          "plperlu"
+        ]
+      },
       "ivorysql": {
         "*": [
           "plperl",
@@ -300,6 +335,10 @@
   },
   "version": 1,
   "versions": {
+    "babelfish": [
+      "4.0",
+      "5.1"
+    ],
     "ivorysql": [
       "3.0",
       "4.0",
@@ -309,6 +348,7 @@
       "1beta1"
     ],
     "postgres": [
+      "15.19",
       "16.0",
       "16.1",
       "16.10",

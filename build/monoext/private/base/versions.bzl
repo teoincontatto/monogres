@@ -159,10 +159,11 @@ def _option_set_build(
 
     if target.build_system == "make":
         # Make-based path: `pg_build_make` is a hand-rolled genrule that runs
-        # `./configure && make TARGET && make INSTALL_TARGET DESTDIR=...`. No
-        # `auto_features` arg — autoconf has no equivalent of Meson's
-        # auto-features metaknob (`to_configure_args` anchors every known
-        # boolean option explicitly instead).
+        # `./configure && make TARGET && make INSTALL_TARGET DESTDIR=...`.
+        # autoconf has no equivalent of Meson's auto-features metaknob, so
+        # `to_configure_args` anchors every known boolean option explicitly and
+        # applies `auto_features` itself to decide which side the ones the
+        # option set does not name come out on.
         #
         # The full tree is `:tar.dev` — the SDK as built, since the make install
         # ships headers + PGXS — and the production package carves `:tar` out of
@@ -206,6 +207,13 @@ def _option_set_build(
                 antlr_jar = "@antlr_jar//:jar",
                 sysroot_tar = target.deps.buildtime.sysroot_tar,
                 exec_sysroot_tar = target.deps.buildtime.exec_sysroot_tar,
+                # Same value the meson path gets, and it has to be: `full`
+                # means "all features" through this knob alone, so a make
+                # build that does not receive it silently drops every feature
+                # the option set does not name by hand. `to_configure_args`
+                # turns it into the per-option `--with-` / `--without-` that
+                # autoconf needs.
+                auto_features = target.auto_features,
                 **extras_kwargs
             ),
         ]

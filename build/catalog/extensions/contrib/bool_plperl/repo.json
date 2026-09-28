@@ -2,6 +2,26 @@
   "kind": "contrib",
   "metadata": {
     "files": {
+      "babelfish": {
+        "4.0": [
+          "lib/postgresql/bitcode/bool_plperl.index.bc",
+          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/postgresql/bool_plperl.so",
+          "share/postgresql/extension/bool_plperl--1.0.sql",
+          "share/postgresql/extension/bool_plperl.control",
+          "share/postgresql/extension/bool_plperlu--1.0.sql",
+          "share/postgresql/extension/bool_plperlu.control"
+        ],
+        "5.1": [
+          "lib/postgresql/bitcode/bool_plperl.index.bc",
+          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/postgresql/bool_plperl.so",
+          "share/postgresql/extension/bool_plperl--1.0.sql",
+          "share/postgresql/extension/bool_plperl.control",
+          "share/postgresql/extension/bool_plperlu--1.0.sql",
+          "share/postgresql/extension/bool_plperlu.control"
+        ]
+      },
       "ivorysql": {
         "3.0": [
           "lib/postgresql/bool_plperl.so",
@@ -37,6 +57,15 @@
         ]
       },
       "postgres": {
+        "15.19": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
         "16.0": [
           "lib/bool_plperl.so",
           "share/extension/bool_plperl--1.0.sql",
@@ -278,6 +307,12 @@
       }
     },
     "requires": {
+      "babelfish": {
+        "*": [
+          "plperl",
+          "plperlu"
+        ]
+      },
       "ivorysql": {
         "*": [
           "plperl",
@@ -300,6 +335,10 @@
   },
   "version": 1,
   "versions": {
+    "babelfish": [
+      "4.0",
+      "5.1"
+    ],
     "ivorysql": [
       "3.0",
       "4.0",
@@ -309,6 +348,7 @@
       "1beta1"
     ],
     "postgres": [
+      "15.19",
       "16.0",
       "16.1",
       "16.10",
