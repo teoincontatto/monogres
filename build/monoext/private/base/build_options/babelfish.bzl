@@ -25,7 +25,6 @@ This module wraps `pg.bzl::build_options` and applies two post-merge overrides:
   that omit `uuid` (e.g. `barebones`) are not affected.
 """
 
-load("//monoext/private/base:compat.bzl", "is_compatible_with")
 load(
     ":pg.bzl",
     _DEFAULT_OPTION_SET = "DEFAULT_OPTION_SET",
@@ -40,6 +39,21 @@ OPTION_SETS = _OPTION_SETS
 DEFAULT_OPTION_SET = _DEFAULT_OPTION_SET
 
 PREFIX_DISTRO = "/babelfish"
+
+# The PostgreSQL release each Babelfish version forks, read off the
+# `BABEL_<v>__PG_<major>_<minor>` tag the version is downloaded by in
+# `catalog/babelfish/repo.json`: 4.0 is `BABEL_4_0_0__PG_16_1`, 5.1 is
+# `BABEL_5_1_0__PG_17_4`.
+#
+# Spelled out per version rather than derived from a version range, because the
+# minor is not something a range can know: two Babelfish releases that both
+# track PG 17 need not fork the same PG 17 minor. `pg_base_version` fails on a
+# version missing from here rather than guessing one, so adding a Babelfish
+# release cannot silently inherit another's PostgreSQL base.
+_PG_BASE_VERSIONS = {
+    "4.0": "16.1",
+    "5.1": "17.4",
+}
 
 _UUID_BACKEND = "ossp"
 
@@ -99,9 +113,19 @@ def build_system(_version):
     return "make"
 
 def pg_base_version(version):
-    """The upstream PostgreSQL major base Babelfish forks.
+    """The upstream PostgreSQL release this Babelfish version forks.
 
-    Babelfish 5.x tracks PG 17 (where the src/bin backup tools were added); 4.x
-    tracks PG 16, per the `BABEL_<v>__PG_<base>` release tags in repo.json.
+    Args:
+        version (string): Babelfish version (e.g. "4.0", "5.1").
+
+    Returns:
+        The PostgreSQL `major.minor` the fork is built on.
     """
-    return "17.0" if is_compatible_with(version, ">=5.0") else "16.0"
+    if version not in _PG_BASE_VERSIONS:
+        fail(
+            "babelfish %s has no PostgreSQL base; add it to _PG_BASE_VERSIONS, " % version +
+            "reading the minor off the version's BABEL_<v>__PG_<major>_<minor> " +
+            "release tag in catalog/babelfish/repo.json",
+        )
+
+    return _PG_BASE_VERSIONS[version]
