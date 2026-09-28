@@ -2481,6 +2481,144 @@
       "arch": "amd64",
       "dependencies": [
         {
+          "key": "cpp-x86-64-linux-gnu_4-14.2.0-1_amd64",
+          "name": "cpp-x86-64-linux-gnu",
+          "version": "4:14.2.0-1"
+        },
+        {
+          "key": "cpp-14-x86-64-linux-gnu_14.2.0-19_amd64",
+          "name": "cpp-14-x86-64-linux-gnu",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_amd64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_amd64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libmpfr6_4.2.2-1_amd64",
+          "name": "libmpfr6",
+          "version": "4.2.2-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_amd64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libmpc3_1.3.1-1-p-b3_amd64",
+          "name": "libmpc3",
+          "version": "1.3.1-1+b3"
+        },
+        {
+          "key": "libisl23_0.27-1_amd64",
+          "name": "libisl23",
+          "version": "0.27-1"
+        },
+        {
+          "key": "cpp-14_14.2.0-19_amd64",
+          "name": "cpp-14",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "cpp_4-14.2.0-1_amd64",
+      "name": "cpp",
+      "sha256": "a6ba40550aadec80437813e0fce5516574945ff40e72306a5b378c03af3a6544",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-defaults/cpp_14.2.0-1_amd64.deb"
+      ],
+      "version": "4:14.2.0-1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "cpp-x86-64-linux-gnu_4-14.2.0-1_amd64",
+      "name": "cpp-x86-64-linux-gnu",
+      "sha256": "d902f484e38bce59e82efc0df2fe20139a0932ca759ecafdfe6e5b6c72238eb8",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-defaults/cpp-x86-64-linux-gnu_14.2.0-1_amd64.deb"
+      ],
+      "version": "4:14.2.0-1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "cpp-14-x86-64-linux-gnu_14.2.0-19_amd64",
+      "name": "cpp-14-x86-64-linux-gnu",
+      "sha256": "ef274b5379f5f97fc71619d39ecc84d039d3e184570d207b909c90afaa5d79e0",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-14/cpp-14-x86-64-linux-gnu_14.2.0-19_amd64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "libmpfr6_4.2.2-1_amd64",
+      "name": "libmpfr6",
+      "sha256": "75dddce11dabc7fc543712c33dc27b7f2ee66a111763eb5eac654d010b42cd92",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/m/mpfr4/libmpfr6_4.2.2-1_amd64.deb"
+      ],
+      "version": "4.2.2-1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "libmpc3_1.3.1-1-p-b3_amd64",
+      "name": "libmpc3",
+      "sha256": "2af0a5c128e03694a41c0b011bd8a958b7297436cdb3a15ddad7866dae8c300b",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/m/mpclib3/libmpc3_1.3.1-1+b3_amd64.deb"
+      ],
+      "version": "1.3.1-1+b3"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "libisl23_0.27-1_amd64",
+      "name": "libisl23",
+      "sha256": "ac8518042e81c00de1effb72bba7e88ac4ecd488f7ea8b9e3ebc63159cb53b35",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/i/isl/libisl23_0.27-1_amd64.deb"
+      ],
+      "version": "0.27-1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "cpp-14_14.2.0-19_amd64",
+      "name": "cpp-14",
+      "sha256": "3bae5fe03c56c6d021900ab4fb79e35c6f75eee72a73fccc6f28a39db559d6a0",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-14/cpp-14_14.2.0-19_amd64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
           "key": "java-common_0.76_amd64",
           "name": "java-common",
           "version": "0.76"
@@ -16942,6 +17080,144 @@
       "arch": "arm64",
       "dependencies": [
         {
+          "key": "cpp-aarch64-linux-gnu_4-14.2.0-1_arm64",
+          "name": "cpp-aarch64-linux-gnu",
+          "version": "4:14.2.0-1"
+        },
+        {
+          "key": "cpp-14-aarch64-linux-gnu_14.2.0-19_arm64",
+          "name": "cpp-14-aarch64-linux-gnu",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-b1_arm64",
+          "name": "zlib1g",
+          "version": "1:1.3.dfsg+really1.3.1-1+b1"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u2_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u2"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libzstd1_1.5.7-p-dfsg-1_arm64",
+          "name": "libzstd1",
+          "version": "1.5.7+dfsg-1"
+        },
+        {
+          "key": "libmpfr6_4.2.2-1_arm64",
+          "name": "libmpfr6",
+          "version": "4.2.2-1"
+        },
+        {
+          "key": "libgmp10_2-6.3.0-p-dfsg-3_arm64",
+          "name": "libgmp10",
+          "version": "2:6.3.0+dfsg-3"
+        },
+        {
+          "key": "libmpc3_1.3.1-1-p-b3_arm64",
+          "name": "libmpc3",
+          "version": "1.3.1-1+b3"
+        },
+        {
+          "key": "libisl23_0.27-1_arm64",
+          "name": "libisl23",
+          "version": "0.27-1"
+        },
+        {
+          "key": "cpp-14_14.2.0-19_arm64",
+          "name": "cpp-14",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "cpp_4-14.2.0-1_arm64",
+      "name": "cpp",
+      "sha256": "88b702b0fa5942a4ee52c27f1ccf6316b831357e86693b709d216ba43348172e",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-defaults/cpp_14.2.0-1_arm64.deb"
+      ],
+      "version": "4:14.2.0-1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "cpp-aarch64-linux-gnu_4-14.2.0-1_arm64",
+      "name": "cpp-aarch64-linux-gnu",
+      "sha256": "bd9c9f4536a0aea285c4735d2dfedff624f8457b8f1bb3d15ab924e029cd7aff",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-defaults/cpp-aarch64-linux-gnu_14.2.0-1_arm64.deb"
+      ],
+      "version": "4:14.2.0-1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "cpp-14-aarch64-linux-gnu_14.2.0-19_arm64",
+      "name": "cpp-14-aarch64-linux-gnu",
+      "sha256": "8e588ac3efe06f7784b08feac584c70e6965b74c045bae7e4e80bb42938f7dbe",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-14/cpp-14-aarch64-linux-gnu_14.2.0-19_arm64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "libmpfr6_4.2.2-1_arm64",
+      "name": "libmpfr6",
+      "sha256": "628a4ef58cc6815880f72e9d3953984a379a017e4042bc575f1fcbf3954d79ac",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/m/mpfr4/libmpfr6_4.2.2-1_arm64.deb"
+      ],
+      "version": "4.2.2-1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "libmpc3_1.3.1-1-p-b3_arm64",
+      "name": "libmpc3",
+      "sha256": "d4cfe026a624e51641c80ef2af77387185714f62f3b5c87035e62d9ed8d9eec1",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/m/mpclib3/libmpc3_1.3.1-1+b3_arm64.deb"
+      ],
+      "version": "1.3.1-1+b3"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "libisl23_0.27-1_arm64",
+      "name": "libisl23",
+      "sha256": "21c490db3fa5f0a517c55090a199334da6164589772ebd922dff1e569c78515d",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/i/isl/libisl23_0.27-1_arm64.deb"
+      ],
+      "version": "0.27-1"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [],
+      "key": "cpp-14_14.2.0-19_arm64",
+      "name": "cpp-14",
+      "sha256": "0b440241f7c3e2e87f2d0f1dd36792c4e2705d38a699ed331818799f21ef9437",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20260316T000000Z/pool/main/g/gcc-14/cpp-14_14.2.0-19_arm64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
           "key": "java-common_0.76_arm64",
           "name": "java-common",
           "version": "0.76"
@@ -28928,6 +29204,7 @@
     "bison",
     "clang-19",
     "cmake",
+    "cpp",
     "default-jre-headless",
     "flex",
     "freetds-dev",
