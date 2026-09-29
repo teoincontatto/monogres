@@ -13,7 +13,117 @@
           "share/postgresql/extension/isn--1.1.sql",
           "share/postgresql/extension/isn.control"
         ],
+        "4.1": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.2": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.3": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.4": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.5": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.6": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.7": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "4.8": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
         "5.1": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "5.2": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "5.3": [
+          "include/postgresql/server/extension/isn/isn.h",
+          "lib/postgresql/bitcode/isn.index.bc",
+          "lib/postgresql/bitcode/isn/isn.bc",
+          "lib/postgresql/isn.so",
+          "share/postgresql/extension/isn--1.0--1.1.sql",
+          "share/postgresql/extension/isn--1.1--1.2.sql",
+          "share/postgresql/extension/isn--1.1.sql",
+          "share/postgresql/extension/isn.control"
+        ],
+        "5.4": [
           "include/postgresql/server/extension/isn/isn.h",
           "lib/postgresql/bitcode/isn.index.bc",
           "lib/postgresql/bitcode/isn/isn.bc",
@@ -549,7 +659,18 @@
   "versions": {
     "babelfish": [
       "4.0",
-      "5.1"
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
     ],
     "ivorysql": [
       "3.0",

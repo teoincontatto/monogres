@@ -16,17 +16,65 @@
       "4.0": {
         "tag": "BABEL_4_0_0__PG_16_1"
       },
+      "4.1": {
+        "tag": "BABEL_4_1_1__PG_16_2"
+      },
+      "4.2": {
+        "tag": "BABEL_4_2_0__PG_16_3"
+      },
+      "4.3": {
+        "tag": "BABEL_4_3_0__PG_16_4"
+      },
+      "4.4": {
+        "tag": "BABEL_4_4_0__PG_16_6"
+      },
+      "4.5": {
+        "tag": "BABEL_4_5_0__PG_16_8"
+      },
+      "4.6": {
+        "tag": "BABEL_4_6_0__PG_16_9"
+      },
+      "4.7": {
+        "tag": "BABEL_4_7_0__PG_16_10"
+      },
+      "4.8": {
+        "tag": "BABEL_4_8_0__PG_16_11"
+      },
       "5.1": {
         "tag": "BABEL_5_1_0__PG_17_4"
+      },
+      "5.2": {
+        "tag": "BABEL_5_2_0__PG_17_5"
+      },
+      "5.3": {
+        "tag": "BABEL_5_3_0__PG_17_6"
+      },
+      "5.4": {
+        "tag": "BABEL_5_4_0__PG_17_7"
       }
     }
   },
   "metadata": {
     "flavor": "babelfish",
+    "pg_base_version": {
+      "4.0": "16.1",
+      "4.1": "16.2",
+      "4.2": "16.3",
+      "4.3": "16.4",
+      "4.4": "16.6",
+      "4.5": "16.8",
+      "4.6": "16.9",
+      "4.7": "16.10",
+      "4.8": "16.11",
+      "5.1": "17.4",
+      "5.2": "17.5",
+      "5.3": "17.6",
+      "5.4": "17.7"
+    },
     "patches": [
       {
         "label": "//catalog/babelfish/patches:0003-4.0-fix-jit-llvmjit_inline-stringref-starts-with.patch",
-        "spec": "<5.0/*"
+        "spec": "<4.1/*"
       }
     ],
     "test_overrides": {
@@ -78,11 +126,77 @@
         "regular": "//catalog/babelfish/introspect:babelfish~4.0~regular.json",
         "full": "//catalog/babelfish/introspect:babelfish~4.0~full.json"
       },
+      "4.1": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.1~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.1~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.1~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.1~full.json"
+      },
+      "4.2": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.2~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.2~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.2~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.2~full.json"
+      },
+      "4.3": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.3~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.3~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.3~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.3~full.json"
+      },
+      "4.4": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.4~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.4~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.4~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.4~full.json"
+      },
+      "4.5": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.5~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.5~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.5~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.5~full.json"
+      },
+      "4.6": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.6~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.6~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.6~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.6~full.json"
+      },
+      "4.7": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.7~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.7~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.7~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.7~full.json"
+      },
+      "4.8": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.8~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.8~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.8~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.8~full.json"
+      },
       "5.1": {
         "barebones": "//catalog/babelfish/introspect:babelfish~5.1~barebones.json",
         "minimal": "//catalog/babelfish/introspect:babelfish~5.1~minimal.json",
         "regular": "//catalog/babelfish/introspect:babelfish~5.1~regular.json",
         "full": "//catalog/babelfish/introspect:babelfish~5.1~full.json"
+      },
+      "5.2": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~5.2~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~5.2~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~5.2~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~5.2~full.json"
+      },
+      "5.3": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~5.3~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~5.3~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~5.3~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~5.3~full.json"
+      },
+      "5.4": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~5.4~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~5.4~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~5.4~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~5.4~full.json"
       }
     },
     "extra_sources": {

@@ -11,7 +11,95 @@
           "share/postgresql/extension/pg_walinspect--1.0.sql",
           "share/postgresql/extension/pg_walinspect.control"
         ],
+        "4.1": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.2": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.3": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.4": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.5": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.6": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.7": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "4.8": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
         "5.1": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "5.2": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "5.3": [
+          "lib/postgresql/bitcode/pg_walinspect.index.bc",
+          "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
+          "lib/postgresql/pg_walinspect.so",
+          "share/postgresql/extension/pg_walinspect--1.0--1.1.sql",
+          "share/postgresql/extension/pg_walinspect--1.0.sql",
+          "share/postgresql/extension/pg_walinspect.control"
+        ],
+        "5.4": [
           "lib/postgresql/bitcode/pg_walinspect.index.bc",
           "lib/postgresql/bitcode/pg_walinspect/pg_walinspect.bc",
           "lib/postgresql/pg_walinspect.so",
@@ -392,7 +480,18 @@
   "versions": {
     "babelfish": [
       "4.0",
-      "5.1"
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
     ],
     "ivorysql": [
       "3.0",

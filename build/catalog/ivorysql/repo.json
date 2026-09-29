@@ -206,6 +206,11 @@
         "compatible": "<5.0"
       }
     },
+    "pg_base_version": {
+      "3.0": "16.0",
+      "4.0": "17.0",
+      "5.0": "18.0"
+    },
     "patches": [
       {
         "label": "//catalog/ivorysql/patches:0001-3.0-fix-pgflex-propagate-environment-to-flex-subprocess.patch",

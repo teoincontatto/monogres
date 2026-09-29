@@ -8,7 +8,62 @@
           "share/postgresql/extension/intagg--1.1.sql",
           "share/postgresql/extension/intagg.control"
         ],
+        "4.1": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.2": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.3": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.4": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.5": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.6": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.7": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "4.8": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
         "5.1": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "5.2": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "5.3": [
+          "share/postgresql/extension/intagg--1.0--1.1.sql",
+          "share/postgresql/extension/intagg--1.1.sql",
+          "share/postgresql/extension/intagg.control"
+        ],
+        "5.4": [
           "share/postgresql/extension/intagg--1.0--1.1.sql",
           "share/postgresql/extension/intagg--1.1.sql",
           "share/postgresql/extension/intagg.control"
@@ -316,7 +371,18 @@
   "versions": {
     "babelfish": [
       "4.0",
-      "5.1"
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
     ],
     "ivorysql": [
       "3.0",

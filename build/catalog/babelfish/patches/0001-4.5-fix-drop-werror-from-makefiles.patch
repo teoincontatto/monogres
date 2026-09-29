@@ -9,9 +9,10 @@ that gcc does not -- most visibly -Wsometimes-uninitialized in
 babelfishpg_common/src/datetime2.c -- turning them into hard build
 errors. Drop -Werror from these PG_CFLAGS / PG_CXXFLAGS lines while
 keeping the underlying -Wfloat-conversion warning enabled (it still
-fires under clang, but only as a warning). Babelfish 5.1 also passes
--Werror to a couple of cpp invocations that generate .sql files; drop
-those too.
+fires under clang, but only as a warning). From Babelfish 4.5 onward the
+makefiles also pass -Werror to the cpp invocations that generate .sql
+files; drop those too. 4.0 through 4.4 do not, and take the sibling
+patch.
 ---
  contrib/babelfishpg_common/Makefile | 6 +++---
  contrib/babelfishpg_money/Makefile  | 2 +-

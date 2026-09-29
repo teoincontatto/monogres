@@ -21,6 +21,9 @@
   },
   "metadata": {
     "flavor": "openhalo",
+    "pg_base_version": {
+      "1beta1": "14.18"
+    },
     "patches": [
       {
         "label": "//catalog/openhalo/patches:0001-1beta1-tap-adapt-postgresnode-for-openhalo.patch",

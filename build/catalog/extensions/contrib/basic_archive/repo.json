@@ -8,7 +8,62 @@
           "lib/postgresql/bitcode/basic_archive.index.bc",
           "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
         ],
+        "4.1": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.2": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.3": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.4": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.5": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.6": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.7": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "4.8": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
         "5.1": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "5.2": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "5.3": [
+          "lib/postgresql/basic_archive.so",
+          "lib/postgresql/bitcode/basic_archive.index.bc",
+          "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
+        ],
+        "5.4": [
           "lib/postgresql/basic_archive.so",
           "lib/postgresql/bitcode/basic_archive.index.bc",
           "lib/postgresql/bitcode/basic_archive/basic_archive.bc"
@@ -235,7 +290,18 @@
   "versions": {
     "babelfish": [
       "4.0",
-      "5.1"
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
     ],
     "ivorysql": [
       "3.0",

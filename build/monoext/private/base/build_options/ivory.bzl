@@ -16,7 +16,6 @@ version constraints onto IvorySQL versions:
 - `injection_points` is gated `>=4.0` (added in PG 17 → IvorySQL 4.0+).
 """
 
-load("//monoext/private/base:compat.bzl", "is_compatible_with")
 load(
     ":pg.bzl",
     _DEFAULT_OPTION_SET = "DEFAULT_OPTION_SET",
@@ -68,9 +67,23 @@ def build_system(_version):
     return "meson"
 
 def pg_base_version(version):
-    """The upstream PostgreSQL major base IvorySQL forks.
+    """Unused: IvorySQL's catalog declares the PostgreSQL base per version.
 
-    IvorySQL 4.0+ tracks PG 17 (where the src/bin backup tools pg_combinebackup
-    / pg_walsummary / pg_createsubscriber were added); 3.0 tracks PG 16.
+    `metadata.pg_base_version` in `catalog/ivorysql/monobot.json` is read off
+    each release's own `configure.ac`, and `base.bzl` prefers it. This is the
+    fallback for a flavor whose catalog says nothing, which IvorySQL is not --
+    so reaching here means a version was pinned without declaring its base, and
+    guessing one would publish an image labelled with a PostgreSQL release it
+    is not built on.
+
+    Args:
+        version (string): IvorySQL version.
+
+    Returns:
+        Never returns.
     """
-    return "17.0" if is_compatible_with(version, ">=4.0") else "16.0"
+    fail(
+        "IvorySQL %s has no PostgreSQL base: add it to metadata." % version +
+        "pg_base_version in catalog/ivorysql/monobot.json, reading the " +
+        "version off its own configure.ac",
+    )

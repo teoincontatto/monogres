@@ -12,6 +12,86 @@
           "share/postgresql/extension/adminpack--1.1--2.0.sql",
           "share/postgresql/extension/adminpack--2.0--2.1.sql",
           "share/postgresql/extension/adminpack.control"
+        ],
+        "4.1": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.2": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.3": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.4": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.5": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.6": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.7": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
+        ],
+        "4.8": [
+          "lib/postgresql/adminpack.so",
+          "lib/postgresql/bitcode/adminpack.index.bc",
+          "lib/postgresql/bitcode/adminpack/adminpack.bc",
+          "share/postgresql/extension/adminpack--1.0--1.1.sql",
+          "share/postgresql/extension/adminpack--1.0.sql",
+          "share/postgresql/extension/adminpack--1.1--2.0.sql",
+          "share/postgresql/extension/adminpack--2.0--2.1.sql",
+          "share/postgresql/extension/adminpack.control"
         ]
       },
       "ivorysql": {
@@ -371,7 +451,15 @@
   "version": 1,
   "versions": {
     "babelfish": [
-      "4.0"
+      "4.0",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8"
     ],
     "ivorysql": [
       "3.0"

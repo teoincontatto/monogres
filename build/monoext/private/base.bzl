@@ -346,8 +346,17 @@ def _build_entries(base_data, versions_deps, hub_name, layered_deps = {}):
         # Upstream PostgreSQL base for this flavor version (postgres: the
         # version itself; forks: the PG release they track). Lets the build
         # wrapper gate PG-version-specific tooling on the real PG version, not
-        # the flavor's own version number.
-        pg_base_version = flavor_mod.pg_base_version(version)
+        # the flavor's own version number, and names the release downstream
+        # labels an image with.
+        #
+        # The catalog is the source of truth: `metadata.pg_base_version` is a
+        # per-version map, read off the fork's own `configure.ac`. The flavor
+        # module answers only for a flavor whose catalog does not carry one,
+        # which is `postgres`, where the version is its own answer.
+        pg_base_version = (
+            metadata.get("pg_base_version", {}).get(version) or
+            flavor_mod.pg_base_version(version)
+        )
 
         # Per-target snapshot of extra_sources: `{key: {dir, contrib_dir,
         # exclude}}` where `dir` is a per-version `:dir` filegroup label on the

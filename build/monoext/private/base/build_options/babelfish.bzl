@@ -40,21 +40,6 @@ DEFAULT_OPTION_SET = _DEFAULT_OPTION_SET
 
 PREFIX_DISTRO = "/babelfish"
 
-# The PostgreSQL release each Babelfish version forks, read off the
-# `BABEL_<v>__PG_<major>_<minor>` tag the version is downloaded by in
-# `catalog/babelfish/repo.json`: 4.0 is `BABEL_4_0_0__PG_16_1`, 5.1 is
-# `BABEL_5_1_0__PG_17_4`.
-#
-# Spelled out per version rather than derived from a version range, because the
-# minor is not something a range can know: two Babelfish releases that both
-# track PG 17 need not fork the same PG 17 minor. `pg_base_version` fails on a
-# version missing from here rather than guessing one, so adding a Babelfish
-# release cannot silently inherit another's PostgreSQL base.
-_PG_BASE_VERSIONS = {
-    "4.0": "16.1",
-    "5.1": "17.4",
-}
-
 _UUID_BACKEND = "ossp"
 
 def build_options(version, option_set, build_options_metadata, debug = False):
@@ -113,19 +98,23 @@ def build_system(_version):
     return "make"
 
 def pg_base_version(version):
-    """The upstream PostgreSQL release this Babelfish version forks.
+    """Unused: Babelfish's catalog declares the PostgreSQL base per version.
+
+    `metadata.pg_base_version` in `catalog/babelfish/monobot.json` is read off
+    each release's own `configure.ac`, and `base.bzl` prefers it. This is the
+    fallback for a flavor whose catalog says nothing, which Babelfish is not --
+    so reaching here means a version was pinned without declaring its base, and
+    guessing one would publish an image labelled with a PostgreSQL release it
+    is not built on.
 
     Args:
-        version (string): Babelfish version (e.g. "4.0", "5.1").
+        version (string): Babelfish version.
 
     Returns:
-        The PostgreSQL `major.minor` the fork is built on.
+        Never returns.
     """
-    if version not in _PG_BASE_VERSIONS:
-        fail(
-            "babelfish %s has no PostgreSQL base; add it to _PG_BASE_VERSIONS, " % version +
-            "reading the minor off the version's BABEL_<v>__PG_<major>_<minor> " +
-            "release tag in catalog/babelfish/repo.json",
-        )
-
-    return _PG_BASE_VERSIONS[version]
+    fail(
+        "Babelfish %s has no PostgreSQL base: add it to metadata." % version +
+        "pg_base_version in catalog/babelfish/monobot.json, reading the " +
+        "version off its own configure.ac",
+    )

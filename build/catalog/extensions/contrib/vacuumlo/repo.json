@@ -6,7 +6,40 @@
         "4.0": [
           "bin/vacuumlo"
         ],
+        "4.1": [
+          "bin/vacuumlo"
+        ],
+        "4.2": [
+          "bin/vacuumlo"
+        ],
+        "4.3": [
+          "bin/vacuumlo"
+        ],
+        "4.4": [
+          "bin/vacuumlo"
+        ],
+        "4.5": [
+          "bin/vacuumlo"
+        ],
+        "4.6": [
+          "bin/vacuumlo"
+        ],
+        "4.7": [
+          "bin/vacuumlo"
+        ],
+        "4.8": [
+          "bin/vacuumlo"
+        ],
         "5.1": [
+          "bin/vacuumlo"
+        ],
+        "5.2": [
+          "bin/vacuumlo"
+        ],
+        "5.3": [
+          "bin/vacuumlo"
+        ],
+        "5.4": [
           "bin/vacuumlo"
         ]
       },
@@ -196,7 +229,18 @@
   "versions": {
     "babelfish": [
       "4.0",
-      "5.1"
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4"
     ],
     "ivorysql": [
       "3.0",

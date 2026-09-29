@@ -14,20 +14,64 @@
       "tag": "BABEL_4_0_0",
       "sha256": "4b35aa8643771b16c16b072927f0c91e258e3edb69d40e3ed110069fb5bbccb2"
     },
+    "4.1": {
+      "tag": "BABEL_4_1_1",
+      "sha256": "1538fbdbc43ebe918cd71422368dbe0a133e7321601b4fb5c86dcea74e048f16"
+    },
+    "4.2": {
+      "tag": "BABEL_4_2_0",
+      "sha256": "ef30c609c800fec822ed1327f1b68b47ce343b653a1b9e6f843c35c2fb0a11c3"
+    },
+    "4.3": {
+      "tag": "BABEL_4_3_0",
+      "sha256": "b50166d562655aab57141388245194f0546437b2f500d890b620e4122f690a49"
+    },
+    "4.4": {
+      "tag": "BABEL_4_4_0",
+      "sha256": "3154eef4fa8f43d6aac7b863f635402f7753fed3a3160070581cc6c9fcb992eb"
+    },
+    "4.5": {
+      "tag": "BABEL_4_5_0",
+      "sha256": "77b6f2aad5db44c52d68996873edd63de4dabfb9a1a4bd801d39878bf04c794c"
+    },
+    "4.6": {
+      "tag": "BABEL_4_6_0",
+      "sha256": "7def00a17c9df49fcffd530b2b376bed2552ff6078670925dc0a914369b1e85d"
+    },
+    "4.7": {
+      "tag": "BABEL_4_7_0",
+      "sha256": "d63064b8d1d790511f981f54bd0338e8de23c7bcdbe3db3ecfc7420dbfd35bf5"
+    },
+    "4.8": {
+      "tag": "BABEL_4_8_0",
+      "sha256": "5ffd7255b7b9b06366960bbfa17521ed28161c2611f9b9840855632a0cc2b126"
+    },
     "5.1": {
       "tag": "BABEL_5_1_0",
       "sha256": "8937597ebf7299c4719aa2ae71c8ba87e6564bb63fda4af5784899d32dba793e"
+    },
+    "5.2": {
+      "tag": "BABEL_5_2_0",
+      "sha256": "825f3b110644ed58f033479f2c2d990155f903e0c78236a2e91c5843aec37ffa"
+    },
+    "5.3": {
+      "tag": "BABEL_5_3_0",
+      "sha256": "a944e20e93d4ba002c6964afd37b1f4abb52f1b444fb1078bd2ff263e7a339d2"
+    },
+    "5.4": {
+      "tag": "BABEL_5_4_0",
+      "sha256": "6fe9385d5075eadb8371cde647a79f160f460748f1936ac26174deb32445b29e"
     }
   },
   "metadata": {
     "patches": [
       {
         "label": "//catalog/babelfish/patches:0001-4.0-fix-drop-werror-from-makefiles.patch",
-        "spec": "<5.0/*"
+        "spec": "<4.5/*"
       },
       {
-        "label": "//catalog/babelfish/patches:0001-5.1-fix-drop-werror-from-makefiles.patch",
-        "spec": ">=5.0/*"
+        "label": "//catalog/babelfish/patches:0001-4.5-fix-drop-werror-from-makefiles.patch",
+        "spec": ">=4.5/*"
       },
       {
         "label": "//catalog/babelfish/patches:0002-4.0-fix-babelfishpg_unit-clang19-int-conversion.patch",

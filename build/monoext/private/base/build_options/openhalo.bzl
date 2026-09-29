@@ -104,6 +104,24 @@ def build_system(_version):
     """OpenHalo only ships an autoconf+make build path."""
     return "make"
 
-def pg_base_version(_version):
-    """OpenHalo forks PostgreSQL 14, which predates the PG17 src/bin backup tools."""
-    return "14.0"
+def pg_base_version(version):
+    """Unused: OpenHalo's catalog declares the PostgreSQL base per version.
+
+    `metadata.pg_base_version` in `catalog/openhalo/monobot.json` is read off
+    each release's own `configure.ac`, and `base.bzl` prefers it. This is the
+    fallback for a flavor whose catalog says nothing, which OpenHalo is not --
+    so reaching here means a version was pinned without declaring its base, and
+    guessing one would publish an image labelled with a PostgreSQL release it
+    is not built on.
+
+    Args:
+        version (string): OpenHalo version.
+
+    Returns:
+        Never returns.
+    """
+    fail(
+        "OpenHalo %s has no PostgreSQL base: add it to metadata." % version +
+        "pg_base_version in catalog/openhalo/monobot.json, reading the " +
+        "version off its own configure.ac",
+    )

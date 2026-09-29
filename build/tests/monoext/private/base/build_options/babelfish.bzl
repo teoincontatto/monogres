@@ -11,7 +11,6 @@ Covers:
 - the `uuid` override is not leaked into option sets that do not include uuid
   (the conditional avoids pulling `--with-uuid=ossp` into barebones builds)
 - `injection_points` is gated `>=5.0` (PG 17 → Babelfish 5.x)
-- `pg_base_version` reports the PostgreSQL release each version's tag names
 """
 
 load("@bazel_skylib//lib:unittest.bzl", "asserts", "unittest")
@@ -22,7 +21,6 @@ load(
     "DEFAULT_OPTION_SET",
     "OPTION_SETS",
     "build_options",
-    "pg_base_version",
 )
 load("//tests:suite.bzl", _test_suite = "test_suite")
 
@@ -162,24 +160,6 @@ prefix_distro_per_version_test = unittest.make(
     _prefix_distro_per_version_test_impl,
 )
 
-def _pg_base_version_per_version_test_impl(ctx):
-    """`pg_base_version` is the PostgreSQL release the version's tag names.
-
-    `catalog/babelfish/repo.json` downloads 4.0 by `BABEL_4_0_0__PG_16_1` and
-    5.1 by `BABEL_5_1_0__PG_17_4`, so the minor is part of the answer: reporting
-    a bare `16.0` / `17.0` would name a PostgreSQL release neither fork is.
-    """
-    env = unittest.begin(ctx)
-
-    asserts.equals(env, "16.1", pg_base_version("4.0"))
-    asserts.equals(env, "17.4", pg_base_version("5.1"))
-
-    return unittest.end(env)
-
-pg_base_version_per_version_test = unittest.make(
-    _pg_base_version_per_version_test_impl,
-)
-
 def _uuid_ossp_override_test_impl(ctx):
     """`uuid = "ossp"` is applied across every set that includes uuid."""
     env = unittest.begin(ctx)
@@ -265,7 +245,6 @@ TEST_SUITE_TESTS = dict(
     injection_points_gated_on_5_0 = injection_points_gated_on_5_0_test,
     minimal_set = minimal_set_test,
     option_sets_constants = option_sets_constants_test,
-    pg_base_version_per_version = pg_base_version_per_version_test,
     prefix_distro_per_version = prefix_distro_per_version_test,
     regular_set = regular_set_test,
     uuid_ossp_override = uuid_ossp_override_test,
