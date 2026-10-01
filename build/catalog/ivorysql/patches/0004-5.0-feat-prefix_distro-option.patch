@@ -9,30 +9,69 @@ from prefix where Postgres will be installed.
 Useful if the distro install path will be different from the install
 path at build time, and for reproducible builds since Postgres embeds
 all of the pg_config.h paths in all the binaries.
+
+When prefix_distro is set, force `dir_prefix_contains_pg` to true so the
+on-disk install layout is flat (no `postgresql/` subdir on libdir /
+datadir / sysconfdir / includedir) regardless of how the build sandbox
+or the distro prefix happen to be spelled.
+
+Without this, the layout depends on whether the prefix string literally
+contains "pgsql" or "postgres", a brittle accidental match. In
+practice it was tripping on the bazel cache segment `_bazel_<USER>`
+whenever `<USER>` was "postgres" (which the project's Docker image
+deliberately uses because rules_python rejects building as root):
+default linux-sandbox keeps that path visible and accidentally
+satisfies the check; `--experimental_use_hermetic_linux_sandbox` pivots
+to a clean `/execroot/_main/` and the check flips, so `dir_lib_pkg`
+becomes `lib/postgresql` and downstream consumers (which expect a flat
+`lib/<ext>.so` layout) can no longer locate the installed files.
+
+Tying the flat layout to `prefix_distro` being set means the install
+layout is deterministic for any value of `prefix_distro` (e.g.
+`/postgres/16.0`, `/foobar/16.0`, `/opt/db/v16`) without depending on
+sandbox-path coincidences.
 ---
- meson.build             |  5 +++++
+ meson.build             | 23 +++++++++++++++++++++--
  meson_options.txt       |  2 ++
  src/include/meson.build | 24 ++++++++++++------------
- 3 files changed, 19 insertions(+), 12 deletions(-)
+ 3 files changed, 35 insertions(+), 14 deletions(-)
 
 diff --git a/meson.build b/meson.build
-index 18aa8f11e8..4be2e090b1 100644
+index 18aa8f11e880664e65a9b4a9c6b5407af1733e82..d0f4513dc86bb3a3bd54133f327b963714baa0d2 100644
 --- a/meson.build
 +++ b/meson.build
-@@ -490,6 +490,11 @@ cdata.set_quoted('DEF_ORAPORT_STR', get_option('oraport').to_string())
+@@ -490,8 +490,27 @@ cdata.set_quoted('DEF_ORAPORT_STR', get_option('oraport').to_string())
  pkg = 'postgresql'
  
  dir_prefix = get_option('prefix')
+-
+-dir_prefix_contains_pg = (dir_prefix.contains('pgsql') or dir_prefix.contains('postgres') or dir_prefix.contains('IvorySQL'))
 +dir_prefix_distro = get_option('prefix_distro')
 +
 +if dir_prefix_distro == ''
++  # No explicit distro prefix selected: fall back to mirroring the
++  # install prefix, and let `dir_prefix_contains_pg` decide the install
++  # layout from the prefix name alone (PG upstream behavior — flat when
++  # the prefix names pg, namespaced under `postgresql/` otherwise).
 +  dir_prefix_distro = dir_prefix
++  dir_prefix_contains_pg = (
++    dir_prefix.contains('pgsql') or
++    dir_prefix.contains('postgres') or
++    dir_prefix.contains('IvorySQL')
++  )
++else
++  # User explicitly selected a distro prefix: force the install layout
++  # flat (skip the `postgresql/` subdir on libdir / datadir / sysconfdir
++  # / includedir) regardless of how the prefix or distro-prefix strings
++  # happen to be spelled. The install layout under `$prefix_distro` then
++  # matches the layout `pg_config` reports for the embedded paths.
++  dir_prefix_contains_pg = true
 +endif
  
- dir_prefix_contains_pg = (dir_prefix.contains('pgsql') or dir_prefix.contains('postgres') or dir_prefix.contains('IvorySQL'))
+ dir_bin = get_option('bindir')
  
 diff --git a/meson_options.txt b/meson_options.txt
-index 9b83189c40..e5feb145eb 100644
+index 9b83189c40e793d1499f76c6103e4e19cdbc9173..e5feb145eb242e8d93769bd3f204ee182b7121f1 100644
 --- a/meson_options.txt
 +++ b/meson_options.txt
 @@ -74,6 +74,8 @@ option('darwin_sysroot', type: 'string', value: '',
@@ -45,7 +84,7 @@ index 9b83189c40..e5feb145eb 100644
  # External dependencies
  
 diff --git a/src/include/meson.build b/src/include/meson.build
-index 3fc5d10299..18484c7761 100644
+index 3fc5d10299e2e10c156893c3a964454e9f037c64..18484c77610d0efd1ab66d6170870c2a3a30970e 100644
 --- a/src/include/meson.build
 +++ b/src/include/meson.build
 @@ -20,18 +20,18 @@ configure_files += pg_config
