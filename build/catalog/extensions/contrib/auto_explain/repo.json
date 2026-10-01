@@ -4,87 +4,87 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.1": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.2": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.3": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.4": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.5": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.6": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.7": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "4.8": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "5.1": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "5.2": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "5.3": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ],
         "5.4": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/auto_explain.so"
+          "lib/auto_explain.so"
         ],
         "4.0": [
-          "lib/postgresql/auto_explain.so"
+          "lib/auto_explain.so"
         ],
         "5.0": [
-          "lib/postgresql/auto_explain.so"
+          "lib/auto_explain.so"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/auto_explain.so",
-          "lib/postgresql/bitcode/auto_explain.index.bc",
-          "lib/postgresql/bitcode/auto_explain/auto_explain.bc"
+          "lib/auto_explain.so",
+          "lib/bitcode/auto_explain.index.bc",
+          "lib/bitcode/auto_explain/auto_explain.bc"
         ]
       },
       "postgres": {

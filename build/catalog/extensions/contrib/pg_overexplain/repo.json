@@ -4,7 +4,7 @@
     "files": {
       "ivorysql": {
         "5.0": [
-          "lib/postgresql/pg_overexplain.so"
+          "lib/pg_overexplain.so"
         ]
       },
       "postgres": {

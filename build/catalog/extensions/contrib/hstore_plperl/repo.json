@@ -4,159 +4,330 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "4.0": [
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ],
         "5.0": [
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/bitcode/hstore_plperl.index.bc",
-          "lib/postgresql/bitcode/hstore_plperl/hstore_plperl.bc",
-          "lib/postgresql/hstore_plperl.so",
-          "share/postgresql/extension/hstore_plperl--1.0.sql",
-          "share/postgresql/extension/hstore_plperl.control",
-          "share/postgresql/extension/hstore_plperlu--1.0.sql",
-          "share/postgresql/extension/hstore_plperlu.control"
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
         ]
       },
       "postgres": {
+        "15.0": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.1": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.10": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.11": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.12": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.13": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.14": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.15": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.16": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.17": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.18": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
         "15.19": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.2": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.3": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.4": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.5": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.6": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.7": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.8": [
+          "lib/bitcode/hstore_plperl.index.bc",
+          "lib/bitcode/hstore_plperl/hstore_plperl.bc",
+          "lib/hstore_plperl.so",
+          "share/extension/hstore_plperl--1.0.sql",
+          "share/extension/hstore_plperl.control",
+          "share/extension/hstore_plperlu--1.0.sql",
+          "share/extension/hstore_plperlu.control"
+        ],
+        "15.9": [
           "lib/bitcode/hstore_plperl.index.bc",
           "lib/bitcode/hstore_plperl/hstore_plperl.bc",
           "lib/hstore_plperl.so",
@@ -462,7 +633,26 @@
       "1beta1"
     ],
     "postgres": [
+      "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
       "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",

@@ -4,121 +4,121 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "4.0": [
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ],
         "5.0": [
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/bitcode/tsm_system_time.index.bc",
-          "lib/postgresql/bitcode/tsm_system_time/tsm_system_time.bc",
-          "lib/postgresql/tsm_system_time.so",
-          "share/postgresql/extension/tsm_system_time--1.0.sql",
-          "share/postgresql/extension/tsm_system_time.control"
+          "lib/bitcode/tsm_system_time.index.bc",
+          "lib/bitcode/tsm_system_time/tsm_system_time.bc",
+          "lib/tsm_system_time.so",
+          "share/extension/tsm_system_time--1.0.sql",
+          "share/extension/tsm_system_time.control"
         ]
       },
       "postgres": {

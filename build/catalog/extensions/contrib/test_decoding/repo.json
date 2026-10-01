@@ -4,87 +4,87 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/test_decoding.so"
+          "lib/test_decoding.so"
         ],
         "4.0": [
-          "lib/postgresql/test_decoding.so"
+          "lib/test_decoding.so"
         ],
         "5.0": [
-          "lib/postgresql/test_decoding.so"
+          "lib/test_decoding.so"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/bitcode/test_decoding.index.bc",
-          "lib/postgresql/bitcode/test_decoding/test_decoding.bc",
-          "lib/postgresql/test_decoding.so"
+          "lib/bitcode/test_decoding.index.bc",
+          "lib/bitcode/test_decoding/test_decoding.bc",
+          "lib/test_decoding.so"
         ]
       },
       "postgres": {

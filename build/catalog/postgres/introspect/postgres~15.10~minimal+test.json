@@ -16,8 +16,6 @@
     ],
     "installed": {
         "contrib/old_snapshot/old_snapshot.h": "/postgres/<PG_VERSION>/include/server/utils/old_snapshot.h",
-        "contrib/spi/autoinc.so": "/postgres/<PG_VERSION>/lib/postgresql/autoinc.so",
-        "contrib/spi/refint.so": "/postgres/<PG_VERSION>/lib/postgresql/refint.so",
         "contrib/spi/spi.h": "/postgres/<PG_VERSION>/include/server/executor/spi.h",
         "contrib/tablefunc/tablefunc.h": "/postgres/<PG_VERSION>/include/server/executor/tablefunc.h",
         "src/backend/postgres": "/postgres/<PG_VERSION>/bin/postgres",
@@ -962,6 +960,8 @@
         "src/lib/pkgconfig/libpgtypes.pc": "/postgres/<PG_VERSION>/lib/pkgconfig/libpgtypes.pc",
         "src/lib/pkgconfig/libpq.pc": "/postgres/<PG_VERSION>/lib/pkgconfig/libpq.pc",
         "src/lib/plpgsql.so": "/postgres/<PG_VERSION>/lib/plpgsql.so",
+        "src/lib/postgresql/autoinc.so": "/postgres/<PG_VERSION>/lib/postgresql/autoinc.so",
+        "src/lib/postgresql/refint.so": "/postgres/<PG_VERSION>/lib/postgresql/refint.so",
         "src/lib/postgresql/regress.so": "/postgres/<PG_VERSION>/lib/postgresql/regress.so",
         "src/lib/utf8_and_big5.so": "/postgres/<PG_VERSION>/lib/utf8_and_big5.so",
         "src/lib/utf8_and_cyrillic.so": "/postgres/<PG_VERSION>/lib/utf8_and_cyrillic.so",

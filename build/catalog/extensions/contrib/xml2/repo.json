@@ -4,133 +4,295 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/pgxml/xpath.bc",
-          "lib/postgresql/bitcode/pgxml/xslt_proc.bc",
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "4.0": [
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ],
         "5.0": [
-          "lib/postgresql/pgxml.so",
-          "share/postgresql/extension/xml2--1.0--1.1.sql",
-          "share/postgresql/extension/xml2--1.1--1.2.sql",
-          "share/postgresql/extension/xml2--1.1.sql",
-          "share/postgresql/extension/xml2.control"
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1--1.2.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ]
+      },
+      "openhalo": {
+        "1beta1": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
         ]
       },
       "postgres": {
+        "15.0": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.1": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.10": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.11": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.12": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.13": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.14": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.15": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.16": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.17": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.18": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
         "15.19": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.2": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.3": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.4": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.5": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.6": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.7": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.8": [
+          "lib/bitcode/pgxml/xpath.bc",
+          "lib/bitcode/pgxml/xslt_proc.bc",
+          "lib/pgxml.so",
+          "share/extension/xml2--1.0--1.1.sql",
+          "share/extension/xml2--1.1.sql",
+          "share/extension/xml2.control"
+        ],
+        "15.9": [
           "lib/bitcode/pgxml/xpath.bc",
           "lib/bitcode/pgxml/xslt_proc.bc",
           "lib/pgxml.so",
@@ -373,8 +535,30 @@
       "4.0",
       "5.0"
     ],
+    "openhalo": [
+      "1beta1"
+    ],
     "postgres": [
+      "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
       "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",

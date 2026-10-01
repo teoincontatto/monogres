@@ -4,7 +4,9 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -22,12 +24,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.1": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -45,12 +47,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.2": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -68,12 +70,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.3": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -91,12 +93,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.4": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -114,12 +116,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.5": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -137,12 +139,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.6": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -160,12 +162,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.7": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -183,12 +185,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "4.8": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -206,12 +208,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-16.mo"
         ],
         "5.1": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-17.mo",
           "share/locale/de/LC_MESSAGES/plpython-17.mo",
           "share/locale/el/LC_MESSAGES/plpython-17.mo",
@@ -229,12 +231,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-17.mo",
           "share/locale/vi/LC_MESSAGES/plpython-17.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-17.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo"
         ],
         "5.2": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-17.mo",
           "share/locale/de/LC_MESSAGES/plpython-17.mo",
           "share/locale/el/LC_MESSAGES/plpython-17.mo",
@@ -252,12 +254,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-17.mo",
           "share/locale/vi/LC_MESSAGES/plpython-17.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-17.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo"
         ],
         "5.3": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-17.mo",
           "share/locale/de/LC_MESSAGES/plpython-17.mo",
           "share/locale/el/LC_MESSAGES/plpython-17.mo",
@@ -275,12 +277,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-17.mo",
           "share/locale/vi/LC_MESSAGES/plpython-17.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-17.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo"
         ],
         "5.4": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-17.mo",
           "share/locale/de/LC_MESSAGES/plpython-17.mo",
           "share/locale/el/LC_MESSAGES/plpython-17.mo",
@@ -298,14 +300,14 @@
           "share/locale/uk/LC_MESSAGES/plpython-17.mo",
           "share/locale/vi/LC_MESSAGES/plpython-17.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-17.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-16.mo",
           "share/locale/de/LC_MESSAGES/plpython-16.mo",
           "share/locale/el/LC_MESSAGES/plpython-16.mo",
@@ -322,12 +324,12 @@
           "share/locale/tr/LC_MESSAGES/plpython-16.mo",
           "share/locale/uk/LC_MESSAGES/plpython-16.mo",
           "share/locale/vi/LC_MESSAGES/plpython-16.mo",
-          "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_CN/LC_MESSAGES/plpython-16.mo"
         ],
         "4.0": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-17.mo",
           "share/locale/de/LC_MESSAGES/plpython-17.mo",
           "share/locale/el/LC_MESSAGES/plpython-17.mo",
@@ -345,12 +347,12 @@
           "share/locale/uk/LC_MESSAGES/plpython-17.mo",
           "share/locale/vi/LC_MESSAGES/plpython-17.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-17.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-17.mo"
         ],
         "5.0": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-18.mo",
           "share/locale/de/LC_MESSAGES/plpython-18.mo",
           "share/locale/el/LC_MESSAGES/plpython-18.mo",
@@ -368,14 +370,14 @@
           "share/locale/uk/LC_MESSAGES/plpython-18.mo",
           "share/locale/vi/LC_MESSAGES/plpython-18.mo",
           "share/locale/zh_CN/LC_MESSAGES/plpython-18.mo",
-          "share/locale/zh_TW/LC_MESSAGES/plpython-18.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_TW/LC_MESSAGES/plpython-18.mo"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/plpython3.so",
+          "lib/plpython3.so",
+          "share/extension/plpython3u--1.0.sql",
+          "share/extension/plpython3u.control",
           "share/locale/cs/LC_MESSAGES/plpython-14.mo",
           "share/locale/de/LC_MESSAGES/plpython-14.mo",
           "share/locale/el/LC_MESSAGES/plpython-14.mo",
@@ -391,9 +393,7 @@
           "share/locale/tr/LC_MESSAGES/plpython-14.mo",
           "share/locale/uk/LC_MESSAGES/plpython-14.mo",
           "share/locale/vi/LC_MESSAGES/plpython-14.mo",
-          "share/locale/zh_CN/LC_MESSAGES/plpython-14.mo",
-          "share/postgresql/extension/plpython3u--1.0.sql",
-          "share/postgresql/extension/plpython3u.control"
+          "share/locale/zh_CN/LC_MESSAGES/plpython-14.mo"
         ]
       },
       "postgres": {

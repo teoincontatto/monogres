@@ -4,9 +4,9 @@
     "files": {
       "ivorysql": {
         "5.0": [
-          "lib/postgresql/pg_logicalinspect.so",
-          "share/postgresql/extension/pg_logicalinspect--1.0.sql",
-          "share/postgresql/extension/pg_logicalinspect.control"
+          "lib/pg_logicalinspect.so",
+          "share/extension/pg_logicalinspect--1.0.sql",
+          "share/extension/pg_logicalinspect.control"
         ]
       },
       "postgres": {

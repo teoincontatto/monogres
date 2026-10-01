@@ -4,159 +4,330 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "4.0": [
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ],
         "5.0": [
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/bitcode/bool_plperl.index.bc",
-          "lib/postgresql/bitcode/bool_plperl/bool_plperl.bc",
-          "lib/postgresql/bool_plperl.so",
-          "share/postgresql/extension/bool_plperl--1.0.sql",
-          "share/postgresql/extension/bool_plperl.control",
-          "share/postgresql/extension/bool_plperlu--1.0.sql",
-          "share/postgresql/extension/bool_plperlu.control"
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
         ]
       },
       "postgres": {
+        "15.0": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.1": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.10": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.11": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.12": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.13": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.14": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.15": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.16": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.17": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.18": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
         "15.19": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.2": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.3": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.4": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.5": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.6": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.7": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.8": [
+          "lib/bitcode/bool_plperl.index.bc",
+          "lib/bitcode/bool_plperl/bool_plperl.bc",
+          "lib/bool_plperl.so",
+          "share/extension/bool_plperl--1.0.sql",
+          "share/extension/bool_plperl.control",
+          "share/extension/bool_plperlu--1.0.sql",
+          "share/extension/bool_plperlu.control"
+        ],
+        "15.9": [
           "lib/bitcode/bool_plperl.index.bc",
           "lib/bitcode/bool_plperl/bool_plperl.bc",
           "lib/bool_plperl.so",
@@ -458,7 +629,26 @@
       "1beta1"
     ],
     "postgres": [
+      "15.0",
+      "15.1",
+      "15.10",
+      "15.11",
+      "15.12",
+      "15.13",
+      "15.14",
+      "15.15",
+      "15.16",
+      "15.17",
+      "15.18",
       "15.19",
+      "15.2",
+      "15.3",
+      "15.4",
+      "15.5",
+      "15.6",
+      "15.7",
+      "15.8",
+      "15.9",
       "16.0",
       "16.1",
       "16.10",

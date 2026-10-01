@@ -4,111 +4,111 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.1": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.2": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.3": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.4": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.5": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.6": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.7": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.8": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "5.1": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "5.2": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "5.3": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "5.4": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "4.0": [
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ],
         "5.0": [
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control"
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/bitcode/hstore_plpython3/hstore_plpython.bc",
-          "lib/postgresql/hstore_plpython3.so",
-          "share/postgresql/extension/hstore_plpython2u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython2u.control",
-          "share/postgresql/extension/hstore_plpython3u--1.0.sql",
-          "share/postgresql/extension/hstore_plpython3u.control",
-          "share/postgresql/extension/hstore_plpythonu--1.0.sql",
-          "share/postgresql/extension/hstore_plpythonu.control"
+          "lib/bitcode/hstore_plpython3/hstore_plpython.bc",
+          "lib/hstore_plpython3.so",
+          "share/extension/hstore_plpython2u--1.0.sql",
+          "share/extension/hstore_plpython2u.control",
+          "share/extension/hstore_plpython3u--1.0.sql",
+          "share/extension/hstore_plpython3u.control",
+          "share/extension/hstore_plpythonu--1.0.sql",
+          "share/extension/hstore_plpythonu.control"
         ]
       },
       "postgres": {

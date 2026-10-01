@@ -4,87 +4,87 @@
     "files": {
       "babelfish": {
         "4.0": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.1": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.2": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.3": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.4": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.5": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.6": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.7": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "4.8": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "5.1": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "5.2": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "5.3": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ],
         "5.4": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ]
       },
       "ivorysql": {
         "3.0": [
-          "lib/postgresql/auth_delay.so"
+          "lib/auth_delay.so"
         ],
         "4.0": [
-          "lib/postgresql/auth_delay.so"
+          "lib/auth_delay.so"
         ],
         "5.0": [
-          "lib/postgresql/auth_delay.so"
+          "lib/auth_delay.so"
         ]
       },
       "openhalo": {
         "1beta1": [
-          "lib/postgresql/auth_delay.so",
-          "lib/postgresql/bitcode/auth_delay.index.bc",
-          "lib/postgresql/bitcode/auth_delay/auth_delay.bc"
+          "lib/auth_delay.so",
+          "lib/bitcode/auth_delay.index.bc",
+          "lib/bitcode/auth_delay/auth_delay.bc"
         ]
       },
       "postgres": {
