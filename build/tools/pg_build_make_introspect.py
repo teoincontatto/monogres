@@ -15,9 +15,9 @@ gen_contrib consume:
 - `installed`: build_path -> install_path map. Build paths are synthesized
   relative paths matching meson's convention (`contrib/<name>/<basename>`
   for contribs, `src/backend/<basename>` for non-contrib files). Install
-  paths preserve the make-build layout (`share/postgresql/extension/...`,
-  `lib/postgresql/...`) so the downstream contrib `:tar` packages files at
-  their real install locations.
+  paths are read off the install tree as they are (`share/extension/...`,
+  `lib/...`, flat since `pg_build_make.bzl::flatten_install_layout`) so the
+  downstream contrib `:tar` packages files at their real install locations.
 - `targets`: a hardcoded `bin@run` entry pointing at `src/backend/postgres`
   (the real PG source path for the postgres binary). Layer 2's
   `_build_path_prefixes` reads `filename` + `defined_in` from this entry to
@@ -527,6 +527,15 @@ def _synth_test_suites(
     return suites
 
 
+# Where `pg_build_make.bzl::stage_test_libs` copies regress.so, refint.so and
+# autoinc.so for the test harness, beside the flat pkglibdir rather than in it.
+# `make install` puts nothing there, so nothing in it is a contrib's: refint.so
+# and autoinc.so share basenames with contrib/spi's real modules in `lib/`, and
+# attributing them would hand spi the test copies, which sort first. Mapped as
+# core files instead; the meson side never introspects its copies at all.
+_STAGED_TEST_LIB_DIR = "lib/postgresql"
+
+
 def synth(workdir: Path, installdir: Path, prefix: str) -> dict:
     all_contrib_names = _list_contrib_dirs(workdir)
     owner_index = _build_owner_index(workdir, all_contrib_names)
@@ -537,8 +546,11 @@ def synth(workdir: Path, installdir: Path, prefix: str) -> dict:
     contribs_with_files: set[str] = set()
 
     for install_rel in install_paths:
-        owner = _owner_for(install_rel, owner_index, all_contrib_names)
         basename = Path(install_rel).name
+        if Path(install_rel).parent.as_posix() == _STAGED_TEST_LIB_DIR:
+            owner = None
+        else:
+            owner = _owner_for(install_rel, owner_index, all_contrib_names)
 
         if owner is not None:
             build_path = f"contrib/{owner}/{basename}"
