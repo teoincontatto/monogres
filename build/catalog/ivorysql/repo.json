@@ -287,6 +287,10 @@
       {
         "label": "//catalog/ivorysql/patches:0014-4.0-fix-test-jsonb_jsonpath-pin-time_tz-utc-offset.patch",
         "spec": "4.0/*"
+      },
+      {
+        "label": "//catalog/ivorysql/patches:0015-3.0-backport-meson-plpython-honor-python-build-option.patch",
+        "spec": "3.0/*"
       }
     ],
     "deps": {
