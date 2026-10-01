@@ -316,6 +316,12 @@ _COMPILE_EXTENSION = """
             # extensions failed at the `include PGXS` line of every
             # extension Makefile, with no such file.
             #
+            # Every in-tree base now installs flat whatever its prefix
+            # (`pg_build_make.bzl::flatten_install_layout`, and the meson
+            # `prefix_distro` patches), so both probes below find the flat
+            # form today. They stay: a base this module did not build has no
+            # such guarantee.
+            #
             # Each is found by an anchor file that the directory is defined
             # by: pgxs.mk *is* what PGXS means, `server/postgres.h` is what a
             # server include directory is, `extension/plpgsql.control` is what

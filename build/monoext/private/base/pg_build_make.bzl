@@ -1424,6 +1424,38 @@ PY_SHIM_EOF
             sed -i -E "s|^(LIBS = .*)$$|\\1 $$libs|" "$$f"
         }}
 
+        flatten_install_layout() {{
+            # Install flat -- modules in `lib/`, extension files in
+            # `share/extension/` -- whatever the prefix is spelled. The
+            # autoconf-side twin of the meson `prefix_distro` patch
+            # (`catalog/postgres/patches/0005-*-feat-prefix_distro-option.patch`),
+            # which forces the same thing whenever `prefix_distro` is set; here
+            # it always is, as `--prefix`.
+            #
+            # `Makefile.global` appends `/postgresql` to datadir, sysconfdir,
+            # pkglibdir, pkgincludedir and docdir unless the configured path
+            # contains `pgsql` or `postgres`: one
+            # `override <dir> := $$(<dir>)/postgresql` per directory, under two
+            # `findstring` guards. `/postgres/<v>` happened to pass, while
+            # `/babelfish/<v>` and `/openhalo/<v>` nested everything one level
+            # deeper than the vanilla flavor. The `override` outranks the make
+            # command line, so the lines are dropped here instead, before make
+            # derives anything from them: `pg_config_paths.h` (the paths the
+            # binaries resolve relative to themselves) and the installed
+            # `lib/pgxs/src/Makefile.global` (what extensions build with) both
+            # come from this file.
+            local workdir="$$1"
+            local f="$$workdir/src/Makefile.global"
+            local pattern='^override [a-z]+ := \\$$\\([a-z]+\\)/postgresql$$'
+            if ! grep -qE "$$pattern" "$$f"; then
+                echo "flatten_install_layout: no '/postgresql' override in $$f;" >&2
+                echo "  Makefile.global no longer spells the layout rule as expected" >&2
+                echo "  and the install would nest or not depending on the prefix." >&2
+                return 1
+            fi
+            sed -i -E "\\|$$pattern|d" "$$f"
+        }}
+
         # Each entry has the form `<subdir>|<target1> <target2> ...`.
         # An empty `<subdir>` runs make at the workdir root; otherwise
         # `make -C <workdir>/<subdir>`. The shape is multi-entry so callers
@@ -1545,8 +1577,9 @@ PY_SHIM_EOF
 
         stage_test_libs() {{
             # Capture the regression support modules (regress.so, plus
-            # refint.so/autoinc.so) into pkglibdir so core pg_regress finds them
-            # on --dlpath with no build tree. PG's autoconf install never ships
+            # refint.so/autoinc.so) into `lib/postgresql/`, apart from the
+            # flat pkglibdir as on the meson side, so core pg_regress finds
+            # them on --dlpath with no build tree. PG's autoconf install never ships
             # regress.so (only the never-default `install-tests` target), and
             # refint/autoinc reach lib/postgresql only under install-world-bin;
             # all three are always BUILT into $$WORKDIR/src/test/regress/ by
@@ -1750,6 +1783,8 @@ PY_SHIM_EOF
 
             inject_libs "$$WORKDIR" "$$EXTRA_LIBS"
 
+            flatten_install_layout "$$WORKDIR"
+
             run_make_phase "build" "$$WORKDIR" "" \\
                 "$${{MAKE_TARGETS[@]}}"
             run_make_phase "install" "$$WORKDIR" "$$INSTALLDIR" \\
@@ -1790,7 +1825,7 @@ PY_SHIM_EOF
             fi
 
             # The introspect synth wants prefix-relative paths
-            # (`bin/postgres`, `share/postgresql/extension/*.control`, ...),
+            # (`bin/postgres`, `share/extension/*.control`, ...),
             # the same convention meson emits. `make install
             # DESTDIR=$$INSTALLDIR` + `--prefix=$$INSTALL_PREFIX` puts files
             # at `$$INSTALLDIR$$INSTALL_PREFIX/...`, so point the synth at
@@ -1974,10 +2009,10 @@ def pg_build_make(
             each is a `:dir` tree artifact like `pg_src`. Empty (`{}`) for
             single-source flavors.
         auto_features (str): Meson `auto_features` value. autoconf has no
-            `--auto-features` counterpart, so `to_configure_args` applies it
-            one option at a time: under `"enabled"` a feature the option set
-            does not name is emitted `--with-X` rather than `--without-X`,
-            which is what Meson does with the same value.
+            `--auto-features` counterpart, so `to_configure_args` applies it one
+            option at a time: under `"enabled"` a feature the option set does
+            not name is emitted `--with-X` rather than `--without-X`, which is
+            what Meson does with the same value.
         debug (bool): If `True`, the build script enables `set -x`.
     """
 

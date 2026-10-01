@@ -526,10 +526,10 @@ if [ "$kind" = "integration" ]; then
   exit $?
 fi
 
-# Runner by kind. The pgxs test infra installs under a flavor-dependent dir
-# (`lib/pgxs` for postgres, `lib/postgresql/pgxs` for the openHalo/babelfish
-# forks), so locate the runner by name under PGROOT/lib rather than hardcoding
-# the pgxs subpath.
+# Runner by kind. The pgxs test infra installs under pkglibdir, which is
+# `lib/pgxs` for every in-tree flavor now but was `lib/postgresql/pgxs` for the
+# openHalo/babelfish forks before their builds were made flat; locate the
+# runner by name under PGROOT/lib rather than hardcoding the pgxs subpath.
 case "$kind" in
   isolation)
     runner="$(find "$PGROOT/lib" -type f -name pg_isolation_regress 2>/dev/null | head -1)"
