@@ -25,6 +25,13 @@
       }
     }
   },
+  "about": {
+    "contrib": {
+      "spi": {
+        "description": "Server Programming Interface examples: autoinc, insert_username, moddatetime and refint"
+      }
+    }
+  },
   "metadata": {
     "flavor": "ivorysql",
     "introspect": {
