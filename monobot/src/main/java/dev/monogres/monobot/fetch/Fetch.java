@@ -35,6 +35,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.SequencedMap;
+import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -396,6 +397,18 @@ public class Fetch {
     }
   }
 
+  /// What one archive carried. An addon's archive is digested and never walked: nothing in it is
+  /// read, and some of them are a whole project's tree (kubectl is Kubernetes), well past what the
+  /// extractor allows an archive to expand to.
+  private ArchiveContents contentsOf(MonobotConfig monobotConfig, String stem, Downloaded result) {
+    if (monobotConfig.componentType() == ComponentType.ADDON) {
+      return new ArchiveContents(Instant.MIN, null, null, new TreeMap<>());
+    }
+
+    return archiveMetadataExtractor.read(
+        stem, result.archivePath(), monobotConfig.componentType() == ComponentType.POSTGRES);
+  }
+
   /// One document the run produced, put where the mode says it goes.
   ///
   /// `check` is `generate` that stops short of the write, so the document it compares is built by
@@ -473,11 +486,7 @@ public class Fetch {
                           // what the catalog records. Gunzipping and walking a whole tarball is the
                           // most expensive thing this program does per version, and this block is
                           // ordered, so every one of them serialises behind the last.
-                          var contents =
-                              archiveMetadataExtractor.read(
-                                  stem,
-                                  result.archivePath(),
-                                  monobotConfig.componentType() == ComponentType.POSTGRES);
+                          var contents = contentsOf(monobotConfig, stem, result);
                           archiveCache.storeExtracted(
                               result.archivePath().getParent(), stem, contents);
 
