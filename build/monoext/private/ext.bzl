@@ -694,7 +694,8 @@ def create_ext(
         archs,
         pgrx_crates = {},
         build_repo = "monogres",
-        layered_deps = {}):
+        layered_deps = {},
+        about = None):
     """Build entries and create the extensions hub repo.
 
     Sources must already be instantiated via `create_ext_src`; this function
@@ -726,6 +727,9 @@ def create_ext(
             carved out of the base install tree. Passed through to the contrib
             test suites, which run against the uncarved tree. See
             `introspect_payload`.
+        about: `struct(flavor, extensions, contrib)` from `read_about`: what
+            the catalog says about the flavor and each extension, re-exposed
+            from the hub's `all.bzl`. `None` renders empty dicts.
     """
     external = {n: e for n, e in extensions.items() if not e.is_contrib}
     contrib = {n: e for n, e in extensions.items() if e.is_contrib}
@@ -797,6 +801,11 @@ def create_ext(
         base_versions_deps = json.encode(base_versions_deps),
         external_test_meta = json.encode(external_test_meta),
         ext_introspect_manifest = json.encode(ext_introspect_manifest),
+        about = json.encode({
+            "contrib": about.contrib,
+            "extensions": about.extensions,
+            "flavor": about.flavor,
+        } if about else {}),
         **introspect_payload(
             base_hub_name,
             base_data,

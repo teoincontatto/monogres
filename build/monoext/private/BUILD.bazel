@@ -4,6 +4,7 @@ package(default_visibility = [
 ])
 
 exports_files([
+    "about.bzl",
     "repo_names.bzl",
     "base.bzl",
     "ext.bzl",

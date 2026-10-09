@@ -28,6 +28,7 @@ Internal repos:
 """
 
 load("@sysroots//common:tag_key.bzl", "tag_key")
+load("//monoext/private:about.bzl", "read_about")
 load("//monoext/private:base.bzl", "create_base", "create_base_src")
 load("//monoext/private:ext.bzl", "create_ext", "create_ext_src")
 load("//monoext/private:pkgs.bzl", "create_pkgs")
@@ -170,6 +171,7 @@ def create_monogres(
     if extensions:
         create_ext(
             hub_name = ext_name,
+            about = read_about(ctx, base, extensions, ext_data.extensions),
             extensions = ext_data.extensions,
             pkgs_result = pkgs_result,
             catalog = extensions,
