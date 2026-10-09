@@ -18,6 +18,9 @@
       }
     }
   },
+  "about": {
+    "license": "PostgreSQL"
+  },
   "metadata": {
     "compatible_with": {
       "postgres": {

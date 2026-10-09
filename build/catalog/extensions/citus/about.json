@@ -1,0 +1,29 @@
+{
+  "description": "Citus distributed database",
+  "long_description": "Distributed PostgreSQL as an extension",
+  "homepage": "https://www.citusdata.com",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "citus",
+    "citus-extension",
+    "database",
+    "database-cluster",
+    "distributed-database",
+    "multi-tenant",
+    "postgres",
+    "postgresql",
+    "relational-database",
+    "scale",
+    "sharding",
+    "sql"
+  ],
+  "repository": {
+    "url": "https://github.com/citusdata/citus"
+  },
+  "versions": {
+    "14.1.0": {
+      "ref": "v14.1.0",
+      "readme": "https://raw.githubusercontent.com/citusdata/citus/v14.1.0/README.md"
+    }
+  }
+}

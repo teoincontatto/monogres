@@ -1,0 +1,27 @@
+{
+  "description": "Audit data changes and provide flashback ability",
+  "long_description": "PostgreSQL extension to log each DML statement and flashback transactions",
+  "homepage": "https://github.com/kouber/pg_auditor",
+  "license": "BSD-3-Clause",
+  "maintainers": ["Kouber Saparev <kouber@gmail.com>"],
+  "keywords": [
+    "pg_auditor",
+    "audit",
+    "audit log",
+    "auditing",
+    "log",
+    "logging",
+    "flashback",
+    "transaction flashback",
+    "rollback"
+  ],
+  "repository": {
+    "url": "https://github.com/kouber/pg_auditor"
+  },
+  "versions": {
+    "0.3.0": {
+      "ref": "7c2edff7a09c5882bfc8f1f8aa8f8d5d7e3b0c41",
+      "readme": "https://raw.githubusercontent.com/kouber/pg_auditor/7c2edff7a09c5882bfc8f1f8aa8f8d5d7e3b0c41/README.md"
+    }
+  }
+}

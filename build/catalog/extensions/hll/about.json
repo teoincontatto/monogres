@@ -1,0 +1,15 @@
+{
+  "description": "type for storing hyperloglog data",
+  "long_description": "PostgreSQL extension adding HyperLogLog data structures as a native data type",
+  "homepage": "http://blog.aggregateknowledge.com/2013/02/04/open-source-release-postgresql-hll/",
+  "license": "Apache-2.0",
+  "repository": {
+    "url": "https://github.com/citusdata/postgresql-hll"
+  },
+  "versions": {
+    "2.21.0": {
+      "ref": "v2.21",
+      "readme": "https://raw.githubusercontent.com/citusdata/postgresql-hll/v2.21/README.md"
+    }
+  }
+}

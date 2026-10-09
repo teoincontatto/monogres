@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/theory/colnames",
+    "description": "Lists the column names in a PostgreSQL RECORD value",
+    "homepage": "http://pgxn.org/extension/colnames",
+    "license": "NOASSERTION",
+    "topics": [],
+    "readme": {
+      "v1.7.1": "README.md"
+    }
+  }
+}

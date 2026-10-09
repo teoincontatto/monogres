@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/citusdata/pg_cron",
+    "description": "Run periodic jobs in PostgreSQL",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": ["cron", "periodic-jobs", "postgresql", "scheduler"],
+    "readme": {
+      "v1.6.7": "README.md"
+    }
+  }
+}

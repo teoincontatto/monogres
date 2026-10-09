@@ -1,0 +1,26 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/citusdata/citus",
+    "description": "Distributed PostgreSQL as an extension",
+    "homepage": "https://www.citusdata.com",
+    "license": "AGPL-3.0",
+    "topics": [
+      "citus",
+      "citus-extension",
+      "database",
+      "database-cluster",
+      "distributed-database",
+      "multi-tenant",
+      "postgres",
+      "postgresql",
+      "relational-database",
+      "scale",
+      "sharding",
+      "sql"
+    ],
+    "readme": {
+      "v14.1.0": "README.md"
+    }
+  }
+}

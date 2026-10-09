@@ -1,6 +1,7 @@
 {
   "version": 1,
   "name": "ivorysql",
+  "type": "postgres",
   "url": "https://github.com/IvorySQL/IvorySQL",
   "sources": {
     "gh": {

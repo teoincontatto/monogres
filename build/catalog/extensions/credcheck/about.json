@@ -1,0 +1,15 @@
+{
+  "description": "credcheck - postgresql plain text credential checker",
+  "long_description": "PostgreSQL plain credential checker",
+  "homepage": "https://github.com/HexaCluster/credcheck",
+  "license": "PostgreSQL",
+  "repository": {
+    "url": "https://github.com/HexaCluster/credcheck"
+  },
+  "versions": {
+    "5.0": {
+      "ref": "v5.0",
+      "readme": "https://raw.githubusercontent.com/HexaCluster/credcheck/v5.0/README.md"
+    }
+  }
+}

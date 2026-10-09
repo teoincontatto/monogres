@@ -1,0 +1,24 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/okbob/plpgsql_check",
+    "description": "plpgsql_check is a linter tool (does source code static analyze) for the PostgreSQL language plpgsql (the native language for PostgreSQL store procedures).",
+    "homepage": "https://groups.google.com/forum/#!forum/postgresql-extensions-hacking",
+    "license": "NOASSERTION",
+    "topics": [
+      "c",
+      "extension",
+      "function-plpgsql",
+      "linter",
+      "pldbgapi",
+      "plpgsql",
+      "postgresql",
+      "postgresql-extension",
+      "profiler",
+      "stored-procedures"
+    ],
+    "readme": {
+      "v2.10.3": "README.md"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "description": "Run SQL queries in the background",
+  "long_description": "Production-grade PostgreSQL extension to execute arbitrary SQL in background worker processes — with async execution, autonomous transactions, cookie-protected handles, cancellation, progress reporting, and observability.",
+  "homepage": "https://github.com/vibhorkum/pg_background",
+  "license": "PostgreSQL",
+  "maintainers": ["Vibhor Kumar <vibhor.kumar@enterprisedb.com>"],
+  "keywords": [
+    "background",
+    "worker",
+    "asynchronous",
+    "autonomous transaction",
+    "background worker",
+    "async",
+    "spi",
+    "audit-logging",
+    "autonomous",
+    "autonomous-transactions",
+    "c",
+    "database",
+    "etl",
+    "parallel-queries",
+    "pgextension",
+    "plpgsql",
+    "postgres",
+    "postgresql",
+    "postgresql-extension",
+    "sql",
+    "vacuum"
+  ],
+  "repository": {
+    "url": "https://github.com/vibhorkum/pg_background"
+  },
+  "versions": {
+    "2.0.3": {
+      "ref": "v2.0.3",
+      "readme": "https://raw.githubusercontent.com/vibhorkum/pg_background/v2.0.3/README.md"
+    }
+  }
+}

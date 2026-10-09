@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/dverite/postgres-shacrypt",
+    "description": "PostgreSQL extension to generate SHA256-CRYPT and SHA512-CRYPT password hashes",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [],
+    "readme": {
+      "09cc46affa270f79d0402eb0c4ce140588118309": "README.md"
+    }
+  }
+}

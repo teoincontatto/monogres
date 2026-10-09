@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/timescale/timescaledb-toolkit",
+    "description": "Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL 📈",
+    "homepage": "https://www.timescale.com",
+    "license": "NOASSERTION",
+    "topics": [],
+    "readme": {
+      "1.24.0": "README.md"
+    }
+  }
+}

@@ -15,6 +15,9 @@
   "versions": {
     "pin": ["4.2.3"]
   },
+  "about": {
+    "license": "PostgreSQL"
+  },
   "metadata": {
     "build_system": "cmake",
     "build_args": ["-DBOOST_STATIC_BUILD=YES"],

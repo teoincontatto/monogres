@@ -1,0 +1,17 @@
+{
+  "description": "Extension to add Global Temporary Tables feature to PostgreSQL",
+  "long_description": "PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS",
+  "homepage": "https://github.com/darold/pgtt",
+  "license": "ISC",
+  "maintainers": ["Gilles Darold <gilles@darold.net>"],
+  "keywords": ["global", "temporary", "table"],
+  "repository": {
+    "url": "https://github.com/darold/pgtt"
+  },
+  "versions": {
+    "4.6": {
+      "ref": "v4.6",
+      "readme": "https://raw.githubusercontent.com/darold/pgtt/v4.6/README.md"
+    }
+  }
+}

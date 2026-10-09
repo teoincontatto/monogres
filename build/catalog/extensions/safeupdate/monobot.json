@@ -19,6 +19,9 @@
       }
     }
   },
+  "about": {
+    "license": "ISC"
+  },
   "metadata": {
     "patches": [
       {

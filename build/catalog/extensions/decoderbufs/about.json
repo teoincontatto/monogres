@@ -1,0 +1,16 @@
+{
+  "description": "Logical decoding plugin that delivers WAL stream changes using a Protocol Buffer format",
+  "long_description": "A PostgreSQL logical decoder output plugin to deliver data as Protocol Buffers, used by Debezium (http://debezium.io). Please log issues at https://github.com/debezium/dbz/issues.",
+  "homepage": "https://debezium.io",
+  "license": "MIT",
+  "keywords": ["change-data-capture", "debezium", "postgresql"],
+  "repository": {
+    "url": "https://github.com/debezium/postgres-decoderbufs"
+  },
+  "versions": {
+    "3.6.0": {
+      "ref": "v3.6.0.Final",
+      "readme": "https://raw.githubusercontent.com/debezium/postgres-decoderbufs/v3.6.0.Final/README.md"
+    }
+  }
+}

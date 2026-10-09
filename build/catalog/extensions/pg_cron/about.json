@@ -1,0 +1,23 @@
+{
+  "description": "Job scheduler for PostgreSQL",
+  "long_description": "Run periodic jobs in PostgreSQL",
+  "homepage": "https://citusdata.com/",
+  "license": "PostgreSQL",
+  "maintainers": ["\"Marco Slot\" <marco@citusdata.com>"],
+  "keywords": [
+    "cron",
+    "background worker",
+    "periodic-jobs",
+    "postgresql",
+    "scheduler"
+  ],
+  "repository": {
+    "url": "https://github.com/citusdata/pg_cron"
+  },
+  "versions": {
+    "1.6.7": {
+      "ref": "v1.6.7",
+      "readme": "https://raw.githubusercontent.com/citusdata/pg_cron/v1.6.7/README.md"
+    }
+  }
+}

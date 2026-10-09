@@ -1,0 +1,24 @@
+{
+  "description": "Reorganize tables in PostgreSQL databases with minimal locks",
+  "long_description": "Reorganize tables in PostgreSQL databases with minimal locks",
+  "homepage": "https://reorg.github.io/pg_repack",
+  "license": "BSD-3-Clause",
+  "maintainers": [
+    "Beena Emerson <memissemerson@gmail.com>",
+    "Josh Kupershmidt <schmiddy@gmail.com>",
+    "Masahiko Sawada <sawada.mshk@gmail.com>",
+    "Daniele Varrazzo <daniele.varrazzo@gmail.com>",
+    "Artur Zakirov <zaartur@gmail.com>",
+    "Andreas Scherbaum <andreas@scherbaum.la>"
+  ],
+  "keywords": ["bloat", "maintenance", "vacuum", "cluster"],
+  "repository": {
+    "url": "https://github.com/reorg/pg_repack"
+  },
+  "versions": {
+    "1.5.3": {
+      "ref": "ver_1.5.3",
+      "readme": "https://raw.githubusercontent.com/reorg/pg_repack/ver_1.5.3/README.rst"
+    }
+  }
+}

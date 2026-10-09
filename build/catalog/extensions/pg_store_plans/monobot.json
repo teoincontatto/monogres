@@ -19,6 +19,9 @@
       }
     }
   },
+  "about": {
+    "license": "BSD-3-Clause"
+  },
   "metadata": {
     "compatible_with": {
       "postgres": {

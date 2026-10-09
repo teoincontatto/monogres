@@ -1,0 +1,8 @@
+{
+  "default_version": "@EXTVERSION@",
+  "comment": "PostGIS geometry and geography spatial types and functions",
+  "module_pathname": "@MODULEPATH@",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

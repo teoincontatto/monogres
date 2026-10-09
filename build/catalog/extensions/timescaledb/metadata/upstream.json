@@ -1,0 +1,27 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/timescale/timescaledb",
+    "description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension",
+    "homepage": "https://www.tigerdata.com/",
+    "license": "NOASSERTION",
+    "topics": [
+      "analytics",
+      "database",
+      "financial-analysis",
+      "historian",
+      "iot",
+      "postgres",
+      "postgresql",
+      "sql",
+      "tigerdata",
+      "time-series",
+      "time-series-database",
+      "timescaledb",
+      "tsdb"
+    ],
+    "readme": {
+      "2.28.3": "README.md"
+    }
+  }
+}

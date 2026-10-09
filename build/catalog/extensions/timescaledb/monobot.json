@@ -15,6 +15,9 @@
   "versions": {
     "pin": ["2.28.3"]
   },
+  "about": {
+    "license": "Apache-2.0 AND LicenseRef-Timescale"
+  },
   "metadata": {
     "build_system": "cmake",
     "build_args": ["-DPG_CONFIG={pg_config}", "-DREGRESS_CHECKS=OFF"],

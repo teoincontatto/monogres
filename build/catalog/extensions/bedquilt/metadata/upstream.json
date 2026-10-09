@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/BedquiltDB/bedquilt-core",
+    "description": "A JSON document store on PostgreSQL",
+    "homepage": "http://bedquiltdb.github.io",
+    "license": "MIT",
+    "topics": ["database", "nosql", "plpgsql", "sql"],
+    "readme": {
+      "v2.1.0": "README.md"
+    }
+  }
+}

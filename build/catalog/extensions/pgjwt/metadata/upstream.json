@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/michelp/pgjwt",
+    "description": "PostgreSQL implementation of JWT (JSON Web Tokens)",
+    "homepage": null,
+    "license": "MIT",
+    "topics": [],
+    "readme": {
+      "f3d82fd30151e754e19ce5d6a06c71c20689ce3d": "README.md"
+    }
+  }
+}

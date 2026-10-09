@@ -1,0 +1,32 @@
+{
+  "description": "temporal tables",
+  "long_description": "Temporal Tables PostgreSQL Extension",
+  "homepage": "https://arkhipov.ru",
+  "license": "BSD-2-Clause",
+  "maintainers": ["Vladislav Arkhipov <vlad@arkhipov.ru>"],
+  "keywords": [
+    "temporal database",
+    "temporal table",
+    "temporal",
+    "system-period data versioning",
+    "system-versioned table",
+    "system time",
+    "transaction time",
+    "table audit",
+    "history table",
+    "time travel",
+    "audit",
+    "versioning",
+    "snapshot",
+    "flashback"
+  ],
+  "repository": {
+    "url": "https://github.com/arkhipov/temporal_tables"
+  },
+  "versions": {
+    "1.2.2": {
+      "ref": "v1.2.2",
+      "readme": "https://raw.githubusercontent.com/arkhipov/temporal_tables/v1.2.2/README.md"
+    }
+  }
+}

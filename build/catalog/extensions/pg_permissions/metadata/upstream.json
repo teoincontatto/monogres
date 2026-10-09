@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/cybertec-postgresql/pg_permissions",
+    "description": "A simple set of views to see ALL permissions in a PostgreSQL database",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": ["postgresql", "postgresql-extension"],
+    "readme": {
+      "REL_1_4_1": "README.md"
+    }
+  }
+}

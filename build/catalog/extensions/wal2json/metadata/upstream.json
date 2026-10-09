@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/eulerto/wal2json",
+    "description": "JSON output plugin for changeset extraction",
+    "homepage": null,
+    "license": "BSD-3-Clause",
+    "topics": ["cdc", "json", "plugin", "postgres", "replication"],
+    "readme": {
+      "wal2json_2_6": "README.md"
+    }
+  }
+}

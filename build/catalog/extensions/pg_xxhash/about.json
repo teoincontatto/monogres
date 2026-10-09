@@ -1,0 +1,15 @@
+{
+  "description": "xxHash functions for PostgreSQL",
+  "long_description": "xxHash functions for PostgreSQL",
+  "homepage": "https://github.com/fabriziomello/pg_xxhash",
+  "license": "Apache-2.0",
+  "repository": {
+    "url": "https://github.com/fabriziomello/pg_xxhash"
+  },
+  "versions": {
+    "0.1": {
+      "ref": "3fb24f08afc2ebf804b99fea58f2eeef24cef6f2",
+      "readme": "https://raw.githubusercontent.com/fabriziomello/pg_xxhash/3fb24f08afc2ebf804b99fea58f2eeef24cef6f2/README.md"
+    }
+  }
+}

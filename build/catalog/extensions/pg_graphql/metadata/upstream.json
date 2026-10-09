@@ -1,0 +1,20 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/supabase/pg_graphql",
+    "description": "GraphQL support for PostgreSQL",
+    "homepage": "https://supabase.github.io/pg_graphql",
+    "license": "Apache-2.0",
+    "topics": [
+      "api",
+      "graphql",
+      "graphql-server",
+      "postgres",
+      "postgresql",
+      "sql"
+    ],
+    "readme": {
+      "v1.6.1": "README.md"
+    }
+  }
+}

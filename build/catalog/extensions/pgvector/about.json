@@ -1,0 +1,23 @@
+{
+  "description": "vector data type and ivfflat and hnsw access methods",
+  "long_description": "Open-source vector similarity search for Postgres",
+  "homepage": "https://github.com/pgvector/pgvector",
+  "license": "PostgreSQL",
+  "maintainers": ["Andrew Kane <andrew@ankane.org>"],
+  "keywords": [
+    "vectors",
+    "datatype",
+    "nearest neighbor search",
+    "approximate nearest neighbors",
+    "approximate-nearest-neighbor-search"
+  ],
+  "repository": {
+    "url": "https://github.com/pgvector/pgvector"
+  },
+  "versions": {
+    "0.8.2": {
+      "ref": "v0.8.2",
+      "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md"
+    }
+  }
+}

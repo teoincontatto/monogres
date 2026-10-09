@@ -1,0 +1,17 @@
+{
+  "description": "Math for vectors (arrays) of numbers",
+  "long_description": "Postgres functions for arithmetic on numeric arrays",
+  "homepage": "https://github.com/pjungwir/floatvec",
+  "license": "MIT",
+  "maintainers": ["Paul A. Jungwirth <pj@illuminatedcomputing.com>"],
+  "keywords": ["math", "arithmetic", "arrays", "vectors"],
+  "repository": {
+    "url": "https://github.com/pjungwir/floatvec"
+  },
+  "versions": {
+    "1.1.1": {
+      "ref": "v1.1.1",
+      "readme": "https://raw.githubusercontent.com/pjungwir/floatvec/v1.1.1/README.md"
+    }
+  }
+}

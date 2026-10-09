@@ -1,0 +1,20 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/iCyberon/pg_hashids",
+    "description": "Short unique id generator for PostgreSQL, using hashids",
+    "homepage": null,
+    "license": "MIT",
+    "topics": [
+      "database",
+      "hashids",
+      "pg-hashids",
+      "postgres",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "readme": {
+      "v1.2.1": "README.md"
+    }
+  }
+}

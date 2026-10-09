@@ -1,0 +1,23 @@
+{
+  "description": "Async HTTP",
+  "long_description": "A PostgreSQL extension that enables asynchronous (non-blocking) HTTP/HTTPS requests with SQL",
+  "homepage": "https://supabase.github.io/pg_net",
+  "license": "Apache-2.0",
+  "keywords": [
+    "http-client",
+    "postgres",
+    "postgresql",
+    "postgresql-extension",
+    "sql",
+    "supabase"
+  ],
+  "repository": {
+    "url": "https://github.com/supabase/pg_net"
+  },
+  "versions": {
+    "0.20.5": {
+      "ref": "v0.20.5",
+      "readme": "https://raw.githubusercontent.com/supabase/pg_net/v0.20.5/README.md"
+    }
+  }
+}

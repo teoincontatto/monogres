@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/citusdata/postgresql-hll",
+    "description": "PostgreSQL extension adding HyperLogLog data structures as a native data type",
+    "homepage": "http://blog.aggregateknowledge.com/2013/02/04/open-source-release-postgresql-hll/",
+    "license": "Apache-2.0",
+    "topics": [],
+    "readme": {
+      "v2.21": "README.md"
+    }
+  }
+}

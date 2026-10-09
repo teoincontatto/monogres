@@ -1,0 +1,26 @@
+{
+  "description": "Hypothetical indexes for PostgreSQL",
+  "long_description": "Hypothetical Indexes for PostgreSQL",
+  "homepage": "https://hypopg.readthedocs.io",
+  "license": "PostgreSQL",
+  "maintainers": ["Julien Rouhaud <rjuju123@gmail.com>"],
+  "keywords": [
+    "index",
+    "hypothetical",
+    "c",
+    "database",
+    "extension",
+    "hypothetical-indexes",
+    "indexing",
+    "postgresql"
+  ],
+  "repository": {
+    "url": "https://github.com/HypoPG/hypopg"
+  },
+  "versions": {
+    "1.4.3": {
+      "ref": "1.4.3",
+      "readme": "https://raw.githubusercontent.com/HypoPG/hypopg/1.4.3/README.md"
+    }
+  }
+}

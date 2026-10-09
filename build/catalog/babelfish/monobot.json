@@ -1,6 +1,7 @@
 {
   "version": 1,
   "name": "babelfish",
+  "type": "postgres",
   "url": "https://github.com/babelfish-for-postgresql/postgresql_modified_for_babelfish",
   "sources": {
     "gh": {
@@ -51,6 +52,49 @@
       },
       "5.4": {
         "tag": "BABEL_5_4_0__PG_17_7"
+      }
+    }
+  },
+  "about": {
+    "description": "PostgreSQL with Microsoft SQL Server compatibility",
+    "long_description": "Babelfish for PostgreSQL provides the capability for PostgreSQL to work with applications written for Microsoft SQL Server. Babelfish understands the SQL Server wire-protocol and T-SQL, the Microsoft SQL Server query and procedural language, so you don't have to switch database drivers or rewrite all of your application queries.",
+    "homepage": "https://babelfishpg.org",
+    "license": "PostgreSQL",
+    "contrib": {
+      "babelfishpg_common": {
+        "description": "Transact SQL Datatype Support",
+        "license": "Apache-2.0",
+        "repository": {
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+        }
+      },
+      "babelfishpg_money": {
+        "description": "Money data types for Babelfish",
+        "license": "Apache-2.0",
+        "repository": {
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+        }
+      },
+      "babelfishpg_tds": {
+        "description": "TDS protocol extension",
+        "license": "Apache-2.0",
+        "repository": {
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+        }
+      },
+      "babelfishpg_tsql": {
+        "description": "Transact SQL compatibility",
+        "license": "Apache-2.0",
+        "repository": {
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+        }
+      },
+      "babelfishpg_unit": {
+        "description": "Unit testing framework for babelfish",
+        "license": "Apache-2.0",
+        "repository": {
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+        }
       }
     }
   },

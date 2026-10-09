@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/reorg/pg_repack",
+    "description": "Reorganize tables in PostgreSQL databases with minimal locks",
+    "homepage": null,
+    "license": "BSD-3-Clause",
+    "topics": [],
+    "readme": {
+      "ver_1.5.3": "README.rst"
+    }
+  }
+}

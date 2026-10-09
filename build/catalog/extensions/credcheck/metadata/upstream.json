@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/HexaCluster/credcheck",
+    "description": "PostgreSQL plain credential checker",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [],
+    "readme": {
+      "v5.0": "README.md"
+    }
+  }
+}

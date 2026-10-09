@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "gitlab",
+    "url": "https://gitlab.com/ongresinc/extensions/noset",
+    "description": "Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.",
+    "license": "agpl-3.0",
+    "topics": [],
+    "readme": {
+      "v0.3.0": "README.md",
+      "v0.2.0": "README.md"
+    }
+  }
+}

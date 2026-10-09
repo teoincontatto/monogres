@@ -1,0 +1,8 @@
+{
+  "default_version": "${MAJOR_VERSION}.${MINOR_VERSION}",
+  "comment": "A PostgreSQL job scheduler",
+  "superuser": false,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "pgagent"
+}

@@ -1,0 +1,17 @@
+{
+  "description": "generator of sequential UUIDs",
+  "long_description": "generator of sequential UUIDs",
+  "homepage": "https://blog.2ndquadrant.com/sequential-uuid-generators/",
+  "license": "MIT",
+  "maintainers": ["Tomas Vondra <tomas@pgaddict.com>"],
+  "keywords": ["UUID", "generator"],
+  "repository": {
+    "url": "https://github.com/tvondra/sequential-uuids"
+  },
+  "versions": {
+    "1.0.3": {
+      "ref": "v1.0.3",
+      "readme": "https://raw.githubusercontent.com/tvondra/sequential-uuids/v1.0.3/README.md"
+    }
+  }
+}

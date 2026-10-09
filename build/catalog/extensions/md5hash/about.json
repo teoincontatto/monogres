@@ -1,0 +1,14 @@
+{
+  "description": "type for storing 128-bit binary data inline",
+  "long_description": "A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).",
+  "homepage": "https://github.com/tvondra/md5hash",
+  "license": "BSD-3-Clause",
+  "maintainers": ["Tomas Vondra <tv@fuzzy.cz>"],
+  "keywords": ["md5", "hash", "data type"],
+  "repository": {
+    "url": "https://github.com/tvondra/md5hash"
+  },
+  "versions": {
+    "1.0.1": {}
+  }
+}

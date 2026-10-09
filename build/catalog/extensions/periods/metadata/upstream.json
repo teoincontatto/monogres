@@ -1,0 +1,20 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/xocolatl/periods",
+    "description": "PERIODs and SYSTEM VERSIONING for PostgreSQL",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [
+      "extension",
+      "periods",
+      "postgresql",
+      "proof-of-concept",
+      "sql-standards",
+      "system-versioning"
+    ],
+    "readme": {
+      "v1.2.3": "README.md"
+    }
+  }
+}

@@ -15,6 +15,9 @@
   "versions": {
     "pin": ["1.1.1"]
   },
+  "about": {
+    "license": "AGPL-3.0-only OR Elastic-2.0"
+  },
   "metadata": {
     "build_system": "pgrx",
     "sql_source": "sql/install/vchord--{version}.sql",

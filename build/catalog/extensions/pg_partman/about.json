@@ -1,0 +1,30 @@
+{
+  "description": "Extension to manage partitioned tables by time or ID",
+  "long_description": "Partition management extension for PostgreSQL",
+  "homepage": "https://github.com/pgpartman/pg_partman",
+  "license": "PostgreSQL",
+  "maintainers": ["Keith Fiske <keith@keithf4.com>"],
+  "keywords": [
+    "partition",
+    "partitions",
+    "partitioning",
+    "table",
+    "tables",
+    "bgw",
+    "background worker",
+    "custom background worker",
+    "pg-partition-manager",
+    "plpgsql",
+    "postgresql",
+    "postgresql-extension"
+  ],
+  "repository": {
+    "url": "https://github.com/pgpartman/pg_partman"
+  },
+  "versions": {
+    "5.5.0": {
+      "ref": "v5.5.0",
+      "readme": "https://raw.githubusercontent.com/pgpartman/pg_partman/v5.5.0/README.md"
+    }
+  }
+}

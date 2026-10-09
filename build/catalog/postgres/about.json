@@ -1,0 +1,539 @@
+{
+  "description": "The World's Most Advanced Open Source Relational Database",
+  "long_description": "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
+  "homepage": "https://www.postgresql.org/",
+  "license": "PostgreSQL",
+  "repository": {
+    "url": "https://github.com/postgres/postgres"
+  },
+  "versions": {
+    "18.6": {
+      "ref": "REL_18_6",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_6/README.md"
+    },
+    "18.4": {
+      "ref": "REL_18_4",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_4/README.md"
+    },
+    "18.3": {
+      "ref": "REL_18_3",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_3/README.md"
+    },
+    "18.2": {
+      "ref": "REL_18_2",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_2/README.md"
+    },
+    "18.1": {
+      "ref": "REL_18_1",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_1/README.md"
+    },
+    "18.0": {
+      "ref": "REL_18_0",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_0/README.md"
+    },
+    "17.11": {
+      "ref": "REL_17_11",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_11/README.md"
+    },
+    "17.10": {
+      "ref": "REL_17_10",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_10/README.md"
+    },
+    "17.9": {
+      "ref": "REL_17_9",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_9/README.md"
+    },
+    "17.8": {
+      "ref": "REL_17_8",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_8/README.md"
+    },
+    "17.7": {
+      "ref": "REL_17_7",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_7/README.md"
+    },
+    "17.6": {
+      "ref": "REL_17_6",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_6/README.md"
+    },
+    "17.5": {
+      "ref": "REL_17_5",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_5/README.md"
+    },
+    "17.4": {
+      "ref": "REL_17_4",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_4/README.md"
+    },
+    "17.3": {
+      "ref": "REL_17_3",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_3/README.md"
+    },
+    "17.2": {
+      "ref": "REL_17_2",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_2/README.md"
+    },
+    "17.1": {
+      "ref": "REL_17_1",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_1/README.md"
+    },
+    "17.0": {
+      "ref": "REL_17_0",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_0/README.md"
+    },
+    "16.15": {
+      "ref": "REL_16_15",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_15/README"
+    },
+    "16.14": {
+      "ref": "REL_16_14",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_14/README"
+    },
+    "16.13": {
+      "ref": "REL_16_13",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_13/README"
+    },
+    "16.12": {
+      "ref": "REL_16_12",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_12/README"
+    },
+    "16.11": {
+      "ref": "REL_16_11",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_11/README"
+    },
+    "16.10": {
+      "ref": "REL_16_10",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_10/README"
+    },
+    "16.9": {
+      "ref": "REL_16_9",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_9/README"
+    },
+    "16.8": {
+      "ref": "REL_16_8",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_8/README"
+    },
+    "16.7": {
+      "ref": "REL_16_7",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_7/README"
+    },
+    "16.6": {
+      "ref": "REL_16_6",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_6/README"
+    },
+    "16.5": {
+      "ref": "REL_16_5",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_5/README"
+    },
+    "16.4": {
+      "ref": "REL_16_4",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_4/README"
+    },
+    "16.3": {
+      "ref": "REL_16_3",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_3/README"
+    },
+    "16.2": {
+      "ref": "REL_16_2",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_2/README"
+    },
+    "16.1": {
+      "ref": "REL_16_1",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_1/README"
+    },
+    "16.0": {
+      "ref": "REL_16_0",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_0/README"
+    },
+    "15.19": {
+      "ref": "REL_15_19",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_19/README"
+    },
+    "15.18": {
+      "ref": "REL_15_18",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_18/README"
+    },
+    "15.17": {
+      "ref": "REL_15_17",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_17/README"
+    },
+    "15.16": {
+      "ref": "REL_15_16",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_16/README"
+    },
+    "15.15": {
+      "ref": "REL_15_15",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_15/README"
+    },
+    "15.14": {
+      "ref": "REL_15_14",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_14/README"
+    },
+    "15.13": {
+      "ref": "REL_15_13",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_13/README"
+    },
+    "15.12": {
+      "ref": "REL_15_12",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_12/README"
+    },
+    "15.11": {
+      "ref": "REL_15_11",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_11/README"
+    },
+    "15.10": {
+      "ref": "REL_15_10",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_10/README"
+    },
+    "15.9": {
+      "ref": "REL_15_9",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_9/README"
+    },
+    "15.8": {
+      "ref": "REL_15_8",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_8/README"
+    },
+    "15.7": {
+      "ref": "REL_15_7",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_7/README"
+    },
+    "15.6": {
+      "ref": "REL_15_6",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_6/README"
+    },
+    "15.5": {
+      "ref": "REL_15_5",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_5/README"
+    },
+    "15.4": {
+      "ref": "REL_15_4",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_4/README"
+    },
+    "15.3": {
+      "ref": "REL_15_3",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_3/README"
+    },
+    "15.2": {
+      "ref": "REL_15_2",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_2/README"
+    },
+    "15.1": {
+      "ref": "REL_15_1",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_1/README"
+    },
+    "15.0": {
+      "ref": "REL_15_0",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_0/README"
+    }
+  },
+  "contrib": {
+    "adminpack": {
+      "description": "administrative functions for PostgreSQL",
+      "long_description": "administrative functions for PostgreSQL",
+      "license": "PostgreSQL"
+    },
+    "amcheck": {
+      "description": "functions for verifying relation integrity",
+      "long_description": "functions for verifying relation integrity",
+      "license": "PostgreSQL"
+    },
+    "autoinc": {
+      "description": "functions for autoincrementing fields",
+      "long_description": "functions for autoincrementing fields",
+      "license": "PostgreSQL"
+    },
+    "bloom": {
+      "description": "bloom access method - signature file based index",
+      "long_description": "bloom access method - signature file based index",
+      "license": "PostgreSQL"
+    },
+    "bool_plperl": {
+      "description": "transform between bool and plperl",
+      "long_description": "transform between bool and plperl",
+      "license": "PostgreSQL"
+    },
+    "bool_plperlu": {
+      "description": "transform between bool and plperlu",
+      "long_description": "transform between bool and plperlu",
+      "license": "PostgreSQL"
+    },
+    "btree_gin": {
+      "description": "support for indexing common datatypes in GIN",
+      "long_description": "support for indexing common datatypes in GIN",
+      "license": "PostgreSQL"
+    },
+    "btree_gist": {
+      "description": "support for indexing common datatypes in GiST",
+      "long_description": "support for indexing common datatypes in GiST",
+      "license": "PostgreSQL"
+    },
+    "citext": {
+      "description": "data type for case-insensitive character strings",
+      "long_description": "data type for case-insensitive character strings",
+      "license": "PostgreSQL"
+    },
+    "cube": {
+      "description": "data type for multidimensional cubes",
+      "long_description": "data type for multidimensional cubes",
+      "license": "PostgreSQL"
+    },
+    "dblink": {
+      "description": "connect to other PostgreSQL databases from within a database",
+      "long_description": "connect to other PostgreSQL databases from within a database",
+      "license": "PostgreSQL"
+    },
+    "dict_int": {
+      "description": "text search dictionary template for integers",
+      "long_description": "text search dictionary template for integers",
+      "license": "PostgreSQL"
+    },
+    "dict_xsyn": {
+      "description": "text search dictionary template for extended synonym processing",
+      "long_description": "text search dictionary template for extended synonym processing",
+      "license": "PostgreSQL"
+    },
+    "earthdistance": {
+      "description": "calculate great-circle distances on the surface of the Earth",
+      "long_description": "calculate great-circle distances on the surface of the Earth",
+      "license": "PostgreSQL"
+    },
+    "file_fdw": {
+      "description": "foreign-data wrapper for flat file access",
+      "long_description": "foreign-data wrapper for flat file access",
+      "license": "PostgreSQL"
+    },
+    "fuzzystrmatch": {
+      "description": "determine similarities and distance between strings",
+      "long_description": "determine similarities and distance between strings",
+      "license": "PostgreSQL"
+    },
+    "hstore": {
+      "description": "data type for storing sets of (key, value) pairs",
+      "long_description": "data type for storing sets of (key, value) pairs",
+      "license": "PostgreSQL"
+    },
+    "hstore_plperl": {
+      "description": "transform between hstore and plperl",
+      "long_description": "transform between hstore and plperl",
+      "license": "PostgreSQL"
+    },
+    "hstore_plperlu": {
+      "description": "transform between hstore and plperlu",
+      "long_description": "transform between hstore and plperlu",
+      "license": "PostgreSQL"
+    },
+    "hstore_plpython3u": {
+      "description": "transform between hstore and plpython3u",
+      "long_description": "transform between hstore and plpython3u",
+      "license": "PostgreSQL"
+    },
+    "insert_username": {
+      "description": "functions for tracking who changed a table",
+      "long_description": "functions for tracking who changed a table",
+      "license": "PostgreSQL"
+    },
+    "intagg": {
+      "description": "integer aggregator and enumerator (obsolete)",
+      "long_description": "integer aggregator and enumerator (obsolete)",
+      "license": "PostgreSQL"
+    },
+    "intarray": {
+      "description": "functions, operators, and index support for 1-D arrays of integers",
+      "long_description": "functions, operators, and index support for 1-D arrays of integers",
+      "license": "PostgreSQL"
+    },
+    "isn": {
+      "description": "data types for international product numbering standards",
+      "long_description": "data types for international product numbering standards",
+      "license": "PostgreSQL"
+    },
+    "jsonb_plperl": {
+      "description": "transform between jsonb and plperl",
+      "long_description": "transform between jsonb and plperl",
+      "license": "PostgreSQL"
+    },
+    "jsonb_plperlu": {
+      "description": "transform between jsonb and plperlu",
+      "long_description": "transform between jsonb and plperlu",
+      "license": "PostgreSQL"
+    },
+    "jsonb_plpython3u": {
+      "description": "transform between jsonb and plpython3u",
+      "long_description": "transform between jsonb and plpython3u",
+      "license": "PostgreSQL"
+    },
+    "lo": {
+      "description": "Large Object maintenance",
+      "long_description": "Large Object maintenance",
+      "license": "PostgreSQL"
+    },
+    "ltree": {
+      "description": "data type for hierarchical tree-like structures",
+      "long_description": "data type for hierarchical tree-like structures",
+      "license": "PostgreSQL"
+    },
+    "ltree_plpython3u": {
+      "description": "transform between ltree and plpython3u",
+      "long_description": "transform between ltree and plpython3u",
+      "license": "PostgreSQL"
+    },
+    "moddatetime": {
+      "description": "functions for tracking last modification time",
+      "long_description": "functions for tracking last modification time",
+      "license": "PostgreSQL"
+    },
+    "old_snapshot": {
+      "description": "utilities in support of old_snapshot_threshold",
+      "long_description": "utilities in support of old_snapshot_threshold",
+      "license": "PostgreSQL"
+    },
+    "pageinspect": {
+      "description": "inspect the contents of database pages at a low level",
+      "long_description": "inspect the contents of database pages at a low level",
+      "license": "PostgreSQL"
+    },
+    "pg_buffercache": {
+      "description": "examine the shared buffer cache",
+      "long_description": "examine the shared buffer cache",
+      "license": "PostgreSQL"
+    },
+    "pg_freespacemap": {
+      "description": "examine the free space map (FSM)",
+      "long_description": "examine the free space map (FSM)",
+      "license": "PostgreSQL"
+    },
+    "pg_logicalinspect": {
+      "description": "functions to inspect logical decoding components",
+      "long_description": "functions to inspect logical decoding components",
+      "license": "PostgreSQL"
+    },
+    "pg_prewarm": {
+      "description": "prewarm relation data",
+      "long_description": "prewarm relation data",
+      "license": "PostgreSQL"
+    },
+    "pg_stat_statements": {
+      "description": "track planning and execution statistics of all SQL statements executed",
+      "long_description": "track planning and execution statistics of all SQL statements executed",
+      "license": "PostgreSQL"
+    },
+    "pg_surgery": {
+      "description": "extension to perform surgery on a damaged relation",
+      "long_description": "extension to perform surgery on a damaged relation",
+      "license": "PostgreSQL"
+    },
+    "pg_trgm": {
+      "description": "text similarity measurement and index searching based on trigrams",
+      "long_description": "text similarity measurement and index searching based on trigrams",
+      "license": "PostgreSQL"
+    },
+    "pg_visibility": {
+      "description": "examine the visibility map (VM) and page-level visibility info",
+      "long_description": "examine the visibility map (VM) and page-level visibility info",
+      "license": "PostgreSQL"
+    },
+    "pg_walinspect": {
+      "description": "functions to inspect contents of PostgreSQL Write-Ahead Log",
+      "long_description": "functions to inspect contents of PostgreSQL Write-Ahead Log",
+      "license": "PostgreSQL"
+    },
+    "pgcrypto": {
+      "description": "cryptographic functions",
+      "long_description": "cryptographic functions",
+      "license": "PostgreSQL"
+    },
+    "pgrowlocks": {
+      "description": "show row-level locking information",
+      "long_description": "show row-level locking information",
+      "license": "PostgreSQL"
+    },
+    "pgstattuple": {
+      "description": "show tuple-level statistics",
+      "long_description": "show tuple-level statistics",
+      "license": "PostgreSQL"
+    },
+    "plperl": {
+      "description": "PL/Perl procedural language",
+      "long_description": "PL/Perl procedural language",
+      "license": "PostgreSQL"
+    },
+    "plperlu": {
+      "description": "PL/PerlU untrusted procedural language",
+      "long_description": "PL/PerlU untrusted procedural language",
+      "license": "PostgreSQL"
+    },
+    "plpgsql": {
+      "description": "PL/pgSQL procedural language",
+      "long_description": "PL/pgSQL procedural language",
+      "license": "PostgreSQL"
+    },
+    "plpython3u": {
+      "description": "PL/Python3U untrusted procedural language",
+      "long_description": "PL/Python3U untrusted procedural language",
+      "license": "PostgreSQL"
+    },
+    "pltcl": {
+      "description": "PL/Tcl procedural language",
+      "long_description": "PL/Tcl procedural language",
+      "license": "PostgreSQL"
+    },
+    "pltclu": {
+      "description": "PL/TclU untrusted procedural language",
+      "long_description": "PL/TclU untrusted procedural language",
+      "license": "PostgreSQL"
+    },
+    "postgres_fdw": {
+      "description": "foreign-data wrapper for remote PostgreSQL servers",
+      "long_description": "foreign-data wrapper for remote PostgreSQL servers",
+      "license": "PostgreSQL"
+    },
+    "refint": {
+      "description": "functions for implementing referential integrity (obsolete)",
+      "long_description": "functions for implementing referential integrity (obsolete)",
+      "license": "PostgreSQL"
+    },
+    "seg": {
+      "description": "data type for representing line segments or floating-point intervals",
+      "long_description": "data type for representing line segments or floating-point intervals",
+      "license": "PostgreSQL"
+    },
+    "sslinfo": {
+      "description": "information about SSL certificates",
+      "long_description": "information about SSL certificates",
+      "license": "PostgreSQL"
+    },
+    "tablefunc": {
+      "description": "functions that manipulate whole tables, including crosstab",
+      "long_description": "functions that manipulate whole tables, including crosstab",
+      "license": "PostgreSQL"
+    },
+    "tcn": {
+      "description": "Triggered change notifications",
+      "long_description": "Triggered change notifications",
+      "license": "PostgreSQL"
+    },
+    "tsm_system_rows": {
+      "description": "TABLESAMPLE method which accepts number of rows as a limit",
+      "long_description": "TABLESAMPLE method which accepts number of rows as a limit",
+      "license": "PostgreSQL"
+    },
+    "tsm_system_time": {
+      "description": "TABLESAMPLE method which accepts time in milliseconds as a limit",
+      "long_description": "TABLESAMPLE method which accepts time in milliseconds as a limit",
+      "license": "PostgreSQL"
+    },
+    "unaccent": {
+      "description": "text search dictionary that removes accents",
+      "long_description": "text search dictionary that removes accents",
+      "license": "PostgreSQL"
+    },
+    "uuid-ossp": {
+      "description": "generate universally unique identifiers (UUIDs)",
+      "long_description": "generate universally unique identifiers (UUIDs)",
+      "license": "PostgreSQL"
+    },
+    "xml2": {
+      "description": "XPath querying and XSLT",
+      "long_description": "XPath querying and XSLT",
+      "license": "PostgreSQL"
+    }
+  }
+}

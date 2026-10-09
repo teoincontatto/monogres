@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/pjungwir/floatvec",
+    "description": "Postgres functions for arithmetic on numeric arrays",
+    "homepage": null,
+    "license": "MIT",
+    "topics": [],
+    "readme": {
+      "v1.1.1": "README.md"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/powa-team/pg_stat_kcache",
+    "description": "Gather statistics about physical disk access and CPU consumption done by backends.",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": [
+      "c",
+      "database",
+      "extension",
+      "optimization",
+      "performance",
+      "performance-analysis",
+      "postgresql",
+      "powa"
+    ],
+    "readme": {
+      "REL2_3_2": "README.rst"
+    }
+  }
+}

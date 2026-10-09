@@ -1,0 +1,20 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/pgpartman/pg_partman",
+    "description": "Partition management extension for PostgreSQL",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": [
+      "background-worker",
+      "partitioning",
+      "pg-partition-manager",
+      "plpgsql",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "readme": {
+      "v5.5.0": "README.md"
+    }
+  }
+}

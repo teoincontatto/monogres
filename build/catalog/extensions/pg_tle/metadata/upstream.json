@@ -1,0 +1,18 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/aws/pg_tle",
+    "description": "Framework for building trusted language extensions for PostgreSQL",
+    "homepage": null,
+    "license": "Apache-2.0",
+    "topics": [
+      "postgres",
+      "postgres-extension",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "readme": {
+      "v1.5.2": "README.md"
+    }
+  }
+}

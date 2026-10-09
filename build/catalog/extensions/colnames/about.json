@@ -1,0 +1,27 @@
+{
+  "description": "Lists the column names in a PostgreSQL RECORD value",
+  "long_description": "Lists the column names in a PostgreSQL RECORD value",
+  "homepage": "http://pgxn.org/extension/colnames",
+  "license": "PostgreSQL",
+  "maintainers": [
+    "Andrew Gierth <andrew@tao11.riddles.org.uk>",
+    "David E. Wheeler <david@justatheory.com>"
+  ],
+  "keywords": [
+    "column names",
+    "columns",
+    "colnames",
+    "record",
+    "row",
+    "composite"
+  ],
+  "repository": {
+    "url": "https://github.com/theory/colnames"
+  },
+  "versions": {
+    "1.7.1": {
+      "ref": "v1.7.1",
+      "readme": "https://raw.githubusercontent.com/theory/colnames/v1.7.1/README.md"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "description": "Kernel statistics gathering",
+  "long_description": "Gather statistics about physical disk access and CPU consumption done by backends.",
+  "homepage": "https://github.com/powa-team/pg_stat_kcache",
+  "license": "PostgreSQL",
+  "maintainers": ["Julien Rouhaud <rjuju123@gmail.com>"],
+  "keywords": [
+    "monitoring",
+    "CPU",
+    "disk",
+    "c",
+    "database",
+    "extension",
+    "optimization",
+    "performance",
+    "performance-analysis",
+    "postgresql",
+    "powa"
+  ],
+  "repository": {
+    "url": "https://github.com/powa-team/pg_stat_kcache"
+  },
+  "versions": {
+    "2.3.2": {
+      "ref": "REL2_3_2",
+      "readme": "https://raw.githubusercontent.com/powa-team/pg_stat_kcache/REL2_3_2/README.rst"
+    }
+  }
+}

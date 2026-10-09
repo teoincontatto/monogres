@@ -1,0 +1,17 @@
+{
+  "description": "Extension to get information about the database: size, owner, name,tablespces, ext,  obj count,etc",
+  "long_description": "Extension to get information about the database: size, owner, name,tablespces, ext,  obj count,etc",
+  "homepage": "http://anthonysotolongo.wordpress.com",
+  "license": "PostgreSQL",
+  "maintainers": ["<asotolongo@gmail.com>"],
+  "keywords": ["info"],
+  "repository": {
+    "url": "https://github.com/asotolongo/db_info"
+  },
+  "versions": {
+    "0.2.0": {
+      "ref": "v0.2.0",
+      "readme": "https://raw.githubusercontent.com/asotolongo/db_info/v0.2.0/README.md"
+    }
+  }
+}

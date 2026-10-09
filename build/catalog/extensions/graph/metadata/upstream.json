@@ -1,0 +1,26 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/Evokoa/pgGraph",
+    "description": "Open-source graph database superpowers for your existing Postgres data.",
+    "homepage": "https://www.polygres.com",
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-agents-framework",
+      "graph",
+      "graph-database",
+      "pgrx",
+      "postgres",
+      "postgresql-database",
+      "postgresql-extension",
+      "relationship-graph",
+      "rust",
+      "traversal"
+    ],
+    "readme": {
+      "v1.0.0": "README.md"
+    }
+  }
+}

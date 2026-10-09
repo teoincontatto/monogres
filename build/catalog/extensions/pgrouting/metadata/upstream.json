@@ -1,0 +1,20 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/pgRouting/pgrouting",
+    "description": "Repository contains pgRouting library. Development branch is \"develop\", stable branch is \"master\"",
+    "homepage": "https://pgrouting.org",
+    "license": "GPL-2.0",
+    "topics": [
+      "network-analysis",
+      "osgeo",
+      "postgis",
+      "postgresql-extension",
+      "routing",
+      "spatial-analysis"
+    ],
+    "readme": {
+      "v4.0.1": "README.md"
+    }
+  }
+}

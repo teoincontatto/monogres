@@ -1,0 +1,22 @@
+{
+  "description": "vchord: Vector database plugin for Postgres, written in Rust, specifically designed for LLM",
+  "long_description": "Scalable, fast, and disk-friendly vector search in Postgres, the successor of pgvecto.rs.",
+  "homepage": "https://docs.vectorchord.ai/vectorchord/getting-started/overview.html",
+  "license": "AGPL-3.0-only OR Elastic-2.0",
+  "keywords": [
+    "artificial-intelligence",
+    "llmops",
+    "postgresql",
+    "vector-database",
+    "vector-search"
+  ],
+  "repository": {
+    "url": "https://github.com/supervc-stack/VectorChord"
+  },
+  "versions": {
+    "1.1.1": {
+      "ref": "1.1.1",
+      "readme": "https://raw.githubusercontent.com/supervc-stack/VectorChord/1.1.1/README.md"
+    }
+  }
+}

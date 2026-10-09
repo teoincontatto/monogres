@@ -1,0 +1,30 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/vibhorkum/pg_background",
+    "description": "Production-grade PostgreSQL extension to execute arbitrary SQL in background worker processes — with async execution, autonomous transactions, cookie-protected handles, cancellation, progress reporting, and observability.",
+    "homepage": "https://github.com/vibhorkum/pg_background",
+    "license": "NOASSERTION",
+    "topics": [
+      "async",
+      "audit-logging",
+      "autonomous",
+      "autonomous-transactions",
+      "background-worker",
+      "c",
+      "database",
+      "etl",
+      "parallel-queries",
+      "pgextension",
+      "plpgsql",
+      "postgres",
+      "postgresql",
+      "postgresql-extension",
+      "sql",
+      "vacuum"
+    ],
+    "readme": {
+      "v2.0.3": "README.md"
+    }
+  }
+}

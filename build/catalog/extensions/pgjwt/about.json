@@ -1,0 +1,15 @@
+{
+  "description": "JSON Web Token API for Postgresql",
+  "long_description": "PostgreSQL implementation of JWT (JSON Web Tokens)",
+  "homepage": "https://github.com/michelp/pgjwt",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/michelp/pgjwt"
+  },
+  "versions": {
+    "0.2.0": {
+      "ref": "f3d82fd30151e754e19ce5d6a06c71c20689ce3d",
+      "readme": "https://raw.githubusercontent.com/michelp/pgjwt/f3d82fd30151e754e19ce5d6a06c71c20689ce3d/README.md"
+    }
+  }
+}

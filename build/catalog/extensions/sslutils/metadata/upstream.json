@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/EnterpriseDB/sslutils",
+    "description": "A Postgres extension for managing SSL certificates through SQL.",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [],
+    "readme": {
+      "v1.4": "README.sslutils"
+    }
+  }
+}

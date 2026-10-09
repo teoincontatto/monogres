@@ -1,0 +1,17 @@
+{
+  "description": "Track settings changes",
+  "long_description": "Small extension to keep track of postgresql settings modification",
+  "homepage": "https://github.com/rjuju/pg_track_settings",
+  "license": "PostgreSQL",
+  "maintainers": ["Julien Rouhaud <julien.rouhaud@dalibo.com>"],
+  "keywords": ["monitoring", "administration", "extension", "postgresql"],
+  "repository": {
+    "url": "https://github.com/rjuju/pg_track_settings"
+  },
+  "versions": {
+    "2.1.2": {
+      "ref": "2.1.2",
+      "readme": "https://raw.githubusercontent.com/rjuju/pg_track_settings/2.1.2/README.md"
+    }
+  }
+}

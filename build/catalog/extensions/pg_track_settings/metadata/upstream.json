@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/rjuju/pg_track_settings",
+    "description": "Small extension to keep track of postgresql settings modification",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": ["extension", "monitoring", "postgresql"],
+    "readme": {
+      "2.1.2": "README.md"
+    }
+  }
+}

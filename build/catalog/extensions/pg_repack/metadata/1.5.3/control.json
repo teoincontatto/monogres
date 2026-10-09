@@ -1,0 +1,8 @@
+{
+  "default_version": "REPACK_VERSION",
+  "comment": "Reorganize tables in PostgreSQL databases with minimal locks",
+  "module_pathname": "$libdir/pg_repack",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false
+}

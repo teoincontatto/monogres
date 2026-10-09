@@ -1,0 +1,21 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/HaloTech-Co-Ltd/openHalo",
+    "description": "openHalo provides the capability for PostgreSQL to work with applications written for MySQL but provides much more better performance than MySQL.",
+    "homepage": "https://www.openhalo.org",
+    "license": "GPL-3.0",
+    "topics": [
+      "database",
+      "dbms",
+      "mysql",
+      "openhalo",
+      "postgres",
+      "postgresql",
+      "sql"
+    ],
+    "readme": {
+      "v1.0-beta1": "README.md"
+    }
+  }
+}

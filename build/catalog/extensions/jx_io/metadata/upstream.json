@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/asotolongo/jx_io",
+    "description": "Extension to export and import json and xml from/to postgres",
+    "homepage": null,
+    "license": null,
+    "topics": [],
+    "readme": {
+      "v0.1.1": "README.md"
+    }
+  }
+}

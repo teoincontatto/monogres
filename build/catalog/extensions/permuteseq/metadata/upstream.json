@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/dverite/permuteseq",
+    "description": "PostgreSQL extension for scalable pseudo-random permutations of sequences",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [],
+    "readme": {
+      "v1.2.2": "README.md"
+    }
+  }
+}

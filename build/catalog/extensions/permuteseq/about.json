@@ -1,0 +1,17 @@
+{
+  "description": "Pseudo-randomly permute sequences with a format-preserving encryption on elements",
+  "long_description": "PostgreSQL extension for scalable pseudo-random permutations of sequences",
+  "homepage": "https://github.com/dverite/permuteseq",
+  "license": "PostgreSQL",
+  "maintainers": ["Daniel Vérité <daniel@manitou-mail.org>"],
+  "keywords": ["sequence", "feistel", "crypto"],
+  "repository": {
+    "url": "https://github.com/dverite/permuteseq"
+  },
+  "versions": {
+    "1.2.2": {
+      "ref": "v1.2.2",
+      "readme": "https://raw.githubusercontent.com/dverite/permuteseq/v1.2.2/README.md"
+    }
+  }
+}

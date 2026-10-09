@@ -15,6 +15,9 @@
   "versions": {
     "pin": ["18.0", "17.1", "16.1"]
   },
+  "about": {
+    "license": "PostgreSQL"
+  },
   "metadata": {
     "compatible_with": {
       "postgres": {

@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/theory/pg-semver",
+    "description": "A semantic version data type for PostgreSQL",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": [],
+    "readme": {
+      "v0.41.0": "README.md"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Get the server host name",
+  "long_description": "Function to get the PostgreSQL server host name",
+  "homepage": "https://github.com/theory/pg-hostname",
+  "license": "PostgreSQL",
+  "maintainers": ["David E. Wheeler <david@justatheory.com>"],
+  "keywords": ["hostname", "host", "gethostbyname"],
+  "repository": {
+    "url": "https://github.com/theory/pg-hostname"
+  },
+  "versions": {
+    "1.0.4": {
+      "ref": "v1.0.4",
+      "readme": "https://raw.githubusercontent.com/theory/pg-hostname/v1.0.4/README.md"
+    }
+  }
+}

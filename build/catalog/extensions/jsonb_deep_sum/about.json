@@ -1,0 +1,14 @@
+{
+  "description": "jsonb deep sum",
+  "long_description": "Sum over jsonb rows",
+  "homepage": "https://github.com/furstenheim/jsonb_deep_sum",
+  "license": "MIT",
+  "maintainers": ["Furstenheim <furstenheim@gmail.com>"],
+  "keywords": ["jsonb"],
+  "repository": {
+    "url": "https://github.com/furstenheim/jsonb_deep_sum"
+  },
+  "versions": {
+    "0.0.2": {}
+  }
+}

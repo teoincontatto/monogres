@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/eradman/pg-safeupdate",
+    "description": "A simple extension to PostgreSQL that requires criteria for UPDATE and DELETE",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": ["postgresql-extension"],
+    "readme": {
+      "1.7": "README.md"
+    }
+  }
+}

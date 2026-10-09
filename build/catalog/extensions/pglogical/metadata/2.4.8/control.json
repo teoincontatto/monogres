@@ -1,0 +1,10 @@
+{
+  "default_version": "__PGLOGICAL_VERSION__",
+  "comment": "PostgreSQL Logical Replication",
+  "module_pathname": "$libdir/pglogical",
+  "superuser": true,
+  "trusted": false,
+  "relocatable": false,
+  "schema": "pglogical",
+  "__REQUIRES__": ""
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Range type for inet",
+  "long_description": "Postgres extension to define ranges of IP addresses",
+  "homepage": "https://github.com/pjungwir/inetrange",
+  "license": "MIT",
+  "maintainers": ["Paul A. Jungwirth <pj@illuminatedcomputing.com>"],
+  "keywords": ["range", "inet", "ip", "networking"],
+  "repository": {
+    "url": "https://github.com/pjungwir/inetrange"
+  },
+  "versions": {
+    "1.0.2": {
+      "ref": "9d62352afda4b84be01d2fb3375805a04a64995f",
+      "readme": "https://raw.githubusercontent.com/pjungwir/inetrange/9d62352afda4b84be01d2fb3375805a04a64995f/README.md"
+    }
+  }
+}

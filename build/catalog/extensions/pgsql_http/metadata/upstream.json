@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/pramsey/pgsql-http",
+    "description": "HTTP client for PostgreSQL, retrieve a web page from inside the database.",
+    "homepage": null,
+    "license": "MIT",
+    "topics": [],
+    "readme": {
+      "v1.7.2": "README.md"
+    }
+  }
+}

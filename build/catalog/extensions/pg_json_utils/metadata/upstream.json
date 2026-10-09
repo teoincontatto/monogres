@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/asotolongo/pg_json_utils",
+    "description": null,
+    "homepage": null,
+    "license": null,
+    "topics": [],
+    "readme": {
+      "v0.1.1": "README.md"
+    }
+  }
+}

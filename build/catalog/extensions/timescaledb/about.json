@@ -1,0 +1,30 @@
+{
+  "description": "Enables scalable inserts and complex queries for time-series data",
+  "long_description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension",
+  "homepage": "https://www.tigerdata.com/",
+  "license": "Apache-2.0 AND LicenseRef-Timescale",
+  "keywords": [
+    "analytics",
+    "database",
+    "financial-analysis",
+    "historian",
+    "iot",
+    "postgres",
+    "postgresql",
+    "sql",
+    "tigerdata",
+    "time-series",
+    "time-series-database",
+    "timescaledb",
+    "tsdb"
+  ],
+  "repository": {
+    "url": "https://github.com/timescale/timescaledb"
+  },
+  "versions": {
+    "2.28.3": {
+      "ref": "2.28.3",
+      "readme": "https://raw.githubusercontent.com/timescale/timescaledb/2.28.3/README.md"
+    }
+  }
+}

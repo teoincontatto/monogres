@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/intgr/pg_financial",
+    "description": "PostgreSQL extension with functions and aggregates for financial calculations",
+    "homepage": null,
+    "license": "PostgreSQL",
+    "topics": [],
+    "readme": {
+      "v1.0.1": "README.md"
+    }
+  }
+}

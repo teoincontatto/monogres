@@ -14,6 +14,11 @@
       "3.5.7"
     ]
   },
+  "about": {
+    "repository": {
+      "ref": "{version}"
+    }
+  },
   "metadata": {
     "patches": [
       {

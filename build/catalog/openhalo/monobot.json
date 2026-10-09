@@ -1,6 +1,7 @@
 {
   "version": 1,
   "name": "openhalo",
+  "type": "postgres",
   "url": "https://github.com/HaloTech-Co-Ltd/openHalo",
   "sources": {
     "gh": {

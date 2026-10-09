@@ -1,0 +1,16 @@
+{
+  "description": "A simple extension to PostgreSQL that requires criteria for UPDATE and DELETE",
+  "long_description": "A simple extension to PostgreSQL that requires criteria for UPDATE and DELETE",
+  "homepage": "https://github.com/eradman/pg-safeupdate",
+  "license": "ISC",
+  "keywords": ["postgresql-extension"],
+  "repository": {
+    "url": "https://github.com/eradman/pg-safeupdate"
+  },
+  "versions": {
+    "1.7.0": {
+      "ref": "1.7",
+      "readme": "https://raw.githubusercontent.com/eradman/pg-safeupdate/1.7/README.md"
+    }
+  }
+}

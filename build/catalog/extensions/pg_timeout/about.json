@@ -1,0 +1,24 @@
+{
+  "description": "pg_timeout extension",
+  "long_description": "PostgreSQL extension to manage idle session timeout",
+  "homepage": "https://github.com/pierreforstmann",
+  "license": "PostgreSQL",
+  "maintainers": ["Pierre Forstmann"],
+  "keywords": [
+    "timeout",
+    "idle",
+    "session",
+    "c",
+    "postgresql",
+    "postgresql-extension"
+  ],
+  "repository": {
+    "url": "https://github.com/pierreforstmann/pg_timeout"
+  },
+  "versions": {
+    "1.0.0": {
+      "ref": "1.0.0",
+      "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_timeout/1.0.0/README.md"
+    }
+  }
+}

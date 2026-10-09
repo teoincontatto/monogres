@@ -1,0 +1,14 @@
+{
+  "description": "track plan statistics of all SQL statements executed",
+  "long_description": "Store execution plans like pg_stat_statements does for queries.",
+  "homepage": "http://ossc-db.github.io/pg_store_plans/",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "url": "https://github.com/ossc-db/pg_store_plans"
+  },
+  "versions": {
+    "1.10.0": {
+      "ref": "1.10"
+    }
+  }
+}

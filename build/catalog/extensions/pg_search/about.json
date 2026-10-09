@@ -1,0 +1,37 @@
+{
+  "description": "pg_search: Full text search for PostgreSQL using BM25",
+  "long_description": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
+  "homepage": "https://paradedb.com",
+  "license": "AGPL-3.0",
+  "keywords": [
+    "aggregations",
+    "analytics",
+    "bm25",
+    "columnar-storage",
+    "distributed-search",
+    "full-text-search",
+    "htap",
+    "hybrid-search",
+    "mpp",
+    "olap",
+    "postgresql",
+    "postgresql-extension",
+    "real-time-analytics",
+    "rust",
+    "search-engine",
+    "semantic-search",
+    "similarity-search",
+    "sparse-vector",
+    "vector-database",
+    "vector-search"
+  ],
+  "repository": {
+    "url": "https://github.com/paradedb/paradedb"
+  },
+  "versions": {
+    "0.24.3": {
+      "ref": "v0.24.3",
+      "readme": "https://raw.githubusercontent.com/paradedb/paradedb/v0.24.3/README.md"
+    }
+  }
+}

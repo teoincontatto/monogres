@@ -1,0 +1,21 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/michelp/pgsodium",
+    "description": "Modern cryptography for PostgreSQL using libsodium.",
+    "homepage": null,
+    "license": "NOASSERTION",
+    "topics": [
+      "cryptography",
+      "decryption",
+      "encryption",
+      "library",
+      "libsodium",
+      "postgresql",
+      "sql"
+    ],
+    "readme": {
+      "v3.1.9": "README.md"
+    }
+  }
+}

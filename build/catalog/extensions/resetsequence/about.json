@@ -1,0 +1,23 @@
+{
+  "description": "functions to reset sequences to values contained in tables",
+  "long_description": "The module implements a bunch of utility functions that reset sequences to the values that are actually used in table columns linked to them.",
+  "homepage": "https://pgxn.org/dist/resetsequence",
+  "license": "PostgreSQL",
+  "maintainers": ["Álvaro Herrera <alvherre@commandprompt.com>"],
+  "keywords": [
+    "reset",
+    "sequences",
+    "function",
+    "functions",
+    "utility",
+    "maintenance",
+    "administration",
+    "resetsequence"
+  ],
+  "repository": {
+    "url": "https://pgxn.org/dist/resetsequence"
+  },
+  "versions": {
+    "1.0.0": {}
+  }
+}

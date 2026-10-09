@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/darold/pgtt",
+    "description": "PostgreSQL extension to create, manage and use Oracle-style Global Temporary Tables and the others RDBMS",
+    "homepage": null,
+    "license": "ISC",
+    "topics": [],
+    "readme": {
+      "v4.6": "README.md"
+    }
+  }
+}

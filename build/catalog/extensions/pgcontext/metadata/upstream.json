@@ -1,0 +1,13 @@
+{
+  "forge": {
+    "kind": "github",
+    "url": "https://github.com/Evokoa/pgContext",
+    "description": "A full AI search engine, built into Postgres.",
+    "homepage": null,
+    "license": "Apache-2.0",
+    "topics": [],
+    "readme": {
+      "v0.2.0": "README.md"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Extension to generate short, textual, unique id strings",
+  "long_description": "Function to be used as default value, generating random, textual, id",
+  "homepage": "https://pgxn.org/dist/short_ids",
+  "license": "PostgreSQL",
+  "maintainers": ["<depesz@depesz.com>"],
+  "keywords": ["default", "random"],
+  "repository": {
+    "url": "https://pgxn.org/dist/short_ids"
+  },
+  "versions": {
+    "0.1.0": {}
+  }
+}
