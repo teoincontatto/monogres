@@ -1,6 +1,8 @@
 package dev.monogres.monobot.config.input;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.MissingNode;
 import dev.monogres.monobot.config.Metadata;
 import dev.monogres.monobot.config.output.Sources;
 import io.quarkus.runtime.annotations.RegisterForReflection;
@@ -23,6 +25,10 @@ import java.util.Optional;
 /// a `versions.discover` block. postgis has both and they disagree on purpose: its tags are on
 /// GitHub and its tarballs are not.
 ///
+/// `about` overrides what [dev.monogres.monobot.about.AboutResolver] would otherwise derive for
+/// `about.json`, field by field, for the entries whose upstream says nothing or says it wrong. It
+/// is the one place a description or a licence is written by hand.
+///
 /// The two required fields are checked here because nothing else would. There is no nullability
 /// module and no bean validation extension on the classpath, so an annotation saying so is a
 /// comment, and a config missing `sources` reaches the materializer as a null with nothing in it
@@ -36,6 +42,7 @@ public record MonobotConfig(
     Sources sources,
     @JsonProperty(value = "versions") VersionsSpec versionsSpec,
     Metadata metadata,
+    JsonNode about,
     boolean disabled) {
   public MonobotConfig {
     // Enforce default values that are enums
@@ -50,6 +57,9 @@ public record MonobotConfig(
     }
     if (metadata == null) {
       metadata = new Metadata();
+    }
+    if (about == null || about.isNull()) {
+      about = MissingNode.getInstance();
     }
 
     if (sources == null || sources.isEmpty()) {

@@ -57,8 +57,8 @@ a cold `fetch` is gigabytes and the rest are not.
 
 ### Runtime Properties
 
-Monobot reads nine properties, two of them required, provided as environment
-variables or command line properties (`-D...`). The seven that are optional
+Monobot reads thirteen properties, two of them required, provided as environment
+variables or command line properties (`-D...`). The eleven that are optional
 have defaults in `src/main/resources/application.properties`:
 
 | Property | Required | Description |
@@ -72,6 +72,10 @@ have defaults in `src/main/resources/application.properties`:
 | `runTimeout` | no | How long the whole scan may take, as an ISO8601 duration. Defaults to `PT1H`. Reaching it exits non-zero. |
 | `verifyCache` | no | How much of a cached archive is checked before a run answers from it: `size` compares its length against the length recorded for it, `digest` compares its digest, `none` takes the record at its word. Defaults to `size`. |
 | `refreshCache` | no | Whether to ask the source about archives the cache can already answer for. The request carries the recorded validators, so an unchanged archive costs a 304. Defaults to `false`. |
+| `scrapeUpstream` | no | Whether `generate` may ask an entry's forge about it for `about.json` (see [What the entry is](#what-the-entry-is)). `check` never asks. Defaults to `true`, and to `false` under the tests. |
+| `refreshUpstream` | no | Whether to ask the forge again about entries `metadata/upstream.json` already answers for, which is how a changed description reaches the catalog. Defaults to `false`. |
+| `githubToken` | no | A GitHub token for the API, which allows 60 anonymous requests an hour. `GITHUB_TOKEN` is read too, so `GITHUB_TOKEN=$(gh auth token)` is enough. |
+| `gitlabToken` | no | A GitLab token, read from `GITLAB_TOKEN` too. gitlab.com answers anonymous callers generously, so this is rarely needed. |
 
 ### Exit status and the run summary
 
@@ -143,6 +147,14 @@ Fields:
 - `metadata` (optional) -- Carried into `repo.json` as it stands, in the order
   written. Whatever the monogres build reads there is somebody else's schema and
   monobot does not model it.
+- `type` (optional) -- `extension` (the default), `postgres` for a flavor, or
+  `addon` for software shipped beside Postgres. It decides what an archive is
+  read for: an extension's for its own control file and META.json, a flavor's
+  for the control files of every contrib module and procedural language in its
+  tree, an addon's for nothing but its digest.
+- `about` (optional) -- Overrides for `about.json`, field by field, for whatever
+  the entry's upstream does not say or says wrong. See
+  [What the entry is](#what-the-entry-is).
 - `disabled` (optional) -- When `true`, the entry is left alone: no tags listed,
   no archives downloaded, and the `repo.json` a previous run wrote stays as it
   is.
@@ -329,6 +341,12 @@ booleans Postgres defaults emitted whether or not the file names them, and any
 directive monobot does not model carried through beside the ones it does.
 `META.json` is verbatim. The cache keeps both as the archive spelled them.
 
+An extension whose build writes its control file ships a `{name}.control.in`
+instead, and that is read when the archive carries no finished one. A flavor
+(`"type": "postgres"`) has no control file of its own; what its archive answers
+for is the control file of every extension it builds with itself, under
+`contrib/` and `src/pl/`, collected by name into `metadata/<version>/contrib.json`.
+
 Both archive shapes are read: a gzipped tar, which is what a forge serves for a
 tag, and a zip, which is what PGXN serves for a distribution. Which one an
 archive is comes from its first bytes and not from its name, so a source is free
@@ -343,6 +361,47 @@ a PGXN zip needs nothing said about it:
     "url": "https://api.pgxn.org/dist/{name}/{version}/{name}-{version}.zip"
   }
 }
+```
+
+### What the entry is
+
+`about.json`, beside `repo.json`, describes the entry for a reader rather than
+for the build: a short and a long description, the homepage, the licence as an
+SPDX expression, maintainers, keywords, the repository, and per version the ref
+the archive was cut from and a raw link to the README at that ref.
+
+```json
+{
+  "description": "vector data type and ivfflat and hnsw access methods",
+  "long_description": "Open-source vector similarity search for Postgres",
+  "homepage": "https://github.com/pgvector/pgvector",
+  "license": "PostgreSQL",
+  "repository": {"url": "https://github.com/pgvector/pgvector"},
+  "versions": {
+    "0.8.2": {
+      "ref": "v0.8.2",
+      "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md"
+    }
+  }
+}
+```
+
+It is derived, field by field, from the first source that says something:
+the `about` override in `monobot.json`, the newest version's `control.json`
+(whose `comment` is the short description) and `META.json`, and what the
+entry's forge says about its repository. The forge is GitHub or gitlab.com,
+read off `url`; its answer is kept in `metadata/upstream.json`, which is
+committed, so the inputs are reviewable and `check` derives the same document
+offline. `generate` asks only for what that snapshot does not answer yet (an
+entry with none, a ref whose README has not been looked for), and asks again
+for everything under `refreshUpstream=true`. A flavor's document also carries
+a `contrib` block describing the extensions in its tree.
+
+The ref is the `tag` or `commit` the source materializes to. An entry whose
+archives do not come from its repository names it with a template instead:
+
+```json
+"about": { "repository": { "ref": "{version}" } }
 ```
 
 ## Running

@@ -218,4 +218,81 @@ class ArchiveMetadataExtractorTest {
     assertEquals("the real one", commentIn(archive(oneOrder)));
     assertEquals("the real one", commentIn(archive(otherOrder)));
   }
+
+  private static final String TEMPLATE_CONTROL =
+      "default_version = '@VERSION@'\ncomment = 'the template'\n";
+
+  /// An extension whose build writes its control file ships only the template, and its comment is
+  /// as good as the finished file's.
+  @Test
+  void controlTemplateAnswersWhenThereIsNoControl() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("fixture-aa1/fixture.control.in", TEMPLATE_CONTROL);
+
+    assertEquals("the template", commentIn(archive(entries)));
+  }
+
+  /// The finished file wins over the template wherever either sits, since only one of them has a
+  /// version in it.
+  @Test
+  void controlWinsOverItsTemplate() throws Exception {
+    var templateFirst = new LinkedHashMap<String, String>();
+    templateFirst.put("fixture-aa1/fixture.control.in", TEMPLATE_CONTROL);
+    templateFirst.put("fixture-aa1/sql/fixture.control", ROOT_CONTROL);
+
+    var controlFirst = new LinkedHashMap<String, String>();
+    controlFirst.put("fixture-aa1/sql/fixture.control", ROOT_CONTROL);
+    controlFirst.put("fixture-aa1/fixture.control.in", TEMPLATE_CONTROL);
+
+    assertEquals("the real one", commentIn(archive(templateFirst)));
+    assertEquals("the real one", commentIn(archive(controlFirst)));
+  }
+
+  /// A flavor has no one control file to look for; what it carries is a control file per contrib
+  /// module and per procedural language, and those are what describe the extensions the flavor
+  /// builds with itself. The test modules are not extensions anyone installs.
+  @Test
+  void flavorCarriesItsContribAndLanguages() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("postgres-REL_18_6/contrib/hstore/hstore.control", "comment = 'hstore'\n");
+    entries.put("postgres-REL_18_6/contrib/spi/refint.control", "comment = 'refint'\n");
+    entries.put("postgres-REL_18_6/src/pl/plpgsql/src/plpgsql.control", "comment = 'plpgsql'\n");
+    entries.put("postgres-REL_18_6/src/pl/plperl/plperl.control", "comment = 'plperl'\n");
+    entries.put("postgres-REL_18_6/src/test/modules/x/x.control", "comment = 'test'\n");
+
+    var contents = extractor.read(null, archive(entries), true);
+
+    assertEquals(
+        java.util.List.of("hstore", "plperl", "plpgsql", "refint"),
+        java.util.List.copyOf(contents.contrib().keySet()));
+    assertEquals(
+        "plpgsql", extractor.controlOf(contents.contrib().get("plpgsql")).get("comment").asText());
+    assertEquals(null, contents.control(), "a flavor was given a control file of its own");
+  }
+
+  /// An extension is asked for its own control file and nothing else, contrib-looking paths and
+  /// all. Only a flavor's archive is read for its contrib.
+  @Test
+  void extensionCarriesNoContrib() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("fixture-aa1/fixture.control", ROOT_CONTROL);
+    entries.put("fixture-aa1/contrib/other/other.control", NESTED_CONTROL);
+
+    assertTrue(extractor.read("fixture", archive(entries)).contrib().isEmpty());
+  }
+
+  /// Whether an archive is read for its contrib is decided by what the entry is, not by what the
+  /// archive happens to hold: a flavor's tree read as anything else answers for none of it.
+  @Test
+  void contribIsCollectedOnlyWhenAskedFor() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("postgres-REL_18_6/contrib/hstore/hstore.control", "comment = 'hstore'\n");
+
+    assertTrue(extractor.read("postgres", archive(entries), false).contrib().isEmpty());
+    assertTrue(extractor.read("postgres", archive(entries)).contrib().isEmpty());
+    assertEquals(
+        java.util.List.of("hstore"),
+        java.util.List.copyOf(
+            extractor.read("postgres", archive(entries), true).contrib().keySet()));
+  }
 }

@@ -16,6 +16,9 @@ import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.regex.Pattern;
 import java.util.zip.ZipInputStream;
 import org.apache.commons.compress.archivers.ArchiveEntry;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
@@ -30,6 +33,16 @@ public class ArchiveMetadataExtractor {
 
   public static final String PGXN_META_JSON_FILENAME = "META.json";
   public static final String POSTGRES_CONTROL_FILE_EXTENSION = ".control";
+  // What an extension whose build writes its control file ships instead: the same directives with
+  // the version left as a placeholder for the build to fill in. Read only when the archive carries
+  // no finished one, since the placeholder is not a version.
+  public static final String POSTGRES_CONTROL_TEMPLATE_EXTENSION = ".control.in";
+
+  // Where a flavor keeps the extensions it builds with itself: one directory per contrib module,
+  // and the procedural languages under src/pl (plpgsql one level further down, in src/). The first
+  // component is whatever the archive unpacks into.
+  private static final Pattern CONTRIB_CONTROL =
+      Pattern.compile("^[^/]+/(?:contrib/[^/]+|src/pl/[^/]+(?:/src)?)/([^/]+)\\.control$");
 
   // What one entry is allowed to be. Generous, because the cost of being wrong is asymmetric: an
   // entry over the bound is read past rather than parsed, so a bound set too low quietly leaves a
@@ -132,7 +145,11 @@ public class ArchiveMetadataExtractor {
   /// what a forge writes into the archive it serves and the only date available without asking the
   /// forge a second question: the tag listing carries commit ids and nothing else. An archive with
   /// no entries reports [Instant#MIN], which no cutoff accepts.
-  public record ArchiveContents(Instant lastModified, byte[] metaJson, byte[] control) {}
+  ///
+  /// `contrib` is a flavor's own extensions, by name, and is empty for anything but a flavor: an
+  /// extension's archive is asked for one control file by name, not for every one it carries.
+  public record ArchiveContents(
+      Instant lastModified, byte[] metaJson, byte[] control, SortedMap<String, byte[]> contrib) {}
 
   /// Opening the archive is its own method so a test can count how often one is read. Gunzipping
   /// and walking a whole tarball is the most expensive thing this program does per version, and it
@@ -235,9 +252,18 @@ public class ArchiveMetadataExtractor {
         : chosen;
   }
 
+  /// An extension's archive, read for its own control file. See [#read(String, Path, boolean)].
   public ArchiveContents read(String name, Path archivePath) {
+    return read(name, archivePath, false);
+  }
+
+  /// One archive, read for the control file named `name`, its META.json, and with `contrib` the
+  /// control files of every extension a Postgres flavor builds with itself.
+  public ArchiveContents read(String name, Path archivePath, boolean contrib) {
     Chosen metaJson = null;
     Chosen control = null;
+    Chosen controlTemplate = null;
+    var contribControls = new TreeMap<String, byte[]>();
     var lastModified = Instant.MIN;
 
     try (var raw = open(archivePath);
@@ -269,24 +295,39 @@ public class ArchiveMetadataExtractor {
         if (PGXN_META_JSON_FILENAME.equals(fileName)) {
           metaJson =
               choose(
-                  metaJson,
-                  entry,
-                  extractFromArchive(walk, entry, MAX_SIZE_BYTES_PGXN_META_JSON));
+                  metaJson, entry, extractFromArchive(walk, entry, MAX_SIZE_BYTES_PGXN_META_JSON));
         } else if (name != null && fileName.equals(name + POSTGRES_CONTROL_FILE_EXTENSION)) {
           control =
               choose(
-                  control,
+                  control, entry, extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
+        } else if (name != null && fileName.equals(name + POSTGRES_CONTROL_TEMPLATE_EXTENSION)) {
+          controlTemplate =
+              choose(
+                  controlTemplate,
                   entry,
                   extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
+        } else if (contrib) {
+          var matcher = CONTRIB_CONTROL.matcher(entry.getName());
+          if (matcher.matches()) {
+            var bytes = extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL);
+            if (bytes != null) {
+              contribControls.put(matcher.group(1), bytes);
+            }
+          }
         }
       }
     } catch (IOException e) {
       throw new RuntimeException("Error while reading " + archivePath, e);
     }
 
+    if (control == null) {
+      control = controlTemplate;
+    }
+
     return new ArchiveContents(
         lastModified,
         metaJson == null ? null : metaJson.bytes(),
-        control == null ? null : control.bytes());
+        control == null ? null : control.bytes(),
+        contribControls);
   }
 }

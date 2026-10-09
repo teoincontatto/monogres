@@ -1,8 +1,11 @@
 package dev.monogres.monobot.fetch;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import dev.monogres.monobot.about.AboutCatalog;
+import dev.monogres.monobot.about.UpstreamClient.UpstreamException;
 import dev.monogres.monobot.catalog.SourceTemplate;
 import dev.monogres.monobot.config.Mode;
+import dev.monogres.monobot.config.input.ComponentType;
 import dev.monogres.monobot.config.input.MonobotConfig;
 import dev.monogres.monobot.config.input.MonobotConfigFile;
 import dev.monogres.monobot.config.output.RepoConfig;
@@ -65,6 +68,8 @@ public class Fetch {
 
   @Inject RunSummary summary;
 
+  @Inject AboutCatalog aboutCatalog;
+
   /// One version to catalogue, before anything has been asked of the network: the key, whatever
   /// its source templates owe it, and the archive that pair materializes to.
   private record Candidate(Version version, SequencedMap<String, String> context, URL url) {}
@@ -76,9 +81,9 @@ public class Fetch {
   /// in the log would exit 0 alongside a catalog that is missing a version, or holding one whose
   /// archive is not the archive it was written from, or committed as something other than what the
   /// inputs now say.
-  private record Unanswered(int refused, int disagreed, int differed) {
+  private record Unanswered(int refused, int disagreed, int differed, int unasked) {
     boolean isEmpty() {
-      return refused == 0 && disagreed == 0 && differed == 0;
+      return refused == 0 && disagreed == 0 && differed == 0 && unasked == 0;
     }
 
     String describe() {
@@ -92,6 +97,9 @@ public class Fetch {
       }
       if (differed > 0) {
         reasons.add(differed + " documents differ from what is committed");
+      }
+      if (unasked > 0) {
+        reasons.add("its upstream could not be asked about it");
       }
 
       return String.join(", ", reasons);
@@ -371,7 +379,17 @@ public class Fetch {
     if (contents.metaJson() != null) {
       emit(into, "META.json", archiveMetadataExtractor.metaJsonOf(contents.metaJson()), differed);
     }
-    if (contents.control() == null && monobotConfig.controlStem().isPresent()) {
+    if (!contents.contrib().isEmpty()) {
+      var contrib = objectMapper.createObjectNode();
+      contents
+          .contrib()
+          .forEach(
+              (name, control) -> contrib.set(name, archiveMetadataExtractor.controlOf(control)));
+      emit(into, "contrib.json", contrib, differed);
+    }
+    if (contents.control() == null
+        && monobotConfig.componentType() == ComponentType.EXTENSION
+        && monobotConfig.controlStem().isPresent()) {
       LOG.warnv(
           "[{0}]: {1} carries no {0}.control, so nothing is written for it",
           monobotConfig.label(), version);
@@ -432,6 +450,7 @@ public class Fetch {
     var refused = new AtomicInteger();
     var disagreed = new AtomicInteger();
     var differed = new AtomicInteger();
+    var unasked = new AtomicInteger();
 
     return candidates(monobotConfig, template, List.copyOf(stored.keySet()))
         .compose(candidates -> download(monobotConfig, relPath, candidates, refused))
@@ -454,7 +473,11 @@ public class Fetch {
                           // what the catalog records. Gunzipping and walking a whole tarball is the
                           // most expensive thing this program does per version, and this block is
                           // ordered, so every one of them serialises behind the last.
-                          var contents = archiveMetadataExtractor.read(stem, result.archivePath());
+                          var contents =
+                              archiveMetadataExtractor.read(
+                                  stem,
+                                  result.archivePath(),
+                                  monobotConfig.componentType() == ComponentType.POSTGRES);
                           archiveCache.storeExtracted(
                               result.archivePath().getParent(), stem, contents);
 
@@ -483,10 +506,13 @@ public class Fetch {
                       }
 
                       if (mode.catalogues()) {
-                        emitRepoConfig(monobotConfig, versions, stored, entryDir, differed);
+                        var merged =
+                            emitRepoConfig(monobotConfig, versions, stored, entryDir, differed);
+                        emitAbout(monobotConfig, merged, entryDir, differed, unasked);
                       }
 
-                      return new Unanswered(refused.get(), disagreed.get(), differed.get());
+                      return new Unanswered(
+                          refused.get(), disagreed.get(), differed.get(), unasked.get());
                     }))
         // Reported after the catalogue has been written rather than instead of writing it: the
         // versions that came through are as good as they would have been on their own, and the
@@ -509,7 +535,7 @@ public class Fetch {
   /// A version whose archive was not downloaded this run keeps the digest already stored for it,
   /// so a forge that refuses one archive does not cost the catalog every other version in the
   /// entry.
-  private void emitRepoConfig(
+  private Versions emitRepoConfig(
       MonobotConfig monobotConfig,
       Versions versions,
       Versions stored,
@@ -543,7 +569,7 @@ public class Fetch {
       LOG.warnv(
           "[{0}]: no version was catalogued, so no repo.json is written", monobotConfig.label());
 
-      return;
+      return merged;
     }
 
     emit(
@@ -552,6 +578,39 @@ public class Fetch {
         new RepoConfig(monobotConfig.sources(), merged, monobotConfig.metadata()),
         differed);
     summary.documentWritten();
+
+    return merged;
+  }
+
+  /// `about.json`: what the entry is, for a reader rather than for the build. Written over every
+  /// version the catalog holds rather than the ones this run reached, since it describes the entry
+  /// and names a ref per version. See [AboutCatalog].
+  ///
+  /// An upstream that cannot be asked fails the entry, the way a refused archive does, and leaves
+  /// the committed `about.json` as it was: a rate limit is not the forge saying the project has no
+  /// description.
+  private void emitAbout(
+      MonobotConfig monobotConfig,
+      Versions merged,
+      Path entryDir,
+      AtomicInteger differed,
+      AtomicInteger unasked) {
+    if (merged.isEmpty()) {
+      return;
+    }
+
+    try {
+      aboutCatalog
+          .about(monobotConfig, entryDir, merged)
+          .ifPresent(
+              about -> {
+                emit(entryDir, AboutCatalog.filename(), about, differed);
+                summary.documentWritten();
+              });
+    } catch (UpstreamException e) {
+      unasked.incrementAndGet();
+      LOG.errorv(e, "[{0}]: its upstream could not be asked about it", monobotConfig.label());
+    }
   }
 
   private RepoConfig readOrCreateRepoConfig(File repoConfigFile) {
