@@ -68,35 +68,40 @@
         "description": "Transact SQL Datatype Support",
         "license": "Apache-2.0",
         "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+          "index": "ext.json"
         }
       },
       "babelfishpg_money": {
         "description": "Money data types for Babelfish",
         "license": "Apache-2.0",
         "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+          "index": "ext.json"
         }
       },
       "babelfishpg_tds": {
         "description": "TDS protocol extension",
         "license": "Apache-2.0",
         "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+          "index": "ext.json"
         }
       },
       "babelfishpg_tsql": {
         "description": "Transact SQL compatibility",
         "license": "Apache-2.0",
         "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+          "index": "ext.json"
         }
       },
       "babelfishpg_unit": {
         "description": "Unit testing framework for babelfish",
         "license": "Apache-2.0",
         "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+          "index": "ext.json"
         }
       }
     }

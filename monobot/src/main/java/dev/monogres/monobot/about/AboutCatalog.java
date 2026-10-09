@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import dev.monogres.monobot.catalog.SourceTemplate;
 import dev.monogres.monobot.config.Mode;
 import dev.monogres.monobot.config.input.MonobotConfig;
+import dev.monogres.monobot.config.output.RepoConfig;
 import dev.monogres.monobot.config.output.Version;
 import dev.monogres.monobot.config.output.Versions;
 import dev.monogres.monobot.json.DocumentWriter;
@@ -87,7 +88,8 @@ public class AboutCatalog {
                 upstream,
                 monobotConfig.repoUrl() == null ? null : monobotConfig.repoUrl().toString(),
                 refs,
-                contrib));
+                contrib,
+                contribRefs(monobotConfig, entryDir, override)));
 
     if (!about.has("description") && !about.has("repository")) {
       return Optional.empty();
@@ -125,6 +127,51 @@ public class AboutCatalog {
         });
 
     return refs;
+  }
+
+  /// The refs of the contrib extensions a flavor builds out of a repository of its own, by flavor
+  /// version. The override names that repository's download index beside the entry
+  /// (`"repository": {"url": ..., "index": "ext.json"}`), which is what the build fetches those
+  /// sources from, so the ref each flavor version builds is read rather than written twice.
+  private Map<String, SequencedMap<String, String>> contribRefs(
+      MonobotConfig monobotConfig, Path entryDir, JsonNode override) {
+    var contribRefs = new TreeMap<String, SequencedMap<String, String>>();
+
+    override
+        .path("contrib")
+        .fields()
+        .forEachRemaining(
+            field -> {
+              var index = field.getValue().path("repository").path("index");
+              if (!index.isTextual()) {
+                return;
+              }
+              RepoConfig repoConfig;
+              try {
+                repoConfig =
+                    objectMapper.readValue(
+                        entryDir.resolve(index.asText()).toFile(), RepoConfig.class);
+              } catch (IOException e) {
+                throw new RuntimeException(
+                    "[" + monobotConfig.label() + "]: " + index.asText() + " cannot be read", e);
+              }
+              var template = repoConfig.getSources().templates().getFirst();
+              var refs = new LinkedHashMap<String, String>();
+              repoConfig
+                  .getVersions()
+                  .forEach(
+                      (version, context) -> {
+                        var materialized =
+                            template.materialize(version.version(), context.derived());
+                        var ref = materialized.getOrDefault("tag", materialized.get("commit"));
+                        if (ref != null) {
+                          refs.put(version.version(), ref);
+                        }
+                      });
+              contribRefs.put(field.getKey(), refs);
+            });
+
+    return contribRefs;
   }
 
   /// A flavor's contrib control files, every version of them, newest version last so that what a

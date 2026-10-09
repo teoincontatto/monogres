@@ -275,6 +275,38 @@ class AboutResolverTest {
         about);
   }
 
+  /// An extension a flavor builds out of a repository of its own (babelfish's from
+  /// babelfish_extensions) is tagged there, per flavor version, rather than at the flavor's ref.
+  @Test
+  void contribFromItsOwnRepositoryCarriesItsOwnRefs() {
+    var override =
+        """
+        {"contrib": {"babelfishpg_tsql": {"description": "T-SQL",
+          "repository": {"url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+                         "index": "ext.json"}}}}
+        """;
+    var refs = new LinkedHashMap<String, String>();
+    refs.put("5.4", "BABEL_5_4_0");
+    refs.put("4.8", "BABEL_4_8_0");
+
+    var about =
+        AboutResolver.resolve(
+            objectMapper,
+            new AboutResolver.Inputs(
+                json(override),
+                null,
+                null,
+                null,
+                REPO_URL,
+                null,
+                Map.of(),
+                Map.of("babelfishpg_tsql", refs)));
+
+    assertEquals(
+        json("{\"5.4\": {\"ref\": \"BABEL_5_4_0\"}, \"4.8\": {\"ref\": \"BABEL_4_8_0\"}}"),
+        about.path("contrib").path("babelfishpg_tsql").path("versions"));
+  }
+
   @Test
   void nothingInIsNothingOut() {
     var about =

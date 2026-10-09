@@ -53,7 +53,8 @@ public final class AboutResolver {
       JsonNode upstream,
       String repoUrl,
       SequencedMap<String, String> refs,
-      Map<String, JsonNode> contrib) {
+      Map<String, JsonNode> contrib,
+      Map<String, SequencedMap<String, String>> contribRefs) {
     public Inputs {
       override = orMissing(override);
       control = orMissing(control);
@@ -61,6 +62,19 @@ public final class AboutResolver {
       upstream = orMissing(upstream);
       refs = refs == null ? new LinkedHashMap<>() : refs;
       contrib = contrib == null ? Map.of() : contrib;
+      contribRefs = contribRefs == null ? Map.of() : contribRefs;
+    }
+
+    /// An entry with no contrib extension built from a repository of its own.
+    public Inputs(
+        JsonNode override,
+        JsonNode control,
+        JsonNode meta,
+        JsonNode upstream,
+        String repoUrl,
+        SequencedMap<String, String> refs,
+        Map<String, JsonNode> contrib) {
+      this(override, control, meta, upstream, repoUrl, refs, contrib, null);
     }
   }
 
@@ -194,6 +208,13 @@ public final class AboutResolver {
                 about
                     .putObject("repository")
                     .put("url", override.path("repository").path("url").asText());
+              }
+              // An extension built from a repository of its own names its ref there per flavor
+              // version; the flavor's refs point into the wrong tree.
+              var refs = inputs.contribRefs().get(name);
+              if (refs != null && !refs.isEmpty()) {
+                var versions = about.putObject("versions");
+                refs.forEach((version, ref) -> versions.putObject(version).put("ref", ref));
               }
 
               if (!about.isEmpty()) {

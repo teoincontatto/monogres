@@ -397,6 +397,12 @@ entry with none, a ref whose README has not been looked for), and asks again
 for everything under `refreshUpstream=true`. A flavor's document also carries
 a `contrib` block describing the extensions in its tree.
 
+A contrib extension the flavor builds out of a repository of its own names
+that repository in the flavor's `about.contrib.<name>.repository`, with the
+download index beside the entry its sources come from (babelfish's
+`"index": "ext.json"`): its per-version refs are read from that index rather
+than written a second time.
+
 The ref is the `tag` or `commit` the source materializes to. An entry whose
 archives do not come from its repository names it with a template instead:
 

@@ -81,6 +81,47 @@
       "license": "Apache-2.0",
       "repository": {
         "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+      },
+      "versions": {
+        "4.0": {
+          "ref": "BABEL_4_0_0"
+        },
+        "4.1": {
+          "ref": "BABEL_4_1_1"
+        },
+        "4.2": {
+          "ref": "BABEL_4_2_0"
+        },
+        "4.3": {
+          "ref": "BABEL_4_3_0"
+        },
+        "4.4": {
+          "ref": "BABEL_4_4_0"
+        },
+        "4.5": {
+          "ref": "BABEL_4_5_0"
+        },
+        "4.6": {
+          "ref": "BABEL_4_6_0"
+        },
+        "4.7": {
+          "ref": "BABEL_4_7_0"
+        },
+        "4.8": {
+          "ref": "BABEL_4_8_0"
+        },
+        "5.1": {
+          "ref": "BABEL_5_1_0"
+        },
+        "5.2": {
+          "ref": "BABEL_5_2_0"
+        },
+        "5.3": {
+          "ref": "BABEL_5_3_0"
+        },
+        "5.4": {
+          "ref": "BABEL_5_4_0"
+        }
       }
     },
     "babelfishpg_money": {
@@ -88,6 +129,47 @@
       "license": "Apache-2.0",
       "repository": {
         "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+      },
+      "versions": {
+        "4.0": {
+          "ref": "BABEL_4_0_0"
+        },
+        "4.1": {
+          "ref": "BABEL_4_1_1"
+        },
+        "4.2": {
+          "ref": "BABEL_4_2_0"
+        },
+        "4.3": {
+          "ref": "BABEL_4_3_0"
+        },
+        "4.4": {
+          "ref": "BABEL_4_4_0"
+        },
+        "4.5": {
+          "ref": "BABEL_4_5_0"
+        },
+        "4.6": {
+          "ref": "BABEL_4_6_0"
+        },
+        "4.7": {
+          "ref": "BABEL_4_7_0"
+        },
+        "4.8": {
+          "ref": "BABEL_4_8_0"
+        },
+        "5.1": {
+          "ref": "BABEL_5_1_0"
+        },
+        "5.2": {
+          "ref": "BABEL_5_2_0"
+        },
+        "5.3": {
+          "ref": "BABEL_5_3_0"
+        },
+        "5.4": {
+          "ref": "BABEL_5_4_0"
+        }
       }
     },
     "babelfishpg_tds": {
@@ -95,6 +177,47 @@
       "license": "Apache-2.0",
       "repository": {
         "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+      },
+      "versions": {
+        "4.0": {
+          "ref": "BABEL_4_0_0"
+        },
+        "4.1": {
+          "ref": "BABEL_4_1_1"
+        },
+        "4.2": {
+          "ref": "BABEL_4_2_0"
+        },
+        "4.3": {
+          "ref": "BABEL_4_3_0"
+        },
+        "4.4": {
+          "ref": "BABEL_4_4_0"
+        },
+        "4.5": {
+          "ref": "BABEL_4_5_0"
+        },
+        "4.6": {
+          "ref": "BABEL_4_6_0"
+        },
+        "4.7": {
+          "ref": "BABEL_4_7_0"
+        },
+        "4.8": {
+          "ref": "BABEL_4_8_0"
+        },
+        "5.1": {
+          "ref": "BABEL_5_1_0"
+        },
+        "5.2": {
+          "ref": "BABEL_5_2_0"
+        },
+        "5.3": {
+          "ref": "BABEL_5_3_0"
+        },
+        "5.4": {
+          "ref": "BABEL_5_4_0"
+        }
       }
     },
     "babelfishpg_tsql": {
@@ -102,6 +225,47 @@
       "license": "Apache-2.0",
       "repository": {
         "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+      },
+      "versions": {
+        "4.0": {
+          "ref": "BABEL_4_0_0"
+        },
+        "4.1": {
+          "ref": "BABEL_4_1_1"
+        },
+        "4.2": {
+          "ref": "BABEL_4_2_0"
+        },
+        "4.3": {
+          "ref": "BABEL_4_3_0"
+        },
+        "4.4": {
+          "ref": "BABEL_4_4_0"
+        },
+        "4.5": {
+          "ref": "BABEL_4_5_0"
+        },
+        "4.6": {
+          "ref": "BABEL_4_6_0"
+        },
+        "4.7": {
+          "ref": "BABEL_4_7_0"
+        },
+        "4.8": {
+          "ref": "BABEL_4_8_0"
+        },
+        "5.1": {
+          "ref": "BABEL_5_1_0"
+        },
+        "5.2": {
+          "ref": "BABEL_5_2_0"
+        },
+        "5.3": {
+          "ref": "BABEL_5_3_0"
+        },
+        "5.4": {
+          "ref": "BABEL_5_4_0"
+        }
       }
     },
     "babelfishpg_unit": {
@@ -109,6 +273,47 @@
       "license": "Apache-2.0",
       "repository": {
         "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
+      },
+      "versions": {
+        "4.0": {
+          "ref": "BABEL_4_0_0"
+        },
+        "4.1": {
+          "ref": "BABEL_4_1_1"
+        },
+        "4.2": {
+          "ref": "BABEL_4_2_0"
+        },
+        "4.3": {
+          "ref": "BABEL_4_3_0"
+        },
+        "4.4": {
+          "ref": "BABEL_4_4_0"
+        },
+        "4.5": {
+          "ref": "BABEL_4_5_0"
+        },
+        "4.6": {
+          "ref": "BABEL_4_6_0"
+        },
+        "4.7": {
+          "ref": "BABEL_4_7_0"
+        },
+        "4.8": {
+          "ref": "BABEL_4_8_0"
+        },
+        "5.1": {
+          "ref": "BABEL_5_1_0"
+        },
+        "5.2": {
+          "ref": "BABEL_5_2_0"
+        },
+        "5.3": {
+          "ref": "BABEL_5_3_0"
+        },
+        "5.4": {
+          "ref": "BABEL_5_4_0"
+        }
       }
     },
     "bloom": {
