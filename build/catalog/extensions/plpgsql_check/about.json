@@ -1,31 +1,30 @@
 {
-  "description": "extended check for plpgsql functions",
-  "long_description": "plpgsql_check is a linter tool (does source code static analyze) for the PostgreSQL language plpgsql (the native language for PostgreSQL store procedures).",
-  "homepage": "https://groups.google.com/forum/#!forum/postgresql-extensions-hacking",
-  "license": "BSD-3-Clause",
-  "maintainers": ["Pavel STEHULE <pavel.stehule@gmail.com>"],
-  "keywords": [
-    "plpgsql",
-    "analyzer",
-    "validate",
-    "development",
-    "profiler",
-    "c",
-    "extension",
-    "function-plpgsql",
-    "linter",
-    "pldbgapi",
-    "postgresql",
-    "postgresql-extension",
-    "stored-procedures"
-  ],
-  "repository": {
-    "url": "https://github.com/okbob/plpgsql_check"
-  },
-  "versions": {
-    "2.10.3": {
-      "ref": "v2.10.3",
-      "readme": "https://raw.githubusercontent.com/okbob/plpgsql_check/v2.10.3/README.md"
-    }
+  "latest": {
+    "version": "2.10.3",
+    "description": "extended check for plpgsql functions",
+    "long_description": "plpgsql_check is a linter tool (does source code static analyze) for the PostgreSQL language plpgsql (the native language for PostgreSQL store procedures).",
+    "homepage": "https://groups.google.com/forum/#!forum/postgresql-extensions-hacking",
+    "license": "BSD-3-Clause",
+    "maintainers": ["Pavel STEHULE <pavel.stehule@gmail.com>"],
+    "keywords": [
+      "plpgsql",
+      "analyzer",
+      "validate",
+      "development",
+      "profiler",
+      "c",
+      "extension",
+      "function-plpgsql",
+      "linter",
+      "pldbgapi",
+      "postgresql",
+      "postgresql-extension",
+      "stored-procedures"
+    ],
+    "repository": {
+      "url": "https://github.com/okbob/plpgsql_check"
+    },
+    "ref": "v2.10.3",
+    "readme": "https://raw.githubusercontent.com/okbob/plpgsql_check/v2.10.3/README.md"
   }
 }

@@ -20,7 +20,9 @@
     }
   },
   "about": {
-    "license": "PostgreSQL"
+    "latest": {
+      "license": "PostgreSQL"
+    }
   },
   "metadata": {
     "patches": [

@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgaudit/set_user",
-    "description": "PostgreSQL extension allowing privilege escalation with enhanced logging and control",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "REL4_2_0": "README.md"
+  "latest": {
+    "version": "4.2.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgaudit/set_user",
+      "description": "PostgreSQL extension allowing privilege escalation with enhanced logging and control",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

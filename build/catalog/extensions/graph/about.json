@@ -1,36 +1,35 @@
 {
-  "description": "graph: Sub-millisecond graph traversal for PostgreSQL",
-  "long_description": "Open-source graph database superpowers for your existing Postgres data.",
-  "homepage": "https://www.polygres.com",
-  "license": "Apache-2.0",
-  "maintainers": [
-    "Damien Lim <damien@evokoa.com>",
-    "Dalton Prescott <dalton@evokoa.com>",
-    "Evokoa Team <team@evokoa.com>"
-  ],
-  "keywords": [
-    "graph",
-    "postgresql",
-    "extension",
-    "rust",
-    "pgrx",
-    "ai",
-    "ai-agents",
-    "ai-agents-framework",
-    "graph-database",
-    "postgres",
-    "postgresql-database",
-    "postgresql-extension",
-    "relationship-graph",
-    "traversal"
-  ],
-  "repository": {
-    "url": "https://github.com/Evokoa/pgGraph"
-  },
-  "versions": {
-    "1.0.0": {
-      "ref": "v1.0.0",
-      "readme": "https://raw.githubusercontent.com/Evokoa/pgGraph/v1.0.0/README.md"
-    }
+  "latest": {
+    "version": "1.0.0",
+    "description": "graph: Sub-millisecond graph traversal for PostgreSQL",
+    "long_description": "Open-source graph database superpowers for your existing Postgres data.",
+    "homepage": "https://www.polygres.com",
+    "license": "Apache-2.0",
+    "maintainers": [
+      "Damien Lim <damien@evokoa.com>",
+      "Dalton Prescott <dalton@evokoa.com>",
+      "Evokoa Team <team@evokoa.com>"
+    ],
+    "keywords": [
+      "graph",
+      "postgresql",
+      "extension",
+      "rust",
+      "pgrx",
+      "ai",
+      "ai-agents",
+      "ai-agents-framework",
+      "graph-database",
+      "postgres",
+      "postgresql-database",
+      "postgresql-extension",
+      "relationship-graph",
+      "traversal"
+    ],
+    "repository": {
+      "url": "https://github.com/Evokoa/pgGraph"
+    },
+    "ref": "v1.0.0",
+    "readme": "https://raw.githubusercontent.com/Evokoa/pgGraph/v1.0.0/README.md"
   }
 }

@@ -1,27 +1,28 @@
 {
-  "description": "AGE database extension",
-  "long_description": "Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL.",
-  "homepage": "https://age.apache.org",
-  "license": "Apache-2.0",
-  "maintainers": ["users@age.apache.org"],
-  "keywords": [
-    "graphdb",
-    "graph-database",
-    "age-database",
-    "agensgraph",
-    "analytics",
-    "multi-model-dbms",
-    "postgresql",
-    "postgresql-extension"
-  ],
-  "repository": {
-    "url": "https://github.com/apache/age"
+  "latest": {
+    "version": "1.8.0",
+    "description": "AGE database extension",
+    "long_description": "Graph database optimized for fast analysis and real-time data processing. It is provided as an extension to PostgreSQL.",
+    "homepage": "https://age.apache.org",
+    "license": "Apache-2.0",
+    "maintainers": ["users@age.apache.org"],
+    "keywords": [
+      "graphdb",
+      "graph-database",
+      "age-database",
+      "agensgraph",
+      "analytics",
+      "multi-model-dbms",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "repository": {
+      "url": "https://github.com/apache/age"
+    },
+    "ref": "PG18/v1.8.0-rc0",
+    "readme": "https://raw.githubusercontent.com/apache/age/PG18/v1.8.0-rc0/README.md"
   },
   "versions": {
-    "1.8.0": {
-      "ref": "PG18/v1.8.0-rc0",
-      "readme": "https://raw.githubusercontent.com/apache/age/PG18/v1.8.0-rc0/README.md"
-    },
     "1.7.0": {
       "ref": "PG17/v1.7.0-rc0",
       "readme": "https://raw.githubusercontent.com/apache/age/PG17/v1.7.0-rc0/README.md"

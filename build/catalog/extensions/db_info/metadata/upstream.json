@@ -1,13 +1,11 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/asotolongo/db_info",
-    "description": null,
-    "homepage": null,
-    "license": null,
-    "topics": [],
-    "readme": {
-      "v0.2.0": "README.md"
+  "latest": {
+    "version": "0.2.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/asotolongo/db_info",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

@@ -1,31 +1,30 @@
 {
-  "description": "The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information.",
-  "long_description": "Query Performance Monitoring Tool for PostgreSQL",
-  "homepage": "https://docs.percona.com/pg-stat-monitor/",
-  "license": "PostgreSQL",
-  "maintainers": [
-    "Artem Gavrilov <artem.gavrilov@percona.com>",
-    "Diego dos Santos Fronza <diego.fronza@percona.com>"
-  ],
-  "keywords": [
-    "monitoring",
-    "statistics-collector",
-    "statistics",
-    "distpg",
-    "hacktoberfest",
-    "percona",
-    "percona-distribution",
-    "pg",
-    "postgres",
-    "postgresql"
-  ],
-  "repository": {
-    "url": "https://github.com/percona/pg_stat_monitor"
-  },
-  "versions": {
-    "2.3.2": {
-      "ref": "2.3.2",
-      "readme": "https://raw.githubusercontent.com/percona/pg_stat_monitor/2.3.2/README.md"
-    }
+  "latest": {
+    "version": "2.3.2",
+    "description": "The pg_stat_monitor is a PostgreSQL Query Performance Monitoring tool, based on PostgreSQL contrib module pg_stat_statements. pg_stat_monitor provides aggregated statistics, client information, plan details including plan, and histogram information.",
+    "long_description": "Query Performance Monitoring Tool for PostgreSQL",
+    "homepage": "https://docs.percona.com/pg-stat-monitor/",
+    "license": "PostgreSQL",
+    "maintainers": [
+      "Artem Gavrilov <artem.gavrilov@percona.com>",
+      "Diego dos Santos Fronza <diego.fronza@percona.com>"
+    ],
+    "keywords": [
+      "monitoring",
+      "statistics-collector",
+      "statistics",
+      "distpg",
+      "hacktoberfest",
+      "percona",
+      "percona-distribution",
+      "pg",
+      "postgres",
+      "postgresql"
+    ],
+    "repository": {
+      "url": "https://github.com/percona/pg_stat_monitor"
+    },
+    "ref": "2.3.2",
+    "readme": "https://raw.githubusercontent.com/percona/pg_stat_monitor/2.3.2/README.md"
   }
 }

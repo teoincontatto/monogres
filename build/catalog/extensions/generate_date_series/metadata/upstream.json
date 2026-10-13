@@ -1,11 +1,11 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/corlogic-code/generate_date_series",
-    "description": null,
-    "homepage": null,
-    "license": "PostgreSQL",
-    "topics": [],
-    "readme": {}
+  "latest": {
+    "version": "1.0.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/corlogic-code/generate_date_series",
+      "license": "PostgreSQL",
+      "topics": []
+    }
   }
 }

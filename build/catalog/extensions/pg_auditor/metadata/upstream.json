@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/kouber/pg_auditor",
-    "description": "PostgreSQL extension to log each DML statement and flashback transactions",
-    "homepage": null,
-    "license": "BSD-3-Clause",
-    "topics": [],
-    "readme": {
-      "7c2edff7a09c5882bfc8f1f8aa8f8d5d7e3b0c41": "README.md"
+  "latest": {
+    "version": "0.3.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/kouber/pg_auditor",
+      "description": "PostgreSQL extension to log each DML statement and flashback transactions",
+      "license": "BSD-3-Clause",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

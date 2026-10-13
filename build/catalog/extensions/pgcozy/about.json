@@ -1,17 +1,16 @@
 {
-  "description": "Extension for pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.",
-  "long_description": "shared buffer snapshot and prewarm extension",
-  "homepage": "https://github.com/vventirozos/pgcozy",
-  "license": "PostgreSQL",
-  "maintainers": ["Vasilis Ventirozos <vventirozos@omniti.com>"],
-  "keywords": ["function", "performance", "shared buffers", "caching"],
-  "repository": {
-    "url": "https://github.com/vventirozos/pgcozy"
-  },
-  "versions": {
-    "1.0.0": {
-      "ref": "1f3603631b69244eca49204938e8f7c65985fbae",
-      "readme": "https://raw.githubusercontent.com/vventirozos/pgcozy/1f3603631b69244eca49204938e8f7c65985fbae/README.md"
-    }
+  "latest": {
+    "version": "1.0.0",
+    "description": "Extension for pre-warming shared buffers according to previous pg_buffercache snapshots for PostgreSQL.",
+    "long_description": "shared buffer snapshot and prewarm extension",
+    "homepage": "https://github.com/vventirozos/pgcozy",
+    "license": "PostgreSQL",
+    "maintainers": ["Vasilis Ventirozos <vventirozos@omniti.com>"],
+    "keywords": ["function", "performance", "shared buffers", "caching"],
+    "repository": {
+      "url": "https://github.com/vventirozos/pgcozy"
+    },
+    "ref": "1f3603631b69244eca49204938e8f7c65985fbae",
+    "readme": "https://raw.githubusercontent.com/vventirozos/pgcozy/1f3603631b69244eca49204938e8f7c65985fbae/README.md"
   }
 }

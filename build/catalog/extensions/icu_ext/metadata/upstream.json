@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/dverite/icu_ext",
-    "description": "PostgreSQL extension (in C) to expose functionality from the ICU library",
-    "homepage": null,
-    "license": "PostgreSQL",
-    "topics": ["icu-library", "postgresql-extension", "unicode"],
-    "readme": {
-      "v1.11.0": "README.md"
+  "latest": {
+    "version": "1.11.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/dverite/icu_ext",
+      "description": "PostgreSQL extension (in C) to expose functionality from the ICU library",
+      "license": "PostgreSQL",
+      "topics": ["icu-library", "postgresql-extension", "unicode"],
+      "readme": "README.md"
     }
   }
 }

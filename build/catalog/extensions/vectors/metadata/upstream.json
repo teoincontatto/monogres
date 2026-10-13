@@ -1,24 +1,25 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/tensorchord/pgvecto.rs",
-    "description": "Scalable, Low-latency and Hybrid-enabled Vector Search in Postgres. Revolutionize Vector Search, not Database.",
-    "homepage": "https://docs.vectorchord.ai/getting-started/overview.html",
-    "license": "Apache-2.0",
-    "topics": [
-      "chatgpt",
-      "faiss",
-      "gpt",
-      "hacktoberfest",
-      "llm",
-      "nearest-neighbor-search",
-      "postgres",
-      "rust",
-      "vector",
-      "vector-database"
-    ],
-    "readme": {
-      "v0.4.0": "README.md"
+  "latest": {
+    "version": "0.4.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/tensorchord/pgvecto.rs",
+      "description": "Scalable, Low-latency and Hybrid-enabled Vector Search in Postgres. Revolutionize Vector Search, not Database.",
+      "homepage": "https://docs.vectorchord.ai/getting-started/overview.html",
+      "license": "Apache-2.0",
+      "topics": [
+        "chatgpt",
+        "faiss",
+        "gpt",
+        "hacktoberfest",
+        "llm",
+        "nearest-neighbor-search",
+        "postgres",
+        "rust",
+        "vector",
+        "vector-database"
+      ],
+      "readme": "README.md"
     }
   }
 }

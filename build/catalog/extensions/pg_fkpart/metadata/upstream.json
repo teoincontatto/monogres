@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/lemoineat/pg_fkpart",
-    "description": "PostgreSQL extension to partition tables following a foreign key",
-    "homepage": null,
-    "license": "GPL-2.0",
-    "topics": ["partitioning", "postgresql-extension"],
-    "readme": {
-      "1.7.0": "README.md"
+  "latest": {
+    "version": "1.7.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/lemoineat/pg_fkpart",
+      "description": "PostgreSQL extension to partition tables following a foreign key",
+      "license": "GPL-2.0",
+      "topics": ["partitioning", "postgresql-extension"],
+      "readme": "README.md"
     }
   }
 }

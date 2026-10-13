@@ -1,14 +1,14 @@
 {
-  "description": "generate_series() for pure date values",
-  "long_description": "a generate_series()-like function that takes date ranges and integer intervals (in number of days)",
-  "homepage": "https://github.com/corlogic-code/generate_date_series",
-  "license": "PostgreSQL",
-  "maintainers": ["Corey Huinker <corey.huinker@moat.com>"],
-  "keywords": ["parallel", "meta"],
-  "repository": {
-    "url": "https://github.com/corlogic-code/generate_date_series"
-  },
-  "versions": {
-    "1.0.0": {}
+  "latest": {
+    "version": "1.0.0",
+    "description": "generate_series() for pure date values",
+    "long_description": "a generate_series()-like function that takes date ranges and integer intervals (in number of days)",
+    "homepage": "https://github.com/corlogic-code/generate_date_series",
+    "license": "PostgreSQL",
+    "maintainers": ["Corey Huinker <corey.huinker@moat.com>"],
+    "keywords": ["parallel", "meta"],
+    "repository": {
+      "url": "https://github.com/corlogic-code/generate_date_series"
+    }
   }
 }

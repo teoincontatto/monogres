@@ -1,17 +1,16 @@
 {
-  "description": "Extension to work with json type",
-  "long_description": "function and operator utils to PostgreSQL json type,",
-  "homepage": "https://github.com/asotolongo/pg_json_utils",
-  "license": "PostgreSQL",
-  "maintainers": ["Anthony <asotolongo@uci.cu>"],
-  "keywords": ["json", "operator"],
-  "repository": {
-    "url": "https://github.com/asotolongo/pg_json_utils"
-  },
-  "versions": {
-    "0.1.1": {
-      "ref": "v0.1.1",
-      "readme": "https://raw.githubusercontent.com/asotolongo/pg_json_utils/v0.1.1/README.md"
-    }
+  "latest": {
+    "version": "0.1.1",
+    "description": "Extension to work with json type",
+    "long_description": "function and operator utils to PostgreSQL json type,",
+    "homepage": "https://github.com/asotolongo/pg_json_utils",
+    "license": "PostgreSQL",
+    "maintainers": ["Anthony <asotolongo@uci.cu>"],
+    "keywords": ["json", "operator"],
+    "repository": {
+      "url": "https://github.com/asotolongo/pg_json_utils"
+    },
+    "ref": "v0.1.1",
+    "readme": "https://raw.githubusercontent.com/asotolongo/pg_json_utils/v0.1.1/README.md"
   }
 }

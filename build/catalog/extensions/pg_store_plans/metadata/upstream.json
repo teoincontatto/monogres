@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/ossc-db/pg_store_plans",
-    "description": "Store execution plans like pg_stat_statements does for queries.",
-    "homepage": "http://ossc-db.github.io/pg_store_plans/",
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "1.10": null
+  "latest": {
+    "version": "1.10.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/ossc-db/pg_store_plans",
+      "description": "Store execution plans like pg_stat_statements does for queries.",
+      "homepage": "http://ossc-db.github.io/pg_store_plans/",
+      "license": "NOASSERTION",
+      "topics": []
     }
   }
 }

@@ -1,22 +1,21 @@
 {
-  "description": "Semantic version data type",
-  "long_description": "A semantic version data type for PostgreSQL",
-  "homepage": "https://github.com/theory/pg-semver",
-  "license": "PostgreSQL",
-  "maintainers": [
-    "David E. Wheeler <david@justatheory.com>",
-    "Sam Vilain <sam@vilain.net>",
-    "Tom Davis <tom@recursivedream.com>",
-    "Xavier Caron <xcaron@gmail.com>"
-  ],
-  "keywords": ["semantic version", "semver", "version", "version number"],
-  "repository": {
-    "url": "https://github.com/theory/pg-semver"
-  },
-  "versions": {
-    "0.41.0": {
-      "ref": "v0.41.0",
-      "readme": "https://raw.githubusercontent.com/theory/pg-semver/v0.41.0/README.md"
-    }
+  "latest": {
+    "version": "0.41.0",
+    "description": "Semantic version data type",
+    "long_description": "A semantic version data type for PostgreSQL",
+    "homepage": "https://github.com/theory/pg-semver",
+    "license": "PostgreSQL",
+    "maintainers": [
+      "David E. Wheeler <david@justatheory.com>",
+      "Sam Vilain <sam@vilain.net>",
+      "Tom Davis <tom@recursivedream.com>",
+      "Xavier Caron <xcaron@gmail.com>"
+    ],
+    "keywords": ["semantic version", "semver", "version", "version number"],
+    "repository": {
+      "url": "https://github.com/theory/pg-semver"
+    },
+    "ref": "v0.41.0",
+    "readme": "https://raw.githubusercontent.com/theory/pg-semver/v0.41.0/README.md"
   }
 }

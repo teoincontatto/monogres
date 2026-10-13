@@ -1,25 +1,26 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/babelfish-for-postgresql/postgresql_modified_for_babelfish",
-    "description": null,
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "BABEL_4_0_0__PG_16_1": "README.md",
-      "BABEL_4_1_1__PG_16_2": "README.md",
-      "BABEL_4_2_0__PG_16_3": "README.md",
-      "BABEL_4_3_0__PG_16_4": "README.md",
-      "BABEL_4_4_0__PG_16_6": "README.md",
-      "BABEL_4_5_0__PG_16_8": "README.md",
-      "BABEL_4_6_0__PG_16_9": "README.md",
-      "BABEL_4_7_0__PG_16_10": "README.md",
-      "BABEL_4_8_0__PG_16_11": "README.md",
-      "BABEL_5_1_0__PG_17_4": "README.md",
-      "BABEL_5_2_0__PG_17_5": "README.md",
-      "BABEL_5_3_0__PG_17_6": "README.md",
-      "BABEL_5_4_0__PG_17_7": "README.md"
+  "latest": {
+    "version": "5.4",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/babelfish-for-postgresql/postgresql_modified_for_babelfish",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
+  },
+  "versions": {
+    "5.3": {},
+    "5.2": {},
+    "5.1": {},
+    "4.8": {},
+    "4.7": {},
+    "4.6": {},
+    "4.5": {},
+    "4.4": {},
+    "4.3": {},
+    "4.2": {},
+    "4.1": {},
+    "4.0": {}
   }
 }

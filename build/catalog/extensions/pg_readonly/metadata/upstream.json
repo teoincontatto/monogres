@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pierreforstmann/pg_readonly",
-    "description": "PostgreSQL extension to set all cluster databases read only.",
-    "homepage": "https://github/pierreforstmann",
-    "license": null,
-    "topics": ["c", "postgresql", "postgresql-extension"],
-    "readme": {
-      "1.0.6": "README.md"
+  "latest": {
+    "version": "1.0.6",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pierreforstmann/pg_readonly",
+      "description": "PostgreSQL extension to set all cluster databases read only.",
+      "homepage": "https://github/pierreforstmann",
+      "topics": ["c", "postgresql", "postgresql-extension"],
+      "readme": "README.md"
     }
   }
 }

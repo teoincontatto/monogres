@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/RhodiumToad/ip4r",
-    "description": "ip4r current and new development",
-    "homepage": null,
-    "license": "PostgreSQL",
-    "topics": [],
-    "readme": {
-      "2.4.3": "README.ip4r"
+  "latest": {
+    "version": "2.4.3",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/RhodiumToad/ip4r",
+      "description": "ip4r current and new development",
+      "license": "PostgreSQL",
+      "topics": [],
+      "readme": "README.ip4r"
     }
   }
 }

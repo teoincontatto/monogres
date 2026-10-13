@@ -2,11 +2,14 @@
 What the catalog says about each entry for a reader rather than for the build.
 
 monobot writes an `about.json` beside every `repo.json` (description, licence,
-homepage, repository, and per version the ref and README). Nothing here builds
-from it; it is read once in module extension context and handed to the
+homepage, repository, the ref and the README), per version and layered (see
+`//monoext:about.bzl`). Nothing here builds from it; it is read once in module
+extension context, resolved to a document per version, and handed to the
 extensions hub, which re-exposes it from `all.bzl` so a consumer can label what
 it ships without reading the catalog itself.
 """
+
+load("//monoext:about.bzl", "about_versions")
 
 def _read(ctx, label):
     # Watched even while absent, so an `about.json` added later re-evaluates
@@ -16,7 +19,7 @@ def _read(ctx, label):
     if not ctx.path(label).exists:
         return {}
 
-    return json.decode(ctx.read(label))
+    return about_versions(json.decode(ctx.read(label)))
 
 def _contrib_controls(entry):
     """The control files a contrib entry installs, by name, sorted.
@@ -45,16 +48,22 @@ def read_about(ctx, base, catalog, extensions):
         extensions: `{name: ExtensionEntry}` from `create_ext_src`.
 
     Returns:
-        A `struct(flavor, extensions, contrib)` of plain dicts:
-          - `flavor`: the flavor's own document, less its `contrib` block.
-          - `extensions`: `{name: about}` for the external extensions that
-            have one.
-          - `contrib`: `{name: about}` for the contrib entries, taken from the
-            flavor's `contrib` block under the entry's own name, or else under
-            the first control file it installs that the block describes.
+        A `struct(flavor, extensions, contrib)` of plain dicts, each document
+        resolved per version, newest first:
+          - `flavor`: `{version: about}`, each less its `contrib` block.
+          - `extensions`: `{name: {version: about}}` for the external
+            extensions that have one.
+          - `contrib`: `{name: {flavor version: about}}` for the contrib
+            entries, taken from that flavor version's `contrib` block under the
+            entry's own name, or else under the first control file it installs
+            that the block describes.
     """
-    flavor = dict(_read(ctx, base.relative(":about.json")))
-    described = flavor.pop("contrib", {})
+    flavor = {}
+    described = {}
+    for version, about in _read(ctx, base.relative(":about.json")).items():
+        about = dict(about)
+        described[version] = about.pop("contrib", {})
+        flavor[version] = about
 
     external = {}
     contrib = {}
@@ -69,13 +78,11 @@ def read_about(ctx, base, catalog, extensions):
                     external[name] = about
             continue
 
-        if name in described:
-            contrib[name] = described[name]
-            continue
-
-        for control in _contrib_controls(entry):
-            if control in described:
-                contrib[name] = described[control]
-                break
+        controls = [name] + _contrib_controls(entry)
+        for version, block in described.items():
+            for control in controls:
+                if control in block:
+                    contrib.setdefault(name, {})[version] = block[control]
+                    break
 
     return struct(flavor = flavor, extensions = external, contrib = contrib)

@@ -1,15 +1,14 @@
 {
-  "description": "Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions",
-  "long_description": "PostgreSQL Foreign Data Wrapper to Connect to pgbouncer",
-  "homepage": "https://github.com/CrunchyData/pgbouncer_fdw",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/CrunchyData/pgbouncer_fdw"
-  },
-  "versions": {
-    "1.4.0": {
-      "ref": "v1.4.0",
-      "readme": "https://raw.githubusercontent.com/CrunchyData/pgbouncer_fdw/v1.4.0/README.md"
-    }
+  "latest": {
+    "version": "1.4.0",
+    "description": "Extension for querying PgBouncer stats from normal SQL views & running pgbouncer commands from normal SQL functions",
+    "long_description": "PostgreSQL Foreign Data Wrapper to Connect to pgbouncer",
+    "homepage": "https://github.com/CrunchyData/pgbouncer_fdw",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/CrunchyData/pgbouncer_fdw"
+    },
+    "ref": "v1.4.0",
+    "readme": "https://raw.githubusercontent.com/CrunchyData/pgbouncer_fdw/v1.4.0/README.md"
   }
 }

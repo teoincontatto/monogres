@@ -1,13 +1,14 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/postgis/postgis",
-    "description": "PostGIS spatial database extension to PostgreSQL [mirror]",
-    "homepage": "https://postgis.net",
-    "license": "GPL-2.0",
-    "topics": ["c", "geospatial", "gis", "plpgsql", "postgis", "postgresql"],
-    "readme": {
-      "3.5.7": "README.md"
+  "latest": {
+    "version": "3.5.7",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/postgis/postgis",
+      "description": "PostGIS spatial database extension to PostgreSQL [mirror]",
+      "homepage": "https://postgis.net",
+      "license": "GPL-2.0",
+      "topics": ["c", "geospatial", "gis", "plpgsql", "postgis", "postgresql"],
+      "readme": "README.md"
     }
   }
 }

@@ -1,32 +1,31 @@
 {
-  "description": "Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)",
-  "long_description": "A PostgreSQL foreign data wrapper to connect to TDS databases (Sybase and Microsoft SQL Server)",
-  "homepage": "https://github.com/tds-fdw/tds_fdw",
-  "license": "PostgreSQL",
-  "maintainers": ["Geoff Montee <geoff.montee@gmail.com>"],
-  "keywords": [
-    "tds_fdw",
-    "foreign data wrapper",
-    "fdw",
-    "tds",
-    "tabular data stream",
-    "sybase",
-    "microsoft sql server",
-    "sql server",
-    "databases",
-    "foreign-server",
-    "freetds",
-    "hacktoberfest",
-    "postgresql",
-    "postgresql-extension"
-  ],
-  "repository": {
-    "url": "https://github.com/tds-fdw/tds_fdw"
-  },
-  "versions": {
-    "2.0.5": {
-      "ref": "v2.0.5",
-      "readme": "https://raw.githubusercontent.com/tds-fdw/tds_fdw/v2.0.5/README.md"
-    }
+  "latest": {
+    "version": "2.0.5",
+    "description": "Foreign data wrapper for querying a TDS database (Sybase or Microsoft SQL Server)",
+    "long_description": "A PostgreSQL foreign data wrapper to connect to TDS databases (Sybase and Microsoft SQL Server)",
+    "homepage": "https://github.com/tds-fdw/tds_fdw",
+    "license": "PostgreSQL",
+    "maintainers": ["Geoff Montee <geoff.montee@gmail.com>"],
+    "keywords": [
+      "tds_fdw",
+      "foreign data wrapper",
+      "fdw",
+      "tds",
+      "tabular data stream",
+      "sybase",
+      "microsoft sql server",
+      "sql server",
+      "databases",
+      "foreign-server",
+      "freetds",
+      "hacktoberfest",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "repository": {
+      "url": "https://github.com/tds-fdw/tds_fdw"
+    },
+    "ref": "v2.0.5",
+    "readme": "https://raw.githubusercontent.com/tds-fdw/tds_fdw/v2.0.5/README.md"
   }
 }

@@ -1,12 +1,13 @@
 {
-  "forge": {
-    "kind": "gitlab",
-    "url": "https://gitlab.com/ongresinc/pg_healpix",
-    "description": "Fork from https://github.com/segasai/pg_healpix",
-    "license": "gpl-2.0+",
-    "topics": [],
-    "readme": {
-      "v0.1.0": "README"
+  "latest": {
+    "version": "0.1.0",
+    "forge": {
+      "kind": "gitlab",
+      "url": "https://gitlab.com/ongresinc/pg_healpix",
+      "description": "Fork from https://github.com/segasai/pg_healpix",
+      "license": "gpl-2.0+",
+      "topics": [],
+      "readme": "README"
     }
   }
 }

@@ -1,21 +1,24 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/IvorySQL/IvorySQL",
-    "description": "Open Source Oracle Compatible PostgreSQL.",
-    "homepage": "https://ivorysql.org",
-    "license": "Apache-2.0",
-    "topics": [
-      "apache-license-2",
-      "database",
-      "ivorysql-database",
-      "oracle-compatible",
-      "postgresql"
-    ],
-    "readme": {
-      "IvorySQL_5.0": "README.md",
-      "IvorySQL_4.0": "README.md",
-      "IvorySQL_3.0": "README.md"
+  "latest": {
+    "version": "5.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/IvorySQL/IvorySQL",
+      "description": "Open Source Oracle Compatible PostgreSQL.",
+      "homepage": "https://ivorysql.org",
+      "license": "Apache-2.0",
+      "topics": [
+        "apache-license-2",
+        "database",
+        "ivorysql-database",
+        "oracle-compatible",
+        "postgresql"
+      ],
+      "readme": "README.md"
     }
+  },
+  "versions": {
+    "4.0": {},
+    "3.0": {}
   }
 }

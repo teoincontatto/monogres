@@ -1,15 +1,14 @@
 {
-  "description": "similar to SET ROLE but with added logging",
-  "long_description": "PostgreSQL extension allowing privilege escalation with enhanced logging and control",
-  "homepage": "https://github.com/pgaudit/set_user",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/pgaudit/set_user"
-  },
-  "versions": {
-    "4.2.0": {
-      "ref": "REL4_2_0",
-      "readme": "https://raw.githubusercontent.com/pgaudit/set_user/REL4_2_0/README.md"
-    }
+  "latest": {
+    "version": "4.2.0",
+    "description": "similar to SET ROLE but with added logging",
+    "long_description": "PostgreSQL extension allowing privilege escalation with enhanced logging and control",
+    "homepage": "https://github.com/pgaudit/set_user",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/pgaudit/set_user"
+    },
+    "ref": "REL4_2_0",
+    "readme": "https://raw.githubusercontent.com/pgaudit/set_user/REL4_2_0/README.md"
   }
 }

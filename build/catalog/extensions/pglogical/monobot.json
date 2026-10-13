@@ -19,7 +19,9 @@
     }
   },
   "about": {
-    "license": "PostgreSQL"
+    "latest": {
+      "license": "PostgreSQL"
+    }
   },
   "metadata": {
     "compatible_with": {

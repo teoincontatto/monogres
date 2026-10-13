@@ -1,35 +1,34 @@
 {
-  "description": "Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS",
-  "long_description": "The \"orafce\" project implements in Postgres some of the functions from the Oracle database that are missing (or behaving differently).Those functions were verified on Oracle 10g, and the module is useful for production work.",
-  "homepage": "http://www.pgsql.cz/index.php/Oracle_functionality_%28en%29",
-  "license": "BSD-3-Clause",
-  "maintainers": [
-    "Pavel Stehule <pavel.stehule@gmail.com>",
-    "Takahiro Itagaki <itagaki.takahiro@gmail.com>"
-  ],
-  "keywords": [
-    "oracle",
-    "compatibility",
-    "user function",
-    "custom function",
-    "intrerprocess communication",
-    "read from file",
-    "write to file",
-    "bussiness calendar",
-    "c",
-    "extension",
-    "oracle-to-postgres",
-    "orafce",
-    "postgresql",
-    "postgresql-extension"
-  ],
-  "repository": {
-    "url": "https://github.com/orafce/orafce"
-  },
-  "versions": {
-    "4.16.9": {
-      "ref": "VERSION_4_16_9",
-      "readme": "https://raw.githubusercontent.com/orafce/orafce/VERSION_4_16_9/README.asciidoc"
-    }
+  "latest": {
+    "version": "4.16.9",
+    "description": "Functions and operators that emulate a subset of functions and packages from the Oracle RDBMS",
+    "long_description": "The \"orafce\" project implements in Postgres some of the functions from the Oracle database that are missing (or behaving differently).Those functions were verified on Oracle 10g, and the module is useful for production work.",
+    "homepage": "http://www.pgsql.cz/index.php/Oracle_functionality_%28en%29",
+    "license": "BSD-3-Clause",
+    "maintainers": [
+      "Pavel Stehule <pavel.stehule@gmail.com>",
+      "Takahiro Itagaki <itagaki.takahiro@gmail.com>"
+    ],
+    "keywords": [
+      "oracle",
+      "compatibility",
+      "user function",
+      "custom function",
+      "intrerprocess communication",
+      "read from file",
+      "write to file",
+      "bussiness calendar",
+      "c",
+      "extension",
+      "oracle-to-postgres",
+      "orafce",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "repository": {
+      "url": "https://github.com/orafce/orafce"
+    },
+    "ref": "VERSION_4_16_9",
+    "readme": "https://raw.githubusercontent.com/orafce/orafce/VERSION_4_16_9/README.asciidoc"
   }
 }

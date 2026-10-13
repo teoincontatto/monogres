@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/CrunchyData/pgbouncer_fdw",
-    "description": "PostgreSQL Foreign Data Wrapper to Connect to pgbouncer",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "v1.4.0": "README.md"
+  "latest": {
+    "version": "1.4.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/CrunchyData/pgbouncer_fdw",
+      "description": "PostgreSQL Foreign Data Wrapper to Connect to pgbouncer",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

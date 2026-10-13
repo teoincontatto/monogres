@@ -1,22 +1,22 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/theory/pgtap",
-    "description": "PostgreSQL Unit Testing Suite",
-    "homepage": "https://pgtap.org",
-    "license": null,
-    "topics": [
-      "pgsql",
-      "pgtap",
-      "psql",
-      "tap",
-      "testing",
-      "testing-framework",
-      "testing-library",
-      "unit-testing"
-    ],
-    "readme": {
-      "v1.3.4": "README.md"
+  "latest": {
+    "version": "1.3.4",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/theory/pgtap",
+      "description": "PostgreSQL Unit Testing Suite",
+      "homepage": "https://pgtap.org",
+      "topics": [
+        "pgsql",
+        "pgtap",
+        "psql",
+        "tap",
+        "testing",
+        "testing-framework",
+        "testing-library",
+        "unit-testing"
+      ],
+      "readme": "README.md"
     }
   }
 }

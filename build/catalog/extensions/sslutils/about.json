@@ -1,15 +1,14 @@
 {
-  "description": "functions to generate ssl certificate on the PostgreSQL/EDB Postgres Advanced Server used by the Postgres Enterprise Manager Server & Agents for communication",
-  "long_description": "A Postgres extension for managing SSL certificates through SQL.",
-  "homepage": "https://github.com/EnterpriseDB/sslutils",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/EnterpriseDB/sslutils"
-  },
-  "versions": {
-    "1.4": {
-      "ref": "v1.4",
-      "readme": "https://raw.githubusercontent.com/EnterpriseDB/sslutils/v1.4/README.sslutils"
-    }
+  "latest": {
+    "version": "1.4",
+    "description": "functions to generate ssl certificate on the PostgreSQL/EDB Postgres Advanced Server used by the Postgres Enterprise Manager Server & Agents for communication",
+    "long_description": "A Postgres extension for managing SSL certificates through SQL.",
+    "homepage": "https://github.com/EnterpriseDB/sslutils",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/EnterpriseDB/sslutils"
+    },
+    "ref": "v1.4",
+    "readme": "https://raw.githubusercontent.com/EnterpriseDB/sslutils/v1.4/README.sslutils"
   }
 }

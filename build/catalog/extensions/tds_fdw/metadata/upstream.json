@@ -1,23 +1,23 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/tds-fdw/tds_fdw",
-    "description": "A PostgreSQL foreign data wrapper to connect to TDS databases (Sybase and Microsoft SQL Server)",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [
-      "databases",
-      "foreign-data-wrapper",
-      "foreign-server",
-      "freetds",
-      "hacktoberfest",
-      "postgresql",
-      "postgresql-extension",
-      "sql-server",
-      "tds-fdw"
-    ],
-    "readme": {
-      "v2.0.5": "README.md"
+  "latest": {
+    "version": "2.0.5",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/tds-fdw/tds_fdw",
+      "description": "A PostgreSQL foreign data wrapper to connect to TDS databases (Sybase and Microsoft SQL Server)",
+      "license": "NOASSERTION",
+      "topics": [
+        "databases",
+        "foreign-data-wrapper",
+        "foreign-server",
+        "freetds",
+        "hacktoberfest",
+        "postgresql",
+        "postgresql-extension",
+        "sql-server",
+        "tds-fdw"
+      ],
+      "readme": "README.md"
     }
   }
 }

@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/supabase/pg_jsonschema",
-    "description": "PostgreSQL extension providing JSON Schema validation",
-    "homepage": null,
-    "license": "Apache-2.0",
-    "topics": [],
-    "readme": {
-      "v0.3.4": "README.md"
+  "latest": {
+    "version": "0.3.4",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/supabase/pg_jsonschema",
+      "description": "PostgreSQL extension providing JSON Schema validation",
+      "license": "Apache-2.0",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

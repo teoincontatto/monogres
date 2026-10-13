@@ -1,23 +1,22 @@
 {
-  "description": "cluster database read only",
-  "long_description": "PostgreSQL extension to set all cluster databases read only.",
-  "homepage": "https://github/pierreforstmann",
-  "license": "PostgreSQL",
-  "maintainers": ["Pierre Forstmann"],
-  "keywords": [
-    "read only",
-    "cluster",
-    "c",
-    "postgresql",
-    "postgresql-extension"
-  ],
-  "repository": {
-    "url": "https://github.com/pierreforstmann/pg_readonly"
-  },
-  "versions": {
-    "1.0.6": {
-      "ref": "1.0.6",
-      "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_readonly/1.0.6/README.md"
-    }
+  "latest": {
+    "version": "1.0.6",
+    "description": "cluster database read only",
+    "long_description": "PostgreSQL extension to set all cluster databases read only.",
+    "homepage": "https://github/pierreforstmann",
+    "license": "PostgreSQL",
+    "maintainers": ["Pierre Forstmann"],
+    "keywords": [
+      "read only",
+      "cluster",
+      "c",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "repository": {
+      "url": "https://github.com/pierreforstmann/pg_readonly"
+    },
+    "ref": "1.0.6",
+    "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_readonly/1.0.6/README.md"
   }
 }

@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/powa-team/pg_qualstats",
-    "description": "A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": ["c", "extension", "postgresql", "predicate", "statistics"],
-    "readme": {
-      "2.1.4": "README.md"
+  "latest": {
+    "version": "2.1.4",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/powa-team/pg_qualstats",
+      "description": "A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing",
+      "license": "NOASSERTION",
+      "topics": ["c", "extension", "postgresql", "predicate", "statistics"],
+      "readme": "README.md"
     }
   }
 }

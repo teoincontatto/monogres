@@ -15,8 +15,10 @@
     ]
   },
   "about": {
-    "repository": {
-      "ref": "{version}"
+    "latest": {
+      "repository": {
+        "ref": "{version}"
+      }
     }
   },
   "metadata": {

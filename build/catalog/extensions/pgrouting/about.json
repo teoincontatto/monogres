@@ -1,23 +1,22 @@
 {
-  "description": "pgRouting Extension",
-  "long_description": "Repository contains pgRouting library. Development branch is \"develop\", stable branch is \"master\"",
-  "homepage": "https://pgrouting.org",
-  "license": "GPL-2.0",
-  "keywords": [
-    "network-analysis",
-    "osgeo",
-    "postgis",
-    "postgresql-extension",
-    "routing",
-    "spatial-analysis"
-  ],
-  "repository": {
-    "url": "https://github.com/pgRouting/pgrouting"
-  },
-  "versions": {
-    "4.0.1": {
-      "ref": "v4.0.1",
-      "readme": "https://raw.githubusercontent.com/pgRouting/pgrouting/v4.0.1/README.md"
-    }
+  "latest": {
+    "version": "4.0.1",
+    "description": "pgRouting Extension",
+    "long_description": "Repository contains pgRouting library. Development branch is \"develop\", stable branch is \"master\"",
+    "homepage": "https://pgrouting.org",
+    "license": "GPL-2.0",
+    "keywords": [
+      "network-analysis",
+      "osgeo",
+      "postgis",
+      "postgresql-extension",
+      "routing",
+      "spatial-analysis"
+    ],
+    "repository": {
+      "url": "https://github.com/pgRouting/pgrouting"
+    },
+    "ref": "v4.0.1",
+    "readme": "https://raw.githubusercontent.com/pgRouting/pgrouting/v4.0.1/README.md"
   }
 }

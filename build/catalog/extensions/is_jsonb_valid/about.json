@@ -1,17 +1,16 @@
 {
-  "description": "jsonb schema validator",
-  "long_description": "Native PostgreSQL extension to validate jsonb",
-  "homepage": "https://github.com/furstenheim/is_jsonb_valid",
-  "license": "MIT",
-  "maintainers": ["Furstenheim <furstenheim@gmail.com>"],
-  "keywords": ["jsonb", "json"],
-  "repository": {
-    "url": "https://github.com/furstenheim/is_jsonb_valid"
-  },
-  "versions": {
-    "0.1.4": {
-      "ref": "1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce",
-      "readme": "https://raw.githubusercontent.com/furstenheim/is_jsonb_valid/1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce/README.md"
-    }
+  "latest": {
+    "version": "0.1.4",
+    "description": "jsonb schema validator",
+    "long_description": "Native PostgreSQL extension to validate jsonb",
+    "homepage": "https://github.com/furstenheim/is_jsonb_valid",
+    "license": "MIT",
+    "maintainers": ["Furstenheim <furstenheim@gmail.com>"],
+    "keywords": ["jsonb", "json"],
+    "repository": {
+      "url": "https://github.com/furstenheim/is_jsonb_valid"
+    },
+    "ref": "1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce",
+    "readme": "https://raw.githubusercontent.com/furstenheim/is_jsonb_valid/1f536758ae066a22378ecbbdb2ca3ba27a5ac6ce/README.md"
   }
 }

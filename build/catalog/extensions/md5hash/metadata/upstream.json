@@ -1,11 +1,12 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/tvondra/md5hash",
-    "description": "A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {}
+  "latest": {
+    "version": "1.0.1",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/tvondra/md5hash",
+      "description": "A custom data type for storing MD5 hashes (instead of the native TEXT varlena type).",
+      "license": "NOASSERTION",
+      "topics": []
+    }
   }
 }

@@ -1,24 +1,27 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgaudit/pgaudit",
-    "description": "PostgreSQL Audit Extension",
-    "homepage": "http://pgaudit.org/",
-    "license": "NOASSERTION",
-    "topics": [
-      "audit",
-      "audit-log",
-      "auditor",
-      "database",
-      "extension",
-      "pgaudit",
-      "postgresql",
-      "postgresql-extension"
-    ],
-    "readme": {
-      "18.0": "README.md",
-      "17.1": "README.md",
-      "16.1": "README.md"
+  "latest": {
+    "version": "18.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgaudit/pgaudit",
+      "description": "PostgreSQL Audit Extension",
+      "homepage": "http://pgaudit.org/",
+      "license": "NOASSERTION",
+      "topics": [
+        "audit",
+        "audit-log",
+        "auditor",
+        "database",
+        "extension",
+        "pgaudit",
+        "postgresql",
+        "postgresql-extension"
+      ],
+      "readme": "README.md"
     }
+  },
+  "versions": {
+    "17.1": {},
+    "16.1": {}
   }
 }

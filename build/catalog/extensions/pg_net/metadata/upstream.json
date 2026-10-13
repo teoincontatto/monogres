@@ -1,20 +1,21 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/supabase/pg_net",
-    "description": "A PostgreSQL extension that enables asynchronous (non-blocking) HTTP/HTTPS requests with SQL",
-    "homepage": "https://supabase.github.io/pg_net",
-    "license": "Apache-2.0",
-    "topics": [
-      "http-client",
-      "postgres",
-      "postgresql",
-      "postgresql-extension",
-      "sql",
-      "supabase"
-    ],
-    "readme": {
-      "v0.20.5": "README.md"
+  "latest": {
+    "version": "0.20.5",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/supabase/pg_net",
+      "description": "A PostgreSQL extension that enables asynchronous (non-blocking) HTTP/HTTPS requests with SQL",
+      "homepage": "https://supabase.github.io/pg_net",
+      "license": "Apache-2.0",
+      "topics": [
+        "http-client",
+        "postgres",
+        "postgresql",
+        "postgresql-extension",
+        "sql",
+        "supabase"
+      ],
+      "readme": "README.md"
     }
   }
 }

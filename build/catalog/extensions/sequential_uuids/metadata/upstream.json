@@ -1,13 +1,14 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/tvondra/sequential-uuids",
-    "description": "generator of sequential UUIDs",
-    "homepage": "https://blog.2ndquadrant.com/sequential-uuid-generators/",
-    "license": "MIT",
-    "topics": [],
-    "readme": {
-      "v1.0.3": "README.md"
+  "latest": {
+    "version": "1.0.3",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/tvondra/sequential-uuids",
+      "description": "generator of sequential UUIDs",
+      "homepage": "https://blog.2ndquadrant.com/sequential-uuid-generators/",
+      "license": "MIT",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

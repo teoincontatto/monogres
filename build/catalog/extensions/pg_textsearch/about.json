@@ -1,16 +1,15 @@
 {
-  "description": "Full-text search with BM25 ranking",
-  "long_description": "PostgreSQL extension for BM25 relevance-ranked full-text search. Postgres OSS licensed.",
-  "homepage": "https://github.com/timescale/pg_textsearch",
-  "license": "PostgreSQL",
-  "keywords": ["bm25", "c-extension", "full-text-search", "postgresql"],
-  "repository": {
-    "url": "https://github.com/timescale/pg_textsearch"
-  },
-  "versions": {
-    "1.4.0": {
-      "ref": "v1.4.0",
-      "readme": "https://raw.githubusercontent.com/timescale/pg_textsearch/v1.4.0/README.md"
-    }
+  "latest": {
+    "version": "1.4.0",
+    "description": "Full-text search with BM25 ranking",
+    "long_description": "PostgreSQL extension for BM25 relevance-ranked full-text search. Postgres OSS licensed.",
+    "homepage": "https://github.com/timescale/pg_textsearch",
+    "license": "PostgreSQL",
+    "keywords": ["bm25", "c-extension", "full-text-search", "postgresql"],
+    "repository": {
+      "url": "https://github.com/timescale/pg_textsearch"
+    },
+    "ref": "v1.4.0",
+    "readme": "https://raw.githubusercontent.com/timescale/pg_textsearch/v1.4.0/README.md"
   }
 }

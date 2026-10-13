@@ -1,19 +1,19 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/petere/plsh",
-    "description": "PL/sh is a procedural language handler for PostgreSQL that allows you to write stored procedures in a shell of your choice.",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [
-      "language",
-      "postgresql",
-      "postgresql-extension",
-      "shell",
-      "trigger"
-    ],
-    "readme": {
-      "1.20220917": "README.md"
+  "latest": {
+    "version": "1.20220917",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/petere/plsh",
+      "description": "PL/sh is a procedural language handler for PostgreSQL that allows you to write stored procedures in a shell of your choice.",
+      "license": "NOASSERTION",
+      "topics": [
+        "language",
+        "postgresql",
+        "postgresql-extension",
+        "shell",
+        "trigger"
+      ],
+      "readme": "README.md"
     }
   }
 }

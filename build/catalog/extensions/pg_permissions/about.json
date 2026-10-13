@@ -1,16 +1,15 @@
 {
-  "description": "view object permissions and compare them with the desired state",
-  "long_description": "A simple set of views to see ALL permissions in a PostgreSQL database",
-  "homepage": "https://github.com/cybertec-postgresql/pg_permissions",
-  "license": "PostgreSQL",
-  "keywords": ["postgresql", "postgresql-extension"],
-  "repository": {
-    "url": "https://github.com/cybertec-postgresql/pg_permissions"
-  },
-  "versions": {
-    "1.4.1": {
-      "ref": "REL_1_4_1",
-      "readme": "https://raw.githubusercontent.com/cybertec-postgresql/pg_permissions/REL_1_4_1/README.md"
-    }
+  "latest": {
+    "version": "1.4.1",
+    "description": "view object permissions and compare them with the desired state",
+    "long_description": "A simple set of views to see ALL permissions in a PostgreSQL database",
+    "homepage": "https://github.com/cybertec-postgresql/pg_permissions",
+    "license": "PostgreSQL",
+    "keywords": ["postgresql", "postgresql-extension"],
+    "repository": {
+      "url": "https://github.com/cybertec-postgresql/pg_permissions"
+    },
+    "ref": "REL_1_4_1",
+    "readme": "https://raw.githubusercontent.com/cybertec-postgresql/pg_permissions/REL_1_4_1/README.md"
   }
 }

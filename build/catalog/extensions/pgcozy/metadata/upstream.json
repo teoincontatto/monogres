@@ -1,13 +1,12 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/vventirozos/pgcozy",
-    "description": "shared buffer snapshot and prewarm extension",
-    "homepage": null,
-    "license": null,
-    "topics": [],
-    "readme": {
-      "1f3603631b69244eca49204938e8f7c65985fbae": "README.md"
+  "latest": {
+    "version": "1.0.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/vventirozos/pgcozy",
+      "description": "shared buffer snapshot and prewarm extension",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

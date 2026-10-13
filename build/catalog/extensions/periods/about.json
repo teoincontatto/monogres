@@ -1,23 +1,22 @@
 {
-  "description": "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
-  "long_description": "PERIODs and SYSTEM VERSIONING for PostgreSQL",
-  "homepage": "https://github.com/xocolatl/periods",
-  "license": "PostgreSQL",
-  "keywords": [
-    "extension",
-    "periods",
-    "postgresql",
-    "proof-of-concept",
-    "sql-standards",
-    "system-versioning"
-  ],
-  "repository": {
-    "url": "https://github.com/xocolatl/periods"
-  },
-  "versions": {
-    "1.2.3": {
-      "ref": "v1.2.3",
-      "readme": "https://raw.githubusercontent.com/xocolatl/periods/v1.2.3/README.md"
-    }
+  "latest": {
+    "version": "1.2.3",
+    "description": "Provide Standard SQL functionality for PERIODs and SYSTEM VERSIONING",
+    "long_description": "PERIODs and SYSTEM VERSIONING for PostgreSQL",
+    "homepage": "https://github.com/xocolatl/periods",
+    "license": "PostgreSQL",
+    "keywords": [
+      "extension",
+      "periods",
+      "postgresql",
+      "proof-of-concept",
+      "sql-standards",
+      "system-versioning"
+    ],
+    "repository": {
+      "url": "https://github.com/xocolatl/periods"
+    },
+    "ref": "v1.2.3",
+    "readme": "https://raw.githubusercontent.com/xocolatl/periods/v1.2.3/README.md"
   }
 }

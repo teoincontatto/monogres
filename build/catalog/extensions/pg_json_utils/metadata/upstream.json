@@ -1,13 +1,11 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/asotolongo/pg_json_utils",
-    "description": null,
-    "homepage": null,
-    "license": null,
-    "topics": [],
-    "readme": {
-      "v0.1.1": "README.md"
+  "latest": {
+    "version": "0.1.1",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/asotolongo/pg_json_utils",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

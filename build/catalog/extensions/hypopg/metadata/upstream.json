@@ -1,21 +1,22 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/HypoPG/hypopg",
-    "description": "Hypothetical Indexes for PostgreSQL",
-    "homepage": "https://hypopg.readthedocs.io",
-    "license": "NOASSERTION",
-    "topics": [
-      "c",
-      "database",
-      "extension",
-      "hypothetical-indexes",
-      "index",
-      "indexing",
-      "postgresql"
-    ],
-    "readme": {
-      "1.4.3": "README.md"
+  "latest": {
+    "version": "1.4.3",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/HypoPG/hypopg",
+      "description": "Hypothetical Indexes for PostgreSQL",
+      "homepage": "https://hypopg.readthedocs.io",
+      "license": "NOASSERTION",
+      "topics": [
+        "c",
+        "database",
+        "extension",
+        "hypothetical-indexes",
+        "index",
+        "indexing",
+        "postgresql"
+      ],
+      "readme": "README.md"
     }
   }
 }

@@ -12,17 +12,18 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.SequencedMap;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-/// What one entry is, for a reader rather than for the build: `about.json`.
+/// What one version of one entry is, for a reader rather than for the build: one version of
+/// `about.json`, which [Layers] stores together with the others.
 ///
 /// A function of what is committed and nothing else. Every input is a file in the catalog -- the
-/// override in `monobot.json`, the newest version's `control.json` and `META.json`, and the
-/// snapshot of what the forge said in `metadata/upstream.json` -- so `check` derives the same
-/// document `generate` did without asking the network anything.
+/// override in `monobot.json` as it stands at this version, this version's `control.json` and
+/// `META.json`, and the snapshot of what the forge said about this version in
+/// `metadata/upstream.json` -- so `check` derives the same document `generate` did without asking
+/// the network anything.
 ///
 /// Each field is taken from the first source that says something about it. The order is per field,
 /// because each source is good at different things:
@@ -37,6 +38,8 @@ import java.util.stream.StreamSupport;
 /// | `keywords`         | override, META `tags` and forge topics together                      |
 /// | `categories`       | override                                                             |
 /// | `repository.url`   | override, forge (canonical, after redirects), `monobot.json` url     |
+/// | `ref`              | the ref the version's archive was cut from                           |
+/// | `readme`           | the forge's README at `ref`                                          |
 ///
 /// The control comment is preferred for the short description because it is what `\dx` shows: it
 /// is the extension describing itself, one line long. The forge's About is preferred for the long
@@ -44,37 +47,40 @@ import java.util.stream.StreamSupport;
 public final class AboutResolver {
   private AboutResolver() {}
 
-  /// Everything the document is derived from. Absent inputs are [MissingNode]s rather than nulls,
-  /// so a path into one is a path into nothing rather than an exception.
+  /// Everything one version's document is derived from. Absent inputs are [MissingNode]s rather
+  /// than nulls, so a path into one is a path into nothing rather than an exception.
+  ///
+  /// `ref` is the ref the version's archive was cut from, or null. `contrib` is the control file
+  /// of each contrib extension the version ships, and `contribRefs` the ref of each one built from
+  /// a repository of its own.
   public record Inputs(
       JsonNode override,
       JsonNode control,
       JsonNode meta,
       JsonNode upstream,
       String repoUrl,
-      SequencedMap<String, String> refs,
+      String ref,
       Map<String, JsonNode> contrib,
-      Map<String, SequencedMap<String, String>> contribRefs) {
+      Map<String, String> contribRefs) {
     public Inputs {
       override = orMissing(override);
       control = orMissing(control);
       meta = orMissing(meta);
       upstream = orMissing(upstream);
-      refs = refs == null ? new LinkedHashMap<>() : refs;
       contrib = contrib == null ? Map.of() : contrib;
       contribRefs = contribRefs == null ? Map.of() : contribRefs;
     }
 
-    /// An entry with no contrib extension built from a repository of its own.
+    /// A version with no contrib extension built from a repository of its own.
     public Inputs(
         JsonNode override,
         JsonNode control,
         JsonNode meta,
         JsonNode upstream,
         String repoUrl,
-        SequencedMap<String, String> refs,
+        String ref,
         Map<String, JsonNode> contrib) {
-      this(override, control, meta, upstream, repoUrl, refs, contrib, null);
+      this(override, control, meta, upstream, repoUrl, ref, contrib, null);
     }
   }
 
@@ -146,24 +152,14 @@ public final class AboutResolver {
 
     repositoryUrl.ifPresent(url -> about.putObject("repository").put("url", url));
 
-    var versions = objectMapper.createObjectNode();
-    inputs
-        .refs()
-        .forEach(
-            (version, ref) -> {
-              var entry = versions.putObject(version);
-              if (ref == null) {
-                return;
-              }
-              entry.put("ref", ref);
-              var readme = forge.path("readme").path(ref);
-              repositoryUrl
-                  .flatMap(Forge::of)
-                  .filter(found -> readme.isTextual())
-                  .ifPresent(found -> entry.put("readme", found.rawUrl(ref, readme.asText())));
-            });
-    if (!versions.isEmpty()) {
-      about.set("versions", versions);
+    var ref = inputs.ref();
+    if (ref != null) {
+      about.put("ref", ref);
+      var readme = forge.path("readme");
+      repositoryUrl
+          .flatMap(Forge::of)
+          .filter(found -> readme.isTextual())
+          .ifPresent(found -> about.put("readme", found.rawUrl(ref, readme.asText())));
     }
 
     var contrib = contrib(objectMapper, inputs, about);
@@ -174,9 +170,9 @@ public final class AboutResolver {
     return about;
   }
 
-  /// The extensions a flavor carries in its own tree, each described the way an external one is,
-  /// from its control file and the override's `contrib` block. What they
-  /// share with the flavor -- the repository, the refs, the licence -- is the flavor's and is not
+  /// The extensions this version of a flavor carries in its own tree, each described the way an
+  /// external one is, from its control file and the override's `contrib` block. What they share
+  /// with the flavor -- the repository, the ref, the licence -- is the flavor's and is not
   /// repeated.
   private static ObjectNode contrib(ObjectMapper objectMapper, Inputs inputs, ObjectNode flavor) {
     var names = new LinkedHashSet<String>(inputs.contrib().keySet());
@@ -209,12 +205,11 @@ public final class AboutResolver {
                     .putObject("repository")
                     .put("url", override.path("repository").path("url").asText());
               }
-              // An extension built from a repository of its own names its ref there per flavor
-              // version; the flavor's refs point into the wrong tree.
-              var refs = inputs.contribRefs().get(name);
-              if (refs != null && !refs.isEmpty()) {
-                var versions = about.putObject("versions");
-                refs.forEach((version, ref) -> versions.putObject(version).put("ref", ref));
+              // An extension built from a repository of its own names its ref there; the
+              // flavor's ref points into the wrong tree.
+              var ref = inputs.contribRefs().get(name);
+              if (ref != null) {
+                about.put("ref", ref);
               }
 
               if (!about.isEmpty()) {

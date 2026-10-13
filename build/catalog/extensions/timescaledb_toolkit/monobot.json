@@ -16,7 +16,9 @@
     "pin": ["1.24.0"]
   },
   "about": {
-    "license": "LicenseRef-Timescale"
+    "latest": {
+      "license": "LicenseRef-Timescale"
+    }
   },
   "metadata": {
     "build_system": "pgrx",

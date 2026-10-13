@@ -1,27 +1,26 @@
 {
-  "description": "vectors: Vector database plugin for Postgres, written in Rust, specifically designed for LLM",
-  "long_description": "Scalable, Low-latency and Hybrid-enabled Vector Search in Postgres. Revolutionize Vector Search, not Database.",
-  "homepage": "https://docs.vectorchord.ai/getting-started/overview.html",
-  "license": "Apache-2.0",
-  "keywords": [
-    "chatgpt",
-    "faiss",
-    "gpt",
-    "hacktoberfest",
-    "llm",
-    "nearest-neighbor-search",
-    "postgres",
-    "rust",
-    "vector",
-    "vector-database"
-  ],
-  "repository": {
-    "url": "https://github.com/tensorchord/pgvecto.rs"
-  },
-  "versions": {
-    "0.4.0": {
-      "ref": "v0.4.0",
-      "readme": "https://raw.githubusercontent.com/tensorchord/pgvecto.rs/v0.4.0/README.md"
-    }
+  "latest": {
+    "version": "0.4.0",
+    "description": "vectors: Vector database plugin for Postgres, written in Rust, specifically designed for LLM",
+    "long_description": "Scalable, Low-latency and Hybrid-enabled Vector Search in Postgres. Revolutionize Vector Search, not Database.",
+    "homepage": "https://docs.vectorchord.ai/getting-started/overview.html",
+    "license": "Apache-2.0",
+    "keywords": [
+      "chatgpt",
+      "faiss",
+      "gpt",
+      "hacktoberfest",
+      "llm",
+      "nearest-neighbor-search",
+      "postgres",
+      "rust",
+      "vector",
+      "vector-database"
+    ],
+    "repository": {
+      "url": "https://github.com/tensorchord/pgvecto.rs"
+    },
+    "ref": "v0.4.0",
+    "readme": "https://raw.githubusercontent.com/tensorchord/pgvecto.rs/v0.4.0/README.md"
   }
 }

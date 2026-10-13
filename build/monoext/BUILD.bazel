@@ -1,3 +1,6 @@
 package(default_visibility = ["//visibility:public"])
 
-exports_files(["monoext.bzl"])
+exports_files([
+    "about.bzl",
+    "monoext.bzl",
+])

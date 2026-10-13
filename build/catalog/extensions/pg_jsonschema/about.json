@@ -1,17 +1,16 @@
 {
-  "description": "pg_jsonschema",
-  "long_description": "PostgreSQL extension providing JSON Schema validation",
-  "homepage": "https://github.com/supabase/pg_jsonschema",
-  "license": "Apache-2.0",
-  "maintainers": ["Oliver Rice <github@oliverrice.com>"],
-  "keywords": ["jsonschema", "validation", "json", "jsonb"],
-  "repository": {
-    "url": "https://github.com/supabase/pg_jsonschema"
-  },
-  "versions": {
-    "0.3.4": {
-      "ref": "v0.3.4",
-      "readme": "https://raw.githubusercontent.com/supabase/pg_jsonschema/v0.3.4/README.md"
-    }
+  "latest": {
+    "version": "0.3.4",
+    "description": "pg_jsonschema",
+    "long_description": "PostgreSQL extension providing JSON Schema validation",
+    "homepage": "https://github.com/supabase/pg_jsonschema",
+    "license": "Apache-2.0",
+    "maintainers": ["Oliver Rice <github@oliverrice.com>"],
+    "keywords": ["jsonschema", "validation", "json", "jsonb"],
+    "repository": {
+      "url": "https://github.com/supabase/pg_jsonschema"
+    },
+    "ref": "v0.3.4",
+    "readme": "https://raw.githubusercontent.com/supabase/pg_jsonschema/v0.3.4/README.md"
   }
 }

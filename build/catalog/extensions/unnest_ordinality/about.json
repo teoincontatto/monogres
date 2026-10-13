@@ -1,17 +1,16 @@
 {
-  "description": "unnest function with ordinality",
-  "long_description": "Fast unnest of a PostgreSQL array, with row number added",
-  "homepage": "https://github.com/pgexperts/unnest_ordinality",
-  "license": "PostgreSQL",
-  "maintainers": ["Andrew Dunstan <andrew@dunslane.net>"],
-  "keywords": ["array", "unnest", "ordinality", "row_number"],
-  "repository": {
-    "url": "https://github.com/pgexperts/unnest_ordinality"
-  },
-  "versions": {
-    "1.0.1": {
-      "ref": "REL_1_0_1",
-      "readme": "https://raw.githubusercontent.com/pgexperts/unnest_ordinality/REL_1_0_1/README.md"
-    }
+  "latest": {
+    "version": "1.0.1",
+    "description": "unnest function with ordinality",
+    "long_description": "Fast unnest of a PostgreSQL array, with row number added",
+    "homepage": "https://github.com/pgexperts/unnest_ordinality",
+    "license": "PostgreSQL",
+    "maintainers": ["Andrew Dunstan <andrew@dunslane.net>"],
+    "keywords": ["array", "unnest", "ordinality", "row_number"],
+    "repository": {
+      "url": "https://github.com/pgexperts/unnest_ordinality"
+    },
+    "ref": "REL_1_0_1",
+    "readme": "https://raw.githubusercontent.com/pgexperts/unnest_ordinality/REL_1_0_1/README.md"
   }
 }

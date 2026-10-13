@@ -1,13 +1,12 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgexperts/unnest_ordinality",
-    "description": null,
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "REL_1_0_1": "README.md"
+  "latest": {
+    "version": "1.0.1",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgexperts/unnest_ordinality",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

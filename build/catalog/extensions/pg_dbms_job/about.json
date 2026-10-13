@@ -1,15 +1,14 @@
 {
-  "description": "Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL",
-  "long_description": "PostgreSQL extension to schedule and manage jobs in a job queue similar to Oracle DBMS_JOB package.",
-  "homepage": "https://github.com/HexaCluster/pg_dbms_job",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/HexaCluster/pg_dbms_job"
-  },
-  "versions": {
-    "2.0": {
-      "ref": "v2.0",
-      "readme": "https://raw.githubusercontent.com/HexaCluster/pg_dbms_job/v2.0/README.md"
-    }
+  "latest": {
+    "version": "2.0",
+    "description": "Extension to add Oracle DBMS_JOB full compatibility to PostgreSQL",
+    "long_description": "PostgreSQL extension to schedule and manage jobs in a job queue similar to Oracle DBMS_JOB package.",
+    "homepage": "https://github.com/HexaCluster/pg_dbms_job",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/HexaCluster/pg_dbms_job"
+    },
+    "ref": "v2.0",
+    "readme": "https://raw.githubusercontent.com/HexaCluster/pg_dbms_job/v2.0/README.md"
   }
 }

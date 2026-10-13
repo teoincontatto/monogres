@@ -1,29 +1,28 @@
 {
-  "description": "A json document store",
-  "long_description": "A JSON document store on PostgreSQL",
-  "homepage": "http://bedquiltdb.github.io",
-  "license": "MIT",
-  "maintainers": ["Shane Kilkelly <shane+bedquiltdb@kilkelly.me>"],
-  "keywords": [
-    "json",
-    "object store",
-    "document store",
-    "jsonb",
-    "json store",
-    "bedquilt",
-    "bedquiltdb",
-    "database",
-    "nosql",
-    "plpgsql",
-    "sql"
-  ],
-  "repository": {
-    "url": "https://github.com/BedquiltDB/bedquilt-core"
-  },
-  "versions": {
-    "2.1.0": {
-      "ref": "v2.1.0",
-      "readme": "https://raw.githubusercontent.com/BedquiltDB/bedquilt-core/v2.1.0/README.md"
-    }
+  "latest": {
+    "version": "2.1.0",
+    "description": "A json document store",
+    "long_description": "A JSON document store on PostgreSQL",
+    "homepage": "http://bedquiltdb.github.io",
+    "license": "MIT",
+    "maintainers": ["Shane Kilkelly <shane+bedquiltdb@kilkelly.me>"],
+    "keywords": [
+      "json",
+      "object store",
+      "document store",
+      "jsonb",
+      "json store",
+      "bedquilt",
+      "bedquiltdb",
+      "database",
+      "nosql",
+      "plpgsql",
+      "sql"
+    ],
+    "repository": {
+      "url": "https://github.com/BedquiltDB/bedquilt-core"
+    },
+    "ref": "v2.1.0",
+    "readme": "https://raw.githubusercontent.com/BedquiltDB/bedquilt-core/v2.1.0/README.md"
   }
 }

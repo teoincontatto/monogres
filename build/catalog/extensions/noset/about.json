@@ -1,17 +1,19 @@
 {
-  "description": "Module for blocking SET variables for non-super users.",
-  "long_description": "Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.",
-  "homepage": "https://gitlab.com/ongresinc/extensions/noset",
-  "license": "AGPL-3.0",
-  "repository": {
-    "url": "https://gitlab.com/ongresinc/extensions/noset"
+  "latest": {
+    "version": "0.3.0",
+    "description": "Module for blocking SET variables for non-super users.",
+    "long_description": "Noset is a PostgreSQL Extension that allows blocking specific users to change a set of user-context variables.",
+    "homepage": "https://gitlab.com/ongresinc/extensions/noset",
+    "license": "AGPL-3.0",
+    "repository": {
+      "url": "https://gitlab.com/ongresinc/extensions/noset"
+    },
+    "ref": "v0.3.0",
+    "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.3.0/README.md"
   },
   "versions": {
-    "0.3.0": {
-      "ref": "v0.3.0",
-      "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.3.0/README.md"
-    },
     "0.2.0": {
+      "description": "module to avoid SET command for specific user",
       "ref": "v0.2.0",
       "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.2.0/README.md"
     }

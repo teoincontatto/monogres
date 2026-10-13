@@ -3,9 +3,11 @@ package dev.monogres.monobot.fetch;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.clearInvocations;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
@@ -22,24 +24,25 @@ import io.quarkus.test.InjectMock;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.TestProfile;
 import jakarta.inject.Inject;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /// What an entry says about itself to a reader: the snapshot of what its upstream answered, taken
 /// once and committed, and the `about.json` derived from that snapshot and the archive.
 ///
-/// The upstream is mocked. What is under test is when it is asked, what is kept of the answer, and
-/// that a run with a snapshot in hand asks it nothing.
+/// The upstream is mocked. What is under test is when it is asked, what is kept of the answer, that
+/// a run with a snapshot in hand asks it nothing, and how each version keeps its own.
 @QuarkusTest
 @TestProfile(ScrapeUpstreamTestProfile.class)
 class FetchAboutTest {
   private static final String EXTENSION_DIR = "extensions/fixture";
-  private static final String VERSION = "1.0.0";
   private static final Forge FORGE = new Forge(Forge.Kind.GITHUB, "monogres/fixture");
 
   private static final String CONFIG =
@@ -55,9 +58,11 @@ class FetchAboutTest {
             "url": "https://github.com/monogres/{name}/archive/refs/tags/{tag}.tar.gz"
           }
         },
-        "versions": { "pin": ["1.0.0"] }
+        "versions": { "pin": %s }%s
       }
       """;
+
+  private static final Pattern TAG = Pattern.compile("/v([^/]+)\\.tar\\.gz$");
 
   @InjectMock TagLister tagLister;
 
@@ -72,38 +77,48 @@ class FetchAboutTest {
   @BeforeEach
   void setUp() throws Exception {
     PipelineFixture.resetTree();
-    PipelineFixture.writeConfig(EXTENSION_DIR, CONFIG);
+    configure("[\"1.0.0\"]", "");
 
+    // Every version serves an archive of its own, named the way `strip_prefix` expects it.
     when(sourceArchive.download(any(), any()))
         .thenAnswer(
             invocation -> {
+              URL url = invocation.getArgument(0);
               Path target = invocation.getArgument(1);
+              var matcher = TAG.matcher(url.getPath());
+              assertTrue(matcher.find(), "not a tag archive: " + url);
+              var version = matcher.group(1);
 
               return PipelineFixture.served(
                   target,
                   PipelineFixture.controlArchive(
                       "fixture",
-                      "fixture-" + VERSION,
-                      PipelineFixture.control(VERSION, "a fixture extension"),
+                      "fixture-" + version,
+                      PipelineFixture.control(version, "a fixture extension"),
                       0L));
             });
-    when(upstreamClient.repository(any())).thenReturn(Optional.of(repository()));
-    when(upstreamClient.readme(any(), eq("v" + VERSION))).thenReturn(Optional.of("README.md"));
+    when(upstreamClient.repository(any())).thenReturn(Optional.of(repository("the forge about")));
+    when(upstreamClient.readme(any(), any())).thenReturn(Optional.of("README.md"));
   }
 
-  private ObjectNode repository() throws Exception {
+  static void configure(String pin, String about) throws Exception {
+    PipelineFixture.writeConfig(EXTENSION_DIR, CONFIG.formatted(pin, about));
+  }
+
+  ObjectNode repository(String description) throws Exception {
     return (ObjectNode)
         objectMapper.readTree(
             """
             {
               "kind": "github",
               "url": "https://github.com/monogres/fixture",
-              "description": "the forge about",
+              "description": "%s",
               "homepage": null,
               "license": "MIT",
               "topics": ["fixtures"]
             }
-            """);
+            """
+                .formatted(description));
   }
 
   private void run() throws Exception {
@@ -130,23 +145,85 @@ class FetchAboutTest {
   void generateSnapshotsTheUpstreamAndDerivesAbout() throws Exception {
     run();
 
-    var upstream = read(upstreamJson());
-    assertEquals("the forge about", upstream.path("forge").path("description").asText());
-    assertEquals("README.md", upstream.path("forge").path("readme").path("v1.0.0").asText());
-    assertEquals(1, upstream.size(), "the snapshot holds more than the forge: " + upstream);
+    assertEquals(
+        objectMapper.readTree(
+            """
+            {
+              "latest": {
+                "version": "1.0.0",
+                "forge": {
+                  "kind": "github",
+                  "url": "https://github.com/monogres/fixture",
+                  "description": "the forge about",
+                  "license": "MIT",
+                  "topics": ["fixtures"],
+                  "readme": "README.md"
+                }
+              }
+            }
+            """),
+        read(upstreamJson()));
 
     assertEquals(
         objectMapper.readTree(
             """
             {
-              "description": "a fixture extension",
-              "long_description": "the forge about",
-              "homepage": "https://github.com/monogres/fixture",
-              "license": "MIT",
-              "keywords": ["fixtures"],
-              "repository": {"url": "https://github.com/monogres/fixture"},
+              "latest": {
+                "version": "1.0.0",
+                "description": "a fixture extension",
+                "long_description": "the forge about",
+                "homepage": "https://github.com/monogres/fixture",
+                "license": "MIT",
+                "keywords": ["fixtures"],
+                "repository": {"url": "https://github.com/monogres/fixture"},
+                "ref": "v1.0.0",
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+              }
+            }
+            """),
+        read(aboutJson()));
+    verify(upstreamClient).repository(FORGE);
+  }
+
+  /// A forge only answers about the repository as it is now, so a version keeps the answer from
+  /// when it was catalogued: a new version is asked about alone, and the older one is not asked
+  /// again even though the forge has since changed its mind.
+  @Test
+  void newVersionIsAskedAboutAloneAndOlderOnesStayFrozen() throws Exception {
+    run();
+    clearInvocations(upstreamClient);
+    when(upstreamClient.repository(any())).thenReturn(Optional.of(repository("a newer about")));
+    configure("[\"1.0.0\", \"1.1.0\"]", "");
+
+    run();
+
+    verify(upstreamClient).repository(FORGE);
+    verify(upstreamClient).readme(any(), eq("v1.1.0"));
+    verify(upstreamClient, never()).readme(any(), eq("v1.0.0"));
+    var upstream = read(upstreamJson());
+    assertEquals("1.1.0", upstream.path("latest").path("version").asText());
+    assertEquals(
+        objectMapper.readTree("{\"1.0.0\": {\"forge\": {\"description\": \"the forge about\"}}}"),
+        upstream.path("versions"));
+
+    assertEquals(
+        objectMapper.readTree(
+            """
+            {
+              "latest": {
+                "version": "1.1.0",
+                "description": "a fixture extension",
+                "long_description": "a newer about",
+                "homepage": "https://github.com/monogres/fixture",
+                "license": "MIT",
+                "keywords": ["fixtures"],
+                "repository": {"url": "https://github.com/monogres/fixture"},
+                "ref": "v1.1.0",
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.1.0/README.md"
+              },
               "versions": {
                 "1.0.0": {
+                  "long_description": "the forge about",
                   "ref": "v1.0.0",
                   "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
                 }
@@ -154,7 +231,42 @@ class FetchAboutTest {
             }
             """),
         read(aboutJson()));
-    verify(upstreamClient).repository(FORGE);
+  }
+
+  /// The override's `latest` is the newest version's, and a patch keyed on a version applies to it
+  /// and to every older one.
+  @Test
+  void versionedOverrideAppliesToItsVersionAndOlder() throws Exception {
+    configure(
+        "[\"0.9.0\", \"1.0.0\", \"1.1.0\"]",
+        """
+        ,
+        "about": {
+          "latest": {"description": "now", "categories": ["FIXTURE"]},
+          "versions": {"1.0.0": {"description": "then"}}
+        }
+        """);
+
+    run();
+
+    var about = read(aboutJson());
+    assertEquals("now", about.path("latest").path("description").asText());
+    assertEquals(
+        objectMapper.readTree(
+            """
+            {
+              "1.0.0": {
+                "description": "then",
+                "ref": "v1.0.0",
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+              },
+              "0.9.0": {
+                "ref": "v0.9.0",
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v0.9.0/README.md"
+              }
+            }
+            """),
+        about.path("versions"));
   }
 
   /// The snapshot is the answer, so the run after the one that took it asks nothing and writes the

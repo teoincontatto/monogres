@@ -1,11 +1,12 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/furstenheim/jsonb_deep_sum",
-    "description": "Sum over jsonb rows",
-    "homepage": null,
-    "license": "MIT",
-    "topics": [],
-    "readme": {}
+  "latest": {
+    "version": "0.0.2",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/furstenheim/jsonb_deep_sum",
+      "description": "Sum over jsonb rows",
+      "license": "MIT",
+      "topics": []
+    }
   }
 }

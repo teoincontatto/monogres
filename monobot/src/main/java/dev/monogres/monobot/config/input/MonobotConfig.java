@@ -27,7 +27,8 @@ import java.util.Optional;
 ///
 /// `about` overrides what [dev.monogres.monobot.about.AboutResolver] would otherwise derive for
 /// `about.json`, field by field, for the entries whose upstream says nothing or says it wrong. It
-/// is the one place a description or a licence is written by hand.
+/// is the one place a description or a licence is written by hand, and it is versioned the way
+/// `about.json` is: see [dev.monogres.monobot.about.Layers].
 ///
 /// The two required fields are checked here because nothing else would. There is no nullability
 /// module and no bean validation extension on the classpath, so an annotation saying so is a

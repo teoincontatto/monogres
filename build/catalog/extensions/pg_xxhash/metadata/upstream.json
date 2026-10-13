@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/fabriziomello/pg_xxhash",
-    "description": "xxHash functions for PostgreSQL",
-    "homepage": null,
-    "license": "Apache-2.0",
-    "topics": [],
-    "readme": {
-      "3fb24f08afc2ebf804b99fea58f2eeef24cef6f2": "README.md"
+  "latest": {
+    "version": "0.1",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/fabriziomello/pg_xxhash",
+      "description": "xxHash functions for PostgreSQL",
+      "license": "Apache-2.0",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

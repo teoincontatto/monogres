@@ -1,17 +1,16 @@
 {
-  "description": "to get information and execute statement about VACUUM and ANALYZE on tables",
-  "long_description": "Functions to get information and execute statement about VACUUM and ANALYZE on tables, read the README",
-  "homepage": "https://github.com/asotolongo/vacuum_utils",
-  "license": "PostgreSQL",
-  "maintainers": ["Anthony Sotolongo <asotolongo@gmail.com>"],
-  "keywords": ["info", "maintenance"],
-  "repository": {
-    "url": "https://github.com/asotolongo/vacuum_utils"
-  },
-  "versions": {
-    "0.1.0": {
-      "ref": "0.1.0",
-      "readme": "https://raw.githubusercontent.com/asotolongo/vacuum_utils/0.1.0/README.md"
-    }
+  "latest": {
+    "version": "0.1.0",
+    "description": "to get information and execute statement about VACUUM and ANALYZE on tables",
+    "long_description": "Functions to get information and execute statement about VACUUM and ANALYZE on tables, read the README",
+    "homepage": "https://github.com/asotolongo/vacuum_utils",
+    "license": "PostgreSQL",
+    "maintainers": ["Anthony Sotolongo <asotolongo@gmail.com>"],
+    "keywords": ["info", "maintenance"],
+    "repository": {
+      "url": "https://github.com/asotolongo/vacuum_utils"
+    },
+    "ref": "0.1.0",
+    "readme": "https://raw.githubusercontent.com/asotolongo/vacuum_utils/0.1.0/README.md"
   }
 }

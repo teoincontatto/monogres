@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/sraoss/pg_ivm",
-    "description": "IVM (Incremental View Maintenance) implementation as a PostgreSQL extension",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "v1.15": "README.md"
+  "latest": {
+    "version": "1.15",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/sraoss/pg_ivm",
+      "description": "IVM (Incremental View Maintenance) implementation as a PostgreSQL extension",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

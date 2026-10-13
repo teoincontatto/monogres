@@ -1,13 +1,12 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/HexaCluster/pg_dbms_job",
-    "description": null,
-    "homepage": null,
-    "license": "PostgreSQL",
-    "topics": [],
-    "readme": {
-      "v2.0": "README.md"
+  "latest": {
+    "version": "2.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/HexaCluster/pg_dbms_job",
+      "license": "PostgreSQL",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

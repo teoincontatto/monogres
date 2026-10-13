@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import org.junit.jupiter.api.Test;
 
@@ -51,14 +50,14 @@ class AboutResolverTest {
           "homepage": "https://forge.example.com",
           "license": "MIT",
           "topics": ["vectors", "postgres"],
-          "readme": {"v1.0.0": "README.md", "v0.9.0": null}
+          "readme": "README.md"
         }
       }
       """;
 
   private ObjectNode resolve(
-      String override, String control, String meta, String upstream, Map<String, String> refs) {
-    return resolve(override, control, meta, upstream, refs, Map.of());
+      String override, String control, String meta, String upstream, String ref) {
+    return resolve(override, control, meta, upstream, ref, null);
   }
 
   private ObjectNode resolve(
@@ -66,7 +65,7 @@ class AboutResolverTest {
       String control,
       String meta,
       String upstream,
-      Map<String, String> refs,
+      String ref,
       Map<String, JsonNode> contrib) {
     return AboutResolver.resolve(
         objectMapper,
@@ -76,12 +75,12 @@ class AboutResolverTest {
             meta == null ? null : json(meta),
             upstream == null ? null : json(upstream),
             REPO_URL,
-            new LinkedHashMap<>(refs),
+            ref,
             contrib));
   }
 
   private ObjectNode all() {
-    return resolve(null, CONTROL, META, UPSTREAM, Map.of());
+    return resolve(null, CONTROL, META, UPSTREAM, null);
   }
 
   /// `\dx` shows the control comment, so it is the short description whenever there is one.
@@ -89,11 +88,10 @@ class AboutResolverTest {
   void descriptionPrecedence() {
     assertEquals("control comment", all().path("description").asText());
     assertEquals(
-        "meta abstract",
-        resolve(null, null, META, UPSTREAM, Map.of()).path("description").asText());
+        "meta abstract", resolve(null, null, META, UPSTREAM, null).path("description").asText());
     assertEquals(
         "forge about",
-        resolve(null, null, null, "{\"forge\": {\"description\": \"forge about\"}}", Map.of())
+        resolve(null, null, null, "{\"forge\": {\"description\": \"forge about\"}}", null)
             .path("description")
             .asText());
   }
@@ -104,10 +102,10 @@ class AboutResolverTest {
     assertEquals("forge about", all().path("long_description").asText());
     assertEquals(
         "meta description",
-        resolve(null, CONTROL, META, "{}", Map.of()).path("long_description").asText());
+        resolve(null, CONTROL, META, "{}", null).path("long_description").asText());
     assertEquals(
         "meta abstract",
-        resolve(null, CONTROL, "{\"abstract\": \"meta abstract\"}", "{}", Map.of())
+        resolve(null, CONTROL, "{\"abstract\": \"meta abstract\"}", "{}", null)
             .path("long_description")
             .asText());
   }
@@ -117,13 +115,13 @@ class AboutResolverTest {
     assertEquals("https://forge.example.com", all().path("homepage").asText());
     assertEquals(
         "https://meta.example.com",
-        resolve(null, null, META, "{}", Map.of()).path("homepage").asText());
+        resolve(null, null, META, "{}", null).path("homepage").asText());
   }
 
   /// With no homepage named anywhere, the repository is where a reader is sent.
   @Test
   void homepageFallsBackToTheRepository() {
-    var about = resolve(null, null, null, "{}", Map.of());
+    var about = resolve(null, null, null, "{}", null);
 
     assertEquals(REPO_URL, about.path("homepage").asText());
   }
@@ -134,11 +132,11 @@ class AboutResolverTest {
     assertEquals("MIT", all().path("license").asText());
     assertEquals(
         "PostgreSQL",
-        resolve(null, null, META, UPSTREAM.replace("\"MIT\"", "\"NOASSERTION\""), Map.of())
+        resolve(null, null, META, UPSTREAM.replace("\"MIT\"", "\"NOASSERTION\""), null)
             .path("license")
             .asText());
     assertFalse(
-        resolve(null, null, null, UPSTREAM.replace("\"MIT\"", "\"NOASSERTION\""), Map.of())
+        resolve(null, null, null, UPSTREAM.replace("\"MIT\"", "\"NOASSERTION\""), null)
             .has("license"),
         "a licence nobody named was made up");
   }
@@ -166,8 +164,7 @@ class AboutResolverTest {
     assertEquals(
         "https://github.com/monogres/renamed", all().path("repository").path("url").asText());
     assertEquals(
-        REPO_URL,
-        resolve(null, null, null, "{}", Map.of()).path("repository").path("url").asText());
+        REPO_URL, resolve(null, null, null, "{}", null).path("repository").path("url").asText());
   }
 
   @Test
@@ -186,7 +183,7 @@ class AboutResolverTest {
         }
         """;
 
-    var about = resolve(override, CONTROL, META, UPSTREAM, Map.of());
+    var about = resolve(override, CONTROL, META, UPSTREAM, null);
 
     assertEquals("o description", about.path("description").asText());
     assertEquals("o long", about.path("long_description").asText());
@@ -198,32 +195,27 @@ class AboutResolverTest {
     assertEquals("https://gitlab.com/o/o", about.path("repository").path("url").asText());
   }
 
-  /// A README is linked only where the snapshot found one at that ref; a version with no ref is
-  /// still listed, with nothing to say about it.
+  /// The README the snapshot found is linked at the version's own ref, on the forge's spelling of
+  /// the repository.
   @Test
-  void versionsCarryTheirRefAndReadme() {
-    var refs = new LinkedHashMap<String, String>();
-    refs.put("1.0.0", "v1.0.0");
-    refs.put("0.9.0", "v0.9.0");
-    refs.put("0.8.0", "v0.8.0");
-    refs.put("0.7.0", null);
+  void versionCarriesItsRefAndReadme() {
+    var about = resolve(null, null, null, UPSTREAM, "v1.0.0");
 
-    var versions = resolve(null, null, null, UPSTREAM, refs).path("versions");
-
+    assertEquals("v1.0.0", about.path("ref").asText());
     assertEquals(
-        json(
-            """
-            {
-              "1.0.0": {
-                "ref": "v1.0.0",
-                "readme": "https://raw.githubusercontent.com/monogres/renamed/v1.0.0/README.md"
-              },
-              "0.9.0": {"ref": "v0.9.0"},
-              "0.8.0": {"ref": "v0.8.0"},
-              "0.7.0": {}
-            }
-            """),
-        versions);
+        "https://raw.githubusercontent.com/monogres/renamed/v1.0.0/README.md",
+        about.path("readme").asText());
+  }
+
+  /// A README the snapshot did not find is not linked, and a version with no ref has neither.
+  @Test
+  void noReadmeUnlessFoundAtTheRef() {
+    var about = resolve(null, null, null, "{\"forge\": {\"url\": \"" + REPO_URL + "\"}}", "v0.9.0");
+    assertEquals("v0.9.0", about.path("ref").asText());
+    assertFalse(about.has("readme"), "a README nobody found was linked: " + about);
+
+    var unreffed = resolve(null, null, null, UPSTREAM, null);
+    assertFalse(unreffed.has("ref") || unreffed.has("readme"), "unreffed: " + unreffed);
   }
 
   @Test
@@ -245,7 +237,7 @@ class AboutResolverTest {
             "hstore", json("{\"comment\": \"data type for storing sets of (key, value) pairs\"}"),
             "plperl", json("{\"comment\": \"PL/Perl procedural language\"}"));
 
-    var about = resolve(override, null, null, upstream, Map.of(), contrib).path("contrib");
+    var about = resolve(override, null, null, upstream, null, contrib).path("contrib");
 
     assertEquals(
         json(
@@ -276,19 +268,15 @@ class AboutResolverTest {
   }
 
   /// An extension a flavor builds out of a repository of its own (babelfish's from
-  /// babelfish_extensions) is tagged there, per flavor version, rather than at the flavor's ref.
+  /// babelfish_extensions) is tagged there rather than at the flavor's ref.
   @Test
-  void contribFromItsOwnRepositoryCarriesItsOwnRefs() {
+  void contribFromItsOwnRepositoryCarriesItsOwnRef() {
     var override =
         """
         {"contrib": {"babelfishpg_tsql": {"description": "T-SQL",
           "repository": {"url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
                          "index": "ext.json"}}}}
         """;
-    var refs = new LinkedHashMap<String, String>();
-    refs.put("5.4", "BABEL_5_4_0");
-    refs.put("4.8", "BABEL_4_8_0");
-
     var about =
         AboutResolver.resolve(
             objectMapper,
@@ -298,13 +286,12 @@ class AboutResolverTest {
                 null,
                 null,
                 REPO_URL,
-                null,
+                "BABEL_5_4_0__PG_17_7",
                 Map.of(),
-                Map.of("babelfishpg_tsql", refs)));
+                Map.of("babelfishpg_tsql", "BABEL_5_4_0")));
 
     assertEquals(
-        json("{\"5.4\": {\"ref\": \"BABEL_5_4_0\"}, \"4.8\": {\"ref\": \"BABEL_4_8_0\"}}"),
-        about.path("contrib").path("babelfishpg_tsql").path("versions"));
+        "BABEL_5_4_0", about.path("contrib").path("babelfishpg_tsql").path("ref").asText());
   }
 
   @Test

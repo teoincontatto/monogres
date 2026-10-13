@@ -73,7 +73,7 @@ have defaults in `src/main/resources/application.properties`:
 | `verifyCache` | no | How much of a cached archive is checked before a run answers from it: `size` compares its length against the length recorded for it, `digest` compares its digest, `none` takes the record at its word. Defaults to `size`. |
 | `refreshCache` | no | Whether to ask the source about archives the cache can already answer for. The request carries the recorded validators, so an unchanged archive costs a 304. Defaults to `false`. |
 | `scrapeUpstream` | no | Whether `generate` may ask an entry's forge about it for `about.json` (see [What the entry is](#what-the-entry-is)). `check` never asks. Defaults to `true`, and to `false` under the tests. |
-| `refreshUpstream` | no | Whether to ask the forge again about entries `metadata/upstream.json` already answers for, which is how a changed description reaches the catalog. Defaults to `false`. |
+| `refreshUpstream` | no | Whether to ask the forge again about the newest version of entries `metadata/upstream.json` already answers for, which is how a changed description reaches the catalog. Older versions keep their answer. Defaults to `false`. |
 | `githubToken` | no | A GitHub token for the API, which allows 60 anonymous requests an hour. `GITHUB_TOKEN` is read too, so `GITHUB_TOKEN=$(gh auth token)` is enough. |
 | `gitlabToken` | no | A GitLab token, read from `GITLAB_TOKEN` too. gitlab.com answers anonymous callers generously, so this is rarely needed. |
 
@@ -152,8 +152,8 @@ Fields:
   read for: an extension's for its own control file and META.json, a flavor's
   for the control files of every contrib module and procedural language in its
   tree, an addon's for nothing but its digest.
-- `about` (optional) -- Overrides for `about.json`, field by field, for whatever
-  the entry's upstream does not say or says wrong. See
+- `about` (optional) -- Overrides for `about.json`, field by field and version
+  by version, for whatever the entry's upstream does not say or says wrong. See
   [What the entry is](#what-the-entry-is).
 - `disabled` (optional) -- When `true`, the entry is left alone: no tags listed,
   no archives downloaded, and the `repo.json` a previous run wrote stays as it
@@ -367,39 +367,64 @@ a PGXN zip needs nothing said about it:
 
 `about.json`, beside `repo.json`, describes the entry for a reader rather than
 for the build: a short and a long description, the homepage, the licence as an
-SPDX expression, maintainers, keywords, the repository, and per version the ref
-the archive was cut from and a raw link to the README at that ref.
+SPDX expression, maintainers, keywords, the repository, the ref the archive was
+cut from and a raw link to the README at that ref.
+
+Every field is versioned. The newest version is written in full under
+`latest`, which names it in `version`, and every older version under
+`versions`, newest first, as only what differs from the version after it: a
+[JSON Merge Patch](https://www.rfc-editor.org/rfc/rfc7386) applied to that
+version, in that order. Objects merge field by field, anything else replaces,
+`null` removes, and a version that differs in nothing is `{}`.
 
 ```json
 {
-  "description": "vector data type and ivfflat and hnsw access methods",
-  "long_description": "Open-source vector similarity search for Postgres",
-  "homepage": "https://github.com/pgvector/pgvector",
-  "license": "PostgreSQL",
-  "repository": {"url": "https://github.com/pgvector/pgvector"},
+  "latest": {
+    "version": "0.8.2",
+    "description": "vector data type and ivfflat and hnsw access methods",
+    "long_description": "Open-source vector similarity search for Postgres",
+    "homepage": "https://github.com/pgvector/pgvector",
+    "license": "PostgreSQL",
+    "repository": {"url": "https://github.com/pgvector/pgvector"},
+    "ref": "v0.8.2",
+    "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md"
+  },
   "versions": {
-    "0.8.2": {
-      "ref": "v0.8.2",
-      "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md"
+    "0.8.1": {
+      "ref": "v0.8.1",
+      "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.1/README.md"
     }
   }
 }
 ```
 
-It is derived, field by field, from the first source that says something:
-the `about` override in `monobot.json`, the newest version's `control.json`
-(whose `comment` is the short description) and `META.json`, and what the
-entry's forge says about its repository. The forge is GitHub or gitlab.com,
-read off `url`; its answer is kept in `metadata/upstream.json`, which is
+Each version is derived, field by field, from the first source that says
+something: the `about` override in `monobot.json` as it stands at that version,
+that version's `control.json` (whose `comment` is the short description) and
+`META.json`, and what the entry's forge said about its repository when that
+version was catalogued. The forge is GitHub or gitlab.com, read off `url`; its
+answers are kept in `metadata/upstream.json`, layered the same way, which is
 committed, so the inputs are reviewable and `check` derives the same document
-offline. `generate` asks only for what that snapshot does not answer yet (an
-entry with none, a ref whose README has not been looked for), and asks again
-for everything under `refreshUpstream=true`. A flavor's document also carries
-a `contrib` block describing the extensions in its tree.
+offline. A forge only answers about the repository as it is today, so
+`generate` asks only about a version the snapshot has no answer for, and
+`refreshUpstream=true` asks again about the newest version alone: the older
+ones keep what was true when they were catalogued. A flavor's document also
+carries a `contrib` block per version, describing the extensions in its tree.
+
+The `about` override is layered the same way, except that its `latest` names no
+version (it is whichever is newest), and a patch under `versions` applies to the
+version it is keyed on and to every older one, catalogued or not:
+
+```json
+"about": {
+  "latest": { "description": "...", "license": "Apache-2.0" },
+  "versions": { "1.4": { "license": "GPL-2.0-only" } }
+}
+```
 
 A contrib extension the flavor builds out of a repository of its own names
-that repository in the flavor's `about.contrib.<name>.repository`, with the
-download index beside the entry its sources come from (babelfish's
+that repository in the flavor's `about.latest.contrib.<name>.repository`, with
+the download index beside the entry its sources come from (babelfish's
 `"index": "ext.json"`): its per-version refs are read from that index rather
 than written a second time.
 
@@ -407,7 +432,7 @@ The ref is the `tag` or `commit` the source materializes to. An entry whose
 archives do not come from its repository names it with a template instead:
 
 ```json
-"about": { "repository": { "ref": "{version}" } }
+"about": { "latest": { "repository": { "ref": "{version}" } } }
 ```
 
 ## Running

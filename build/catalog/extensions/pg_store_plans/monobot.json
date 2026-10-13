@@ -20,7 +20,9 @@
     }
   },
   "about": {
-    "license": "BSD-3-Clause"
+    "latest": {
+      "license": "BSD-3-Clause"
+    }
   },
   "metadata": {
     "compatible_with": {

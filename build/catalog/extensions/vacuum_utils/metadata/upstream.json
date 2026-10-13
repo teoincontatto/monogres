@@ -1,13 +1,11 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/asotolongo/vacuum_utils",
-    "description": null,
-    "homepage": null,
-    "license": null,
-    "topics": [],
-    "readme": {
-      "0.1.0": "README.md"
+  "latest": {
+    "version": "0.1.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/asotolongo/vacuum_utils",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

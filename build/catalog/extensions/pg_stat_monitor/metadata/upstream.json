@@ -1,23 +1,24 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/percona/pg_stat_monitor",
-    "description": "Query Performance Monitoring Tool for PostgreSQL",
-    "homepage": "https://docs.percona.com/pg-stat-monitor/",
-    "license": "NOASSERTION",
-    "topics": [
-      "distpg",
-      "hacktoberfest",
-      "percona",
-      "percona-distribution",
-      "pg",
-      "postgres",
-      "postgresql",
-      "statistics",
-      "statistics-collector"
-    ],
-    "readme": {
-      "2.3.2": "README.md"
+  "latest": {
+    "version": "2.3.2",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/percona/pg_stat_monitor",
+      "description": "Query Performance Monitoring Tool for PostgreSQL",
+      "homepage": "https://docs.percona.com/pg-stat-monitor/",
+      "license": "NOASSERTION",
+      "topics": [
+        "distpg",
+        "hacktoberfest",
+        "percona",
+        "percona-distribution",
+        "pg",
+        "postgres",
+        "postgresql",
+        "statistics",
+        "statistics-collector"
+      ],
+      "readme": "README.md"
     }
   }
 }

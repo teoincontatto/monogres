@@ -1,13 +1,14 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgadmin-org/pgagent",
-    "description": "[DEPRECATED] pgAgent - A job scheduler for PostgreSQL",
-    "homepage": "https://www.pgadmin.org/",
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "pgagent-4.2.3": "README"
+  "latest": {
+    "version": "4.2.3",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgadmin-org/pgagent",
+      "description": "[DEPRECATED] pgAgent - A job scheduler for PostgreSQL",
+      "homepage": "https://www.pgadmin.org/",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README"
     }
   }
 }

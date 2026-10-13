@@ -1,17 +1,16 @@
 {
-  "description": "Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes",
-  "long_description": "PostgreSQL extension to generate SHA256-CRYPT and SHA512-CRYPT password hashes",
-  "homepage": "https://github.com/dverite/postgres-shacrypt",
-  "license": "PostgreSQL",
-  "maintainers": ["Daniel Vérité <daniel@manitou-mail.org>"],
-  "keywords": ["crypt", "hash", "sha256-crypt", "sha512-crypt"],
-  "repository": {
-    "url": "https://github.com/dverite/postgres-shacrypt"
-  },
-  "versions": {
-    "1.1": {
-      "ref": "09cc46affa270f79d0402eb0c4ce140588118309",
-      "readme": "https://raw.githubusercontent.com/dverite/postgres-shacrypt/09cc46affa270f79d0402eb0c4ce140588118309/README.md"
-    }
+  "latest": {
+    "version": "1.1",
+    "description": "Implements SHA256-CRYPT and SHA512-CRYPT password encryption schemes",
+    "long_description": "PostgreSQL extension to generate SHA256-CRYPT and SHA512-CRYPT password hashes",
+    "homepage": "https://github.com/dverite/postgres-shacrypt",
+    "license": "PostgreSQL",
+    "maintainers": ["Daniel Vérité <daniel@manitou-mail.org>"],
+    "keywords": ["crypt", "hash", "sha256-crypt", "sha512-crypt"],
+    "repository": {
+      "url": "https://github.com/dverite/postgres-shacrypt"
+    },
+    "ref": "09cc46affa270f79d0402eb0c4ce140588118309",
+    "readme": "https://raw.githubusercontent.com/dverite/postgres-shacrypt/09cc46affa270f79d0402eb0c4ce140588118309/README.md"
   }
 }

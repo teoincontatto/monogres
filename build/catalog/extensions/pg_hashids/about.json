@@ -1,23 +1,22 @@
 {
-  "description": "pg_hashids",
-  "long_description": "Short unique id generator for PostgreSQL, using hashids",
-  "homepage": "https://github.com/iCyberon/pg_hashids",
-  "license": "MIT",
-  "keywords": [
-    "database",
-    "hashids",
-    "pg-hashids",
-    "postgres",
-    "postgresql",
-    "postgresql-extension"
-  ],
-  "repository": {
-    "url": "https://github.com/iCyberon/pg_hashids"
-  },
-  "versions": {
-    "1.2.1": {
-      "ref": "v1.2.1",
-      "readme": "https://raw.githubusercontent.com/iCyberon/pg_hashids/v1.2.1/README.md"
-    }
+  "latest": {
+    "version": "1.2.1",
+    "description": "pg_hashids",
+    "long_description": "Short unique id generator for PostgreSQL, using hashids",
+    "homepage": "https://github.com/iCyberon/pg_hashids",
+    "license": "MIT",
+    "keywords": [
+      "database",
+      "hashids",
+      "pg-hashids",
+      "postgres",
+      "postgresql",
+      "postgresql-extension"
+    ],
+    "repository": {
+      "url": "https://github.com/iCyberon/pg_hashids"
+    },
+    "ref": "v1.2.1",
+    "readme": "https://raw.githubusercontent.com/iCyberon/pg_hashids/v1.2.1/README.md"
   }
 }

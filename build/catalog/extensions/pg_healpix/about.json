@@ -1,15 +1,14 @@
 {
-  "description": "HEALPIX functions for PostgreSQL",
-  "long_description": "Fork from https://github.com/segasai/pg_healpix",
-  "homepage": "https://gitlab.com/ongresinc/pg_healpix",
-  "license": "GPL-2.0-or-later",
-  "repository": {
-    "url": "https://gitlab.com/ongresinc/pg_healpix"
-  },
-  "versions": {
-    "0.1.0": {
-      "ref": "v0.1.0",
-      "readme": "https://gitlab.com/ongresinc/pg_healpix/-/raw/v0.1.0/README"
-    }
+  "latest": {
+    "version": "0.1.0",
+    "description": "HEALPIX functions for PostgreSQL",
+    "long_description": "Fork from https://github.com/segasai/pg_healpix",
+    "homepage": "https://gitlab.com/ongresinc/pg_healpix",
+    "license": "GPL-2.0-or-later",
+    "repository": {
+      "url": "https://gitlab.com/ongresinc/pg_healpix"
+    },
+    "ref": "v0.1.0",
+    "readme": "https://gitlab.com/ongresinc/pg_healpix/-/raw/v0.1.0/README"
   }
 }

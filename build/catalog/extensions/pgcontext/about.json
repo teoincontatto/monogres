@@ -1,17 +1,16 @@
 {
-  "description": "Qdrant-like retrieval inside Postgres",
-  "long_description": "A full AI search engine, built into Postgres.",
-  "homepage": "https://github.com/evokoa/pgcontext",
-  "license": "Apache-2.0",
-  "maintainers": ["Evokoa Team <team@evokoa.com>"],
-  "keywords": ["vector", "hnsw", "postgresql", "retrieval", "rust", "pgrx"],
-  "repository": {
-    "url": "https://github.com/Evokoa/pgContext"
-  },
-  "versions": {
-    "0.2.0": {
-      "ref": "v0.2.0",
-      "readme": "https://raw.githubusercontent.com/Evokoa/pgContext/v0.2.0/README.md"
-    }
+  "latest": {
+    "version": "0.2.0",
+    "description": "Qdrant-like retrieval inside Postgres",
+    "long_description": "A full AI search engine, built into Postgres.",
+    "homepage": "https://github.com/evokoa/pgcontext",
+    "license": "Apache-2.0",
+    "maintainers": ["Evokoa Team <team@evokoa.com>"],
+    "keywords": ["vector", "hnsw", "postgresql", "retrieval", "rust", "pgrx"],
+    "repository": {
+      "url": "https://github.com/Evokoa/pgContext"
+    },
+    "ref": "v0.2.0",
+    "readme": "https://raw.githubusercontent.com/Evokoa/pgContext/v0.2.0/README.md"
   }
 }

@@ -1,21 +1,21 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/orafce/orafce",
-    "description": "The \"orafce\" project implements in Postgres some of the functions from the Oracle database that are missing (or behaving differently).Those functions were verified on Oracle 10g, and the module is useful for production work.",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [
-      "c",
-      "extension",
-      "oracle",
-      "oracle-to-postgres",
-      "orafce",
-      "postgresql",
-      "postgresql-extension"
-    ],
-    "readme": {
-      "VERSION_4_16_9": "README.asciidoc"
+  "latest": {
+    "version": "4.16.9",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/orafce/orafce",
+      "description": "The \"orafce\" project implements in Postgres some of the functions from the Oracle database that are missing (or behaving differently).Those functions were verified on Oracle 10g, and the module is useful for production work.",
+      "license": "NOASSERTION",
+      "topics": [
+        "c",
+        "extension",
+        "oracle",
+        "oracle-to-postgres",
+        "orafce",
+        "postgresql",
+        "postgresql-extension"
+      ],
+      "readme": "README.asciidoc"
     }
   }
 }

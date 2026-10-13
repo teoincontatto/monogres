@@ -1,29 +1,28 @@
 {
-  "description": "PostGIS geometry and geography spatial types and functions",
-  "long_description": "PostGIS spatial database extension to PostgreSQL [mirror]",
-  "homepage": "https://postgis.net",
-  "license": "GPL-2.0",
-  "maintainers": ["PostGIS Steering Committee"],
-  "keywords": [
-    "gis",
-    "spatial",
-    "geometry",
-    "raster",
-    "geography",
-    "location",
-    "c",
-    "geospatial",
-    "plpgsql",
-    "postgis",
-    "postgresql"
-  ],
-  "repository": {
-    "url": "https://github.com/postgis/postgis"
-  },
-  "versions": {
-    "3.5.7": {
-      "ref": "3.5.7",
-      "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md"
-    }
+  "latest": {
+    "version": "3.5.7",
+    "description": "PostGIS geometry and geography spatial types and functions",
+    "long_description": "PostGIS spatial database extension to PostgreSQL [mirror]",
+    "homepage": "https://postgis.net",
+    "license": "GPL-2.0",
+    "maintainers": ["PostGIS Steering Committee"],
+    "keywords": [
+      "gis",
+      "spatial",
+      "geometry",
+      "raster",
+      "geography",
+      "location",
+      "c",
+      "geospatial",
+      "plpgsql",
+      "postgis",
+      "postgresql"
+    ],
+    "repository": {
+      "url": "https://github.com/postgis/postgis"
+    },
+    "ref": "3.5.7",
+    "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md"
   }
 }

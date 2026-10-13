@@ -227,8 +227,9 @@ def _root_all_bzl(entries, archs, contrib_entries = None, about = None):
         "REPOS_CONTRIB = %s" % Star.igen(repos_contrib),
         "CONTRIB_EXTENSIONS = sorted(CFGS_CONTRIB.keys())",
         # What the catalog's `about.json` files say, for a reader rather than
-        # for the build: the flavor's own, each external extension's by name,
-        # and each contrib entry's (from the flavor's `contrib` block).
+        # for the build, per version: the flavor's own, each external
+        # extension's by name, and each contrib entry's (from the flavor's
+        # `contrib` block) by flavor version.
         "ABOUT_FLAVOR = %s" % Star.igen((about or {}).get("flavor", {})),
         "ABOUT = %s" % Star.igen((about or {}).get("extensions", {})),
         "ABOUT_CONTRIB = %s" % Star.igen((about or {}).get("contrib", {})),
@@ -350,8 +351,9 @@ _ATTRS = dict(
     # base_version]`) for the committed test introspects, derived from the
     # catalog. Re-exposed as `introspect.bzl`'s `TEST_INTROSPECTIONS`.
     ext_introspect_manifest = attr.string(default = "[]"),
-    # `{"flavor": about, "extensions": {name: about}, "contrib": {name: about}}`
-    # (JSON) from `//monoext/private:about.bzl`. Re-exposed as `all.bzl`'s
+    # `{"flavor": {version: about}, "extensions": {name: {version: about}},
+    # "contrib": {name: {version: about}}}` (JSON) from
+    # `//monoext/private:about.bzl`. Re-exposed as `all.bzl`'s
     # `ABOUT_FLAVOR`, `ABOUT` and `ABOUT_CONTRIB`.
     about = attr.string(default = "{}"),
     # The test-introspect attrs (filled by `introspect.introspect_payload`,

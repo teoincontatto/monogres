@@ -20,7 +20,9 @@
     }
   },
   "about": {
-    "license": "ISC"
+    "latest": {
+      "license": "ISC"
+    }
   },
   "metadata": {
     "patches": [

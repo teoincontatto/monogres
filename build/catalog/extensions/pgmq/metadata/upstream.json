@@ -1,13 +1,14 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgmq/pgmq",
-    "description": "A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.",
-    "homepage": "https://pgmq.github.io/pgmq/",
-    "license": "PostgreSQL",
-    "topics": ["message-queue"],
-    "readme": {
-      "v1.12.0": "README.md"
+  "latest": {
+    "version": "1.12.0",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgmq/pgmq",
+      "description": "A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.",
+      "homepage": "https://pgmq.github.io/pgmq/",
+      "license": "PostgreSQL",
+      "topics": ["message-queue"],
+      "readme": "README.md"
     }
   }
 }

@@ -1,26 +1,25 @@
 {
-  "description": "Financial aggregate functions",
-  "long_description": "PostgreSQL extension with functions and aggregates for financial calculations",
-  "homepage": "https://github.com/intgr/pg_financial",
-  "license": "PostgreSQL",
-  "maintainers": ["Marti Raudsepp <marti@juffo.org>"],
-  "keywords": [
-    "financial",
-    "finance",
-    "rate of return",
-    "xirr",
-    "aggregate",
-    "functions",
-    "excel",
-    "investment"
-  ],
-  "repository": {
-    "url": "https://github.com/intgr/pg_financial"
-  },
-  "versions": {
-    "1.0.1": {
-      "ref": "v1.0.1",
-      "readme": "https://raw.githubusercontent.com/intgr/pg_financial/v1.0.1/README.md"
-    }
+  "latest": {
+    "version": "1.0.1",
+    "description": "Financial aggregate functions",
+    "long_description": "PostgreSQL extension with functions and aggregates for financial calculations",
+    "homepage": "https://github.com/intgr/pg_financial",
+    "license": "PostgreSQL",
+    "maintainers": ["Marti Raudsepp <marti@juffo.org>"],
+    "keywords": [
+      "financial",
+      "finance",
+      "rate of return",
+      "xirr",
+      "aggregate",
+      "functions",
+      "excel",
+      "investment"
+    ],
+    "repository": {
+      "url": "https://github.com/intgr/pg_financial"
+    },
+    "ref": "v1.0.1",
+    "readme": "https://raw.githubusercontent.com/intgr/pg_financial/v1.0.1/README.md"
   }
 }

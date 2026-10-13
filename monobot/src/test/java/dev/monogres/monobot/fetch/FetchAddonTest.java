@@ -42,7 +42,7 @@ class FetchAddonTest {
           }
         },
         "versions": { "pin": ["1.0.0"] },
-        "about": { "description": "a fixture addon" }
+        "about": { "latest": { "description": "a fixture addon" } }
       }
       """;
 
@@ -73,8 +73,9 @@ class FetchAddonTest {
         repo.path("versions").path("1.0.0").path("sha256").asText());
 
     var about = objectMapper.readTree(entryDir.resolve("about.json").toFile());
-    assertEquals("a fixture addon", about.path("description").asText());
-    assertEquals("v1.0.0", about.path("versions").path("1.0.0").path("ref").asText());
+    assertEquals("1.0.0", about.path("latest").path("version").asText());
+    assertEquals("a fixture addon", about.path("latest").path("description").asText());
+    assertEquals("v1.0.0", about.path("latest").path("ref").asText());
 
     assertFalse(
         Files.exists(entryDir.resolve("metadata").resolve("1.0.0")),

@@ -1,15 +1,14 @@
 {
-  "description": "data types and operators for storing, indexing, and manipulating IPv4 and IPv6 addresses and ranges",
-  "long_description": "ip4r current and new development",
-  "homepage": "https://github.com/RhodiumToad/ip4r",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/RhodiumToad/ip4r"
-  },
-  "versions": {
-    "2.4.3": {
-      "ref": "2.4.3",
-      "readme": "https://raw.githubusercontent.com/RhodiumToad/ip4r/2.4.3/README.ip4r"
-    }
+  "latest": {
+    "version": "2.4.3",
+    "description": "data types and operators for storing, indexing, and manipulating IPv4 and IPv6 addresses and ranges",
+    "long_description": "ip4r current and new development",
+    "homepage": "https://github.com/RhodiumToad/ip4r",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/RhodiumToad/ip4r"
+    },
+    "ref": "2.4.3",
+    "readme": "https://raw.githubusercontent.com/RhodiumToad/ip4r/2.4.3/README.ip4r"
   }
 }

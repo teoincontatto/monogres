@@ -16,7 +16,9 @@
     "pin": ["2.0"]
   },
   "about": {
-    "long_description": "PostgreSQL extension to schedule and manage jobs in a job queue similar to Oracle DBMS_JOB package."
+    "latest": {
+      "long_description": "PostgreSQL extension to schedule and manage jobs in a job queue similar to Oracle DBMS_JOB package."
+    }
   },
   "metadata": {
     "compatible_with": {

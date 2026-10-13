@@ -1,15 +1,14 @@
 {
-  "description": "A PostgreSQL job scheduler",
-  "long_description": "[DEPRECATED] pgAgent - A job scheduler for PostgreSQL",
-  "homepage": "https://www.pgadmin.org/",
-  "license": "PostgreSQL",
-  "repository": {
-    "url": "https://github.com/pgadmin-org/pgagent"
-  },
-  "versions": {
-    "4.2.3": {
-      "ref": "pgagent-4.2.3",
-      "readme": "https://raw.githubusercontent.com/pgadmin-org/pgagent/pgagent-4.2.3/README"
-    }
+  "latest": {
+    "version": "4.2.3",
+    "description": "A PostgreSQL job scheduler",
+    "long_description": "[DEPRECATED] pgAgent - A job scheduler for PostgreSQL",
+    "homepage": "https://www.pgadmin.org/",
+    "license": "PostgreSQL",
+    "repository": {
+      "url": "https://github.com/pgadmin-org/pgagent"
+    },
+    "ref": "pgagent-4.2.3",
+    "readme": "https://raw.githubusercontent.com/pgadmin-org/pgagent/pgagent-4.2.3/README"
   }
 }

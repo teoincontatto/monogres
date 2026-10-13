@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/dverite/cryptint",
-    "description": "PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": [],
-    "readme": {
-      "2a06bbf609ae02e16e0e32d62453141cada57906": "README.md"
+  "latest": {
+    "version": "1.0.1",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/dverite/cryptint",
+      "description": "PostgreSQL extension implementing Skip32 and XTEA encryption for int and bigint types",
+      "license": "NOASSERTION",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

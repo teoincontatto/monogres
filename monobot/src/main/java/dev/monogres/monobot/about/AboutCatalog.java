@@ -2,6 +2,7 @@ package dev.monogres.monobot.about;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.MissingNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import dev.monogres.monobot.catalog.SourceTemplate;
 import dev.monogres.monobot.config.Mode;
@@ -16,7 +17,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.SequencedMap;
@@ -25,13 +28,15 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
 
 /// The two halves of what an entry says about itself to a reader: a snapshot of what its upstream
-/// says, and the `about.json` derived from it.
+/// says, and the `about.json` derived from it. Both are versioned, and stored by [Layers] as the
+/// newest version in full and every older one as what differs from the version after it.
 ///
 /// They are kept apart on purpose. The snapshot, `metadata/upstream.json`, is the only part that
 /// comes off the network, and it is committed: what the forge answered is then a reviewable diff
 /// rather than something a run happened to see, and `check` re-derives `about.json` from it without
-/// a request. A snapshot is taken when an entry has none, when a version brings a ref whose README
-/// has not been looked for, and on every entry when `refreshUpstream` asks for it.
+/// a request. A forge only ever answers about the repository as it is today, so each version keeps
+/// the answer from when it was first catalogued: a version is asked about once, when it has no
+/// snapshot, and `refreshUpstream` asks again about the newest version only.
 @ApplicationScoped
 public class AboutCatalog {
   private static final Logger LOG = Logger.getLogger(AboutCatalog.class);
@@ -65,53 +70,73 @@ public class AboutCatalog {
     return FILENAME_ABOUT;
   }
 
-  /// The document for one entry, or empty when nothing describes it: an entry with no
-  /// description and no repository has nothing a reader could use, and writing one anyway would
-  /// add a file to every fixture that never asked for it.
+  /// The document for one entry, or empty when nothing describes it: an entry whose newest version
+  /// has no description and no repository has nothing a reader could use, and writing one anyway
+  /// would add a file to every fixture that never asked for it.
   public Optional<ObjectNode> about(MonobotConfig monobotConfig, Path entryDir, Versions versions) {
-    var override = monobotConfig.about();
-    var refs = refs(monobotConfig, versions);
-    var newest = versions.keySet().stream().max(Comparator.naturalOrder());
-    var control = newest.map(version -> read(entryDir, version, FILENAME_CONTROL)).orElse(null);
-    var meta = newest.map(version -> read(entryDir, version, FILENAME_META)).orElse(null);
-    var contrib = contrib(entryDir, versions);
+    var newestFirst = versions.keySet().stream().sorted(Comparator.reverseOrder()).toList();
+    if (newestFirst.isEmpty()) {
+      return Optional.empty();
+    }
+    var overrides = Layers.override(monobotConfig.about(), newestFirst);
+    var refs = refs(monobotConfig, versions, overrides);
+    var metas = new LinkedHashMap<String, JsonNode>();
+    newestFirst.forEach(
+        version -> metas.put(version.version(), read(entryDir, version, FILENAME_META)));
 
-    var upstream = snapshot(monobotConfig, entryDir, override, meta, refs);
+    var upstream = snapshot(monobotConfig, entryDir, newestFirst, overrides, metas, refs);
+    var contribRefs = contribRefs(monobotConfig, entryDir, overrides.firstEntry().getValue());
+    var repoUrl = monobotConfig.repoUrl() == null ? null : monobotConfig.repoUrl().toString();
 
-    var about =
-        AboutResolver.resolve(
-            objectMapper,
-            new AboutResolver.Inputs(
-                override,
-                control,
-                meta,
-                upstream,
-                monobotConfig.repoUrl() == null ? null : monobotConfig.repoUrl().toString(),
-                refs,
-                contrib,
-                contribRefs(monobotConfig, entryDir, override)));
+    var documents = new LinkedHashMap<String, ObjectNode>();
+    for (var version : newestFirst) {
+      var key = version.version();
+      var contribRef = new TreeMap<String, String>();
+      contribRefs.forEach(
+          (name, byVersion) -> {
+            if (byVersion.containsKey(key)) {
+              contribRef.put(name, byVersion.get(key));
+            }
+          });
+      documents.put(
+          key,
+          AboutResolver.resolve(
+              objectMapper,
+              new AboutResolver.Inputs(
+                  overrides.get(key),
+                  read(entryDir, version, FILENAME_CONTROL),
+                  metas.get(key),
+                  upstream.get(key),
+                  repoUrl,
+                  refs.get(key),
+                  contrib(entryDir, version),
+                  contribRef)));
+    }
 
-    if (!about.has("description") && !about.has("repository")) {
+    var newest = documents.firstEntry().getValue();
+    if (!newest.has("description") && !newest.has("repository")) {
       return Optional.empty();
     }
 
-    return Optional.of(about);
+    return Optional.of(Layers.layer(objectMapper, documents));
   }
 
-  /// The ref each version's archive was cut from, in the order the versions are catalogued.
+  /// The ref each version's archive was cut from, or null where it names none.
   ///
   /// Spelled by the override's `repository.ref` template where there is one, which is how an entry
   /// whose archives come from somewhere other than its repository (postgis) names its tags.
   /// Otherwise it is the `tag` or the `commit` the source materializes to, which is what every
   /// forge-hosted entry already has, and a version with neither has no ref.
-  private SequencedMap<String, String> refs(MonobotConfig monobotConfig, Versions versions) {
+  private Map<String, String> refs(
+      MonobotConfig monobotConfig, Versions versions, Map<String, JsonNode> overrides) {
     var template = monobotConfig.sources().templates().getFirst();
-    var refTemplate = monobotConfig.about().path("repository").path("ref");
-    var refs = new LinkedHashMap<String, String>();
+    var refs = new HashMap<String, String>();
 
     versions.forEach(
         (version, context) -> {
           var materialized = template.materialize(version.version(), context.derived());
+          var refTemplate =
+              orMissing(overrides.get(version.version())).path("repository").path("ref");
           String ref;
           if (refTemplate.isTextual()) {
             var spelled = new LinkedHashMap<String, String>();
@@ -129,18 +154,22 @@ public class AboutCatalog {
     return refs;
   }
 
+  private static JsonNode orMissing(JsonNode node) {
+    return node == null ? MissingNode.getInstance() : node;
+  }
+
   /// The refs of the contrib extensions a flavor builds out of a repository of its own, by flavor
   /// version. The override names that repository's download index beside the entry
   /// (`"repository": {"url": ..., "index": "ext.json"}`), which is what the build fetches those
   /// sources from, so the ref each flavor version builds is read rather than written twice.
-  private Map<String, SequencedMap<String, String>> contribRefs(
+  private Map<String, Map<String, String>> contribRefs(
       MonobotConfig monobotConfig, Path entryDir, JsonNode override) {
-    var contribRefs = new TreeMap<String, SequencedMap<String, String>>();
+    var contribRefs = new TreeMap<String, Map<String, String>>();
 
-    override
+    orMissing(override)
         .path("contrib")
-        .fields()
-        .forEachRemaining(
+        .properties()
+        .forEach(
             field -> {
               var index = field.getValue().path("repository").path("index");
               if (!index.isTextual()) {
@@ -156,7 +185,7 @@ public class AboutCatalog {
                     "[" + monobotConfig.label() + "]: " + index.asText() + " cannot be read", e);
               }
               var template = repoConfig.getSources().templates().getFirst();
-              var refs = new LinkedHashMap<String, String>();
+              var refs = new HashMap<String, String>();
               repoConfig
                   .getVersions()
                   .forEach(
@@ -174,20 +203,13 @@ public class AboutCatalog {
     return contribRefs;
   }
 
-  /// A flavor's contrib control files, every version of them, newest version last so that what a
-  /// later release says about an extension is what is kept.
-  private Map<String, JsonNode> contrib(Path entryDir, Versions versions) {
+  /// The contrib control files of one version of a flavor, by extension name.
+  private Map<String, JsonNode> contrib(Path entryDir, Version version) {
     var contrib = new TreeMap<String, JsonNode>();
-
-    versions.keySet().stream()
-        .sorted()
-        .map(version -> read(entryDir, version, FILENAME_CONTRIB))
-        .filter(document -> document != null && document.isObject())
-        .forEach(
-            document ->
-                document
-                    .fields()
-                    .forEachRemaining(field -> contrib.put(field.getKey(), field.getValue())));
+    var document = read(entryDir, version, FILENAME_CONTRIB);
+    if (document != null && document.isObject()) {
+      document.properties().forEach(field -> contrib.put(field.getKey(), field.getValue()));
+    }
 
     return contrib;
   }
@@ -207,36 +229,72 @@ public class AboutCatalog {
     }
   }
 
-  /// The snapshot as committed, brought up to date first when this run is the one that writes the
-  /// catalog and is allowed to ask.
-  private JsonNode snapshot(
+  /// The snapshot of each version as committed, newest first, with the versions that have none
+  /// asked about first when this run is the one that writes the catalog and is allowed to ask. A
+  /// version with no snapshot and no permission to take one maps to null.
+  private SequencedMap<String, JsonNode> snapshot(
       MonobotConfig monobotConfig,
       Path entryDir,
-      JsonNode override,
-      JsonNode meta,
-      SequencedMap<String, String> refs) {
+      List<Version> newestFirst,
+      Map<String, JsonNode> overrides,
+      Map<String, JsonNode> metas,
+      Map<String, String> refs) {
     var directory = entryDir.resolve(DIR_METADATA);
     var committed = read(directory.resolve(FILENAME_UPSTREAM));
-    // Only what monobot still reads is carried over, so a source dropped from the snapshot drops
-    // out of every committed one on the next run rather than lingering as a field nothing reads.
-    var snapshot = objectMapper.createObjectNode();
-    if (committed != null && committed.path(KEY_FORGE).isObject()) {
-      snapshot.set(KEY_FORGE, committed.get(KEY_FORGE).deepCopy());
-    }
+    var resolved = committed == null ? Map.<String, ObjectNode>of() : Layers.resolve(committed);
+
+    // Only the versions still catalogued, and only what monobot still reads of each, are carried
+    // over, so neither lingers in the committed snapshot once nothing reads it.
+    var snapshot = new LinkedHashMap<String, JsonNode>();
+    newestFirst.forEach(
+        version -> {
+          var kept = resolved.get(version.version());
+          ObjectNode carried = null;
+          if (kept != null) {
+            carried = objectMapper.createObjectNode();
+            if (kept.path(KEY_FORGE).isObject()) {
+              carried.set(KEY_FORGE, kept.get(KEY_FORGE).deepCopy());
+            }
+          }
+          snapshot.put(version.version(), carried);
+        });
 
     if (mode != Mode.GENERATE || !scrapeUpstream) {
       return snapshot;
     }
 
-    repositoryUrl(monobotConfig, override, meta)
-        .flatMap(Forge::of)
-        .ifPresent(forge -> scrapeForge(monobotConfig, snapshot, forge, refs));
+    var answers = new HashMap<Forge, Optional<ObjectNode>>();
+    var newest = newestFirst.getFirst().version();
+    snapshot.replaceAll(
+        (version, carried) -> {
+          if (carried != null && !(refreshUpstream && version.equals(newest))) {
+            return carried;
+          }
+          var asked = objectMapper.createObjectNode();
+          repositoryUrl(monobotConfig, orMissing(overrides.get(version)), metas.get(version))
+              .flatMap(Forge::of)
+              .flatMap(forge -> scrapeForge(monobotConfig, answers, forge, refs.get(version)))
+              .ifPresent(forge -> asked.set(KEY_FORGE, forge));
 
-    if (!snapshot.equals(committed)) {
-      documentWriter.write(directory, FILENAME_UPSTREAM, snapshot);
+          return asked;
+        });
+
+    // Compared as printed, so a snapshot laid out or ordered other than the way the catalog prints
+    // it is rewritten too.
+    var layered = Layers.layer(objectMapper, snapshot);
+    if (committed == null || !documentWriter.render(layered).equals(readString(directory))) {
+      documentWriter.write(directory, FILENAME_UPSTREAM, layered);
     }
 
     return snapshot;
+  }
+
+  private static String readString(Path directory) {
+    try {
+      return Files.readString(directory.resolve(FILENAME_UPSTREAM));
+    } catch (IOException e) {
+      throw new RuntimeException(directory.resolve(FILENAME_UPSTREAM) + " cannot be read", e);
+    }
   }
 
   /// The repository the forge is asked about. The override's, then the one `monobot.json` lists
@@ -258,39 +316,38 @@ public class AboutCatalog {
     return Optional.ofNullable(repository.path("web").asText(repository.path("url").asText(null)));
   }
 
-  private void scrapeForge(
+  /// What the forge says about one version: the repository as it is today, asked once per run
+  /// however many versions want it, and the README at the version's ref. A field the forge leaves
+  /// null is left out, since a `null` in a layered document means the field was removed.
+  private Optional<ObjectNode> scrapeForge(
       MonobotConfig monobotConfig,
-      ObjectNode snapshot,
+      Map<Forge, Optional<ObjectNode>> answers,
       Forge forge,
-      SequencedMap<String, String> refs) {
-    var described = snapshot.path(KEY_FORGE);
-    var readme =
-        described.path(KEY_README).isObject() && !refreshUpstream
-            ? ((ObjectNode) described.get(KEY_README)).deepCopy()
-            : objectMapper.createObjectNode();
+      String ref) {
+    var answered =
+        answers.computeIfAbsent(
+            forge,
+            asked -> {
+              LOG.infov("[{0}]: asking {1} about itself", monobotConfig.label(), asked.webUrl());
+              var repository = upstreamClient.repository(asked);
+              if (repository.isEmpty()) {
+                LOG.warnv("[{0}]: {1} is not a repository", monobotConfig.label(), asked.webUrl());
+              }
 
-    ObjectNode repository;
-    if (refreshUpstream || !described.isObject()) {
-      LOG.infov("[{0}]: asking {1} about itself", monobotConfig.label(), forge.webUrl());
-      var answered = upstreamClient.repository(forge);
-      if (answered.isEmpty()) {
-        LOG.warnv("[{0}]: {1} is not a repository", monobotConfig.label(), forge.webUrl());
-
-        return;
-      }
-      repository = answered.get();
-    } else {
-      repository = ((ObjectNode) described).deepCopy();
+              return repository;
+            });
+    if (answered.isEmpty()) {
+      return Optional.empty();
     }
 
+    var repository = answered.get().deepCopy();
+    repository.properties().removeIf(field -> field.getValue().isNull());
     // The forge's own spelling of where it lives, which after a rename is not the one asked for.
     var canonical = Forge.of(repository.path("url").asText(null)).orElse(forge);
-    refs.values().stream()
-        .filter(ref -> ref != null && !readme.has(ref))
-        .distinct()
-        .forEach(ref -> readme.put(ref, upstreamClient.readme(canonical, ref).orElse(null)));
+    if (ref != null) {
+      upstreamClient.readme(canonical, ref).ifPresent(path -> repository.put(KEY_README, path));
+    }
 
-    repository.set(KEY_README, readme);
-    snapshot.set(KEY_FORGE, repository);
+    return Optional.of(repository);
   }
 }

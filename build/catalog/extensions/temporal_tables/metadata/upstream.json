@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/arkhipov/temporal_tables",
-    "description": "Temporal Tables PostgreSQL Extension",
-    "homepage": null,
-    "license": "BSD-2-Clause",
-    "topics": [],
-    "readme": {
-      "v1.2.2": "README.md"
+  "latest": {
+    "version": "1.2.2",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/arkhipov/temporal_tables",
+      "description": "Temporal Tables PostgreSQL Extension",
+      "license": "BSD-2-Clause",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

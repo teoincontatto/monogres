@@ -1,17 +1,16 @@
 {
-  "description": "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
-  "long_description": "HTTP client for PostgreSQL, retrieve a web page from inside the database.",
-  "homepage": "https://github.com/pramsey/pgsql-http/",
-  "license": "MIT",
-  "maintainers": ["Paul Ramsey <pramsey@cleverelephant.ca>"],
-  "keywords": ["http", "curl", "web"],
-  "repository": {
-    "url": "https://github.com/pramsey/pgsql-http"
-  },
-  "versions": {
-    "1.7.2": {
-      "ref": "v1.7.2",
-      "readme": "https://raw.githubusercontent.com/pramsey/pgsql-http/v1.7.2/README.md"
-    }
+  "latest": {
+    "version": "1.7.2",
+    "description": "HTTP client for PostgreSQL, allows web page retrieval inside the database.",
+    "long_description": "HTTP client for PostgreSQL, retrieve a web page from inside the database.",
+    "homepage": "https://github.com/pramsey/pgsql-http/",
+    "license": "MIT",
+    "maintainers": ["Paul Ramsey <pramsey@cleverelephant.ca>"],
+    "keywords": ["http", "curl", "web"],
+    "repository": {
+      "url": "https://github.com/pramsey/pgsql-http"
+    },
+    "ref": "v1.7.2",
+    "readme": "https://raw.githubusercontent.com/pramsey/pgsql-http/v1.7.2/README.md"
   }
 }

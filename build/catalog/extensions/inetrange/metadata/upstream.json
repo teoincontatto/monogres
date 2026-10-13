@@ -1,13 +1,13 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pjungwir/inetrange",
-    "description": "Postgres extension to define ranges of IP addresses",
-    "homepage": null,
-    "license": "MIT",
-    "topics": [],
-    "readme": {
-      "9d62352afda4b84be01d2fb3375805a04a64995f": "README.md"
+  "latest": {
+    "version": "1.0.2",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pjungwir/inetrange",
+      "description": "Postgres extension to define ranges of IP addresses",
+      "license": "MIT",
+      "topics": [],
+      "readme": "README.md"
     }
   }
 }

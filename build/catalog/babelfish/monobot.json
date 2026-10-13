@@ -56,52 +56,54 @@
     }
   },
   "about": {
-    "description": "PostgreSQL with Microsoft SQL Server compatibility",
-    "long_description": "Babelfish for PostgreSQL provides the capability for PostgreSQL to work with applications written for Microsoft SQL Server. Babelfish understands the SQL Server wire-protocol and T-SQL, the Microsoft SQL Server query and procedural language, so you don't have to switch database drivers or rewrite all of your application queries.",
-    "homepage": "https://babelfishpg.org",
-    "license": "PostgreSQL",
-    "contrib": {
-      "spi": {
-        "description": "Server Programming Interface examples: autoinc, insert_username, moddatetime and refint"
-      },
-      "babelfishpg_common": {
-        "description": "Transact SQL Datatype Support",
-        "license": "Apache-2.0",
-        "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
-          "index": "ext.json"
-        }
-      },
-      "babelfishpg_money": {
-        "description": "Money data types for Babelfish",
-        "license": "Apache-2.0",
-        "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
-          "index": "ext.json"
-        }
-      },
-      "babelfishpg_tds": {
-        "description": "TDS protocol extension",
-        "license": "Apache-2.0",
-        "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
-          "index": "ext.json"
-        }
-      },
-      "babelfishpg_tsql": {
-        "description": "Transact SQL compatibility",
-        "license": "Apache-2.0",
-        "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
-          "index": "ext.json"
-        }
-      },
-      "babelfishpg_unit": {
-        "description": "Unit testing framework for babelfish",
-        "license": "Apache-2.0",
-        "repository": {
-          "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
-          "index": "ext.json"
+    "latest": {
+      "description": "PostgreSQL with Microsoft SQL Server compatibility",
+      "long_description": "Babelfish for PostgreSQL provides the capability for PostgreSQL to work with applications written for Microsoft SQL Server. Babelfish understands the SQL Server wire-protocol and T-SQL, the Microsoft SQL Server query and procedural language, so you don't have to switch database drivers or rewrite all of your application queries.",
+      "homepage": "https://babelfishpg.org",
+      "license": "PostgreSQL",
+      "contrib": {
+        "spi": {
+          "description": "Server Programming Interface examples: autoinc, insert_username, moddatetime and refint"
+        },
+        "babelfishpg_common": {
+          "description": "Transact SQL Datatype Support",
+          "license": "Apache-2.0",
+          "repository": {
+            "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+            "index": "ext.json"
+          }
+        },
+        "babelfishpg_money": {
+          "description": "Money data types for Babelfish",
+          "license": "Apache-2.0",
+          "repository": {
+            "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+            "index": "ext.json"
+          }
+        },
+        "babelfishpg_tds": {
+          "description": "TDS protocol extension",
+          "license": "Apache-2.0",
+          "repository": {
+            "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+            "index": "ext.json"
+          }
+        },
+        "babelfishpg_tsql": {
+          "description": "Transact SQL compatibility",
+          "license": "Apache-2.0",
+          "repository": {
+            "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+            "index": "ext.json"
+          }
+        },
+        "babelfishpg_unit": {
+          "description": "Unit testing framework for babelfish",
+          "license": "Apache-2.0",
+          "repository": {
+            "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+            "index": "ext.json"
+          }
         }
       }
     }

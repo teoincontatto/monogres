@@ -73,14 +73,16 @@ class FetchAboutCheckModeTest {
   private static final String UPSTREAM_JSON =
       """
       {
-        "forge": {
-          "kind": "github",
-          "url": "https://github.com/monogres/fixture",
-          "description": "the forge about",
-          "homepage": null,
-          "license": "MIT",
-          "topics": [],
-          "readme": {"v1.0.0": "README.md"}
+        "latest": {
+          "version": "1.0.0",
+          "forge": {
+            "kind": "github",
+            "url": "https://github.com/monogres/fixture",
+            "description": "the forge about",
+            "license": "MIT",
+            "topics": [],
+            "readme": "README.md"
+          }
         }
       }
       """;
@@ -88,16 +90,15 @@ class FetchAboutCheckModeTest {
   private static final String ABOUT_JSON =
       """
       {
-        "description": "a fixture extension",
-        "long_description": "the forge about",
-        "homepage": "https://github.com/monogres/fixture",
-        "license": "MIT",
-        "repository": {"url": "https://github.com/monogres/fixture"},
-        "versions": {
-          "1.0.0": {
-            "ref": "v1.0.0",
-            "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
-          }
+        "latest": {
+          "version": "1.0.0",
+          "description": "a fixture extension",
+          "long_description": "the forge about",
+          "homepage": "https://github.com/monogres/fixture",
+          "license": "MIT",
+          "repository": {"url": "https://github.com/monogres/fixture"},
+          "ref": "v1.0.0",
+          "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
         }
       }
       """;

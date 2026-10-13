@@ -1,13 +1,16 @@
 {
-  "forge": {
-    "kind": "github",
-    "url": "https://github.com/pgvector/pgvector",
-    "description": "Open-source vector similarity search for Postgres",
-    "homepage": null,
-    "license": "NOASSERTION",
-    "topics": ["approximate-nearest-neighbor-search", "nearest-neighbor-search"],
-    "readme": {
-      "v0.8.2": "README.md"
+  "latest": {
+    "version": "0.8.2",
+    "forge": {
+      "kind": "github",
+      "url": "https://github.com/pgvector/pgvector",
+      "description": "Open-source vector similarity search for Postgres",
+      "license": "NOASSERTION",
+      "topics": [
+        "approximate-nearest-neighbor-search",
+        "nearest-neighbor-search"
+      ],
+      "readme": "README.md"
     }
   }
 }

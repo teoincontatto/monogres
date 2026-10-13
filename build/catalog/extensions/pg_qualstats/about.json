@@ -1,17 +1,16 @@
 {
-  "description": "An extension collecting statistics about quals",
-  "long_description": "A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing",
-  "homepage": "https://github.com/powa-team/pg_qualstats",
-  "license": "PostgreSQL",
-  "maintainers": ["Ronan Dunklau <ronan.dunklau@dalibo.com>"],
-  "keywords": ["c", "extension", "postgresql", "predicate", "statistics"],
-  "repository": {
-    "url": "https://github.com/powa-team/pg_qualstats"
-  },
-  "versions": {
-    "2.1.4": {
-      "ref": "2.1.4",
-      "readme": "https://raw.githubusercontent.com/powa-team/pg_qualstats/2.1.4/README.md"
-    }
+  "latest": {
+    "version": "2.1.4",
+    "description": "An extension collecting statistics about quals",
+    "long_description": "A PostgreSQL extension for collecting statistics about predicates, helping find what indices are missing",
+    "homepage": "https://github.com/powa-team/pg_qualstats",
+    "license": "PostgreSQL",
+    "maintainers": ["Ronan Dunklau <ronan.dunklau@dalibo.com>"],
+    "keywords": ["c", "extension", "postgresql", "predicate", "statistics"],
+    "repository": {
+      "url": "https://github.com/powa-team/pg_qualstats"
+    },
+    "ref": "2.1.4",
+    "readme": "https://raw.githubusercontent.com/powa-team/pg_qualstats/2.1.4/README.md"
   }
 }

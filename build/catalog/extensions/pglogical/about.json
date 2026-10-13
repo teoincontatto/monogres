@@ -1,28 +1,27 @@
 {
-  "description": "PostgreSQL Logical Replication",
-  "long_description": "Logical Replication extension for PostgreSQL 17, 16, 15, 14, 13, 12, 11, 10, 9.6, 9.5, 9.4 (Postgres), providing much faster replication than Slony, Bucardo or Londiste, as well as cross-version upgrades.",
-  "homepage": "https://www.enterprisedb.com/docs/supported-open-source/pglogical2/",
-  "license": "PostgreSQL",
-  "keywords": [
-    "cdc",
-    "data-transformation",
-    "data-transport",
-    "database-replication",
-    "etl",
-    "logical-decoding",
-    "postgresql",
-    "publish-subscribe",
-    "replication",
-    "subscription",
-    "zero-downtime"
-  ],
-  "repository": {
-    "url": "https://github.com/2ndQuadrant/pglogical"
-  },
-  "versions": {
-    "2.4.8": {
-      "ref": "REL2_4_8",
-      "readme": "https://raw.githubusercontent.com/2ndQuadrant/pglogical/REL2_4_8/README.md"
-    }
+  "latest": {
+    "version": "2.4.8",
+    "description": "PostgreSQL Logical Replication",
+    "long_description": "Logical Replication extension for PostgreSQL 17, 16, 15, 14, 13, 12, 11, 10, 9.6, 9.5, 9.4 (Postgres), providing much faster replication than Slony, Bucardo or Londiste, as well as cross-version upgrades.",
+    "homepage": "https://www.enterprisedb.com/docs/supported-open-source/pglogical2/",
+    "license": "PostgreSQL",
+    "keywords": [
+      "cdc",
+      "data-transformation",
+      "data-transport",
+      "database-replication",
+      "etl",
+      "logical-decoding",
+      "postgresql",
+      "publish-subscribe",
+      "replication",
+      "subscription",
+      "zero-downtime"
+    ],
+    "repository": {
+      "url": "https://github.com/2ndQuadrant/pglogical"
+    },
+    "ref": "REL2_4_8",
+    "readme": "https://raw.githubusercontent.com/2ndQuadrant/pglogical/REL2_4_8/README.md"
   }
 }
