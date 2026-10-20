@@ -26,7 +26,7 @@
     "readme": "https://raw.githubusercontent.com/BedquiltDB/bedquilt-core/v2.1.0/README.md",
     "control": {
       "bedquilt": {
-        "default_version": "{{VERSION}}",
+        "default_version": "2.1.0",
         "module_pathname": "$libdir/bedquilt",
         "requires": ["plpgsql", "pgcrypto", "plpython3u"],
         "superuser": true,

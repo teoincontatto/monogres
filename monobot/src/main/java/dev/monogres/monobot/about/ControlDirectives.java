@@ -39,9 +39,18 @@ public final class ControlDirectives {
   /// a version is a string however it is spelled.
   static final SequencedMap<String, JsonNodeType> TYPES = types();
 
-  // `@NAME@` (autoconf, CMake configure_file, pgrx), `${NAME}` (CMake) and `__NAME__` (sed).
+  // `@NAME@` (autoconf, CMake configure_file, pgrx), `${NAME}` (CMake), `__NAME__` and `{{NAME}}`
+  // (sed, templating), and a bare `NAME` that is the whole value or the last part of a path, which
+  // sed substitutes as readily (pg_tle's `EXTVERSION` and `$libdir/EXTNAME`, pg_repack's
+  // `REPACK_VERSION`). No directive's real value is an upper-case word: versions are digits, and
+  // schemas and library names are lower case.
   private static final Pattern PLACEHOLDER =
-      Pattern.compile("@[A-Za-z_][A-Za-z0-9_]*@|\\$\\{[A-Za-z_][A-Za-z0-9_]*}|__[A-Z][A-Z0-9_]*__");
+      Pattern.compile(
+          "@[A-Za-z_][A-Za-z0-9_]*@"
+              + "|\\$\\{[A-Za-z_][A-Za-z0-9_]*}"
+              + "|__[A-Z][A-Z0-9_]*__"
+              + "|\\{\\{\\s*[A-Za-z_][A-Za-z0-9_]*\\s*}}"
+              + "|(?:^|/)[A-Z][A-Z0-9_]{2,}$");
 
   private ControlDirectives() {}
 

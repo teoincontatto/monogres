@@ -15,6 +15,13 @@
   "versions": {
     "pin": ["2.1.0"]
   },
+  "control": {
+    "2.1.0": {
+      "bedquilt": {
+        "default_version": "2.1.0"
+      }
+    }
+  },
   "metadata": {
     "compatible_with": {
       "postgres": {

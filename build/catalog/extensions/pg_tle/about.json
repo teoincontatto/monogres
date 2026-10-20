@@ -18,12 +18,12 @@
     "readme": "https://raw.githubusercontent.com/aws/pg_tle/v1.5.2/README.md",
     "control": {
       "pg_tle": {
-        "default_version": "EXTVERSION",
-        "module_pathname": "$libdir/EXTNAME",
+        "default_version": "1.5.2",
+        "module_pathname": "$libdir/pg_tle",
         "superuser": true,
         "trusted": false,
         "relocatable": false,
-        "schema": "SCHEMA"
+        "schema": "pgtle"
       }
     }
   }

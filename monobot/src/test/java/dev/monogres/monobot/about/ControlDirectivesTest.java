@@ -106,7 +106,11 @@ class ControlDirectivesTest {
             "@CARGO_VERSION@",
             "${MAJOR_VERSION}.${MINOR_VERSION}",
             "__PGLOGICAL_VERSION__",
-            "$libdir/timescaledb-@PROJECT_VERSION_MOD@")) {
+            "$libdir/timescaledb-@PROJECT_VERSION_MOD@",
+            "{{VERSION}}",
+            "EXTVERSION",
+            "REPACK_VERSION",
+            "$libdir/EXTNAME")) {
       var error =
           assertThrows(
               IllegalArgumentException.class,
@@ -115,6 +119,17 @@ class ControlDirectivesTest {
       assertTrue(error.getMessage().startsWith("default_version"), error.getMessage());
       assertTrue(error.getMessage().contains(placeholder), error.getMessage());
     }
+  }
+
+  /// A real value is never an upper-case word, but can hold one: a version with a suffix, or a
+  /// library named in mixed case.
+  @Test
+  void upperCaseInsideValueIsNotPlaceholder() {
+    var control =
+        resolve(
+            "{\"default_version\": \"1.0-RC1\", \"module_pathname\": \"$libdir/PostGIS-3\"}", null);
+
+    assertEquals("1.0-RC1", control.path("default_version").asText());
   }
 
   @Test

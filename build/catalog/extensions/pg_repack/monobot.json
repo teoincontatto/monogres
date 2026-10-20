@@ -15,6 +15,13 @@
   "versions": {
     "pin": ["1.5.3"]
   },
+  "control": {
+    "1.5.3": {
+      "pg_repack": {
+        "default_version": "1.5.3"
+      }
+    }
+  },
   "metadata": {
     "compatible_with": {
       "postgres": {

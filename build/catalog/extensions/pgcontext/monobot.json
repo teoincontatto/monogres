@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["0.2.0"]
   },
+  "control": {
+    "0.2.0": {
+      "pgcontext_pgvector": null
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "crate_dir": "crates/context-pg",

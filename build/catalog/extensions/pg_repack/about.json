@@ -21,7 +21,7 @@
     "readme": "https://raw.githubusercontent.com/reorg/pg_repack/ver_1.5.3/README.rst",
     "control": {
       "pg_repack": {
-        "default_version": "REPACK_VERSION",
+        "default_version": "1.5.3",
         "module_pathname": "$libdir/pg_repack",
         "superuser": true,
         "trusted": false,

@@ -20,13 +20,6 @@
         "trusted": false,
         "relocatable": false,
         "schema": "pgcontext"
-      },
-      "pgcontext_pgvector": {
-        "default_version": "0.2.0",
-        "requires": ["pgcontext", "vector"],
-        "superuser": true,
-        "trusted": false,
-        "relocatable": false
       }
     }
   }
