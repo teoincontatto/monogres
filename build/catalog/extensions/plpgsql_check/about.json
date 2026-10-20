@@ -25,6 +25,14 @@
       "url": "https://github.com/okbob/plpgsql_check"
     },
     "ref": "v2.10.3",
-    "readme": "https://raw.githubusercontent.com/okbob/plpgsql_check/v2.10.3/README.md"
+    "readme": "https://raw.githubusercontent.com/okbob/plpgsql_check/v2.10.3/README.md",
+    "control": {
+      "default_version": "2.10",
+      "module_pathname": "$libdir/plpgsql_check",
+      "requires": ["plpgsql"],
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

@@ -23,6 +23,13 @@
       "url": "https://github.com/postgis/postgis"
     },
     "ref": "3.5.7",
-    "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md"
+    "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md",
+    "control": {
+      "default_version": "3.5.7",
+      "module_pathname": "$libdir/postgis-3",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

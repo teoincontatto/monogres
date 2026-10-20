@@ -30,6 +30,12 @@ import java.util.Optional;
 /// is the one place a description or a licence is written by hand, and it is versioned the way
 /// `about.json` is: see [dev.monogres.monobot.about.Layers].
 ///
+/// `control` corrects the control file of one release, keyed by that release's version as
+/// `versions` names it -- the archive the file came out of, not the `default_version` written in
+/// it. Each key applies to its own version and no other: the value it replaces is one the build
+/// fills in for that release, so carrying it over to the next one would be wrong. See
+/// [dev.monogres.monobot.about.ControlDirectives].
+///
 /// The two required fields are checked here because nothing else would. There is no nullability
 /// module and no bean validation extension on the classpath, so an annotation saying so is a
 /// comment, and a config missing `sources` reaches the materializer as a null with nothing in it
@@ -44,6 +50,7 @@ public record MonobotConfig(
     @JsonProperty(value = "versions") VersionsSpec versionsSpec,
     Metadata metadata,
     JsonNode about,
+    JsonNode control,
     boolean disabled) {
   public MonobotConfig {
     // Enforce default values that are enums
@@ -61,6 +68,9 @@ public record MonobotConfig(
     }
     if (about == null || about.isNull()) {
       about = MissingNode.getInstance();
+    }
+    if (control == null || control.isNull()) {
+      control = MissingNode.getInstance();
     }
 
     if (sources == null || sources.isEmpty()) {

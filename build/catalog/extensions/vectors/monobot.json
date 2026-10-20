@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["0.4.0"]
   },
+  "control": {
+    "0.4.0": {
+      "default_version": "0.4.0"
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "sql_source": "sql/install/vectors--{version}.sql",

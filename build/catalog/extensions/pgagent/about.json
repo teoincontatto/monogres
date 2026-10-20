@@ -9,6 +9,13 @@
       "url": "https://github.com/pgadmin-org/pgagent"
     },
     "ref": "pgagent-4.2.3",
-    "readme": "https://raw.githubusercontent.com/pgadmin-org/pgagent/pgagent-4.2.3/README"
+    "readme": "https://raw.githubusercontent.com/pgadmin-org/pgagent/pgagent-4.2.3/README",
+    "control": {
+      "default_version": "4.2",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "pgagent"
+    }
   }
 }

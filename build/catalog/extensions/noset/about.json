@@ -9,13 +9,22 @@
       "url": "https://gitlab.com/ongresinc/extensions/noset"
     },
     "ref": "v0.3.0",
-    "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.3.0/README.md"
+    "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.3.0/README.md",
+    "control": {
+      "default_version": "0.3.0",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   },
   "versions": {
     "0.2.0": {
       "description": "module to avoid SET command for specific user",
       "ref": "v0.2.0",
-      "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.2.0/README.md"
+      "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.2.0/README.md",
+      "control": {
+        "default_version": "0.2.0"
+      }
     }
   }
 }

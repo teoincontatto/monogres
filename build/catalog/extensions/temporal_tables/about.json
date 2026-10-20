@@ -26,6 +26,13 @@
       "url": "https://github.com/arkhipov/temporal_tables"
     },
     "ref": "v1.2.2",
-    "readme": "https://raw.githubusercontent.com/arkhipov/temporal_tables/v1.2.2/README.md"
+    "readme": "https://raw.githubusercontent.com/arkhipov/temporal_tables/v1.2.2/README.md",
+    "control": {
+      "default_version": "1.2.2",
+      "module_pathname": "$libdir/temporal_tables",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

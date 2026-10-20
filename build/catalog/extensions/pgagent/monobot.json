@@ -20,6 +20,11 @@
       "license": "PostgreSQL"
     }
   },
+  "control": {
+    "4.2.3": {
+      "default_version": "4.2"
+    }
+  },
   "metadata": {
     "build_system": "cmake",
     "build_args": ["-DBOOST_STATIC_BUILD=YES"],

@@ -23,6 +23,14 @@
       "url": "https://github.com/BedquiltDB/bedquilt-core"
     },
     "ref": "v2.1.0",
-    "readme": "https://raw.githubusercontent.com/BedquiltDB/bedquilt-core/v2.1.0/README.md"
+    "readme": "https://raw.githubusercontent.com/BedquiltDB/bedquilt-core/v2.1.0/README.md",
+    "control": {
+      "default_version": "{{VERSION}}",
+      "module_pathname": "$libdir/bedquilt",
+      "requires": ["plpgsql", "pgcrypto", "plpython3u"],
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

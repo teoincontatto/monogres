@@ -9,6 +9,13 @@
       "url": "https://github.com/EnterpriseDB/sslutils"
     },
     "ref": "v1.4",
-    "readme": "https://raw.githubusercontent.com/EnterpriseDB/sslutils/v1.4/README.sslutils"
+    "readme": "https://raw.githubusercontent.com/EnterpriseDB/sslutils/v1.4/README.sslutils",
+    "control": {
+      "default_version": "1.3",
+      "module_pathname": "$libdir/sslutils",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

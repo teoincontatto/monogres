@@ -25,6 +25,13 @@
       "url": "https://github.com/percona/pg_stat_monitor"
     },
     "ref": "2.3.2",
-    "readme": "https://raw.githubusercontent.com/percona/pg_stat_monitor/2.3.2/README.md"
+    "readme": "https://raw.githubusercontent.com/percona/pg_stat_monitor/2.3.2/README.md",
+    "control": {
+      "default_version": "2.3",
+      "module_pathname": "$libdir/pg_stat_monitor",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

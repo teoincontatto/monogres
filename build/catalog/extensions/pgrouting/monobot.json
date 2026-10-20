@@ -15,6 +15,12 @@
   "versions": {
     "pin": ["4.0.1"]
   },
+  "control": {
+    "4.0.1": {
+      "default_version": "4.0.1",
+      "module_pathname": "$libdir/libpgrouting-4.0"
+    }
+  },
   "metadata": {
     "build_system": "cmake",
     "build_args": [

@@ -9,6 +9,12 @@
     "keywords": ["md5", "hash", "data type"],
     "repository": {
       "url": "https://github.com/tvondra/md5hash"
+    },
+    "control": {
+      "default_version": "1.0.1",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
     }
   }
 }

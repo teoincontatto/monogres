@@ -435,6 +435,39 @@ archives do not come from its repository names it with a template instead:
 "about": { "latest": { "repository": { "ref": "{version}" } } }
 ```
 
+Each version, and each contrib extension of a flavor, also carries `control`:
+the control file of that version as an installed extension declares it. Only
+the directives Postgres documents are kept, typed (strings, arrays of strings
+and booleans, never a number) and in the order the documentation lists them.
+`comment` is not among them, since it is already the `description`, and neither
+is anything else the file declared.
+
+### Correcting a control file
+
+Every version is a release, and its control file is the one that release's
+archive carries: `metadata/0.20.5/control.json` is what the `0.20.5` archive
+holds, verbatim, whatever version that file names inside. The two can differ:
+pg_net's `v0.20.5` tag still declares `default_version = '0.20.4'`.
+
+An extension whose build writes its control file ships a template, so its
+`control.json` holds placeholders (`@CARGO_VERSION@`, `${PROJECT_VERSION}`,
+`__PGLOGICAL_VERSION__`) rather than values. `monobot.json` writes what the
+build fills in, under `control`, keyed by the release version exactly as
+`versions` names it:
+
+```json
+"control": {
+  "0.20.5": { "default_version": "0.20.4" }
+}
+```
+
+Each key is a merge patch over the directives of that one version, and applies
+to no other: unlike `about`, a correction is not inherited by older versions,
+nor by a newer one, whose own placeholder then fails it until it has a key of
+its own. A key that names no catalogued version fails the entry, as does a
+placeholder nothing replaced, a value of the wrong type, or a patch naming
+something that is not a directive.
+
 ## Running
 
 From this directory:

@@ -17,6 +17,14 @@
       "url": "https://github.com/supabase/pg_graphql"
     },
     "ref": "v1.6.1",
-    "readme": "https://raw.githubusercontent.com/supabase/pg_graphql/v1.6.1/README.md"
+    "readme": "https://raw.githubusercontent.com/supabase/pg_graphql/v1.6.1/README.md",
+    "control": {
+      "default_version": "1.6.1",
+      "module_pathname": "$libdir/pg_graphql",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "graphql"
+    }
   }
 }

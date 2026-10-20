@@ -9,6 +9,13 @@
       "url": "https://github.com/timescale/pgvectorscale"
     },
     "ref": "0.9.0",
-    "readme": "https://raw.githubusercontent.com/timescale/pgvectorscale/0.9.0/README.md"
+    "readme": "https://raw.githubusercontent.com/timescale/pgvectorscale/0.9.0/README.md",
+    "control": {
+      "default_version": "0.9.0",
+      "requires": ["vector"],
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

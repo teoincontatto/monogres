@@ -11,6 +11,13 @@
       "url": "https://github.com/theory/pg-hostname"
     },
     "ref": "v1.0.4",
-    "readme": "https://raw.githubusercontent.com/theory/pg-hostname/v1.0.4/README.md"
+    "readme": "https://raw.githubusercontent.com/theory/pg-hostname/v1.0.4/README.md",
+    "control": {
+      "default_version": "1.0.0",
+      "module_pathname": "hostname",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

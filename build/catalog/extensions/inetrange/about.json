@@ -11,6 +11,13 @@
       "url": "https://github.com/pjungwir/inetrange"
     },
     "ref": "9d62352afda4b84be01d2fb3375805a04a64995f",
-    "readme": "https://raw.githubusercontent.com/pjungwir/inetrange/9d62352afda4b84be01d2fb3375805a04a64995f/README.md"
+    "readme": "https://raw.githubusercontent.com/pjungwir/inetrange/9d62352afda4b84be01d2fb3375805a04a64995f/README.md",
+    "control": {
+      "default_version": "1.0.2",
+      "module_pathname": "$libdir/inetrange",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

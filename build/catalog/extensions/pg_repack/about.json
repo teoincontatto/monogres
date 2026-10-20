@@ -18,6 +18,13 @@
       "url": "https://github.com/reorg/pg_repack"
     },
     "ref": "ver_1.5.3",
-    "readme": "https://raw.githubusercontent.com/reorg/pg_repack/ver_1.5.3/README.rst"
+    "readme": "https://raw.githubusercontent.com/reorg/pg_repack/ver_1.5.3/README.rst",
+    "control": {
+      "default_version": "REPACK_VERSION",
+      "module_pathname": "$libdir/pg_repack",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

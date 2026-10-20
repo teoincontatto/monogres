@@ -9,6 +9,12 @@
     "keywords": ["default", "random"],
     "repository": {
       "url": "https://pgxn.org/dist/short_ids"
+    },
+    "control": {
+      "default_version": "0.1.0",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false
     }
   }
 }

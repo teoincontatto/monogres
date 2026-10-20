@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["1.0.0"]
   },
+  "control": {
+    "1.0.0": {
+      "default_version": "1.0.0"
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "compatible_with": {

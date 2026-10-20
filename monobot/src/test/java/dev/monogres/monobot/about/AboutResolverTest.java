@@ -2,6 +2,7 @@ package dev.monogres.monobot.about;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.fasterxml.jackson.databind.JsonNode;
@@ -265,6 +266,75 @@ class AboutResolverTest {
             }
             """),
         about);
+  }
+
+  /// The control file is reported as its directives, without the comment the description already
+  /// carries, and patched by this version's correction where the build fills a value in.
+  @Test
+  void controlIsTheDirectivesPatchedByTheCorrection() {
+    var control =
+        """
+        {"default_version": "@CARGO_VERSION@", "comment": "GraphQL support",
+         "relocatable": false, "superuser": true, "trusted": false, "schema": "graphql"}
+        """;
+    var about =
+        AboutResolver.resolve(
+            objectMapper,
+            new AboutResolver.Inputs(
+                null,
+                json(control),
+                null,
+                null,
+                REPO_URL,
+                null,
+                null,
+                null,
+                json("{\"default_version\": \"1.6.1\"}")));
+
+    assertEquals("GraphQL support", about.path("description").asText());
+    assertEquals(
+        json(
+            """
+            {"default_version": "1.6.1", "superuser": true, "trusted": false,
+             "relocatable": false, "schema": "graphql"}
+            """),
+        about.path("control"));
+  }
+
+  @Test
+  void contribCarriesItsControlAndNamesItWhenItIsWrong() {
+    var contrib =
+        Map.<String, JsonNode>of(
+            "earthdistance",
+            json(
+                """
+                {"default_version": "1.1", "comment": "great-circle distances",
+                 "requires": ["cube"], "superuser": true, "trusted": false, "relocatable": true}
+                """));
+
+    var about = resolve(null, null, null, null, null, contrib);
+
+    assertEquals(
+        json(
+            """
+            {"default_version": "1.1", "requires": ["cube"], "superuser": true,
+             "trusted": false, "relocatable": true}
+            """),
+        about.path("contrib").path("earthdistance").path("control"));
+
+    var error =
+        assertThrows(
+            IllegalArgumentException.class,
+            () ->
+                resolve(
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    Map.of("cube", json("{\"default_version\": \"@EXTVERSION@\"}"))));
+    assertTrue(
+        error.getMessage().startsWith("contrib.cube.control.default_version"), error.getMessage());
   }
 
   /// An extension a flavor builds out of a repository of its own (babelfish's from

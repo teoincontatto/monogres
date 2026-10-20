@@ -17,6 +17,13 @@
       "url": "https://github.com/dverite/icu_ext"
     },
     "ref": "v1.11.0",
-    "readme": "https://raw.githubusercontent.com/dverite/icu_ext/v1.11.0/README.md"
+    "readme": "https://raw.githubusercontent.com/dverite/icu_ext/v1.11.0/README.md",
+    "control": {
+      "default_version": "1.11",
+      "module_pathname": "$libdir/icu_ext",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

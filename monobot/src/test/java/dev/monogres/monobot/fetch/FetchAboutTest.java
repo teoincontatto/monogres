@@ -16,6 +16,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import dev.monogres.monobot.about.Forge;
+import dev.monogres.monobot.about.Layers;
 import dev.monogres.monobot.about.UpstreamClient;
 import dev.monogres.monobot.about.UpstreamClient.UpstreamException;
 import dev.monogres.monobot.git.TagLister;
@@ -177,7 +178,8 @@ class FetchAboutTest {
                 "keywords": ["fixtures"],
                 "repository": {"url": "https://github.com/monogres/fixture"},
                 "ref": "v1.0.0",
-                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
+                "control": {"default_version": "1.0.0", "superuser": true, "trusted": false, "relocatable": false}
               }
             }
             """),
@@ -219,13 +221,15 @@ class FetchAboutTest {
                 "keywords": ["fixtures"],
                 "repository": {"url": "https://github.com/monogres/fixture"},
                 "ref": "v1.1.0",
-                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.1.0/README.md"
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.1.0/README.md",
+                "control": {"default_version": "1.1.0", "superuser": true, "trusted": false, "relocatable": false}
               },
               "versions": {
                 "1.0.0": {
                   "long_description": "the forge about",
                   "ref": "v1.0.0",
-                  "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+                  "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
+                  "control": {"default_version": "1.0.0"}
                 }
               }
             }
@@ -258,15 +262,54 @@ class FetchAboutTest {
               "1.0.0": {
                 "description": "then",
                 "ref": "v1.0.0",
-                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
+                "control": {"default_version": "1.0.0"}
               },
               "0.9.0": {
                 "ref": "v0.9.0",
-                "readme": "https://raw.githubusercontent.com/monogres/fixture/v0.9.0/README.md"
+                "readme": "https://raw.githubusercontent.com/monogres/fixture/v0.9.0/README.md",
+                "control": {"default_version": "0.9.0"}
               }
             }
             """),
         about.path("versions"));
+  }
+
+  /// A control correction is the control file of one release, so it applies to that version and
+  /// to no other, older or newer.
+  @Test
+  void controlCorrectionAppliesToItsVersionAlone() throws Exception {
+    configure(
+        "[\"0.9.0\", \"1.0.0\", \"1.1.0\"]",
+        """
+        ,
+        "control": {"1.0.0": {"default_version": "1.0"}}
+        """);
+
+    run();
+
+    var resolved = Layers.resolve(read(aboutJson()));
+    assertEquals("1.1.0", resolved.get("1.1.0").path("control").path("default_version").asText());
+    assertEquals("1.0", resolved.get("1.0.0").path("control").path("default_version").asText());
+    assertEquals("0.9.0", resolved.get("0.9.0").path("control").path("default_version").asText());
+  }
+
+  /// A correction keyed on a version nothing catalogues corrects nothing, so it fails the entry
+  /// rather than being dropped.
+  @Test
+  void controlCorrectionOfAnUncataloguedVersionFailsTheEntry() throws Exception {
+    configure(
+        "[\"1.0.0\"]",
+        """
+        ,
+        "control": {"1.0": {"default_version": "1.0"}}
+        """);
+
+    var failure = assertThrows(ExecutionException.class, this::run);
+
+    assertTrue(
+        failure.getMessage().contains("control.1.0 corrects a version that is not catalogued"),
+        "the failure does not say what happened: " + failure.getMessage());
   }
 
   /// The snapshot is the answer, so the run after the one that took it asks nothing and writes the

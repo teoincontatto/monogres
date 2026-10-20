@@ -31,6 +31,14 @@
       "url": "https://github.com/paradedb/paradedb"
     },
     "ref": "v0.24.3",
-    "readme": "https://raw.githubusercontent.com/paradedb/paradedb/v0.24.3/README.md"
+    "readme": "https://raw.githubusercontent.com/paradedb/paradedb/v0.24.3/README.md",
+    "control": {
+      "default_version": "0.24.3",
+      "module_pathname": "$libdir/pg_search",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "paradedb"
+    }
   }
 }

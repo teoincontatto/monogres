@@ -17,6 +17,14 @@
       "url": "https://github.com/pgRouting/pgrouting"
     },
     "ref": "v4.0.1",
-    "readme": "https://raw.githubusercontent.com/pgRouting/pgrouting/v4.0.1/README.md"
+    "readme": "https://raw.githubusercontent.com/pgRouting/pgrouting/v4.0.1/README.md",
+    "control": {
+      "default_version": "4.0.1",
+      "module_pathname": "$libdir/libpgrouting-4.0",
+      "requires": ["plpgsql", "postgis"],
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

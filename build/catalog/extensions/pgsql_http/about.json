@@ -11,6 +11,13 @@
       "url": "https://github.com/pramsey/pgsql-http"
     },
     "ref": "v1.7.2",
-    "readme": "https://raw.githubusercontent.com/pramsey/pgsql-http/v1.7.2/README.md"
+    "readme": "https://raw.githubusercontent.com/pramsey/pgsql-http/v1.7.2/README.md",
+    "control": {
+      "default_version": "1.7",
+      "module_pathname": "$libdir/http",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

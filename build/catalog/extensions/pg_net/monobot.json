@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["0.20.5"]
   },
+  "control": {
+    "0.20.5": {
+      "default_version": "0.20.4"
+    }
+  },
   "metadata": {
     "patches": [
       {

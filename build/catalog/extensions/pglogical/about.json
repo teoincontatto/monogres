@@ -22,6 +22,14 @@
       "url": "https://github.com/2ndQuadrant/pglogical"
     },
     "ref": "REL2_4_8",
-    "readme": "https://raw.githubusercontent.com/2ndQuadrant/pglogical/REL2_4_8/README.md"
+    "readme": "https://raw.githubusercontent.com/2ndQuadrant/pglogical/REL2_4_8/README.md",
+    "control": {
+      "default_version": "2.4.8",
+      "module_pathname": "$libdir/pglogical",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "pglogical"
+    }
   }
 }

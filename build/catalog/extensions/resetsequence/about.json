@@ -18,6 +18,13 @@
     ],
     "repository": {
       "url": "https://pgxn.org/dist/resetsequence"
+    },
+    "control": {
+      "default_version": "1.0.0",
+      "module_pathname": "$libdir/resetsequence",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
     }
   }
 }

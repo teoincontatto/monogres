@@ -10,6 +10,12 @@
       "url": "https://github.com/cybertec-postgresql/pg_permissions"
     },
     "ref": "REL_1_4_1",
-    "readme": "https://raw.githubusercontent.com/cybertec-postgresql/pg_permissions/REL_1_4_1/README.md"
+    "readme": "https://raw.githubusercontent.com/cybertec-postgresql/pg_permissions/REL_1_4_1/README.md",
+    "control": {
+      "default_version": "1.4",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

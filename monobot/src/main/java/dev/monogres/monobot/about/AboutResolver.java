@@ -40,6 +40,7 @@ import java.util.stream.StreamSupport;
 /// | `repository.url`   | override, forge (canonical, after redirects), `monobot.json` url     |
 /// | `ref`              | the ref the version's archive was cut from                           |
 /// | `readme`           | the forge's README at `ref`                                          |
+/// | `control`          | control file directives, patched by `monobot.json` `control.<version>` |
 ///
 /// The control comment is preferred for the short description because it is what `\dx` shows: it
 /// is the extension describing itself, one line long. The forge's About is preferred for the long
@@ -52,7 +53,8 @@ public final class AboutResolver {
   ///
   /// `ref` is the ref the version's archive was cut from, or null. `contrib` is the control file
   /// of each contrib extension the version ships, and `contribRefs` the ref of each one built from
-  /// a repository of its own.
+  /// a repository of its own. `controlOverride` is the correction `monobot.json` keys on this very
+  /// version, if any.
   public record Inputs(
       JsonNode override,
       JsonNode control,
@@ -61,7 +63,8 @@ public final class AboutResolver {
       String repoUrl,
       String ref,
       Map<String, JsonNode> contrib,
-      Map<String, String> contribRefs) {
+      Map<String, String> contribRefs,
+      JsonNode controlOverride) {
     public Inputs {
       override = orMissing(override);
       control = orMissing(control);
@@ -69,6 +72,20 @@ public final class AboutResolver {
       upstream = orMissing(upstream);
       contrib = contrib == null ? Map.of() : contrib;
       contribRefs = contribRefs == null ? Map.of() : contribRefs;
+      controlOverride = orMissing(controlOverride);
+    }
+
+    /// A version whose control file needs no correction.
+    public Inputs(
+        JsonNode override,
+        JsonNode control,
+        JsonNode meta,
+        JsonNode upstream,
+        String repoUrl,
+        String ref,
+        Map<String, JsonNode> contrib,
+        Map<String, String> contribRefs) {
+      this(override, control, meta, upstream, repoUrl, ref, contrib, contribRefs, null);
     }
 
     /// A version with no contrib extension built from a repository of its own.
@@ -80,7 +97,7 @@ public final class AboutResolver {
         String repoUrl,
         String ref,
         Map<String, JsonNode> contrib) {
-      this(override, control, meta, upstream, repoUrl, ref, contrib, null);
+      this(override, control, meta, upstream, repoUrl, ref, contrib, null, null);
     }
   }
 
@@ -162,6 +179,8 @@ public final class AboutResolver {
           .ifPresent(found -> about.put("readme", found.rawUrl(ref, readme.asText())));
     }
 
+    putControl(objectMapper, about, inputs.control(), inputs.controlOverride());
+
     var contrib = contrib(objectMapper, inputs, about);
     if (!contrib.isEmpty()) {
       about.set("contrib", contrib);
@@ -212,12 +231,27 @@ public final class AboutResolver {
                 about.put("ref", ref);
               }
 
+              try {
+                putControl(objectMapper, about, control, MissingNode.getInstance());
+              } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("contrib." + name + "." + e.getMessage(), e);
+              }
+
               if (!about.isEmpty()) {
                 contrib.set(name, about);
               }
             });
 
     return contrib;
+  }
+
+  /// The control file's directives, as [ControlDirectives] reports them, where there are any.
+  private static void putControl(
+      ObjectMapper objectMapper, ObjectNode into, JsonNode control, JsonNode override) {
+    var directives = ControlDirectives.resolve(objectMapper, control, override);
+    if (!directives.isEmpty()) {
+      into.set(ControlDirectives.KEY, directives);
+    }
   }
 
   private static Supplier<Optional<String>> text(JsonNode node, String field) {

@@ -26,6 +26,13 @@
       "url": "https://github.com/tds-fdw/tds_fdw"
     },
     "ref": "v2.0.5",
-    "readme": "https://raw.githubusercontent.com/tds-fdw/tds_fdw/v2.0.5/README.md"
+    "readme": "https://raw.githubusercontent.com/tds-fdw/tds_fdw/v2.0.5/README.md",
+    "control": {
+      "default_version": "2.0.5",
+      "module_pathname": "$libdir/tds_fdw",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

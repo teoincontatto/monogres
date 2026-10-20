@@ -9,6 +9,12 @@
     "keywords": ["jsonb"],
     "repository": {
       "url": "https://github.com/furstenheim/jsonb_deep_sum"
+    },
+    "control": {
+      "default_version": "0.0.2",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
     }
   }
 }

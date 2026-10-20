@@ -21,292 +21,720 @@
       "amcheck": {
         "description": "functions for verifying relation integrity",
         "long_description": "functions for verifying relation integrity",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.5",
+          "module_pathname": "$libdir/amcheck",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "autoinc": {
         "description": "functions for autoincrementing fields",
         "long_description": "functions for autoincrementing fields",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/autoinc",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "bloom": {
         "description": "bloom access method - signature file based index",
         "long_description": "bloom access method - signature file based index",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/bloom",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "bool_plperl": {
         "description": "transform between bool and plperl",
         "long_description": "transform between bool and plperl",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/bool_plperl",
+          "requires": ["plperl"],
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "bool_plperlu": {
         "description": "transform between bool and plperlu",
         "long_description": "transform between bool and plperlu",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/bool_plperl",
+          "requires": ["plperlu"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "btree_gin": {
         "description": "support for indexing common datatypes in GIN",
         "long_description": "support for indexing common datatypes in GIN",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.3",
+          "module_pathname": "$libdir/btree_gin",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "btree_gist": {
         "description": "support for indexing common datatypes in GiST",
         "long_description": "support for indexing common datatypes in GiST",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.8",
+          "module_pathname": "$libdir/btree_gist",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "citext": {
         "description": "data type for case-insensitive character strings",
         "long_description": "data type for case-insensitive character strings",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.8",
+          "module_pathname": "$libdir/citext",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "cube": {
         "description": "data type for multidimensional cubes",
         "long_description": "data type for multidimensional cubes",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.5",
+          "module_pathname": "$libdir/cube",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "dblink": {
         "description": "connect to other PostgreSQL databases from within a database",
         "long_description": "connect to other PostgreSQL databases from within a database",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/dblink",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "dict_int": {
         "description": "text search dictionary template for integers",
         "long_description": "text search dictionary template for integers",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/dict_int",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "dict_xsyn": {
         "description": "text search dictionary template for extended synonym processing",
         "long_description": "text search dictionary template for extended synonym processing",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/dict_xsyn",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "earthdistance": {
         "description": "calculate great-circle distances on the surface of the Earth",
         "long_description": "calculate great-circle distances on the surface of the Earth",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/earthdistance",
+          "requires": ["cube"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "file_fdw": {
         "description": "foreign-data wrapper for flat file access",
         "long_description": "foreign-data wrapper for flat file access",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/file_fdw",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "fuzzystrmatch": {
         "description": "determine similarities and distance between strings",
         "long_description": "determine similarities and distance between strings",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/fuzzystrmatch",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "gb18030_2022": {
         "description": "support gb18030 2022 with extension",
         "long_description": "support gb18030 2022 with extension",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/gb18030_2022",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "hstore": {
         "description": "data type for storing sets of (key, value) pairs",
         "long_description": "data type for storing sets of (key, value) pairs",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.8",
+          "module_pathname": "$libdir/hstore",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "hstore_plperl": {
         "description": "transform between hstore and plperl",
         "long_description": "transform between hstore and plperl",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/hstore_plperl",
+          "requires": ["hstore", "plperl"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "hstore_plperlu": {
         "description": "transform between hstore and plperlu",
         "long_description": "transform between hstore and plperlu",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/hstore_plperl",
+          "requires": ["hstore", "plperlu"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "hstore_plpython3u": {
         "description": "transform between hstore and plpython3u",
         "long_description": "transform between hstore and plpython3u",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/hstore_plpython3",
+          "requires": ["hstore", "plpython3u"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "insert_username": {
         "description": "functions for tracking who changed a table",
         "long_description": "functions for tracking who changed a table",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/insert_username",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "intagg": {
         "description": "integer aggregator and enumerator (obsolete)",
         "long_description": "integer aggregator and enumerator (obsolete)",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.1",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "intarray": {
         "description": "functions, operators, and index support for 1-D arrays of integers",
         "long_description": "functions, operators, and index support for 1-D arrays of integers",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.5",
+          "module_pathname": "$libdir/_int",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "isn": {
         "description": "data types for international product numbering standards",
         "long_description": "data types for international product numbering standards",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.3",
+          "module_pathname": "$libdir/isn",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "ivorysql_ora": {
         "description": "Oracle Compatible extenison on Postgres Database",
         "long_description": "Oracle Compatible extenison on Postgres Database",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/ivorysql_ora",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": false,
+          "schema": "sys"
+        }
       },
       "jsonb_plperl": {
         "description": "transform between jsonb and plperl",
         "long_description": "transform between jsonb and plperl",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/jsonb_plperl",
+          "requires": ["plperl"],
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "jsonb_plperlu": {
         "description": "transform between jsonb and plperlu",
         "long_description": "transform between jsonb and plperlu",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/jsonb_plperl",
+          "requires": ["plperlu"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "jsonb_plpython3u": {
         "description": "transform between jsonb and plpython3u",
         "long_description": "transform between jsonb and plpython3u",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/jsonb_plpython3",
+          "requires": ["plpython3u"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "lo": {
         "description": "Large Object maintenance",
         "long_description": "Large Object maintenance",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/lo",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "ltree": {
         "description": "data type for hierarchical tree-like structures",
         "long_description": "data type for hierarchical tree-like structures",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.3",
+          "module_pathname": "$libdir/ltree",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "ltree_plpython3u": {
         "description": "transform between ltree and plpython3u",
         "long_description": "transform between ltree and plpython3u",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/ltree_plpython3",
+          "requires": ["ltree", "plpython3u"],
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "moddatetime": {
         "description": "functions for tracking last modification time",
         "long_description": "functions for tracking last modification time",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/moddatetime",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "ora_btree_gin": {
         "description": "support for indexing oracle datatypes in GIN",
         "long_description": "support for indexing oracle datatypes in GIN",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/ora_btree_gin",
+          "requires": ["ivorysql_ora"],
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "sys"
+        }
       },
       "ora_btree_gist": {
         "description": "support for oracle indexing common datatypes in GiST",
         "long_description": "support for oracle indexing common datatypes in GiST",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/ora_btree_gist",
+          "requires": ["ivorysql_ora"],
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "sys"
+        }
       },
       "pageinspect": {
         "description": "inspect the contents of database pages at a low level",
         "long_description": "inspect the contents of database pages at a low level",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.13",
+          "module_pathname": "$libdir/pageinspect",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_buffercache": {
         "description": "examine the shared buffer cache",
         "long_description": "examine the shared buffer cache",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.6",
+          "module_pathname": "$libdir/pg_buffercache",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_freespacemap": {
         "description": "examine the free space map (FSM)",
         "long_description": "examine the free space map (FSM)",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.3",
+          "module_pathname": "$libdir/pg_freespacemap",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_get_functiondef": {
         "description": "Get function's definition",
         "long_description": "Get function's definition",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/pg_get_functiondef",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false
+        }
       },
       "pg_logicalinspect": {
         "description": "functions to inspect logical decoding components",
         "long_description": "functions to inspect logical decoding components",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/pg_logicalinspect",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_prewarm": {
         "description": "prewarm relation data",
         "long_description": "prewarm relation data",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/pg_prewarm",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_stat_statements": {
         "description": "track planning and execution statistics of all SQL statements executed",
         "long_description": "track planning and execution statistics of all SQL statements executed",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.12",
+          "module_pathname": "$libdir/pg_stat_statements",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_surgery": {
         "description": "extension to perform surgery on a damaged relation",
         "long_description": "extension to perform surgery on a damaged relation",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/pg_surgery",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_trgm": {
         "description": "text similarity measurement and index searching based on trigrams",
         "long_description": "text similarity measurement and index searching based on trigrams",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.6",
+          "module_pathname": "$libdir/pg_trgm",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "pg_visibility": {
         "description": "examine the visibility map (VM) and page-level visibility info",
         "long_description": "examine the visibility map (VM) and page-level visibility info",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/pg_visibility",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pg_walinspect": {
         "description": "functions to inspect contents of PostgreSQL Write-Ahead Log",
         "long_description": "functions to inspect contents of PostgreSQL Write-Ahead Log",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.1",
+          "module_pathname": "$libdir/pg_walinspect",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pgcrypto": {
         "description": "cryptographic functions",
         "long_description": "cryptographic functions",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.4",
+          "module_pathname": "$libdir/pgcrypto",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "pgrowlocks": {
         "description": "show row-level locking information",
         "long_description": "show row-level locking information",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/pgrowlocks",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "pgstattuple": {
         "description": "show tuple-level statistics",
         "long_description": "show tuple-level statistics",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.5",
+          "module_pathname": "$libdir/pgstattuple",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "plisql": {
         "description": "PL/iSQL procedural language",
         "long_description": "PL/iSQL procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/plisql",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "plperl": {
         "description": "PL/Perl procedural language",
         "long_description": "PL/Perl procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/plperl",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "plperlu": {
         "description": "PL/PerlU untrusted procedural language",
         "long_description": "PL/PerlU untrusted procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/plperl",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "plpgsql": {
         "description": "PL/pgSQL procedural language",
         "long_description": "PL/pgSQL procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/plpgsql",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "plpython3u": {
         "description": "PL/Python3U untrusted procedural language",
         "long_description": "PL/Python3U untrusted procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/plpython3",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "pltcl": {
         "description": "PL/Tcl procedural language",
         "long_description": "PL/Tcl procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/pltcl",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "pltclu": {
         "description": "PL/TclU untrusted procedural language",
         "long_description": "PL/TclU untrusted procedural language",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/pltcl",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": false,
+          "schema": "pg_catalog"
+        }
       },
       "postgres_fdw": {
         "description": "foreign-data wrapper for remote PostgreSQL servers",
         "long_description": "foreign-data wrapper for remote PostgreSQL servers",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/postgres_fdw",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "refint": {
         "description": "functions for implementing referential integrity (obsolete)",
         "long_description": "functions for implementing referential integrity (obsolete)",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/refint",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "seg": {
         "description": "data type for representing line segments or floating-point intervals",
         "long_description": "data type for representing line segments or floating-point intervals",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.4",
+          "module_pathname": "$libdir/seg",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "spi": {
         "description": "Server Programming Interface examples: autoinc, insert_username, moddatetime and refint",
@@ -315,42 +743,98 @@
       "sslinfo": {
         "description": "information about SSL certificates",
         "long_description": "information about SSL certificates",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/sslinfo",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": true
+        }
       },
       "tablefunc": {
         "description": "functions that manipulate whole tables, including crosstab",
         "long_description": "functions that manipulate whole tables, including crosstab",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/tablefunc",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "tcn": {
         "description": "Triggered change notifications",
         "long_description": "Triggered change notifications",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/tcn",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "tsm_system_rows": {
         "description": "TABLESAMPLE method which accepts number of rows as a limit",
         "long_description": "TABLESAMPLE method which accepts number of rows as a limit",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/tsm_system_rows",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "tsm_system_time": {
         "description": "TABLESAMPLE method which accepts time in milliseconds as a limit",
         "long_description": "TABLESAMPLE method which accepts time in milliseconds as a limit",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.0",
+          "module_pathname": "$libdir/tsm_system_time",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "unaccent": {
         "description": "text search dictionary that removes accents",
         "long_description": "text search dictionary that removes accents",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.1",
+          "module_pathname": "$libdir/unaccent",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "uuid-ossp": {
         "description": "generate universally unique identifiers (UUIDs)",
         "long_description": "generate universally unique identifiers (UUIDs)",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.1",
+          "module_pathname": "$libdir/uuid-ossp",
+          "superuser": true,
+          "trusted": true,
+          "relocatable": true
+        }
       },
       "xml2": {
         "description": "XPath querying and XSLT",
         "long_description": "XPath querying and XSLT",
-        "license": "Apache-2.0"
+        "license": "Apache-2.0",
+        "control": {
+          "default_version": "1.2",
+          "module_pathname": "$libdir/pgxml",
+          "superuser": true,
+          "trusted": false,
+          "relocatable": false
+        }
       }
     }
   },
@@ -360,7 +844,72 @@
       "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.0/README.md",
       "contrib": {
         "gb18030_2022": null,
-        "pg_logicalinspect": null
+        "pg_logicalinspect": null,
+        "amcheck": {
+          "control": {
+            "default_version": "1.4"
+          }
+        },
+        "btree_gist": {
+          "control": {
+            "default_version": "1.7"
+          }
+        },
+        "citext": {
+          "control": {
+            "default_version": "1.6"
+          }
+        },
+        "earthdistance": {
+          "control": {
+            "default_version": "1.1"
+          }
+        },
+        "isn": {
+          "control": {
+            "default_version": "1.2"
+          }
+        },
+        "lo": {
+          "control": {
+            "default_version": "1.1"
+          }
+        },
+        "pageinspect": {
+          "control": {
+            "default_version": "1.12"
+          }
+        },
+        "pg_buffercache": {
+          "control": {
+            "default_version": "1.5"
+          }
+        },
+        "pg_freespacemap": {
+          "control": {
+            "default_version": "1.2"
+          }
+        },
+        "pg_stat_statements": {
+          "control": {
+            "default_version": "1.11"
+          }
+        },
+        "pgcrypto": {
+          "control": {
+            "default_version": "1.3"
+          }
+        },
+        "postgres_fdw": {
+          "control": {
+            "default_version": "1.1"
+          }
+        },
+        "xml2": {
+          "control": {
+            "default_version": "1.1"
+          }
+        }
       }
     },
     "3.0": {
@@ -371,12 +920,47 @@
         "adminpack": {
           "description": "administrative functions for PostgreSQL",
           "long_description": "administrative functions for PostgreSQL",
-          "license": "Apache-2.0"
+          "license": "Apache-2.0",
+          "control": {
+            "default_version": "2.1",
+            "module_pathname": "$libdir/adminpack",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": false,
+            "schema": "pg_catalog"
+          }
+        },
+        "amcheck": {
+          "control": {
+            "default_version": "1.3"
+          }
+        },
+        "ltree": {
+          "control": {
+            "default_version": "1.2"
+          }
         },
         "old_snapshot": {
           "description": "utilities in support of old_snapshot_threshold",
           "long_description": "utilities in support of old_snapshot_threshold",
-          "license": "Apache-2.0"
+          "license": "Apache-2.0",
+          "control": {
+            "default_version": "1.0",
+            "module_pathname": "$libdir/old_snapshot",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": true
+          }
+        },
+        "pg_buffercache": {
+          "control": {
+            "default_version": "1.4"
+          }
+        },
+        "pg_stat_statements": {
+          "control": {
+            "default_version": "1.10"
+          }
         }
       }
     }

@@ -79,6 +79,7 @@ public class AboutCatalog {
       return Optional.empty();
     }
     var overrides = Layers.override(monobotConfig.about(), newestFirst);
+    var controlOverrides = controlOverrides(monobotConfig, newestFirst);
     var refs = refs(monobotConfig, versions, overrides);
     var metas = new LinkedHashMap<String, JsonNode>();
     newestFirst.forEach(
@@ -98,19 +99,26 @@ public class AboutCatalog {
               contribRef.put(name, byVersion.get(key));
             }
           });
-      documents.put(
-          key,
-          AboutResolver.resolve(
-              objectMapper,
-              new AboutResolver.Inputs(
-                  overrides.get(key),
-                  read(entryDir, version, FILENAME_CONTROL),
-                  metas.get(key),
-                  upstream.get(key),
-                  repoUrl,
-                  refs.get(key),
-                  contrib(entryDir, version),
-                  contribRef)));
+      ObjectNode document;
+      try {
+        document =
+            AboutResolver.resolve(
+                objectMapper,
+                new AboutResolver.Inputs(
+                    overrides.get(key),
+                    read(entryDir, version, FILENAME_CONTROL),
+                    metas.get(key),
+                    upstream.get(key),
+                    repoUrl,
+                    refs.get(key),
+                    contrib(entryDir, version),
+                    contribRef,
+                    controlOverrides.get(key)));
+      } catch (IllegalArgumentException e) {
+        throw new IllegalArgumentException(
+            "[" + monobotConfig.label() + "] " + key + ": " + e.getMessage(), e);
+      }
+      documents.put(key, document);
     }
 
     var newest = documents.firstEntry().getValue();
@@ -119,6 +127,33 @@ public class AboutCatalog {
     }
 
     return Optional.of(Layers.layer(objectMapper, documents));
+  }
+
+  /// The `control` corrections of `monobot.json`, by version. A key naming no catalogued version
+  /// is an error rather than a correction that silently applies to nothing: it is most likely a
+  /// version spelled the way the control file spells it rather than the way `versions` does.
+  private static Map<String, JsonNode> controlOverrides(
+      MonobotConfig monobotConfig, List<Version> versions) {
+    var catalogued = versions.stream().map(Version::version).toList();
+    var overrides = new HashMap<String, JsonNode>();
+    monobotConfig
+        .control()
+        .properties()
+        .forEach(
+            field -> {
+              if (!catalogued.contains(field.getKey())) {
+                throw new IllegalArgumentException(
+                    "["
+                        + monobotConfig.label()
+                        + "] control."
+                        + field.getKey()
+                        + " corrects a version that is not catalogued, which are "
+                        + String.join(", ", catalogued));
+              }
+              overrides.put(field.getKey(), field.getValue());
+            });
+
+    return overrides;
   }
 
   /// The ref each version's archive was cut from, or null where it names none.

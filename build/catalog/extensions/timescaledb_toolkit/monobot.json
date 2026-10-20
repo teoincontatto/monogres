@@ -20,6 +20,11 @@
       "license": "LicenseRef-Timescale"
     }
   },
+  "control": {
+    "1.24.0": {
+      "default_version": "1.24.0"
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "crate_dir": "extension",

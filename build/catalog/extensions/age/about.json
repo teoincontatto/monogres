@@ -20,16 +20,30 @@
       "url": "https://github.com/apache/age"
     },
     "ref": "PG18/v1.8.0-rc0",
-    "readme": "https://raw.githubusercontent.com/apache/age/PG18/v1.8.0-rc0/README.md"
+    "readme": "https://raw.githubusercontent.com/apache/age/PG18/v1.8.0-rc0/README.md",
+    "control": {
+      "default_version": "1.8.0",
+      "module_pathname": "$libdir/age",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "ag_catalog"
+    }
   },
   "versions": {
     "1.7.0": {
       "ref": "PG17/v1.7.0-rc0",
-      "readme": "https://raw.githubusercontent.com/apache/age/PG17/v1.7.0-rc0/README.md"
+      "readme": "https://raw.githubusercontent.com/apache/age/PG17/v1.7.0-rc0/README.md",
+      "control": {
+        "default_version": "1.7.0"
+      }
     },
     "1.6.0": {
       "ref": "PG16/v1.6.0-rc0",
-      "readme": "https://raw.githubusercontent.com/apache/age/PG16/v1.6.0-rc0/README.md"
+      "readme": "https://raw.githubusercontent.com/apache/age/PG16/v1.6.0-rc0/README.md",
+      "control": {
+        "default_version": "1.6.0"
+      }
     }
   }
 }

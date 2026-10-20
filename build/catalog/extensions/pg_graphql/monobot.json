@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["1.6.1"]
   },
+  "control": {
+    "1.6.1": {
+      "default_version": "1.6.1"
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "patches": [

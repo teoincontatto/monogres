@@ -18,6 +18,13 @@
       "url": "https://github.com/pierreforstmann/pg_timeout"
     },
     "ref": "1.0.0",
-    "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_timeout/1.0.0/README.md"
+    "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_timeout/1.0.0/README.md",
+    "control": {
+      "default_version": "1.0",
+      "module_pathname": "$libdir/pg_timeout",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

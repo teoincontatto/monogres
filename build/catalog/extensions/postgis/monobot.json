@@ -21,6 +21,12 @@
       }
     }
   },
+  "control": {
+    "3.5.7": {
+      "default_version": "3.5.7",
+      "module_pathname": "$libdir/postgis-3"
+    }
+  },
   "metadata": {
     "patches": [
       {

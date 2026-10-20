@@ -16,6 +16,14 @@
       "url": "https://github.com/lemoineat/pg_fkpart"
     },
     "ref": "1.7.0",
-    "readme": "https://raw.githubusercontent.com/lemoineat/pg_fkpart/1.7.0/README.md"
+    "readme": "https://raw.githubusercontent.com/lemoineat/pg_fkpart/1.7.0/README.md",
+    "control": {
+      "default_version": "1.7",
+      "module_pathname": "$libdir/pg_fkpart",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "pgfkpart"
+    }
   }
 }

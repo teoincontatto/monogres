@@ -8,6 +8,13 @@
     "repository": {
       "url": "https://github.com/ossc-db/pg_store_plans"
     },
-    "ref": "1.10"
+    "ref": "1.10",
+    "control": {
+      "default_version": "1.10",
+      "module_pathname": "$libdir/pg_store_plans",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

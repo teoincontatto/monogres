@@ -11,6 +11,12 @@
       "url": "https://github.com/asotolongo/pg_json_utils"
     },
     "ref": "v0.1.1",
-    "readme": "https://raw.githubusercontent.com/asotolongo/pg_json_utils/v0.1.1/README.md"
+    "readme": "https://raw.githubusercontent.com/asotolongo/pg_json_utils/v0.1.1/README.md",
+    "control": {
+      "default_version": "0.1",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

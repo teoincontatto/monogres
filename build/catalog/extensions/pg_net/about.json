@@ -17,6 +17,13 @@
       "url": "https://github.com/supabase/pg_net"
     },
     "ref": "v0.20.5",
-    "readme": "https://raw.githubusercontent.com/supabase/pg_net/v0.20.5/README.md"
+    "readme": "https://raw.githubusercontent.com/supabase/pg_net/v0.20.5/README.md",
+    "control": {
+      "default_version": "0.20.4",
+      "module_pathname": "$libdir/pg_net",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

@@ -30,6 +30,13 @@
       "url": "https://github.com/Evokoa/pgGraph"
     },
     "ref": "v1.0.0",
-    "readme": "https://raw.githubusercontent.com/Evokoa/pgGraph/v1.0.0/README.md"
+    "readme": "https://raw.githubusercontent.com/Evokoa/pgGraph/v1.0.0/README.md",
+    "control": {
+      "default_version": "1.0.0",
+      "module_pathname": "graph",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

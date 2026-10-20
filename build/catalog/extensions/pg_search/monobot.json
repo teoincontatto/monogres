@@ -15,6 +15,11 @@
   "versions": {
     "pin": ["0.24.3"]
   },
+  "control": {
+    "0.24.3": {
+      "default_version": "0.24.3"
+    }
+  },
   "metadata": {
     "build_system": "pgrx",
     "crate_dir": "pg_search",

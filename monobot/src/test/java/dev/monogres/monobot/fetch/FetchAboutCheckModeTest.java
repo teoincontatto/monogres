@@ -98,7 +98,13 @@ class FetchAboutCheckModeTest {
           "license": "MIT",
           "repository": {"url": "https://github.com/monogres/fixture"},
           "ref": "v1.0.0",
-          "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md"
+          "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
+          "control": {
+            "default_version": "1.0.0",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": false
+          }
         }
       }
       """;

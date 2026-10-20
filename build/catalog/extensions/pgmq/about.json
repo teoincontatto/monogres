@@ -10,6 +10,14 @@
       "url": "https://github.com/pgmq/pgmq"
     },
     "ref": "v1.12.0",
-    "readme": "https://raw.githubusercontent.com/pgmq/pgmq/v1.12.0/README.md"
+    "readme": "https://raw.githubusercontent.com/pgmq/pgmq/v1.12.0/README.md",
+    "control": {
+      "default_version": "1.12.0",
+      "module_pathname": "$libdir/pgmq",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "pgmq"
+    }
   }
 }

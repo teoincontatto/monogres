@@ -9,6 +9,13 @@
       "url": "https://github.com/CrunchyData/pgbouncer_fdw"
     },
     "ref": "v1.4.0",
-    "readme": "https://raw.githubusercontent.com/CrunchyData/pgbouncer_fdw/v1.4.0/README.md"
+    "readme": "https://raw.githubusercontent.com/CrunchyData/pgbouncer_fdw/v1.4.0/README.md",
+    "control": {
+      "default_version": "1.4.0",
+      "requires": ["dblink"],
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

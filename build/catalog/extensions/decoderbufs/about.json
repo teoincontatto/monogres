@@ -10,6 +10,12 @@
       "url": "https://github.com/debezium/postgres-decoderbufs"
     },
     "ref": "v3.6.0.Final",
-    "readme": "https://raw.githubusercontent.com/debezium/postgres-decoderbufs/v3.6.0.Final/README.md"
+    "readme": "https://raw.githubusercontent.com/debezium/postgres-decoderbufs/v3.6.0.Final/README.md",
+    "control": {
+      "default_version": "0.1.0",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": true
+    }
   }
 }

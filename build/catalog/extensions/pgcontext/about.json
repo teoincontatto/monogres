@@ -11,6 +11,14 @@
       "url": "https://github.com/Evokoa/pgContext"
     },
     "ref": "v0.2.0",
-    "readme": "https://raw.githubusercontent.com/Evokoa/pgContext/v0.2.0/README.md"
+    "readme": "https://raw.githubusercontent.com/Evokoa/pgContext/v0.2.0/README.md",
+    "control": {
+      "default_version": "0.2.0",
+      "module_pathname": "$libdir/pgcontext",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false,
+      "schema": "pgcontext"
+    }
   }
 }

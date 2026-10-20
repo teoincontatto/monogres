@@ -9,6 +9,13 @@
       "url": "https://github.com/HexaCluster/credcheck"
     },
     "ref": "v5.0",
-    "readme": "https://raw.githubusercontent.com/HexaCluster/credcheck/v5.0/README.md"
+    "readme": "https://raw.githubusercontent.com/HexaCluster/credcheck/v5.0/README.md",
+    "control": {
+      "default_version": "5.0.0",
+      "module_pathname": "$libdir/credcheck",
+      "superuser": true,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }

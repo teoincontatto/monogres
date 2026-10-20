@@ -11,6 +11,13 @@
       "url": "https://github.com/rjuju/pg_track_settings"
     },
     "ref": "2.1.2",
-    "readme": "https://raw.githubusercontent.com/rjuju/pg_track_settings/2.1.2/README.md"
+    "readme": "https://raw.githubusercontent.com/rjuju/pg_track_settings/2.1.2/README.md",
+    "control": {
+      "default_version": "2.1.2",
+      "module_pathname": "$libdir/pg_track_settings",
+      "superuser": false,
+      "trusted": false,
+      "relocatable": false
+    }
   }
 }
