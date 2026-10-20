@@ -17,7 +17,9 @@
   },
   "control": {
     "1.6.1": {
-      "default_version": "1.6.1"
+      "pg_graphql": {
+        "default_version": "1.6.1"
+      }
     }
   },
   "metadata": {

@@ -9,7 +9,7 @@ extensions hub, which re-exposes it from `all.bzl` so a consumer can label what
 it ships without reading the catalog itself.
 """
 
-load("//monoext:about.bzl", "about_versions")
+load("//monoext:about.bzl", "about_versions", "contrib_about")
 
 def _read(ctx, label):
     # Watched even while absent, so an `about.json` added later re-evaluates
@@ -54,9 +54,10 @@ def read_about(ctx, base, catalog, extensions):
           - `extensions`: `{name: {version: about}}` for the external
             extensions that have one.
           - `contrib`: `{name: {flavor version: about}}` for the contrib
-            entries, taken from that flavor version's `contrib` block under the
-            entry's own name, or else under the first control file it installs
-            that the block describes.
+            entries, taken from that flavor version's `contrib` block by
+            `contrib_about`: described under the entry's own name, or else
+            under the first control file it installs that the block describes,
+            with the `control` of every one it installs.
     """
     flavor = {}
     described = {}
@@ -80,9 +81,8 @@ def read_about(ctx, base, catalog, extensions):
 
         controls = [name] + _contrib_controls(entry)
         for version, block in described.items():
-            for control in controls:
-                if control in block:
-                    contrib.setdefault(name, {})[version] = block[control]
-                    break
+            about = contrib_about(block, controls)
+            if about != None:
+                contrib.setdefault(name, {})[version] = about
 
     return struct(flavor = flavor, extensions = external, contrib = contrib)

@@ -19,12 +19,14 @@
     "ref": "v1.6.7",
     "readme": "https://raw.githubusercontent.com/citusdata/pg_cron/v1.6.7/README.md",
     "control": {
-      "default_version": "1.6",
-      "module_pathname": "$libdir/pg_cron",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pg_catalog"
+      "pg_cron": {
+        "default_version": "1.6",
+        "module_pathname": "$libdir/pg_cron",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pg_catalog"
+      }
     }
   }
 }

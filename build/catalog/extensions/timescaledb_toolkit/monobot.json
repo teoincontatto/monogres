@@ -22,7 +22,9 @@
   },
   "control": {
     "1.24.0": {
-      "default_version": "1.24.0"
+      "timescaledb_toolkit": {
+        "default_version": "1.24.0"
+      }
     }
   },
   "metadata": {

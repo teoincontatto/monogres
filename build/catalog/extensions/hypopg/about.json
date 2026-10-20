@@ -22,11 +22,13 @@
     "ref": "1.4.3",
     "readme": "https://raw.githubusercontent.com/HypoPG/hypopg/1.4.3/README.md",
     "control": {
-      "default_version": "1.4.3",
-      "module_pathname": "$libdir/hypopg",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "hypopg": {
+        "default_version": "1.4.3",
+        "module_pathname": "$libdir/hypopg",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

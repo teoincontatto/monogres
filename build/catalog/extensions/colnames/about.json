@@ -23,11 +23,13 @@
     "ref": "v1.7.1",
     "readme": "https://raw.githubusercontent.com/theory/colnames/v1.7.1/README.md",
     "control": {
-      "default_version": "1.7.0",
-      "module_pathname": "colnames",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "colnames": {
+        "default_version": "1.7.0",
+        "module_pathname": "colnames",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

@@ -13,10 +13,12 @@
     "ref": "v0.2.0",
     "readme": "https://raw.githubusercontent.com/asotolongo/db_info/v0.2.0/README.md",
     "control": {
-      "default_version": "0.2.0",
-      "superuser": false,
-      "trusted": false,
-      "relocatable": true
+      "db_info": {
+        "default_version": "0.2.0",
+        "superuser": false,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

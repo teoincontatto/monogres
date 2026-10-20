@@ -113,7 +113,8 @@ public class AboutCatalog {
                     refs.get(key),
                     contrib(entryDir, version),
                     contribRef,
-                    controlOverrides.get(key)));
+                    controlOverrides.get(key),
+                    monobotConfig.controlStem().orElse(null)));
       } catch (IllegalArgumentException e) {
         throw new IllegalArgumentException(
             "[" + monobotConfig.label() + "] " + key + ": " + e.getMessage(), e);

@@ -22,7 +22,9 @@
   },
   "control": {
     "4.2.3": {
-      "default_version": "4.2"
+      "pgagent": {
+        "default_version": "4.2"
+      }
     }
   },
   "metadata": {

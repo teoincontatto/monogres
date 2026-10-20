@@ -1,8 +1,10 @@
 {
-  "default_version": "@CARGO_VERSION@",
-  "comment": "diskann access method for vector search",
-  "requires": ["vector"],
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "vectorscale": {
+    "default_version": "@CARGO_VERSION@",
+    "comment": "diskann access method for vector search",
+    "requires": ["vector"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

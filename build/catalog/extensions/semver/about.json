@@ -18,11 +18,13 @@
     "ref": "v0.41.0",
     "readme": "https://raw.githubusercontent.com/theory/pg-semver/v0.41.0/README.md",
     "control": {
-      "default_version": "0.41.0",
-      "module_pathname": "semver",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "semver": {
+        "default_version": "0.41.0",
+        "module_pathname": "semver",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

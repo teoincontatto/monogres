@@ -77,3 +77,35 @@ def about_versions(document):
         resolved[version] = current
 
     return resolved
+
+def contrib_about(block, controls):
+    """What one flavor version says about a contrib entry.
+
+    A flavor's `contrib` block describes the extensions it builds with itself
+    by the name of each control file, and a contrib entry is named after its
+    directory: `spi` installs `autoinc`, `insert_username`, `moddatetime` and
+    `refint`. The entry is described by the first of `controls` the block
+    names, and its `control` is every one of theirs, keyed by extension as
+    monobot keys them, so an entry that installs several reports all of them.
+
+    Args:
+        block: The flavor version's `contrib` block, `{name: about}`.
+        controls: The names to look the entry up by, its own first, then the
+            control files it installs.
+
+    Returns:
+        The entry's document, or `None` when the block names none of them.
+    """
+    about = None
+    control = {}
+    for name in controls:
+        if name not in block:
+            continue
+        if about == None:
+            about = {key: value for key, value in block[name].items() if key != "control"}
+        control.update(block[name].get("control", {}))
+
+    if about != None and control:
+        about["control"] = control
+
+    return about

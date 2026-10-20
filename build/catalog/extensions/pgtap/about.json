@@ -27,12 +27,14 @@
     "ref": "v1.3.4",
     "readme": "https://raw.githubusercontent.com/theory/pgtap/v1.3.4/README.md",
     "control": {
-      "default_version": "1.3.4",
-      "module_pathname": "pgtap",
-      "requires": ["plpgsql"],
-      "superuser": false,
-      "trusted": false,
-      "relocatable": true
+      "pgtap": {
+        "default_version": "1.3.4",
+        "module_pathname": "pgtap",
+        "requires": ["plpgsql"],
+        "superuser": false,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

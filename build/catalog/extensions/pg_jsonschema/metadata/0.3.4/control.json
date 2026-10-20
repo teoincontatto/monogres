@@ -1,8 +1,10 @@
 {
-  "default_version": "@CARGO_VERSION@",
-  "comment": "pg_jsonschema",
-  "module_pathname": "$libdir/pg_jsonschema",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "pg_jsonschema": {
+    "default_version": "@CARGO_VERSION@",
+    "comment": "pg_jsonschema",
+    "module_pathname": "$libdir/pg_jsonschema",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

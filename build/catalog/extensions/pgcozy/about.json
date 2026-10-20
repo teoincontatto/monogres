@@ -13,11 +13,13 @@
     "ref": "1f3603631b69244eca49204938e8f7c65985fbae",
     "readme": "https://raw.githubusercontent.com/vventirozos/pgcozy/1f3603631b69244eca49204938e8f7c65985fbae/README.md",
     "control": {
-      "default_version": "1.0",
-      "requires": ["pg_prewarm", "pg_buffercache"],
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "pgcozy": {
+        "default_version": "1.0",
+        "requires": ["pg_prewarm", "pg_buffercache"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

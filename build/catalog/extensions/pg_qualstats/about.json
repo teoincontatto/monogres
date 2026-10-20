@@ -13,11 +13,13 @@
     "ref": "2.1.4",
     "readme": "https://raw.githubusercontent.com/powa-team/pg_qualstats/2.1.4/README.md",
     "control": {
-      "default_version": "2.1.4",
-      "module_pathname": "$libdir/pg_qualstats",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "pg_qualstats": {
+        "default_version": "2.1.4",
+        "module_pathname": "$libdir/pg_qualstats",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

@@ -83,6 +83,8 @@ class FetchOutputPathTest {
 
     return objectMapper
         .readTree(written.getParent().resolve("metadata/1.0.0/control.json").toFile())
+        .elements()
+        .next()
         .get("comment")
         .asText();
   }

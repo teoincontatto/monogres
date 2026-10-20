@@ -22,8 +22,10 @@
   },
   "control": {
     "2.28.3": {
-      "default_version": "2.28.3",
-      "module_pathname": "$libdir/timescaledb-2.28.3"
+      "timescaledb": {
+        "default_version": "2.28.3",
+        "module_pathname": "$libdir/timescaledb-2.28.3"
+      }
     }
   },
   "metadata": {

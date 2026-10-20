@@ -112,7 +112,7 @@ class ControlDirectivesTest {
               IllegalArgumentException.class,
               () -> resolve("{\"default_version\": \"" + placeholder + "\"}", null));
 
-      assertTrue(error.getMessage().contains("control.default_version"), error.getMessage());
+      assertTrue(error.getMessage().startsWith("default_version"), error.getMessage());
       assertTrue(error.getMessage().contains(placeholder), error.getMessage());
     }
   }
@@ -139,11 +139,60 @@ class ControlDirectivesTest {
         assertThrows(
             IllegalArgumentException.class, () -> resolve("{}", "{\"comment\": \"something\"}"));
 
-    assertTrue(error.getMessage().contains("control.comment"), error.getMessage());
+    assertTrue(error.getMessage().startsWith("comment"), error.getMessage());
   }
 
   @Test
   void noControlFileIsNoDirectives() {
     assertTrue(resolve(null, null).isEmpty());
+  }
+
+  /// Every control file of a version is reported under its extension. A correction is keyed the
+  /// same way, `null` drops an extension the build does not install, and one naming an extension
+  /// the archive does not declare is an error.
+  @Test
+  void resolveAllKeysEveryControlFileByItsExtension() {
+    var controls =
+        json(
+            """
+            {"postgis": {"default_version": "@EXTVERSION@", "comment": "PostGIS"},
+             "postgis_sfcgal": {"default_version": "@EXTVERSION@"},
+             "postgis_raster": {"default_version": "@EXTVERSION@"}}
+            """);
+    var correction =
+        json(
+            """
+            {"postgis": {"default_version": "3.5.7"},
+             "postgis_raster": {"default_version": "3.5.7"},
+             "postgis_sfcgal": null}
+            """);
+
+    assertEquals(
+        json(
+            """
+            {"postgis": {"default_version": "3.5.7"},
+             "postgis_raster": {"default_version": "3.5.7"}}
+            """),
+        ControlDirectives.resolveAll(objectMapper, controls, correction));
+
+    var unreplaced =
+        assertThrows(
+            IllegalArgumentException.class,
+            () ->
+                ControlDirectives.resolveAll(
+                    objectMapper,
+                    controls,
+                    json("{\"postgis\": {\"default_version\": \"3.5.7\"}}")));
+    assertTrue(
+        unreplaced.getMessage().startsWith("control.postgis_raster.default_version"),
+        unreplaced.getMessage());
+
+    var unknown =
+        assertThrows(
+            IllegalArgumentException.class,
+            () ->
+                ControlDirectives.resolveAll(
+                    objectMapper, controls, json("{\"postgis_topology\": null}")));
+    assertTrue(unknown.getMessage().startsWith("control.postgis_topology"), unknown.getMessage());
   }
 }

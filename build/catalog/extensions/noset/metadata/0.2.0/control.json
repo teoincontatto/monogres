@@ -1,7 +1,9 @@
 {
-  "default_version": "0.2.0",
-  "comment": "module to avoid SET command for specific user",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "noset": {
+    "default_version": "0.2.0",
+    "comment": "module to avoid SET command for specific user",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

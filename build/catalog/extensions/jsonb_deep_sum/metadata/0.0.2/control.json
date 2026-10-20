@@ -1,7 +1,9 @@
 {
-  "default_version": "0.0.2",
-  "comment": "jsonb deep sum",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "jsonb_deep_sum": {
+    "default_version": "0.0.2",
+    "comment": "jsonb deep sum",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

@@ -17,7 +17,9 @@
   },
   "control": {
     "0.20.5": {
-      "default_version": "0.20.4"
+      "pg_net": {
+        "default_version": "0.20.4"
+      }
     }
   },
   "metadata": {

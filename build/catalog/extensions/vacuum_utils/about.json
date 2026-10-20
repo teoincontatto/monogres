@@ -13,10 +13,12 @@
     "ref": "0.1.0",
     "readme": "https://raw.githubusercontent.com/asotolongo/vacuum_utils/0.1.0/README.md",
     "control": {
-      "default_version": "0.1.0",
-      "superuser": false,
-      "trusted": false,
-      "relocatable": true
+      "vacuum_utils": {
+        "default_version": "0.1.0",
+        "superuser": false,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

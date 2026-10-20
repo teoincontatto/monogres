@@ -11,11 +11,13 @@
     "ref": "f3d82fd30151e754e19ce5d6a06c71c20689ce3d",
     "readme": "https://raw.githubusercontent.com/michelp/pgjwt/f3d82fd30151e754e19ce5d6a06c71c20689ce3d/README.md",
     "control": {
-      "default_version": "0.2.0",
-      "requires": ["pgcrypto"],
-      "superuser": false,
-      "trusted": false,
-      "relocatable": false
+      "pgjwt": {
+        "default_version": "0.2.0",
+        "requires": ["pgcrypto"],
+        "superuser": false,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

@@ -1,8 +1,10 @@
 {
-  "default_version": "@PROJECT_VERSION_MOD@",
-  "comment": "Enables scalable inserts and complex queries for time-series data",
-  "module_pathname": "$libdir/timescaledb-@PROJECT_VERSION_MOD@",
-  "superuser": true,
-  "trusted": true,
-  "relocatable": false
+  "timescaledb": {
+    "default_version": "@PROJECT_VERSION_MOD@",
+    "comment": "Enables scalable inserts and complex queries for time-series data",
+    "module_pathname": "$libdir/timescaledb-@PROJECT_VERSION_MOD@",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false
+  }
 }

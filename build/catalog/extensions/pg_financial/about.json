@@ -22,11 +22,13 @@
     "ref": "v1.0.1",
     "readme": "https://raw.githubusercontent.com/intgr/pg_financial/v1.0.1/README.md",
     "control": {
-      "default_version": "1.0.1",
-      "module_pathname": "$libdir/financial",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "financial": {
+        "default_version": "1.0.1",
+        "module_pathname": "$libdir/financial",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

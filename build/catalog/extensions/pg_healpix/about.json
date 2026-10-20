@@ -11,11 +11,13 @@
     "ref": "v0.1.0",
     "readme": "https://gitlab.com/ongresinc/pg_healpix/-/raw/v0.1.0/README",
     "control": {
-      "default_version": "1.0",
-      "module_pathname": "$libdir/pg_healpix",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "pg_healpix": {
+        "default_version": "1.0",
+        "module_pathname": "$libdir/pg_healpix",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

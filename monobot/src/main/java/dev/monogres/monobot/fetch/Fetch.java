@@ -82,9 +82,10 @@ public class Fetch {
   /// in the log would exit 0 alongside a catalog that is missing a version, or holding one whose
   /// archive is not the archive it was written from, or committed as something other than what the
   /// inputs now say.
-  private record Unanswered(int refused, int disagreed, int differed, int unasked) {
+  private record Unanswered(
+      int refused, int disagreed, int differed, int unasked, int undescribed) {
     boolean isEmpty() {
-      return refused == 0 && disagreed == 0 && differed == 0 && unasked == 0;
+      return refused == 0 && disagreed == 0 && differed == 0 && unasked == 0 && undescribed == 0;
     }
 
     String describe() {
@@ -101,6 +102,9 @@ public class Fetch {
       }
       if (unasked > 0) {
         reasons.add("its upstream could not be asked about it");
+      }
+      if (undescribed > 0) {
+        reasons.add("its about.json cannot be derived from what the catalog says");
       }
 
       return String.join(", ", reasons);
@@ -374,8 +378,14 @@ public class Fetch {
       AtomicInteger differed) {
     var into = entryDir.resolve(DIR_METADATA).resolve(version.version());
 
-    if (contents.control() != null) {
-      emit(into, "control.json", archiveMetadataExtractor.controlOf(contents.control()), differed);
+    // Keyed by extension, as contrib.json is: an archive can declare several (postgis).
+    if (!contents.controls().isEmpty()) {
+      var controls = objectMapper.createObjectNode();
+      contents
+          .controls()
+          .forEach(
+              (name, control) -> controls.set(name, archiveMetadataExtractor.controlOf(control)));
+      emit(into, "control.json", controls, differed);
     }
     if (contents.metaJson() != null) {
       emit(into, "META.json", archiveMetadataExtractor.metaJsonOf(contents.metaJson()), differed);
@@ -388,25 +398,29 @@ public class Fetch {
               (name, control) -> contrib.set(name, archiveMetadataExtractor.controlOf(control)));
       emit(into, "contrib.json", contrib, differed);
     }
-    if (contents.control() == null
-        && monobotConfig.componentType() == ComponentType.EXTENSION
-        && monobotConfig.controlStem().isPresent()) {
+    if (monobotConfig.componentType() == ComponentType.EXTENSION
+        && monobotConfig.controlStem().isPresent()
+        && !contents.controls().containsKey(monobotConfig.controlStem().get())) {
       LOG.warnv(
-          "[{0}]: {1} carries no {0}.control, so nothing is written for it",
-          monobotConfig.label(), version);
+          "[{0}]: {1} carries no {0}.control{2}",
+          monobotConfig.label(),
+          version,
+          contents.controls().isEmpty() ? ", so nothing is written for it" : "");
     }
   }
 
   /// What one archive carried. An addon's archive is digested and never walked: nothing in it is
   /// read, and some of them are a whole project's tree (kubectl is Kubernetes), well past what the
   /// extractor allows an archive to expand to.
-  private ArchiveContents contentsOf(MonobotConfig monobotConfig, String stem, Downloaded result) {
+  private ArchiveContents contentsOf(MonobotConfig monobotConfig, Downloaded result) {
     if (monobotConfig.componentType() == ComponentType.ADDON) {
-      return new ArchiveContents(Instant.MIN, null, null, new TreeMap<>());
+      return new ArchiveContents(Instant.MIN, null, new TreeMap<>(), new TreeMap<>());
     }
 
     return archiveMetadataExtractor.read(
-        stem, result.archivePath(), monobotConfig.componentType() == ComponentType.POSTGRES);
+        monobotConfig.componentType() == ComponentType.EXTENSION,
+        result.archivePath(),
+        monobotConfig.componentType() == ComponentType.POSTGRES);
   }
 
   /// One document the run produced, put where the mode says it goes.
@@ -464,6 +478,7 @@ public class Fetch {
     var disagreed = new AtomicInteger();
     var differed = new AtomicInteger();
     var unasked = new AtomicInteger();
+    var undescribed = new AtomicInteger();
 
     return candidates(monobotConfig, template, List.copyOf(stored.keySet()))
         .compose(candidates -> download(monobotConfig, relPath, candidates, refused))
@@ -472,7 +487,6 @@ public class Fetch {
                 vertx.executeBlocking(
                     () -> {
                       var kept = downloaded.stream().flatMap(Optional::stream).toList();
-                      var stem = monobotConfig.controlStem().orElse(null);
                       var newest =
                           Stream.concat(
                                   kept.stream().map(Downloaded::candidate).map(Candidate::version),
@@ -486,9 +500,8 @@ public class Fetch {
                           // what the catalog records. Gunzipping and walking a whole tarball is the
                           // most expensive thing this program does per version, and this block is
                           // ordered, so every one of them serialises behind the last.
-                          var contents = contentsOf(monobotConfig, stem, result);
-                          archiveCache.storeExtracted(
-                              result.archivePath().getParent(), stem, contents);
+                          var contents = contentsOf(monobotConfig, result);
+                          archiveCache.storeExtracted(result.archivePath().getParent(), contents);
 
                           if (!mode.catalogues()) {
                             continue;
@@ -517,11 +530,15 @@ public class Fetch {
                       if (mode.catalogues()) {
                         var merged =
                             emitRepoConfig(monobotConfig, versions, stored, entryDir, differed);
-                        emitAbout(monobotConfig, merged, entryDir, differed, unasked);
+                        emitAbout(monobotConfig, merged, entryDir, differed, unasked, undescribed);
                       }
 
                       return new Unanswered(
-                          refused.get(), disagreed.get(), differed.get(), unasked.get());
+                          refused.get(),
+                          disagreed.get(),
+                          differed.get(),
+                          unasked.get(),
+                          undescribed.get());
                     }))
         // Reported after the catalogue has been written rather than instead of writing it: the
         // versions that came through are as good as they would have been on their own, and the
@@ -597,13 +614,15 @@ public class Fetch {
   ///
   /// An upstream that cannot be asked fails the entry, the way a refused archive does, and leaves
   /// the committed `about.json` as it was: a rate limit is not the forge saying the project has no
-  /// description.
+  /// description. So does a catalog that cannot be described as it stands -- a control file with
+  /// a build placeholder nothing corrected -- which is the entry's to fix, not the run's.
   private void emitAbout(
       MonobotConfig monobotConfig,
       Versions merged,
       Path entryDir,
       AtomicInteger differed,
-      AtomicInteger unasked) {
+      AtomicInteger unasked,
+      AtomicInteger undescribed) {
     if (merged.isEmpty()) {
       return;
     }
@@ -619,6 +638,9 @@ public class Fetch {
     } catch (UpstreamException e) {
       unasked.incrementAndGet();
       LOG.errorv(e, "[{0}]: its upstream could not be asked about it", monobotConfig.label());
+    } catch (IllegalArgumentException e) {
+      undescribed.incrementAndGet();
+      LOG.errorv("{0}", e.getMessage());
     }
   }
 

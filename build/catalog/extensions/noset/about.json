@@ -11,10 +11,12 @@
     "ref": "v0.3.0",
     "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.3.0/README.md",
     "control": {
-      "default_version": "0.3.0",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "noset": {
+        "default_version": "0.3.0",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   },
   "versions": {
@@ -23,7 +25,9 @@
       "ref": "v0.2.0",
       "readme": "https://gitlab.com/ongresinc/extensions/noset/-/raw/v0.2.0/README.md",
       "control": {
-        "default_version": "0.2.0"
+        "noset": {
+          "default_version": "0.2.0"
+        }
       }
     }
   }

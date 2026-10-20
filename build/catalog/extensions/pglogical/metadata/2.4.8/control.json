@@ -1,10 +1,21 @@
 {
-  "default_version": "__PGLOGICAL_VERSION__",
-  "comment": "PostgreSQL Logical Replication",
-  "module_pathname": "$libdir/pglogical",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false,
-  "schema": "pglogical",
-  "__REQUIRES__": ""
+  "pglogical": {
+    "default_version": "__PGLOGICAL_VERSION__",
+    "comment": "PostgreSQL Logical Replication",
+    "module_pathname": "$libdir/pglogical",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pglogical",
+    "__REQUIRES__": ""
+  },
+  "pglogical_origin": {
+    "default_version": "1.0.0",
+    "comment": "Dummy extension for compatibility when upgrading from Postgres 9.4",
+    "module_pathname": "$libdir/pglogical",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pglogical_origin"
+  }
 }

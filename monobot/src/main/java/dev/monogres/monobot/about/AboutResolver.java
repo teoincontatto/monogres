@@ -30,7 +30,7 @@ import java.util.stream.StreamSupport;
 ///
 /// | field              | first to last                                                        |
 /// |--------------------|----------------------------------------------------------------------|
-/// | `description`      | override, control `comment`, META `abstract`, forge About            |
+/// | `description`      | override, own control `comment`, META `abstract`, forge About        |
 /// | `long_description` | override, forge About, META `description`, META `abstract`          |
 /// | `homepage`         | override, forge homepage, META homepage, repository                  |
 /// | `license`          | override, forge (detected from the file), META                       |
@@ -51,23 +51,26 @@ public final class AboutResolver {
   /// Everything one version's document is derived from. Absent inputs are [MissingNode]s rather
   /// than nulls, so a path into one is a path into nothing rather than an exception.
   ///
-  /// `ref` is the ref the version's archive was cut from, or null. `contrib` is the control file
-  /// of each contrib extension the version ships, and `contribRefs` the ref of each one built from
-  /// a repository of its own. `controlOverride` is the correction `monobot.json` keys on this very
-  /// version, if any.
+  /// `controls` is the version's `control.json`, a control file per extension the archive declares,
+  /// and `name` the extension the entry is named after, whose control file describes it. `ref` is
+  /// the ref the version's archive was cut from, or null. `contrib` is the control file of each
+  /// contrib extension the version ships, and `contribRefs` the ref of each one built from a
+  /// repository of its own. `controlOverride` is the correction `monobot.json` keys on this very
+  /// version, if any, `{extension: merge patch}`.
   public record Inputs(
       JsonNode override,
-      JsonNode control,
+      JsonNode controls,
       JsonNode meta,
       JsonNode upstream,
       String repoUrl,
       String ref,
       Map<String, JsonNode> contrib,
       Map<String, String> contribRefs,
-      JsonNode controlOverride) {
+      JsonNode controlOverride,
+      String name) {
     public Inputs {
       override = orMissing(override);
-      control = orMissing(control);
+      controls = orMissing(controls);
       meta = orMissing(meta);
       upstream = orMissing(upstream);
       contrib = contrib == null ? Map.of() : contrib;
@@ -75,29 +78,39 @@ public final class AboutResolver {
       controlOverride = orMissing(controlOverride);
     }
 
-    /// A version whose control file needs no correction.
+    /// A version whose control files need no correction, described by the only one it has.
     public Inputs(
         JsonNode override,
-        JsonNode control,
+        JsonNode controls,
         JsonNode meta,
         JsonNode upstream,
         String repoUrl,
         String ref,
         Map<String, JsonNode> contrib,
         Map<String, String> contribRefs) {
-      this(override, control, meta, upstream, repoUrl, ref, contrib, contribRefs, null);
+      this(override, controls, meta, upstream, repoUrl, ref, contrib, contribRefs, null, null);
     }
 
     /// A version with no contrib extension built from a repository of its own.
     public Inputs(
         JsonNode override,
-        JsonNode control,
+        JsonNode controls,
         JsonNode meta,
         JsonNode upstream,
         String repoUrl,
         String ref,
         Map<String, JsonNode> contrib) {
-      this(override, control, meta, upstream, repoUrl, ref, contrib, null, null);
+      this(override, controls, meta, upstream, repoUrl, ref, contrib, null, null, null);
+    }
+
+    /// The control file that describes the entry: the one of the extension it is named after, or
+    /// the only one there is.
+    JsonNode ownControl() {
+      if (name != null && controls.has(name)) {
+        return controls.get(name);
+      }
+
+      return controls.size() == 1 ? controls.elements().next() : MissingNode.getInstance();
     }
   }
 
@@ -115,7 +128,7 @@ public final class AboutResolver {
         about,
         "description",
         text(override, "description"),
-        text(inputs.control(), "comment"),
+        text(inputs.ownControl(), "comment"),
         text(meta, "abstract"),
         text(forge, "description"));
     putFirst(
@@ -179,7 +192,7 @@ public final class AboutResolver {
           .ifPresent(found -> about.put("readme", found.rawUrl(ref, readme.asText())));
     }
 
-    putControl(objectMapper, about, inputs.control(), inputs.controlOverride());
+    putControl(objectMapper, about, inputs.controls(), inputs.controlOverride());
 
     var contrib = contrib(objectMapper, inputs, about);
     if (!contrib.isEmpty()) {
@@ -232,7 +245,13 @@ public final class AboutResolver {
               }
 
               try {
-                putControl(objectMapper, about, control, MissingNode.getInstance());
+                // Keyed by extension as an entry's own are, so a contrib entry that installs
+                // several (spi) is the union of theirs.
+                var controls = objectMapper.createObjectNode();
+                if (control.isObject()) {
+                  controls.set(name, control);
+                }
+                putControl(objectMapper, about, controls, MissingNode.getInstance());
               } catch (IllegalArgumentException e) {
                 throw new IllegalArgumentException("contrib." + name + "." + e.getMessage(), e);
               }
@@ -245,10 +264,11 @@ public final class AboutResolver {
     return contrib;
   }
 
-  /// The control file's directives, as [ControlDirectives] reports them, where there are any.
+  /// The control files' directives by extension, as [ControlDirectives] reports them, where there
+  /// are any.
   private static void putControl(
-      ObjectMapper objectMapper, ObjectNode into, JsonNode control, JsonNode override) {
-    var directives = ControlDirectives.resolve(objectMapper, control, override);
+      ObjectMapper objectMapper, ObjectNode into, JsonNode controls, JsonNode correction) {
+    var directives = ControlDirectives.resolveAll(objectMapper, controls, correction);
     if (!directives.isEmpty()) {
       into.set(ControlDirectives.KEY, directives);
     }

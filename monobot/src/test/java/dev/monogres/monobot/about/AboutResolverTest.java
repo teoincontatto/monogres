@@ -72,7 +72,8 @@ class AboutResolverTest {
         objectMapper,
         new AboutResolver.Inputs(
             override == null ? null : json(override),
-            control == null ? null : json(control),
+            // The entry's only control file, keyed by its extension as control.json keys it.
+            control == null ? null : objectMapper.createObjectNode().set("fixture", json(control)),
             meta == null ? null : json(meta),
             upstream == null ? null : json(upstream),
             REPO_URL,
@@ -272,31 +273,35 @@ class AboutResolverTest {
   /// carries, and patched by this version's correction where the build fills a value in.
   @Test
   void controlIsTheDirectivesPatchedByTheCorrection() {
-    var control =
+    var controls =
         """
-        {"default_version": "@CARGO_VERSION@", "comment": "GraphQL support",
-         "relocatable": false, "superuser": true, "trusted": false, "schema": "graphql"}
+        {"pg_graphql": {"default_version": "@CARGO_VERSION@", "comment": "GraphQL support",
+                        "relocatable": false, "superuser": true, "trusted": false,
+                        "schema": "graphql"},
+         "pg_graphql_extra": {"default_version": "1.0", "comment": "another extension"}}
         """;
     var about =
         AboutResolver.resolve(
             objectMapper,
             new AboutResolver.Inputs(
                 null,
-                json(control),
+                json(controls),
                 null,
                 null,
                 REPO_URL,
                 null,
                 null,
                 null,
-                json("{\"default_version\": \"1.6.1\"}")));
+                json("{\"pg_graphql\": {\"default_version\": \"1.6.1\"}}"),
+                "pg_graphql"));
 
     assertEquals("GraphQL support", about.path("description").asText());
     assertEquals(
         json(
             """
-            {"default_version": "1.6.1", "superuser": true, "trusted": false,
-             "relocatable": false, "schema": "graphql"}
+            {"pg_graphql": {"default_version": "1.6.1", "superuser": true, "trusted": false,
+                            "relocatable": false, "schema": "graphql"},
+             "pg_graphql_extra": {"default_version": "1.0"}}
             """),
         about.path("control"));
   }
@@ -317,8 +322,8 @@ class AboutResolverTest {
     assertEquals(
         json(
             """
-            {"default_version": "1.1", "requires": ["cube"], "superuser": true,
-             "trusted": false, "relocatable": true}
+            {"earthdistance": {"default_version": "1.1", "requires": ["cube"], "superuser": true,
+                               "trusted": false, "relocatable": true}}
             """),
         about.path("contrib").path("earthdistance").path("control"));
 
@@ -334,7 +339,8 @@ class AboutResolverTest {
                     null,
                     Map.of("cube", json("{\"default_version\": \"@EXTVERSION@\"}"))));
     assertTrue(
-        error.getMessage().startsWith("contrib.cube.control.default_version"), error.getMessage());
+        error.getMessage().startsWith("contrib.cube.control.cube.default_version"),
+        error.getMessage());
   }
 
   /// An extension a flavor builds out of a repository of its own (babelfish's from

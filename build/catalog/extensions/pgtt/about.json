@@ -13,12 +13,14 @@
     "ref": "v4.6",
     "readme": "https://raw.githubusercontent.com/darold/pgtt/v4.6/README.md",
     "control": {
-      "default_version": "4.6.0",
-      "module_pathname": "$libdir/pgtt",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pgtt_schema"
+      "pgtt": {
+        "default_version": "4.6.0",
+        "module_pathname": "$libdir/pgtt",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pgtt_schema"
+      }
     }
   }
 }

@@ -1,8 +1,10 @@
 {
-  "default_version": "2.0",
-  "comment": "Run SQL queries in the background",
-  "module_pathname": "$libdir/pg_background",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "pg_background": {
+    "default_version": "2.0",
+    "comment": "Run SQL queries in the background",
+    "module_pathname": "$libdir/pg_background",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

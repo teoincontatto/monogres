@@ -19,11 +19,13 @@
     "ref": "1.0.6",
     "readme": "https://raw.githubusercontent.com/pierreforstmann/pg_readonly/1.0.6/README.md",
     "control": {
-      "default_version": "1.0.6",
-      "module_pathname": "$libdir/pg_readonly",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "pg_readonly": {
+        "default_version": "1.0.6",
+        "module_pathname": "$libdir/pg_readonly",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

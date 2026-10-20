@@ -23,8 +23,27 @@
   },
   "control": {
     "3.5.7": {
-      "default_version": "3.5.7",
-      "module_pathname": "$libdir/postgis-3"
+      "address_standardizer": {
+        "default_version": "3.5.7"
+      },
+      "address_standardizer_data_us": {
+        "default_version": "3.5.7"
+      },
+      "postgis": {
+        "default_version": "3.5.7",
+        "module_pathname": "$libdir/postgis-3"
+      },
+      "postgis_raster": {
+        "default_version": "3.5.7",
+        "module_pathname": "$libdir/postgis_raster-3"
+      },
+      "postgis_sfcgal": null,
+      "postgis_tiger_geocoder": {
+        "default_version": "3.5.7"
+      },
+      "postgis_topology": {
+        "default_version": "3.5.7"
+      }
     }
   },
   "metadata": {

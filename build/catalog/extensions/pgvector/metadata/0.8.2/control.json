@@ -1,8 +1,10 @@
 {
-  "default_version": "0.8.2",
-  "comment": "vector data type and ivfflat and hnsw access methods",
-  "module_pathname": "$libdir/vector",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "vector": {
+    "default_version": "0.8.2",
+    "comment": "vector data type and ivfflat and hnsw access methods",
+    "module_pathname": "$libdir/vector",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

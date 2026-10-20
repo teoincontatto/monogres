@@ -26,11 +26,13 @@
     "ref": "2.28.3",
     "readme": "https://raw.githubusercontent.com/timescale/timescaledb/2.28.3/README.md",
     "control": {
-      "default_version": "2.28.3",
-      "module_pathname": "$libdir/timescaledb-2.28.3",
-      "superuser": true,
-      "trusted": true,
-      "relocatable": false
+      "timescaledb": {
+        "default_version": "2.28.3",
+        "module_pathname": "$libdir/timescaledb-2.28.3",
+        "superuser": true,
+        "trusted": true,
+        "relocatable": false
+      }
     }
   }
 }

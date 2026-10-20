@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.nio.file.Path;
 import java.time.Instant;
 import java.util.Arrays;
+import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.regex.Pattern;
@@ -35,8 +36,15 @@ public class ArchiveMetadataExtractor {
   public static final String POSTGRES_CONTROL_FILE_EXTENSION = ".control";
   // What an extension whose build writes its control file ships instead: the same directives with
   // the version left as a placeholder for the build to fill in. Read only when the archive carries
-  // no finished one, since the placeholder is not a version.
+  // no finished one of that name, since the placeholder is not a version.
   public static final String POSTGRES_CONTROL_TEMPLATE_EXTENSION = ".control.in";
+
+  // The directories of a source tree whose control files describe no extension it installs: the
+  // fixtures its tests create (timescaledb's `test/sql/loader/timescaledb_osm.control`, pgcontext's
+  // stub `vector`), and the examples it documents (pg_tle's). Matched against every directory of
+  // an entry's path.
+  private static final Set<String> NOT_INSTALLED_DIRECTORIES =
+      Set.of("test", "tests", "t", "regress", "fixtures", "example", "examples");
 
   // Where a flavor keeps the extensions it builds with itself: one directory per contrib module,
   // and the procedural languages under src/pl (plpgsql one level further down, in src/). The first
@@ -146,10 +154,14 @@ public class ArchiveMetadataExtractor {
   /// forge a second question: the tag listing carries commit ids and nothing else. An archive with
   /// no entries reports [Instant#MIN], which no cutoff accepts.
   ///
-  /// `contrib` is a flavor's own extensions, by name, and is empty for anything but a flavor: an
-  /// extension's archive is asked for one control file by name, not for every one it carries.
+  /// `controls` is every extension an extension's archive declares, by name: most declare one, and
+  /// postgis declares seven. `contrib` is a flavor's own extensions, by name. Each is empty for the
+  /// other kind of archive.
   public record ArchiveContents(
-      Instant lastModified, byte[] metaJson, byte[] control, SortedMap<String, byte[]> contrib) {}
+      Instant lastModified,
+      byte[] metaJson,
+      SortedMap<String, byte[]> controls,
+      SortedMap<String, byte[]> contrib) {}
 
   /// Opening the archive is its own method so a test can count how often one is read. Gunzipping
   /// and walking a whole tarball is the most expensive thing this program does per version, and it
@@ -252,17 +264,26 @@ public class ArchiveMetadataExtractor {
         : chosen;
   }
 
-  /// An extension's archive, read for its own control file. See [#read(String, Path, boolean)].
-  public ArchiveContents read(String name, Path archivePath) {
-    return read(name, archivePath, false);
+  /// An extension's archive, read for its control files. See [#read(boolean, Path, boolean)].
+  public ArchiveContents read(Path archivePath) {
+    return read(true, archivePath, false);
   }
 
-  /// One archive, read for the control file named `name`, its META.json, and with `contrib` the
-  /// control files of every extension a Postgres flavor builds with itself.
-  public ArchiveContents read(String name, Path archivePath, boolean contrib) {
+  /// One archive, read for its META.json; with `extension` the control file of every extension it
+  /// declares, and with `contrib` the control files of every extension a Postgres flavor builds
+  /// with itself.
+  ///
+  /// An extension's control files are all of them, wherever they are, except three kinds that
+  /// declare no extension the archive installs: a secondary control file (`citus--11.1-1.control`,
+  /// which holds the directives of one version of an extension that has a primary one), anything
+  /// under a test or example directory, and a second copy of a name, of which the one closest to
+  /// the root is kept (pglogical's `compat94/pglogical_origin.control` is for Postgres 9.4 only).
+  /// What depends on how it is built (postgis's `postgis_sfcgal`, only with SFCGAL) is still
+  /// declared, and the catalog corrects it.
+  public ArchiveContents read(boolean extension, Path archivePath, boolean contrib) {
     Chosen metaJson = null;
-    Chosen control = null;
-    Chosen controlTemplate = null;
+    var controls = new TreeMap<String, Chosen>();
+    var controlTemplates = new TreeMap<String, Chosen>();
     var contribControls = new TreeMap<String, byte[]>();
     var lastModified = Instant.MIN;
 
@@ -296,16 +317,19 @@ public class ArchiveMetadataExtractor {
           metaJson =
               choose(
                   metaJson, entry, extractFromArchive(walk, entry, MAX_SIZE_BYTES_PGXN_META_JSON));
-        } else if (name != null && fileName.equals(name + POSTGRES_CONTROL_FILE_EXTENSION)) {
-          control =
+        } else if (extension && isInstalledControl(entry.getName(), fileName)) {
+          var into =
+              fileName.endsWith(POSTGRES_CONTROL_FILE_EXTENSION) ? controls : controlTemplates;
+          var stem = stemOf(fileName);
+          into.put(
+              stem,
               choose(
-                  control, entry, extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
-        } else if (name != null && fileName.equals(name + POSTGRES_CONTROL_TEMPLATE_EXTENSION)) {
-          controlTemplate =
-              choose(
-                  controlTemplate,
+                  into.get(stem),
                   entry,
-                  extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL));
+                  extractFromArchive(walk, entry, MAX_SIZE_BYTES_POSTGRES_CONTROL)));
+          if (into.get(stem) == null) {
+            into.remove(stem);
+          }
         } else if (contrib) {
           var matcher = CONTRIB_CONTROL.matcher(entry.getName());
           if (matcher.matches()) {
@@ -320,14 +344,34 @@ public class ArchiveMetadataExtractor {
       throw new RuntimeException("Error while reading " + archivePath, e);
     }
 
-    if (control == null) {
-      control = controlTemplate;
-    }
+    controlTemplates.forEach(controls::putIfAbsent);
+    var controlBytes = new TreeMap<String, byte[]>();
+    controls.forEach((stem, chosen) -> controlBytes.put(stem, chosen.bytes()));
 
     return new ArchiveContents(
-        lastModified,
-        metaJson == null ? null : metaJson.bytes(),
-        control == null ? null : control.bytes(),
-        contribControls);
+        lastModified, metaJson == null ? null : metaJson.bytes(), controlBytes, contribControls);
+  }
+
+  /// The extension a control file is named after: its file name less `.control` or `.control.in`.
+  private static String stemOf(String fileName) {
+    return fileName.endsWith(POSTGRES_CONTROL_FILE_EXTENSION)
+        ? fileName.substring(0, fileName.length() - POSTGRES_CONTROL_FILE_EXTENSION.length())
+        : fileName.substring(0, fileName.length() - POSTGRES_CONTROL_TEMPLATE_EXTENSION.length());
+  }
+
+  /// Whether the entry at `path` is a control file, or a template of one, that declares an
+  /// extension the archive installs. See [#read(boolean, Path, boolean)].
+  private static boolean isInstalledControl(String path, String fileName) {
+    if (!fileName.endsWith(POSTGRES_CONTROL_FILE_EXTENSION)
+        && !fileName.endsWith(POSTGRES_CONTROL_TEMPLATE_EXTENSION)) {
+      return false;
+    }
+    if (stemOf(fileName).isEmpty() || stemOf(fileName).contains("--")) {
+      return false;
+    }
+    var directories = path.split("/");
+
+    return Arrays.stream(directories, 0, directories.length - 1)
+        .noneMatch(NOT_INSTALLED_DIRECTORIES::contains);
   }
 }

@@ -11,11 +11,13 @@
     "ref": "3fb24f08afc2ebf804b99fea58f2eeef24cef6f2",
     "readme": "https://raw.githubusercontent.com/fabriziomello/pg_xxhash/3fb24f08afc2ebf804b99fea58f2eeef24cef6f2/README.md",
     "control": {
-      "default_version": "0.1",
-      "module_pathname": "$libdir/pg_xxhash",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "pg_xxhash": {
+        "default_version": "0.1",
+        "module_pathname": "$libdir/pg_xxhash",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

@@ -1,8 +1,59 @@
 {
-  "default_version": "@EXTVERSION@",
-  "comment": "PostGIS geometry and geography spatial types and functions",
-  "module_pathname": "@MODULEPATH@",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "address_standardizer": {
+    "default_version": "@EXTVERSION@",
+    "comment": "Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "address_standardizer_data_us": {
+    "default_version": "@EXTVERSION@",
+    "comment": "Address Standardizer US dataset example",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "postgis": {
+    "default_version": "@EXTVERSION@",
+    "comment": "PostGIS geometry and geography spatial types and functions",
+    "module_pathname": "@MODULEPATH@",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  },
+  "postgis_raster": {
+    "default_version": "@EXTVERSION@",
+    "comment": "PostGIS raster types and functions",
+    "module_pathname": "@MODULEPATH@",
+    "requires": ["postgis"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  },
+  "postgis_sfcgal": {
+    "default_version": "@EXTVERSION@",
+    "comment": "PostGIS SFCGAL functions",
+    "requires": ["postgis"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "postgis_tiger_geocoder": {
+    "default_version": "@EXTVERSION@",
+    "comment": "PostGIS tiger geocoder and reverse geocoder",
+    "requires": ["postgis", "fuzzystrmatch"],
+    "superuser": false,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "tiger"
+  },
+  "postgis_topology": {
+    "default_version": "@EXTVERSION@",
+    "comment": "PostGIS topology spatial types and functions",
+    "requires": ["postgis"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "topology"
+  }
 }

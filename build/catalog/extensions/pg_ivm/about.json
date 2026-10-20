@@ -11,12 +11,14 @@
     "ref": "v1.15",
     "readme": "https://raw.githubusercontent.com/sraoss/pg_ivm/v1.15/README.md",
     "control": {
-      "default_version": "1.15",
-      "module_pathname": "$libdir/pg_ivm",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pg_catalog"
+      "pg_ivm": {
+        "default_version": "1.15",
+        "module_pathname": "$libdir/pg_ivm",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pg_catalog"
+      }
     }
   }
 }

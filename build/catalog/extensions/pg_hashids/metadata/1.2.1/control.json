@@ -1,7 +1,9 @@
 {
-  "default_version": "1.2.1",
-  "comment": "pg_hashids",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "pg_hashids": {
+    "default_version": "1.2.1",
+    "comment": "pg_hashids",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

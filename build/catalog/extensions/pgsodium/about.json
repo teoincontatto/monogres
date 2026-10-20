@@ -26,11 +26,13 @@
     "ref": "v3.1.9",
     "readme": "https://raw.githubusercontent.com/michelp/pgsodium/v3.1.9/README.md",
     "control": {
-      "default_version": "3.1.9",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pgsodium"
+      "pgsodium": {
+        "default_version": "3.1.9",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pgsodium"
+      }
     }
   }
 }

@@ -1,9 +1,20 @@
 {
-  "default_version": "14.1-1",
-  "comment": "Citus distributed database",
-  "module_pathname": "$libdir/citus",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false,
-  "schema": "pg_catalog"
+  "citus": {
+    "default_version": "14.1-1",
+    "comment": "Citus distributed database",
+    "module_pathname": "$libdir/citus",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "citus_columnar": {
+    "default_version": "14.1-1",
+    "comment": "Citus Columnar extension",
+    "module_pathname": "$libdir/citus_columnar",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  }
 }

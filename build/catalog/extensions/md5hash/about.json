@@ -11,10 +11,12 @@
       "url": "https://github.com/tvondra/md5hash"
     },
     "control": {
-      "default_version": "1.0.1",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "md5hash": {
+        "default_version": "1.0.1",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

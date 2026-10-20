@@ -24,12 +24,22 @@
     "ref": "REL2_4_8",
     "readme": "https://raw.githubusercontent.com/2ndQuadrant/pglogical/REL2_4_8/README.md",
     "control": {
-      "default_version": "2.4.8",
-      "module_pathname": "$libdir/pglogical",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pglogical"
+      "pglogical": {
+        "default_version": "2.4.8",
+        "module_pathname": "$libdir/pglogical",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pglogical"
+      },
+      "pglogical_origin": {
+        "default_version": "1.0.0",
+        "module_pathname": "$libdir/pglogical",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pglogical_origin"
+      }
     }
   }
 }

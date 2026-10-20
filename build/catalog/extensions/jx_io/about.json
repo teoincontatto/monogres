@@ -13,11 +13,13 @@
     "ref": "v0.1.1",
     "readme": "https://raw.githubusercontent.com/asotolongo/jx_io/v0.1.1/README.md",
     "control": {
-      "default_version": "0.1.1",
-      "superuser": false,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "jx_io"
+      "jx_io": {
+        "default_version": "0.1.1",
+        "superuser": false,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "jx_io"
+      }
     }
   }
 }

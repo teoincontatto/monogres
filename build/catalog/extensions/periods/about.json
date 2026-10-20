@@ -19,12 +19,14 @@
     "ref": "v1.2.3",
     "readme": "https://raw.githubusercontent.com/xocolatl/periods/v1.2.3/README.md",
     "control": {
-      "default_version": "1.2",
-      "module_pathname": "$libdir/periods",
-      "requires": ["btree_gist"],
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "periods": {
+        "default_version": "1.2",
+        "module_pathname": "$libdir/periods",
+        "requires": ["btree_gist"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

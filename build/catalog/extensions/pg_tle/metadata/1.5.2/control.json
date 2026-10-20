@@ -1,9 +1,11 @@
 {
-  "default_version": "EXTVERSION",
-  "comment": "Trusted Language Extensions for PostgreSQL",
-  "module_pathname": "$libdir/EXTNAME",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false,
-  "schema": "SCHEMA"
+  "pg_tle": {
+    "default_version": "EXTVERSION",
+    "comment": "Trusted Language Extensions for PostgreSQL",
+    "module_pathname": "$libdir/EXTNAME",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "SCHEMA"
+  }
 }

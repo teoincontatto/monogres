@@ -1,8 +1,10 @@
 {
-  "default_version": "1.0.6",
-  "comment": "cluster database read only",
-  "module_pathname": "$libdir/pg_readonly",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "pg_readonly": {
+    "default_version": "1.0.6",
+    "comment": "cluster database read only",
+    "module_pathname": "$libdir/pg_readonly",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

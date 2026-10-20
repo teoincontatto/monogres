@@ -11,11 +11,13 @@
     "ref": "v2.21",
     "readme": "https://raw.githubusercontent.com/citusdata/postgresql-hll/v2.21/README.md",
     "control": {
-      "default_version": "2.21",
-      "module_pathname": "$libdir/hll",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "hll": {
+        "default_version": "2.21",
+        "module_pathname": "$libdir/hll",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

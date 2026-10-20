@@ -23,12 +23,14 @@
     "ref": "7c2edff7a09c5882bfc8f1f8aa8f8d5d7e3b0c41",
     "readme": "https://raw.githubusercontent.com/kouber/pg_auditor/7c2edff7a09c5882bfc8f1f8aa8f8d5d7e3b0c41/README.md",
     "control": {
-      "default_version": "0.3",
-      "requires": ["hstore"],
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "auditor"
+      "pg_auditor": {
+        "default_version": "0.3",
+        "requires": ["hstore"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "auditor"
+      }
     }
   }
 }

@@ -11,11 +11,13 @@
       "url": "https://github.com/corlogic-code/generate_date_series"
     },
     "control": {
-      "default_version": "1.0.0",
-      "module_pathname": "$libdir/generate_date_series",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "generate_date_series": {
+        "default_version": "1.0.0",
+        "module_pathname": "$libdir/generate_date_series",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

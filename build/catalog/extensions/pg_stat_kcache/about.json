@@ -25,12 +25,14 @@
     "ref": "REL2_3_2",
     "readme": "https://raw.githubusercontent.com/powa-team/pg_stat_kcache/REL2_3_2/README.rst",
     "control": {
-      "default_version": "2.3.2",
-      "module_pathname": "$libdir/pg_stat_kcache",
-      "requires": ["pg_stat_statements"],
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "pg_stat_kcache": {
+        "default_version": "2.3.2",
+        "module_pathname": "$libdir/pg_stat_kcache",
+        "requires": ["pg_stat_statements"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

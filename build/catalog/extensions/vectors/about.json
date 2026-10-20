@@ -23,12 +23,14 @@
     "ref": "v0.4.0",
     "readme": "https://raw.githubusercontent.com/tensorchord/pgvecto.rs/v0.4.0/README.md",
     "control": {
-      "default_version": "0.4.0",
-      "module_pathname": "$libdir/vectors",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "vectors"
+      "vectors": {
+        "default_version": "0.4.0",
+        "module_pathname": "$libdir/vectors",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "vectors"
+      }
     }
   }
 }

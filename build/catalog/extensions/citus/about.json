@@ -25,12 +25,22 @@
     "ref": "v14.1.0",
     "readme": "https://raw.githubusercontent.com/citusdata/citus/v14.1.0/README.md",
     "control": {
-      "default_version": "14.1-1",
-      "module_pathname": "$libdir/citus",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pg_catalog"
+      "citus": {
+        "default_version": "14.1-1",
+        "module_pathname": "$libdir/citus",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pg_catalog"
+      },
+      "citus_columnar": {
+        "default_version": "14.1-1",
+        "module_pathname": "$libdir/citus_columnar",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pg_catalog"
+      }
     }
   }
 }

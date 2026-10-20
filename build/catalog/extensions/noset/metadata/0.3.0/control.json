@@ -1,7 +1,9 @@
 {
-  "default_version": "0.3.0",
-  "comment": "Module for blocking SET variables for non-super users.",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "noset": {
+    "default_version": "0.3.0",
+    "comment": "Module for blocking SET variables for non-super users.",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

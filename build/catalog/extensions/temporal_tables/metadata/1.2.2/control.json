@@ -1,8 +1,10 @@
 {
-  "default_version": "1.2.2",
-  "comment": "temporal tables",
-  "module_pathname": "$libdir/temporal_tables",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "temporal_tables": {
+    "default_version": "1.2.2",
+    "comment": "temporal tables",
+    "module_pathname": "$libdir/temporal_tables",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

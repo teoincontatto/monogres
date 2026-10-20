@@ -12,11 +12,13 @@
     "ref": "v1.4.0",
     "readme": "https://raw.githubusercontent.com/timescale/pg_textsearch/v1.4.0/README.md",
     "control": {
-      "default_version": "1.4.0",
-      "module_pathname": "$libdir/pg_textsearch",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "pg_textsearch": {
+        "default_version": "1.4.0",
+        "module_pathname": "$libdir/pg_textsearch",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

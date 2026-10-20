@@ -1,8 +1,10 @@
 {
-  "default_version": "1.0.1",
-  "comment": "unnest function with ordinality",
-  "module_pathname": "$libdir/unnest_ordinality",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "unnest_ordinality": {
+    "default_version": "1.0.1",
+    "comment": "unnest function with ordinality",
+    "module_pathname": "$libdir/unnest_ordinality",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

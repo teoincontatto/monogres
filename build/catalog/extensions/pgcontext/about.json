@@ -13,12 +13,21 @@
     "ref": "v0.2.0",
     "readme": "https://raw.githubusercontent.com/Evokoa/pgContext/v0.2.0/README.md",
     "control": {
-      "default_version": "0.2.0",
-      "module_pathname": "$libdir/pgcontext",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "pgcontext"
+      "pgcontext": {
+        "default_version": "0.2.0",
+        "module_pathname": "$libdir/pgcontext",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "pgcontext"
+      },
+      "pgcontext_pgvector": {
+        "default_version": "0.2.0",
+        "requires": ["pgcontext", "vector"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

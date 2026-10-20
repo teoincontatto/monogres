@@ -13,11 +13,13 @@
     "ref": "v0.3.4",
     "readme": "https://raw.githubusercontent.com/supabase/pg_jsonschema/v0.3.4/README.md",
     "control": {
-      "default_version": "0.3.4",
-      "module_pathname": "$libdir/pg_jsonschema",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "pg_jsonschema": {
+        "default_version": "0.3.4",
+        "module_pathname": "$libdir/pg_jsonschema",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

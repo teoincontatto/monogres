@@ -1,8 +1,10 @@
 {
-  "default_version": "17.1",
-  "comment": "provides auditing functionality",
-  "module_pathname": "$libdir/pgaudit",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "pgaudit": {
+    "default_version": "17.1",
+    "comment": "provides auditing functionality",
+    "module_pathname": "$libdir/pgaudit",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

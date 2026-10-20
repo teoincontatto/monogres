@@ -31,11 +31,13 @@
     "ref": "VERSION_4_16_9",
     "readme": "https://raw.githubusercontent.com/orafce/orafce/VERSION_4_16_9/README.asciidoc",
     "control": {
-      "default_version": "4.16",
-      "module_pathname": "$libdir/orafce",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "orafce": {
+        "default_version": "4.16",
+        "module_pathname": "$libdir/orafce",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

@@ -25,11 +25,49 @@
     "ref": "3.5.7",
     "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md",
     "control": {
-      "default_version": "3.5.7",
-      "module_pathname": "$libdir/postgis-3",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "address_standardizer": {
+        "default_version": "3.5.7",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      },
+      "address_standardizer_data_us": {
+        "default_version": "3.5.7",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      },
+      "postgis": {
+        "default_version": "3.5.7",
+        "module_pathname": "$libdir/postgis-3",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      },
+      "postgis_raster": {
+        "default_version": "3.5.7",
+        "module_pathname": "$libdir/postgis_raster-3",
+        "requires": ["postgis"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      },
+      "postgis_tiger_geocoder": {
+        "default_version": "3.5.7",
+        "requires": ["postgis", "fuzzystrmatch"],
+        "superuser": false,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "tiger"
+      },
+      "postgis_topology": {
+        "default_version": "3.5.7",
+        "requires": ["postgis"],
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "topology"
+      }
     }
   }
 }

@@ -11,11 +11,13 @@
     "ref": "REL4_2_0",
     "readme": "https://raw.githubusercontent.com/pgaudit/set_user/REL4_2_0/README.md",
     "control": {
-      "default_version": "4.2.0",
-      "module_pathname": "$libdir/set_user",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false
+      "set_user": {
+        "default_version": "4.2.0",
+        "module_pathname": "$libdir/set_user",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

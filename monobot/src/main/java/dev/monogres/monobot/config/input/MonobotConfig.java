@@ -30,11 +30,11 @@ import java.util.Optional;
 /// is the one place a description or a licence is written by hand, and it is versioned the way
 /// `about.json` is: see [dev.monogres.monobot.about.Layers].
 ///
-/// `control` corrects the control file of one release, keyed by that release's version as
-/// `versions` names it -- the archive the file came out of, not the `default_version` written in
-/// it. Each key applies to its own version and no other: the value it replaces is one the build
-/// fills in for that release, so carrying it over to the next one would be wrong. See
-/// [dev.monogres.monobot.about.ControlDirectives].
+/// `control` corrects the control files of one release, keyed by that release's version as
+/// `versions` names it -- the archive the files came out of, not the `default_version` written in
+/// them -- and then by extension. Each key applies to its own version and no other: the value it
+/// replaces is one the build fills in for that release, so carrying it over to the next one would
+/// be wrong. See [dev.monogres.monobot.about.ControlDirectives].
 ///
 /// The two required fields are checked here because nothing else would. There is no nullability
 /// module and no bean validation extension on the classpath, so an annotation saying so is a

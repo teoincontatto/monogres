@@ -19,11 +19,13 @@
     "ref": "v0.8.2",
     "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md",
     "control": {
-      "default_version": "0.8.2",
-      "module_pathname": "$libdir/vector",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "vector": {
+        "default_version": "0.8.2",
+        "module_pathname": "$libdir/vector",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

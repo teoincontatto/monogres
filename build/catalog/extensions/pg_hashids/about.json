@@ -19,10 +19,12 @@
     "ref": "v1.2.1",
     "readme": "https://raw.githubusercontent.com/iCyberon/pg_hashids/v1.2.1/README.md",
     "control": {
-      "default_version": "1.2.1",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "pg_hashids": {
+        "default_version": "1.2.1",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

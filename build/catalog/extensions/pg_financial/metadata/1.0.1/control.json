@@ -1,8 +1,10 @@
 {
-  "default_version": "1.0.1",
-  "comment": "Financial aggregate functions",
-  "module_pathname": "$libdir/financial",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "financial": {
+    "default_version": "1.0.1",
+    "comment": "Financial aggregate functions",
+    "module_pathname": "$libdir/financial",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

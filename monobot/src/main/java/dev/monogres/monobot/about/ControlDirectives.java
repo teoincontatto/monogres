@@ -9,11 +9,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.SequencedMap;
+import java.util.TreeSet;
 import java.util.regex.Pattern;
 import java.util.stream.StreamSupport;
 
-/// The control file of one version as `about.json` reports it: the directives a reader can act
-/// on, with whatever the build would have filled in written by hand.
+/// The control files of one version as `about.json` reports them, keyed by the extension each
+/// declares: the directives a reader can act on, with whatever the build would have filled in
+/// written by hand.
 ///
 /// Only the directives Postgres documents are kept, in the order its documentation lists them,
 /// and `comment` is not one of them: it is purely informative and is already the `description`.
@@ -23,8 +25,10 @@ import java.util.stream.StreamSupport;
 /// An extension whose build writes its control file ships a template, and `control.json` keeps
 /// the template's placeholders as the archive spelled them (`@CARGO_VERSION@`,
 /// `${PROJECT_VERSION}`). They are not values, so `monobot.json` replaces them in its `control`
-/// block: a merge patch over the directives of one version, keyed by the release version the
-/// archive was catalogued under, and applied to that version alone. A newer version therefore
+/// block: a merge patch over the control files of one version, keyed by the release version the
+/// archive was catalogued under and then by extension, and applied to that version alone. `null`
+/// for an extension removes it, for one the archive declares and the build does not install. A
+// newer version therefore
 /// inherits no correction, and its own placeholder is caught: a placeholder nothing replaced is an
 /// error naming the directive, since leaving it in would publish it, and leaving the directive out
 /// would hide that it is missing.
@@ -57,8 +61,49 @@ public final class ControlDirectives {
     return Collections.unmodifiableSequencedMap(types);
   }
 
-  /// The directives of `control` with `override` applied, or an empty object where there is no
-  /// control file and no override.
+  /// Every control file of `controls`, `{extension: directives}`, with `correction` applied:
+  /// `{extension: merge patch}`, where `null` removes the extension. Ordered by extension.
+  ///
+  /// @throws IllegalArgumentException as [#resolve] does, naming the extension, and when the
+  ///     correction patches an extension `controls` does not declare.
+  public static ObjectNode resolveAll(
+      ObjectMapper objectMapper, JsonNode controls, JsonNode correction) {
+    var names = new TreeSet<String>();
+    controls.fieldNames().forEachRemaining(names::add);
+    correction
+        .properties()
+        .forEach(
+            field -> {
+              if (!names.contains(field.getKey())) {
+                throw new IllegalArgumentException(
+                    KEY
+                        + "."
+                        + field.getKey()
+                        + " corrects an extension the archive declares no control file for");
+              }
+            });
+
+    var resolved = objectMapper.createObjectNode();
+    for (var name : names) {
+      var patch = correction.path(name);
+      if (patch.isNull()) {
+        continue;
+      }
+      try {
+        var directives = resolve(objectMapper, controls.get(name), patch);
+        if (!directives.isEmpty()) {
+          resolved.set(name, directives);
+        }
+      } catch (IllegalArgumentException e) {
+        throw new IllegalArgumentException(KEY + "." + name + "." + e.getMessage(), e);
+      }
+    }
+
+    return resolved;
+  }
+
+  /// The directives of one control file with `override` applied, or an empty object where there
+  /// is no control file and no override. An error names the directive, not the extension.
   ///
   /// @throws IllegalArgumentException when the override names a directive that is not one, a
   ///     directive has a value of the wrong type, or a placeholder is left unreplaced.
@@ -92,7 +137,7 @@ public final class ControlDirectives {
             name -> {
               if (!TYPES.containsKey(name)) {
                 throw new IllegalArgumentException(
-                    "control." + name + " is not a control directive monobot reports");
+                    name + " is not a control directive monobot reports");
               }
             });
 
@@ -108,8 +153,7 @@ public final class ControlDirectives {
     if (value.getNodeType() != type
         || elements.stream().anyMatch(element -> element.getNodeType() != elementType)) {
       throw new IllegalArgumentException(
-          "control."
-              + name
+          name
               + " is "
               + value
               + ", and it must be "
@@ -122,12 +166,12 @@ public final class ControlDirectives {
         .ifPresent(
             text -> {
               throw new IllegalArgumentException(
-                  "control."
-                      + name
+                  name
                       + " is the build placeholder \""
                       + text
-                      + "\": write the value the build fills in under control.<version> in"
-                      + " monobot.json");
+                      + "\": write the value the build fills in under"
+                      + " control.<version>.<extension> in monobot.json, or null the extension if"
+                      + " the build does not install it");
             });
   }
 

@@ -13,6 +13,7 @@ import java.nio.file.Path;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.commons.compress.archivers.tar.TarArchiveEntry;
@@ -64,7 +65,7 @@ class ArchiveMetadataExtractorTest {
 
   private String commentIn(Path archive) {
     return extractor
-        .controlOf(extractor.read("fixture", archive).control())
+        .controlOf(extractor.read(archive).controls().get("fixture"))
         .get("comment")
         .asText();
   }
@@ -96,11 +97,13 @@ class ArchiveMetadataExtractorTest {
 
     var counting = new CountingExtractor();
     counting.objectMapper = new ObjectMapper();
-    var contents = counting.read("fixture", archive);
+    var contents = counting.read(archive);
 
     assertEquals(1, counting.opens.get(), "the archive was read more than once");
     assertEquals(Instant.EPOCH, contents.lastModified());
-    assertEquals("the real one", counting.controlOf(contents.control()).get("comment").asText());
+    assertEquals(
+        "the real one",
+        counting.controlOf(contents.controls().get("fixture")).get("comment").asText());
   }
 
   /// Nothing between the socket and this walk caps anything, and the walk reads every entry, so a
@@ -111,7 +114,7 @@ class ArchiveMetadataExtractorTest {
     var archive = directory.resolve("amplified.tar.gz");
     Files.write(archive, compressibleArchive(OVER_THE_BYTE_BOUND, ONE_LARGE_ENTRY));
 
-    var failure = assertThrows(RuntimeException.class, () -> extractor.read("fixture", archive));
+    var failure = assertThrows(RuntimeException.class, () -> extractor.read(archive));
 
     assertTrue(
         failure.getMessage().contains("bytes a source archive is allowed"),
@@ -123,7 +126,7 @@ class ArchiveMetadataExtractorTest {
     var archive = directory.resolve("many.tar.gz");
     Files.write(archive, compressibleArchive(OVER_THE_ENTRY_BOUND, 0));
 
-    var failure = assertThrows(RuntimeException.class, () -> extractor.read("fixture", archive));
+    var failure = assertThrows(RuntimeException.class, () -> extractor.read(archive));
 
     assertTrue(
         failure.getMessage().contains("entries"),
@@ -175,10 +178,12 @@ class ArchiveMetadataExtractorTest {
 
     var counting = new CountingExtractor();
     counting.objectMapper = new ObjectMapper();
-    var contents = counting.read("fixture", zipArchive(entries));
+    var contents = counting.read(zipArchive(entries));
 
     assertEquals(1, counting.opens.get(), "the archive was read more than once");
-    assertEquals("the real one", counting.controlOf(contents.control()).get("comment").asText());
+    assertEquals(
+        "the real one",
+        counting.controlOf(contents.controls().get("fixture")).get("comment").asText());
     assertEquals("fixture", counting.metaJsonOf(contents.metaJson()).get("name").asText());
     assertTrue(
         contents.lastModified().isAfter(Instant.MIN),
@@ -260,25 +265,25 @@ class ArchiveMetadataExtractorTest {
     entries.put("postgres-REL_18_6/src/pl/plperl/plperl.control", "comment = 'plperl'\n");
     entries.put("postgres-REL_18_6/src/test/modules/x/x.control", "comment = 'test'\n");
 
-    var contents = extractor.read(null, archive(entries), true);
+    var contents = extractor.read(false, archive(entries), true);
 
     assertEquals(
         java.util.List.of("hstore", "plperl", "plpgsql", "refint"),
         java.util.List.copyOf(contents.contrib().keySet()));
     assertEquals(
         "plpgsql", extractor.controlOf(contents.contrib().get("plpgsql")).get("comment").asText());
-    assertEquals(null, contents.control(), "a flavor was given a control file of its own");
+    assertTrue(contents.controls().isEmpty(), "a flavor was given control files of its own");
   }
 
-  /// An extension is asked for its own control file and nothing else, contrib-looking paths and
-  /// all. Only a flavor's archive is read for its contrib.
+  /// An extension's archive is read for its control files, contrib-looking paths and all, and
+  /// never for a contrib. Only a flavor's archive is read for its contrib.
   @Test
   void extensionCarriesNoContrib() throws Exception {
     var entries = new LinkedHashMap<String, String>();
     entries.put("fixture-aa1/fixture.control", ROOT_CONTROL);
     entries.put("fixture-aa1/contrib/other/other.control", NESTED_CONTROL);
 
-    assertTrue(extractor.read("fixture", archive(entries)).contrib().isEmpty());
+    assertTrue(extractor.read(archive(entries)).contrib().isEmpty());
   }
 
   /// Whether an archive is read for its contrib is decided by what the entry is, not by what the
@@ -288,11 +293,33 @@ class ArchiveMetadataExtractorTest {
     var entries = new LinkedHashMap<String, String>();
     entries.put("postgres-REL_18_6/contrib/hstore/hstore.control", "comment = 'hstore'\n");
 
-    assertTrue(extractor.read("postgres", archive(entries), false).contrib().isEmpty());
-    assertTrue(extractor.read("postgres", archive(entries)).contrib().isEmpty());
+    assertTrue(extractor.read(false, archive(entries), false).contrib().isEmpty());
+    assertTrue(extractor.read(archive(entries)).contrib().isEmpty());
     assertEquals(
         java.util.List.of("hstore"),
-        java.util.List.copyOf(
-            extractor.read("postgres", archive(entries), true).contrib().keySet()));
+        java.util.List.copyOf(extractor.read(false, archive(entries), true).contrib().keySet()));
+  }
+
+  /// Every extension the archive declares, by name, as postgis declares seven. A secondary control
+  /// file holds one version of an extension that has a primary one, and a test fixture or an
+  /// example is no extension the archive installs, so none of those is one. A name declared twice
+  /// keeps the copy closest to the root.
+  @Test
+  void everyExtensionTheArchiveDeclaresIsReadByName() throws Exception {
+    var entries = new LinkedHashMap<String, String>();
+    entries.put("postgis-3.5.7/extensions/postgis/postgis.control.in", "comment = 'postgis'\n");
+    entries.put(
+        "postgis-3.5.7/extensions/postgis_raster/postgis_raster.control.in",
+        "comment = 'raster'\n");
+    entries.put("postgis-3.5.7/citus--11.1-1.control", "comment = 'secondary'\n");
+    entries.put("postgis-3.5.7/test/sql/loader/osm.control", "comment = 'fixture'\n");
+    entries.put("postgis-3.5.7/examples/uuid_v7/uuid_v7.control", "comment = 'example'\n");
+    entries.put("postgis-3.5.7/compat94/origin.control", "comment = 'for 9.4'\n");
+    entries.put("postgis-3.5.7/origin.control", "comment = 'origin'\n");
+
+    var controls = extractor.read(archive(entries)).controls();
+
+    assertEquals(List.of("origin", "postgis", "postgis_raster"), List.copyOf(controls.keySet()));
+    assertEquals("origin", extractor.controlOf(controls.get("origin")).get("comment").asText());
   }
 }

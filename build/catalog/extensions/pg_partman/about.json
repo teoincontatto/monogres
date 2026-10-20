@@ -26,11 +26,13 @@
     "ref": "v5.5.0",
     "readme": "https://raw.githubusercontent.com/pgpartman/pg_partman/v5.5.0/README.md",
     "control": {
-      "default_version": "5.5.0",
-      "requires": ["plpgsql"],
-      "superuser": false,
-      "trusted": false,
-      "relocatable": false
+      "pg_partman": {
+        "default_version": "5.5.0",
+        "requires": ["plpgsql"],
+        "superuser": false,
+        "trusted": false,
+        "relocatable": false
+      }
     }
   }
 }

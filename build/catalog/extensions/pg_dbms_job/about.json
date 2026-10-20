@@ -11,12 +11,14 @@
     "ref": "v2.0",
     "readme": "https://raw.githubusercontent.com/HexaCluster/pg_dbms_job/v2.0/README.md",
     "control": {
-      "default_version": "2.0.0",
-      "module_pathname": "$libdir/pg_dbms_job",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": false,
-      "schema": "dbms_job"
+      "pg_dbms_job": {
+        "default_version": "2.0.0",
+        "module_pathname": "$libdir/pg_dbms_job",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": false,
+        "schema": "dbms_job"
+      }
     }
   }
 }

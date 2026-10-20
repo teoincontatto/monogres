@@ -13,11 +13,13 @@
     "ref": "v1.0.3",
     "readme": "https://raw.githubusercontent.com/tvondra/sequential-uuids/v1.0.3/README.md",
     "control": {
-      "default_version": "1.0.3",
-      "module_pathname": "$libdir/sequential_uuids",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "sequential_uuids": {
+        "default_version": "1.0.3",
+        "module_pathname": "$libdir/sequential_uuids",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

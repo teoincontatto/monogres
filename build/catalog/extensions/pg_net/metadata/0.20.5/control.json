@@ -1,8 +1,10 @@
 {
-  "default_version": "@EXTVERSION@",
-  "comment": "Async HTTP",
-  "module_pathname": "$libdir/pg_net",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": false
+  "pg_net": {
+    "default_version": "@EXTVERSION@",
+    "comment": "Async HTTP",
+    "module_pathname": "$libdir/pg_net",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
 }

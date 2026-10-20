@@ -13,11 +13,13 @@
     "ref": "REL_1_0_1",
     "readme": "https://raw.githubusercontent.com/pgexperts/unnest_ordinality/REL_1_0_1/README.md",
     "control": {
-      "default_version": "1.0.1",
-      "module_pathname": "$libdir/unnest_ordinality",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "unnest_ordinality": {
+        "default_version": "1.0.1",
+        "module_pathname": "$libdir/unnest_ordinality",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

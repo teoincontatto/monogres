@@ -18,10 +18,12 @@
     "ref": "1.20220917",
     "readme": "https://raw.githubusercontent.com/petere/plsh/1.20220917/README.md",
     "control": {
-      "default_version": "2",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "plsh": {
+        "default_version": "2",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

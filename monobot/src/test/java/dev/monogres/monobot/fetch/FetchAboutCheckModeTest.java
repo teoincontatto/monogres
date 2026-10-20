@@ -100,10 +100,12 @@ class FetchAboutCheckModeTest {
           "ref": "v1.0.0",
           "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
           "control": {
-            "default_version": "1.0.0",
-            "superuser": true,
-            "trusted": false,
-            "relocatable": false
+            "fixture": {
+              "default_version": "1.0.0",
+              "superuser": true,
+              "trusted": false,
+              "relocatable": false
+            }
           }
         }
       }
@@ -164,7 +166,7 @@ class FetchAboutCheckModeTest {
     var digest = DigestUtils.sha256sum(ByteBuffer.wrap(archiveBytes()));
     commit(PipelineFixture.repoJson(EXTENSION_DIR), REPO_JSON.formatted(digest));
     var control = extractor.controlOf(controlText().getBytes(StandardCharsets.UTF_8)).toString();
-    commit(entryDir().resolve("metadata/1.0.0/control.json"), control);
+    commit(entryDir().resolve("metadata/1.0.0/control.json"), "{\"fixture\": " + control + "}");
     commit(entryDir().resolve("metadata/upstream.json"), UPSTREAM_JSON);
     commit(entryDir().resolve("about.json"), ABOUT_JSON);
   }

@@ -179,7 +179,14 @@ class FetchAboutTest {
                 "repository": {"url": "https://github.com/monogres/fixture"},
                 "ref": "v1.0.0",
                 "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
-                "control": {"default_version": "1.0.0", "superuser": true, "trusted": false, "relocatable": false}
+                "control": {
+                  "fixture": {
+                    "default_version": "1.0.0",
+                    "superuser": true,
+                    "trusted": false,
+                    "relocatable": false
+                  }
+                }
               }
             }
             """),
@@ -222,14 +229,21 @@ class FetchAboutTest {
                 "repository": {"url": "https://github.com/monogres/fixture"},
                 "ref": "v1.1.0",
                 "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.1.0/README.md",
-                "control": {"default_version": "1.1.0", "superuser": true, "trusted": false, "relocatable": false}
+                "control": {
+                  "fixture": {
+                    "default_version": "1.1.0",
+                    "superuser": true,
+                    "trusted": false,
+                    "relocatable": false
+                  }
+                }
               },
               "versions": {
                 "1.0.0": {
                   "long_description": "the forge about",
                   "ref": "v1.0.0",
                   "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
-                  "control": {"default_version": "1.0.0"}
+                  "control": {"fixture": {"default_version": "1.0.0"}}
                 }
               }
             }
@@ -263,12 +277,12 @@ class FetchAboutTest {
                 "description": "then",
                 "ref": "v1.0.0",
                 "readme": "https://raw.githubusercontent.com/monogres/fixture/v1.0.0/README.md",
-                "control": {"default_version": "1.0.0"}
+                "control": {"fixture": {"default_version": "1.0.0"}}
               },
               "0.9.0": {
                 "ref": "v0.9.0",
                 "readme": "https://raw.githubusercontent.com/monogres/fixture/v0.9.0/README.md",
-                "control": {"default_version": "0.9.0"}
+                "control": {"fixture": {"default_version": "0.9.0"}}
               }
             }
             """),
@@ -283,19 +297,25 @@ class FetchAboutTest {
         "[\"0.9.0\", \"1.0.0\", \"1.1.0\"]",
         """
         ,
-        "control": {"1.0.0": {"default_version": "1.0"}}
+        "control": {"1.0.0": {"fixture": {"default_version": "1.0"}}}
         """);
 
     run();
 
     var resolved = Layers.resolve(read(aboutJson()));
-    assertEquals("1.1.0", resolved.get("1.1.0").path("control").path("default_version").asText());
-    assertEquals("1.0", resolved.get("1.0.0").path("control").path("default_version").asText());
-    assertEquals("0.9.0", resolved.get("0.9.0").path("control").path("default_version").asText());
+    assertEquals(
+        "1.1.0",
+        resolved.get("1.1.0").path("control").path("fixture").path("default_version").asText());
+    assertEquals(
+        "1.0",
+        resolved.get("1.0.0").path("control").path("fixture").path("default_version").asText());
+    assertEquals(
+        "0.9.0",
+        resolved.get("0.9.0").path("control").path("fixture").path("default_version").asText());
   }
 
   /// A correction keyed on a version nothing catalogues corrects nothing, so it fails the entry
-  /// rather than being dropped.
+  /// rather than being dropped. The log says which key; the failure, that the entry has one.
   @Test
   void controlCorrectionOfAnUncataloguedVersionFailsTheEntry() throws Exception {
     configure(
@@ -308,7 +328,7 @@ class FetchAboutTest {
     var failure = assertThrows(ExecutionException.class, this::run);
 
     assertTrue(
-        failure.getMessage().contains("control.1.0 corrects a version that is not catalogued"),
+        failure.getMessage().contains("its about.json cannot be derived"),
         "the failure does not say what happened: " + failure.getMessage());
   }
 

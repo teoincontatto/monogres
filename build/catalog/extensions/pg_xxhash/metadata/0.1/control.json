@@ -1,8 +1,10 @@
 {
-  "default_version": "0.1",
-  "comment": "xxHash functions for PostgreSQL",
-  "module_pathname": "$libdir/pg_xxhash",
-  "superuser": true,
-  "trusted": false,
-  "relocatable": true
+  "pg_xxhash": {
+    "default_version": "0.1",
+    "comment": "xxHash functions for PostgreSQL",
+    "module_pathname": "$libdir/pg_xxhash",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  }
 }

@@ -28,7 +28,7 @@ import org.jboss.logging.Logger;
 /// ```
 /// <cacheDir>/extensions/pgvector/0.8.2/pgvector-0.8.2.tar.gz
 /// <cacheDir>/extensions/pgvector/0.8.2/fetch.json
-/// <cacheDir>/extensions/pgvector/0.8.2/vector.control
+/// <cacheDir>/extensions/pgvector/0.8.2/vector.control      (one per extension it declares)
 /// <cacheDir>/extensions/pgvector/0.8.2/META.json
 /// ```
 ///
@@ -111,13 +111,15 @@ public class ArchiveCache {
             });
   }
 
-  /// The control file and the PGXN metadata as the archive carried them, kept beside the archive.
+  /// The control files and the PGXN metadata as the archive carried them, kept beside the archive.
   /// The catalog gets these parsed; here they are the bytes, which is what a question about how
-  /// they were parsed can be answered against.
-  public void storeExtracted(Path directory, String controlStem, ArchiveContents contents) {
-    if (contents.control() != null && controlStem != null) {
-      documentWriter.writeRaw(directory, controlStem + SUFFIX_CONTROL, contents.control());
-    }
+  /// they were parsed can be answered against. A template is kept under the name of the file the
+  /// build writes from it.
+  public void storeExtracted(Path directory, ArchiveContents contents) {
+    contents
+        .controls()
+        .forEach(
+            (name, control) -> documentWriter.writeRaw(directory, name + SUFFIX_CONTROL, control));
     if (contents.metaJson() != null) {
       documentWriter.writeRaw(directory, FILENAME_META_JSON, contents.metaJson());
     }

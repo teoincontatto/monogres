@@ -13,11 +13,13 @@
     "ref": "2a06bbf609ae02e16e0e32d62453141cada57906",
     "readme": "https://raw.githubusercontent.com/dverite/cryptint/2a06bbf609ae02e16e0e32d62453141cada57906/README.md",
     "control": {
-      "default_version": "1.0.0",
-      "module_pathname": "$libdir/cryptint",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "cryptint": {
+        "default_version": "1.0.0",
+        "module_pathname": "$libdir/cryptint",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

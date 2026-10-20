@@ -132,12 +132,13 @@ written beside it. Everything monobot cannot work out for itself is in here:
 
 Fields:
 
-- `name` (optional) -- The stem of the control file to look for inside each
-  archive (`{name}.control`), and the prefix every log line about the entry
-  carries. It is the extension's own name and not the repository's, and the two
-  diverge routinely, so pgvector needs `"name": "vector"`. Optional because the
-  Postgres flavors have no single control file. A name that matches none leaves
-  the version with no control document, with one WARN line saying so.
+- `name` (optional) -- The extension the entry is named after: the control
+  file (`{name}.control`) whose `comment` describes it, and the prefix every
+  log line about the entry carries. It is the extension's own name and not the
+  repository's, and the two diverge routinely, so pgvector needs
+  `"name": "vector"`. Optional because the Postgres flavors have no single
+  control file. An archive that declares no extension of that name is
+  catalogued with one WARN line saying so.
 - `url` (optional) -- The git repository, read only to list tags, so it is
   needed only alongside a `versions.discover` block. It is not where the
   archives come from: postgis has both and they disagree on purpose, since its
@@ -149,7 +150,7 @@ Fields:
   monobot does not model it.
 - `type` (optional) -- `extension` (the default), `postgres` for a flavor, or
   `addon` for software shipped beside Postgres. It decides what an archive is
-  read for: an extension's for its own control file and META.json, a flavor's
+  read for: an extension's for its control files and META.json, a flavor's
   for the control files of every contrib module and procedural language in its
   tree, an addon's for nothing but its digest.
 - `about` (optional) -- Overrides for `about.json`, field by field and version
@@ -336,13 +337,30 @@ catalogDir/extensions/pgvector/metadata/0.8.2/control.json
 catalogDir/extensions/pgvector/metadata/0.8.2/META.json
 ```
 
-`control.json` is the control file as the directives it declares, with the three
-booleans Postgres defaults emitted whether or not the file names them, and any
-directive monobot does not model carried through beside the ones it does.
-`META.json` is verbatim. The cache keeps both as the archive spelled them.
+`control.json` is every control file the archive declares, keyed by the
+extension each is named after, as `contrib.json` is:
+
+```json
+{
+  "postgis": { "default_version": "@EXTVERSION@", "comment": "...", ... },
+  "postgis_raster": { "default_version": "@EXTVERSION@", "requires": ["postgis"], ... }
+}
+```
+
+Each is the directives it declares, with the three booleans Postgres defaults
+emitted whether or not the file names them, and any directive monobot does not
+model carried through beside the ones it does. Most archives declare one
+extension, and some several: postgis seven, pglogical two. Three kinds of
+control file declare no extension the archive installs and are left out: a
+secondary one (`citus--11.1-1.control`, the directives of one version of an
+extension that has a primary file), anything under a `test`, `tests`, `t`,
+`regress`, `fixtures`, `example` or `examples` directory, and a second copy of
+a name, of which the one closest to the root is kept. `META.json` is verbatim.
+The cache keeps the control files and `META.json` as the archive spelled them.
 
 An extension whose build writes its control file ships a `{name}.control.in`
-instead, and that is read when the archive carries no finished one. A flavor
+instead, and that is read when the archive carries no finished one of that
+name. A flavor
 (`"type": "postgres"`) has no control file of its own; what its archive answers
 for is the control file of every extension it builds with itself, under
 `contrib/` and `src/pl/`, collected by name into `metadata/<version>/contrib.json`.
@@ -400,7 +418,8 @@ version, in that order. Objects merge field by field, anything else replaces,
 
 Each version is derived, field by field, from the first source that says
 something: the `about` override in `monobot.json` as it stands at that version,
-that version's `control.json` (whose `comment` is the short description) and
+that version's `control.json` (whose `name` extension's `comment` is the short
+description) and
 `META.json`, and what the entry's forge said about its repository when that
 version was catalogued. The forge is GitHub or gitlab.com, read off `url`; its
 answers are kept in `metadata/upstream.json`, layered the same way, which is
@@ -436,37 +455,42 @@ archives do not come from its repository names it with a template instead:
 ```
 
 Each version, and each contrib extension of a flavor, also carries `control`:
-the control file of that version as an installed extension declares it. Only
-the directives Postgres documents are kept, typed (strings, arrays of strings
-and booleans, never a number) and in the order the documentation lists them.
-`comment` is not among them, since it is already the `description`, and neither
-is anything else the file declared.
+the control files of that version as the installed extensions declare them,
+keyed by extension as `control.json` is. Only the directives Postgres documents
+are kept, typed (strings, arrays of strings and booleans, never a number) and in
+the order the documentation lists them. `comment` is not among them, since it
+is already the `description`, and neither is anything else a file declared.
 
 ### Correcting a control file
 
-Every version is a release, and its control file is the one that release's
+Every version is a release, and its control files are the ones that release's
 archive carries: `metadata/0.20.5/control.json` is what the `0.20.5` archive
-holds, verbatim, whatever version that file names inside. The two can differ:
+holds, verbatim, whatever version each file names inside. The two can differ:
 pg_net's `v0.20.5` tag still declares `default_version = '0.20.4'`.
 
 An extension whose build writes its control file ships a template, so its
 `control.json` holds placeholders (`@CARGO_VERSION@`, `${PROJECT_VERSION}`,
-`__PGLOGICAL_VERSION__`) rather than values. `monobot.json` writes what the
-build fills in, under `control`, keyed by the release version exactly as
-`versions` names it:
+`__PGLOGICAL_VERSION__`) rather than values. And an archive can declare an
+extension its build does not install: postgis's `postgis_sfcgal` needs SFCGAL.
+`monobot.json` writes what the build does, under `control`, keyed by the
+release version exactly as `versions` names it, then by extension:
 
 ```json
 "control": {
-  "0.20.5": { "default_version": "0.20.4" }
+  "3.5.7": {
+    "postgis": { "default_version": "3.5.7", "module_pathname": "$libdir/postgis-3" },
+    "postgis_sfcgal": null
+  }
 }
 ```
 
-Each key is a merge patch over the directives of that one version, and applies
-to no other: unlike `about`, a correction is not inherited by older versions,
-nor by a newer one, whose own placeholder then fails it until it has a key of
-its own. A key that names no catalogued version fails the entry, as does a
-placeholder nothing replaced, a value of the wrong type, or a patch naming
-something that is not a directive.
+Each extension's value is a merge patch over its directives, and `null` drops
+the extension. A key applies to that one version and to no other: unlike
+`about`, a correction is not inherited by older versions, nor by a newer one,
+whose own placeholder then fails it until it has a key of its own. The entry
+fails on a key that names no catalogued version, an extension its archive does
+not declare, a placeholder nothing replaced, a value of the wrong type, or a
+patch naming something that is not a directive.
 
 ## Running
 

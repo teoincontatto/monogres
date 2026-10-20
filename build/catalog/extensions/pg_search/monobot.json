@@ -17,7 +17,9 @@
   },
   "control": {
     "0.24.3": {
-      "default_version": "0.24.3"
+      "pg_search": {
+        "default_version": "0.24.3"
+      }
     }
   },
   "metadata": {

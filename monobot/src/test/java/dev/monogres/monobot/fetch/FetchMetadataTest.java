@@ -147,7 +147,8 @@ class FetchMetadataTest {
     run();
 
     assertEquals(List.of("control.json"), extractedFiles());
-    assertEquals("a fixture extension", extracted("control.json").get("comment").asText());
+    assertEquals(
+        "a fixture extension", extracted("control.json").get("fixture").get("comment").asText());
   }
 
   /// The PGXN branch. A distribution that ships only a META.json is catalogued from it, verbatim.
@@ -169,7 +170,8 @@ class FetchMetadataTest {
     run();
 
     assertEquals(List.of("META.json", "control.json"), extractedFiles());
-    assertEquals("a fixture extension", extracted("control.json").get("comment").asText());
+    assertEquals(
+        "a fixture extension", extracted("control.json").get("fixture").get("comment").asText());
     assertEquals("postgresql", extracted("META.json").get("license").asText());
   }
 
@@ -196,7 +198,7 @@ class FetchMetadataTest {
 
     run();
 
-    var requires = extracted("control.json").get("requires");
+    var requires = extracted("control.json").get("fixture").get("requires");
     assertTrue(requires.isArray(), "requires reached the catalog as " + requires.getNodeType());
     assertEquals(
         List.of("plpgsql", "hstore"), List.of(requires.get(0).asText(), requires.get(1).asText()));

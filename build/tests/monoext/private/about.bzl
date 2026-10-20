@@ -7,7 +7,7 @@ each version resolves to what monobot wrote for it.
 """
 
 load("@bazel_skylib//lib:unittest.bzl", "asserts", "unittest")
-load("//monoext:about.bzl", "about_versions", "apply_patch")
+load("//monoext:about.bzl", "about_versions", "apply_patch", "contrib_about")
 load("//tests:suite.bzl", _test_suite = "test_suite")
 
 def _apply_patch_test_impl(ctx):
@@ -88,12 +88,46 @@ def _about_versions_empty_test_impl(ctx):
 
 about_versions_empty_test = unittest.make(_about_versions_empty_test_impl)
 
+def _contrib_about_test_impl(ctx):
+    """An entry is described by its first name the block knows, and reports the
+    control of every extension it installs."""
+    env = unittest.begin(ctx)
+
+    block = {
+        "autoinc": {"description": "autoinc", "control": {"autoinc": {"default_version": "1.0"}}},
+        "refint": {"description": "refint", "control": {"refint": {"default_version": "1.0"}}},
+        "spi": {"description": "SPI examples"},
+    }
+
+    asserts.equals(
+        env,
+        {
+            "description": "SPI examples",
+            "control": {
+                "autoinc": {"default_version": "1.0"},
+                "refint": {"default_version": "1.0"},
+            },
+        },
+        contrib_about(block, ["spi", "autoinc", "refint"]),
+    )
+    asserts.equals(
+        env,
+        {"description": "autoinc", "control": {"autoinc": {"default_version": "1.0"}}},
+        contrib_about(block, ["autoinc"]),
+    )
+    asserts.equals(env, None, contrib_about(block, ["hstore"]))
+
+    return unittest.end(env)
+
+contrib_about_test = unittest.make(_contrib_about_test_impl)
+
 TEST_SUITE_NAME = "about"
 
 TEST_SUITE_TESTS = dict(
     about_versions = about_versions_test,
     about_versions_empty = about_versions_empty_test,
     apply_patch = apply_patch_test,
+    contrib_about = contrib_about_test,
 )
 
 test_suite = lambda: _test_suite(TEST_SUITE_NAME, TEST_SUITE_TESTS)

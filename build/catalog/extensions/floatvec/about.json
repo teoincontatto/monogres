@@ -13,11 +13,13 @@
     "ref": "v1.1.1",
     "readme": "https://raw.githubusercontent.com/pjungwir/floatvec/v1.1.1/README.md",
     "control": {
-      "default_version": "1.1.1",
-      "module_pathname": "$libdir/floatvec",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "floatvec": {
+        "default_version": "1.1.1",
+        "module_pathname": "$libdir/floatvec",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }

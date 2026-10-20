@@ -11,11 +11,13 @@
     "ref": "1.24.0",
     "readme": "https://raw.githubusercontent.com/timescale/timescaledb-toolkit/1.24.0/README.md",
     "control": {
-      "default_version": "1.24.0",
-      "module_pathname": "$libdir/timescaledb_toolkit",
-      "superuser": true,
-      "trusted": true,
-      "relocatable": false
+      "timescaledb_toolkit": {
+        "default_version": "1.24.0",
+        "module_pathname": "$libdir/timescaledb_toolkit",
+        "superuser": true,
+        "trusted": true,
+        "relocatable": false
+      }
     }
   }
 }

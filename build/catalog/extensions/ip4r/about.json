@@ -11,11 +11,13 @@
     "ref": "2.4.3",
     "readme": "https://raw.githubusercontent.com/RhodiumToad/ip4r/2.4.3/README.ip4r",
     "control": {
-      "default_version": "2.4",
-      "module_pathname": "$libdir/ip4r",
-      "superuser": true,
-      "trusted": false,
-      "relocatable": true
+      "ip4r": {
+        "default_version": "2.4",
+        "module_pathname": "$libdir/ip4r",
+        "superuser": true,
+        "trusted": false,
+        "relocatable": true
+      }
     }
   }
 }
