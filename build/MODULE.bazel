@@ -223,10 +223,59 @@ llvm.sysroot(
     label = "@libc_sysroot//debian/{}/arm64:sysroot".format(RELEASE["version"]),
     targets = ["linux-aarch64"],
 )
-use_repo(llvm, "llvm_toolchain")
+# ONE PER EXEC ARCH, NOT JUST THE HOST'S. An `llvm.toolchain` repo generates toolchains that
+# execute on ONE arch — the host's, unless `exec_arch` says otherwise — so on an amd64 workstation
+# every `@llvm_toolchain` entry, the aarch64-TARGET one included, is `exec_compatible_with`
+# x86_64. A remote arm64 platform (`//platforms:linux_arm64_rbe_buildbarn`) then has no C/C++
+# toolchain, toolchain resolution falls back to `@platforms//host:host`, and every rules_foreign_cc
+# build and its tools (m4, bison, flex, …) is sent to the remote executor with an EMPTY platform,
+# which no worker serves. These two add the toolchains that run on each arch explicitly; roots
+# and sysroots are keyed by exec/target arch, so the same tags serve them (repeated per name, as
+# the extension keys every tag by `name`). Registered after `@llvm_toolchain`, so a local build
+# keeps resolving exactly as before; the `--extra_toolchains` in `.bazelrc` still come first.
+[
+    (
+        llvm.toolchain(
+            name = name,
+            exec_arch = exec_arch,
+            exec_os = "linux",
+            extra_compiler_files = "//toolchains/llvm_sysroot:compiler_runtime_libs",
+            llvm_version = RELEASE["llvm_version"],
+            stdlib = {"": "stdc++"},
+        ),
+        llvm.toolchain_root(
+            name = name,
+            label = "@llvm_toolchain_amd64//:BUILD",
+            targets = ["linux-x86_64"],
+        ),
+        llvm.toolchain_root(
+            name = name,
+            label = "@llvm_toolchain_arm64//:BUILD",
+            targets = ["linux-aarch64"],
+        ),
+        llvm.sysroot(
+            name = name,
+            label = "@libc_sysroot//debian/{}/amd64:sysroot".format(RELEASE["version"]),
+            targets = ["linux-x86_64"],
+        ),
+        llvm.sysroot(
+            name = name,
+            label = "@libc_sysroot//debian/{}/arm64:sysroot".format(RELEASE["version"]),
+            targets = ["linux-aarch64"],
+        ),
+    )
+    for name, exec_arch in [
+        ("llvm_toolchain_exec_x86_64", "x86_64"),
+        ("llvm_toolchain_exec_aarch64", "aarch64"),
+    ]
+]
+
+use_repo(llvm, "llvm_toolchain", "llvm_toolchain_exec_aarch64", "llvm_toolchain_exec_x86_64")
 
 register_toolchains(
     "@llvm_toolchain//:all",
+    "@llvm_toolchain_exec_x86_64//:all",
+    "@llvm_toolchain_exec_aarch64//:all",
     dev_dependency = True,
 )
 
