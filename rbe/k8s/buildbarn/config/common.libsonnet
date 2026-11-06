@@ -18,7 +18,7 @@ local mkShards(numShards) =
     },
   };
 
-local workerImageName = 'ghcr.io/rpostgres/rpostgres/debian-rbe-pgdeps';
+local workerImageName = 'ghcr.io/teoincontatto-labs/stackgres-cloud/debian-rbe-pgdeps';
 local workerImageDigest = '@sha256:104c826449ce4419b19439b21c0534a99ccc11778be9a681504b605f6bc7d50e';
 
 {

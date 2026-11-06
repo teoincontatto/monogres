@@ -44,7 +44,7 @@ spec:
                 fieldRef:
                   fieldPath: metadata.name
         - command: [/bb/tini, -v, --, /bb/bb_runner, /config/runner.jsonnet]
-          image: ghcr.io/rpostgres/rpostgres/debian-rbe-pgdeps@sha256:104c826449ce4419b19439b21c0534a99ccc11778be9a681504b605f6bc7d50e
+          image: ghcr.io/teoincontatto-labs/stackgres-cloud/debian-rbe-pgdeps@sha256:104c826449ce4419b19439b21c0534a99ccc11778be9a681504b605f6bc7d50e
           name: runner
           securityContext:
             runAsUser: 65534
