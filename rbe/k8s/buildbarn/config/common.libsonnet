@@ -19,7 +19,7 @@ local mkShards(numShards) =
   };
 
 local workerImageName = 'ghcr.io/teoincontatto-labs/stackgres-cloud/debian-rbe-pgdeps';
-local workerImageDigest = '@sha256:104c826449ce4419b19439b21c0534a99ccc11778be9a681504b605f6bc7d50e';
+local workerImageDigest = '@sha256:cc6fe8549366deec6d006ca00aca75ab46412565ad6f0f5d40925986317e27cc';
 
 {
   numShards: numShards,
