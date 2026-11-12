@@ -139,6 +139,32 @@ def _host_arch(rctx):
         return "arm64"
     fail("//sysroots/apt: unsupported host arch %r" % arch)
 
+# tar.bzl's default mtime, so every archive built here carries the same one.
+_SYSROOT_TAR_TIME = 1672560000
+
+def _normalized_mode(line):
+    """An mtree line with its mode rewritten independently of the fetcher's umask.
+
+    Directories and executables 0755, other files 0644, symlinks 0777: the
+    unpacked tree's own modes follow the umask of whoever fetched it.
+
+    Args:
+        line: one mtree entry, `<path> mode=<octal> type=<type> [link=<target>]`.
+
+    Returns:
+        The same entry with the normalized mode.
+    """
+    fields = line.split(" ")
+    kind = [f for f in fields if f.startswith("type=")][0][len("type="):]
+    old = [f for f in fields if f.startswith("mode=")][0][len("mode="):]
+    if kind == "link":
+        mode = "0777"
+    elif kind == "dir" or int(old, 8) & 0o111:
+        mode = "0755"
+    else:
+        mode = "0644"
+    return " ".join([f if not f.startswith("mode=") else "mode=" + mode for f in fields])
+
 def _make_sysroot_tar(rctx, arch_dir):
     """Snapshot `arch_dir` as `<arch_dir>/sysroot.tar`.
 
@@ -149,21 +175,55 @@ def _make_sysroot_tar(rctx, arch_dir):
     sysroot-absolute targets are preserved verbatim and resolve correctly after
     a clean `tar -xf`.
 
+    REPRODUCIBLE, because it is an action input: every compile against the
+    sysroot hashes it, so a tar that differs per fetch gives every machine (and
+    every fresh output base) its own action keys, and a shared remote cache
+    never hits across them. Archived straight from the tree it carried the
+    unpack time, the fetching user as owner, and readdir order. Instead, as
+    `_symlinks_tar` in stackgres-cloud's //oci does: list the tree as an mtree
+    with only type, mode and link target, sort it, pin owner root and tar.bzl's
+    timestamp, and archive from that list.
+
     Args:
         rctx: A `repository_ctx`.
         arch_dir: Hub-relative path for the per-arch sysroot tree.
     """
     out = "%s/sysroot.tar" % arch_dir
-    bsdtar = rctx.path(_BSDTAR_LABELS[_host_arch(rctx)])
-    result = rctx.execute([
-        str(bsdtar),
+    bsdtar = str(rctx.path(_BSDTAR_LABELS[_host_arch(rctx)]))
+    listing = rctx.execute([
+        bsdtar,
         "--create",
-        "--file=%s" % out,
+        "--format=mtree",
+        "--options=!all,type,mode,link",
+        "--file=-",
         "--exclude=./sysroot.tar",
         "-C",
         arch_dir,
         ".",
     ])
+    if listing.return_code != 0:
+        fail("//sysroots/apt: bsdtar could not list %s\n%s" % (arch_dir, listing.stderr))
+    entries = sorted([
+        _normalized_mode(line)
+        for line in listing.stdout.splitlines()
+        if line and not line.startswith("#")
+    ])
+
+    # Outside `arch_dir`, so it is never part of the sysroot tree itself.
+    mtree = "_sysroot_tar/%s.mtree" % arch_dir.replace("/", "_")
+    rctx.file(mtree, "#mtree\n" + "".join([
+        "%s uid=0 gid=0 time=%d\n" % (entry, _SYSROOT_TAR_TIME)
+        for entry in entries
+    ]))
+    result = rctx.execute([
+        bsdtar,
+        "--create",
+        "--file=%s" % out,
+        "-C",
+        arch_dir,
+        "@%s" % rctx.path(mtree),
+    ])
+    rctx.delete(mtree)
     if result.return_code != 0:
         fail(
             "//sysroots/apt: bsdtar failed for %s\nstdout:\n%s\nstderr:\n%s" % (
