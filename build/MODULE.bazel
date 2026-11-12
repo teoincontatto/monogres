@@ -145,7 +145,7 @@ RELEASES = {
         "version": "12",
     },
     "13": {
-        "apt_snapshot": "20260316T000000Z",
+        "apt_snapshot": "20261112T000000Z",
         "codename": "trixie",
         "gcc_major": "14",
         "llvm_major": "19",

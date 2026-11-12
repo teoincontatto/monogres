@@ -177,7 +177,7 @@ RELEASES = {
         "version": "12",
     },
     "13": {
-        "apt_snapshot": "20260316T000000Z",
+        "apt_snapshot": "20261112T000000Z",
         "llvm_major": "19",
         "llvm_version": "19.1.7",
         "version": "13",
