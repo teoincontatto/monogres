@@ -104,6 +104,21 @@ if [[ ! -z "$DEPS_HERMETIC_SANDBOX" ]]; then
 fi
 EOF
 
+# Podman for image tests that run on the remote workers: rootless, as the uid
+# the Buildbarn runner executes actions as (`nobody`), each test on a store of
+# its own loaded from the image tarball it takes as input -- no daemon, no
+# registry. newuidmap/newgidmap (uidmap) grant the sub-ID range below, so an
+# image's own users (postgres 1001, ...) map; catatonit is the rootless pause
+# process. The worker's `runner` container must be privileged for containers to
+# start: a private PID namespace needs a fresh /proc, which the kernel refuses
+# under the masked /proc of an ordinary pod.
+RUN /bin/bash <<EOF
+$APT_INSTALL
+apt_install podman crun uidmap catatonit
+echo "nobody:100000:65536" >> /etc/subuid
+echo "nobody:100000:65536" >> /etc/subgid
+EOF
+
 # Busybox-substitution symlinks for the compression-tool + awk surface
 # rules_distroless's apt_deb_repository shells out to at load phase
 # (Debian snapshot Package index decompression for any of .xz/.gz/.bz2)
