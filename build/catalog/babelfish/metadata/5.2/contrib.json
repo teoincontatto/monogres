@@ -15,6 +15,49 @@
     "trusted": false,
     "relocatable": true
   },
+  "babelfishpg_common": {
+    "default_version": "@EXTVERSION@",
+    "comment": "Transact SQL Datatype Support",
+    "module_pathname": "@MODULEPATH@",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "babelfishpg_money": {
+    "default_version": "1.1.0",
+    "comment": "babelfishpg_money",
+    "module_pathname": "$libdir/babelfishpg_money",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  },
+  "babelfishpg_tds": {
+    "default_version": "1.0.0",
+    "comment": "TDS protocol extension",
+    "module_pathname": "$libdir/babelfishpg_tds",
+    "requires": ["babelfishpg_tsql"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "babelfishpg_tsql": {
+    "default_version": "@EXTVERSION@",
+    "comment": "Transact SQL compatibility",
+    "module_pathname": "@MODULEPATH@",
+    "requires": ["uuid-ossp", "babelfishpg_common"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "babelfishpg_unit": {
+    "default_version": "1.0.0",
+    "comment": "Unit testing framework for babelfish",
+    "module_pathname": "$libdir/babelfishpg_unit",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "babelfishpg_unit"
+  },
   "bloom": {
     "default_version": "1.0",
     "comment": "bloom access method - signature file based index",

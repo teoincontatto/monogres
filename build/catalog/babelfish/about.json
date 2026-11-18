@@ -41,43 +41,96 @@
       },
       "babelfishpg_common": {
         "description": "Transact SQL Datatype Support",
+        "long_description": "Transact SQL Datatype Support",
         "license": "Apache-2.0",
         "repository": {
           "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
         },
-        "ref": "BABEL_5_6_0"
+        "ref": "BABEL_5_6_0",
+        "control": {
+          "babelfishpg_common": {
+            "default_version": "5.6.0",
+            "module_pathname": "$libdir/babelfishpg_common-5",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": true
+          }
+        }
       },
       "babelfishpg_money": {
         "description": "Money data types for Babelfish",
+        "long_description": "babelfishpg_money",
         "license": "Apache-2.0",
         "repository": {
           "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
         },
-        "ref": "BABEL_5_6_0"
+        "ref": "BABEL_5_6_0",
+        "control": {
+          "babelfishpg_money": {
+            "default_version": "1.1.0",
+            "module_pathname": "$libdir/babelfishpg_money",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": false
+          }
+        }
       },
       "babelfishpg_tds": {
         "description": "TDS protocol extension",
+        "long_description": "TDS protocol extension",
         "license": "Apache-2.0",
         "repository": {
           "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
         },
-        "ref": "BABEL_5_6_0"
+        "ref": "BABEL_5_6_0",
+        "control": {
+          "babelfishpg_tds": {
+            "default_version": "1.0.0",
+            "module_pathname": "$libdir/babelfishpg_tds",
+            "requires": ["babelfishpg_tsql"],
+            "superuser": true,
+            "trusted": false,
+            "relocatable": true
+          }
+        }
       },
       "babelfishpg_tsql": {
         "description": "Transact SQL compatibility",
+        "long_description": "Transact SQL compatibility",
         "license": "Apache-2.0",
         "repository": {
           "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
         },
-        "ref": "BABEL_5_6_0"
+        "ref": "BABEL_5_6_0",
+        "control": {
+          "babelfishpg_tsql": {
+            "default_version": "5.6.0",
+            "module_pathname": "$libdir/babelfishpg_tsql-5",
+            "requires": ["uuid-ossp", "babelfishpg_common"],
+            "superuser": true,
+            "trusted": false,
+            "relocatable": true
+          }
+        }
       },
       "babelfishpg_unit": {
         "description": "Unit testing framework for babelfish",
+        "long_description": "Unit testing framework for babelfish",
         "license": "Apache-2.0",
         "repository": {
           "url": "https://github.com/babelfish-for-postgresql/babelfish_extensions"
         },
-        "ref": "BABEL_5_6_0"
+        "ref": "BABEL_5_6_0",
+        "control": {
+          "babelfishpg_unit": {
+            "default_version": "1.0.0",
+            "module_pathname": "$libdir/babelfishpg_unit",
+            "superuser": true,
+            "trusted": false,
+            "relocatable": false,
+            "schema": "babelfishpg_unit"
+          }
+        }
       },
       "bloom": {
         "description": "bloom access method - signature file based index",
@@ -904,7 +957,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_5_4_0__PG_17_7/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_5_4_0"
+          "ref": "BABEL_5_4_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "5.4.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_5_4_0"
@@ -913,7 +971,12 @@
           "ref": "BABEL_5_4_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_5_4_0"
+          "ref": "BABEL_5_4_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "5.4.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_5_4_0"
@@ -925,7 +988,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_5_3_0__PG_17_6/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_5_3_0"
+          "ref": "BABEL_5_3_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "5.3.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_5_3_0"
@@ -934,7 +1002,12 @@
           "ref": "BABEL_5_3_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_5_3_0"
+          "ref": "BABEL_5_3_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "5.3.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_5_3_0"
@@ -946,7 +1019,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_5_2_0__PG_17_5/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_5_2_0"
+          "ref": "BABEL_5_2_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "5.2.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_5_2_0"
@@ -955,7 +1033,12 @@
           "ref": "BABEL_5_2_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_5_2_0"
+          "ref": "BABEL_5_2_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "5.2.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_5_2_0"
@@ -967,7 +1050,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_5_1_0__PG_17_4/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_5_1_0"
+          "ref": "BABEL_5_1_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "5.1.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_5_1_0"
@@ -976,7 +1064,12 @@
           "ref": "BABEL_5_1_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_5_1_0"
+          "ref": "BABEL_5_1_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "5.1.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_5_1_0"
@@ -1010,7 +1103,13 @@
           }
         },
         "babelfishpg_common": {
-          "ref": "BABEL_4_10_0"
+          "ref": "BABEL_4_10_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.10.0",
+              "module_pathname": "$libdir/babelfishpg_common-4"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_10_0"
@@ -1019,7 +1118,13 @@
           "ref": "BABEL_4_10_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_10_0"
+          "ref": "BABEL_4_10_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.10.0",
+              "module_pathname": "$libdir/babelfishpg_tsql-4"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_10_0"
@@ -1066,7 +1171,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_8_0__PG_16_11/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_8_0"
+          "ref": "BABEL_4_8_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.8.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_8_0"
@@ -1075,7 +1185,12 @@
           "ref": "BABEL_4_8_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_8_0"
+          "ref": "BABEL_4_8_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.8.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_8_0"
@@ -1087,7 +1202,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_7_0__PG_16_10/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_7_0"
+          "ref": "BABEL_4_7_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.7.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_7_0"
@@ -1096,7 +1216,12 @@
           "ref": "BABEL_4_7_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_7_0"
+          "ref": "BABEL_4_7_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.7.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_7_0"
@@ -1108,7 +1233,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_6_0__PG_16_9/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_6_0"
+          "ref": "BABEL_4_6_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.6.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_6_0"
@@ -1117,7 +1247,12 @@
           "ref": "BABEL_4_6_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_6_0"
+          "ref": "BABEL_4_6_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.6.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_6_0"
@@ -1129,7 +1264,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_5_0__PG_16_8/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_5_0"
+          "ref": "BABEL_4_5_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.5.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_5_0"
@@ -1138,7 +1278,12 @@
           "ref": "BABEL_4_5_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_5_0"
+          "ref": "BABEL_4_5_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.5.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_5_0"
@@ -1150,7 +1295,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_4_0__PG_16_6/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_4_0"
+          "ref": "BABEL_4_4_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.4.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_4_0"
@@ -1159,7 +1309,12 @@
           "ref": "BABEL_4_4_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_4_0"
+          "ref": "BABEL_4_4_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.4.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_4_0"
@@ -1178,7 +1333,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_3_0__PG_16_4/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_3_0"
+          "ref": "BABEL_4_3_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.3.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_3_0"
@@ -1187,7 +1347,12 @@
           "ref": "BABEL_4_3_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_3_0"
+          "ref": "BABEL_4_3_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.3.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_3_0"
@@ -1199,7 +1364,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_2_0__PG_16_3/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_2_0"
+          "ref": "BABEL_4_2_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.2.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_2_0"
@@ -1208,7 +1378,12 @@
           "ref": "BABEL_4_2_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_2_0"
+          "ref": "BABEL_4_2_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.2.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_2_0"
@@ -1220,7 +1395,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_1_1__PG_16_2/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_1_1"
+          "ref": "BABEL_4_1_1",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.1.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_1_1"
@@ -1229,7 +1409,12 @@
           "ref": "BABEL_4_1_1"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_1_1"
+          "ref": "BABEL_4_1_1",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.1.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_1_1"
@@ -1241,7 +1426,12 @@
       "readme": "https://raw.githubusercontent.com/babelfish-for-postgresql/postgresql_modified_for_babelfish/BABEL_4_0_0__PG_16_1/README.md",
       "contrib": {
         "babelfishpg_common": {
-          "ref": "BABEL_4_0_0"
+          "ref": "BABEL_4_0_0",
+          "control": {
+            "babelfishpg_common": {
+              "default_version": "4.0.0"
+            }
+          }
         },
         "babelfishpg_money": {
           "ref": "BABEL_4_0_0"
@@ -1250,7 +1440,12 @@
           "ref": "BABEL_4_0_0"
         },
         "babelfishpg_tsql": {
-          "ref": "BABEL_4_0_0"
+          "ref": "BABEL_4_0_0",
+          "control": {
+            "babelfishpg_tsql": {
+              "default_version": "4.0.0"
+            }
+          }
         },
         "babelfishpg_unit": {
           "ref": "BABEL_4_0_0"
