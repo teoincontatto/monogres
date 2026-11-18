@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "5.0",
+    "version": "5.6",
     "description": "Open Source Oracle Compatible PostgreSQL.",
     "long_description": "Open Source Oracle Compatible PostgreSQL.",
     "homepage": "https://ivorysql.org",
@@ -15,8 +15,8 @@
     "repository": {
       "url": "https://github.com/IvorySQL/IvorySQL"
     },
-    "ref": "IvorySQL_5.0",
-    "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.0/README.md",
+    "ref": "IvorySQL_5.6",
+    "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.6/README.md",
     "contrib": {
       "amcheck": {
         "description": "functions for verifying relation integrity",
@@ -971,9 +971,25 @@
     }
   },
   "versions": {
-    "4.0": {
-      "ref": "IvorySQL_4.0",
-      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.0/README.md",
+    "5.4": {
+      "ref": "IvorySQL_5.4",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.4/README.md"
+    },
+    "5.3": {
+      "ref": "IvorySQL_5.3",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.3/README.md"
+    },
+    "5.1": {
+      "ref": "IvorySQL_5.1",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.1/README.md"
+    },
+    "5.0": {
+      "ref": "IvorySQL_5.0",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_5.0/README.md"
+    },
+    "4.6": {
+      "ref": "IvorySQL_4.6",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.6/README.md",
       "contrib": {
         "gb18030_2022": null,
         "pg_logicalinspect": null,
@@ -995,13 +1011,6 @@
           "control": {
             "citext": {
               "default_version": "1.6"
-            }
-          }
-        },
-        "earthdistance": {
-          "control": {
-            "earthdistance": {
-              "default_version": "1.1"
             }
           }
         },
@@ -1070,9 +1079,34 @@
         }
       }
     },
-    "3.0": {
-      "ref": "IvorySQL_3.0",
-      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.0/README.md",
+    "4.5": {
+      "ref": "IvorySQL_4.5",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.5/README.md"
+    },
+    "4.4": {
+      "ref": "IvorySQL_4.4",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.4/README.md"
+    },
+    "4.2": {
+      "ref": "IvorySQL_4.2",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.2/README.md",
+      "contrib": {
+        "earthdistance": {
+          "control": {
+            "earthdistance": {
+              "default_version": "1.1"
+            }
+          }
+        }
+      }
+    },
+    "4.0": {
+      "ref": "IvorySQL_4.0",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_4.0/README.md"
+    },
+    "3.4": {
+      "ref": "IvorySQL_3.4",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.4/README.md",
       "contrib": {
         "pg_get_functiondef": null,
         "adminpack": {
@@ -1133,6 +1167,22 @@
           }
         }
       }
+    },
+    "3.3": {
+      "ref": "IvorySQL_3.3",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.3/README.md"
+    },
+    "3.2": {
+      "ref": "IvorySQL_3.2",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.2/README.md"
+    },
+    "3.1": {
+      "ref": "IvorySQL_3.1",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.1/README.md"
+    },
+    "3.0": {
+      "ref": "IvorySQL_3.0",
+      "readme": "https://raw.githubusercontent.com/IvorySQL/IvorySQL/IvorySQL_3.0/README.md"
     }
   }
 }

@@ -14,11 +14,47 @@
   },
   "versions": {
     "pin": {
+      "5.6": {
+        "tag": "IvorySQL_5.6"
+      },
+      "5.4": {
+        "tag": "IvorySQL_5.4"
+      },
+      "5.3": {
+        "tag": "IvorySQL_5.3"
+      },
+      "5.1": {
+        "tag": "IvorySQL_5.1"
+      },
       "5.0": {
         "tag": "IvorySQL_5.0"
       },
+      "4.6": {
+        "tag": "IvorySQL_4.6"
+      },
+      "4.5": {
+        "tag": "IvorySQL_4.5"
+      },
+      "4.4": {
+        "tag": "IvorySQL_4.4"
+      },
+      "4.2": {
+        "tag": "IvorySQL_4.2"
+      },
       "4.0": {
         "tag": "IvorySQL_4.0"
+      },
+      "3.4": {
+        "tag": "IvorySQL_3.4"
+      },
+      "3.3": {
+        "tag": "IvorySQL_3.3"
+      },
+      "3.2": {
+        "tag": "IvorySQL_3.2"
+      },
+      "3.1": {
+        "tag": "IvorySQL_3.1"
       },
       "3.0": {
         "tag": "IvorySQL_3.0"
@@ -37,17 +73,89 @@
   "metadata": {
     "flavor": "ivorysql",
     "introspect": {
+      "5.6": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~5.6~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~5.6~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~5.6~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~5.6~regular.json"
+      },
+      "5.4": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~5.4~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~5.4~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~5.4~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~5.4~regular.json"
+      },
+      "5.3": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~5.3~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~5.3~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~5.3~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~5.3~regular.json"
+      },
+      "5.1": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~5.1~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~5.1~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~5.1~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~5.1~regular.json"
+      },
       "5.0": {
         "barebones": "//catalog/ivorysql/introspect:ivorysql~5.0~barebones.json",
         "full": "//catalog/ivorysql/introspect:ivorysql~5.0~full.json",
         "minimal": "//catalog/ivorysql/introspect:ivorysql~5.0~minimal.json",
         "regular": "//catalog/ivorysql/introspect:ivorysql~5.0~regular.json"
       },
+      "4.6": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~4.6~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~4.6~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~4.6~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~4.6~regular.json"
+      },
+      "4.5": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~4.5~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~4.5~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~4.5~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~4.5~regular.json"
+      },
+      "4.4": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~4.4~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~4.4~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~4.4~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~4.4~regular.json"
+      },
+      "4.2": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~4.2~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~4.2~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~4.2~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~4.2~regular.json"
+      },
       "4.0": {
         "barebones": "//catalog/ivorysql/introspect:ivorysql~4.0~barebones.json",
         "full": "//catalog/ivorysql/introspect:ivorysql~4.0~full.json",
         "minimal": "//catalog/ivorysql/introspect:ivorysql~4.0~minimal.json",
         "regular": "//catalog/ivorysql/introspect:ivorysql~4.0~regular.json"
+      },
+      "3.4": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~3.4~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~3.4~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~3.4~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~3.4~regular.json"
+      },
+      "3.3": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~3.3~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~3.3~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~3.3~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~3.3~regular.json"
+      },
+      "3.2": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~3.2~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~3.2~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~3.2~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~3.2~regular.json"
+      },
+      "3.1": {
+        "barebones": "//catalog/ivorysql/introspect:ivorysql~3.1~barebones.json",
+        "full": "//catalog/ivorysql/introspect:ivorysql~3.1~full.json",
+        "minimal": "//catalog/ivorysql/introspect:ivorysql~3.1~minimal.json",
+        "regular": "//catalog/ivorysql/introspect:ivorysql~3.1~regular.json"
       },
       "3.0": {
         "barebones": "//catalog/ivorysql/introspect:ivorysql~3.0~barebones.json",
@@ -219,8 +327,20 @@
     },
     "pg_base_version": {
       "3.0": "16.0",
+      "3.1": "16.1",
+      "3.2": "16.2",
+      "3.3": "16.3",
+      "3.4": "16.4",
       "4.0": "17.0",
-      "5.0": "18.0"
+      "4.2": "17.2",
+      "4.4": "17.4",
+      "4.5": "17.5",
+      "4.6": "17.6",
+      "5.0": "18.0",
+      "5.1": "18.1",
+      "5.3": "18.3",
+      "5.4": "18.4",
+      "5.6": "18.6"
     },
     "patches": [
       {
@@ -245,7 +365,7 @@
       },
       {
         "label": "//catalog/ivorysql/patches:0005-3.0-hack-remove-execroot-from-CC.patch",
-        "spec": "3.0/*"
+        "spec": ">=3.0,<4.0/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0005-4.0-hack-remove-execroot-from-CC.patch",
@@ -253,11 +373,15 @@
       },
       {
         "label": "//catalog/ivorysql/patches:0006-3.0-feat-add-build-option-to-disable-contrib-builds.patch",
-        "spec": "3.0/*"
+        "spec": ">=3.0,<4.0/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0006-4.0-feat-add-build-option-to-disable-contrib-builds.patch",
-        "spec": "4.0/*"
+        "spec": ">=4.0,<4.4/*"
+      },
+      {
+        "label": "//catalog/ivorysql/patches:0006-4.4-feat-add-build-option-to-disable-contrib-builds.patch",
+        "spec": ">=4.4,<5.0/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0006-5.0-feat-add-build-option-to-disable-contrib-builds.patch",
@@ -281,7 +405,7 @@
       },
       {
         "label": "//catalog/ivorysql/patches:0011-3.0-fix-contrib-ivorysql_ora-gensql-pl-resolve-paths-relative-to-script.patch",
-        "spec": "3.0/*"
+        "spec": ">=3.0,<4.0/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0011-4.0-fix-contrib-ivorysql_ora-gensql-pl-resolve-paths-relative-to-script.patch",
@@ -289,11 +413,11 @@
       },
       {
         "label": "//catalog/ivorysql/patches:0012-3.0-fix-test-ssl-guard-openssl-path-behind-found.patch",
-        "spec": "3.0/*"
+        "spec": ">=3.0,<3.2/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0013-5.0-fix-conversion_procs-add-gb18030_and_gbk-meson.patch",
-        "spec": "5.0/*"
+        "spec": ">=5.0/*"
       },
       {
         "label": "//catalog/ivorysql/patches:0014-4.0-fix-test-jsonb_jsonpath-pin-time_tz-utc-offset.patch",
@@ -302,6 +426,10 @@
       {
         "label": "//catalog/ivorysql/patches:0015-3.0-backport-meson-plpython-honor-python-build-option.patch",
         "spec": "3.0/*"
+      },
+      {
+        "label": "//catalog/ivorysql/patches:0015-3.1-backport-meson-plpython-honor-python-build-option.patch",
+        "spec": "3.1/*"
       }
     ],
     "deps": {

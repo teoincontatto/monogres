@@ -1,0 +1,544 @@
+{
+  "adminpack": {
+    "default_version": "2.1",
+    "comment": "administrative functions for PostgreSQL",
+    "module_pathname": "$libdir/adminpack",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "amcheck": {
+    "default_version": "1.3",
+    "comment": "functions for verifying relation integrity",
+    "module_pathname": "$libdir/amcheck",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "autoinc": {
+    "default_version": "1.0",
+    "comment": "functions for autoincrementing fields",
+    "module_pathname": "$libdir/autoinc",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "bloom": {
+    "default_version": "1.0",
+    "comment": "bloom access method - signature file based index",
+    "module_pathname": "$libdir/bloom",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "bool_plperl": {
+    "default_version": "1.0",
+    "comment": "transform between bool and plperl",
+    "module_pathname": "$libdir/bool_plperl",
+    "requires": ["plperl"],
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "bool_plperlu": {
+    "default_version": "1.0",
+    "comment": "transform between bool and plperlu",
+    "module_pathname": "$libdir/bool_plperl",
+    "requires": ["plperlu"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "btree_gin": {
+    "default_version": "1.3",
+    "comment": "support for indexing common datatypes in GIN",
+    "module_pathname": "$libdir/btree_gin",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "btree_gist": {
+    "default_version": "1.7",
+    "comment": "support for indexing common datatypes in GiST",
+    "module_pathname": "$libdir/btree_gist",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "citext": {
+    "default_version": "1.6",
+    "comment": "data type for case-insensitive character strings",
+    "module_pathname": "$libdir/citext",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "cube": {
+    "default_version": "1.5",
+    "comment": "data type for multidimensional cubes",
+    "module_pathname": "$libdir/cube",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "dblink": {
+    "default_version": "1.2",
+    "comment": "connect to other PostgreSQL databases from within a database",
+    "module_pathname": "$libdir/dblink",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "dict_int": {
+    "default_version": "1.0",
+    "comment": "text search dictionary template for integers",
+    "module_pathname": "$libdir/dict_int",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "dict_xsyn": {
+    "default_version": "1.0",
+    "comment": "text search dictionary template for extended synonym processing",
+    "module_pathname": "$libdir/dict_xsyn",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "earthdistance": {
+    "default_version": "1.1",
+    "comment": "calculate great-circle distances on the surface of the Earth",
+    "module_pathname": "$libdir/earthdistance",
+    "requires": ["cube"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "file_fdw": {
+    "default_version": "1.0",
+    "comment": "foreign-data wrapper for flat file access",
+    "module_pathname": "$libdir/file_fdw",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "fuzzystrmatch": {
+    "default_version": "1.2",
+    "comment": "determine similarities and distance between strings",
+    "module_pathname": "$libdir/fuzzystrmatch",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "hstore": {
+    "default_version": "1.8",
+    "comment": "data type for storing sets of (key, value) pairs",
+    "module_pathname": "$libdir/hstore",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "hstore_plperl": {
+    "default_version": "1.0",
+    "comment": "transform between hstore and plperl",
+    "module_pathname": "$libdir/hstore_plperl",
+    "requires": ["hstore", "plperl"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "hstore_plperlu": {
+    "default_version": "1.0",
+    "comment": "transform between hstore and plperlu",
+    "module_pathname": "$libdir/hstore_plperl",
+    "requires": ["hstore", "plperlu"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "hstore_plpython3u": {
+    "default_version": "1.0",
+    "comment": "transform between hstore and plpython3u",
+    "module_pathname": "$libdir/hstore_plpython3",
+    "requires": ["hstore", "plpython3u"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "insert_username": {
+    "default_version": "1.0",
+    "comment": "functions for tracking who changed a table",
+    "module_pathname": "$libdir/insert_username",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "intagg": {
+    "default_version": "1.1",
+    "comment": "integer aggregator and enumerator (obsolete)",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "intarray": {
+    "default_version": "1.5",
+    "comment": "functions, operators, and index support for 1-D arrays of integers",
+    "module_pathname": "$libdir/_int",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "isn": {
+    "default_version": "1.2",
+    "comment": "data types for international product numbering standards",
+    "module_pathname": "$libdir/isn",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "ivorysql_ora": {
+    "default_version": "1.0",
+    "comment": "Oracle Compatible extenison on Postgres Database",
+    "module_pathname": "$libdir/ivorysql_ora",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "sys"
+  },
+  "jsonb_plperl": {
+    "default_version": "1.0",
+    "comment": "transform between jsonb and plperl",
+    "module_pathname": "$libdir/jsonb_plperl",
+    "requires": ["plperl"],
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "jsonb_plperlu": {
+    "default_version": "1.0",
+    "comment": "transform between jsonb and plperlu",
+    "module_pathname": "$libdir/jsonb_plperl",
+    "requires": ["plperlu"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "jsonb_plpython3u": {
+    "default_version": "1.0",
+    "comment": "transform between jsonb and plpython3u",
+    "module_pathname": "$libdir/jsonb_plpython3",
+    "requires": ["plpython3u"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "lo": {
+    "default_version": "1.1",
+    "comment": "Large Object maintenance",
+    "module_pathname": "$libdir/lo",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "ltree": {
+    "default_version": "1.2",
+    "comment": "data type for hierarchical tree-like structures",
+    "module_pathname": "$libdir/ltree",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "ltree_plpython3u": {
+    "default_version": "1.0",
+    "comment": "transform between ltree and plpython3u",
+    "module_pathname": "$libdir/ltree_plpython3",
+    "requires": ["ltree", "plpython3u"],
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "moddatetime": {
+    "default_version": "1.0",
+    "comment": "functions for tracking last modification time",
+    "module_pathname": "$libdir/moddatetime",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "old_snapshot": {
+    "default_version": "1.0",
+    "comment": "utilities in support of old_snapshot_threshold",
+    "module_pathname": "$libdir/old_snapshot",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "ora_btree_gin": {
+    "default_version": "1.0",
+    "comment": "support for indexing oracle datatypes in GIN",
+    "module_pathname": "$libdir/ora_btree_gin",
+    "requires": ["ivorysql_ora"],
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "sys"
+  },
+  "ora_btree_gist": {
+    "default_version": "1.0",
+    "comment": "support for oracle indexing common datatypes in GiST",
+    "module_pathname": "$libdir/ora_btree_gist",
+    "requires": ["ivorysql_ora"],
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "sys"
+  },
+  "pageinspect": {
+    "default_version": "1.12",
+    "comment": "inspect the contents of database pages at a low level",
+    "module_pathname": "$libdir/pageinspect",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_buffercache": {
+    "default_version": "1.4",
+    "comment": "examine the shared buffer cache",
+    "module_pathname": "$libdir/pg_buffercache",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_freespacemap": {
+    "default_version": "1.2",
+    "comment": "examine the free space map (FSM)",
+    "module_pathname": "$libdir/pg_freespacemap",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_prewarm": {
+    "default_version": "1.2",
+    "comment": "prewarm relation data",
+    "module_pathname": "$libdir/pg_prewarm",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_stat_statements": {
+    "default_version": "1.10",
+    "comment": "track planning and execution statistics of all SQL statements executed",
+    "module_pathname": "$libdir/pg_stat_statements",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_surgery": {
+    "default_version": "1.0",
+    "comment": "extension to perform surgery on a damaged relation",
+    "module_pathname": "$libdir/pg_surgery",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_trgm": {
+    "default_version": "1.6",
+    "comment": "text similarity measurement and index searching based on trigrams",
+    "module_pathname": "$libdir/pg_trgm",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "pg_visibility": {
+    "default_version": "1.2",
+    "comment": "examine the visibility map (VM) and page-level visibility info",
+    "module_pathname": "$libdir/pg_visibility",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pg_walinspect": {
+    "default_version": "1.1",
+    "comment": "functions to inspect contents of PostgreSQL Write-Ahead Log",
+    "module_pathname": "$libdir/pg_walinspect",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pgcrypto": {
+    "default_version": "1.3",
+    "comment": "cryptographic functions",
+    "module_pathname": "$libdir/pgcrypto",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "pgrowlocks": {
+    "default_version": "1.2",
+    "comment": "show row-level locking information",
+    "module_pathname": "$libdir/pgrowlocks",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "pgstattuple": {
+    "default_version": "1.5",
+    "comment": "show tuple-level statistics",
+    "module_pathname": "$libdir/pgstattuple",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "plisql": {
+    "default_version": "1.0",
+    "comment": "PL/iSQL procedural language",
+    "module_pathname": "$libdir/plisql",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "plperl": {
+    "default_version": "1.0",
+    "comment": "PL/Perl procedural language",
+    "module_pathname": "$libdir/plperl",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "plperlu": {
+    "default_version": "1.0",
+    "comment": "PL/PerlU untrusted procedural language",
+    "module_pathname": "$libdir/plperl",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "plpgsql": {
+    "default_version": "1.0",
+    "comment": "PL/pgSQL procedural language",
+    "module_pathname": "$libdir/plpgsql",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "plpython3u": {
+    "default_version": "1.0",
+    "comment": "PL/Python3U untrusted procedural language",
+    "module_pathname": "$libdir/plpython3",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "pltcl": {
+    "default_version": "1.0",
+    "comment": "PL/Tcl procedural language",
+    "module_pathname": "$libdir/pltcl",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "pltclu": {
+    "default_version": "1.0",
+    "comment": "PL/TclU untrusted procedural language",
+    "module_pathname": "$libdir/pltcl",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pg_catalog"
+  },
+  "postgres_fdw": {
+    "default_version": "1.1",
+    "comment": "foreign-data wrapper for remote PostgreSQL servers",
+    "module_pathname": "$libdir/postgres_fdw",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "refint": {
+    "default_version": "1.0",
+    "comment": "functions for implementing referential integrity (obsolete)",
+    "module_pathname": "$libdir/refint",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "seg": {
+    "default_version": "1.4",
+    "comment": "data type for representing line segments or floating-point intervals",
+    "module_pathname": "$libdir/seg",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "sslinfo": {
+    "default_version": "1.2",
+    "comment": "information about SSL certificates",
+    "module_pathname": "$libdir/sslinfo",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": true
+  },
+  "tablefunc": {
+    "default_version": "1.0",
+    "comment": "functions that manipulate whole tables, including crosstab",
+    "module_pathname": "$libdir/tablefunc",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "tcn": {
+    "default_version": "1.0",
+    "comment": "Triggered change notifications",
+    "module_pathname": "$libdir/tcn",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "tsm_system_rows": {
+    "default_version": "1.0",
+    "comment": "TABLESAMPLE method which accepts number of rows as a limit",
+    "module_pathname": "$libdir/tsm_system_rows",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "tsm_system_time": {
+    "default_version": "1.0",
+    "comment": "TABLESAMPLE method which accepts time in milliseconds as a limit",
+    "module_pathname": "$libdir/tsm_system_time",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "unaccent": {
+    "default_version": "1.1",
+    "comment": "text search dictionary that removes accents",
+    "module_pathname": "$libdir/unaccent",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "uuid-ossp": {
+    "default_version": "1.1",
+    "comment": "generate universally unique identifiers (UUIDs)",
+    "module_pathname": "$libdir/uuid-ossp",
+    "superuser": true,
+    "trusted": true,
+    "relocatable": true
+  },
+  "xml2": {
+    "default_version": "1.1",
+    "comment": "XPath querying and XSLT",
+    "module_pathname": "$libdir/pgxml",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
+}
