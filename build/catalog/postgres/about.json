@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "18.6",
+    "version": "18.7",
     "description": "The World's Most Advanced Open Source Relational Database",
     "long_description": "PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.",
     "homepage": "https://www.postgresql.org/",
@@ -8,8 +8,8 @@
     "repository": {
       "url": "https://github.com/postgres/postgres"
     },
-    "ref": "REL_18_6",
-    "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_6/README.md",
+    "ref": "REL_18_7",
+    "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_7/README.md",
     "contrib": {
       "amcheck": {
         "description": "functions for verifying relation integrity",
@@ -873,6 +873,10 @@
     }
   },
   "versions": {
+    "18.6": {
+      "ref": "REL_18_6",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_6/README.md"
+    },
     "18.4": {
       "ref": "REL_18_4",
       "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_4/README.md"
@@ -893,9 +897,9 @@
       "ref": "REL_18_0",
       "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_18_0/README.md"
     },
-    "17.11": {
-      "ref": "REL_17_11",
-      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_11/README.md",
+    "17.12": {
+      "ref": "REL_17_12",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_12/README.md",
       "contrib": {
         "pg_logicalinspect": null,
         "amcheck": {
@@ -984,6 +988,10 @@
         }
       }
     },
+    "17.11": {
+      "ref": "REL_17_11",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_11/README.md"
+    },
     "17.10": {
       "ref": "REL_17_10",
       "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_10/README.md"
@@ -1037,9 +1045,9 @@
       "ref": "REL_17_0",
       "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_17_0/README.md"
     },
-    "16.15": {
-      "ref": "REL_16_15",
-      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_15/README",
+    "16.16": {
+      "ref": "REL_16_16",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_16/README",
       "contrib": {
         "adminpack": {
           "description": "administrative functions for PostgreSQL",
@@ -1106,6 +1114,10 @@
           }
         }
       }
+    },
+    "16.15": {
+      "ref": "REL_16_15",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_15/README"
     },
     "16.14": {
       "ref": "REL_16_14",
@@ -1176,9 +1188,9 @@
       "ref": "REL_16_0",
       "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_16_0/README"
     },
-    "15.19": {
-      "ref": "REL_15_19",
-      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_19/README",
+    "15.20": {
+      "ref": "REL_15_20",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_20/README",
       "contrib": {
         "fuzzystrmatch": {
           "control": {
@@ -1209,6 +1221,10 @@
           }
         }
       }
+    },
+    "15.19": {
+      "ref": "REL_15_19",
+      "readme": "https://raw.githubusercontent.com/postgres/postgres/REL_15_19/README"
     },
     "15.18": {
       "ref": "REL_15_18",

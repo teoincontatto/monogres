@@ -14,6 +14,9 @@
   },
   "versions": {
     "pin": {
+      "18.7": {
+        "tag": "REL_18_7"
+      },
       "18.6": {
         "tag": "REL_18_6"
       },
@@ -31,6 +34,9 @@
       },
       "18.0": {
         "tag": "REL_18_0"
+      },
+      "17.12": {
+        "tag": "REL_17_12"
       },
       "17.11": {
         "tag": "REL_17_11"
@@ -67,6 +73,9 @@
       },
       "17.0": {
         "tag": "REL_17_0"
+      },
+      "16.16": {
+        "tag": "REL_16_16"
       },
       "16.15": {
         "tag": "REL_16_15"
@@ -115,6 +124,9 @@
       },
       "16.0": {
         "tag": "REL_16_0"
+      },
+      "15.20": {
+        "tag": "REL_15_20"
       },
       "15.19": {
         "tag": "REL_15_19"
@@ -231,6 +243,12 @@
       }
     },
     "introspect": {
+      "18.7": {
+        "barebones": "//catalog/postgres/introspect:postgres~18.7~barebones.json",
+        "minimal": "//catalog/postgres/introspect:postgres~18.7~minimal.json",
+        "regular": "//catalog/postgres/introspect:postgres~18.7~regular.json",
+        "full": "//catalog/postgres/introspect:postgres~18.7~full.json"
+      },
       "18.6": {
         "barebones": "//catalog/postgres/introspect:postgres~18.6~barebones.json",
         "minimal": "//catalog/postgres/introspect:postgres~18.6~minimal.json",
@@ -266,6 +284,12 @@
         "minimal": "//catalog/postgres/introspect:postgres~18.0~minimal.json",
         "regular": "//catalog/postgres/introspect:postgres~18.0~regular.json",
         "full": "//catalog/postgres/introspect:postgres~18.0~full.json"
+      },
+      "17.12": {
+        "barebones": "//catalog/postgres/introspect:postgres~17.12~barebones.json",
+        "minimal": "//catalog/postgres/introspect:postgres~17.12~minimal.json",
+        "regular": "//catalog/postgres/introspect:postgres~17.12~regular.json",
+        "full": "//catalog/postgres/introspect:postgres~17.12~full.json"
       },
       "17.11": {
         "barebones": "//catalog/postgres/introspect:postgres~17.11~barebones.json",
@@ -338,6 +362,12 @@
         "minimal": "//catalog/postgres/introspect:postgres~17.0~minimal.json",
         "regular": "//catalog/postgres/introspect:postgres~17.0~regular.json",
         "full": "//catalog/postgres/introspect:postgres~17.0~full.json"
+      },
+      "16.16": {
+        "barebones": "//catalog/postgres/introspect:postgres~16.16~barebones.json",
+        "minimal": "//catalog/postgres/introspect:postgres~16.16~minimal.json",
+        "regular": "//catalog/postgres/introspect:postgres~16.16~regular.json",
+        "full": "//catalog/postgres/introspect:postgres~16.16~full.json"
       },
       "16.15": {
         "barebones": "//catalog/postgres/introspect:postgres~16.15~barebones.json",
@@ -434,6 +464,12 @@
         "minimal": "//catalog/postgres/introspect:postgres~16.0~minimal.json",
         "regular": "//catalog/postgres/introspect:postgres~16.0~regular.json",
         "full": "//catalog/postgres/introspect:postgres~16.0~full.json"
+      },
+      "15.20": {
+        "barebones": "//catalog/postgres/introspect:postgres~15.20~barebones.json",
+        "minimal": "//catalog/postgres/introspect:postgres~15.20~minimal.json",
+        "regular": "//catalog/postgres/introspect:postgres~15.20~regular.json",
+        "full": "//catalog/postgres/introspect:postgres~15.20~full.json"
       },
       "15.19": {
         "barebones": "//catalog/postgres/introspect:postgres~15.19~barebones.json",
