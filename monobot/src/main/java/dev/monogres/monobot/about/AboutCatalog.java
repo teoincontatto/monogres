@@ -23,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.SequencedMap;
+import java.util.SortedMap;
 import java.util.TreeMap;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
@@ -202,27 +203,13 @@ public class AboutCatalog {
       MonobotConfig monobotConfig, Path entryDir, JsonNode override) {
     var contribRefs = new TreeMap<String, Map<String, String>>();
 
-    orMissing(override)
-        .path("contrib")
-        .properties()
+    contribIndexes(monobotConfig, entryDir, override)
         .forEach(
-            field -> {
-              var index = field.getValue().path("repository").path("index");
-              if (!index.isTextual()) {
-                return;
-              }
-              RepoConfig repoConfig;
-              try {
-                repoConfig =
-                    objectMapper.readValue(
-                        entryDir.resolve(index.asText()).toFile(), RepoConfig.class);
-              } catch (IOException e) {
-                throw new RuntimeException(
-                    "[" + monobotConfig.label() + "]: " + index.asText() + " cannot be read", e);
-              }
-              var template = repoConfig.getSources().templates().getFirst();
+            (name, index) -> {
+              var template = index.repoConfig().getSources().templates().getFirst();
               var refs = new HashMap<String, String>();
-              repoConfig
+              index
+                  .repoConfig()
                   .getVersions()
                   .forEach(
                       (version, context) -> {
@@ -233,10 +220,61 @@ public class AboutCatalog {
                           refs.put(version.version(), ref);
                         }
                       });
-              contribRefs.put(field.getKey(), refs);
+              contribRefs.put(name, refs);
             });
 
     return contribRefs;
+  }
+
+  /// A download index beside a flavor's entry, named by its file, and what it reads.
+  public record ContribIndex(String file, RepoConfig repoConfig) {}
+
+  /// The contrib extensions a flavor builds out of a repository of its own, by name, each with the
+  /// download index the override names for it, as the newest of `versions` reads the override.
+  /// Empty for an entry that names none, which is every entry but a flavor's.
+  public SortedMap<String, ContribIndex> contribIndexes(
+      MonobotConfig monobotConfig, Path entryDir, List<Version> versions) {
+    var newest = versions.stream().max(Comparator.naturalOrder());
+    if (newest.isEmpty()) {
+      return new TreeMap<>();
+    }
+
+    return contribIndexes(
+        monobotConfig,
+        entryDir,
+        Layers.override(monobotConfig.about(), List.of(newest.get())).firstEntry().getValue());
+  }
+
+  private SortedMap<String, ContribIndex> contribIndexes(
+      MonobotConfig monobotConfig, Path entryDir, JsonNode override) {
+    var indexes = new TreeMap<String, ContribIndex>();
+    var read = new HashMap<String, ContribIndex>();
+
+    orMissing(override)
+        .path("contrib")
+        .properties()
+        .forEach(
+            field -> {
+              var index = field.getValue().path("repository").path("index");
+              if (!index.isTextual()) {
+                return;
+              }
+              indexes.put(
+                  field.getKey(),
+                  read.computeIfAbsent(
+                      index.asText(), file -> readIndex(monobotConfig, entryDir, file)));
+            });
+
+    return indexes;
+  }
+
+  private ContribIndex readIndex(MonobotConfig monobotConfig, Path entryDir, String file) {
+    try {
+      return new ContribIndex(
+          file, objectMapper.readValue(entryDir.resolve(file).toFile(), RepoConfig.class));
+    } catch (IOException e) {
+      throw new RuntimeException("[" + monobotConfig.label() + "]: " + file + " cannot be read", e);
+    }
   }
 
   /// The contrib control files of one version of a flavor, by extension name.

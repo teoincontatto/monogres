@@ -31,11 +31,16 @@ import java.nio.file.Path;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.SequencedMap;
+import java.util.SortedMap;
+import java.util.SortedSet;
 import java.util.TreeMap;
+import java.util.TreeSet;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -76,6 +81,18 @@ public class Fetch {
   private record Candidate(Version version, SequencedMap<String, String> context, URL url) {}
 
   private record Downloaded(Candidate candidate, String sha256, Path archivePath) {}
+
+  /// One version of a repository a flavor builds some of its contrib extensions from, as the
+  /// download index beside the entry names it: `names` are the extensions read from it, and
+  /// `sha256` what the index records the archive digests to.
+  private record IndexedCandidate(
+      String index, SortedSet<String> names, Version version, URL url, String sha256) {}
+
+  private record IndexedDownload(IndexedCandidate candidate, String sha256, Path archivePath) {}
+
+  /// What an entry's versions downloaded to, and the archives of the repositories its contrib
+  /// extensions are built from.
+  private record Downloads(List<Optional<Downloaded>> own, List<IndexedDownload> indexed) {}
 
   /// What one entry has to answer for once the rest of its versions are catalogued. Each is
   /// survivable per version and none is survivable per entry: a run that met one and said so only
@@ -291,6 +308,142 @@ public class Fetch {
                     .toList());
   }
 
+  /// The archives of the repositories a flavor builds some of its contrib extensions from, one per
+  /// flavor version among `candidates` that the download index lists. Every entry but a flavor's
+  /// names none. Kept in the cache under the entry, in a directory named after the index, so the
+  /// flavor's own archive and babelfish_extensions' are never the same path.
+  ///
+  /// Their control files are what `contrib.json` reports for those extensions: the flavor's own
+  /// archive carries none of them, and the build installs them from these.
+  private Future<List<IndexedDownload>> downloadIndexed(
+      MonobotConfig monobotConfig,
+      Path entryDir,
+      Path entry,
+      List<Candidate> candidates,
+      AtomicInteger refused) {
+    if (monobotConfig.componentType() != ComponentType.POSTGRES) {
+      return Future.succeededFuture(List.of());
+    }
+
+    var versions = candidates.stream().map(Candidate::version).toList();
+    var names = new TreeMap<String, SortedSet<String>>();
+    var repoConfigs = new TreeMap<String, RepoConfig>();
+    aboutCatalog
+        .contribIndexes(monobotConfig, entryDir, versions)
+        .forEach(
+            (name, index) -> {
+              names.computeIfAbsent(index.file(), file -> new TreeSet<>()).add(name);
+              repoConfigs.putIfAbsent(index.file(), index.repoConfig());
+            });
+
+    var wanted = new ArrayList<IndexedCandidate>();
+    repoConfigs.forEach(
+        (index, repoConfig) -> {
+          var template = repoConfig.getSources().templates().getFirst();
+          for (var version : versions) {
+            var context = repoConfig.getVersions().get(version);
+            if (context == null) {
+              continue;
+            }
+            var url = template.materialize(version.version(), context.derived()).get("url");
+            try {
+              wanted.add(
+                  new IndexedCandidate(
+                      index, names.get(index), version, URI.create(url).toURL(), context.sha256()));
+            } catch (IllegalArgumentException | IOException e) {
+              throw new IllegalArgumentException(
+                  index + " names " + url + " for " + version + ", which cannot be fetched", e);
+            }
+          }
+        });
+
+    var downloads =
+        wanted.stream()
+            .map(
+                candidate ->
+                    archiveCache
+                        .archive(
+                            entry.resolve(stem(candidate.index())),
+                            candidate.version(),
+                            candidate.url())
+                        .map(
+                            cached ->
+                                Optional.of(
+                                    new IndexedDownload(
+                                        candidate, cached.sha256(), cached.archive())))
+                        .recover(
+                            err -> {
+                              refused.incrementAndGet();
+                              LOG.errorv(
+                                  err,
+                                  "[{0}]: {1} of {2} could not be downloaded from {3}",
+                                  monobotConfig.label(),
+                                  candidate.version(),
+                                  candidate.index(),
+                                  candidate.url());
+
+                              return Future.succeededFuture(Optional.<IndexedDownload>empty());
+                            }))
+            .toList();
+
+    if (downloads.isEmpty()) {
+      return Future.succeededFuture(List.of());
+    }
+
+    return Future.all(downloads)
+        .map(
+            composite ->
+                IntStream.range(0, composite.size())
+                    .mapToObj(composite::<Optional<IndexedDownload>>resultAt)
+                    .flatMap(Optional::stream)
+                    .toList());
+  }
+
+  private static String stem(String index) {
+    return index.endsWith(".json") ? index.substring(0, index.length() - ".json".length()) : index;
+  }
+
+  /// The control files of the contrib extensions each flavor version builds from a repository of
+  /// its own, by version and then by extension. An archive that digests to something other than
+  /// what its index records is the index's digest being wrong or the artifact changing under it,
+  /// and is counted as a disagreement rather than read.
+  private Map<Version, SortedMap<String, byte[]>> indexedContrib(
+      MonobotConfig monobotConfig, List<IndexedDownload> downloads, AtomicInteger disagreed) {
+    var contrib = new HashMap<Version, SortedMap<String, byte[]>>();
+
+    for (var download : downloads) {
+      var candidate = download.candidate();
+      if (candidate.sha256() != null && !candidate.sha256().equals(download.sha256())) {
+        disagreed.incrementAndGet();
+        LOG.errorv(
+            "[{0}]: {1} of {2} is indexed as sha256 {3}, and {4} digests to {5}",
+            monobotConfig.label(),
+            candidate.version(),
+            candidate.index(),
+            candidate.sha256(),
+            download.archivePath(),
+            download.sha256());
+        continue;
+      }
+
+      var contents = archiveMetadataExtractor.read(true, download.archivePath(), false);
+      archiveCache.storeExtracted(download.archivePath().getParent(), contents);
+      var controls = contrib.computeIfAbsent(candidate.version(), version -> new TreeMap<>());
+      for (var name : candidate.names()) {
+        var control = contents.controls().get(name);
+        if (control == null) {
+          LOG.warnv(
+              "[{0}]: {1} of {2} carries no {3}.control",
+              monobotConfig.label(), candidate.version(), candidate.index(), name);
+        } else {
+          controls.put(name, control);
+        }
+      }
+    }
+
+    return contrib;
+  }
+
   /// Whether an archive is recent enough to catalogue, which requires downloading the archive.
   ///
   /// `keepNewest` spares one version, and which one is named rather than left to the order the
@@ -356,13 +509,15 @@ public class Fetch {
       MonobotConfig monobotConfig,
       Downloaded result,
       ArchiveContents contents,
+      SortedMap<String, byte[]> indexedContrib,
       Versions versions,
       Path entryDir,
       AtomicInteger differed) {
     versions.put(
         result.candidate().version(),
         new VersionContext(result.candidate().context(), result.sha256()));
-    emitExtracted(monobotConfig, result.candidate().version(), contents, entryDir, differed);
+    emitExtracted(
+        monobotConfig, result.candidate().version(), contents, indexedContrib, entryDir, differed);
   }
 
   /// The control file and the PGXN metadata the archive carried, kept beside the entry rather than
@@ -374,6 +529,7 @@ public class Fetch {
       MonobotConfig monobotConfig,
       Version version,
       ArchiveContents contents,
+      SortedMap<String, byte[]> indexedContrib,
       Path entryDir,
       AtomicInteger differed) {
     var into = entryDir.resolve(DIR_METADATA).resolve(version.version());
@@ -390,12 +546,21 @@ public class Fetch {
     if (contents.metaJson() != null) {
       emit(into, "META.json", archiveMetadataExtractor.metaJsonOf(contents.metaJson()), differed);
     }
-    if (!contents.contrib().isEmpty()) {
+    // The flavor's own contrib and the extensions it builds from a repository of its own are one
+    // document, since a reader asks which extensions the version ships and not where they are kept.
+    var contribControls = new TreeMap<String, byte[]>(contents.contrib());
+    indexedContrib.forEach(
+        (name, control) -> {
+          if (contribControls.put(name, control) != null) {
+            LOG.warnv(
+                "[{0}]: {1} carries {2}.control in its own tree too, and the one built is read",
+                monobotConfig.label(), version, name);
+          }
+        });
+    if (!contribControls.isEmpty()) {
       var contrib = objectMapper.createObjectNode();
-      contents
-          .contrib()
-          .forEach(
-              (name, control) -> contrib.set(name, archiveMetadataExtractor.controlOf(control)));
+      contribControls.forEach(
+          (name, control) -> contrib.set(name, archiveMetadataExtractor.controlOf(control)));
       emit(into, "contrib.json", contrib, differed);
     }
     if (monobotConfig.componentType() == ComponentType.EXTENSION
@@ -481,12 +646,22 @@ public class Fetch {
     var undescribed = new AtomicInteger();
 
     return candidates(monobotConfig, template, List.copyOf(stored.keySet()))
-        .compose(candidates -> download(monobotConfig, relPath, candidates, refused))
         .compose(
-            downloaded ->
+            candidates ->
+                download(monobotConfig, relPath, candidates, refused)
+                    .compose(
+                        own ->
+                            downloadIndexed(monobotConfig, entryDir, relPath, candidates, refused)
+                                .map(indexed -> new Downloads(own, indexed))))
+        .compose(
+            downloads ->
                 vertx.executeBlocking(
                     () -> {
-                      var kept = downloaded.stream().flatMap(Optional::stream).toList();
+                      var kept = downloads.own().stream().flatMap(Optional::stream).toList();
+                      var indexedContrib =
+                          mode.catalogues()
+                              ? indexedContrib(monobotConfig, downloads.indexed(), disagreed)
+                              : Map.<Version, SortedMap<String, byte[]>>of();
                       var newest =
                           Stream.concat(
                                   kept.stream().map(Downloaded::candidate).map(Candidate::version),
@@ -512,7 +687,14 @@ public class Fetch {
                           } else if (isRecentEnough(
                               monobotConfig, result, newest, contents.lastModified())) {
                             catalogue(
-                                monobotConfig, result, contents, versions, entryDir, differed);
+                                monobotConfig,
+                                result,
+                                contents,
+                                indexedContrib.getOrDefault(
+                                    result.candidate().version(), new TreeMap<>()),
+                                versions,
+                                entryDir,
+                                differed);
                             summary.versionAdded();
                           } else {
                             summary.versionSkipped(RunSummary.Skipped.BEFORE_CUTOFF);

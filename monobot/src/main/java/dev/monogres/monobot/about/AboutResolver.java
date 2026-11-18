@@ -12,6 +12,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
@@ -192,7 +193,14 @@ public final class AboutResolver {
           .ifPresent(found -> about.put("readme", found.rawUrl(ref, readme.asText())));
     }
 
-    putControl(objectMapper, about, inputs.controls(), inputs.controlOverride());
+    // A flavor's correction is keyed by extension like any other, and the extensions it names are
+    // its contrib ones: those go to the contrib entry they describe, the rest to the entry's own.
+    var contribNames = contribNames(inputs);
+    var ownCorrection = inputs.controlOverride();
+    if (ownCorrection.isObject() && !contribNames.isEmpty()) {
+      ownCorrection = ((ObjectNode) ownCorrection).deepCopy().remove(contribNames);
+    }
+    putControl(objectMapper, about, inputs.controls(), ownCorrection);
 
     var contrib = contrib(objectMapper, inputs, about);
     if (!contrib.isEmpty()) {
@@ -207,11 +215,8 @@ public final class AboutResolver {
   /// with the flavor -- the repository, the ref, the licence -- is the flavor's and is not
   /// repeated.
   private static ObjectNode contrib(ObjectMapper objectMapper, Inputs inputs, ObjectNode flavor) {
-    var names = new LinkedHashSet<String>(inputs.contrib().keySet());
-    inputs.override().path("contrib").fieldNames().forEachRemaining(names::add);
-
     var contrib = objectMapper.createObjectNode();
-    names.stream()
+    contribNames(inputs).stream()
         .sorted()
         .forEach(
             name -> {
@@ -251,7 +256,13 @@ public final class AboutResolver {
                 if (control.isObject()) {
                   controls.set(name, control);
                 }
-                putControl(objectMapper, about, controls, MissingNode.getInstance());
+                // A template's placeholders are corrected the way an extension's are, from the
+                // flavor's `control` block, keyed by this flavor version and then by extension.
+                var correction = objectMapper.createObjectNode();
+                if (inputs.controlOverride().has(name)) {
+                  correction.set(name, inputs.controlOverride().get(name));
+                }
+                putControl(objectMapper, about, controls, correction);
               } catch (IllegalArgumentException e) {
                 throw new IllegalArgumentException("contrib." + name + "." + e.getMessage(), e);
               }
@@ -262,6 +273,15 @@ public final class AboutResolver {
             });
 
     return contrib;
+  }
+
+  /// The contrib extensions a version of a flavor describes: the ones its tree carries a control
+  /// file for, and the ones its override names, which are built from a repository of their own.
+  private static Set<String> contribNames(Inputs inputs) {
+    var names = new LinkedHashSet<String>(inputs.contrib().keySet());
+    inputs.override().path("contrib").fieldNames().forEachRemaining(names::add);
+
+    return names;
   }
 
   /// The control files' directives by extension, as [ControlDirectives] reports them, where there

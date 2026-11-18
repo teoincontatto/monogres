@@ -445,7 +445,11 @@ A contrib extension the flavor builds out of a repository of its own names
 that repository in the flavor's `about.latest.contrib.<name>.repository`, with
 the download index beside the entry its sources come from (babelfish's
 `"index": "ext.json"`): its per-version refs are read from that index rather
-than written a second time.
+than written a second time. So are its control files: the archive the index
+names for each flavor version is downloaded, checked against the digest the
+index records, cached under the entry in a directory named after the index
+(`babelfish/ext/5.4/`), and the control files of the extensions that name it
+join the flavor's own in `metadata/<version>/contrib.json`.
 
 The ref is the `tag` or `commit` the source materializes to. An entry whose
 archives do not come from its repository names it with a template instead:
@@ -491,6 +495,11 @@ whose own placeholder then fails it until it has a key of its own. The entry
 fails on a key that names no catalogued version, an extension its archive does
 not declare, a placeholder nothing replaced, a value of the wrong type, or a
 patch naming something that is not a directive.
+
+A flavor corrects its contrib extensions the same way, by name, in its own
+`control` block: babelfish's `babelfishpg_tsql` ships a `.control.in` whose
+`default_version` and `module_pathname` its Makefile fills in from
+`Version.config`, so each babelfish version writes both for it.
 
 ## Running
 

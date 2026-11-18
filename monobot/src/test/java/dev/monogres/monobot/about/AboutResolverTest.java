@@ -370,6 +370,94 @@ class AboutResolverTest {
         "BABEL_5_4_0", about.path("contrib").path("babelfishpg_tsql").path("ref").asText());
   }
 
+  /// A contrib extension built from a template (babelfishpg_tsql's `.control.in`) has its
+  /// placeholders corrected from the flavor's `control` block, which names it by extension like any
+  /// other entry's does. The flavor's own control files are not asked about it.
+  @Test
+  void contribTemplateIsCorrectedFromTheFlavorsControlBlock() {
+    var override =
+        """
+        {"contrib": {"babelfishpg_tsql": {"description": "T-SQL",
+          "repository": {"url": "https://github.com/babelfish-for-postgresql/babelfish_extensions",
+                         "index": "ext.json"}}}}
+        """;
+    var contrib =
+        Map.<String, JsonNode>of(
+            "babelfishpg_tsql",
+            json(
+                """
+                {"default_version": "@EXTVERSION@", "module_pathname": "@MODULEPATH@",
+                 "requires": ["uuid-ossp", "babelfishpg_common"], "superuser": true,
+                 "relocatable": true}
+                """));
+    var correction =
+        json(
+            """
+            {"babelfishpg_tsql": {"default_version": "5.4.0",
+                                  "module_pathname": "$libdir/babelfishpg_tsql-5"}}
+            """);
+
+    var about =
+        AboutResolver.resolve(
+            objectMapper,
+            new AboutResolver.Inputs(
+                json(override), null, null, null, REPO_URL, null, contrib, null, correction, null));
+
+    assertEquals(
+        json(
+            """
+            {"babelfishpg_tsql": {"default_version": "5.4.0",
+                                  "module_pathname": "$libdir/babelfishpg_tsql-5",
+                                  "requires": ["uuid-ossp", "babelfishpg_common"],
+                                  "superuser": true, "relocatable": true}}
+            """),
+        about.path("contrib").path("babelfishpg_tsql").path("control"));
+    assertTrue(about.path("control").isMissingNode(), about.toString());
+
+    var uncorrected =
+        assertThrows(
+            IllegalArgumentException.class,
+            () ->
+                AboutResolver.resolve(
+                    objectMapper,
+                    new AboutResolver.Inputs(
+                        json(override),
+                        null,
+                        null,
+                        null,
+                        REPO_URL,
+                        null,
+                        contrib,
+                        null,
+                        null,
+                        null)));
+    assertTrue(
+        uncorrected
+            .getMessage()
+            .startsWith("contrib.babelfishpg_tsql.control.babelfishpg_tsql.default_version"),
+        uncorrected.getMessage());
+
+    // A correction naming neither a contrib extension nor one of the entry's own is a typo.
+    var typo =
+        assertThrows(
+            IllegalArgumentException.class,
+            () ->
+                AboutResolver.resolve(
+                    objectMapper,
+                    new AboutResolver.Inputs(
+                        json(override),
+                        null,
+                        null,
+                        null,
+                        REPO_URL,
+                        null,
+                        contrib,
+                        null,
+                        json("{\"babelfishpg_tqsl\": {\"default_version\": \"5.4.0\"}}"),
+                        null)));
+    assertTrue(typo.getMessage().contains("babelfishpg_tqsl"), typo.getMessage());
+  }
+
   @Test
   void nothingInIsNothingOut() {
     var about =
