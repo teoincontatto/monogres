@@ -57,6 +57,23 @@ _GIT_JSON_KEYS = ("url", "strip_prefix", "sha256", "crates")
 # The root of a checkout, as `git.json` spells a crate that IS the repo root.
 _GIT_ROOT = "."
 
+# Where a vendor tree files the crates of one git revision: `git/<strip_prefix>/`,
+# a directory source of its own rather than the crates.io one. A closure may
+# take the same crate release from two revisions (pg_search pins a fork of a
+# crate at one revision, and a fork of tantivy it depends on pins it at
+# another), and one directory source can hold only one `<crate>-<version>`.
+# Kept beside the crates.io tree, which skips it: cargo reads a directory source
+# entry only if it holds a `Cargo.toml`, and `git/` holds none.
+_GIT_VENDOR = "git"
+
+# What a `strip_prefix` may hold: GitHub names an archive's top directory
+# `<repo>-<ref>`, out of these.
+_STRIP_PREFIX_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._-"
+
+def _git_dir(strip_prefix):
+    """The vendor subdirectory one git revision's crates are filed under."""
+    return "%s/%s" % (_GIT_VENDOR, strip_prefix)
+
 _PACKAGE = "[[package]]"
 
 _KEYS = ("name", "version", "source", "checksum")
@@ -158,6 +175,14 @@ def _git_crate(package, source, git, lock_label, name, _fail):
         msg = "{}: {}: `git.json` pin for {} is missing: {}"
         return _fail(msg.format(lock_label, name, source, ", ".join(missing)))
 
+    strip_prefix = pin["strip_prefix"]
+
+    if [c for c in strip_prefix.elems() if c not in _STRIP_PREFIX_CHARS]:
+        # It names the revision's directory in the vendor tree, and the build
+        # writes that path into the cargo config from a shell.
+        msg = "{}: {}: `git.json` strip_prefix for {} is not a plain name: {}"
+        return _fail(msg.format(lock_label, name, source, strip_prefix))
+
     subdir = pin["crates"].get(package["name"], "")
 
     if not subdir:
@@ -188,8 +213,8 @@ def _git_sources(crates, lock_label = "Cargo.lock", _fail = fail):
     """The cargo source-replacement stanzas a lock's git dependencies need.
 
     Cargo resolves a git dependency by cloning it, which an offline sandbox
-    cannot do, so each git source is replaced by the vendor tree the pool
-    already assembles. Cargo matches a stanza to a dependency by the `git` and
+    cannot do, so each git source is replaced by the directory its revision's
+    crates take in the vendor tree the pool already assembles. Cargo matches a stanza to a dependency by the `git` and
     ref fields it declares, not by the section name, and it ignores the `#<rev>`
     a lock source ends with, so the name here is the source string up to that
     point: what `cargo vendor` itself would have written.
@@ -201,7 +226,8 @@ def _git_sources(crates, lock_label = "Cargo.lock", _fail = fail):
 
     Returns:
         `{source: {key: value}}`, one entry per distinct git source, each with a
-        `git` key and at most one of `branch` / `tag` / `rev`.
+        `git` key, at most one of `branch` / `tag` / `rev`, and the `directory`
+        of the vendor tree its crates are filed under.
     """
     sources = {}
 
@@ -224,14 +250,14 @@ def _git_sources(crates, lock_label = "Cargo.lock", _fail = fail):
         if sep >= 0:
             url, query = url[:sep], url[sep + 1:]
 
-        entry = {"git": url}
+        entry = {"git": url, "directory": _git_dir(crate.git.strip_prefix)}
 
         for ref in _GIT_REFS:
             if query.startswith(ref + "="):
                 entry[ref] = query[len(ref) + 1:]
                 break
 
-        if query and len(entry) == 1:
+        if query and len(entry) == 2:
             msg = "{}: unsupported git source ref: {}. A source names at most "
             msg += "one of: {}"
             return _fail(msg.format(lock_label, query, ", ".join(_GIT_REFS)))
@@ -290,7 +316,8 @@ def _declare(
     Returns:
         `{package: dir_name}` for `crates`, in the order given, where `package`
         is the Bazel package holding the crate, as a label prefix, and
-        `dir_name` is the `<crate>-<version>` a vendor tree files it under. The
+        `dir_name` is the `<crate>-<version>` a vendor tree files it under,
+        below `git/<strip_prefix>/` for a crate taken from a git revision. The
         two differ whenever a version carries `+` build metadata, and a package
         names a subdirectory whenever a git revision publishes several crates.
     """
@@ -302,6 +329,7 @@ def _declare(
         dir_name = "%s-%s" % (crate.crate, crate.version)
 
         if crate.git:
+            dir_name = "%s/%s" % (_git_dir(crate.git.strip_prefix), dir_name)
             repo = repo_names.git_crates(crate.git.strip_prefix)
             package = _package(repo, crate.git.subdir)
 

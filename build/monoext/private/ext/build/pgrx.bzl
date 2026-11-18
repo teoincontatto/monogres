@@ -136,9 +136,10 @@ _COMPILE_EXTENSION = """
             }} > "$$CARGO_HOME/config.toml"
 
             # One more replacement per git source the lock names, resolving out
-            # of that same tree: cargo would otherwise clone the repository,
-            # which an offline sandbox cannot do. Empty (no lines) for a closure
-            # that is entirely crates.io, which is the common case.
+            # of its revision's own directory in that tree: cargo would
+            # otherwise clone the repository, which an offline sandbox cannot
+            # do. Empty (no lines) for a closure that is entirely crates.io,
+            # which is the common case.
             {git_sources}
 
             # Files a dependency's build script would otherwise download for
@@ -404,6 +405,11 @@ _GIT_SOURCES_INDENT = 12
 def _git_sources_config(git_sources):
     """Render shell appending `git_sources` to the cargo config.
 
+    Each git source is replaced by a directory source of its own, the
+    `git/<strip_prefix>` directory its revision's crates take in the vendor
+    tree, so that two revisions publishing the same crate release do not meet
+    in one directory.
+
     Args:
         git_sources: `{source: {key: value}}` from `pool.git_sources`.
 
@@ -413,24 +419,31 @@ def _git_sources_config(git_sources):
     if not git_sources:
         return ""
 
-    lines = []
+    args = []
 
-    for source in sorted(git_sources):
+    # One single-quoted argument per line, so nothing a URL or a branch name can
+    # hold is read as shell. The one exception is the directory, which has to
+    # expand `$vendor`; what follows it is a `strip_prefix` the pool has already
+    # held to a plain name.
+    pad = " " * (_GIT_SOURCES_INDENT + 4)
+
+    for i, source in enumerate(sorted(git_sources)):
         entry = git_sources[source]
+        replacement = "vendor-git-%d" % i
 
-        lines.append("")
-        lines.append('[source."%s"]' % source)
+        lines = ["", '[source."%s"]' % source]
         lines += [
             '%s = "%s"' % (key, entry[key])
             for key in _GIT_SOURCE_KEYS
             if key in entry
         ]
-        lines.append('replace-with = "vendor"')
-
-    # One single-quoted argument per line, so nothing a URL or a branch name can
-    # hold is read as shell.
-    pad = " " * (_GIT_SOURCES_INDENT + 4)
-    args = ["%s'%s'" % (pad, line) for line in lines]
+        lines += [
+            'replace-with = "%s"' % replacement,
+            "",
+            "[source.%s]" % replacement,
+        ]
+        args += ["%s'%s'" % (pad, line) for line in lines]
+        args.append('%s"directory = \\"$$vendor/%s\\""' % (pad, entry["directory"]))
 
     return "printf '%s\\n' \\\n{args} \\\n{pad}>> \"$$CARGO_HOME/config.toml\"".format(
         args = " \\\n".join(args),

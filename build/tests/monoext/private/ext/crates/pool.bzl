@@ -253,6 +253,28 @@ parse_lock__git_unmapped_crate_fails_test = unittest.make(
     _parse_lock__git_unmapped_crate_fails_test_impl,
 )
 
+def _parse_lock__git_strip_prefix_not_plain_fails_test_impl(ctx):
+    """The strip_prefix names a vendor directory and lands in a shell line."""
+    env = unittest.begin(ctx)
+
+    git = {_GIT_SOURCE: dict(_GIT[_GIT_SOURCE])}
+    git[_GIT_SOURCE]["strip_prefix"] = "tantivy-$(x)"
+
+    res = pool.parse_lock(
+        _LOCK_GIT,
+        lock_label = "l.lock",
+        git = git,
+        _fail = Mock.fail,
+    )
+
+    asserts.true(env, "is not a plain name: tantivy-$(x)" in res, res)
+
+    return unittest.end(env)
+
+parse_lock__git_strip_prefix_not_plain_fails_test = unittest.make(
+    _parse_lock__git_strip_prefix_not_plain_fails_test_impl,
+)
+
 def _git_sources__ref_kinds_test_impl(ctx):
     """One stanza per source, carrying the ref the lock spells, if any."""
     env = unittest.begin(ctx)
@@ -265,22 +287,31 @@ def _git_sources__ref_kinds_test_impl(ctx):
         struct(crate = "a", version = "1", sha256 = "", git = struct(
             source = source,
             url = "",
-            strip_prefix = "",
+            strip_prefix = prefix,
             subdir = ".",
         ))
-        for source in [branch, rev, default, branch]
+        for source, prefix in [
+            (branch, "a-aaaa"),
+            (rev, "b-bbbbbb"),
+            (default, "c-cccc"),
+            (branch, "a-aaaa"),
+        ]
     ]
 
+    # Each source resolves out of its own revision's directory of the tree.
     asserts.equals(env, {
         "git+https://example.com/a.git?branch=pdb": {
             "branch": "pdb",
+            "directory": "git/a-aaaa",
             "git": "https://example.com/a.git",
         },
         "git+https://example.com/b?rev=bbb": {
+            "directory": "git/b-bbbbbb",
             "git": "https://example.com/b",
             "rev": "bbb",
         },
         "git+https://example.com/c.git": {
+            "directory": "git/c-cccc",
             "git": "https://example.com/c.git",
         },
     }, pool.git_sources(crates))
@@ -449,11 +480,12 @@ def _declare__git_revision_test_impl(ctx):
     )
 
     # The root crate is the repo's own package; a member is a subpackage. Both
-    # keep the `<crate>-<version>` vendor directory a registry crate gets, since
-    # that is what cargo resolves the crate by.
+    # keep the `<crate>-<version>` directory a registry crate gets, since that is
+    # what cargo resolves the crate by, filed under the revision's own directory
+    # of the vendor tree.
     asserts.equals(env, {
-        "@crate_git--tantivy-2c73e8ca//": "tantivy-0.26.0",
-        "@crate_git--tantivy-2c73e8ca//bitpacker": "tantivy-bitpacker-0.9.0",
+        "@crate_git--tantivy-2c73e8ca//": "git/tantivy-2c73e8ca/tantivy-0.26.0",
+        "@crate_git--tantivy-2c73e8ca//bitpacker": "git/tantivy-2c73e8ca/tantivy-bitpacker-0.9.0",
     }, names)
 
     # Two crates, ONE fetch: a revision is a whole checkout, and the crates in
@@ -491,6 +523,51 @@ def _declare__git_revision_shared_test_impl(ctx):
 
 declare__git_revision_shared_test = unittest.make(
     _declare__git_revision_shared_test_impl,
+)
+
+def _declare__same_release_two_revisions_test_impl(ctx):
+    """One crate release from two revisions takes two vendor directories.
+
+    pg_search 0.26.6 pins `superkmeans-rs` 0.3.0 at one revision, and the fork
+    of tantivy it builds pins it at another: cargo links both, so the vendor
+    tree has to hold both rather than file them under one `<crate>-<version>`.
+    """
+    env = unittest.begin(ctx)
+
+    first = "git+https://github.com/o/k?rev=aaaa#aaaa"
+    second = "git+https://github.com/o/k.git?rev=bbbb#bbbb"
+    lock = "\n".join([
+        '[[package]]\nname = "k"\nversion = "0.3.0"\nsource = "%s"\n' % source
+        for source in [first, second]
+    ])
+    git = {
+        source: {
+            "crates": {"k": "."},
+            "sha256": sha,
+            "strip_prefix": prefix,
+            "url": "https://github.com/o/k/archive/%s.tar.gz" % prefix,
+        }
+        for source, sha, prefix in [
+            (first, _SHA_A, "k-aaaa"),
+            (second, _SHA_B, "k-bbbb"),
+        ]
+    }
+
+    names = pool.declare(
+        pool.parse_lock(lock, git = git),
+        {},
+        _git_crates_repo = _mock_crate_repo([]),
+    )
+
+    asserts.equals(env, {
+        "@crate_git--k-aaaa//": "git/k-aaaa/k-0.3.0",
+        "@crate_git--k-bbbb//": "git/k-bbbb/k-0.3.0",
+    }, names)
+
+    return unittest.end(env)
+
+declare__same_release_two_revisions_test = unittest.make(
+    _declare__same_release_two_revisions_test_impl,
 )
 
 def _pinned_version__found_test_impl(ctx):
@@ -532,6 +609,7 @@ TEST_SUITE_TESTS = {
     "declare/creates_one_repo_per_crate": declare__creates_one_repo_per_crate_test,
     "declare/git_revision": declare__git_revision_test,
     "declare/git_revision_shared": declare__git_revision_shared_test,
+    "declare/same_release_two_revisions": declare__same_release_two_revisions_test,
     "declare/shared_across_locks": declare__shared_across_locks_test,
     "git_sources/ref_kinds": git_sources__ref_kinds_test,
     "git_sources/registry_only": git_sources__registry_only_test,
@@ -539,6 +617,7 @@ TEST_SUITE_TESTS = {
     "parse_lock/empty": parse_lock__empty_test,
     "parse_lock/git_incomplete_pin_fails": parse_lock__git_incomplete_pin_fails_test,
     "parse_lock/git_packages": parse_lock__git_packages_test,
+    "parse_lock/git_strip_prefix_not_plain_fails": parse_lock__git_strip_prefix_not_plain_fails_test,
     "parse_lock/git_unmapped_crate_fails": parse_lock__git_unmapped_crate_fails_test,
     "parse_lock/git_unpinned_fails": parse_lock__git_unpinned_fails_test,
     "parse_lock/ignores_dependency_lists": parse_lock__ignores_dependency_lists_test,

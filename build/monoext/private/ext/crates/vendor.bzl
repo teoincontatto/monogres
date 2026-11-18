@@ -3,7 +3,9 @@ Assemble a cargo directory source (a vendor tree) out of crate pool repos.
 
 Cargo can be pointed at a directory holding one subdirectory per package
 (`<crate>-<version>/`, each with its `.cargo-checksum.json`) and told to resolve
-`crates-io` from there instead of the network. That is the only offline
+`crates-io` from there instead of the network. The crates of each git revision
+go one level down, in `git/<strip_prefix>/`, which is a directory source of its
+own: one closure can take the same crate release from two revisions. That is the only offline
 resolution mode that needs no registry index, so it is what the pgrx builds use.
 
 The pool gives one repo per crate release (see `crate_repo.bzl`); this gathers a
@@ -25,8 +27,10 @@ mkdir -p "$$vendor"
 
 # Copy one crate out of its pool repo. `-L` dereferences: the action's inputs
 # are symlinks into the sandbox, and a tar of those would archive links to paths
-# that stop existing when the action does.
+# that stop existing when the action does. A crate taken from a git revision is
+# filed one level down, under that revision's own directory.
 stage() {{
+    mkdir -p "$$(dirname "$$vendor/$$1")"
     cp -RL "$$(dirname "$$2")" "$$vendor/$$1"
 }}
 

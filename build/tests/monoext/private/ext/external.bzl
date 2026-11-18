@@ -378,7 +378,7 @@ def _pg_build_pgrx_git_and_data_test_impl(ctx):
         ext_name = "pg_search",
         cargo = {
             "crates": {},
-            "git_sources": {source: {"git": source[len("git+"):]}},
+            "git_sources": {source: {"directory": "git/fst-11e8933", "git": source[len("git+"):]}},
             "lock": "//catalog/extensions:pg_search/cargo/0.24.3/Cargo.lock",
             "pgrx": "0.18.1",
         },
