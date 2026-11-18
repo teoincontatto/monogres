@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.10.3",
+    "version": "2.10.16",
     "forge": {
       "kind": "github",
       "url": "https://github.com/okbob/plpgsql_check",

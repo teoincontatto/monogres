@@ -11,9 +11,9 @@
     }
   },
   "versions": {
-    "2.6.0": {
-      "upstream_version": "2_6",
-      "sha256": "18b4bdec28c74a8fc98a11c72de38378a760327ef8e5e42e975b0029eb96ba0d"
+    "2.7.0": {
+      "upstream_version": "2_7",
+      "sha256": "e6c12d02dc32e4d610dce33ee52ea85a54e12a563e79c4844508b6c061ff07a1"
     }
   },
   "metadata": {
@@ -25,7 +25,7 @@
     ],
     "compatible_with": {
       "postgres": {
-        "2.6.0": ">=16"
+        "2.7.0": ">=16"
       }
     },
     "test_ext": {

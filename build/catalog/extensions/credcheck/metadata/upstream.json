@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "5.0",
+    "version": "6.0",
     "forge": {
       "kind": "github",
       "url": "https://github.com/HexaCluster/credcheck",

@@ -11,20 +11,14 @@
     }
   },
   "versions": {
-    "1.6.7": {
-      "sha256": "d950bc29155f31017567e23a31d268ff672e98276c0e9d062512fb7870351f03"
+    "1.6.8": {
+      "sha256": "c19ab9bb35406c60fb51ecda993737c083850abe424acb6c1030439d00a1f8e4"
     }
   },
   "metadata": {
-    "patches": [
-      {
-        "label": "//catalog/extensions/pg_cron/patches:0001-1.6-hermetic-clang-c99-strict-ansi.patch",
-        "spec": ">=1.6.7/*"
-      }
-    ],
     "compatible_with": {
       "postgres": {
-        "1.6.7": ">=16"
+        "1.6.8": ">=16"
       }
     },
     "test_ext": {

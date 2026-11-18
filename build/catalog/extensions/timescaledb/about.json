@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.28.3",
+    "version": "2.32.0",
     "description": "Enables scalable inserts and complex queries for time-series data",
     "long_description": "A time-series database for high-performance real-time analytics packaged as a Postgres extension",
     "homepage": "https://www.tigerdata.com/",
@@ -23,12 +23,12 @@
     "repository": {
       "url": "https://github.com/timescale/timescaledb"
     },
-    "ref": "2.28.3",
-    "readme": "https://raw.githubusercontent.com/timescale/timescaledb/2.28.3/README.md",
+    "ref": "2.32.0",
+    "readme": "https://raw.githubusercontent.com/timescale/timescaledb/2.32.0/README.md",
     "control": {
       "timescaledb": {
-        "default_version": "2.28.3",
-        "module_pathname": "$libdir/timescaledb-2.28.3",
+        "default_version": "2.32.0",
+        "module_pathname": "$libdir/timescaledb-2.32.0",
         "superuser": true,
         "trusted": true,
         "relocatable": false

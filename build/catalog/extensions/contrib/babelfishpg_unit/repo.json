@@ -19,6 +19,14 @@
           "share/extension/babelfishpg_unit--1.0.0.sql",
           "share/extension/babelfishpg_unit.control"
         ],
+        "4.10": [
+          "lib/babelfishpg_unit.so",
+          "lib/bitcode/babelfishpg_unit.index.bc",
+          "lib/bitcode/babelfishpg_unit/babelfishpg_unit.bc",
+          "lib/bitcode/babelfishpg_unit/test_money.bc",
+          "share/extension/babelfishpg_unit--1.0.0.sql",
+          "share/extension/babelfishpg_unit.control"
+        ],
         "4.2": [
           "lib/babelfishpg_unit.so",
           "lib/bitcode/babelfishpg_unit.index.bc",
@@ -106,6 +114,14 @@
           "lib/bitcode/babelfishpg_unit/test_money.bc",
           "share/extension/babelfishpg_unit--1.0.0.sql",
           "share/extension/babelfishpg_unit.control"
+        ],
+        "5.6": [
+          "lib/babelfishpg_unit.so",
+          "lib/bitcode/babelfishpg_unit.index.bc",
+          "lib/bitcode/babelfishpg_unit/babelfishpg_unit.bc",
+          "lib/bitcode/babelfishpg_unit/test_money.bc",
+          "share/extension/babelfishpg_unit--1.0.0.sql",
+          "share/extension/babelfishpg_unit.control"
         ]
       }
     }
@@ -115,6 +131,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -125,7 +142,8 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ]
   }
 }

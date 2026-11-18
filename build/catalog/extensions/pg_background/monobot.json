@@ -13,12 +13,12 @@
     }
   },
   "versions": {
-    "pin": ["2.0.3"]
+    "pin": ["2.0.5"]
   },
   "metadata": {
     "compatible_with": {
       "postgres": {
-        "2.0.3": ">=16"
+        "2.0.5": ">=16"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "4.0.1",
+    "version": "4.0.2",
     "forge": {
       "kind": "github",
       "url": "https://github.com/pgRouting/pgrouting",

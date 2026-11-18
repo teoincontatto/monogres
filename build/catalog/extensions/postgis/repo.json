@@ -8,15 +8,15 @@
     }
   },
   "versions": {
-    "3.5.7": {
-      "sha256": "af9ab591854d52a0d1115f90b797ef1cd60d01b85a11ff813073689e332272ff"
+    "3.7.0": {
+      "sha256": "832bbf50f2b6f57fab053bc9676b3bfe641e5bf966cdcb28c7926f8d4b3c5e04"
     }
   },
   "metadata": {
     "patches": [
       {
-        "label": "//catalog/extensions/postgis/patches:0001-3.5.7-configure-keep-env-cc.patch",
-        "spec": ">=3.5.7/*"
+        "label": "//catalog/extensions/postgis/patches:0001-3.7.0-configure-keep-env-cc.patch",
+        "spec": ">=3.7.0/*"
       }
     ],
     "build_args": [
@@ -34,7 +34,7 @@
     },
     "compatible_with": {
       "postgres": {
-        "3.5.7": ">=16"
+        "3.7.0": ">=16"
       }
     },
     "deps": {

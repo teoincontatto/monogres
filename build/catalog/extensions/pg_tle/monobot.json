@@ -13,27 +13,21 @@
     }
   },
   "versions": {
-    "pin": ["1.5.2"]
+    "pin": ["1.5.3"]
   },
   "control": {
-    "1.5.2": {
+    "1.5.3": {
       "pg_tle": {
-        "default_version": "1.5.2",
+        "default_version": "1.5.3",
         "module_pathname": "$libdir/pg_tle",
         "schema": "pgtle"
       }
     }
   },
   "metadata": {
-    "patches": [
-      {
-        "label": "//catalog/extensions/pg_tle/patches:0001-1.5.2-regress-reload-propagation.patch",
-        "spec": ">=1.5.2/*"
-      }
-    ],
     "compatible_with": {
       "postgres": {
-        "1.5.2": ">=16"
+        "1.5.3": ">=16"
       }
     },
     "test_ext": {

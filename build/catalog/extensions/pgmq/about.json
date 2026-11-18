@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.12.0",
+    "version": "1.13.1",
     "description": "A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.",
     "long_description": "A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.",
     "homepage": "https://pgmq.github.io/pgmq/",
@@ -9,11 +9,11 @@
     "repository": {
       "url": "https://github.com/pgmq/pgmq"
     },
-    "ref": "v1.12.0",
-    "readme": "https://raw.githubusercontent.com/pgmq/pgmq/v1.12.0/README.md",
+    "ref": "v1.13.1",
+    "readme": "https://raw.githubusercontent.com/pgmq/pgmq/v1.13.1/README.md",
     "control": {
       "pgmq": {
-        "default_version": "1.12.0",
+        "default_version": "1.13.1",
         "module_pathname": "$libdir/pgmq",
         "superuser": false,
         "trusted": false,

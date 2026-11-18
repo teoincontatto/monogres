@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "0.8.2",
+    "version": "0.8.7",
     "description": "vector data type and ivfflat and hnsw access methods",
     "long_description": "Open-source vector similarity search for Postgres",
     "homepage": "https://github.com/pgvector/pgvector",
@@ -16,11 +16,11 @@
     "repository": {
       "url": "https://github.com/pgvector/pgvector"
     },
-    "ref": "v0.8.2",
-    "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.2/README.md",
+    "ref": "v0.8.7",
+    "readme": "https://raw.githubusercontent.com/pgvector/pgvector/v0.8.7/README.md",
     "control": {
       "vector": {
-        "default_version": "0.8.2",
+        "default_version": "0.8.7",
         "module_pathname": "$libdir/vector",
         "superuser": true,
         "trusted": false,

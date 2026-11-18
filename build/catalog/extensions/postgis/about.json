@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "3.5.7",
+    "version": "3.7.0",
     "description": "PostGIS geometry and geography spatial types and functions",
     "long_description": "PostGIS spatial database extension to PostgreSQL [mirror]",
     "homepage": "https://postgis.net",
@@ -22,46 +22,26 @@
     "repository": {
       "url": "https://github.com/postgis/postgis"
     },
-    "ref": "3.5.7",
-    "readme": "https://raw.githubusercontent.com/postgis/postgis/3.5.7/README.md",
+    "ref": "3.7.0",
+    "readme": "https://raw.githubusercontent.com/postgis/postgis/3.7.0/README.md",
     "control": {
-      "address_standardizer": {
-        "default_version": "3.5.7",
-        "superuser": true,
-        "trusted": false,
-        "relocatable": true
-      },
-      "address_standardizer_data_us": {
-        "default_version": "3.5.7",
-        "superuser": true,
-        "trusted": false,
-        "relocatable": true
-      },
       "postgis": {
-        "default_version": "3.5.7",
+        "default_version": "3.7.0",
         "module_pathname": "$libdir/postgis-3",
         "superuser": true,
         "trusted": false,
         "relocatable": false
       },
       "postgis_raster": {
-        "default_version": "3.5.7",
+        "default_version": "3.7.0",
         "module_pathname": "$libdir/postgis_raster-3",
         "requires": ["postgis"],
         "superuser": true,
         "trusted": false,
         "relocatable": false
       },
-      "postgis_tiger_geocoder": {
-        "default_version": "3.5.7",
-        "requires": ["postgis", "fuzzystrmatch"],
-        "superuser": false,
-        "trusted": false,
-        "relocatable": false,
-        "schema": "tiger"
-      },
       "postgis_topology": {
-        "default_version": "3.5.7",
+        "default_version": "3.7.0",
         "requires": ["postgis"],
         "superuser": true,
         "trusted": false,

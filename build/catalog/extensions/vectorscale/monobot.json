@@ -13,12 +13,12 @@
     }
   },
   "versions": {
-    "pin": ["0.9.0"]
+    "pin": ["0.9.1"]
   },
   "control": {
-    "0.9.0": {
+    "0.9.1": {
       "vectorscale": {
-        "default_version": "0.9.0"
+        "default_version": "0.9.1"
       }
     }
   },
@@ -28,17 +28,17 @@
     "build_args": ["--features", "build_parallel"],
     "patches": [
       {
-        "label": "//catalog/extensions/vectorscale/patches:0001-0.9.0-pgrx-0.18.patch",
-        "spec": ">=0.9.0/*"
+        "label": "//catalog/extensions/vectorscale/patches:0001-0.9.1-pgrx-0.18.patch",
+        "spec": ">=0.9.1/*"
       },
       {
         "label": "//catalog/extensions/vectorscale/patches:0002-0.9.0-control-module-pathname.patch",
-        "spec": ">=0.9.0/*"
+        "spec": ">=0.9.1/*"
       }
     ],
     "compatible_with": {
       "postgres": {
-        "0.9.0": ">=16"
+        "0.9.1": ">=16"
       }
     },
     "test_ext": {

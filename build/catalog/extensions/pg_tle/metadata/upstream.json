@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.5.2",
+    "version": "1.5.3",
     "forge": {
       "kind": "github",
       "url": "https://github.com/aws/pg_tle",

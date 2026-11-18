@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.15",
+    "version": "1.17",
     "forge": {
       "kind": "github",
       "url": "https://github.com/sraoss/pg_ivm",

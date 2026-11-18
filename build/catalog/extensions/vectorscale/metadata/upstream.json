@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "forge": {
       "kind": "github",
       "url": "https://github.com/timescale/pgvectorscale",

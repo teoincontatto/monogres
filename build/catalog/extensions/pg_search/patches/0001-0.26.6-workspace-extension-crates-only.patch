@@ -1,0 +1,40 @@
+From f70dd977e1f376479fcef104e522660d5635a127 Mon Sep 17 00:00:00 2001
+From: Matteo Melli <matteom@ongres.com>
+Date: Fri, 13 Nov 2026 15:26:55 +0100
+Subject: [PATCH] patch: keep only the extension's crates in the workspace
+
+The workspace lists every crate of the repository, and Cargo.lock resolves
+them all, including what the benchmarks, the stress tool and the integration
+tests use. The tests crate takes proptest from a git fork, while pg_search
+takes proptest 1.11.0 from crates.io, so the lock carries the same crate
+release from two sources. A vendored build files both under one
+proptest-1.11.0 directory, and cargo would build one against the other's
+source.
+
+pg_search needs dst, macros and tokenizers beside itself, which stay. The
+three crates this build never compiles leave the workspace, and the lock
+re-resolved for it carries proptest from crates.io alone.
+---
+ Cargo.toml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+index 39f047c..0ef308b 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -1,12 +1,9 @@
+ [workspace]
+ resolver = "2"
+ members = [
+-  "benchmarks",
+   "dst",
+   "macros",
+   "pg_search",
+-  "stressgres",
+-  "tests",
+   "tokenizers",
+ ]
+ # A bare `cargo build`/`check`/`clippy`/`test` at the root covers only the
+-- 
+2.43.0
+

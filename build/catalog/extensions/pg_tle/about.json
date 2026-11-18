@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "Trusted Language Extensions for PostgreSQL",
     "long_description": "Framework for building trusted language extensions for PostgreSQL",
     "homepage": "https://github.com/aws/pg_tle",
@@ -14,11 +14,11 @@
     "repository": {
       "url": "https://github.com/aws/pg_tle"
     },
-    "ref": "v1.5.2",
-    "readme": "https://raw.githubusercontent.com/aws/pg_tle/v1.5.2/README.md",
+    "ref": "v1.5.3",
+    "readme": "https://raw.githubusercontent.com/aws/pg_tle/v1.5.3/README.md",
     "control": {
       "pg_tle": {
-        "default_version": "1.5.2",
+        "default_version": "1.5.3",
         "module_pathname": "$libdir/pg_tle",
         "superuser": true,
         "trusted": false,

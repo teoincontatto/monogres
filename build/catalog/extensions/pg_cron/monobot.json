@@ -13,18 +13,12 @@
     }
   },
   "versions": {
-    "pin": ["1.6.7"]
+    "pin": ["1.6.8"]
   },
   "metadata": {
-    "patches": [
-      {
-        "label": "//catalog/extensions/pg_cron/patches:0001-1.6-hermetic-clang-c99-strict-ansi.patch",
-        "spec": ">=1.6.7/*"
-      }
-    ],
     "compatible_with": {
       "postgres": {
-        "1.6.7": ">=16"
+        "1.6.8": ">=16"
       }
     },
     "test_ext": {

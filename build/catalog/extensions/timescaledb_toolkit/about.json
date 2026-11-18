@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.24.0",
+    "version": "1.27.0",
     "description": "Library of analytical hyperfunctions, time-series pipelining, and other SQL utilities",
     "long_description": "Extension for more hyperfunctions, fully compatible with TimescaleDB and PostgreSQL 📈",
     "homepage": "https://www.timescale.com",
@@ -8,11 +8,11 @@
     "repository": {
       "url": "https://github.com/timescale/timescaledb-toolkit"
     },
-    "ref": "1.24.0",
-    "readme": "https://raw.githubusercontent.com/timescale/timescaledb-toolkit/1.24.0/README.md",
+    "ref": "1.27.0",
+    "readme": "https://raw.githubusercontent.com/timescale/timescaledb-toolkit/1.27.0/README.md",
     "control": {
       "timescaledb_toolkit": {
-        "default_version": "1.24.0",
+        "default_version": "1.27.0",
         "module_pathname": "$libdir/timescaledb_toolkit",
         "superuser": true,
         "trusted": true,

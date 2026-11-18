@@ -11,8 +11,8 @@
     }
   },
   "versions": {
-    "2.28.3": {
-      "sha256": "c9f95c8865f71244cdd333076284377e83dad62f85679fbf1c94ba48a7d67334"
+    "2.32.0": {
+      "sha256": "881b07882719b53b1fe08753a514c5717baaf9644698fd12d58f63a6a86f4ba0"
     }
   },
   "metadata": {
@@ -20,7 +20,7 @@
     "build_args": ["-DPG_CONFIG={pg_config}", "-DREGRESS_CHECKS=OFF"],
     "compatible_with": {
       "postgres": {
-        "2.28.3": ">=16"
+        "2.32.0": ">=16"
       }
     },
     "test_ext": {

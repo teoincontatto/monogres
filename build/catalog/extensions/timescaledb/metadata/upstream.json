@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.28.3",
+    "version": "2.32.0",
     "forge": {
       "kind": "github",
       "url": "https://github.com/timescale/timescaledb",

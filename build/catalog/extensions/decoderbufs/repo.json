@@ -11,9 +11,9 @@
     }
   },
   "versions": {
-    "3.6.0": {
-      "upstream_version": "3.6.0.Final",
-      "sha256": "86e8bd7c609ad66dca01e7f8596296928b787a92ac17d0aad53932ec25c34815"
+    "3.7.1": {
+      "upstream_version": "3.7.1.Final",
+      "sha256": "d39797d2e1de0f1c8e9aac1513b889d8b7a53a3791c3608476f2283445140dca"
     }
   },
   "metadata": {
@@ -29,7 +29,7 @@
     ],
     "compatible_with": {
       "postgres": {
-        "3.6.0": ">=16"
+        "3.7.1": ">=16"
       }
     },
     "deps": {

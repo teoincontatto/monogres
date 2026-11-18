@@ -11,17 +11,13 @@
     }
   },
   "versions": {
-    "1.6.1": {
-      "sha256": "d0e08645922984cd14bcec041516aa3707b4cbb471c54ab89712fb16e17b6cba"
+    "1.6.3": {
+      "sha256": "0d35a8d14630d29914c1338ae6fb1e2eb9300d0409fec399e55c69860c7f7cf4"
     }
   },
   "metadata": {
     "build_system": "pgrx",
     "patches": [
-      {
-        "label": "//catalog/extensions/pg_graphql/patches:0001-1.6.1-pgrx-0.18.patch",
-        "spec": ">=1.6.1/*"
-      },
       {
         "label": "//catalog/extensions/pg_graphql/patches:0002-1.6.1-regress-fixtures.patch",
         "spec": ">=1.6.1/*"
@@ -29,7 +25,7 @@
     ],
     "compatible_with": {
       "postgres": {
-        "1.6.1": ">=16"
+        "1.6.3": ">=16"
       }
     },
     "test_ext": {
@@ -53,6 +49,7 @@
               "comment_directive",
               "comment_directive_description",
               "compound_filters",
+              "depth_limit",
               "empty_mutations",
               "enum_mappings",
               "extend_type_with_function",
@@ -107,6 +104,7 @@
               "mutation_delete_variable",
               "mutation_insert",
               "mutation_update",
+              "node_id_quoted_pk_column",
               "null_argument",
               "omit_exotic_types",
               "omit_weird_names",

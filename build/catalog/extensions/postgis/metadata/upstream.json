@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "3.5.7",
+    "version": "3.7.0",
     "forge": {
       "kind": "github",
       "url": "https://github.com/postgis/postgis",

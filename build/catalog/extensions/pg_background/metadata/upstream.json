@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.0.3",
+    "version": "2.0.5",
     "forge": {
       "kind": "github",
       "url": "https://github.com/vibhorkum/pg_background",

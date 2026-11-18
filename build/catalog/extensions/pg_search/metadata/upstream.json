@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "0.24.3",
+    "version": "0.26.6",
     "forge": {
       "kind": "github",
       "url": "https://github.com/paradedb/paradedb",

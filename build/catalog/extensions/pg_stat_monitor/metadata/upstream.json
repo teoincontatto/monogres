@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.3.2",
+    "version": "2.4.0",
     "forge": {
       "kind": "github",
       "url": "https://github.com/percona/pg_stat_monitor",

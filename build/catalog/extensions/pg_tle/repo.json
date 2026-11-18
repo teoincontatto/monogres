@@ -11,20 +11,14 @@
     }
   },
   "versions": {
-    "1.5.2": {
-      "sha256": "6fe53496541a4cc763f18614d5ea91c57f64ac6b292f54f7346197961ab47341"
+    "1.5.3": {
+      "sha256": "90cd505bd2b427911f16c738bafeb3b8029d7b30194df9518270d94e06fc791e"
     }
   },
   "metadata": {
-    "patches": [
-      {
-        "label": "//catalog/extensions/pg_tle/patches:0001-1.5.2-regress-reload-propagation.patch",
-        "spec": ">=1.5.2/*"
-      }
-    ],
     "compatible_with": {
       "postgres": {
-        "1.5.2": ">=16"
+        "1.5.3": ">=16"
       }
     },
     "test_ext": {

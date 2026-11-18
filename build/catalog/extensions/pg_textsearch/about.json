@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.4.0",
+    "version": "1.5.1",
     "description": "Full-text search with BM25 ranking",
     "long_description": "PostgreSQL extension for BM25 relevance-ranked full-text search. Postgres OSS licensed.",
     "homepage": "https://github.com/timescale/pg_textsearch",
@@ -9,11 +9,11 @@
     "repository": {
       "url": "https://github.com/timescale/pg_textsearch"
     },
-    "ref": "v1.4.0",
-    "readme": "https://raw.githubusercontent.com/timescale/pg_textsearch/v1.4.0/README.md",
+    "ref": "v1.5.1",
+    "readme": "https://raw.githubusercontent.com/timescale/pg_textsearch/v1.5.1/README.md",
     "control": {
       "pg_textsearch": {
-        "default_version": "1.4.0",
+        "default_version": "1.5.1",
         "module_pathname": "$libdir/pg_textsearch",
         "superuser": true,
         "trusted": false,

@@ -21,6 +21,15 @@
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
         ],
+        "4.10": [
+          "lib/bitcode/jsonb_plperl.index.bc",
+          "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
         "4.2": [
           "lib/bitcode/jsonb_plperl.index.bc",
           "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
@@ -119,10 +128,47 @@
           "share/extension/jsonb_plperl.control",
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
+        ],
+        "5.6": [
+          "lib/bitcode/jsonb_plperl.index.bc",
+          "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
         ]
       },
       "ivorysql": {
         "3.0": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "3.1": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "3.2": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "3.3": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "3.4": [
           "lib/jsonb_plperl.so",
           "share/extension/jsonb_plperl--1.0.sql",
           "share/extension/jsonb_plperl.control",
@@ -136,7 +182,63 @@
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
         ],
+        "4.2": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "4.4": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "4.5": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "4.6": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
         "5.0": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "5.1": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "5.3": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "5.4": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "5.6": [
           "lib/jsonb_plperl.so",
           "share/extension/jsonb_plperl--1.0.sql",
           "share/extension/jsonb_plperl.control",
@@ -273,6 +375,15 @@
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
         ],
+        "15.20": [
+          "lib/bitcode/jsonb_plperl.index.bc",
+          "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
         "15.3": [
           "lib/bitcode/jsonb_plperl.index.bc",
           "lib/bitcode/jsonb_plperl/jsonb_plperl.bc",
@@ -392,6 +503,13 @@
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
         ],
+        "16.16": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
         "16.2": [
           "lib/jsonb_plperl.so",
           "share/extension/jsonb_plperl--1.0.sql",
@@ -470,6 +588,13 @@
           "share/extension/jsonb_plperlu.control"
         ],
         "17.11": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
+        ],
+        "17.12": [
           "lib/jsonb_plperl.so",
           "share/extension/jsonb_plperl--1.0.sql",
           "share/extension/jsonb_plperl.control",
@@ -573,6 +698,13 @@
           "share/extension/jsonb_plperl.control",
           "share/extension/jsonb_plperlu--1.0.sql",
           "share/extension/jsonb_plperlu.control"
+        ],
+        "18.7": [
+          "lib/jsonb_plperl.so",
+          "share/extension/jsonb_plperl--1.0.sql",
+          "share/extension/jsonb_plperl.control",
+          "share/extension/jsonb_plperlu--1.0.sql",
+          "share/extension/jsonb_plperlu.control"
         ]
       }
     },
@@ -608,6 +740,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -618,12 +751,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -642,6 +788,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -657,6 +804,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -669,6 +817,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -682,7 +831,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.6.0",
+    "version": "2.7.0",
     "description": "JSON output plugin for changeset extraction",
     "long_description": "JSON output plugin for changeset extraction",
     "homepage": "https://github.com/eulerto/wal2json",
@@ -9,7 +9,7 @@
     "repository": {
       "url": "https://github.com/eulerto/wal2json"
     },
-    "ref": "wal2json_2_6",
-    "readme": "https://raw.githubusercontent.com/eulerto/wal2json/wal2json_2_6/README.md"
+    "ref": "wal2json_2_7",
+    "readme": "https://raw.githubusercontent.com/eulerto/wal2json/wal2json_2_7/README.md"
   }
 }

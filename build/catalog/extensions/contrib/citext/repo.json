@@ -29,6 +29,19 @@
           "share/extension/citext--1.5--1.6.sql",
           "share/extension/citext.control"
         ],
+        "4.10": [
+          "lib/bitcode/citext.index.bc",
+          "lib/bitcode/citext/citext.bc",
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
         "4.2": [
           "lib/bitcode/citext.index.bc",
           "lib/bitcode/citext/citext.bc",
@@ -171,10 +184,67 @@
           "share/extension/citext--1.4.sql",
           "share/extension/citext--1.5--1.6.sql",
           "share/extension/citext.control"
+        ],
+        "5.6": [
+          "lib/bitcode/citext.index.bc",
+          "lib/bitcode/citext/citext.bc",
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
         ]
       },
       "ivorysql": {
         "3.0": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "3.1": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "3.2": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "3.3": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "3.4": [
           "lib/citext.so",
           "share/extension/citext--1.0--1.1.sql",
           "share/extension/citext--1.1--1.2.sql",
@@ -196,7 +266,103 @@
           "share/extension/citext--1.5--1.6.sql",
           "share/extension/citext.control"
         ],
+        "4.2": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "4.4": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "4.5": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "4.6": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
         "5.0": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext--1.6--1.7.sql",
+          "share/extension/citext--1.7--1.8.sql",
+          "share/extension/citext.control"
+        ],
+        "5.1": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext--1.6--1.7.sql",
+          "share/extension/citext--1.7--1.8.sql",
+          "share/extension/citext.control"
+        ],
+        "5.3": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext--1.6--1.7.sql",
+          "share/extension/citext--1.7--1.8.sql",
+          "share/extension/citext.control"
+        ],
+        "5.4": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext--1.6--1.7.sql",
+          "share/extension/citext--1.7--1.8.sql",
+          "share/extension/citext.control"
+        ],
+        "5.6": [
           "lib/citext.so",
           "share/extension/citext--1.0--1.1.sql",
           "share/extension/citext--1.1--1.2.sql",
@@ -395,6 +561,19 @@
           "share/extension/citext--1.5--1.6.sql",
           "share/extension/citext.control"
         ],
+        "15.20": [
+          "lib/bitcode/citext.index.bc",
+          "lib/bitcode/citext/citext.bc",
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
         "15.3": [
           "lib/bitcode/citext.index.bc",
           "lib/bitcode/citext/citext.bc",
@@ -574,6 +753,17 @@
           "share/extension/citext--1.5--1.6.sql",
           "share/extension/citext.control"
         ],
+        "16.16": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
         "16.2": [
           "lib/citext.so",
           "share/extension/citext--1.0--1.1.sql",
@@ -696,6 +886,17 @@
           "share/extension/citext.control"
         ],
         "17.11": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext.control"
+        ],
+        "17.12": [
           "lib/citext.so",
           "share/extension/citext--1.0--1.1.sql",
           "share/extension/citext--1.1--1.2.sql",
@@ -871,6 +1072,19 @@
           "share/extension/citext--1.6--1.7.sql",
           "share/extension/citext--1.7--1.8.sql",
           "share/extension/citext.control"
+        ],
+        "18.7": [
+          "lib/citext.so",
+          "share/extension/citext--1.0--1.1.sql",
+          "share/extension/citext--1.1--1.2.sql",
+          "share/extension/citext--1.2--1.3.sql",
+          "share/extension/citext--1.3--1.4.sql",
+          "share/extension/citext--1.4--1.5.sql",
+          "share/extension/citext--1.4.sql",
+          "share/extension/citext--1.5--1.6.sql",
+          "share/extension/citext--1.6--1.7.sql",
+          "share/extension/citext--1.7--1.8.sql",
+          "share/extension/citext.control"
         ]
       }
     }
@@ -880,6 +1094,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -890,12 +1105,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -914,6 +1142,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -929,6 +1158,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -941,6 +1171,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -954,7 +1185,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

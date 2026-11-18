@@ -13,12 +13,12 @@
     }
   },
   "versions": {
-    "pin": ["4.0.1"]
+    "pin": ["4.0.2"]
   },
   "control": {
-    "4.0.1": {
+    "4.0.2": {
       "pgrouting": {
-        "default_version": "4.0.1",
+        "default_version": "4.0.2",
         "module_pathname": "$libdir/libpgrouting-4.0"
       }
     }
@@ -31,7 +31,7 @@
     ],
     "compatible_with": {
       "postgres": {
-        "4.0.1": ">=16"
+        "4.0.2": ">=16"
       }
     },
     "deps": {

@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.6.1",
+    "version": "1.6.3",
     "description": "pg_graphql: GraphQL support",
     "long_description": "GraphQL support for PostgreSQL",
     "homepage": "https://supabase.github.io/pg_graphql",
@@ -16,11 +16,11 @@
     "repository": {
       "url": "https://github.com/supabase/pg_graphql"
     },
-    "ref": "v1.6.1",
-    "readme": "https://raw.githubusercontent.com/supabase/pg_graphql/v1.6.1/README.md",
+    "ref": "v1.6.3",
+    "readme": "https://raw.githubusercontent.com/supabase/pg_graphql/v1.6.3/README.md",
     "control": {
       "pg_graphql": {
-        "default_version": "1.6.1",
+        "default_version": "1.6.3",
         "module_pathname": "$libdir/pg_graphql",
         "superuser": true,
         "trusted": false,

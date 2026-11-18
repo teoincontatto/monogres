@@ -1,7 +1,7 @@
 {
   "latest": {
-    "version": "0.24.3",
-    "description": "pg_search: Full text search for PostgreSQL using BM25",
+    "version": "0.26.6",
+    "description": "pg_search: One Postgres for your application data, full-text search, vector retrieval, and aggregations",
     "long_description": "One Postgres for your application data, full-text search, vector retrieval, and aggregations. Home of the pg_search extension.",
     "homepage": "https://paradedb.com",
     "license": "AGPL-3.0",
@@ -30,12 +30,13 @@
     "repository": {
       "url": "https://github.com/paradedb/paradedb"
     },
-    "ref": "v0.24.3",
-    "readme": "https://raw.githubusercontent.com/paradedb/paradedb/v0.24.3/README.md",
+    "ref": "v0.26.6",
+    "readme": "https://raw.githubusercontent.com/paradedb/paradedb/v0.26.6/README.md",
     "control": {
       "pg_search": {
-        "default_version": "0.24.3",
+        "default_version": "0.26.6",
         "module_pathname": "$libdir/pg_search",
+        "requires": ["vector"],
         "superuser": false,
         "trusted": false,
         "relocatable": false,

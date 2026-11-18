@@ -25,6 +25,17 @@
           "share/extension/amcheck--1.2--1.3.sql",
           "share/extension/amcheck.control"
         ],
+        "4.10": [
+          "lib/amcheck.so",
+          "lib/bitcode/amcheck.index.bc",
+          "lib/bitcode/amcheck/verify_heapam.bc",
+          "lib/bitcode/amcheck/verify_nbtree.bc",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
         "4.2": [
           "lib/amcheck.so",
           "lib/bitcode/amcheck.index.bc",
@@ -149,10 +160,54 @@
           "share/extension/amcheck--1.2--1.3.sql",
           "share/extension/amcheck--1.3--1.4.sql",
           "share/extension/amcheck.control"
+        ],
+        "5.6": [
+          "lib/amcheck.so",
+          "lib/bitcode/amcheck.index.bc",
+          "lib/bitcode/amcheck/verify_heapam.bc",
+          "lib/bitcode/amcheck/verify_nbtree.bc",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
         ]
       },
       "ivorysql": {
         "3.0": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
+        "3.1": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
+        "3.2": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
+        "3.3": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
+        "3.4": [
           "lib/amcheck.so",
           "share/extension/amcheck--1.0--1.1.sql",
           "share/extension/amcheck--1.0.sql",
@@ -169,7 +224,83 @@
           "share/extension/amcheck--1.3--1.4.sql",
           "share/extension/amcheck.control"
         ],
+        "4.2": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
+        ],
+        "4.4": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
+        ],
+        "4.5": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
+        ],
+        "4.6": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
+        ],
         "5.0": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck--1.4--1.5.sql",
+          "share/extension/amcheck.control"
+        ],
+        "5.1": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck--1.4--1.5.sql",
+          "share/extension/amcheck.control"
+        ],
+        "5.3": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck--1.4--1.5.sql",
+          "share/extension/amcheck.control"
+        ],
+        "5.4": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck--1.4--1.5.sql",
+          "share/extension/amcheck.control"
+        ],
+        "5.6": [
           "lib/amcheck.so",
           "share/extension/amcheck--1.0--1.1.sql",
           "share/extension/amcheck--1.0.sql",
@@ -337,6 +468,17 @@
           "share/extension/amcheck--1.2--1.3.sql",
           "share/extension/amcheck.control"
         ],
+        "15.20": [
+          "lib/amcheck.so",
+          "lib/bitcode/amcheck.index.bc",
+          "lib/bitcode/amcheck/verify_heapam.bc",
+          "lib/bitcode/amcheck/verify_nbtree.bc",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
         "15.3": [
           "lib/amcheck.so",
           "lib/bitcode/amcheck.index.bc",
@@ -478,6 +620,14 @@
           "share/extension/amcheck--1.2--1.3.sql",
           "share/extension/amcheck.control"
         ],
+        "16.16": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck.control"
+        ],
         "16.2": [
           "lib/amcheck.so",
           "share/extension/amcheck--1.0--1.1.sql",
@@ -570,6 +720,15 @@
           "share/extension/amcheck.control"
         ],
         "17.11": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck.control"
+        ],
+        "17.12": [
           "lib/amcheck.so",
           "share/extension/amcheck--1.0--1.1.sql",
           "share/extension/amcheck--1.0.sql",
@@ -709,6 +868,16 @@
           "share/extension/amcheck--1.3--1.4.sql",
           "share/extension/amcheck--1.4--1.5.sql",
           "share/extension/amcheck.control"
+        ],
+        "18.7": [
+          "lib/amcheck.so",
+          "share/extension/amcheck--1.0--1.1.sql",
+          "share/extension/amcheck--1.0.sql",
+          "share/extension/amcheck--1.1--1.2.sql",
+          "share/extension/amcheck--1.2--1.3.sql",
+          "share/extension/amcheck--1.3--1.4.sql",
+          "share/extension/amcheck--1.4--1.5.sql",
+          "share/extension/amcheck.control"
         ]
       }
     }
@@ -718,6 +887,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -728,12 +898,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -752,6 +935,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -767,6 +951,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -779,6 +964,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -792,7 +978,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

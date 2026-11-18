@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "diskann access method for vector search",
     "long_description": "Postgres extension for vector search (DiskANN), complements pgvector for performance and scale. Postgres OSS licensed.",
     "homepage": "https://github.com/timescale/pgvectorscale",
@@ -8,11 +8,11 @@
     "repository": {
       "url": "https://github.com/timescale/pgvectorscale"
     },
-    "ref": "0.9.0",
-    "readme": "https://raw.githubusercontent.com/timescale/pgvectorscale/0.9.0/README.md",
+    "ref": "0.9.1",
+    "readme": "https://raw.githubusercontent.com/timescale/pgvectorscale/0.9.1/README.md",
     "control": {
       "vectorscale": {
-        "default_version": "0.9.0",
+        "default_version": "0.9.1",
         "requires": ["vector"],
         "superuser": true,
         "trusted": false,

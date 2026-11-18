@@ -1,0 +1,10 @@
+{
+  "credcheck": {
+    "default_version": "6.0.0",
+    "comment": "credcheck - postgresql plain text credential checker",
+    "module_pathname": "$libdir/credcheck",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
+}

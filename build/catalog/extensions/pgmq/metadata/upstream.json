@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.12.0",
+    "version": "1.13.1",
     "forge": {
       "kind": "github",
       "url": "https://github.com/pgmq/pgmq",

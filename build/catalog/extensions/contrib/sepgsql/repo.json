@@ -31,6 +31,20 @@
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
         ],
+        "4.10": [
+          "lib/bitcode/babelfishpg_tsql/src/hooks.bc",
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
         "4.2": [
           "lib/bitcode/babelfishpg_tsql/src/hooks.bc",
           "lib/bitcode/postgres/access/common/relation.bc",
@@ -184,6 +198,20 @@
           "lib/bitcode/sepgsql/uavc.bc",
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
+        ],
+        "5.6": [
+          "lib/bitcode/babelfishpg_tsql/src/hooks.bc",
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
         ]
       },
       "ivorysql": {
@@ -191,11 +219,59 @@
           "lib/sepgsql.so",
           "share/extension/sepgsql.sql"
         ],
+        "3.1": [
+          "lib/sepgsql.so",
+          "share/extension/sepgsql.sql"
+        ],
+        "3.2": [
+          "lib/sepgsql.so",
+          "share/extension/sepgsql.sql"
+        ],
+        "3.3": [
+          "lib/sepgsql.so",
+          "share/extension/sepgsql.sql"
+        ],
+        "3.4": [
+          "lib/sepgsql.so",
+          "share/extension/sepgsql.sql"
+        ],
         "4.0": [
           "lib/sepgsql.so",
           "share/extension/sepgsql.sql"
         ],
+        "4.2": [
+          "lib/sepgsql.so",
+          "share/extension/sepgsql.sql"
+        ],
+        "4.4": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "4.5": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "4.6": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
         "5.0": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "5.1": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "5.3": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "5.4": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "5.6": [
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
         ]
@@ -399,6 +475,20 @@
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
         ],
+        "15.20": [
+          "lib/bitcode/postgres/access/common/relation.bc",
+          "lib/bitcode/postgres/storage/lmgr/proc.bc",
+          "lib/bitcode/sepgsql.index.bc",
+          "lib/bitcode/sepgsql/database.bc",
+          "lib/bitcode/sepgsql/dml.bc",
+          "lib/bitcode/sepgsql/hooks.bc",
+          "lib/bitcode/sepgsql/label.bc",
+          "lib/bitcode/sepgsql/schema.bc",
+          "lib/bitcode/sepgsql/selinux.bc",
+          "lib/bitcode/sepgsql/uavc.bc",
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
         "15.3": [
           "lib/bitcode/postgres/access/common/relation.bc",
           "lib/bitcode/postgres/storage/lmgr/proc.bc",
@@ -529,6 +619,10 @@
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
         ],
+        "16.16": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
         "16.2": [
           "lib/sepgsql.so",
           "share/extension/sepgsql.sql"
@@ -574,6 +668,10 @@
           "share/contrib/sepgsql.sql"
         ],
         "17.11": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
+        ],
+        "17.12": [
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
         ],
@@ -632,6 +730,10 @@
         "18.6": [
           "lib/sepgsql.so",
           "share/contrib/sepgsql.sql"
+        ],
+        "18.7": [
+          "lib/sepgsql.so",
+          "share/contrib/sepgsql.sql"
         ]
       }
     }
@@ -641,6 +743,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -651,12 +754,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -675,6 +791,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -690,6 +807,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -702,6 +820,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -715,7 +834,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

@@ -14,8 +14,8 @@
   },
   "versions": {
     "pin": {
-      "4.2.0": {
-        "upstream_version": "4_2_0"
+      "4.3.0": {
+        "upstream_version": "4_3_0"
       }
     }
   },
@@ -33,7 +33,7 @@
     ],
     "compatible_with": {
       "postgres": {
-        "4.2.0": ">=16"
+        "4.3.0": ">=16"
       }
     },
     "test_ext": {

@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.6.1",
+    "version": "1.6.3",
     "forge": {
       "kind": "github",
       "url": "https://github.com/supabase/pg_graphql",

@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.6.7",
+    "version": "1.6.8",
     "description": "Job scheduler for PostgreSQL",
     "long_description": "Run periodic jobs in PostgreSQL",
     "homepage": "https://citusdata.com/",
@@ -16,8 +16,8 @@
     "repository": {
       "url": "https://github.com/citusdata/pg_cron"
     },
-    "ref": "v1.6.7",
-    "readme": "https://raw.githubusercontent.com/citusdata/pg_cron/v1.6.7/README.md",
+    "ref": "v1.6.8",
+    "readme": "https://raw.githubusercontent.com/citusdata/pg_cron/v1.6.8/README.md",
     "control": {
       "pg_cron": {
         "default_version": "1.6",

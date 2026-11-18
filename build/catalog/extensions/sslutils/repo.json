@@ -11,8 +11,8 @@
     }
   },
   "versions": {
-    "1.4": {
-      "sha256": "58baceebde4024dceb6c6de9a25fbf602c35add2dc84de968112126555e27461"
+    "1.4.1": {
+      "sha256": "b74537b4803e74d8855f12adbd4abab45ada59cce9a746e01c84039b271bcf0b"
     }
   },
   "metadata": {

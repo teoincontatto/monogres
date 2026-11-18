@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.4",
+    "version": "1.4.1",
     "forge": {
       "kind": "github",
       "url": "https://github.com/EnterpriseDB/sslutils",

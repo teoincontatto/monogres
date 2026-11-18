@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "5.0",
+    "version": "6.0",
     "description": "credcheck - postgresql plain text credential checker",
     "long_description": "PostgreSQL plain credential checker",
     "homepage": "https://github.com/HexaCluster/credcheck",
@@ -8,11 +8,11 @@
     "repository": {
       "url": "https://github.com/HexaCluster/credcheck"
     },
-    "ref": "v5.0",
-    "readme": "https://raw.githubusercontent.com/HexaCluster/credcheck/v5.0/README.md",
+    "ref": "v6.0",
+    "readme": "https://raw.githubusercontent.com/HexaCluster/credcheck/v6.0/README.md",
     "control": {
       "credcheck": {
-        "default_version": "5.0.0",
+        "default_version": "6.0.0",
         "module_pathname": "$libdir/credcheck",
         "superuser": true,
         "trusted": false,

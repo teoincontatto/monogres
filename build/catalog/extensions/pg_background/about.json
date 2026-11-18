@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "2.0.3",
+    "version": "2.0.5",
     "description": "Run SQL queries in the background",
     "long_description": "Production-grade PostgreSQL extension to execute arbitrary SQL in background worker processes — with async execution, autonomous transactions, cookie-protected handles, cancellation, progress reporting, and observability.",
     "homepage": "https://github.com/vibhorkum/pg_background",
@@ -32,8 +32,8 @@
     "repository": {
       "url": "https://github.com/vibhorkum/pg_background"
     },
-    "ref": "v2.0.3",
-    "readme": "https://raw.githubusercontent.com/vibhorkum/pg_background/v2.0.3/README.md",
+    "ref": "v2.0.5",
+    "readme": "https://raw.githubusercontent.com/vibhorkum/pg_background/v2.0.5/README.md",
     "control": {
       "pg_background": {
         "default_version": "2.0",

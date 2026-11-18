@@ -69,6 +69,39 @@
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
         ],
+        "4.10": [
+          "lib/bitcode/pgcrypto.index.bc",
+          "lib/bitcode/pgcrypto/crypt-blowfish.bc",
+          "lib/bitcode/pgcrypto/crypt-des.bc",
+          "lib/bitcode/pgcrypto/crypt-gensalt.bc",
+          "lib/bitcode/pgcrypto/crypt-md5.bc",
+          "lib/bitcode/pgcrypto/mbuf.bc",
+          "lib/bitcode/pgcrypto/openssl.bc",
+          "lib/bitcode/pgcrypto/pgcrypto.bc",
+          "lib/bitcode/pgcrypto/pgp-armor.bc",
+          "lib/bitcode/pgcrypto/pgp-cfb.bc",
+          "lib/bitcode/pgcrypto/pgp-compress.bc",
+          "lib/bitcode/pgcrypto/pgp-decrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-encrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-info.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi-openssl.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi.bc",
+          "lib/bitcode/pgcrypto/pgp-pgsql.bc",
+          "lib/bitcode/pgcrypto/pgp-pubdec.bc",
+          "lib/bitcode/pgcrypto/pgp-pubenc.bc",
+          "lib/bitcode/pgcrypto/pgp-pubkey.bc",
+          "lib/bitcode/pgcrypto/pgp-s2k.bc",
+          "lib/bitcode/pgcrypto/pgp.bc",
+          "lib/bitcode/pgcrypto/px-crypt.bc",
+          "lib/bitcode/pgcrypto/px-hmac.bc",
+          "lib/bitcode/pgcrypto/px.bc",
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
         "4.2": [
           "lib/bitcode/pgcrypto.index.bc",
           "lib/bitcode/pgcrypto/crypt-blowfish.bc",
@@ -431,10 +464,75 @@
           "share/extension/pgcrypto--1.2--1.3.sql",
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
+        ],
+        "5.6": [
+          "lib/bitcode/pgcrypto.index.bc",
+          "lib/bitcode/pgcrypto/crypt-blowfish.bc",
+          "lib/bitcode/pgcrypto/crypt-des.bc",
+          "lib/bitcode/pgcrypto/crypt-gensalt.bc",
+          "lib/bitcode/pgcrypto/crypt-md5.bc",
+          "lib/bitcode/pgcrypto/mbuf.bc",
+          "lib/bitcode/pgcrypto/openssl.bc",
+          "lib/bitcode/pgcrypto/pgcrypto.bc",
+          "lib/bitcode/pgcrypto/pgp-armor.bc",
+          "lib/bitcode/pgcrypto/pgp-cfb.bc",
+          "lib/bitcode/pgcrypto/pgp-compress.bc",
+          "lib/bitcode/pgcrypto/pgp-decrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-encrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-info.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi-openssl.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi.bc",
+          "lib/bitcode/pgcrypto/pgp-pgsql.bc",
+          "lib/bitcode/pgcrypto/pgp-pubdec.bc",
+          "lib/bitcode/pgcrypto/pgp-pubenc.bc",
+          "lib/bitcode/pgcrypto/pgp-pubkey.bc",
+          "lib/bitcode/pgcrypto/pgp-s2k.bc",
+          "lib/bitcode/pgcrypto/pgp.bc",
+          "lib/bitcode/pgcrypto/px-crypt.bc",
+          "lib/bitcode/pgcrypto/px-hmac.bc",
+          "lib/bitcode/pgcrypto/px.bc",
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
         ]
       },
       "ivorysql": {
         "3.0": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "3.1": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "3.2": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "3.3": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "3.4": [
           "lib/pgcrypto.so",
           "share/extension/pgcrypto--1.0--1.1.sql",
           "share/extension/pgcrypto--1.1--1.2.sql",
@@ -450,7 +548,75 @@
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
         ],
+        "4.2": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "4.4": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "4.5": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "4.6": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
         "5.0": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3--1.4.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "5.1": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3--1.4.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "5.3": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3--1.4.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "5.4": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3--1.4.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "5.6": [
           "lib/pgcrypto.so",
           "share/extension/pgcrypto--1.0--1.1.sql",
           "share/extension/pgcrypto--1.1--1.2.sql",
@@ -925,6 +1091,39 @@
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
         ],
+        "15.20": [
+          "lib/bitcode/pgcrypto.index.bc",
+          "lib/bitcode/pgcrypto/crypt-blowfish.bc",
+          "lib/bitcode/pgcrypto/crypt-des.bc",
+          "lib/bitcode/pgcrypto/crypt-gensalt.bc",
+          "lib/bitcode/pgcrypto/crypt-md5.bc",
+          "lib/bitcode/pgcrypto/mbuf.bc",
+          "lib/bitcode/pgcrypto/openssl.bc",
+          "lib/bitcode/pgcrypto/pgcrypto.bc",
+          "lib/bitcode/pgcrypto/pgp-armor.bc",
+          "lib/bitcode/pgcrypto/pgp-cfb.bc",
+          "lib/bitcode/pgcrypto/pgp-compress.bc",
+          "lib/bitcode/pgcrypto/pgp-decrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-encrypt.bc",
+          "lib/bitcode/pgcrypto/pgp-info.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi-openssl.bc",
+          "lib/bitcode/pgcrypto/pgp-mpi.bc",
+          "lib/bitcode/pgcrypto/pgp-pgsql.bc",
+          "lib/bitcode/pgcrypto/pgp-pubdec.bc",
+          "lib/bitcode/pgcrypto/pgp-pubenc.bc",
+          "lib/bitcode/pgcrypto/pgp-pubkey.bc",
+          "lib/bitcode/pgcrypto/pgp-s2k.bc",
+          "lib/bitcode/pgcrypto/pgp.bc",
+          "lib/bitcode/pgcrypto/px-crypt.bc",
+          "lib/bitcode/pgcrypto/px-hmac.bc",
+          "lib/bitcode/pgcrypto/px.bc",
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
         "15.3": [
           "lib/bitcode/pgcrypto.index.bc",
           "lib/bitcode/pgcrypto/crypt-blowfish.bc",
@@ -1220,6 +1419,14 @@
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
         ],
+        "16.16": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
         "16.2": [
           "lib/pgcrypto.so",
           "share/extension/pgcrypto--1.0--1.1.sql",
@@ -1309,6 +1516,14 @@
           "share/extension/pgcrypto.control"
         ],
         "17.11": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
+        ],
+        "17.12": [
           "lib/pgcrypto.so",
           "share/extension/pgcrypto--1.0--1.1.sql",
           "share/extension/pgcrypto--1.1--1.2.sql",
@@ -1433,6 +1648,15 @@
           "share/extension/pgcrypto--1.3--1.4.sql",
           "share/extension/pgcrypto--1.3.sql",
           "share/extension/pgcrypto.control"
+        ],
+        "18.7": [
+          "lib/pgcrypto.so",
+          "share/extension/pgcrypto--1.0--1.1.sql",
+          "share/extension/pgcrypto--1.1--1.2.sql",
+          "share/extension/pgcrypto--1.2--1.3.sql",
+          "share/extension/pgcrypto--1.3--1.4.sql",
+          "share/extension/pgcrypto--1.3.sql",
+          "share/extension/pgcrypto.control"
         ]
       }
     }
@@ -1442,6 +1666,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -1452,12 +1677,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -1476,6 +1714,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -1491,6 +1730,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -1503,6 +1743,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -1516,7 +1757,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

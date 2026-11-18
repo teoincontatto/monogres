@@ -11,14 +11,14 @@
     }
   },
   "versions": {
-    "1.12.0": {
-      "sha256": "e6bdbb2311a3bbf34439871a99ee1e5e87c79fdca2b1e6784411a51b079314d1"
+    "1.13.1": {
+      "sha256": "67221f288f42f95c002a64df40f7d660e765e32df8ada0f2672ba915a14827f7"
     }
   },
   "metadata": {
     "compatible_with": {
       "postgres": {
-        "1.12.0": ">=16"
+        "1.13.1": ">=16"
       }
     },
     "test_ext": {

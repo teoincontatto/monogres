@@ -1,0 +1,11 @@
+{
+  "pgmq": {
+    "default_version": "1.13.1",
+    "comment": "A lightweight message queue. Like AWS SQS and RSMQ but on Postgres.",
+    "module_pathname": "$libdir/pgmq",
+    "superuser": false,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "pgmq"
+  }
+}

@@ -19,6 +19,14 @@
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
         ],
+        "4.10": [
+          "lib/bitcode/dict_xsyn.index.bc",
+          "lib/bitcode/dict_xsyn/dict_xsyn.bc",
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
         "4.2": [
           "lib/bitcode/dict_xsyn.index.bc",
           "lib/bitcode/dict_xsyn/dict_xsyn.bc",
@@ -106,10 +114,42 @@
           "share/extension/dict_xsyn--1.0.sql",
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "5.6": [
+          "lib/bitcode/dict_xsyn.index.bc",
+          "lib/bitcode/dict_xsyn/dict_xsyn.bc",
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
         ]
       },
       "ivorysql": {
         "3.0": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "3.1": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "3.2": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "3.3": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "3.4": [
           "lib/dict_xsyn.so",
           "share/extension/dict_xsyn--1.0.sql",
           "share/extension/dict_xsyn.control",
@@ -121,7 +161,55 @@
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
         ],
+        "4.2": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "4.4": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "4.5": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "4.6": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
         "5.0": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "5.1": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "5.3": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "5.4": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "5.6": [
           "lib/dict_xsyn.so",
           "share/extension/dict_xsyn--1.0.sql",
           "share/extension/dict_xsyn.control",
@@ -243,6 +331,14 @@
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
         ],
+        "15.20": [
+          "lib/bitcode/dict_xsyn.index.bc",
+          "lib/bitcode/dict_xsyn/dict_xsyn.bc",
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
         "15.3": [
           "lib/bitcode/dict_xsyn.index.bc",
           "lib/bitcode/dict_xsyn/dict_xsyn.bc",
@@ -347,6 +443,12 @@
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
         ],
+        "16.16": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
         "16.2": [
           "lib/dict_xsyn.so",
           "share/extension/dict_xsyn--1.0.sql",
@@ -414,6 +516,12 @@
           "share/tsearch_data/xsyn_sample.rules"
         ],
         "17.11": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "17.12": [
           "lib/dict_xsyn.so",
           "share/extension/dict_xsyn--1.0.sql",
           "share/extension/dict_xsyn.control",
@@ -502,6 +610,12 @@
           "share/extension/dict_xsyn--1.0.sql",
           "share/extension/dict_xsyn.control",
           "share/tsearch_data/xsyn_sample.rules"
+        ],
+        "18.7": [
+          "lib/dict_xsyn.so",
+          "share/extension/dict_xsyn--1.0.sql",
+          "share/extension/dict_xsyn.control",
+          "share/tsearch_data/xsyn_sample.rules"
         ]
       }
     }
@@ -511,6 +625,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -521,12 +636,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "openhalo": [
       "1beta1"
@@ -545,6 +673,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -560,6 +689,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -572,6 +702,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -585,7 +716,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

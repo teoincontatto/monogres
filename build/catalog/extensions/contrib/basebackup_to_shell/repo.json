@@ -13,6 +13,11 @@
           "lib/bitcode/basebackup_to_shell.index.bc",
           "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
         ],
+        "4.10": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
         "4.2": [
           "lib/basebackup_to_shell.so",
           "lib/bitcode/basebackup_to_shell.index.bc",
@@ -67,16 +72,57 @@
           "lib/basebackup_to_shell.so",
           "lib/bitcode/basebackup_to_shell.index.bc",
           "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
+        "5.6": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
         ]
       },
       "ivorysql": {
         "3.0": [
           "lib/basebackup_to_shell.so"
         ],
+        "3.1": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "3.2": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "3.3": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "3.4": [
+          "lib/basebackup_to_shell.so"
+        ],
         "4.0": [
           "lib/basebackup_to_shell.so"
         ],
+        "4.2": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "4.4": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "4.5": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "4.6": [
+          "lib/basebackup_to_shell.so"
+        ],
         "5.0": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "5.1": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "5.3": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "5.4": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "5.6": [
           "lib/basebackup_to_shell.so"
         ]
       },
@@ -146,6 +192,11 @@
           "lib/bitcode/basebackup_to_shell.index.bc",
           "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
         ],
+        "15.20": [
+          "lib/basebackup_to_shell.so",
+          "lib/bitcode/basebackup_to_shell.index.bc",
+          "lib/bitcode/basebackup_to_shell/basebackup_to_shell.bc"
+        ],
         "15.3": [
           "lib/basebackup_to_shell.so",
           "lib/bitcode/basebackup_to_shell.index.bc",
@@ -205,6 +256,9 @@
         "16.15": [
           "lib/basebackup_to_shell.so"
         ],
+        "16.16": [
+          "lib/basebackup_to_shell.so"
+        ],
         "16.2": [
           "lib/basebackup_to_shell.so"
         ],
@@ -239,6 +293,9 @@
           "lib/basebackup_to_shell.so"
         ],
         "17.11": [
+          "lib/basebackup_to_shell.so"
+        ],
+        "17.12": [
           "lib/basebackup_to_shell.so"
         ],
         "17.2": [
@@ -282,6 +339,9 @@
         ],
         "18.6": [
           "lib/basebackup_to_shell.so"
+        ],
+        "18.7": [
+          "lib/basebackup_to_shell.so"
         ]
       }
     }
@@ -291,6 +351,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -301,12 +362,25 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ],
     "ivorysql": [
       "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
       "4.0",
-      "5.0"
+      "4.2",
+      "4.4",
+      "4.5",
+      "4.6",
+      "5.0",
+      "5.1",
+      "5.3",
+      "5.4",
+      "5.6"
     ],
     "postgres": [
       "15.0",
@@ -322,6 +396,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -337,6 +412,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",
@@ -349,6 +425,7 @@
       "17.1",
       "17.10",
       "17.11",
+      "17.12",
       "17.2",
       "17.3",
       "17.4",
@@ -362,7 +439,8 @@
       "18.2",
       "18.3",
       "18.4",
-      "18.6"
+      "18.6",
+      "18.7"
     ]
   }
 }

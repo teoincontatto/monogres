@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.4.3",
+    "version": "1.4.5",
     "description": "Hypothetical indexes for PostgreSQL",
     "long_description": "Hypothetical Indexes for PostgreSQL",
     "homepage": "https://hypopg.readthedocs.io",
@@ -19,11 +19,11 @@
     "repository": {
       "url": "https://github.com/HypoPG/hypopg"
     },
-    "ref": "1.4.3",
-    "readme": "https://raw.githubusercontent.com/HypoPG/hypopg/1.4.3/README.md",
+    "ref": "1.4.5",
+    "readme": "https://raw.githubusercontent.com/HypoPG/hypopg/1.4.5/README.md",
     "control": {
       "hypopg": {
-        "default_version": "1.4.3",
+        "default_version": "1.4.5",
         "module_pathname": "$libdir/hypopg",
         "superuser": true,
         "trusted": false,

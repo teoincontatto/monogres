@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "sources": {
+    "git+https://github.com/paradedb/datafusion-distributed.git?tag=snapshot-main-2026-10-27-165520#a37869c70636f4bbd1d44f270fea146550537802": {
+      "url": "https://github.com/paradedb/datafusion-distributed/archive/a37869c70636f4bbd1d44f270fea146550537802.tar.gz",
+      "strip_prefix": "datafusion-distributed-a37869c70636f4bbd1d44f270fea146550537802",
+      "sha256": "4c6f8ead642e6c3a470c7aecebe16fb91edfe9d610ca4a76663226662adb8c71",
+      "crates": {
+        "datafusion-distributed": "."
+      }
+    },
+    "git+https://github.com/paradedb/datafusion.git?branch=paradedb.branch-55#058e049c90569751ae572d5bdb7cc26fbf01636f": {
+      "url": "https://github.com/paradedb/datafusion/archive/058e049c90569751ae572d5bdb7cc26fbf01636f.tar.gz",
+      "strip_prefix": "datafusion-058e049c90569751ae572d5bdb7cc26fbf01636f",
+      "sha256": "dc49392efc2b969207b2dfac5fbc346aac7ea2ada2089b2716a699b9c36f8db9",
+      "crates": {
+        "datafusion": "datafusion/core",
+        "datafusion-catalog": "datafusion/catalog",
+        "datafusion-catalog-listing": "datafusion/catalog-listing",
+        "datafusion-common": "datafusion/common",
+        "datafusion-common-runtime": "datafusion/common-runtime",
+        "datafusion-datasource": "datafusion/datasource",
+        "datafusion-datasource-arrow": "datafusion/datasource-arrow",
+        "datafusion-datasource-csv": "datafusion/datasource-csv",
+        "datafusion-datasource-json": "datafusion/datasource-json",
+        "datafusion-doc": "datafusion/doc",
+        "datafusion-execution": "datafusion/execution",
+        "datafusion-expr": "datafusion/expr",
+        "datafusion-expr-common": "datafusion/expr-common",
+        "datafusion-functions": "datafusion/functions",
+        "datafusion-functions-aggregate": "datafusion/functions-aggregate",
+        "datafusion-functions-aggregate-common": "datafusion/functions-aggregate-common",
+        "datafusion-functions-nested": "datafusion/functions-nested",
+        "datafusion-functions-table": "datafusion/functions-table",
+        "datafusion-functions-window": "datafusion/functions-window",
+        "datafusion-functions-window-common": "datafusion/functions-window-common",
+        "datafusion-macros": "datafusion/macros",
+        "datafusion-optimizer": "datafusion/optimizer",
+        "datafusion-physical-expr": "datafusion/physical-expr",
+        "datafusion-physical-expr-adapter": "datafusion/physical-expr-adapter",
+        "datafusion-physical-expr-common": "datafusion/physical-expr-common",
+        "datafusion-physical-optimizer": "datafusion/physical-optimizer",
+        "datafusion-physical-plan": "datafusion/physical-plan",
+        "datafusion-proto": "datafusion/proto",
+        "datafusion-proto-common": "datafusion/proto-common",
+        "datafusion-proto-models": "datafusion/proto-models",
+        "datafusion-pruning": "datafusion/pruning",
+        "datafusion-session": "datafusion/session",
+        "datafusion-sql": "datafusion/sql"
+      }
+    },
+    "git+https://github.com/paradedb/fst.git?rev=1d2e473c6de63d17749030eb8538ba4d647f3430#1d2e473c6de63d17749030eb8538ba4d647f3430": {
+      "url": "https://github.com/paradedb/fst/archive/1d2e473c6de63d17749030eb8538ba4d647f3430.tar.gz",
+      "strip_prefix": "fst-1d2e473c6de63d17749030eb8538ba4d647f3430",
+      "sha256": "0813206c3ed7b56919c5c75de30b464af58ee5c3095f30339bd6e67fef9b2b78",
+      "crates": {
+        "tantivy-fst": "."
+      }
+    },
+    "git+https://github.com/paradedb/opencc-jieba-rs?branch=main#1bee2628bcae67a955caa5e91b740d170f5615d0": {
+      "url": "https://github.com/paradedb/opencc-jieba-rs/archive/1bee2628bcae67a955caa5e91b740d170f5615d0.tar.gz",
+      "strip_prefix": "opencc-jieba-rs-1bee2628bcae67a955caa5e91b740d170f5615d0",
+      "sha256": "a0245931210a46618628a2df5e35e1264f33618b544690969fe9d74048e5cad2",
+      "crates": {
+        "opencc-jieba-rs": "."
+      }
+    },
+    "git+https://github.com/paradedb/superkmeans-rs.git?rev=28d7f26eec11548bb0b7435b36df6383b116c9b0#28d7f26eec11548bb0b7435b36df6383b116c9b0": {
+      "url": "https://github.com/paradedb/superkmeans-rs/archive/28d7f26eec11548bb0b7435b36df6383b116c9b0.tar.gz",
+      "strip_prefix": "superkmeans-rs-28d7f26eec11548bb0b7435b36df6383b116c9b0",
+      "sha256": "6b8bd605e1fd80b59bdfbc0630d291701f54041bdbc481ad996ad85c527155fc",
+      "crates": {
+        "superkmeans-rs": "."
+      }
+    },
+    "git+https://github.com/paradedb/superkmeans-rs?rev=ced81ac6f010ff79e74b161df9454e51bc1a8d0e#ced81ac6f010ff79e74b161df9454e51bc1a8d0e": {
+      "url": "https://github.com/paradedb/superkmeans-rs/archive/ced81ac6f010ff79e74b161df9454e51bc1a8d0e.tar.gz",
+      "strip_prefix": "superkmeans-rs-ced81ac6f010ff79e74b161df9454e51bc1a8d0e",
+      "sha256": "4cb3ccc1ffa05cc33c040f208eb72ca587a1fd327fbabb6b0f5c0aecb449b256",
+      "crates": {
+        "superkmeans-rs": "."
+      }
+    },
+    "git+https://github.com/paradedb/tantivy.git?branch=paradedb-0.26.x#f4a59c13f0f919cf1df59c8975fc580d1c58ff73": {
+      "url": "https://github.com/paradedb/tantivy/archive/f4a59c13f0f919cf1df59c8975fc580d1c58ff73.tar.gz",
+      "strip_prefix": "tantivy-f4a59c13f0f919cf1df59c8975fc580d1c58ff73",
+      "sha256": "e565434a505a0fcbacc9b104e601c3a7b0281b9066aa9ddbfe780422895e2c34",
+      "crates": {
+        "ownedbytes": "ownedbytes",
+        "tantivy": ".",
+        "tantivy-bitpacker": "bitpacker",
+        "tantivy-columnar": "columnar",
+        "tantivy-common": "common",
+        "tantivy-quant": "quant",
+        "tantivy-query-grammar": "query-grammar",
+        "tantivy-sstable": "sstable",
+        "tantivy-stacker": "stacker",
+        "tantivy-tokenizer-api": "tokenizer-api"
+      }
+    }
+  }
+}

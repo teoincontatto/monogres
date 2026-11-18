@@ -11,8 +11,8 @@
     }
   },
   "versions": {
-    "0.2.0": {
-      "sha256": "02664cc750d12e640e8982658be8c27eb6274459f68fd5b30146c326fbf252a7"
+    "0.3.0": {
+      "sha256": "ec4ee11dead233f7be94302d529a711fda2228f97080dd22d0aa54d7be39dac8"
     }
   },
   "metadata": {
@@ -20,7 +20,7 @@
     "crate_dir": "crates/context-pg",
     "compatible_with": {
       "postgres": {
-        "0.2.0": ">=17"
+        "0.3.0": ">=17"
       }
     },
     "test_ext": {

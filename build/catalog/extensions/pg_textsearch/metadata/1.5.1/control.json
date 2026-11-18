@@ -1,0 +1,10 @@
+{
+  "pg_textsearch": {
+    "default_version": "1.5.1",
+    "comment": "Full-text search with BM25 ranking",
+    "module_pathname": "$libdir/pg_textsearch",
+    "superuser": true,
+    "trusted": false,
+    "relocatable": false
+  }
+}

@@ -11,15 +11,15 @@
     }
   },
   "versions": {
-    "1.0.0": {
-      "sha256": "3d1a3e51f88678e4378cd85fe3bbcdee24f4ea29a06c612201d0c5fb6acf1f3e"
+    "1.2.1": {
+      "sha256": "66a25cd06f2ee86b1516a28937bb64288db5dca31aa4a15715a21f9006d1aa47"
     }
   },
   "metadata": {
     "build_system": "pgrx",
     "compatible_with": {
       "postgres": {
-        "1.0.0": ">=16"
+        "1.2.1": ">=16"
       }
     },
     "test_ext": {

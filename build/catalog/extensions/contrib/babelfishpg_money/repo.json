@@ -19,6 +19,15 @@
           "share/extension/babelfishpg_money.control",
           "share/extension/fixeddecimal--1.0.0--1.1.0.sql"
         ],
+        "4.10": [
+          "lib/babelfishpg_money.so",
+          "lib/bitcode/babelfishpg_money.index.bc",
+          "lib/bitcode/babelfishpg_money/fixeddecimal.bc",
+          "lib/bitcode/babelfishpg_money/smallmoney.bc",
+          "share/extension/babelfishpg_money--1.1.0.sql",
+          "share/extension/babelfishpg_money.control",
+          "share/extension/fixeddecimal--1.0.0--1.1.0.sql"
+        ],
         "4.2": [
           "lib/babelfishpg_money.so",
           "lib/bitcode/babelfishpg_money.index.bc",
@@ -110,6 +119,15 @@
           "share/extension/babelfishpg_money--1.1.0.sql",
           "share/extension/babelfishpg_money.control",
           "share/extension/fixeddecimal--1.0.0--1.1.0.sql"
+        ],
+        "5.6": [
+          "lib/babelfishpg_money.so",
+          "lib/bitcode/babelfishpg_money.index.bc",
+          "lib/bitcode/babelfishpg_money/fixeddecimal.bc",
+          "lib/bitcode/babelfishpg_money/smallmoney.bc",
+          "share/extension/babelfishpg_money--1.1.0.sql",
+          "share/extension/babelfishpg_money.control",
+          "share/extension/fixeddecimal--1.0.0--1.1.0.sql"
         ]
       }
     }
@@ -119,6 +137,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -129,7 +148,8 @@
       "5.1",
       "5.2",
       "5.3",
-      "5.4"
+      "5.4",
+      "5.6"
     ]
   }
 }

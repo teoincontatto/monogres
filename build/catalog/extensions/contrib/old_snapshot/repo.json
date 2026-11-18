@@ -19,6 +19,14 @@
           "share/extension/old_snapshot--1.0.sql",
           "share/extension/old_snapshot.control"
         ],
+        "4.10": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
         "4.2": [
           "include/server/utils/old_snapshot.h",
           "lib/bitcode/old_snapshot.index.bc",
@@ -78,6 +86,26 @@
       },
       "ivorysql": {
         "3.0": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "3.1": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "3.2": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "3.3": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
+        "3.4": [
           "lib/old_snapshot.so",
           "share/extension/old_snapshot--1.0.sql",
           "share/extension/old_snapshot.control"
@@ -198,6 +226,14 @@
           "share/extension/old_snapshot--1.0.sql",
           "share/extension/old_snapshot.control"
         ],
+        "15.20": [
+          "include/server/utils/old_snapshot.h",
+          "lib/bitcode/old_snapshot.index.bc",
+          "lib/bitcode/old_snapshot/time_mapping.bc",
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
         "15.3": [
           "include/server/utils/old_snapshot.h",
           "lib/bitcode/old_snapshot.index.bc",
@@ -294,6 +330,11 @@
           "share/extension/old_snapshot--1.0.sql",
           "share/extension/old_snapshot.control"
         ],
+        "16.16": [
+          "lib/old_snapshot.so",
+          "share/extension/old_snapshot--1.0.sql",
+          "share/extension/old_snapshot.control"
+        ],
         "16.2": [
           "lib/old_snapshot.so",
           "share/extension/old_snapshot--1.0.sql",
@@ -342,6 +383,7 @@
     "babelfish": [
       "4.0",
       "4.1",
+      "4.10",
       "4.2",
       "4.3",
       "4.4",
@@ -351,7 +393,11 @@
       "4.8"
     ],
     "ivorysql": [
-      "3.0"
+      "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4"
     ],
     "openhalo": [
       "1beta1"
@@ -370,6 +416,7 @@
       "15.18",
       "15.19",
       "15.2",
+      "15.20",
       "15.3",
       "15.4",
       "15.5",
@@ -385,6 +432,7 @@
       "16.13",
       "16.14",
       "16.15",
+      "16.16",
       "16.2",
       "16.3",
       "16.4",

@@ -11,8 +11,8 @@
     }
   },
   "versions": {
-    "0.9.0": {
-      "sha256": "a6ad1138a2dfd3662a219693552a661cd7d0b2b79e0dbcbee2522997f3eadf08"
+    "0.9.1": {
+      "sha256": "9c5a78a3eaa044c78bfba80473e65a2f748b11bb788cdb06d3b88c93cc7a19aa"
     }
   },
   "metadata": {
@@ -21,17 +21,17 @@
     "build_args": ["--features", "build_parallel"],
     "patches": [
       {
-        "label": "//catalog/extensions/vectorscale/patches:0001-0.9.0-pgrx-0.18.patch",
-        "spec": ">=0.9.0/*"
+        "label": "//catalog/extensions/vectorscale/patches:0001-0.9.1-pgrx-0.18.patch",
+        "spec": ">=0.9.1/*"
       },
       {
         "label": "//catalog/extensions/vectorscale/patches:0002-0.9.0-control-module-pathname.patch",
-        "spec": ">=0.9.0/*"
+        "spec": ">=0.9.1/*"
       }
     ],
     "compatible_with": {
       "postgres": {
-        "0.9.0": ">=16"
+        "0.9.1": ">=16"
       }
     },
     "test_ext": {

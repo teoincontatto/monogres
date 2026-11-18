@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "3.6.0",
+    "version": "3.7.1",
     "forge": {
       "kind": "github",
       "url": "https://github.com/debezium/postgres-decoderbufs",

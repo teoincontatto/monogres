@@ -11,8 +11,8 @@
     }
   },
   "versions": {
-    "1.24.0": {
-      "sha256": "74ba322fa2867ee8ca4fe797d33b79166892d20b5596f4177c7d4f60f772a255"
+    "1.27.0": {
+      "sha256": "a7c01bfc35fb593f424d66a3395eeb309124fd35ade258f2957fc31eae24e05b"
     }
   },
   "metadata": {
@@ -20,7 +20,7 @@
     "crate_dir": "extension",
     "compatible_with": {
       "postgres": {
-        "1.24.0": ">=16"
+        "1.27.0": ">=16"
       }
     },
     "test_ext": {

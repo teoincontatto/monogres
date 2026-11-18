@@ -1,0 +1,12 @@
+{
+  "pg_search": {
+    "default_version": "@CARGO_VERSION@",
+    "comment": "pg_search: One Postgres for your application data, full-text search, vector retrieval, and aggregations",
+    "module_pathname": "$libdir/pg_search",
+    "requires": ["vector"],
+    "superuser": false,
+    "trusted": false,
+    "relocatable": false,
+    "schema": "paradedb"
+  }
+}

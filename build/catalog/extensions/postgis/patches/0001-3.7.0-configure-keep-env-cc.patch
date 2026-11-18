@@ -1,0 +1,75 @@
+From 6d69df540bcd121295723e64fe32bc297a509dde Mon Sep 17 00:00:00 2001
+From: Javier Maestro <jjmaestro@ieee.org>
+Date: Thu, 23 Jul 2026 15:52:52 +0000
+Subject: [PATCH] patch: keep the environment CC in the configure probes
+
+Four configure probes, for libpq, OGR, wagyu and flatgeobuf, discard the
+compiler `AC_PROG_CC` resolved and substitute `pg_config --cc`, on the reasoning
+that an extension should be compiled the way the server was. That reasoning
+needs the recorded compiler to still be executable wherever PostGIS is built,
+and the recorded value is only ever a string in the installed
+`Makefile.global`.
+
+It stops holding as soon as PostgreSQL is compiled through a wrapper in a build
+tree that no longer exists at extension-build time, which is what a sandboxed
+build produces: `pg_config --cc` then names a path that cannot be executed,
+every probe exits 127 with "not found", and configure concludes libpq and the
+C++ dependencies are all missing. The failure is silent in the sense that
+matters, since a probe reports absence and not the reason for it.
+
+Keep `$CC` for these four sites. Being past `AC_PROG_CC`, it is always set, and
+it is the compiler the rest of the build uses, so nothing is left undefined.
+A build whose `CC` is the same compiler PostgreSQL used, by a path that
+resolves, is served correctly; the case that changes behaviour is the one that
+was failing outright.
+
+Since 3.7.0 the wagyu and flatgeobuf probes take `$CXX` when one is set, and
+fall back to `pg_config --cc` only when it is not, so for those two the
+fallback is what keeps `$CC` instead.
+
+The same four sites exist in `configure.ac`, which regenerating configure would
+have to carry.
+---
+ configure | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/configure b/configure
+index 76bd5ca..ec62305 100755
+--- a/configure
++++ b/configure
+@@ -17799,7 +17799,7 @@ fi
+   LIBS="$PGSQL_FE_LDFLAGS"
+ 
+   CC_SAVE="$CC"
+-  CC=`"$PG_CONFIG" --cc`
++  CC="$CC"
+ 
+   CFLAGS_SAVE="$CFLAGS"
+   CFLAGS=`"$PG_CONFIG" --cflags`
+@@ -23582,7 +23582,7 @@ printf "%s\n" "$OGR_ENABLED" >&6; }
+ 
+ 		if test "x$PG_CONFIG" != "xno"; then
+ 			CFLAGS=`"$PG_CONFIG" --cflags`
+-			CC=`"$PG_CONFIG" --cc`
++			CC="$CC"
+ 		fi
+ 
+ 		LIBS_SAVE="$LIBS"
+@@ -23824,7 +23824,7 @@ if test "x$HAVE_PROTOBUF" = "xyes"; then
+             if test "x$CXX_SAVE" != "x"; then
+         WAGYU_CXX="$CXX_SAVE"
+     else
+-        WAGYU_CXX=`"$PG_CONFIG" --cc`
++        WAGYU_CXX="$CC"
+     fi
+     CPPFLAGS="-x c++"
+     CFLAGS=""
+@@ -28639,7 +28639,7 @@ LIBS_SAVE="$LIBS"
+ if test "x$CXX_SAVE" != "x"; then
+ 	FLATGEOBUF_CXX="$CXX_SAVE"
+ else
+-	FLATGEOBUF_CXX=`"$PG_CONFIG" --cc`
++	FLATGEOBUF_CXX="$CC"
+ fi
+ CPPFLAGS="-x c++"
+ CFLAGS=""

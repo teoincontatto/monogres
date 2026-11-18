@@ -11,7 +11,7 @@
   },
   "versions": {
     "pin": [
-      "3.5.7"
+      "3.7.0"
     ]
   },
   "about": {
@@ -22,35 +22,26 @@
     }
   },
   "control": {
-    "3.5.7": {
-      "address_standardizer": {
-        "default_version": "3.5.7"
-      },
-      "address_standardizer_data_us": {
-        "default_version": "3.5.7"
-      },
+    "3.7.0": {
       "postgis": {
-        "default_version": "3.5.7",
+        "default_version": "3.7.0",
         "module_pathname": "$libdir/postgis-3"
       },
       "postgis_raster": {
-        "default_version": "3.5.7",
+        "default_version": "3.7.0",
         "module_pathname": "$libdir/postgis_raster-3"
       },
       "postgis_sfcgal": null,
-      "postgis_tiger_geocoder": {
-        "default_version": "3.5.7"
-      },
       "postgis_topology": {
-        "default_version": "3.5.7"
+        "default_version": "3.7.0"
       }
     }
   },
   "metadata": {
     "patches": [
       {
-        "label": "//catalog/extensions/postgis/patches:0001-3.5.7-configure-keep-env-cc.patch",
-        "spec": ">=3.5.7/*"
+        "label": "//catalog/extensions/postgis/patches:0001-3.7.0-configure-keep-env-cc.patch",
+        "spec": ">=3.7.0/*"
       }
     ],
     "build_args": [
@@ -68,7 +59,7 @@
     },
     "compatible_with": {
       "postgres": {
-        "3.5.7": ">=16"
+        "3.7.0": ">=16"
       }
     },
     "deps": {

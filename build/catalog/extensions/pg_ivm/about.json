@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.15",
+    "version": "1.17",
     "description": "incremental view maintenance on PostgreSQL",
     "long_description": "IVM (Incremental View Maintenance) implementation as a PostgreSQL extension",
     "homepage": "https://github.com/sraoss/pg_ivm",
@@ -8,11 +8,11 @@
     "repository": {
       "url": "https://github.com/sraoss/pg_ivm"
     },
-    "ref": "v1.15",
-    "readme": "https://raw.githubusercontent.com/sraoss/pg_ivm/v1.15/README.md",
+    "ref": "v1.17",
+    "readme": "https://raw.githubusercontent.com/sraoss/pg_ivm/v1.17/README.md",
     "control": {
       "pg_ivm": {
-        "default_version": "1.15",
+        "default_version": "1.17",
         "module_pathname": "$libdir/pg_ivm",
         "superuser": true,
         "trusted": false,

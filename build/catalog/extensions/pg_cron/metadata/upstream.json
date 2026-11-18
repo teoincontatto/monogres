@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "1.6.7",
+    "version": "1.6.8",
     "forge": {
       "kind": "github",
       "url": "https://github.com/citusdata/pg_cron",

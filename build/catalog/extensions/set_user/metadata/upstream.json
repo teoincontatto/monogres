@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "4.2.0",
+    "version": "4.3.0",
     "forge": {
       "kind": "github",
       "url": "https://github.com/pgaudit/set_user",

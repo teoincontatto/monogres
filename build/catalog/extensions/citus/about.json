@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "14.1.0",
+    "version": "14.3.0",
     "description": "Citus distributed database",
     "long_description": "Distributed PostgreSQL as an extension",
     "homepage": "https://www.citusdata.com",
@@ -22,11 +22,11 @@
     "repository": {
       "url": "https://github.com/citusdata/citus"
     },
-    "ref": "v14.1.0",
-    "readme": "https://raw.githubusercontent.com/citusdata/citus/v14.1.0/README.md",
+    "ref": "v14.3.0",
+    "readme": "https://raw.githubusercontent.com/citusdata/citus/v14.3.0/README.md",
     "control": {
       "citus": {
-        "default_version": "14.1-1",
+        "default_version": "14.3-1",
         "module_pathname": "$libdir/citus",
         "superuser": true,
         "trusted": false,
@@ -34,7 +34,7 @@
         "schema": "pg_catalog"
       },
       "citus_columnar": {
-        "default_version": "14.1-1",
+        "default_version": "14.3-1",
         "module_pathname": "$libdir/citus_columnar",
         "superuser": true,
         "trusted": false,
