@@ -46,6 +46,10 @@
       "tag": "BABEL_4_8_0",
       "sha256": "5ffd7255b7b9b06366960bbfa17521ed28161c2611f9b9840855632a0cc2b126"
     },
+    "4.10": {
+      "tag": "BABEL_4_10_0",
+      "sha256": "d3fb5ba25a75b306c0a669ee5ed13fe146963a03c3485cb4133287fc14cb12ae"
+    },
     "5.1": {
       "tag": "BABEL_5_1_0",
       "sha256": "8937597ebf7299c4719aa2ae71c8ba87e6564bb63fda4af5784899d32dba793e"
@@ -61,6 +65,10 @@
     "5.4": {
       "tag": "BABEL_5_4_0",
       "sha256": "6fe9385d5075eadb8371cde647a79f160f460748f1936ac26174deb32445b29e"
+    },
+    "5.6": {
+      "tag": "BABEL_5_6_0",
+      "sha256": "cd71199c8948e7e12c23e4ed718a56199bf84481411df978d8be23390642565e"
     }
   },
   "metadata": {

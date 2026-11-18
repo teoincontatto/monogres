@@ -1,6 +1,6 @@
 {
   "latest": {
-    "version": "5.4",
+    "version": "5.6",
     "forge": {
       "kind": "github",
       "url": "https://github.com/babelfish-for-postgresql/postgresql_modified_for_babelfish",
@@ -10,9 +10,11 @@
     }
   },
   "versions": {
+    "5.4": {},
     "5.3": {},
     "5.2": {},
     "5.1": {},
+    "4.10": {},
     "4.8": {},
     "4.7": {},
     "4.6": {},

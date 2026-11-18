@@ -46,6 +46,10 @@
       "tag": "BABEL_4_8_0__PG_16_11",
       "sha256": "2ae952967192ddc0449729dd751aa02b5d80081899a709f71c82a683194d7209"
     },
+    "4.10": {
+      "tag": "BABEL_4_10_0__PG_16_14",
+      "sha256": "b00808e123a2a9890b5db7753e9788895aab1595667fbf0eccfd119dfd20e9cf"
+    },
     "5.1": {
       "tag": "BABEL_5_1_0__PG_17_4",
       "sha256": "3160f8cfdd9d57c137e47ae18f4f4ef049d31aa35c0b03c94f233c86221108c3"
@@ -61,6 +65,10 @@
     "5.4": {
       "tag": "BABEL_5_4_0__PG_17_7",
       "sha256": "67a39dc82f80a7a6198da910b82b56d1c016c0b912a6ac1aec5053a52646a0e3"
+    },
+    "5.6": {
+      "tag": "BABEL_5_6_0__PG_17_10",
+      "sha256": "2a79de2c273c369a234e06afecbf6efd47176f663f974c57676c11bc33b86acb"
     }
   },
   "metadata": {
@@ -75,10 +83,12 @@
       "4.6": "16.9",
       "4.7": "16.10",
       "4.8": "16.11",
+      "4.10": "16.14",
       "5.1": "17.4",
       "5.2": "17.5",
       "5.3": "17.6",
-      "5.4": "17.7"
+      "5.4": "17.7",
+      "5.6": "17.10"
     },
     "patches": [
       {
@@ -183,6 +193,12 @@
         "regular": "//catalog/babelfish/introspect:babelfish~4.8~regular.json",
         "full": "//catalog/babelfish/introspect:babelfish~4.8~full.json"
       },
+      "4.10": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~4.10~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~4.10~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~4.10~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~4.10~full.json"
+      },
       "5.1": {
         "barebones": "//catalog/babelfish/introspect:babelfish~5.1~barebones.json",
         "minimal": "//catalog/babelfish/introspect:babelfish~5.1~minimal.json",
@@ -206,6 +222,12 @@
         "minimal": "//catalog/babelfish/introspect:babelfish~5.4~minimal.json",
         "regular": "//catalog/babelfish/introspect:babelfish~5.4~regular.json",
         "full": "//catalog/babelfish/introspect:babelfish~5.4~full.json"
+      },
+      "5.6": {
+        "barebones": "//catalog/babelfish/introspect:babelfish~5.6~barebones.json",
+        "minimal": "//catalog/babelfish/introspect:babelfish~5.6~minimal.json",
+        "regular": "//catalog/babelfish/introspect:babelfish~5.6~regular.json",
+        "full": "//catalog/babelfish/introspect:babelfish~5.6~full.json"
       }
     },
     "extra_sources": {
