@@ -416,8 +416,15 @@ def _pg_build_make_genrule(
             # non-TAP builds, which invoke perl via $$PERL. IPC::Run needs no
             # bridge: it rides @perl_sysroot's usr/share/perl5 on PERL5LIB (set
             # below), exactly as in pg_build.bzl.
-            mkdir -p /usr/bin 2>/dev/null || true
-            ln -sf "$$PERL_SYSROOT_DIR/usr/bin/perl" /usr/bin/perl
+            #
+            # Only where there is none: a remote executor (a Buildbarn worker)
+            # has its own /usr/bin/perl, owned by root and not writable by the
+            # unprivileged user the action runs as, so replacing it fails the
+            # build ("Permission denied") for a shebang it already serves.
+            if [ ! -e /usr/bin/perl ]; then
+                mkdir -p /usr/bin 2>/dev/null || true
+                ln -sf "$$PERL_SYSROOT_DIR/usr/bin/perl" /usr/bin/perl
+            fi
 
             export SYSROOT_DIR EXEC_SYSROOT_DIR PERL_SYSROOT_DIR
             export TARGET_MULTIARCH EXEC_MULTIARCH CROSS_COMPILING
