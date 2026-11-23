@@ -99,6 +99,49 @@ if [ -z "${clang}" ]; then
     exit 1
 fi
 
-# ${target_flag:+...} expands to nothing for native invocations, so no empty
-# argument is passed.
-exec "${clang}" ${target_flag:+"${target_flag}"} --sysroot="${sysroot}" "$@"
+# aarch64 links get compiler-rt's builtins archive as a last input. On aarch64,
+# clang lowers some 128-bit arithmetic to `__muloti4`, which libgcc does not
+# provide (GCC never emits it). PostgreSQL's configure probe for `__int128`
+# is such code, so it failed to link and every arm64 build went without
+# 128-bit integers. Plain PostgreSQL falls back to slower code; Babelfish's
+# `pg_bswap.h` uses `uint128` unconditionally and fails to compile.
+#
+# The archive is an extra input, not `--rtlib=compiler-rt`: libgcc stays the
+# runtime library, and the linker takes from the archive only what is still
+# undefined when it reaches it. It comes from the TARGET arch's @llvm_sysroot
+# (libclang-rt-<major>-dev), found under `external/` the same way as the clang
+# above, so the path is never baked into a `Makefile.global` that outlives this
+# action. Only link invocations get it: on a compile-only one it would draw
+# "argument unused during compilation" warnings (see above).
+rt_builtins=
+if [ "${target_arch}" = arm64 ]; then
+    links=1
+    has_input=
+    for arg in "$@"; do
+        case "${arg}" in
+            -c | -S | -E | -M | -MM | -fsyntax-only | -emit-llvm | -\#\#\# | \
+                --version | -v | -dumpversion | -dumpmachine | -print-*)
+                links=
+                break
+                ;;
+            -*) ;;
+            *) has_input=1 ;;
+        esac
+    done
+    if [ -n "${links}" ] && [ -n "${has_input}" ]; then
+        distro_version=$(dirname "${sysroot}")
+        version=$(basename "${distro_version}")
+        distro=$(basename "$(dirname "${distro_version}")")
+        for candidate in "${external}"/*llvm_sysroot/"${distro}/${version}/${target_arch}"/usr/lib/llvm-*/lib/clang/*/lib/linux/libclang_rt.builtins-aarch64.a; do
+            if [ -f "${candidate}" ]; then
+                rt_builtins="${candidate}"
+                break
+            fi
+        done
+    fi
+fi
+
+# ${target_flag:+...} and ${rt_builtins:+...} expand to nothing when unset, so
+# no empty argument is passed.
+exec "${clang}" ${target_flag:+"${target_flag}"} --sysroot="${sysroot}" "$@" \
+    ${rt_builtins:+"${rt_builtins}"}

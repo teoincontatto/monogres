@@ -2098,6 +2098,86 @@
       "arch": "amd64",
       "dependencies": [
         {
+          "key": "libstdc-p--p-6_14.2.0-19_amd64",
+          "name": "libstdc++6",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_amd64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u4_amd64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u4"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_amd64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6-i386_2.41-12-p-deb13u4_amd64",
+          "name": "libc6-i386",
+          "version": "2.41-12+deb13u4"
+        },
+        {
+          "key": "lib32stdc-p--p-6_14.2.0-19_amd64",
+          "name": "lib32stdc++6",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "lib32gcc-s1_14.2.0-19_amd64",
+          "name": "lib32gcc-s1",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libclang-rt-19-dev_1-19.1.7-3-p-b1_amd64",
+      "name": "libclang-rt-19-dev",
+      "sha256": "0c03a0a8fa37228e2de6c36d02ff0806643885c515a8137d1bcd22e248497cd6",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/l/llvm-toolchain-19/libclang-rt-19-dev_19.1.7-3+b1_amd64.deb"
+      ],
+      "version": "1:19.1.7-3+b1"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "libc6-i386_2.41-12-p-deb13u4_amd64",
+      "name": "libc6-i386",
+      "sha256": "50c1653ce29519e1fcd8742f2c67f5edad8d4c3aed3d1ffbea2b7c3497a809d2",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/g/glibc/libc6-i386_2.41-12+deb13u4_amd64.deb"
+      ],
+      "version": "2.41-12+deb13u4"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "lib32stdc-p--p-6_14.2.0-19_amd64",
+      "name": "lib32stdc++6",
+      "sha256": "326011247094e9a5e5b7dd431b67ccf6dddfd9c4ee5078a8d1a15661883791c2",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/g/gcc-14/lib32stdc++6_14.2.0-19_amd64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [],
+      "key": "lib32gcc-s1_14.2.0-19_amd64",
+      "name": "lib32gcc-s1",
+      "sha256": "aa7674a786d58a1efaacb3ce377c06a2d3153c1fa7360b08375c7dd67c90c3fe",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/g/gcc-14/lib32gcc-s1_14.2.0-19_amd64.deb"
+      ],
+      "version": "14.2.0-19"
+    },
+    {
+      "arch": "amd64",
+      "dependencies": [
+        {
           "key": "zlib1g_1-1.3.dfsg-p-really1.3.1-1-p-deb13u1_amd64",
           "name": "zlib1g",
           "version": "1:1.3.dfsg+really1.3.1-1+deb13u1"
@@ -5334,6 +5414,38 @@
         "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/g/grpc/libgrpc++1.51t64_1.51.1-6_arm64.deb"
       ],
       "version": "1.51.1-6"
+    },
+    {
+      "arch": "arm64",
+      "dependencies": [
+        {
+          "key": "libstdc-p--p-6_14.2.0-19_arm64",
+          "name": "libstdc++6",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libgcc-s1_14.2.0-19_arm64",
+          "name": "libgcc-s1",
+          "version": "14.2.0-19"
+        },
+        {
+          "key": "libc6_2.41-12-p-deb13u4_arm64",
+          "name": "libc6",
+          "version": "2.41-12+deb13u4"
+        },
+        {
+          "key": "gcc-14-base_14.2.0-19_arm64",
+          "name": "gcc-14-base",
+          "version": "14.2.0-19"
+        }
+      ],
+      "key": "libclang-rt-19-dev_1-19.1.7-3-p-b1_arm64",
+      "name": "libclang-rt-19-dev",
+      "sha256": "fbf03af1959c43c92d990fe48a6bee9ac9f946b96641e84e693ede5ef9698f77",
+      "urls": [
+        "https://snapshot-cloudflare.debian.org/archive/debian/20261112T000000Z/pool/main/l/llvm-toolchain-19/libclang-rt-19-dev_19.1.7-3+b1_arm64.deb"
+      ],
+      "version": "1:19.1.7-3+b1"
     },
     {
       "arch": "arm64",

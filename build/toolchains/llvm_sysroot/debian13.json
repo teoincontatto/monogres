@@ -10,6 +10,7 @@
     "clangd-19",
     "libclang-common-19-dev",
     "libclang-cpp19",
+    "libclang-rt-19-dev",
     "libllvm19",
     "libomp-19-dev",
     "libomp5-19",
