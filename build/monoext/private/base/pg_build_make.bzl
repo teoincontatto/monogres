@@ -1538,6 +1538,15 @@ PY_SHIM_EOF
             #
             # Step 1 strips the sandbox prefix so absolute paths under sandbox
             # execroots collapse to `/<install_base>/...`.
+            # Step 1b rewrites any other spelling of this action's exec root
+            # (a remote worker's, e.g. Buildbarn's `/worker/build/<id>/root`,
+            # which step 1 does not know and which is gone once the action
+            # ends) to `$$(EXT_BUILD_ROOT)`. Every PGXS build that includes
+            # this file exports EXT_BUILD_ROOT, its own exec root, and make
+            # reads the environment as variables, so the path resolves to the
+            # same input (sysroot, toolchain repo) staged in that action.
+            # After step 1 a local sandbox's root no longer appears, so local
+            # builds are unchanged.
             # Step 2 redirects the planted `/sysroot/usr/lib/llvm-<N>/bin/
             # clang` wrapper symlink (word-anchored) to the persistent
             # @libc_sysroot wrapper via `$(LIBC_SYSROOT_DIR)`.
@@ -1552,10 +1561,16 @@ PY_SHIM_EOF
 
             echo "# $$(date) - scrub_install_tree"
 
+            # The exec root as an ERE, its metacharacters escaped.
+            local root_re
+            [ -n "$$EXT_BUILD_ROOT" ] || return 1
+            root_re="$$(printf '%s' "$$EXT_BUILD_ROOT" | sed -E 's/[].[*^$$|+?()\\]/\\\\&/g')"
+
             find "$$installdir" -name 'Makefile.global' -print0 \\
                 | xargs -0 --no-run-if-empty \\
                     sed -i -E \\
                         -e 's|/sandbox/linux-sandbox/[0-9]+/execroot/[^/]+/|/|g' \\
+                        -e "s|$$root_re/|\\$$(EXT_BUILD_ROOT)/|g" \\
                         -e "s|/sysroot/usr/lib/llvm-$$LLVM_MAJOR/bin/clang\\b|/$(LIBC_SYSROOT_DIR)/usr/lib/llvm-$$LLVM_MAJOR/bin/clang|g" \\
                         -e "s|/sysroot/usr/lib/llvm-$$LLVM_MAJOR/bin|/$(LLVM_SYSROOT_DIR)/usr/lib/llvm-$$LLVM_MAJOR/bin|g"
         }}

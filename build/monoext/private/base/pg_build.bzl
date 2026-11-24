@@ -514,6 +514,14 @@ def _meson_common_args(
 # collapse to `/<install_base>/...` (persistent across sandbox teardowns via
 # Bazel's install-base bind-mount).
 #
+# Step 1b rewrites any other spelling of this action's exec root (a remote
+# worker's, e.g. Buildbarn's `/worker/build/<id>/root`, which step 1 does not
+# know and which is gone once the action ends) to `$(EXT_BUILD_ROOT)`. Every PGXS
+# build that includes this file exports EXT_BUILD_ROOT, its own exec root, and
+# make reads the environment as variables, so the path resolves to the same
+# input staged in that action. After step 1 a local sandbox's root no longer
+# appears, so local builds are unchanged.
+#
 # Step 2 redirects `/sysroot/usr/lib/llvm-14/bin/clang` (word-anchored) to the
 # @libc_sysroot `clang_wrapper.sh` shim via `$(LIBC_SYSROOT_DIR)`. Postgres's
 # runtime JIT path invokes `$(CLANG)` DIRECTLY to emit-llvm-IR; no cc_toolchain
@@ -539,10 +547,13 @@ def _meson_common_args(
 # time, never appearing in source.
 
 _STRIP_SANDBOX_PATHS_POSTFIX = """\
+[ -n "$$EXT_BUILD_ROOT" ] || exit 1
+root_re="$$(printf '%s' "$$EXT_BUILD_ROOT" | sed -E 's/[].[*^$$|+?()\\]/\\\\&/g')"
 find "$$INSTALLDIR" -name 'Makefile.global' -print0 \\
     | xargs -0 --no-run-if-empty \\
         sed -i -E \\
             -e 's|/sandbox/linux-sandbox/[0-9]+/execroot/[^/]+/|/|g' \\
+            -e "s|$$root_re/|\\$$(EXT_BUILD_ROOT)/|g" \\
             -e "s|/sysroot/usr/lib/llvm-{major}/bin/clang\\b|/$(LIBC_SYSROOT_DIR)/usr/lib/llvm-{major}/bin/clang|g" \\
             -e "s|/sysroot/usr/lib/llvm-{major}/bin|/$(LLVM_SYSROOT_DIR)/usr/lib/llvm-{major}/bin|g"
 
