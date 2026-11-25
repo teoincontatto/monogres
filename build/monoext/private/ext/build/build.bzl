@@ -106,6 +106,7 @@ def ext_build(
         build_args_indent = 0,
         remap_paths = {},
         remap_paths_indent = 12,
+        exec_properties = {},
         emit_introspect = False,
         debug = False):
     """Emits the extension-build genrule shared by every build system.
@@ -147,6 +148,10 @@ def ext_build(
             `metadata.remap_paths`.
         remap_paths_indent (int): Continuation indent for the rendered remap
             calls.
+        exec_properties (dict[str, str]): The extension's
+            `metadata.exec_properties`, the genrule's `exec_properties`: what a
+            remote executor routes the build on (`{"size": "large"}` asks
+            Buildbarn for a large worker). Empty for almost every extension.
         emit_introspect (bool): If `True`, stage the test-introspect parser and
             emit a `<name>.tests.json` output; the build system's
             `compile_extension` runs `$EXT_INTROSPECT` at the end to discover
@@ -501,5 +506,6 @@ def ext_build(
         toolchains = _SHARED_TOOLCHAINS + extra_toolchains + [
             "%s//%s:toolchain" % (base_hub, base_version["version"]),
         ],
+        exec_properties = exec_properties,
         visibility = ["//visibility:public"],
     )

@@ -569,6 +569,7 @@ def pgxs_build(
         prefix_distro,
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         debug = False):
     """Builds a PGXS extension with the [PGXS build system].
 
@@ -616,6 +617,8 @@ def pgxs_build(
             `PGXS_ARG_SUBST`) in the sysroot's `usr/bin/<file>` scripts, for
             build steps that read those baked paths verbatim. Empty for
             extensions that declare none.
+        exec_properties (dict[str, str]): The build action's
+            `exec_properties`, from `metadata.exec_properties` (see `ext_build`).
         debug (bool): If `True`, prints a debug message for each command
             executed.
     """
@@ -650,6 +653,7 @@ def pgxs_build(
         build_args_indent = 20,
         remap_paths = remap_paths,
         remap_paths_indent = 12,
+        exec_properties = exec_properties,
         emit_introspect = True,
         debug = debug,
     )

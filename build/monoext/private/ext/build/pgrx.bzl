@@ -566,6 +566,7 @@ def pgrx_build(
         build_data = {},
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         debug = False):
     """Builds a pgrx (Rust) Postgres extension.
 
@@ -616,6 +617,8 @@ def pgrx_build(
         remap_paths (dict[str, dict[str, str]]): `{file: {from: to}}` from
             `metadata.remap_paths`, applied to the sysroot's `usr/bin/<file>`
             scripts exactly as in the PGXS path.
+        exec_properties (dict[str, str]): The build action's
+            `exec_properties`, from `metadata.exec_properties` (see `ext_build`).
         debug (bool): If `True`, `set -x` the action.
     """
     ext_build(
@@ -662,5 +665,6 @@ def pgrx_build(
         build_args_indent = 16,
         remap_paths = remap_paths,
         remap_paths_indent = 12,
+        exec_properties = exec_properties,
         debug = debug,
     )

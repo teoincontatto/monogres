@@ -607,6 +607,7 @@ def _build_external(extensions, versions_deps, base_versions, base_flavor, hub_n
             build_system = metadata.get("build_system", "pgxs"),
             build_args = metadata.get("build_args", []),
             remap_paths = metadata.get("remap_paths", {}),
+            exec_properties = metadata.get("exec_properties", {}),
             crate_dir = metadata.get("crate_dir", ""),
             sql_source = metadata.get("sql_source", ""),
             build_data = ext.build_data,

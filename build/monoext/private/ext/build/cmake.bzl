@@ -180,6 +180,7 @@ def cmake_build(
         prefix_distro,
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         debug = False):
     """Builds a CMake-based Postgres extension.
 
@@ -202,6 +203,8 @@ def cmake_build(
             scripts exactly as in the PGXS path (the dispatch splats one arg
             dict into either rule). No in-tree cmake extension declares it
             today.
+        exec_properties (dict[str, str]): The build action's
+            `exec_properties`, from `metadata.exec_properties` (see `ext_build`).
         debug (bool): If `True`, `set -x` the action.
     """
     ext_build(
@@ -226,5 +229,6 @@ def cmake_build(
         build_args_indent = 16,
         remap_paths = remap_paths,
         remap_paths_indent = 12,
+        exec_properties = exec_properties,
         debug = debug,
     )

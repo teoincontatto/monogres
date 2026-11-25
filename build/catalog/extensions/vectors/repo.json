@@ -17,6 +17,9 @@
   },
   "metadata": {
     "build_system": "pgrx",
+    "exec_properties": {
+      "size": "large"
+    },
     "sql_source": "sql/install/vectors--{version}.sql",
     "patches": [
       {

@@ -259,6 +259,7 @@ def _ext_external_entry_init(
         build_system = "pgxs",
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         crate_dir = "",
         build_data = {},
         sql_source = "",
@@ -279,7 +280,9 @@ def _ext_external_entry_init(
     sysroot paths by the build rule. `remap_paths` is a `{file: {from: to}}` map
     whose `from`->`to` substitutions the build applies to the sysroot's
     `usr/bin/<file>` scripts (re-rooting baked paths a build step reads
-    verbatim). `crate_dir` (the pgrx path only) is the extension crate's
+    verbatim). `exec_properties` is the build action's `exec_properties`, for a
+    remote executor that routes on them (`{"size": "large"}` asks Buildbarn for
+    a large worker). `crate_dir` (the pgrx path only) is the extension crate's
     directory below the source root, for a cargo WORKSPACE whose root has to
     stay the source root so path dependencies and the workspace profile resolve;
     empty means the crate IS the source root. All come from the extension's
@@ -298,6 +301,7 @@ def _ext_external_entry_init(
         build_system = build_system,
         build_args = build_args,
         remap_paths = remap_paths,
+        exec_properties = exec_properties,
         crate_dir = crate_dir,
         build_data = build_data,
         sql_source = sql_source,
@@ -316,6 +320,7 @@ def _ext_external_entry_new(
         build_system = "pgxs",
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         crate_dir = "",
         build_data = {},
         sql_source = "",
@@ -343,6 +348,8 @@ def _ext_external_entry_new(
             paths by the build rule.
         remap_paths: `{file: {from: to}}` substitutions the build applies to the
             sysroot's `usr/bin/<file>` scripts.
+        exec_properties: The build action's `exec_properties` (e.g.
+            `{"size": "large"}`), from `metadata.exec_properties`.
         crate_dir: The pgrx extension crate's directory below the source root,
             for a cargo workspace; empty when the crate is the source root.
         sql_source: Path below the source root of the SQL upstream ships already
@@ -405,6 +412,7 @@ def _ext_external_entry_new(
         build_system = build_system,
         build_args = build_args,
         remap_paths = remap_paths,
+        exec_properties = exec_properties,
         crate_dir = crate_dir,
         build_data = build_data,
         sql_source = sql_source,
@@ -438,6 +446,7 @@ def _ext_external_entry_from_dict(d):
         build_system = d.get("build_system", "pgxs"),
         build_args = d.get("build_args", []),
         remap_paths = d.get("remap_paths", {}),
+        exec_properties = d.get("exec_properties", {}),
         crate_dir = d.get("crate_dir", ""),
         build_data = d.get("build_data", {}),
         sql_source = d.get("sql_source", ""),

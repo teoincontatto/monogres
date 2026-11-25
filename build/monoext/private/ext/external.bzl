@@ -154,6 +154,7 @@ def _pg_build(
         build_system = "pgxs",
         build_args = [],
         remap_paths = {},
+        exec_properties = {},
         crate_dir = "",
         ext_name = None,
         cargo = None,
@@ -169,7 +170,10 @@ def _pg_build(
     `-D` cache entries for the cmake path, `cargo build` arguments for the pgrx
     one); every build rule resolves the `{pg_config}` / `{sysroot}` placeholders
     to action-time sysroot paths. `remap_paths` (not the cmake path) is the
-    `{file: {from: to}}` sysroot-script path remapping.
+    `{file: {from: to}}` sysroot-script path remapping. `exec_properties` goes
+    to the build action (`{"size": "large"}` asks Buildbarn for a large
+    worker); it is rendered only where an extension declares it, so every other
+    extension's BUILD file, and its actions' cache keys, stay as they were.
 
     The source tree is the download_archives `:dir`, a tree artifact keyed on
     the archive and the patches it was made from, so the build action is re-run
@@ -213,6 +217,8 @@ def _pg_build(
         build_args = build_args,
         remap_paths = remap_paths,
     )
+    if exec_properties:
+        build_system_args["exec_properties"] = exec_properties
 
     if build_system == "pgxs":
         build_call = _pgxs_build(**build_system_args)
@@ -363,6 +369,7 @@ def write_extension_package(rctx, entry, name, archs):
                     build_system = entry.build_system,
                     build_args = entry.build_args,
                     remap_paths = entry.remap_paths,
+                    exec_properties = entry.exec_properties,
                     crate_dir = entry.crate_dir,
                     ext_name = name,
                     cargo = cargo,
